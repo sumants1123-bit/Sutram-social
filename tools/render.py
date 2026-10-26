@@ -100,6 +100,14 @@ def south(s=320, labels=True, asc=None):
         out+=f'<rect x="{x}" y="{y}" width="{c}" height="{c}"{fill} stroke="{GOLD}" stroke-opacity=".85" stroke-width="2"/>'
         if labels: out+=f'<text x="{x+c/2}" y="{y+c/2+6}" text-anchor="middle" font-family="EB Garamond" font-size="{s/17:.0f}" fill="{CREAM}" fill-opacity=".75">{SIGNS[i][:3]}</text>'
     return f'<svg width="{s+8}" height="{s+8}" style="display:block;margin:0 auto">{out}</svg>'
+def icon(kind, s=64):
+    c=s/2
+    if kind=='moon':
+        g=uid('im'); return f'<svg width="{s}" height="{s}"><defs><radialGradient id="{g}" cx="40%" cy="36%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#D6D0CF"/><stop offset="1" stop-color="#A39DA2"/></radialGradient></defs><circle cx="{c}" cy="{c}" r="{s*0.36}" fill="url(#{g})"/></svg>'
+    if kind=='sun':
+        g=uid('is'); return f'<svg width="{s}" height="{s}"><defs><radialGradient id="{g}" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#FFE8CF"/><stop offset=".3" stop-color="#FBB37C"/><stop offset=".7" stop-color="#EE7838"/><stop offset="1" stop-color="#A8401A"/></radialGradient></defs><circle cx="{c}" cy="{c}" r="{s*0.36}" fill="url(#{g})"/></svg>'
+    # asc: the Sun's disc rising on the horizon line
+    return f'<svg width="{s}" height="{s}"><path d="M{s*0.2},{s*0.62} A{s*0.3},{s*0.3} 0 0 1 {s*0.8},{s*0.62}" fill="none" stroke="{GOLD}" stroke-width="2.4"/><line x1="{s*0.06}" y1="{s*0.62}" x2="{s*0.94}" y2="{s*0.62}" stroke="{GOLD}" stroke-width="2.4"/></svg>'
 def orb(o):
     if not o: return ''
     k=o.get('kind'); 
@@ -115,7 +123,7 @@ def slide_html(sp):
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
     bs=f'font-size:{sp["bodysize"]}px;' if sp.get('bodysize') else ''
     if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:%spx" % sp["labelsize"] if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
-    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack'):
+    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons'):
         if sp.get('title'):
             cls=sp.get('titleclass') or {'cover':'h1','cta':'h1'}.get(t,'h2' if len(clean(sp['title']))<26 else 'h3')
             H.append(f'<div class="t {cls}">{rich(sp["title"])}</div>')
@@ -145,10 +153,12 @@ def slide_html(sp):
         H.append('<div class="rule"></div>')
         for a,b in sp['items']:
             H.append(f'<div style="padding:18px 0"><div class="t" style="font-size:60px;line-height:1.05">{esc(a)}</div><div class="p" style="margin-top:8px;{bs}">{esc(b)}</div></div>')
+    if t=='icons':
+        H.append('<div style="margin-top:34px;display:inline-block;text-align:left">'+''.join(f'<div style="display:flex;align-items:center;gap:30px;padding:16px 0">{icon(k,76)}<div><div class="t" style="font-size:60px;line-height:1">{esc(a)}</div><div class="p" style="margin-top:6px;{bs}">{esc(b)}</div></div></div>' for k,a,b in sp['items'])+'</div>')
     if t=='sentence':
         H.append('<div class="rule"></div>')
         H.append(f'<div class="t h3">{esc(sp["example"])}</div>')
-        H.append('<div style="margin-top:28px">'+''.join(f'<div class="p" style="margin-top:8px"><span class="lab" style="margin-right:20px">{esc(a)}</span>{esc(b)}</div>' for a,b in sp['rows'])+'</div>')
+        H.append('<div style="margin-top:28px">'+''.join(f'<div class="p" style="margin-top:10px;{bs}"><span class="lab" style="margin-right:20px">{esc(a)}</span>{esc(b)}</div>' for a,b in sp['rows'])+'</div>')
         if sp.get('conclusion'): H.append(f'<div class="ti sub" style="margin-top:36px">{esc(sp["conclusion"])}</div>')
     if t=='sky':
         H.append('<div class="grid2" style="margin-top:28px;border-top:1px solid rgba(217,165,122,.25);border-bottom:1px solid rgba(217,165,122,.25);padding:8px 0">'+''.join(f'<div style="padding:12px 0"><div class="lab">{esc(a)}</div><div class="p" style="margin-top:10px">{esc(b)}</div></div>' for a,b in sp['cells'])+'</div>')

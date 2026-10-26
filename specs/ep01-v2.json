@@ -1,0 +1,95 @@
+{
+  "id": "ep01-v2",
+  "kicker": "The Thread · Episode 1",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "orbit",
+        "w": 700,
+        "h": 150,
+        "beads": 5,
+        "tilt": -7,
+        "lit": 2
+      },
+      "title": "Body, mind, soul",
+      "subtitle": "Three ways to see yourself"
+    },
+    {
+      "type": "text",
+      "label": "Philosophy",
+      "labelsize": 26,
+      "title": "More than a body",
+      "titleclass": "h2",
+      "body": [
+        "The Upanishads see you in layers",
+        "from the body, inward to the soul"
+      ],
+      "bodysize": 44,
+      "note": "Taittiriya Upanishad, chapter 2"
+    },
+    {
+      "type": "icons",
+      "label": "Astrology",
+      "labelsize": 26,
+      "title": "One chart,\nthree views",
+      "items": [
+        [
+          "asc",
+          "Ascendant",
+          "Your body, how you meet the world"
+        ],
+        [
+          "moon",
+          "Moon",
+          "Your mind, how you feel"
+        ],
+        [
+          "sun",
+          "Sun",
+          "Your soul, what you live for"
+        ]
+      ],
+      "bodysize": 36,
+      "note": "Parashara reads every chart from all three"
+    },
+    {
+      "type": "stack",
+      "label": "For example",
+      "labelsize": 24,
+      "title": "One person,\nthree views",
+      "items": [
+        [
+          "Ascendant in Leo",
+          "Meets the world warmly, likes to lead"
+        ],
+        [
+          "Moon in Cancer",
+          "Feels deeply, needs a safe home"
+        ],
+        [
+          "Sun in Capricorn",
+          "Lives for duty and lasting work"
+        ]
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "sun",
+        "r": 80,
+        "rings": true
+      },
+      "title": "Find your three",
+      "subtitle": "Free chart at sutram.ca",
+      "lines": [
+        "Which one feels most like you?",
+        "Tell me in the comments"
+      ],
+      "bodysize": 40,
+      "next": "Next Wednesday · Five layers of you"
+    }
+  ]
+}

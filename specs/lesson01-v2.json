@@ -1,0 +1,42 @@
+{
+  "id": "lesson01-v2",
+  "kicker": "Daily lesson · 1",
+  "slides": [
+    {"type": "cover", "stars": true,
+     "orb": {"kind": "sun", "r": 85, "rings": true},
+     "title": "What\nHow\n*Where*",
+     "subtitle": "Read any placement in three parts"},
+
+    {"type": "text", "label": "What", "labelsize": 26,
+     "title": "The planet",
+     "subtitle": "The part of you that acts",
+     "body": ["Sun, your self", "Moon, your mind", "Mars, your drive"],
+     "bodysize": 44},
+
+    {"type": "text", "label": "How", "labelsize": 26,
+     "title": "The sign",
+     "subtitle": "The way it acts",
+     "body": ["Fire signs act boldly", "Earth signs act steadily", "Air signs think and connect", "Water signs feel and protect"],
+     "bodysize": 44},
+
+    {"type": "text", "label": "Where", "labelsize": 26,
+     "title": "The house",
+     "subtitle": "The area of life",
+     "body": ["1st house, you", "4th house, home", "7th house, partner", "10th house, career"],
+     "bodysize": 44},
+
+    {"type": "sentence",
+     "title": "Put it together",
+     "example": "Mars in Leo in the 10th house",
+     "rows": [["What", "Mars, your drive"], ["How", "Leo, proud and warm"], ["Where", "10th house, career"]],
+     "bodysize": 40,
+     "conclusion": "Your drive leads, with pride, in your career"},
+
+    {"type": "cta", "orb": {"kind": "moon", "r": 105, "illum": 1.0},
+     "title": "Try yours",
+     "subtitle": "Find your Moon, its sign and its house",
+     "lines": ["Free chart at sutram.ca", "Write your sentence in the comments"],
+     "bodysize": 40,
+     "next": "Next lesson · The Sun"}
+  ]
+}
