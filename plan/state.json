@@ -1,1 +1,13 @@
-{"posted":[],"next_lesson":2,"next_thread_episode":2}
+{
+  "posted": [
+    {"id": "intro", "when": "2026-10-26T17:56:00-04:00", "url": "https://www.instagram.com/p/De-TKPWjYy8/"}
+  ],
+  "scheduled": [
+    {"id": "ep01", "when": "2026-10-27T11:00:00-04:00"},
+    {"id": "sky-2026-10-28", "when": "2026-10-28T07:00:00-04:00"},
+    {"id": "lesson01", "when": "2026-10-28T12:00:00-04:00"}
+  ],
+  "made_not_scheduled": ["sky-2026-10-29", "lesson02", "close-2026-10-29-mercury"],
+  "next_lesson": 3,
+  "next_thread_episode": 2
+}
