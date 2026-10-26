@@ -131,7 +131,7 @@ def slide_html(sp):
     if t=='quote':
         H.append('<div class="rule"></div>')
         H.append(f'<div class="ti h3" style="color:{CREAM}">“{esc(sp["quote"])}”</div>')
-        if sp.get('source'): H.append(f'<div class="src" style="margin-top:22px">{esc(sp["source"])}</div>')
+        if sp.get('source'): H.append(f'<div class="src" style="margin-top:24px;font-size:24px">{esc(sp["source"])}</div>')
     if t=='quotes':
         for i,(lab,qt,src) in enumerate(sp['items']):
             if i: H.append('<div class="rule" style="margin:8px auto"></div>')
@@ -142,7 +142,7 @@ def slide_html(sp):
         body=''.join('<div>'+''.join(f'<div class="row"><span class="t" style="font-size:48px">{esc(a)}</span><span class="pi" style="text-align:right;font-size:34px">{esc(b)}</span></div>' for a,b in col)+'</div>' for col in cols)
         H.append(f'<div class="{"grid2" if len(cols)==2 else ""}" style="margin-top:34px;width:100%">{body}</div>')
     if t=='rows':
-        H.append('<div style="margin-top:30px;width:100%">'+''.join(f'<div class="row"><span class="t" style="font-size:47px;white-space:nowrap">{esc(a)}</span><span class="p" style="text-align:right;font-size:34px">{esc(b)}</span></div>' for a,b in sp['items'])+'</div>')
+        H.append('<div style="margin-top:30px;width:100%">'+''.join(f'<div class="row"><span class="t" style="font-size:47px;white-space:nowrap">{esc(a)}</span><span class="p" style="text-align:right;font-size:{sp.get('bodysize',34)}px">{esc(b)}</span></div>' for a,b in sp['items'])+'</div>')
     if t=='grid':
         H.append('<div class="grid2" style="margin-top:22px">'+''.join(f'<div style="padding:20px 0"><div class="lab">{esc(a)}</div><div class="t" style="font-size:44px;line-height:1.1;margin-top:12px">{esc(b)}</div><div class="pi" style="margin-top:4px">{esc(c)}</div></div>' for a,b,c in sp['cells'])+'</div>')
     if t=='steps':

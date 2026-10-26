@@ -1,0 +1,44 @@
+{
+  "id": "scripture-2026-10-30",
+  "kicker": "Friday · Scripture",
+  "slides": [
+    {"type": "cover", "stars": true,
+     "orb": {"kind": "orbit", "w": 700, "h": 150, "beads": 5, "tilt": -7},
+     "title": "Know yourself",
+     "subtitle": "Five traditions, one instruction"},
+
+    {"type": "quote", "label": "Greece", "labelsize": 26,
+     "quote": "Know thyself",
+     "source": "The temple of Apollo at Delphi",
+     "body": ["Carved where every visitor", "to the oracle would see it"],
+     "bodysize": 40},
+
+    {"type": "quote", "label": "Socrates", "labelsize": 26,
+     "quote": "The unexamined life is not worth living",
+     "source": "Plato, Apology 38a",
+     "body": ["Said at his trial in Athens"],
+     "bodysize": 40},
+
+    {"type": "quote", "label": "The Upanishads", "labelsize": 26,
+     "quote": "Know that one Self, and leave other words",
+     "source": "Mundaka Upanishad 2.2.5",
+     "body": ["Know who you are first", "everything else comes after"],
+     "bodysize": 40},
+
+    {"type": "quote", "label": "The Tao", "labelsize": 26,
+     "quote": "He who knows other men is discerning; he who knows himself is intelligent",
+     "source": "Tao Te Ching 33 · James Legge"},
+
+    {"type": "quote", "label": "The Sufis", "labelsize": 26,
+     "quote": "Whoever knows himself knows his Lord",
+     "source": "A saying the Sufis treasure",
+     "body": ["Look inward, and you find the divine"],
+     "bodysize": 40},
+
+    {"type": "cta", "orb": {"kind": "moon", "r": 100, "illum": 1.0},
+     "title": "Which one\nspeaks to you?",
+     "subtitle": "Tell me in the comments",
+     "lines": ["Your free chart is at sutram.ca"],
+     "bodysize": 40}
+  ]
+}

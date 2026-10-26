@@ -1,0 +1,37 @@
+{
+  "id": "sky-2026-10-29-v2",
+  "kicker": "Today's Sky · Thursday 29 October",
+  "slides": [
+    {
+      "type": "sky",
+      "orb": {
+        "kind": "moon",
+        "r": 128,
+        "illum": 0.854,
+        "waxing": false
+      },
+      "title": "Moon in Mrigashira",
+      "subtitle": "The deer's head, moving into Gemini",
+      "cells": [
+        [
+          "Moon phase",
+          "Waning, 4th day"
+        ],
+        [
+          "Day ruler",
+          "Jupiter"
+        ],
+        [
+          "Rahu Kaal, Toronto",
+          "2:18 to 3:35 PM"
+        ],
+        [
+          "Moving backward",
+          "Mercury, Venus, Saturn"
+        ]
+      ],
+      "good": "study, music, finishing things",
+      "slow": "new starts and signing"
+    }
+  ]
+}
