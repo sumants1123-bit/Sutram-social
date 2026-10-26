@@ -1,0 +1,7 @@
+{"id":"lesson02","kicker":"Daily lesson · 02","slides":[
+ {"type":"cover","stars":true,"orb":{"kind":"sun","r":95},"title":"The Sun","subtitle":"The soul of Time"},
+ {"type":"text","label":"What it means","title":"Your self, your light","body":["The self you shine from","Purpose, confidence and vitality","Your father, and those in authority over you"],"note":"Varahamihira, Brihat Jataka 2.1"},
+ {"type":"list","label":"At a glance","title":"The Sun’s nature","items":[["Owns","Leo"],["Exalted","Aries"],["Debilitated","Libra"],["Friends","Moon, Mars, Jupiter"],["Day","Sunday"],["Element","fire"],["Direction","east"],["Gem","ruby"]],"note":"Brihat Parashara Hora Shastra"},
+ {"type":"rows","label":"Where it shines","title":"The Sun by house","items":[["10th","full strength: career, standing"],["1st","a visible, self-made life"],["5th, 9th","creative, principled"],["3rd, 6th, 11th","competes well, wins with effort"],["4th, 7th","shines through home or partners"],["8th, 12th","the light turns inward"]]},
+ {"type":"quote","label":"The Upanishads","title":"The light of all lights","quote":"That is the pure light of all lights","source":"Mundaka Upanishad 2.2.9","body":["The Sun in your chart is the closest symbol Jyotish has for that light"]},
+ {"type":"cta","orb":{"kind":"sun","r":70,"rings":false},"title":"Find your Sun","subtitle":"Which sign, which house?","lines":["Free chart at sutram.ca","The full course at learnsutram.com"],"next":"Next lesson · The Moon"}]}
