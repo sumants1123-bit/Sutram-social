@@ -1,13 +1,17 @@
 {
   "posted": [
-    {"id": "intro", "when": "2026-10-26T17:56:00-04:00", "url": "https://www.instagram.com/p/De-TKPWjYy8/"}
+    {"id": "intro", "when": "2026-10-26T17:56:00-04:00", "url": "https://www.instagram.com/p/De-TKPWjYy8/", "note": "replaced by intro2; Sumant deletes or archives it"},
+    {"id": "intro2", "when": "2026-10-26T18:46:00-04:00", "url": "https://www.instagram.com/p/De-Y8RTCouV/", "note": "pinned intro"}
   ],
   "scheduled": [
-    {"id": "ep01", "when": "2026-10-27T11:00:00-04:00"},
-    {"id": "sky-2026-10-28", "when": "2026-10-28T07:00:00-04:00"},
-    {"id": "lesson01", "when": "2026-10-28T12:00:00-04:00"}
+    {"id": "sky-2026-10-28-v2", "when": "2026-10-28T07:00:00-04:00"},
+    {"id": "lesson01-v2", "when": "2026-10-28T12:00:00-04:00"},
+    {"id": "ep01-v2", "when": "2026-10-28T18:30:00-04:00", "title": "Body, mind, soul"}
   ],
-  "made_not_scheduled": ["sky-2026-10-29", "lesson02", "close-2026-10-29-mercury"],
-  "next_lesson": 3,
-  "next_thread_episode": 2
+  "to_redo_plain": ["sky-2026-10-29", "lesson02", "close-2026-10-29-mercury"],
+  "retired": ["ep01", "lesson01", "sky-2026-10-28"],
+  "next_lesson": 2,
+  "next_thread_episode": 2,
+  "next_thread_title": "Five layers of you",
+  "style": "plain words, one idea per slide, about 20 words a slide, caption under about 1,000 characters that says what the slides say"
 }
