@@ -50,7 +50,7 @@ def clean(t):
     t=t.strip()
     while t.endswith('.') and not t.endswith('..'): t=t[:-1].rstrip()
     return t
-def esc(t): return clean(t).replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('\n','<br>')
+def esc(t): return clean(t).replace("'",'’').replace('&','&amp;').replace('<','&lt;').replace('>','&gt;').replace('\n','<br>')
 def rich(t):
     """*word* makes amber italic."""
     return re.sub(r'\*(.+?)\*', r'<span class="ti">\1</span>', esc(t))
@@ -113,10 +113,11 @@ def orb(o):
 def slide_html(sp):
     t=sp['type']; H=[]
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
-    if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px">{esc(sp["label"])}</div>')
-    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows'):
+    bs=f'font-size:{sp["bodysize"]}px;' if sp.get('bodysize') else ''
+    if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:%spx" % sp["labelsize"] if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
+    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack'):
         if sp.get('title'):
-            cls={'cover':'h1','cta':'h1'}.get(t,'h2' if len(clean(sp['title']))<26 else 'h3')
+            cls=sp.get('titleclass') or {'cover':'h1','cta':'h1'}.get(t,'h2' if len(clean(sp['title']))<26 else 'h3')
             H.append(f'<div class="t {cls}">{rich(sp["title"])}</div>')
         if sp.get('subtitle'): H.append(f'<div class="ti sub" style="margin-top:22px">{esc(sp["subtitle"])}</div>')
     if t=='quote':
@@ -140,6 +141,10 @@ def slide_html(sp):
         roman=['i','ii','iii','iv','v','vi']
         for i,(a,b) in enumerate(sp['steps']):
             H.append(f'<div style="padding:20px 0"><div class="ti" style="font-size:58px;line-height:1">{roman[i]}</div><div class="t" style="font-size:58px;line-height:1.05;margin-top:4px">{esc(a)}</div><div class="p" style="margin-top:6px">{esc(b)}</div></div>')
+    if t=='stack':
+        H.append('<div class="rule"></div>')
+        for a,b in sp['items']:
+            H.append(f'<div style="padding:18px 0"><div class="t" style="font-size:60px;line-height:1.05">{esc(a)}</div><div class="p" style="margin-top:8px;{bs}">{esc(b)}</div></div>')
     if t=='sentence':
         H.append('<div class="rule"></div>')
         H.append(f'<div class="t h3">{esc(sp["example"])}</div>')
@@ -149,10 +154,10 @@ def slide_html(sp):
         H.append('<div class="grid2" style="margin-top:28px;border-top:1px solid rgba(217,165,122,.25);border-bottom:1px solid rgba(217,165,122,.25);padding:8px 0">'+''.join(f'<div style="padding:12px 0"><div class="lab">{esc(a)}</div><div class="p" style="margin-top:10px">{esc(b)}</div></div>' for a,b in sp['cells'])+'</div>')
         H.append(f'<div class="grid2" style="grid-template-columns:1.35fr 1fr;margin-top:24px"><div><span class="lab">Good for</span><div class="p" style="margin-top:8px;font-size:31px">{esc(sp["good"])}</div></div><div><span class="lab">Go slow on</span><div class="p" style="margin-top:8px;font-size:31px">{esc(sp["slow"])}</div></div></div>')
     if sp.get('body'):
-        H.append('<div style="margin-top:30px">'+''.join(f'<div class="p">{esc(l)}</div>' for l in sp['body'])+'</div>')
+        H.append('<div style="margin-top:30px">'+''.join(f'<div class="p" style="{bs}">{esc(l)}</div>' for l in sp['body'])+'</div>')
     if sp.get('note'): H.append(f'<div class="src" style="margin-top:28px;letter-spacing:.12em">{esc(sp["note"])}</div>')
     if t=='cta':
-        H.append('<div class="rule"></div>'+''.join(f'<div class="p" style="margin-top:6px">{esc(l)}</div>' for l in sp.get('lines',[])))
+        H.append('<div class="rule"></div>'+''.join(f'<div class="p" style="margin-top:6px;{bs}">{esc(l)}</div>' for l in sp.get('lines',[])))
         if sp.get('next'): H.append(f'<div class="src" style="margin-top:28px">{esc(sp["next"])}</div>')
     if sp.get('closing'): H.append(f'<div class="ti sub" style="margin-top:34px">{esc(sp["closing"])}</div>')
     return ''.join(H)

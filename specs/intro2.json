@@ -1,0 +1,101 @@
+{
+  "id": "intro2",
+  "kicker": "Sutram",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Sutram · Start here",
+      "stars": true,
+      "orb": {
+        "kind": "moon",
+        "r": 150,
+        "illum": 1.0
+      },
+      "title": "Know yourself",
+      "subtitle": "Philosophy and astrology, one purpose"
+    },
+    {
+      "type": "text",
+      "label": "Philosophy asks",
+      "title": "Who am I?",
+      "body": [
+        "It teaches you to look within",
+        "and see your own mind clearly"
+      ],
+      "titleclass": "h1",
+      "labelsize": 26,
+      "bodysize": 44
+    },
+    {
+      "type": "text",
+      "label": "Astrology shows",
+      "orb": {
+        "kind": "south",
+        "s": 250,
+        "labels": false,
+        "asc": "Aries"
+      },
+      "title": "How am I made?",
+      "body": [
+        "Your birth chart maps your nature",
+        "your strengths, your struggles",
+        "and the timing of your life"
+      ],
+      "labelsize": 26,
+      "bodysize": 42
+    },
+    {
+      "type": "text",
+      "orb": {
+        "kind": "orbit",
+        "w": 700,
+        "h": 150,
+        "beads": 5,
+        "tilt": -7,
+        "lit": 2
+      },
+      "label": "Sutram means thread",
+      "title": "One purpose",
+      "body": [
+        "Philosophy asks who you are",
+        "Astrology shows how you're made"
+      ],
+      "closing": "Both help you know yourself",
+      "labelsize": 25,
+      "bodysize": 41
+    },
+    {
+      "type": "stack",
+      "title": "Here, every day",
+      "items": [
+        [
+          "Today's Sky",
+          "Each morning, what the day is good for"
+        ],
+        [
+          "A daily lesson",
+          "Astrology, one clear step at a time"
+        ],
+        [
+          "The Thread",
+          "Wednesdays, philosophy read through your chart"
+        ]
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "sun",
+        "r": 90,
+        "rings": true
+      },
+      "title": "Start with\nyour chart",
+      "subtitle": "Free at sutram.ca",
+      "lines": [
+        "Follow for a new lesson every day"
+      ],
+      "bodysize": 40
+    }
+  ]
+}
