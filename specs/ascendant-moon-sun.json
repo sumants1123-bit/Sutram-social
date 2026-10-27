@@ -1,0 +1,86 @@
+{
+  "id": "ascendant-moon-sun",
+  "kicker": "Reading your chart",
+  "slides": [
+    {
+      "type": "svg",
+      "stars": true,
+      "title": "Your *Ascendant*",
+      "titleclass": "h2",
+      "subtitle": "And why you read it with the Moon and Sun",
+      "svgfile": "svg/asc-scene.svg",
+      "svgwidth": 880,
+      "svgmargin": "28px auto 0"
+    },
+    {
+      "type": "text",
+      "orb": {
+        "kind": "asc",
+        "s": 240
+      },
+      "label": "The Ascendant",
+      "labelsize": 26,
+      "title": "Your body\nand your path",
+      "body": [
+        "The sign rising in the east as you were born",
+        "It changes every two hours or so"
+      ],
+      "bodysize": 40,
+      "note": "Parashara calls the 1st house tanu, the body"
+    },
+    {
+      "type": "text",
+      "orb": {
+        "kind": "moon",
+        "r": 105,
+        "illum": 1.0
+      },
+      "label": "The Moon",
+      "labelsize": 26,
+      "title": "How you feel\nand react",
+      "body": [
+        "Day to day: your moods and your mind",
+        "That's why transits are read from the Moon"
+      ],
+      "bodysize": 40,
+      "note": "Brihat Jataka 2.1 · Phaladeepika 26"
+    },
+    {
+      "type": "text",
+      "orb": {
+        "kind": "sun",
+        "r": 88,
+        "rings": true
+      },
+      "label": "The Sun",
+      "labelsize": 26,
+      "title": "Your soul\nand purpose",
+      "body": [
+        "What you live for",
+        "and where your confidence comes from"
+      ],
+      "bodysize": 40,
+      "note": "Brihat Jataka 2.1"
+    },
+    {
+      "type": "svg",
+      "title": "Same Ascendant,\ndifferent Moon",
+      "titleclass": "h3",
+      "svgfile": "svg/asc-two-moons.svg",
+      "svgwidth": 860,
+      "svgmargin": "30px auto 0",
+      "closing": "They may look alike. They feel very different"
+    },
+    {
+      "type": "svg",
+      "stars": true,
+      "title": "Read all three",
+      "titleclass": "h2",
+      "svgfile": "svg/asc-triad.svg",
+      "svgwidth": 820,
+      "svgmargin": "18px auto 0",
+      "footnote": "and the chart starts to make much more sense",
+      "note": "Find all three in your free chart · sutram.ca"
+    }
+  ]
+}

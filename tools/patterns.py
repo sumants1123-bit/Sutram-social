@@ -175,3 +175,71 @@ def november():
 
 if __name__=='__main__':
     venus_rose(); jupiter_loops(); november(); print('ok')
+
+# ---------- Ascendant post: sky scene, two Moons, three lights ----------
+def _moon(cx,cy,r,gid):
+    return (f'<defs><radialGradient id="{gid}" cx="40%" cy="36%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".35" stop-color="#F1EDE8"/>'
+            f'<stop offset=".75" stop-color="#D2CBCB"/><stop offset="1" stop-color="#9F989D"/></radialGradient></defs>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r*1.6}" fill="#FFF4E6" opacity=".16" filter="url(#soft)"/><circle cx="{cx}" cy="{cy}" r="{r}" fill="url(#{gid})"/>'
+            + ''.join(f'<circle cx="{cx+dx*r:.1f}" cy="{cy+dy*r:.1f}" r="{rr*r:.1f}" fill="#8F888D" opacity="{op}"/>' for dx,dy,rr,op in [(-.2,-.12,.16,.16),(.22,.06,.12,.14),(.04,.32,.1,.12)]))
+def _sun(cx,cy,r,gid):
+    return (f'<defs><radialGradient id="{gid}" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#FFE8CF"/><stop offset=".25" stop-color="#FBB37C"/>'
+            f'<stop offset=".62" stop-color="#EE7838"/><stop offset="1" stop-color="#A8401A"/></radialGradient></defs>'
+            f'<circle cx="{cx}" cy="{cy}" r="{r*1.9}" fill="#EF7A3C" opacity=".30" filter="url(#soft)"/><circle cx="{cx}" cy="{cy}" r="{r}" fill="url(#{gid})"/>')
+def _asc(cx,cy,s,col=GOLD,w=2.4):
+    return (f'<path d="M{cx-s*.62},{cy} A{s*.62},{s*.62} 0 0 1 {cx+s*.62},{cy}" fill="none" stroke="{col}" stroke-width="{w}"/>'
+            f'<line x1="{cx-s}" y1="{cy}" x2="{cx+s}" y2="{cy}" stroke="{col}" stroke-width="{w}"/>')
+def _lab(x,y,t,size=20,col=GOLD,op=.85,anchor='middle',sp=3,italic=False,fam='EB Garamond'):
+    return f'<text x="{x:.1f}" y="{y:.1f}" text-anchor="{anchor}" font-family="{fam}" font-size="{size}" letter-spacing="{sp}" {"font-style=\"italic\"" if italic else ""} fill="{col}" fill-opacity="{op}">{t}</text>'
+
+def asc_scene():
+    W,H=900,600; hy=470; cx=450; rx=300; ry=330
+    o=[f'<defs><filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="14"/></filter>'
+       f'<filter id="gl" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="3.5"/></filter>'
+       f'<filter id="haze" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="38"/></filter>'
+       f'<linearGradient id="hz" gradientUnits="userSpaceOnUse" x1="40" y1="0" x2="860" y2="0"><stop offset="0" stop-color="{GOLD}" stop-opacity="0"/><stop offset=".15" stop-color="{GOLD}" stop-opacity=".8"/><stop offset=".85" stop-color="{GOLD}" stop-opacity=".8"/><stop offset="1" stop-color="{GOLD}" stop-opacity="0"/></linearGradient></defs>']
+    ax=cx-rx
+    o.append(f'<ellipse cx="{ax+40}" cy="{hy-10}" rx="150" ry="90" fill="{AMBER}" opacity=".30" filter="url(#haze)"/>')
+    o.append(f'<ellipse cx="{cx}" cy="{hy+40}" rx="330" ry="46" fill="#000" opacity=".35" filter="url(#haze)"/>')
+    arc=f'M{cx-rx},{hy} A{rx},{ry} 0 0 1 {cx+rx},{hy}'
+    o.append(f'<path d="{arc}" fill="none" stroke="{GOLD}" stroke-opacity=".45" stroke-width="6" filter="url(#gl)"/>')
+    o.append(f'<path d="{arc}" fill="none" stroke="{GOLD}" stroke-opacity=".8" stroke-width="1.8"/>')
+    for k in range(1,6):
+        a=math.radians(180-k*30); x=cx+rx*math.cos(a); y=hy-ry*math.sin(a)
+        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="5" fill="{CREAM}" opacity=".85"/>')
+    o.append(f'<line x1="40" y1="{hy}" x2="{W-40}" y2="{hy}" stroke="url(#hz)" stroke-width="1.8"/>')
+    o.append(f'<circle cx="{ax}" cy="{hy}" r="26" fill="{AMBER}" opacity=".5" filter="url(#soft)"/><circle cx="{ax}" cy="{hy}" r="9" fill="{AMBER}"/>')
+    o.append(_lab(ax,hy+50,'ASCENDANT',21,AMBER,.95)); o.append(_lab(ax,hy+80,'rising in the east',23,CREAM,.8,sp=0,italic=True))
+    o.append(_lab(cx+rx,hy+50,'WEST',19,GOLD,.55))
+    a=math.radians(138); mx=cx+rx*math.cos(a); my=hy-ry*math.sin(a); o.append(_moon(mx,my,30,'am')); o.append(_lab(mx-52,my+8,'MOON',19,CREAM,.75,'end'))
+    a=math.radians(52); sx=cx+rx*math.cos(a); sy=hy-ry*math.sin(a); o.append(_sun(sx,sy,32,'as')); o.append(_lab(sx+56,sy+8,'SUN',19,CREAM,.75,'start'))
+    open(os.path.join(OUT,'asc-scene.svg'),'w').write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">{"".join(o)}</svg>')
+
+def two_moons():
+    W,H=900,560; o=['<defs><filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="12"/></filter></defs>']
+    o.append(f'<line x1="{W/2}" y1="20" x2="{W/2}" y2="{H-20}" stroke="{GOLD}" stroke-opacity=".3" stroke-width="1.2"/>')
+    for i,(moon,line1,line2) in enumerate([('Moon in Aries','Reacts fast','says it straight'),('Moon in Pisces','Takes in','everyone’s feelings')]):
+        x=W/4+i*W/2
+        o.append(_lab(x,52,'LEO ASCENDANT',20,GOLD,.9))
+        o.append(_asc(x,118,46,GOLD,2.2))
+        o.append(_moon(x,236,52,f'tm{i}'))
+        o.append(_lab(x,352,moon,44,CREAM,1,sp=0,fam='Cormorant Garamond'))
+        o.append(_lab(x,410,line1,30,CREAM,.85,sp=0,italic=True)); o.append(_lab(x,450,line2,30,CREAM,.85,sp=0,italic=True))
+    o.append(_lab(W/4,512,'same body, same path',20,GOLD,.6)); o.append(_lab(3*W/4,512,'same body, same path',20,GOLD,.6))
+    open(os.path.join(OUT,'asc-two-moons.svg'),'w').write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">{"".join(o)}</svg>')
+
+def triad():
+    W,H=900,580; o=['<defs><filter id="soft" x="-80%" y="-80%" width="260%" height="260%"><feGaussianBlur stdDeviation="12"/></filter></defs>']
+    S=(450,120); A=(190,400); M=(710,400)
+    o.append(f'<polygon points="{S[0]},{S[1]} {A[0]},{A[1]} {M[0]},{M[1]}" fill="{AMBER}" fill-opacity=".05" stroke="{GOLD}" stroke-opacity=".6" stroke-width="1.6"/>')
+    o.append(_sun(S[0],S[1],46,'ts')); o.append(_moon(M[0],M[1],42,'tm'))
+    o.append(f'<circle cx="{A[0]}" cy="{A[1]}" r="58" fill="{BG}" stroke="{GOLD}" stroke-opacity=".45" stroke-width="1.4"/>'+_asc(A[0],A[1]+14,52,GOLD,2.6)+f'<circle cx="{A[0]}" cy="{A[1]+14}" r="22" fill="{AMBER}" opacity=".35" filter="url(#soft)"/>')
+    for (x,y),t,s in [((S[0],S[1]-78),'SUN','soul and purpose'),((A[0],A[1]+82),'ASCENDANT','body and path'),((M[0],M[1]+82),'MOON','feelings, day to day')]:
+        if t=='SUN':
+            o.append(_lab(x+92,y+86,t,21,GOLD,.95,'start')); o.append(_lab(x+92,y+116,s,26,CREAM,.85,'start',0,True))
+        else:
+            o.append(_lab(x,y,t,21,GOLD,.95)); o.append(_lab(x,y+32,s,26,CREAM,.85,sp=0,italic=True))
+    open(os.path.join(OUT,'asc-triad.svg'),'w').write(f'<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 {W} {H}" width="{W}" height="{H}">{"".join(o)}</svg>')
+
+if __name__=='__main__':
+    asc_scene(); two_moons(); triad(); print('asc ok')
