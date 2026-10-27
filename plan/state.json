@@ -45,6 +45,21 @@
       "id": "scripture-2026-10-30",
       "when": "2026-10-30T18:30:00-04:00",
       "title": "Know yourself, five ways"
+    },
+    {
+      "id": "venus-rose-2026",
+      "when": "2026-10-27T12:00:00-04:00",
+      "title": "The rose of Venus (Sky Patterns)"
+    },
+    {
+      "id": "nov-2026-sky",
+      "when": "2026-10-27T18:30:00-04:00",
+      "title": "November sky, 2026"
+    },
+    {
+      "id": "jupiter-loops-2026",
+      "when": "2026-10-31T18:30:00-04:00",
+      "title": "Twelve years of Jupiter (Sky Patterns, Jupiter enters Leo)"
     }
   ],
   "retired": [
@@ -60,10 +75,16 @@
   "next_thread_title": "Five layers of you",
   "style": "plain words, one idea per slide, about 20 words a slide, caption under about 1,000 characters that says what the slides say",
   "next_to_make": [
-    "sky-2026-10-30 (7 AM)",
+    "sky-2026-10-30 (Fri 7 AM)",
     "lesson03 the Moon (Fri 12 PM)",
-    "sky-2026-10-31",
-    "lesson04 Mars",
-    "big shift: Jupiter enters Leo, Sat 31 Oct 3:00 AM (Sat evening slot)"
+    "sky-2026-10-31 (Sat 7 AM)",
+    "lesson04 Mars (Sat 12 PM)",
+    "Sun 1 Nov: sky, lesson05 Mercury, week ahead by Moon sign"
+  ],
+  "sky_patterns_ideas": [
+    "The 60-year clock (5 Jupiter laps = 2 Saturn laps = one Samvatsara cycle)",
+    "Mercury's triangle (three passes a year)",
+    "The Moon's 27 stars",
+    "Mars loops"
   ]
 }
