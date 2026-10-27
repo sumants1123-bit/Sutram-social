@@ -108,12 +108,21 @@ def icon(kind, s=64):
         g=uid('is'); return f'<svg width="{s}" height="{s}"><defs><radialGradient id="{g}" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#FFE8CF"/><stop offset=".3" stop-color="#FBB37C"/><stop offset=".7" stop-color="#EE7838"/><stop offset="1" stop-color="#A8401A"/></radialGradient></defs><circle cx="{c}" cy="{c}" r="{s*0.36}" fill="url(#{g})"/></svg>'
     # asc: the Sun's disc rising on the horizon line
     return f'<svg width="{s}" height="{s}"><path d="M{s*0.2},{s*0.62} A{s*0.3},{s*0.3} 0 0 1 {s*0.8},{s*0.62}" fill="none" stroke="{GOLD}" stroke-width="2.4"/><line x1="{s*0.06}" y1="{s*0.62}" x2="{s*0.94}" y2="{s*0.62}" stroke="{GOLD}" stroke-width="2.4"/></svg>'
+def venus_orb(R=80):
+    g,h=uid('vg'),uid('vh'); s=2*R+160; c=s/2
+    return f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs><radialGradient id="{g}" cx="38%" cy="34%" r="74%"><stop offset="0" stop-color="#FFFBF2"/><stop offset=".35" stop-color="#F6E7C8"/><stop offset=".75" stop-color="#E2C48F"/><stop offset="1" stop-color="#B8925A"/></radialGradient><filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.4}"/></filter></defs><circle cx="{c}" cy="{c}" r="{R*1.1}" fill="#F3DDB0" opacity=".38" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/></svg>'
+def jupiter_orb(R=95):
+    g,h,cl=uid('jg'),uid('jh'),uid('jc'); s=2*R+160; c=s/2
+    bands=''.join(f'<rect x="{c-R}" y="{c+R*y:.1f}" width="{2*R}" height="{R*hh:.1f}" fill="{col}" opacity="{op}"/>' for y,hh,col,op in [(-.62,.10,'#B9875A',.35),(-.38,.14,'#A86F45',.42),(-.12,.08,'#E9D3B0',.35),(.06,.16,'#9C6440',.45),(.30,.08,'#C99A6B',.35),(.48,.12,'#A87450',.35),(.70,.08,'#C9A27A',.3)])
+    return f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs><radialGradient id="{g}" cx="38%" cy="32%" r="78%"><stop offset="0" stop-color="#F7E9D2"/><stop offset=".45" stop-color="#E2C49C"/><stop offset=".85" stop-color="#A57850"/><stop offset="1" stop-color="#6E4A2E"/></radialGradient><clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath><filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.4}"/></filter></defs><circle cx="{c}" cy="{c}" r="{R*1.08}" fill="#E0B98A" opacity=".30" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{bands}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})" opacity=".35"/><ellipse cx="{c+R*.28}" cy="{c+R*.16}" rx="{R*.13}" ry="{R*.07}" fill="#A0563A" opacity=".55"/></g><circle cx="{c}" cy="{c}" r="{R}" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="{R*.08}" style="filter:blur(4px)"/></svg>'
 def orb(o):
     if not o: return ''
     k=o.get('kind'); 
     if k=='moon': return moon(o.get('r',140),o.get('illum',1.0),o.get('waxing',True))
     if k=='sun': return sun(o.get('r',95),o.get('rings',True))
     if k=='orbit': return orbit(o.get('w',720),o.get('h',160),o.get('beads',5),o.get('tilt',-7),o.get('lit'))
+    if k=='venus': return venus_orb(o.get('r',80))
+    if k=='jupiter': return jupiter_orb(o.get('r',95))
     if k=='north': return north(o.get('s',320),o.get('nums',False))
     if k=='south': return south(o.get('s',320),o.get('labels',True),o.get('asc'))
     return ''
@@ -123,7 +132,7 @@ def slide_html(sp):
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
     bs=f'font-size:{sp["bodysize"]}px;' if sp.get('bodysize') else ''
     if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:%spx" % sp["labelsize"] if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
-    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons'):
+    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg'):
         if sp.get('title'):
             cls=sp.get('titleclass') or {'cover':'h1','cta':'h1'}.get(t,'h2' if len(clean(sp['title']))<26 else 'h3')
             H.append(f'<div class="t {cls}">{rich(sp["title"])}</div>')
@@ -155,6 +164,11 @@ def slide_html(sp):
             H.append(f'<div style="padding:18px 0"><div class="t" style="font-size:60px;line-height:1.05">{esc(a)}</div><div class="p" style="margin-top:8px;{bs}">{esc(b)}</div></div>')
     if t=='icons':
         H.append('<div style="margin-top:34px;display:inline-block;text-align:left">'+''.join(f'<div style="display:flex;align-items:center;gap:30px;padding:16px 0">{icon(k,76)}<div><div class="t" style="font-size:60px;line-height:1">{esc(a)}</div><div class="p" style="margin-top:6px;{bs}">{esc(b)}</div></div></div>' for k,a,b in sp['items'])+'</div>')
+    if t=='svg':
+        svg=open(os.path.join(REPO,sp['svgfile'])).read(); w=sp.get('svgwidth',760)
+        svg=re.sub(r'width="\d+" height="\d+"',f'width="{w}" height="{w}"',svg,count=1)
+        H.append(f'<div style="margin:{sp.get("svgmargin","8px auto 0")};line-height:0">{svg}</div>')
+        if sp.get('footnote'): H.append(f'<div class="ti" style="font-size:{sp.get("footsize",40)}px;line-height:1.2;margin-top:4px">{esc(sp["footnote"])}</div>')
     if t=='sentence':
         H.append('<div class="rule"></div>')
         H.append(f'<div class="t h3">{esc(sp["example"])}</div>')

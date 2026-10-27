@@ -1,0 +1,36 @@
+{
+  "id": "nov-2026-sky",
+  "kicker": "November 2026",
+  "slides": [
+    {"type": "svg", "stars": true, "kicker": "Next month",
+     "title": "November *sky*", "titleclass": "h2",
+     "subtitle": "Where the planets stand as the month begins",
+     "svgfile": "svg/nov-2026-chart.svg", "svgwidth": 640,
+     "note": "R means moving backward · sidereal, as in Jyotish"},
+
+    {"type": "svg",
+     "title": "The month at a glance", "titleclass": "h3",
+     "svgfile": "svg/nov-2026-timeline.svg", "svgwidth": 880, "svgmargin": "26px auto 0"},
+
+    {"type": "text", "orb": {"kind": "jupiter", "r": 85},
+     "label": "The big move", "labelsize": 26,
+     "title": "Jupiter enters Leo",
+     "subtitle": "Early on 31 October",
+     "body": ["A short first visit until 24 January", "then back in Leo from 25 June 2027", "Mars joins it in Leo on 12 November"],
+     "bodysize": 40},
+
+    {"type": "stack", "label": "Take care", "labelsize": 24,
+     "title": "Three things to watch",
+     "items": [["Until 13 November", "Review before you sign or buy"],
+               ["From 12 November", "More drive, so mind your temper"],
+               ["All month", "Saturn moves backward: finish old work"]],
+     "bodysize": 38},
+
+    {"type": "cta", "orb": {"kind": "orbit", "w": 560, "h": 120, "beads": 5, "tilt": -7, "lit": 2},
+     "title": "Your own November",
+     "subtitle": "Rhythm+ at sutram.ca",
+     "lines": ["Every day, timed to your own chart"],
+     "bodysize": 40,
+     "next": "Coming next · Rahu and Ketu change signs on 5 December"}
+  ]
+}

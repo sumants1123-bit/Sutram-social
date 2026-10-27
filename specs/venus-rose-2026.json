@@ -1,0 +1,27 @@
+{
+  "id": "venus-rose-2026",
+  "kicker": "Sky Patterns",
+  "slides": [
+    {"type": "svg", "stars": true,
+     "title": "The rose of *Venus*", "titleclass": "h3",
+     "subtitle": "Eight years of Venus, from real positions",
+     "svgfile": "svg/venus-rose.svg", "svgwidth": 740,
+     "footnote": "Five meetings with the Sun in eight years",
+     "note": "Venus seen from Earth, every day, Oct 2018 to Oct 2026"},
+
+    {"type": "stack", "label": "How it happens", "labelsize": 24,
+     "title": "Five passes,\neight years",
+     "items": [["Every 584 days", "Venus passes between the Earth and the Sun"],
+               ["Five of these passes", "take almost exactly eight years"],
+               ["So the path repeats", "and draws a five-petal rose"]],
+     "bodysize": 36,
+     "note": "The latest pass was on 23 October 2026"},
+
+    {"type": "cta", "orb": {"kind": "venus", "r": 78},
+     "title": "Venus is Shukra",
+     "subtitle": "Love, beauty and comfort",
+     "lines": ["Moving backward until 13 November", "Where is Venus in your chart?"],
+     "bodysize": 40,
+     "next": "Free chart at sutram.ca"}
+  ]
+}
