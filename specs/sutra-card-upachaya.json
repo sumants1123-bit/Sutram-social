@@ -1,0 +1,15 @@
+{
+  "id": "sutra-card-upachaya",
+  "kicker": "Sutra · Houses that grow",
+  "decor_theme": "thread",
+  "slides": [
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "Some parts of your chart\nare meant to start rough",
+      "source": "Sutram",
+      "quotesize": 68
+    }
+  ]
+}
