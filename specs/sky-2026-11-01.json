@@ -1,0 +1,37 @@
+{
+  "id": "sky-2026-11-01",
+  "kicker": "Today's Sky · Sunday 1 November",
+  "slides": [
+    {
+      "type": "sky",
+      "orb": {
+        "kind": "moon",
+        "r": 118,
+        "illum": 0.541,
+        "waxing": false
+      },
+      "title": "Moon in Pushya",
+      "subtitle": "The nourisher, at home in Cancer",
+      "cells": [
+        [
+          "Moon phase",
+          "Waning, 8th day"
+        ],
+        [
+          "Festival",
+          "Ahoi Ashtami"
+        ],
+        [
+          "Rahu Kaal, Toronto",
+          "3:50 to 5:06 PM"
+        ],
+        [
+          "Moving backward",
+          "Mercury, Venus, Saturn"
+        ]
+      ],
+      "good": "learning, cooking, family",
+      "slow": "signing and big buys"
+    }
+  ]
+}

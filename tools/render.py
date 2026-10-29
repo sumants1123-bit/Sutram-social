@@ -148,9 +148,25 @@ def mars_orb(R=80, dim=False):
             f'<filter id="{cb}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{R*.035:.1f}"/></filter></defs>'
             f'{glow}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{lands}{cap}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>'
             f'<circle cx="{c}" cy="{c}" r="{R-.8:.1f}" fill="none" stroke="#FFD9BE" stroke-opacity="{.10 if dim else .18}" stroke-width="1.6"/></svg>')
+def mercury_orb(R=70, dim=False):
+    """Mercury: small, quick and cratered, in the grey-green of durva grass that Parashara gives it."""
+    g,h,cl,sh,bl=uid('qg'),uid('qh'),uid('qc'),uid('qs'),uid('qb'); s=2*R+120; c=s/2
+    stops=('#E4F0D6','#A3C08C','#5E8456','#24361F') if not dim else ('#B4BBA8','#87927C','#59644F','#272D22')
+    glow='' if dim else f'<circle cx="{c}" cy="{c}" r="{R*1.1}" fill="#9CC283" opacity=".30" filter="url(#{h})"/>'
+    craters=''.join(f'<circle cx="{c+dx*R:.1f}" cy="{c+dy*R:.1f}" r="{rr*R:.1f}" fill="#3E4D3E" opacity="{op}" filter="url(#{bl})"/><circle cx="{c+dx*R-rr*R*.25:.1f}" cy="{c+dy*R-rr*R*.25:.1f}" r="{rr*R*.7:.1f}" fill="#FFFFFF" opacity="{op*.22:.2f}" filter="url(#{bl})"/>'
+                    for dx,dy,rr,op in [(-.30,-.18,.15,.30),(.24,.10,.11,.26),(.02,.42,.09,.24),(-.42,.30,.07,.22),(.38,-.36,.08,.22),(-.05,-.48,.06,.2),(.55,.32,.06,.2)])
+    return (f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-40px auto -40px"><defs>'
+            f'<radialGradient id="{g}" cx="38%" cy="32%" r="76%"><stop offset="0" stop-color="{stops[0]}"/><stop offset=".45" stop-color="{stops[1]}"/><stop offset=".85" stop-color="{stops[2]}"/><stop offset="1" stop-color="{stops[3]}"/></radialGradient>'
+            f'<radialGradient id="{sh}" cx="36%" cy="30%" r="82%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/></radialGradient>'
+            f'<clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath>'
+            f'<filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.2:.1f}"/></filter>'
+            f'<filter id="{bl}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{max(1.2,R*.025):.1f}"/></filter></defs>'
+            f'{glow}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{craters}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>'
+            f'<circle cx="{c}" cy="{c}" r="{R-.8:.1f}" fill="none" stroke="#E8F0DE" stroke-opacity="{.08 if dim else .16}" stroke-width="1.4"/></svg>')
 def orb(o):
     if not o: return ''
-    k=o.get('kind'); 
+    k=o.get('kind');
+    if k=='mercury': return mercury_orb(o.get('r',70),o.get('dim',False))
     if k=='moon': return moon(o.get('r',140),o.get('illum',1.0),o.get('waxing',True))
     if k=='sun': return sun(o.get('r',95),o.get('rings',True))
     if k=='orbit': return orbit(o.get('w',720),o.get('h',160),o.get('beads',5),o.get('tilt',-7),o.get('lit'))
@@ -176,7 +192,8 @@ def slide_html(sp, s=1.0):
         if sp.get('subtitle'): H.append(f'<div class="ti sub" style="margin-top:22px">{esc(sp["subtitle"])}</div>')
     if t=='quote':
         H.append('<div class="rule"></div>')
-        H.append(f'<div class="ti h3" style="color:{CREAM}">“{esc(sp["quote"])}”</div>')
+        qs=f'font-size:{F(sp["quotesize"])};line-height:1.12;' if sp.get('quotesize') else ''
+        H.append(f'<div class="ti h3" style="color:{CREAM};{qs}">“{esc(sp["quote"])}”</div>')
         if sp.get('source'): H.append(f'<div class="src" style="margin-top:24px;font-size:{F(27)}">{esc(sp["source"])}</div>')
     if t=='quotes':
         for i,(lab,qt,src) in enumerate(sp['items']):
@@ -190,7 +207,8 @@ def slide_html(sp, s=1.0):
     if t=='rows':
         H.append('<div style="margin-top:30px;width:100%">'+''.join(f'<div class="row"><span class="t" style="font-size:{F(52)};white-space:nowrap">{esc(a)}</span><span class="p" style="text-align:right;font-size:{T(sp.get("bodysize",34))}">{esc(b)}</span></div>' for a,b in sp['items'])+'</div>')
     if t=='grid':
-        H.append('<div class="grid2" style="margin-top:22px">'+''.join(f'<div style="padding:20px 0"><div class="lab">{esc(a)}</div><div class="t" style="font-size:{F(50)};line-height:1.1;margin-top:12px">{esc(b)}</div><div class="pi" style="margin-top:4px">{esc(c)}</div></div>' for a,b,c in sp['cells'])+'</div>')
+        # a 4th value set to true lights that cell's middle line in amber (e.g. Jupiter's best houses)
+        H.append('<div class="grid2" style="margin-top:22px">'+''.join(f'<div style="padding:{F(sp.get("cellpad",20))} 0"><div class="lab">{esc(cell[0])}</div><div class="t" style="font-size:{F(sp.get("cellsize",50))};line-height:1.1;margin-top:12px;{"color:"+AMBER+";" if len(cell)>3 and cell[3] else ""}">{esc(cell[1])}</div><div class="pi" style="margin-top:4px;{bs}">{esc(cell[2])}</div></div>' for cell in sp['cells'])+'</div>')
     if t=='steps':
         roman=['i','ii','iii','iv','v','vi']
         for i,(a,b) in enumerate(sp['steps']):
@@ -242,6 +260,8 @@ def _bead(x,y,kind,uidp):
                 f'<circle cx="{x:.1f}" cy="{y:.1f}" r="15" fill="url(#{g})"/><g clip-path="url(#{g}c)" opacity=".45"><rect x="{x-15:.1f}" y="{y-6:.1f}" width="30" height="3" fill="#9C6440"/><rect x="{x-15:.1f}" y="{y+2:.1f}" width="30" height="4" fill="#A8744F"/></g>')
     if kind=='mars':
         return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#F3B08A"/><stop offset=".6" stop-color="#C2643A"/><stop offset="1" stop-color="#6E2E17"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="url(#{g})"/>'
+    if kind=='mercury':
+        return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#EEF2E6"/><stop offset=".6" stop-color="#A9BA9E"/><stop offset="1" stop-color="#4E5E4C"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="12" fill="#DCE8D0" opacity=".08"/><circle cx="{x:.1f}" cy="{y:.1f}" r="5.5" fill="url(#{g})"/>'
     return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#FFFBF2"/><stop offset=".6" stop-color="#EBD3A4"/><stop offset="1" stop-color="#A88152"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="16" fill="#F3DDB0" opacity=".10"/><circle cx="{x:.1f}" cy="{y:.1f}" r="8" fill="url(#{g})"/>'
 
 def _stars(rr, n=46):
@@ -287,7 +307,7 @@ def decor(i, seed, dense=False, theme='solar', hi_phase=None):
     if theme=='solar':
         sx,sy=1110,-34
         o.append(f'<circle cx="{sx}" cy="{sy}" r="120" fill="#EF7A3C" opacity=".07"/><circle cx="{sx}" cy="{sy}" r="74" fill="#EF7A3C" opacity=".10"/><circle cx="{sx}" cy="{sy}" r="44" fill="#F08A4C" opacity=".30"/>')
-        for R,kind,a0,step in [(190,'venus',152,-3.5),(318,'mars',108,-1.6)]:
+        for R,kind,a0,step in [(112,'mercury',124,4),(190,'venus',152,-3.5),(318,'mars',108,-1.6)]:
             o.append(f'<circle cx="{sx}" cy="{sy}" r="{R}" fill="none" stroke="{GOLD}" stroke-opacity=".15" stroke-width="1.2"/>')
             a=math.radians(a0+r.uniform(-3,3)+(i-1)*step); o.append(_bead(sx+R*math.cos(a), sy+R*math.sin(a), kind, 'db'))
         cx,cy=-90,1460
