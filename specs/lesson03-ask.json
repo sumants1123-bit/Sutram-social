@@ -1,0 +1,100 @@
+{
+  "id": "lesson03-ask",
+  "kicker": "Daily lesson · 3",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "moon",
+        "r": 120,
+        "illum": 1.0
+      },
+      "title": "The Moon",
+      "subtitle": "Your mind and your feelings"
+    },
+    {
+      "type": "text",
+      "label": "What it shows",
+      "labelsize": 26,
+      "title": "Your mind",
+      "body": [
+        "How you feel and react",
+        "your mother, your home, your comfort",
+        "and how you rest"
+      ],
+      "bodysize": 40,
+      "note": "Varahamihira, Brihat Jataka 2.1"
+    },
+    {
+      "type": "stack",
+      "label": "Strong and weak",
+      "labelsize": 24,
+      "title": "Where it shines",
+      "items": [
+        [
+          "Strongest in Taurus",
+          "Exalted, at its brightest"
+        ],
+        [
+          "At home in Cancer",
+          "Its own sign, calm and caring"
+        ],
+        [
+          "Weakest in Scorpio",
+          "Debilitated, easily stirred"
+        ]
+      ],
+      "bodysize": 36,
+      "note": "Brihat Parashara Hora Shastra"
+    },
+    {
+      "type": "text",
+      "orb": {
+        "kind": "moon",
+        "r": 80,
+        "illum": 0.35,
+        "waxing": true
+      },
+      "label": "Bright or dark",
+      "labelsize": 26,
+      "title": "The phase matters",
+      "body": [
+        "A bright, growing Moon is gentle and strong",
+        "a dark, fading Moon is weaker"
+      ],
+      "bodysize": 40,
+      "note": "Parashara, on strength by phase"
+    },
+    {
+      "type": "text",
+      "label": "The story",
+      "labelsize": 26,
+      "title": "Why the Moon\nwaxes and wanes",
+      "body": [
+        "The Moon loved Rohini most of his 27 wives",
+        "Her father Daksha cursed him to waste away",
+        "Softened, the curse lets him fade and grow again"
+      ],
+      "bodysize": 36,
+      "note": "Mahabharata, Shalya Parva"
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "moon",
+        "r": 90,
+        "illum": 1.0
+      },
+      "title": "Find your Moon",
+      "subtitle": "Which sign? Bright or dark?",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40,
+      "next": "Next lesson · Mars"
+    }
+  ],
+  "decor_theme": "lunar"
+}

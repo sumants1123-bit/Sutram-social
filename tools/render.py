@@ -247,6 +247,8 @@ def slide_html(sp, s=1.0):
         H.append('<div class="rule"></div>'+''.join(f'<div class="p" style="margin-top:6px;{bs}">{esc(l)}</div>' for l in sp.get('lines',[])))
         if sp.get('next'): H.append(f'<div class="src" style="margin-top:28px">{esc(sp["next"])}</div>')
     if sp.get('closing'): H.append(f'<div class="ti sub" style="margin-top:34px">{esc(sp["closing"])}</div>')
+    # a small second link under the closing line (the newsletter, after asksutram.com)
+    if sp.get('after'): H.append(f'<div class="src" style="margin-top:22px;letter-spacing:.12em">{esc(sp["after"])}</div>')
     return ''.join(H)
 
 def _bead(x,y,kind,uidp):
@@ -381,7 +383,9 @@ def real_phase(spec):
         return phase_index(o.get('illum',1.0), o.get('waxing',True))
     return None
 
-def page(inner,kicker,s,starfield=None,url='sutram.ca',dec=''):
+# Sumant, 29 Oct: every post promotes asksutram.com first, then sutram.ca/newsletter, and nothing else
+FOOT_URL='asksutram.com'
+def page(inner,kicker,s,starfield=None,url=FOOT_URL,dec=''):
     return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide">{dec}{starfield or ''}{GRAIN}<div class="kick">{esc(kicker)}</div><div class="body">{inner}</div><div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
 
 def render(spec_path):

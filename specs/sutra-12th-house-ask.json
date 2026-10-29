@@ -1,0 +1,95 @@
+{
+  "id": "sutra-12th-house-ask",
+  "kicker": "Sutra · The 12th house",
+  "decor_theme": "thread",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "orbit",
+        "w": 560,
+        "h": 120,
+        "beads": 5,
+        "lit": 2,
+        "tilt": -6
+      },
+      "label": "The 12th house",
+      "labelsize": 28,
+      "title": "Your rest\nbudget",
+      "subtitle": "What you give up so you can keep going"
+    },
+    {
+      "type": "text",
+      "label": "Most people fear it",
+      "labelsize": 26,
+      "title": "Loss, bills,\nhospitals",
+      "titleclass": "h2",
+      "body": [
+        "The old texts give the 12th house two jobs: your expenses and your sleep",
+        "When you skip rest, you pay for it anyway"
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "stack",
+      "label": "In real life",
+      "labelsize": 24,
+      "title": "Where it shows up",
+      "items": [
+        [
+          "Sleep",
+          "Every short night costs you the next day"
+        ],
+        [
+          "Distance",
+          "A life in a new city means missed family dinners"
+        ],
+        [
+          "Quiet time",
+          "A weekend offline, a prayer hour, giving to a cause"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "What you won't spend on rest,\nyou will spend on recovery",
+      "source": "Sutram"
+    },
+    {
+      "type": "stack",
+      "label": "A strong 12th house",
+      "labelsize": 24,
+      "title": "Good at letting go",
+      "items": [
+        [
+          "Switching off",
+          "Rest, travel, a whole life abroad"
+        ],
+        [
+          "Quiet helpers",
+          "Healers and carers, people who give without being seen"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "text",
+      "label": "Practical remedy",
+      "labelsize": 26,
+      "title": "Book rest first",
+      "titleclass": "h2",
+      "body": [
+        "Open your bank app: the last three months",
+        "Circle what came from being tired: late takeout, cancelled plans, the clinic visit",
+        "Add it up, then book two hours of rest this week"
+      ],
+      "bodysize": 36,
+      "closing": "Ask about your 12th house at asksutram.com",
+      "after": "Weekly newsletter · sutram.ca/newsletter"
+    }
+  ]
+}

@@ -1,0 +1,64 @@
+{
+  "id": "jupiter-loops-2026-v2-ask",
+  "kicker": "Sky Patterns",
+  "slides": [
+    {
+      "type": "svg",
+      "stars": true,
+      "title": "Twelve years of *Jupiter*",
+      "titleclass": "h3",
+      "subtitle": "One lap of the zodiac, eleven loops",
+      "svgfile": "svg/jupiter-loops.svg",
+      "svgwidth": 740,
+      "footnote": "Each loop is about four months of moving backward",
+      "note": "Jupiter seen from Earth, every day, Oct 2026 to Oct 2038"
+    },
+    {
+      "type": "text",
+      "label": "How it moves",
+      "labelsize": 26,
+      "title": "About a year\nin each sign",
+      "body": [
+        "Jupiter circles the zodiac in 12 years",
+        "Each year it seems to move backward",
+        "for about four months: those are the loops"
+      ],
+      "bodysize": 42
+    },
+    {
+      "type": "text",
+      "orb": {
+        "kind": "jupiter",
+        "r": 90
+      },
+      "label": "Today",
+      "labelsize": 26,
+      "title": "Jupiter enters Leo",
+      "subtitle": "Saturday 31 October, 2:32 AM Toronto",
+      "body": [
+        "A short first visit until 24 January",
+        "then back in Leo from 25 June 2027"
+      ],
+      "bodysize": 40
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "orbit",
+        "w": 560,
+        "h": 120,
+        "beads": 5,
+        "tilt": -7,
+        "lit": 2
+      },
+      "title": "Find Leo\nin your chart",
+      "subtitle": "That area of life gets Jupiter's attention",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40,
+      "next": "Jupiter is Guru, the teacher"
+    }
+  ]
+}

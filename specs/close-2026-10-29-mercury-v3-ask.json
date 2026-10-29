@@ -1,0 +1,130 @@
+{
+  "id": "close-2026-10-29-mercury-v3-ask",
+  "kicker": "Close look",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "orbit",
+        "w": 700,
+        "h": 150,
+        "beads": 5,
+        "tilt": -7,
+        "lit": 2
+      },
+      "title": "Mercury *retrograde*",
+      "subtitle": "24 October to 13 November, in Libra"
+    },
+    {
+      "type": "text",
+      "label": "What it means",
+      "labelsize": 26,
+      "title": "Moving backward",
+      "body": [
+        "Mercury only looks like it reverses",
+        "The classics say it grows stronger",
+        "and goes back over old matters"
+      ],
+      "bodysize": 42,
+      "note": "Parashara, on planetary strength"
+    },
+    {
+      "type": "rows",
+      "label": "Find your Ascendant",
+      "labelsize": 24,
+      "title": "Where it falls for you",
+      "items": [
+        [
+          "Aries",
+          "7th, partners and deals"
+        ],
+        [
+          "Taurus",
+          "6th, work and health"
+        ],
+        [
+          "Gemini",
+          "5th, study and creativity"
+        ],
+        [
+          "Cancer",
+          "4th, home and family"
+        ],
+        [
+          "Leo",
+          "3rd, messages and short trips"
+        ],
+        [
+          "Virgo",
+          "2nd, money and speech"
+        ]
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "rows",
+      "label": "Find your Ascendant",
+      "labelsize": 24,
+      "title": "Where it falls for you",
+      "items": [
+        [
+          "Libra",
+          "1st, how you come across"
+        ],
+        [
+          "Scorpio",
+          "12th, rest and spending"
+        ],
+        [
+          "Sagittarius",
+          "11th, friends and gains"
+        ],
+        [
+          "Capricorn",
+          "10th, career"
+        ],
+        [
+          "Aquarius",
+          "9th, teachers and beliefs"
+        ],
+        [
+          "Pisces",
+          "8th, shared money"
+        ]
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "text",
+      "title": "How to use it",
+      "subtitle": "Review, revise, return",
+      "body": [
+        "Finish before you start",
+        "Reread before you send",
+        "If something old returns, look again"
+      ],
+      "bodysize": 42
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "orbit",
+        "w": 560,
+        "h": 120,
+        "beads": 5,
+        "tilt": -7,
+        "lit": 2
+      },
+      "title": "Your own houses",
+      "subtitle": "Ask where Mercury falls for you",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 38,
+      "next": "Mercury moves forward again · Friday 13 November"
+    }
+  ],
+  "decor_theme": "solar"
+}
