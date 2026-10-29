@@ -1,0 +1,170 @@
+{
+  "id": "week-2026-11-01-ask2",
+  "kicker": "Week ahead · 1 to 7 November",
+  "decor_theme": "jupiter",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "jupiter",
+        "r": 95
+      },
+      "title": "Jupiter in Leo",
+      "subtitle": "What it means for your Moon sign"
+    },
+    {
+      "type": "text",
+      "label": "How to read it",
+      "labelsize": 26,
+      "title": "Count from\nyour Moon",
+      "titleclass": "h2",
+      "body": [
+        "Jupiter is the teacher: where it walks, things grow",
+        "Its best spots: 2nd, 5th, 7th, 9th, 11th"
+      ],
+      "bodysize": 38,
+      "note": "Phaladeepika, chapter 26",
+      "closing": "Don't know your Moon sign?\nAsk at asksutram.com"
+    },
+    {
+      "type": "grid",
+      "cellsize": 52,
+      "cellpad": 16,
+      "bodysize": 34,
+      "cells": [
+        [
+          "Aries Moon",
+          "5th house",
+          "Kids, study, romance",
+          true
+        ],
+        [
+          "Taurus Moon",
+          "4th house",
+          "Home, mother, repairs"
+        ],
+        [
+          "Gemini Moon",
+          "3rd house",
+          "Effort, short trips"
+        ],
+        [
+          "Cancer Moon",
+          "2nd house",
+          "Savings, family, food",
+          true
+        ],
+        [
+          "Leo Moon",
+          "1st house",
+          "You in focus; pace yourself"
+        ],
+        [
+          "Virgo Moon",
+          "12th house",
+          "Spending, travel, rest"
+        ]
+      ],
+      "note": "Amber: Jupiter's best spots",
+      "label": "From 31 October",
+      "labelsize": 24,
+      "title": "Find your Moon sign",
+      "titleclass": "h3"
+    },
+    {
+      "type": "grid",
+      "cellsize": 52,
+      "cellpad": 16,
+      "bodysize": 34,
+      "cells": [
+        [
+          "Libra Moon",
+          "11th house",
+          "Gains and good friends",
+          true
+        ],
+        [
+          "Scorpio Moon",
+          "10th house",
+          "Heavier work; stay humble"
+        ],
+        [
+          "Sagittarius Moon",
+          "9th house",
+          "Luck, teachers, travel",
+          true
+        ],
+        [
+          "Capricorn Moon",
+          "8th house",
+          "Quiet change; health care"
+        ],
+        [
+          "Aquarius Moon",
+          "7th house",
+          "Partner, clients, deals",
+          true
+        ],
+        [
+          "Pisces Moon",
+          "6th house",
+          "Routine, debts, fitness"
+        ]
+      ],
+      "note": "Amber: Jupiter's best spots",
+      "label": "From 31 October",
+      "labelsize": 24,
+      "title": "Find your Moon sign",
+      "titleclass": "h3"
+    },
+    {
+      "type": "stack",
+      "label": "Also this week",
+      "labelsize": 24,
+      "title": "Mark your calendar",
+      "items": [
+        [
+          "Mon night to Wed",
+          "The Moon joins Jupiter in Leo: ask for advice"
+        ],
+        [
+          "Thursday 5",
+          "Venus slips back into Virgo: go easy on spending"
+        ],
+        [
+          "Sunday 8",
+          "Diwali, on the New Moon night"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "quote",
+      "label": "The Upanishads",
+      "labelsize": 26,
+      "quote": "Arise, awake;\nfind the great ones and learn",
+      "source": "Katha Upanishad 1.3.14",
+      "body": [
+        "Philosophy says: find a teacher",
+        "Jupiter shows where one finds you"
+      ],
+      "bodysize": 40
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "jupiter",
+        "r": 70
+      },
+      "title": "Ask your chart",
+      "titleclass": "h2",
+      "subtitle": "What Jupiter in Leo means for you",
+      "lines": [
+        "asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40
+    }
+  ]
+}
