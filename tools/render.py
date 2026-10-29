@@ -16,6 +16,8 @@ FONTS=''.join(f'<link rel="stylesheet" href="{NM}{f}">' for f in [
  'eb-garamond/400.css','eb-garamond/500.css','eb-garamond/400-italic.css'])
 CREAM='#F2E6CC'; AMBER='#E09460'; GOLD='#D9A57A'; BG='#0B0806'
 
+TXT=1.15   # v4 (29 Oct): text about 15% larger, Sumant found v3 hard to read on a phone
+
 def css(s):
     f=lambda px: f'{px*s:.1f}px'
     return f'''*{{margin:0;padding:0;box-sizing:border-box}}
@@ -24,21 +26,22 @@ html,body{{width:1080px;height:1350px;background:{BG}}}
 background:radial-gradient(52% 34% at 50% 44%,rgba(150,88,44,.20) 0%,rgba(150,88,44,0) 100%),
 radial-gradient(70% 14% at 50% 100%,rgba(224,148,96,.10) 0%,rgba(224,148,96,0) 100%),
 radial-gradient(125% 95% at 50% 38%,#17110C 0%,#0B0806 55%,#050403 100%);}}
+.decor{{position:absolute;inset:0;pointer-events:none}}
 .grain{{position:absolute;inset:0;pointer-events:none;opacity:.055;mix-blend-mode:screen}}
-.kick{{position:absolute;top:92px;left:0;right:0;font:500 23px/1 'EB Garamond';letter-spacing:.34em;text-transform:uppercase;color:{GOLD}}}
-.foot{{position:absolute;bottom:70px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:10px}}
-.foot .w{{font:500 36px/1 'Cormorant Garamond';color:rgba(242,230,204,.62)}}
-.foot .u{{font:500 17px/1 'EB Garamond';letter-spacing:.32em;text-transform:uppercase;color:rgba(242,230,204,.42)}}
-.body{{position:absolute;left:100px;right:100px;top:170px;bottom:200px;display:flex;flex-direction:column;align-items:center;justify-content:center}}
+.kick{{position:absolute;top:86px;left:0;right:0;font:500 27px/1 'EB Garamond';letter-spacing:.30em;text-transform:uppercase;color:{GOLD}}}
+.foot{{position:absolute;bottom:66px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:10px}}
+.foot .w{{font:500 38px/1 'Cormorant Garamond';color:rgba(242,230,204,.66)}}
+.foot .u{{font:500 19px/1 'EB Garamond';letter-spacing:.32em;text-transform:uppercase;color:rgba(242,230,204,.48)}}
+.body{{position:absolute;left:84px;right:84px;top:160px;bottom:196px;display:flex;flex-direction:column;align-items:center;justify-content:center}}
 .t{{font-family:'Cormorant Garamond';font-weight:500;color:{CREAM};letter-spacing:-.01em}}
 .ti{{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;color:{AMBER}}}
-.p{{font:400 {f(33)}/1.42 'EB Garamond';color:rgba(242,230,204,.82)}}
-.pi{{font:400 italic {f(31)}/1.4 'EB Garamond';color:rgba(242,230,204,.80)}}
-.src{{font:500 {f(20)}/1.3 'EB Garamond';letter-spacing:.22em;text-transform:uppercase;color:rgba(242,230,204,.48)}}
-.lab{{font:500 {f(21)}/1 'EB Garamond';letter-spacing:.3em;text-transform:uppercase;color:{GOLD}}}
-.rule{{height:1px;width:110px;background:rgba(217,165,122,.55);margin:{f(34)} auto}}
-.h1{{font-size:{f(132)};line-height:.98}} .h2{{font-size:{f(104)};line-height:1}} .h3{{font-size:{f(76)};line-height:1.05}}
-.sub{{font-size:{f(50)};line-height:1.22}}
+.p{{font:400 {f(38)}/1.4 'EB Garamond';color:rgba(242,230,204,.88)}}
+.pi{{font:400 italic {f(36)}/1.38 'EB Garamond';color:rgba(242,230,204,.86)}}
+.src{{font:500 {f(24)}/1.3 'EB Garamond';letter-spacing:.16em;text-transform:uppercase;color:rgba(242,230,204,.64)}}
+.lab{{font:500 {f(25)}/1 'EB Garamond';letter-spacing:.26em;text-transform:uppercase;color:{GOLD}}}
+.rule{{height:1px;width:110px;background:rgba(217,165,122,.55);margin:{f(32)} auto}}
+.h1{{font-size:{f(132)};line-height:.98}} .h2{{font-size:{f(106)};line-height:1}} .h3{{font-size:{f(80)};line-height:1.05}}
+.sub{{font-size:{f(54)};line-height:1.22}}
 .row{{display:flex;justify-content:space-between;align-items:baseline;padding:{f(12)} 0;border-bottom:1px solid rgba(217,165,122,.2);text-align:left;gap:16px}}
 .grid2{{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;width:100%}}
 '''
@@ -131,11 +134,13 @@ def orb(o):
     if k=='south': return south(o.get('s',320),o.get('labels',True),o.get('asc'))
     return ''
 
-def slide_html(sp):
+def slide_html(sp, s=1.0):
+    F=lambda px: f'{px*s:.1f}px'
+    T=lambda px: F(px*TXT)
     t=sp['type']; H=[]
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
-    bs=f'font-size:{sp["bodysize"]}px;' if sp.get('bodysize') else ''
-    if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:%spx" % sp["labelsize"] if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
+    bs=f'font-size:{T(sp["bodysize"])};' if sp.get('bodysize') else ''
+    if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:"+T(sp["labelsize"]) if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
     if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg'):
         if sp.get('title'):
             cls=sp.get('titleclass') or {'cover':'h1','cta':'h1'}.get(t,'h2' if len(clean(sp['title']))<26 else 'h3')
@@ -144,55 +149,91 @@ def slide_html(sp):
     if t=='quote':
         H.append('<div class="rule"></div>')
         H.append(f'<div class="ti h3" style="color:{CREAM}">“{esc(sp["quote"])}”</div>')
-        if sp.get('source'): H.append(f'<div class="src" style="margin-top:24px;font-size:24px">{esc(sp["source"])}</div>')
+        if sp.get('source'): H.append(f'<div class="src" style="margin-top:24px;font-size:{F(27)}">{esc(sp["source"])}</div>')
     if t=='quotes':
         for i,(lab,qt,src) in enumerate(sp['items']):
             if i: H.append('<div class="rule" style="margin:8px auto"></div>')
-            H.append(f'<div style="padding:24px 0"><div class="lab">{esc(lab)}</div><div class="ti" style="font-size:54px;line-height:1.15;margin-top:16px;color:{CREAM}">“{esc(qt)}”</div><div class="src" style="margin-top:14px">{esc(src)}</div></div>')
+            H.append(f'<div style="padding:24px 0"><div class="lab">{esc(lab)}</div><div class="ti" style="font-size:{F(58)};line-height:1.15;margin-top:16px;color:{CREAM}">“{esc(qt)}”</div><div class="src" style="margin-top:14px">{esc(src)}</div></div>')
     if t=='list':
         items=sp['items']; half=(len(items)+1)//2 if sp.get('columns',2)==2 else len(items)
         cols=[items[:half],items[half:]] if sp.get('columns',2)==2 else [items]
-        body=''.join('<div>'+''.join(f'<div class="row"><span class="t" style="font-size:48px">{esc(a)}</span><span class="pi" style="text-align:right;font-size:34px">{esc(b)}</span></div>' for a,b in col)+'</div>' for col in cols)
+        body=''.join('<div>'+''.join(f'<div class="row"><span class="t" style="font-size:{F(52)}">{esc(a)}</span><span class="pi" style="text-align:right;font-size:{F(38)}">{esc(b)}</span></div>' for a,b in col)+'</div>' for col in cols)
         H.append(f'<div class="{"grid2" if len(cols)==2 else ""}" style="margin-top:34px;width:100%">{body}</div>')
     if t=='rows':
-        H.append('<div style="margin-top:30px;width:100%">'+''.join(f'<div class="row"><span class="t" style="font-size:47px;white-space:nowrap">{esc(a)}</span><span class="p" style="text-align:right;font-size:{sp.get('bodysize',34)}px">{esc(b)}</span></div>' for a,b in sp['items'])+'</div>')
+        H.append('<div style="margin-top:30px;width:100%">'+''.join(f'<div class="row"><span class="t" style="font-size:{F(52)};white-space:nowrap">{esc(a)}</span><span class="p" style="text-align:right;font-size:{T(sp.get("bodysize",34))}">{esc(b)}</span></div>' for a,b in sp['items'])+'</div>')
     if t=='grid':
-        H.append('<div class="grid2" style="margin-top:22px">'+''.join(f'<div style="padding:20px 0"><div class="lab">{esc(a)}</div><div class="t" style="font-size:44px;line-height:1.1;margin-top:12px">{esc(b)}</div><div class="pi" style="margin-top:4px">{esc(c)}</div></div>' for a,b,c in sp['cells'])+'</div>')
+        H.append('<div class="grid2" style="margin-top:22px">'+''.join(f'<div style="padding:20px 0"><div class="lab">{esc(a)}</div><div class="t" style="font-size:{F(50)};line-height:1.1;margin-top:12px">{esc(b)}</div><div class="pi" style="margin-top:4px">{esc(c)}</div></div>' for a,b,c in sp['cells'])+'</div>')
     if t=='steps':
         roman=['i','ii','iii','iv','v','vi']
         for i,(a,b) in enumerate(sp['steps']):
-            H.append(f'<div style="padding:20px 0"><div class="ti" style="font-size:58px;line-height:1">{roman[i]}</div><div class="t" style="font-size:58px;line-height:1.05;margin-top:4px">{esc(a)}</div><div class="p" style="margin-top:6px">{esc(b)}</div></div>')
+            H.append(f'<div style="padding:20px 0"><div class="ti" style="font-size:{F(60)};line-height:1">{roman[i]}</div><div class="t" style="font-size:{F(62)};line-height:1.05;margin-top:4px">{esc(a)}</div><div class="p" style="margin-top:6px">{esc(b)}</div></div>')
     if t=='stack':
         H.append('<div class="rule"></div>')
         for a,b in sp['items']:
-            H.append(f'<div style="padding:18px 0"><div class="t" style="font-size:60px;line-height:1.05">{esc(a)}</div><div class="p" style="margin-top:8px;{bs}">{esc(b)}</div></div>')
+            H.append(f'<div style="padding:18px 0"><div class="t" style="font-size:{F(64)};line-height:1.05">{esc(a)}</div><div class="p" style="margin-top:8px;{bs}">{esc(b)}</div></div>')
     if t=='icons':
-        H.append('<div style="margin-top:34px;display:inline-block;text-align:left">'+''.join(f'<div style="display:flex;align-items:center;gap:30px;padding:16px 0">{icon(k,76)}<div><div class="t" style="font-size:60px;line-height:1">{esc(a)}</div><div class="p" style="margin-top:6px;{bs}">{esc(b)}</div></div></div>' for k,a,b in sp['items'])+'</div>')
+        H.append('<div style="margin-top:34px;display:inline-block;text-align:left">'+''.join(f'<div style="display:flex;align-items:center;gap:30px;padding:16px 0">{icon(k,80)}<div><div class="t" style="font-size:{F(64)};line-height:1">{esc(a)}</div><div class="p" style="margin-top:6px;{bs}">{esc(b)}</div></div></div>' for k,a,b in sp['items'])+'</div>')
     if t=='svg':
         svg=open(os.path.join(REPO,sp['svgfile'])).read(); w=sp.get('svgwidth',760)
         vb=re.search(r'viewBox="([-\d.]+) ([-\d.]+) ([\d.]+) ([\d.]+)"',svg); hgt=round(w*float(vb.group(4))/float(vb.group(3))) if vb else w
         svg=re.sub(r'width="\d+" height="\d+"',f'width="{w}" height="{hgt}"',svg,count=1)
         H.append(f'<div style="margin:{sp.get("svgmargin","8px auto 0")};line-height:0">{svg}</div>')
-        if sp.get('footnote'): H.append(f'<div class="ti" style="font-size:{sp.get("footsize",40)}px;line-height:1.2;margin-top:4px">{esc(sp["footnote"])}</div>')
+        if sp.get('footnote'): H.append(f'<div class="ti" style="font-size:{F(sp.get("footsize",44))};line-height:1.2;margin-top:4px">{esc(sp["footnote"])}</div>')
     if t=='sentence':
         H.append('<div class="rule"></div>')
         H.append(f'<div class="t h3">{esc(sp["example"])}</div>')
         H.append('<div style="margin-top:28px">'+''.join(f'<div class="p" style="margin-top:10px;{bs}"><span class="lab" style="margin-right:20px">{esc(a)}</span>{esc(b)}</div>' for a,b in sp['rows'])+'</div>')
         if sp.get('conclusion'): H.append(f'<div class="ti sub" style="margin-top:36px">{esc(sp["conclusion"])}</div>')
     if t=='sky':
-        H.append('<div class="grid2" style="margin-top:28px;border-top:1px solid rgba(217,165,122,.25);border-bottom:1px solid rgba(217,165,122,.25);padding:8px 0">'+''.join(f'<div style="padding:12px 0"><div class="lab">{esc(a)}</div><div class="p" style="margin-top:10px">{esc(b)}</div></div>' for a,b in sp['cells'])+'</div>')
-        H.append(f'<div class="grid2" style="grid-template-columns:1.35fr 1fr;margin-top:24px"><div><span class="lab">Good for</span><div class="p" style="margin-top:8px;font-size:31px">{esc(sp["good"])}</div></div><div><span class="lab">Go slow on</span><div class="p" style="margin-top:8px;font-size:31px">{esc(sp["slow"])}</div></div></div>')
+        H.append('<div class="grid2" style="margin-top:26px;border-top:1px solid rgba(217,165,122,.28);border-bottom:1px solid rgba(217,165,122,.28);padding:6px 0">'+''.join(f'<div style="padding:12px 0"><div class="lab">{esc(a)}</div><div class="p" style="margin-top:10px;font-size:{F(44)};line-height:1.15">{esc(b)}</div></div>' for a,b in sp['cells'])+'</div>')
+        H.append(f'<div class="grid2" style="grid-template-columns:1fr 1fr;margin-top:22px"><div><span class="lab">Good for</span><div class="p" style="margin-top:8px;font-size:{F(40)};line-height:1.2">{esc(sp["good"])}</div></div><div><span class="lab">Go slow on</span><div class="p" style="margin-top:8px;font-size:{F(40)};line-height:1.2">{esc(sp["slow"])}</div></div></div>')
     if sp.get('body'):
         H.append('<div style="margin-top:30px">'+''.join(f'<div class="p" style="{bs}">{esc(l)}</div>' for l in sp['body'])+'</div>')
-    if sp.get('note'): H.append(f'<div class="src" style="margin-top:28px;letter-spacing:.12em">{esc(sp["note"])}</div>')
+    if sp.get('note'): H.append(f'<div class="src" style="margin-top:28px;letter-spacing:.1em">{esc(sp["note"])}</div>')
     if t=='cta':
         H.append('<div class="rule"></div>'+''.join(f'<div class="p" style="margin-top:6px;{bs}">{esc(l)}</div>' for l in sp.get('lines',[])))
         if sp.get('next'): H.append(f'<div class="src" style="margin-top:28px">{esc(sp["next"])}</div>')
     if sp.get('closing'): H.append(f'<div class="ti sub" style="margin-top:34px">{esc(sp["closing"])}</div>')
     return ''.join(H)
 
-def page(inner,kicker,s,starfield=None,url='sutram.ca'):
-    return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide">{starfield or ''}{GRAIN}<div class="kick">{esc(kicker)}</div><div class="body">{inner}</div><div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
+def _bead(x,y,kind,uidp):
+    """Small background planets: pearl moon, banded Jupiter, pale Venus, red Mars."""
+    g=uid(uidp)
+    if kind=='moon':
+        return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".6" stop-color="#D8D2D0"/><stop offset="1" stop-color="#8E888C"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="22" fill="#FFF4E6" opacity=".10"/><circle cx="{x:.1f}" cy="{y:.1f}" r="10" fill="url(#{g})"/>'
+    if kind=='jupiter':
+        return (f'<defs><radialGradient id="{g}" cx="38%" cy="32%" r="78%"><stop offset="0" stop-color="#F4E3C6"/><stop offset=".55" stop-color="#D5B285"/><stop offset="1" stop-color="#7A5536"/></radialGradient>'
+                f'<clipPath id="{g}c"><circle cx="{x:.1f}" cy="{y:.1f}" r="15"/></clipPath></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="30" fill="#E0B98A" opacity=".08"/>'
+                f'<circle cx="{x:.1f}" cy="{y:.1f}" r="15" fill="url(#{g})"/><g clip-path="url(#{g}c)" opacity=".45"><rect x="{x-15:.1f}" y="{y-6:.1f}" width="30" height="3" fill="#9C6440"/><rect x="{x-15:.1f}" y="{y+2:.1f}" width="30" height="4" fill="#A8744F"/></g>')
+    if kind=='mars':
+        return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#F3B08A"/><stop offset=".6" stop-color="#C2643A"/><stop offset="1" stop-color="#6E2E17"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="url(#{g})"/>'
+    return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#FFFBF2"/><stop offset=".6" stop-color="#EBD3A4"/><stop offset="1" stop-color="#A88152"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="16" fill="#F3DDB0" opacity=".10"/><circle cx="{x:.1f}" cy="{y:.1f}" r="8" fill="url(#{g})"/>'
+
+def decor(i, seed, dense=False):
+    """Quiet moving sky behind every slide: stars, a Sun peeking in at the top right with two orbits,
+    and two orbits at the bottom left. The small planets move a few degrees on each slide."""
+    r=random.Random(seed*131+7); rr=random.Random(seed*977+i*31); o=[]
+    for _ in range(46 if not dense else 0):
+        x=rr.uniform(0,1080); y=rr.uniform(0,1350); rad=rr.choice([.6,.8,1,1.2])
+        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rad}" fill="#FFF1D6" opacity="{rr.uniform(.08,.30):.2f}"/>')
+    for _ in range(4):
+        x=rr.uniform(40,1040); y=rr.uniform(40,1310)
+        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="#FFF1D6" opacity=".07"/><circle cx="{x:.1f}" cy="{y:.1f}" r="1.7" fill="#FFF1D6" opacity=".62"/>')
+    # top right: a Sun just inside the corner, two orbits around it
+    sx,sy=1110,-34
+    o.append(f'<circle cx="{sx}" cy="{sy}" r="120" fill="#EF7A3C" opacity=".07"/><circle cx="{sx}" cy="{sy}" r="74" fill="#EF7A3C" opacity=".10"/><circle cx="{sx}" cy="{sy}" r="44" fill="#F08A4C" opacity=".30"/>')
+    for R,kind,a0,step in [(190,'venus',152,-3.5),(318,'mars',108,-1.6)]:
+        o.append(f'<circle cx="{sx}" cy="{sy}" r="{R}" fill="none" stroke="{GOLD}" stroke-opacity=".15" stroke-width="1.2"/>')
+        a=math.radians(a0+r.uniform(-3,3)+(i-1)*step); o.append(_bead(sx+R*math.cos(a), sy+R*math.sin(a), kind, 'db'))
+    # bottom left: two wide orbits with Jupiter and a moon
+    cx,cy=-90,1460
+    for R,kind,a0,step in [(330,'moon',-60,4.5),(520,'jupiter',-40,3.2)]:
+        o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{R}" ry="{R*0.86:.0f}" fill="none" stroke="{GOLD}" stroke-opacity=".14" stroke-width="1.2"/>')
+        a=math.radians(a0+r.uniform(0,4)+(i-1)*step); o.append(_bead(cx+R*math.cos(a), cy+R*0.86*math.sin(a), kind, 'db'))
+    return f'<svg class="decor" width="1080" height="1350">{"".join(o)}</svg>'
+
+def page(inner,kicker,s,starfield=None,url='sutram.ca',dec=''):
+    return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide">{dec}{starfield or ''}{GRAIN}<div class="kick">{esc(kicker)}</div><div class="body">{inner}</div><div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
 
 def render(spec_path):
     spec=json.load(open(spec_path)); pid=spec['id']; out=os.path.join(REPO,'posts',pid); os.makedirs(out,exist_ok=True)
@@ -202,8 +243,9 @@ def render(spec_path):
         for i,sp in enumerate(spec['slides'],1):
             kicker=sp.get('kicker',spec.get('kicker','Sutram'))
             sf=stars(seed=i*7+len(pid)) if sp.get('stars') else ''
-            for s in (1,.95,.9,.85,.8,.75,.7):
-                html=page(slide_html(sp),kicker,s,sf); fn=os.path.join(out,f'_s{i}.html'); open(fn,'w').write(html)
+            dec='' if spec.get('decor') is False else decor(i, sum(map(ord,pid)), dense=bool(sp.get('stars')))
+            for s in (1,.96,.92,.88,.84,.8,.76,.72,.68):
+                html=page(slide_html(sp,s),kicker,s,sf,dec=dec); fn=os.path.join(out,f'_s{i}.html'); open(fn,'w').write(html)
                 pg.goto('file://'+fn); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(250)
                 ov=pg.evaluate("()=>{const b=document.querySelector('.body');return b.scrollHeight-b.clientHeight}")
                 if ov<=0: break

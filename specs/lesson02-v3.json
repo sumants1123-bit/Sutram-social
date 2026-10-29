@@ -1,0 +1,93 @@
+{
+  "id": "lesson02-v3",
+  "kicker": "Daily lesson · 2",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "sun",
+        "r": 95,
+        "rings": true
+      },
+      "title": "The Sun",
+      "subtitle": "Your soul, your self"
+    },
+    {
+      "type": "text",
+      "label": "What it shows",
+      "labelsize": 26,
+      "title": "Your self",
+      "body": [
+        "Your confidence and purpose",
+        "your father, and people in charge",
+        "your health and energy"
+      ],
+      "bodysize": 44,
+      "note": "Varahamihira, Brihat Jataka 2.1"
+    },
+    {
+      "type": "stack",
+      "label": "Strong and weak",
+      "labelsize": 24,
+      "title": "Where it shines",
+      "items": [
+        [
+          "Strongest in Aries",
+          "Exalted, at its brightest"
+        ],
+        [
+          "At home in Leo",
+          "Its own sign, steady and sure"
+        ],
+        [
+          "Weakest in Libra",
+          "Debilitated, its light dims"
+        ]
+      ],
+      "bodysize": 38,
+      "note": "Brihat Parashara Hora Shastra"
+    },
+    {
+      "type": "text",
+      "label": "By house",
+      "labelsize": 26,
+      "title": "Best in the 10th",
+      "subtitle": "The house of career",
+      "body": [
+        "Here the Sun gets full strength",
+        "and tends to live a visible life"
+      ],
+      "bodysize": 44,
+      "note": "Parashara, on directional strength"
+    },
+    {
+      "type": "quote",
+      "label": "The Upanishads",
+      "labelsize": 26,
+      "quote": "That is the pure light\nof all lights",
+      "source": "Mundaka Upanishad 2.2.9",
+      "body": [
+        "Said of the Self",
+        "In your chart, the Sun stands for it"
+      ],
+      "bodysize": 40
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "sun",
+        "r": 70,
+        "rings": false
+      },
+      "title": "Find your Sun",
+      "subtitle": "Which sign? Which house?",
+      "lines": [
+        "Free chart at sutram.ca",
+        "Full course at learnsutram.com"
+      ],
+      "bodysize": 40,
+      "next": "Next lesson · The Moon"
+    }
+  ]
+}

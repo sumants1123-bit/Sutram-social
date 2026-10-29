@@ -1,0 +1,37 @@
+{
+  "id": "sky-2026-10-30",
+  "kicker": "Today's Sky · Friday 30 October",
+  "slides": [
+    {
+      "type": "sky",
+      "orb": {
+        "kind": "moon",
+        "r": 118,
+        "illum": 0.763,
+        "waxing": false
+      },
+      "title": "Moon in Ardra",
+      "subtitle": "The storm star, in Gemini",
+      "cells": [
+        [
+          "Moon phase",
+          "Waning, 5th day"
+        ],
+        [
+          "Day ruler",
+          "Venus"
+        ],
+        [
+          "Rahu Kaal, Toronto",
+          "11:43 AM to 1:00 PM"
+        ],
+        [
+          "Moving backward",
+          "Mercury, Venus, Saturn"
+        ]
+      ],
+      "good": "endings and research",
+      "slow": "celebrations and new starts"
+    }
+  ]
+}
