@@ -20,79 +20,106 @@
     {
       "id": "ascendant-moon-sun",
       "when": "2026-10-27T13:11:00-04:00",
-      "url": "https://www.instagram.com/p/DfAXbAQiBBH/",
-      "note": "overlaps with Thread Episode 1 (Wed 28 Oct); Sumant chose to post now"
-    }
-  ],
-  "scheduled": [
-    {
-      "id": "sky-2026-10-28-v2",
-      "when": "2026-10-28T07:00:00-04:00"
-    },
-    {
-      "id": "lesson01-v2",
-      "when": "2026-10-28T12:00:00-04:00"
-    },
-    {
-      "id": "ep01-v2",
-      "when": "2026-10-28T18:30:00-04:00",
-      "title": "Body, mind, soul"
-    },
-    {
-      "id": "sky-2026-10-29-v2",
-      "when": "2026-10-29T07:00:00-04:00"
-    },
-    {
-      "id": "lesson02-v2",
-      "when": "2026-10-29T12:00:00-04:00",
-      "title": "The Sun"
-    },
-    {
-      "id": "close-2026-10-29-mercury-v2",
-      "when": "2026-10-29T18:30:00-04:00",
-      "title": "Mercury retrograde, house by house"
-    },
-    {
-      "id": "scripture-2026-10-30",
-      "when": "2026-10-30T18:30:00-04:00",
-      "title": "Know yourself, five ways"
+      "url": "https://www.instagram.com/p/DfAXbAQiBBH/"
     },
     {
       "id": "nov-2026-sky",
       "when": "2026-10-27T18:30:00-04:00",
-      "title": "November sky, 2026"
+      "url": "https://www.instagram.com/p/DfA73jrjeyC/"
     },
     {
-      "id": "jupiter-loops-2026",
-      "when": "2026-10-31T18:30:00-04:00",
-      "title": "Twelve years of Jupiter (Sky Patterns, Jupiter enters Leo)"
+      "id": "sky-2026-10-28-v2",
+      "when": "2026-10-28T07:00:00-04:00",
+      "url": "https://www.instagram.com/p/DfCR908iAvt/"
+    },
+    {
+      "id": "lesson01-v2",
+      "when": "2026-10-28T12:00:00-04:00",
+      "url": "https://www.instagram.com/p/DfC0i6XiMi8/",
+      "title": "Lesson 1: what, how, where"
+    },
+    {
+      "id": "ep01-v2",
+      "when": "2026-10-28T18:30:00-04:00",
+      "url": "https://www.instagram.com/p/DfDgqSrjRpk/",
+      "title": "The Thread Ep 1: Body, mind, soul"
+    },
+    {
+      "id": "sky-2026-10-29-v2",
+      "when": "2026-10-29T07:00:00-04:00",
+      "url": "https://www.instagram.com/p/DfE2w7WCFAH/"
+    }
+  ],
+  "scheduled": [
+    {
+      "id": "lesson02-v3",
+      "when": "2026-10-29T12:00:00-04:00",
+      "title": "Lesson 2: the Sun",
+      "metricool_id": 409961891
+    },
+    {
+      "id": "close-2026-10-29-mercury-v3",
+      "when": "2026-10-29T18:30:00-04:00",
+      "title": "Mercury retrograde, house by house",
+      "metricool_id": 409962050
     },
     {
       "id": "sky-2026-10-30",
-      "when": "2026-10-30T07:00:00-04:00"
+      "when": "2026-10-30T07:00:00-04:00",
+      "metricool_id": 409958777
     },
     {
       "id": "lesson03",
       "when": "2026-10-30T12:00:00-04:00",
-      "title": "The Moon"
+      "title": "Lesson 3: the Moon",
+      "metricool_id": 409958893
+    },
+    {
+      "id": "scripture-2026-10-30-v2",
+      "when": "2026-10-30T18:30:00-04:00",
+      "title": "Know yourself, five ways",
+      "metricool_id": 409962237
+    },
+    {
+      "id": "sky-2026-10-31",
+      "when": "2026-10-31T07:00:00-04:00",
+      "title": "Punarvasu; Jupiter enters Leo; clocks go back",
+      "metricool_id": 409987604
+    },
+    {
+      "id": "lesson04",
+      "when": "2026-10-31T12:00:00-04:00",
+      "title": "Lesson 4: Mars (strong vs weak, two friends)",
+      "metricool_id": 409987015
+    },
+    {
+      "id": "jupiter-loops-2026-v2",
+      "when": "2026-10-31T18:30:00-04:00",
+      "title": "Twelve years of Jupiter (Sky Patterns)",
+      "metricool_id": 409962368
     }
   ],
   "retired": [
+    "intro",
     "ep01",
     "lesson01",
     "sky-2026-10-28",
     "sky-2026-10-29",
     "lesson02",
-    "close-2026-10-29-mercury"
+    "lesson02-v2",
+    "close-2026-10-29-mercury",
+    "close-2026-10-29-mercury-v2",
+    "scripture-2026-10-30",
+    "jupiter-loops-2026"
   ],
-  "next_lesson": 4,
+  "next_lesson": 5,
   "next_thread_episode": 2,
   "next_thread_title": "Five layers of you",
-  "style": "plain words, one idea per slide, about 20 words a slide, caption under about 1,000 characters that says what the slides say",
+  "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
   "next_to_make": [
-    "sky-2026-10-31 (Sat 7 AM)",
-    "lesson04 Mars (Sat 12 PM)",
-    "Sun 1 Nov: sky, lesson05 Mercury, week ahead by Moon sign"
+    "Sun 1 Nov 7 AM: sky (Moon in Pushya, the nourisher; Sun's day; first day back on standard time)",
+    "Sun 1 Nov 12 PM: lesson05 Mercury (your friends, your words; weak Mercury = smaller friend circle, hard to say what you mean)",
+    "Sun 1 Nov 6:30 PM: week ahead by Moon sign"
   ],
   "sky_patterns_ideas": [
     "The 60-year clock (5 Jupiter laps = 2 Saturn laps = one Samvatsara cycle)",
@@ -100,5 +127,6 @@
     "The Moon's 27 stars",
     "Mars loops"
   ],
-  "design": "v4 (29 Oct): text about 15% larger; moving-sky background on every slide. Re-rendered v4 copies of lesson02, Mercury close look, Friday scripture and Jupiter loops are ready (ids ending -v3/-v2), waiting for Sumant's yes before swapping them in Metricool"
+  "design": "v4 (29 Oct): text about 15% larger. Backgrounds rotate across five themes (solar, lunar, zodiac, jupiter, thread; tools/render.py theme_for). Sky posts use the lunar strip with the real Moon phase lit. Mars orb redrawn with polar cap and dark lands. New slide type: compare (two columns, strong vs weak).",
+  "times": "Toronto is UTC-4 until 1 Nov 2 AM, then UTC-5"
 }
