@@ -66,6 +66,15 @@
       "id": "jupiter-loops-2026",
       "when": "2026-10-31T18:30:00-04:00",
       "title": "Twelve years of Jupiter (Sky Patterns, Jupiter enters Leo)"
+    },
+    {
+      "id": "sky-2026-10-30",
+      "when": "2026-10-30T07:00:00-04:00"
+    },
+    {
+      "id": "lesson03",
+      "when": "2026-10-30T12:00:00-04:00",
+      "title": "The Moon"
     }
   ],
   "retired": [
@@ -76,13 +85,11 @@
     "lesson02",
     "close-2026-10-29-mercury"
   ],
-  "next_lesson": 3,
+  "next_lesson": 4,
   "next_thread_episode": 2,
   "next_thread_title": "Five layers of you",
   "style": "plain words, one idea per slide, about 20 words a slide, caption under about 1,000 characters that says what the slides say",
   "next_to_make": [
-    "sky-2026-10-30 (Fri 7 AM)",
-    "lesson03 the Moon (Fri 12 PM)",
     "sky-2026-10-31 (Sat 7 AM)",
     "lesson04 Mars (Sat 12 PM)",
     "Sun 1 Nov: sky, lesson05 Mercury, week ahead by Moon sign"
@@ -92,5 +99,6 @@
     "Mercury's triangle (three passes a year)",
     "The Moon's 27 stars",
     "Mars loops"
-  ]
+  ],
+  "design": "v4 (29 Oct): text about 15% larger; moving-sky background on every slide. Re-rendered v4 copies of lesson02, Mercury close look, Friday scripture and Jupiter loops are ready (ids ending -v3/-v2), waiting for Sumant's yes before swapping them in Metricool"
 }
