@@ -97,6 +97,24 @@
       "when": "2026-10-31T18:30:00-04:00",
       "title": "Twelve years of Jupiter (Sky Patterns)",
       "metricool_id": 409962368
+    },
+    {
+      "id": "sky-2026-11-01",
+      "when": "2026-11-01T07:00:00-05:00",
+      "title": "Pushya; Ahoi Ashtami; back on standard time",
+      "metricool_id": 410009769
+    },
+    {
+      "id": "lesson05",
+      "when": "2026-11-01T12:00:00-05:00",
+      "title": "Lesson 5: Mercury (your words and your friends)",
+      "metricool_id": 410009932
+    },
+    {
+      "id": "week-2026-11-01",
+      "when": "2026-11-01T18:30:00-05:00",
+      "title": "Week ahead: Jupiter in Leo, for your Moon sign",
+      "metricool_id": 410010123
     }
   ],
   "retired": [
@@ -112,14 +130,14 @@
     "scripture-2026-10-30",
     "jupiter-loops-2026"
   ],
-  "next_lesson": 5,
+  "next_lesson": 6,
   "next_thread_episode": 2,
   "next_thread_title": "Five layers of you",
   "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
   "next_to_make": [
-    "Sun 1 Nov 7 AM: sky (Moon in Pushya, the nourisher; Sun's day; first day back on standard time)",
-    "Sun 1 Nov 12 PM: lesson05 Mercury (your friends, your words; weak Mercury = smaller friend circle, hard to say what you mean)",
-    "Sun 1 Nov 6:30 PM: week ahead by Moon sign"
+    "Mon 2 Nov 7 AM: sky (Moon in Ashlesha, into Leo 5:20 PM, meets Jupiter)",
+    "Mon 2 Nov 12 PM: lesson06 Jupiter (your teacher and your luck; real-life strong vs weak)",
+    "Mon 2 Nov 6:30 PM: Vakya slot, or a big-shift post"
   ],
   "sky_patterns_ideas": [
     "The 60-year clock (5 Jupiter laps = 2 Saturn laps = one Samvatsara cycle)",
