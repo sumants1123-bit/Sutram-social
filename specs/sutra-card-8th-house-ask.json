@@ -1,0 +1,15 @@
+{
+  "id": "sutra-card-8th-house-ask",
+  "kicker": "Sutra · The 8th house",
+  "decor_theme": "thread",
+  "slides": [
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "You can't control the 8th house.\nYou can prepare for it",
+      "source": "Sutram",
+      "quotesize": 68
+    }
+  ]
+}

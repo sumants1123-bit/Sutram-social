@@ -48,97 +48,97 @@
       "id": "sky-2026-10-29-v2",
       "when": "2026-10-29T07:00:00-04:00",
       "url": "https://www.instagram.com/p/DfE2w7WCFAH/"
+    },
+    {
+      "id": "lesson02-v3",
+      "when": "2026-10-29T12:00:00-04:00",
+      "url": "https://www.instagram.com/p/DfFZRuOiMRa/",
+      "title": "Lesson 2: the Sun"
     }
   ],
   "scheduled": [
     {
-      "id": "lesson02-v3",
-      "when": "2026-10-29T12:00:00-04:00",
-      "title": "Lesson 2: the Sun",
-      "metricool_id": 409961891
-    },
-    {
-      "id": "close-2026-10-29-mercury-v3",
+      "id": "close-2026-10-29-mercury-v3-ask",
       "when": "2026-10-29T18:30:00-04:00",
       "title": "Mercury retrograde, house by house",
-      "metricool_id": 409962050
+      "metricool_id": 410318495
     },
     {
-      "id": "sky-2026-10-30",
+      "id": "sky-2026-10-30-ask",
       "when": "2026-10-30T07:00:00-04:00",
-      "metricool_id": 409958777
+      "metricool_id": 410320291
     },
     {
-      "id": "lesson03",
+      "id": "lesson03-ask",
       "when": "2026-10-30T12:00:00-04:00",
       "title": "Lesson 3: the Moon",
-      "metricool_id": 409958893
+      "metricool_id": 410320972
     },
     {
-      "id": "scripture-2026-10-30-v2",
+      "id": "scripture-2026-10-30-v2-ask",
       "when": "2026-10-30T18:30:00-04:00",
       "title": "Know yourself, five ways",
-      "metricool_id": 409962237
+      "metricool_id": 410321165
     },
     {
-      "id": "sky-2026-10-31",
+      "id": "sky-2026-10-31-ask",
       "when": "2026-10-31T07:00:00-04:00",
       "title": "Punarvasu; Jupiter enters Leo; clocks go back",
-      "metricool_id": 409987604
+      "metricool_id": 410321692
     },
     {
-      "id": "lesson04",
+      "id": "lesson04-ask",
       "when": "2026-10-31T12:00:00-04:00",
       "title": "Lesson 4: Mars (strong vs weak, two friends)",
-      "metricool_id": 409987015
+      "metricool_id": 410322077
     },
     {
-      "id": "jupiter-loops-2026-v2",
+      "id": "jupiter-loops-2026-v2-ask",
       "when": "2026-10-31T18:30:00-04:00",
       "title": "Twelve years of Jupiter (Sky Patterns)",
-      "metricool_id": 409962368
+      "metricool_id": 410322265
     },
     {
-      "id": "sky-2026-11-01",
+      "id": "sky-2026-11-01-ask",
       "when": "2026-11-01T07:00:00-05:00",
       "title": "Pushya; Ahoi Ashtami; back on standard time",
-      "metricool_id": 410009769
+      "metricool_id": 410322836
     },
     {
-      "id": "lesson05",
+      "id": "lesson05-ask",
       "when": "2026-11-01T12:00:00-05:00",
       "title": "Lesson 5: Mercury (your words and your friends)",
-      "metricool_id": 410009932
+      "metricool_id": 410323823
     },
     {
-      "id": "week-2026-11-01",
+      "id": "week-2026-11-01-ask2",
       "when": "2026-11-01T18:30:00-05:00",
       "title": "Week ahead: Jupiter in Leo, for your Moon sign",
-      "metricool_id": 410010123
+      "metricool_id": 410324068
     },
     {
-      "id": "sutra-12th-house",
+      "id": "sutra-12th-house-ask",
       "when": "2026-10-29T15:00:00-04:00",
       "title": "Sutra: the 12th house, your rest budget",
-      "metricool_id": 410031457
+      "metricool_id": 410318210
     },
     {
-      "id": "sutra-sade-sati",
+      "id": "sutra-sade-sati-ask",
       "when": "2026-10-30T10:00:00-04:00",
       "title": "Sutra: Sade Sati, Saturn's audit",
-      "metricool_id": 410040474
+      "metricool_id": 410320550
     },
     {
-      "id": "sutra-8th-house",
+      "id": "sutra-8th-house-ask",
       "when": "2026-10-31T10:00:00-04:00",
       "title": "Sutra: the 8th house, other people's money",
-      "metricool_id": 410040724
+      "metricool_id": 410321863
     },
     {
-      "id": "sutra-upachaya",
+      "id": "sutra-upachaya-ask",
       "when": "2026-11-01T10:00:00-05:00",
       "title": "Sutra: houses that grow",
-      "metricool_id": 410040951
+      "metricool_id": 410323619
     }
   ],
   "retired": [
@@ -152,7 +152,21 @@
     "close-2026-10-29-mercury",
     "close-2026-10-29-mercury-v2",
     "scripture-2026-10-30",
-    "jupiter-loops-2026"
+    "jupiter-loops-2026",
+    "close-2026-10-29-mercury-v3",
+    "sky-2026-10-30",
+    "lesson03",
+    "scripture-2026-10-30-v2",
+    "sky-2026-10-31",
+    "lesson04",
+    "jupiter-loops-2026-v2",
+    "sky-2026-11-01",
+    "lesson05",
+    "week-2026-11-01",
+    "sutra-12th-house",
+    "sutra-sade-sati",
+    "sutra-8th-house",
+    "sutra-upachaya"
   ],
   "next_lesson": 6,
   "next_thread_episode": 2,
@@ -173,52 +187,52 @@
   "times": "Toronto is UTC-4 until 1 Nov 2 AM, then UTC-5",
   "sutra": {
     "instagram": "one Sutra carousel a day at 10 AM (Metricool's best Instagram hour); thread background; cover with the five-pearl thread",
-    "x": "2-3 a day at 9 AM, 1 PM, 8 PM on @koham1323 with the Sutra card image; sutram.ca link in a reply. Waiting for Sumant to add Metricool's X add-on and connect X",
+    "x": "2-3 a day at 9 AM, 1 PM, 8 PM on @koham1323 with the Sutra card image; the reply underneath carries asksutram.com first and sutram.ca/newsletter second, nothing else. Waiting for Sumant to add Metricool's X add-on and connect X",
     "x_queue": [
       {
         "n": 1,
         "draft": "x-drafts/1-twelfth-house.txt",
-        "card": "posts/sutra-12th-house/sutra-12th-house-4.jpg"
+        "card": "posts/sutra-12th-house-ask/sutra-12th-house-ask-4.jpg"
       },
       {
         "n": 2,
         "draft": "x-drafts/2-upachaya.txt",
-        "card": "posts/sutra-card-upachaya/sutra-card-upachaya-1.jpg"
+        "card": "posts/sutra-card-upachaya-ask/sutra-card-upachaya-ask-1.jpg"
       },
       {
         "n": 3,
         "draft": "x-drafts/3-eighth-house.txt",
-        "card": "posts/sutra-card-8th-house/sutra-card-8th-house-1.jpg"
+        "card": "posts/sutra-card-8th-house-ask/sutra-card-8th-house-ask-1.jpg"
       },
       {
         "n": 4,
         "draft": "x-drafts/4-sade-sati.txt",
-        "card": "posts/sutra-card-sade-sati/sutra-card-sade-sati-1.jpg"
+        "card": "posts/sutra-card-sade-sati-ask/sutra-card-sade-sati-ask-1.jpg"
       },
       {
         "n": 5,
         "draft": "x-drafts/5-dasha.txt",
-        "card": "posts/sutra-card-dasha/sutra-card-dasha-1.jpg"
+        "card": "posts/sutra-card-dasha-ask/sutra-card-dasha-ask-1.jpg"
       },
       {
         "n": 6,
         "draft": "x-drafts/6-second-house.txt",
-        "card": "posts/sutra-card-2nd-house/sutra-card-2nd-house-1.jpg"
+        "card": "posts/sutra-card-2nd-house-ask/sutra-card-2nd-house-ask-1.jpg"
       },
       {
         "n": 7,
         "draft": "x-drafts/7-retrograde.txt",
-        "card": "posts/sutra-card-retrograde/sutra-card-retrograde-1.jpg"
+        "card": "posts/sutra-card-retrograde-ask/sutra-card-retrograde-ask-1.jpg"
       },
       {
         "n": 8,
         "draft": "x-drafts/8-fifth-house.txt",
-        "card": "posts/sutra-card-5th-house/sutra-card-5th-house-1.jpg"
+        "card": "posts/sutra-card-5th-house-ask/sutra-card-5th-house-ask-1.jpg"
       },
       {
         "n": 9,
         "draft": "x-drafts/9-fourth-house.txt",
-        "card": "posts/sutra-card-4th-house/sutra-card-4th-house-1.jpg"
+        "card": "posts/sutra-card-4th-house-ask/sutra-card-4th-house-ask-1.jpg"
       }
     ],
     "instagram_next": [
@@ -239,5 +253,6 @@
       "7th house: what partners teach you"
     ],
     "style": "Sumant, 29 Oct: add a little more explanation, wording clear for modern city people, nothing half-baked; every example says why it belongs to the house; explain any technical step in plain words"
-  }
+  },
+  "links": "Sumant, 29 Oct: every post ends with exactly two links, asksutram.com first, then sutram.ca/newsletter; nothing else. Slide footer reads ASKSUTRAM.COM. X replies carry the same two links."
 }

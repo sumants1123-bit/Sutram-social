@@ -1,0 +1,15 @@
+{
+  "id": "sutra-card-sade-sati-ask",
+  "kicker": "Sutra · Sade Sati",
+  "decor_theme": "thread",
+  "slides": [
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "Saturn takes away what you\nwere only holding out of habit",
+      "source": "Sutram",
+      "quotesize": 68
+    }
+  ]
+}
