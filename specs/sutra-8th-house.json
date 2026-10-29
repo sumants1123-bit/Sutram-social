@@ -1,0 +1,108 @@
+{
+  "id": "sutra-8th-house",
+  "kicker": "Sutra · The 8th house",
+  "decor_theme": "thread",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "orbit",
+        "w": 560,
+        "h": 120,
+        "beads": 5,
+        "lit": 2,
+        "tilt": -6
+      },
+      "label": "The 8th house",
+      "labelsize": 28,
+      "title": "Other people's\nmoney",
+      "subtitle": "Where your life depends\non someone else's decisions"
+    },
+    {
+      "type": "text",
+      "label": "Most people fear it",
+      "labelsize": 26,
+      "title": "Death, accidents,\nscandal",
+      "titleclass": "h2",
+      "body": [
+        "In everyday life, the 8th house shows what depends on other people's money and choices"
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "stack",
+      "label": "In real life",
+      "labelsize": 24,
+      "title": "Where it shows up",
+      "items": [
+        [
+          "A spouse's income",
+          "When their job changes, your plans change too"
+        ],
+        [
+          "Family property",
+          "The house back home five relatives have a say in"
+        ],
+        [
+          "The paperwork",
+          "Insurance, taxes, a loan you co-signed"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "text",
+      "label": "Why your partner's money",
+      "labelsize": 26,
+      "title": "House from house",
+      "titleclass": "h2",
+      "body": [
+        "The 7th house is your partner",
+        "The 2nd house is money",
+        "Count their house as the 1st",
+        "Their 2nd house lands on your 8th"
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "You can't control the 8th house.\nYou can prepare for it",
+      "source": "Sutram",
+      "quotesize": 68
+    },
+    {
+      "type": "stack",
+      "label": "A strong 8th house",
+      "labelsize": 24,
+      "title": "Calm in a crisis",
+      "items": [
+        [
+          "Surgeons and researchers",
+          "People who work with what others avoid"
+        ],
+        [
+          "The family fixer",
+          "The cousin everyone calls when something breaks"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "text",
+      "label": "Practical remedy",
+      "labelsize": 26,
+      "title": "The just-in-case\nfolder",
+      "titleclass": "h2",
+      "body": [
+        "Accounts, policies, documents",
+        "Who to call for what",
+        "Tell one person where it is, and update it every Diwali"
+      ],
+      "bodysize": 38,
+      "closing": "Find your 8th house: free chart at sutram.ca"
+    }
+  ]
+}

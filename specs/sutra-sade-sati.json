@@ -1,0 +1,120 @@
+{
+  "id": "sutra-sade-sati",
+  "kicker": "Sutra · Sade Sati",
+  "decor_theme": "thread",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "orbit",
+        "w": 560,
+        "h": 120,
+        "beads": 5,
+        "lit": 2,
+        "tilt": -6
+      },
+      "label": "Sade Sati",
+      "labelsize": 28,
+      "title": "Saturn's\naudit",
+      "subtitle": "Seven and a half years that test what you built"
+    },
+    {
+      "type": "text",
+      "label": "What it is",
+      "labelsize": 26,
+      "title": "Three signs\nin a row",
+      "titleclass": "h2",
+      "body": [
+        "Saturn spends about two and a half years in each sign",
+        "Sade Sati is when it crosses the sign before your Moon, your Moon sign, and the one after"
+      ],
+      "bodysize": 36
+    },
+    {
+      "type": "stack",
+      "label": "Running now",
+      "labelsize": 24,
+      "title": "Where you are",
+      "items": [
+        [
+          "Aquarius Moon",
+          "The last stretch, ending early 2028"
+        ],
+        [
+          "Pisces Moon",
+          "The middle and heaviest part, until June 2027"
+        ],
+        [
+          "Aries Moon",
+          "Just started, running to 2032"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "stack",
+      "label": "In real life",
+      "labelsize": 24,
+      "title": "What gets tested",
+      "items": [
+        [
+          "The job",
+          "Kept out of fear, it finally stops working"
+        ],
+        [
+          "The habits",
+          "Late nights and skipped meals start sending the bill"
+        ],
+        [
+          "The relationship",
+          "Running on autopilot, it now needs real attention"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "Saturn takes away what you\nwere only holding out of habit",
+      "source": "Sutram",
+      "quotesize": 68
+    },
+    {
+      "type": "stack",
+      "label": "What Saturn rewards",
+      "labelsize": 24,
+      "title": "Built to last",
+      "items": [
+        [
+          "Routine and patience",
+          "The boring work done every week"
+        ],
+        [
+          "Honest effort",
+          "No shortcuts to hide"
+        ],
+        [
+          "Care for others",
+          "Elders, and the people who work for you"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "text",
+      "label": "Practical remedy",
+      "labelsize": 26,
+      "title": "One hour\nevery Saturday",
+      "titleclass": "h2",
+      "body": [
+        "List three things you do only out of habit",
+        "Drop one this month",
+        "Every Saturday, one hour on what you keep putting off"
+      ],
+      "bodysize": 36,
+      "closing": "Find your Moon sign: free chart at sutram.ca"
+    }
+  ]
+}
