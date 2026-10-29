@@ -115,6 +115,30 @@
       "when": "2026-11-01T18:30:00-05:00",
       "title": "Week ahead: Jupiter in Leo, for your Moon sign",
       "metricool_id": 410010123
+    },
+    {
+      "id": "sutra-12th-house",
+      "when": "2026-10-29T15:00:00-04:00",
+      "title": "Sutra: the 12th house, your rest budget",
+      "metricool_id": 410031457
+    },
+    {
+      "id": "sutra-sade-sati",
+      "when": "2026-10-30T10:00:00-04:00",
+      "title": "Sutra: Sade Sati, Saturn's audit",
+      "metricool_id": 410040474
+    },
+    {
+      "id": "sutra-8th-house",
+      "when": "2026-10-31T10:00:00-04:00",
+      "title": "Sutra: the 8th house, other people's money",
+      "metricool_id": 410040724
+    },
+    {
+      "id": "sutra-upachaya",
+      "when": "2026-11-01T10:00:00-05:00",
+      "title": "Sutra: houses that grow",
+      "metricool_id": 410040951
     }
   ],
   "retired": [
@@ -146,5 +170,74 @@
     "Mars loops"
   ],
   "design": "v4 (29 Oct): text about 15% larger. Backgrounds rotate across five themes (solar, lunar, zodiac, jupiter, thread; tools/render.py theme_for). Sky posts use the lunar strip with the real Moon phase lit. Mars orb redrawn with polar cap and dark lands. New slide type: compare (two columns, strong vs weak).",
-  "times": "Toronto is UTC-4 until 1 Nov 2 AM, then UTC-5"
+  "times": "Toronto is UTC-4 until 1 Nov 2 AM, then UTC-5",
+  "sutra": {
+    "instagram": "one Sutra carousel a day at 10 AM (Metricool's best Instagram hour); thread background; cover with the five-pearl thread",
+    "x": "2-3 a day at 9 AM, 1 PM, 8 PM on @koham1323 with the Sutra card image; sutram.ca link in a reply. Waiting for Sumant to add Metricool's X add-on and connect X",
+    "x_queue": [
+      {
+        "n": 1,
+        "draft": "x-drafts/1-twelfth-house.txt",
+        "card": "posts/sutra-12th-house/sutra-12th-house-4.jpg"
+      },
+      {
+        "n": 2,
+        "draft": "x-drafts/2-upachaya.txt",
+        "card": "posts/sutra-card-upachaya/sutra-card-upachaya-1.jpg"
+      },
+      {
+        "n": 3,
+        "draft": "x-drafts/3-eighth-house.txt",
+        "card": "posts/sutra-card-8th-house/sutra-card-8th-house-1.jpg"
+      },
+      {
+        "n": 4,
+        "draft": "x-drafts/4-sade-sati.txt",
+        "card": "posts/sutra-card-sade-sati/sutra-card-sade-sati-1.jpg"
+      },
+      {
+        "n": 5,
+        "draft": "x-drafts/5-dasha.txt",
+        "card": "posts/sutra-card-dasha/sutra-card-dasha-1.jpg"
+      },
+      {
+        "n": 6,
+        "draft": "x-drafts/6-second-house.txt",
+        "card": "posts/sutra-card-2nd-house/sutra-card-2nd-house-1.jpg"
+      },
+      {
+        "n": 7,
+        "draft": "x-drafts/7-retrograde.txt",
+        "card": "posts/sutra-card-retrograde/sutra-card-retrograde-1.jpg"
+      },
+      {
+        "n": 8,
+        "draft": "x-drafts/8-fifth-house.txt",
+        "card": "posts/sutra-card-5th-house/sutra-card-5th-house-1.jpg"
+      },
+      {
+        "n": 9,
+        "draft": "x-drafts/9-fourth-house.txt",
+        "card": "posts/sutra-card-4th-house/sutra-card-4th-house-1.jpg"
+      }
+    ],
+    "instagram_next": [
+      "dasha (Mon 2 Nov)",
+      "retrograde planets",
+      "2nd house",
+      "5th house",
+      "4th house"
+    ],
+    "topic_ideas": [
+      "11th house: your income travels through people",
+      "Rahu and Ketu: what you chase and what you already have (they change signs 5 Dec)",
+      "debilitated planets and neecha bhanga: a skill learned the long way",
+      "combust planets: talent in someone's shadow",
+      "9th house: luck as a teacher you listened to",
+      "10th house: what people call you when you leave the room",
+      "Moon phase at birth",
+      "7th house: what partners teach you"
+    ],
+    "style": "Sumant, 29 Oct: add a little more explanation, wording clear for modern city people, nothing half-baked; every example says why it belongs to the house; explain any technical step in plain words"
+  }
 }
