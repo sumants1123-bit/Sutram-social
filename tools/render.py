@@ -121,12 +121,40 @@ def jupiter_orb(R=95):
 def asc_orb(s=230):
     h=uid('ah'); w=int(s*1.8); ht=int(s*1.0); cy=int(ht*0.66); cx=w/2; R=s*0.36
     return f'<svg width="{w}" height="{ht}" viewBox="0 0 {w} {ht}" style="display:block;margin:-46px auto -40px"><defs><filter id="{h}" filterUnits="userSpaceOnUse" x="0" y="0" width="{w}" height="{ht}"><feGaussianBlur stdDeviation="{s*0.08:.1f}"/></filter></defs><ellipse cx="{cx}" cy="{cy-R*0.3:.1f}" rx="{R*1.1:.1f}" ry="{R*0.7:.1f}" fill="#E09460" opacity=".40" filter="url(#{h})"/><circle cx="{cx-R:.1f}" cy="{cy}" r="18" fill="#E09460" opacity=".55" filter="url(#{h})"/><path d="M{cx-R:.1f},{cy} A{R:.1f},{R:.1f} 0 0 1 {cx+R:.1f},{cy}" fill="none" stroke="#D9A57A" stroke-width="3"/><line x1="{cx-s*0.62:.1f}" y1="{cy}" x2="{cx+s*0.62:.1f}" y2="{cy}" stroke="#D9A57A" stroke-width="3"/><circle cx="{cx-R:.1f}" cy="{cy}" r="9" fill="#E09460"/></svg>'
+def _blob(c, R, pts, rot=0):
+    """A smooth closed shape through points given on the unit disc (Catmull-Rom curve), placed at centre c, radius R."""
+    a=math.radians(rot); P=[(c+R*(x*math.cos(a)-y*math.sin(a)), c+R*(x*math.sin(a)+y*math.cos(a))) for x,y in pts]; n=len(P)
+    d=f'M{P[0][0]:.1f},{P[0][1]:.1f}'
+    for k in range(n):
+        p0,p1,p2,p3=P[k-1],P[k],P[(k+1)%n],P[(k+2)%n]
+        d+=f' C{p1[0]+(p2[0]-p0[0])/6:.1f},{p1[1]+(p2[1]-p0[1])/6:.1f} {p2[0]-(p3[0]-p1[0])/6:.1f},{p2[1]-(p3[1]-p1[1])/6:.1f} {p2[0]:.1f},{p2[1]:.1f}'
+    return d+' Z'
+def mars_orb(R=80, dim=False):
+    """Mars as a small world: rust body, soft dark lands across it, a white polar cap and a shaded limb."""
+    g,h,cl,sh,bl,cb=uid('mg'),uid('mh'),uid('mc'),uid('ms'),uid('mb'),uid('mp'); s=2*R+120; c=s/2
+    stops=('#F6B58C','#D8703F','#A9451F','#5E2210') if not dim else ('#B8826A','#8A5440','#5E3324','#2E170E')
+    glow='' if dim else f'<circle cx="{c}" cy="{c}" r="{R*1.1}" fill="#E0703C" opacity=".32" filter="url(#{h})"/>'
+    band=_blob(c,R,[(-1.1,.02),(-.7,-.12),(-.38,-.02),(-.08,-.16),(.25,-.06),(.6,.05),(1.1,.02),(1.1,.3),(.62,.26),(.3,.34),(.02,.24),(-.3,.38),(-.7,.3),(-1.1,.36)],rot=-16)
+    spot=_blob(c,R,[(.22,.58),(.46,.5),(.62,.6),(.5,.74),(.28,.72)],rot=0)
+    patch=_blob(c,R,[(-.62,-.5),(-.38,-.58),(-.2,-.46),(-.42,-.38)],rot=0)
+    lands=f'<path d="{band}" fill="#5A220F" opacity=".38" filter="url(#{bl})"/><path d="{spot}" fill="#5A220F" opacity=".26" filter="url(#{bl})"/><path d="{patch}" fill="#5A220F" opacity=".2" filter="url(#{bl})"/>'
+    cap=f'<ellipse cx="{c-R*.08:.1f}" cy="{c-R*.9:.1f}" rx="{R*.36:.1f}" ry="{R*.15:.1f}" fill="#FFF3EA" opacity="{.55 if dim else .8}" filter="url(#{cb})"/>'
+    return (f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-40px auto -40px"><defs>'
+            f'<radialGradient id="{g}" cx="38%" cy="32%" r="76%"><stop offset="0" stop-color="{stops[0]}"/><stop offset=".45" stop-color="{stops[1]}"/><stop offset=".85" stop-color="{stops[2]}"/><stop offset="1" stop-color="{stops[3]}"/></radialGradient>'
+            f'<radialGradient id="{sh}" cx="36%" cy="30%" r="82%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/></radialGradient>'
+            f'<clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath>'
+            f'<filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.2:.1f}"/></filter>'
+            f'<filter id="{bl}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{R*.07:.1f}"/></filter>'
+            f'<filter id="{cb}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{R*.035:.1f}"/></filter></defs>'
+            f'{glow}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{lands}{cap}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>'
+            f'<circle cx="{c}" cy="{c}" r="{R-.8:.1f}" fill="none" stroke="#FFD9BE" stroke-opacity="{.10 if dim else .18}" stroke-width="1.6"/></svg>')
 def orb(o):
     if not o: return ''
     k=o.get('kind'); 
     if k=='moon': return moon(o.get('r',140),o.get('illum',1.0),o.get('waxing',True))
     if k=='sun': return sun(o.get('r',95),o.get('rings',True))
     if k=='orbit': return orbit(o.get('w',720),o.get('h',160),o.get('beads',5),o.get('tilt',-7),o.get('lit'))
+    if k=='mars': return mars_orb(o.get('r',80),o.get('dim',False))
     if k=='asc': return asc_orb(o.get('s',230))
     if k=='venus': return venus_orb(o.get('r',80))
     if k=='jupiter': return jupiter_orb(o.get('r',95))
@@ -141,7 +169,7 @@ def slide_html(sp, s=1.0):
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
     bs=f'font-size:{T(sp["bodysize"])};' if sp.get('bodysize') else ''
     if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:"+T(sp["labelsize"]) if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
-    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg'):
+    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg','compare'):
         if sp.get('title'):
             cls=sp.get('titleclass') or {'cover':'h1','cta':'h1'}.get(t,'h2' if len(clean(sp['title']))<26 else 'h3')
             H.append(f'<div class="t {cls}">{rich(sp["title"])}</div>')
@@ -179,6 +207,13 @@ def slide_html(sp, s=1.0):
         svg=re.sub(r'width="\d+" height="\d+"',f'width="{w}" height="{hgt}"',svg,count=1)
         H.append(f'<div style="margin:{sp.get("svgmargin","8px auto 0")};line-height:0">{svg}</div>')
         if sp.get('footnote'): H.append(f'<div class="ti" style="font-size:{F(sp.get("footsize",44))};line-height:1.2;margin-top:4px">{esc(sp["footnote"])}</div>')
+    if t=='compare':
+        cells=''
+        for k,col in enumerate(sp['columns']):
+            ic=orb(col['orb']) if col.get('orb') else ''
+            lines=''.join(f'<div class="p" style="margin-top:6px;{bs}">{esc(l)}</div>' for l in col['lines'])
+            cells+=f'<div style="padding:10px 8px;{"border-left:1px solid rgba(217,165,122,.3);" if k else ""}"><div style="height:{F(150)};display:flex;align-items:center;justify-content:center">{ic}</div><div class="lab" style="margin-top:8px">{esc(col.get("label",""))}</div><div class="t" style="font-size:{F(54)};line-height:1.05;margin-top:10px">{esc(col["head"])}</div><div style="margin-top:12px">{lines}</div></div>'
+        H.append(f'<div class="grid2" style="column-gap:0;margin-top:30px">{cells}</div>')
     if t=='sentence':
         H.append('<div class="rule"></div>')
         H.append(f'<div class="t h3">{esc(sp["example"])}</div>')
@@ -209,28 +244,122 @@ def _bead(x,y,kind,uidp):
         return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#F3B08A"/><stop offset=".6" stop-color="#C2643A"/><stop offset="1" stop-color="#6E2E17"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="url(#{g})"/>'
     return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#FFFBF2"/><stop offset=".6" stop-color="#EBD3A4"/><stop offset="1" stop-color="#A88152"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="16" fill="#F3DDB0" opacity=".10"/><circle cx="{x:.1f}" cy="{y:.1f}" r="8" fill="url(#{g})"/>'
 
-def decor(i, seed, dense=False):
-    """Quiet moving sky behind every slide: stars, a Sun peeking in at the top right with two orbits,
-    and two orbits at the bottom left. The small planets move a few degrees on each slide."""
-    r=random.Random(seed*131+7); rr=random.Random(seed*977+i*31); o=[]
-    for _ in range(46 if not dense else 0):
+def _stars(rr, n=46):
+    o=[]
+    for _ in range(n):
         x=rr.uniform(0,1080); y=rr.uniform(0,1350); rad=rr.choice([.6,.8,1,1.2])
         o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rad}" fill="#FFF1D6" opacity="{rr.uniform(.08,.30):.2f}"/>')
     for _ in range(4):
         x=rr.uniform(40,1040); y=rr.uniform(40,1310)
         o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="#FFF1D6" opacity=".07"/><circle cx="{x:.1f}" cy="{y:.1f}" r="1.7" fill="#FFF1D6" opacity=".62"/>')
-    # top right: a Sun just inside the corner, two orbits around it
-    sx,sy=1110,-34
-    o.append(f'<circle cx="{sx}" cy="{sy}" r="120" fill="#EF7A3C" opacity=".07"/><circle cx="{sx}" cy="{sy}" r="74" fill="#EF7A3C" opacity=".10"/><circle cx="{sx}" cy="{sy}" r="44" fill="#F08A4C" opacity=".30"/>')
-    for R,kind,a0,step in [(190,'venus',152,-3.5),(318,'mars',108,-1.6)]:
-        o.append(f'<circle cx="{sx}" cy="{sy}" r="{R}" fill="none" stroke="{GOLD}" stroke-opacity=".15" stroke-width="1.2"/>')
-        a=math.radians(a0+r.uniform(-3,3)+(i-1)*step); o.append(_bead(sx+R*math.cos(a), sy+R*math.sin(a), kind, 'db'))
-    # bottom left: two wide orbits with Jupiter and a moon
-    cx,cy=-90,1460
-    for R,kind,a0,step in [(330,'moon',-60,4.5),(520,'jupiter',-40,3.2)]:
-        o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{R}" ry="{R*0.86:.0f}" fill="none" stroke="{GOLD}" stroke-opacity=".14" stroke-width="1.2"/>')
-        a=math.radians(a0+r.uniform(0,4)+(i-1)*step); o.append(_bead(cx+R*math.cos(a), cy+R*0.86*math.sin(a), kind, 'db'))
+    return o
+
+def _phase(x,y,R,illum,waxing=True,op=.9):
+    """A small Moon in a given phase (illum 0..1)."""
+    k=1-2*illum; rx=abs(k)*R; g=uid('ph')
+    base=f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{R}" fill="#D8D2D0" opacity="{op}"/>'
+    if illum>0.98: return base
+    if waxing: d=f'M{x:.1f},{y-R:.1f} A{R},{R} 0 0 0 {x:.1f},{y+R:.1f} A{rx:.1f},{R} 0 0 {1 if illum>0.5 else 0} {x:.1f},{y-R:.1f} Z'
+    else:      d=f'M{x:.1f},{y-R:.1f} A{R},{R} 0 0 1 {x:.1f},{y+R:.1f} A{rx:.1f},{R} 0 0 {0 if illum>0.5 else 1} {x:.1f},{y-R:.1f} Z'
+    return base+f'<path d="{d}" fill="#0B0806" opacity=".92"/><circle cx="{x:.1f}" cy="{y:.1f}" r="{R}" fill="none" stroke="#D8D2D0" stroke-opacity=".35" stroke-width="1"/>'
+
+def _crescent(x,y,R,op=.5):
+    m=uid('cm'); g=uid('cg')
+    return (f'<defs><mask id="{m}"><circle cx="{x}" cy="{y}" r="{R}" fill="#fff"/><circle cx="{x+R*0.42:.1f}" cy="{y-R*0.12:.1f}" r="{R*0.96:.1f}" fill="#000"/></mask>'
+            f'<radialGradient id="{g}" cx="30%" cy="45%" r="80%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".7" stop-color="#DCD6D3"/><stop offset="1" stop-color="#9C969A"/></radialGradient></defs>'
+            f'<circle cx="{x}" cy="{y}" r="{R*1.5:.1f}" fill="#FFF4E6" opacity=".05"/><circle cx="{x}" cy="{y}" r="{R}" fill="url(#{g})" mask="url(#{m})" opacity="{op}"/>')
+
+THEMES=['solar','lunar','zodiac','jupiter','thread']
+PHASES=[(.15,True),(.4,True),(.7,True),(1.0,True),(.7,False),(.4,False),(.15,False)]
+def phase_index(illum, waxing):
+    """Which of the seven phases on the lunar strip is nearest to the real Moon."""
+    return min(range(7), key=lambda k: abs(PHASES[k][0]-illum)+(0 if (PHASES[k][1]==waxing or k==3) else 9))
+def decor(i, seed, dense=False, theme='solar', hi_phase=None):
+    """Quiet moving sky behind every slide. Five themes rotate across posts:
+    solar (Sun at the top right, Venus and Mars, Jupiter and the Moon at the bottom left),
+    lunar (the Moon's phases down the left edge, a crescent at the top right),
+    zodiac (a slowly turning zodiac wheel at the top left, Saturn at the bottom right),
+    jupiter (Jupiter and its four moons at the bottom left, a crescent at the top right),
+    thread (Sutram's thread with five pearls sweeping through two corners).
+    Planets and pearls move a few degrees on each slide, so they seem to turn as you swipe."""
+    r=random.Random(seed*131+7); rr=random.Random(seed*977+i*31)
+    o=_stars(rr, 0 if dense else 46)
+    if theme=='solar':
+        sx,sy=1110,-34
+        o.append(f'<circle cx="{sx}" cy="{sy}" r="120" fill="#EF7A3C" opacity=".07"/><circle cx="{sx}" cy="{sy}" r="74" fill="#EF7A3C" opacity=".10"/><circle cx="{sx}" cy="{sy}" r="44" fill="#F08A4C" opacity=".30"/>')
+        for R,kind,a0,step in [(190,'venus',152,-3.5),(318,'mars',108,-1.6)]:
+            o.append(f'<circle cx="{sx}" cy="{sy}" r="{R}" fill="none" stroke="{GOLD}" stroke-opacity=".15" stroke-width="1.2"/>')
+            a=math.radians(a0+r.uniform(-3,3)+(i-1)*step); o.append(_bead(sx+R*math.cos(a), sy+R*math.sin(a), kind, 'db'))
+        cx,cy=-90,1460
+        for R,kind,a0,step in [(330,'moon',-60,4.5),(520,'jupiter',-40,3.2)]:
+            o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{R}" ry="{R*0.86:.0f}" fill="none" stroke="{GOLD}" stroke-opacity=".14" stroke-width="1.2"/>')
+            a=math.radians(a0+r.uniform(0,4)+(i-1)*step); o.append(_bead(cx+R*math.cos(a), cy+R*0.86*math.sin(a), kind, 'db'))
+    elif theme=='lunar':
+        # phases down the left edge; the brightest one moves down as you swipe
+        n=7
+        for k in range(n):
+            y=360+k*92; ill,wax=PHASES[k]
+            hi=(k==hi_phase) if hi_phase is not None else (k==((i-1)%n))
+            if hi: o.append(f'<circle cx="46" cy="{y}" r="22" fill="#FFF4E6" opacity=".10"/>')
+            o.append(_phase(46,y,10 if hi else 8,ill,wax,.95 if hi else .55))
+        o.append(f'<line x1="46" y1="330" x2="46" y2="{360+6*92+30}" stroke="{GOLD}" stroke-opacity=".12" stroke-width="1"/>')
+        # a large faint crescent peeking in at the top right
+        o.append(_crescent(1000,92,70,.55))
+    elif theme=='zodiac':
+        cx,cy,R=-110,-110,430; rot=(i-1)*4+r.uniform(0,30)
+        o.append(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="{GOLD}" stroke-opacity=".26" stroke-width="1.3"/><circle cx="{cx}" cy="{cy}" r="{R-46}" fill="none" stroke="{GOLD}" stroke-opacity=".16" stroke-width="1"/>')
+        ab=['ARI','TAU','GEM','CAN','LEO','VIR','LIB','SCO','SAG','CAP','AQU','PIS']
+        for k in range(12):
+            a=math.radians(k*30+rot); x1,y1=cx+R*math.cos(a),cy+R*math.sin(a); x2,y2=cx+(R-46)*math.cos(a),cy+(R-46)*math.sin(a)
+            o.append(f'<line x1="{x1:.1f}" y1="{y1:.1f}" x2="{x2:.1f}" y2="{y2:.1f}" stroke="{GOLD}" stroke-opacity=".28" stroke-width="1.2"/>')
+            am=math.radians(k*30+15+rot); lx,ly=cx+(R-23)*math.cos(am),cy+(R-23)*math.sin(am)
+            if 0<lx<1080 and 0<ly<1350: o.append(f'<text x="{lx:.1f}" y="{ly+5:.1f}" text-anchor="middle" font-family="EB Garamond" font-size="15" letter-spacing="2" fill="{GOLD}" fill-opacity=".55" transform="rotate({k*30+15+rot+90:.1f} {lx:.1f} {ly:.1f})">{ab[k]}</text>')
+        # Saturn with its ring at the bottom right
+        sx,sy=1000+(i-1)*-6,1236
+        g=uid('sat')
+        o.append(f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#F3E3C0"/><stop offset=".6" stop-color="#CDB07E"/><stop offset="1" stop-color="#7E6640"/></radialGradient></defs><circle cx="{sx}" cy="{sy}" r="34" fill="#E8D3A8" opacity=".07"/><ellipse cx="{sx}" cy="{sy}" rx="30" ry="8" fill="none" stroke="#D9C49A" stroke-opacity=".55" stroke-width="2" transform="rotate(-18 {sx} {sy})"/><circle cx="{sx}" cy="{sy}" r="13" fill="url(#{g})"/><path d="M{sx-29},{sy+9} A30,8 0 0 0 {sx+29},{sy-9}" fill="none" stroke="#D9C49A" stroke-opacity=".75" stroke-width="2" transform="rotate(-18 {sx} {sy})"/>')
+    elif theme=='jupiter':
+        jx,jy=118,1236
+        o.append(f'<line x1="20" y1="{jy}" x2="380" y2="{jy}" stroke="{GOLD}" stroke-opacity=".12" stroke-width="1"/>')
+        g=uid('jj')
+        o.append(f'<defs><radialGradient id="{g}" cx="38%" cy="32%" r="78%"><stop offset="0" stop-color="#F4E3C6"/><stop offset=".55" stop-color="#D5B285"/><stop offset="1" stop-color="#7A5536"/></radialGradient><clipPath id="{g}c"><circle cx="{jx}" cy="{jy}" r="24"/></clipPath></defs>'
+                 f'<circle cx="{jx}" cy="{jy}" r="46" fill="#E0B98A" opacity=".08"/><circle cx="{jx}" cy="{jy}" r="24" fill="url(#{g})"/><g clip-path="url(#{g}c)" opacity=".5"><rect x="{jx-24}" y="{jy-10}" width="48" height="4" fill="#9C6440"/><rect x="{jx-24}" y="{jy+3}" width="48" height="6" fill="#A8744F"/><ellipse cx="{jx+8}" cy="{jy+7}" rx="5" ry="3" fill="#A0563A"/></g>')
+        # the four moons shift along their line on each slide, as they really do
+        for k,(base,amp,per) in enumerate([(52,40,1.0),(96,60,1.8),(150,70,3.4),(230,80,6.9)]):
+            ph=(i-1)/per*math.pi*0.9+k
+            mx=jx+(base*math.sin(ph) if k%2 else -base*math.sin(ph)) ; mx=jx+base*math.cos(ph)
+            o.append(f'<circle cx="{mx:.1f}" cy="{jy}" r="{3.6 if k<3 else 4.2}" fill="#F2E6CC" opacity=".8"/>')
+        o.append(_crescent(1000,92,60,.5))
+    elif theme=='thread':
+        # two sweeps of the thread, top right and bottom left, with five pearls; one pearl is lit
+        arcs=[(1120,-40,520,250,24,[92,106]),(-60,1420,560,270,-14,[-72,-52,-34])]
+        lit=(i-1)%5; kidx=0
+        for cx,cy,rx,ry,rot,angs in arcs:
+            o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="none" stroke="{GOLD}" stroke-opacity=".20" stroke-width="1.4" transform="rotate({rot} {cx} {cy})"/>')
+            for a0 in angs:
+                a=math.radians(a0+(i-1)*2.5); px,py=cx+rx*math.cos(a),cy+ry*math.sin(a)
+                c=math.cos(math.radians(rot)); s_=math.sin(math.radians(rot)); x=cx+(px-cx)*c-(py-cy)*s_; y=cy+(px-cx)*s_+(py-cy)*c
+                on=(kidx==lit); kidx+=1
+                if on: o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="20" fill="{AMBER}" opacity=".16"/>')
+                o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{8 if on else 6.5}" fill="{AMBER if on else CREAM}" opacity="{.95 if on else .7}"/>')
     return f'<svg class="decor" width="1080" height="1350">{"".join(o)}</svg>'
+
+def theme_for(spec):
+    """Pick the background theme: the spec's own choice, or one that suits the post type, so the feed keeps changing."""
+    if spec.get('decor_theme') in THEMES: return spec['decor_theme']
+    k=(spec.get('kicker') or '').lower(); pid=spec['id']
+    if k.startswith("today's sky"): return 'lunar'
+    if 'thread' in k or 'scripture' in k: return 'thread'
+    if 'sky patterns' in k: return 'solar'
+    return THEMES[sum(map(ord,pid))%len(THEMES)]
+
+def real_phase(spec):
+    """On a Today's Sky post the lunar strip lights the Moon's real phase; elsewhere the lit phase moves as you swipe."""
+    if isinstance(spec.get('decor_phase'),int): return spec['decor_phase']
+    o=(spec['slides'][0].get('orb') or {})
+    if (spec.get('kicker') or '').lower().startswith("today's sky") and o.get('kind')=='moon':
+        return phase_index(o.get('illum',1.0), o.get('waxing',True))
+    return None
 
 def page(inner,kicker,s,starfield=None,url='sutram.ca',dec=''):
     return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide">{dec}{starfield or ''}{GRAIN}<div class="kick">{esc(kicker)}</div><div class="body">{inner}</div><div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
@@ -243,7 +372,7 @@ def render(spec_path):
         for i,sp in enumerate(spec['slides'],1):
             kicker=sp.get('kicker',spec.get('kicker','Sutram'))
             sf=stars(seed=i*7+len(pid)) if sp.get('stars') else ''
-            dec='' if spec.get('decor') is False else decor(i, sum(map(ord,pid)), dense=bool(sp.get('stars')))
+            dec='' if spec.get('decor') is False else decor(i, sum(map(ord,pid)), dense=bool(sp.get('stars')), theme=theme_for(spec), hi_phase=real_phase(spec))
             for s in (1,.96,.92,.88,.84,.8,.76,.72,.68):
                 html=page(slide_html(sp,s),kicker,s,sf,dec=dec); fn=os.path.join(out,f'_s{i}.html'); open(fn,'w').write(html)
                 pg.goto('file://'+fn); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(250)

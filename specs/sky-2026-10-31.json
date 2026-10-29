@@ -1,0 +1,37 @@
+{
+  "id": "sky-2026-10-31",
+  "kicker": "Today's Sky · Saturday 31 October",
+  "slides": [
+    {
+      "type": "sky",
+      "orb": {
+        "kind": "moon",
+        "r": 118,
+        "illum": 0.658,
+        "waxing": false
+      },
+      "title": "Moon in Punarvasu",
+      "subtitle": "Light returns, moving into Cancer",
+      "cells": [
+        [
+          "Moon phase",
+          "Waning, 7th day"
+        ],
+        [
+          "Big shift",
+          "Jupiter enters Leo"
+        ],
+        [
+          "Rahu Kaal, Toronto",
+          "10:27 to 11:43 AM"
+        ],
+        [
+          "Moving backward",
+          "Mercury, Venus, Saturn"
+        ]
+      ],
+      "good": "travel, picking up old plans",
+      "slow": "signing and big buys"
+    }
+  ]
+}

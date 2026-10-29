@@ -1,0 +1,116 @@
+{
+  "id": "lesson04",
+  "kicker": "Daily lesson · 4",
+  "decor_theme": "zodiac",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "mars",
+        "r": 95
+      },
+      "title": "Mars",
+      "subtitle": "Your drive and your courage"
+    },
+    {
+      "type": "text",
+      "label": "In your life",
+      "labelsize": 26,
+      "title": "Your get-up-and-go",
+      "body": [
+        "How you face a fight or a deadline",
+        "Your energy, sport and courage",
+        "Your brothers and sisters"
+      ],
+      "bodysize": 40,
+      "note": "Varahamihira: Mars is strength · Brihat Jataka 2.1"
+    },
+    {
+      "type": "compare",
+      "title": "Strong Mars,\nweak Mars",
+      "titleclass": "h3",
+      "bodysize": 31,
+      "columns": [
+        {
+          "orb": {
+            "kind": "mars",
+            "r": 46
+          },
+          "label": "Strong",
+          "head": "You act",
+          "lines": [
+            "First to say: let's go",
+            "You send back the wrong order",
+            "You finish what you start"
+          ]
+        },
+        {
+          "orb": {
+            "kind": "mars",
+            "r": 46,
+            "dim": true
+          },
+          "label": "Weak",
+          "head": "You wait",
+          "lines": [
+            "You plan, and plan, and plan",
+            "You eat the wrong order",
+            "Gym for a week, then you stop"
+          ]
+        }
+      ],
+      "closing": "Too much Mars? A short temper"
+    },
+    {
+      "type": "stack",
+      "label": "Where it shines",
+      "labelsize": 24,
+      "title": "Mars by sign",
+      "items": [
+        [
+          "Strongest in Capricorn",
+          "Exalted: calm, steady, gets it done"
+        ],
+        [
+          "At home in Aries, Scorpio",
+          "Its own signs: says it straight, sees it through"
+        ],
+        [
+          "Weakest in Cancer",
+          "Debilitated: holds it in, then snaps"
+        ]
+      ],
+      "bodysize": 34,
+      "note": "Brihat Parashara Hora Shastra",
+      "closing": "Mars is in Cancer now, until 12 November"
+    },
+    {
+      "type": "quote",
+      "label": "The Gita",
+      "labelsize": 26,
+      "quote": "Lift yourself by yourself;\ndo not let yourself sink",
+      "source": "Bhagavad Gita 6.5",
+      "body": [
+        "Philosophy tells you to rise",
+        "Your Mars shows how you rise"
+      ],
+      "bodysize": 40
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "mars",
+        "r": 62
+      },
+      "title": "Find your Mars",
+      "subtitle": "Strong or weak? Which house?",
+      "lines": [
+        "Free chart at sutram.ca",
+        "Full course at learnsutram.com"
+      ],
+      "bodysize": 40,
+      "next": "Next lesson · Mercury"
+    }
+  ]
+}
