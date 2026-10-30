@@ -69,10 +69,10 @@
       "metricool_id": 410320291
     },
     {
-      "id": "lesson03-ask",
+      "id": "lesson03-ask2",
       "when": "2026-10-30T12:00:00-04:00",
-      "title": "Lesson 3: the Moon",
-      "metricool_id": 410320972
+      "title": "Lesson 3: the Moon, the mother",
+      "metricool_id": 411229762
     },
     {
       "id": "scripture-2026-10-30-v2-ask",
@@ -84,31 +84,31 @@
       "id": "sky-2026-10-31-ask",
       "when": "2026-10-31T07:00:00-04:00",
       "title": "Punarvasu; Jupiter enters Leo; clocks go back",
-      "metricool_id": 410321692
+      "metricool_id": 411230425
     },
     {
-      "id": "lesson04-ask",
+      "id": "lesson04-ask2",
       "when": "2026-10-31T12:00:00-04:00",
-      "title": "Lesson 4: Mars (strong vs weak, two friends)",
-      "metricool_id": 410322077
+      "title": "Lesson 4: Mars, the soldier",
+      "metricool_id": 411229983
     },
     {
       "id": "jupiter-loops-2026-v2-ask",
       "when": "2026-10-31T18:30:00-04:00",
-      "title": "Twelve years of Jupiter (Sky Patterns)",
-      "metricool_id": 410322265
+      "title": "Twelve years of Jupiter, the teacher (Sky Patterns)",
+      "metricool_id": 411230705
     },
     {
       "id": "sky-2026-11-01-ask",
       "when": "2026-11-01T07:00:00-05:00",
       "title": "Pushya; Ahoi Ashtami; back on standard time",
-      "metricool_id": 410322836
+      "metricool_id": 411230570
     },
     {
-      "id": "lesson05-ask",
+      "id": "lesson05-ask2",
       "when": "2026-11-01T12:00:00-05:00",
-      "title": "Lesson 5: Mercury (your words and your friends)",
-      "metricool_id": 410323823
+      "title": "Lesson 5: Mercury, the messenger",
+      "metricool_id": 411230122
     },
     {
       "id": "week-2026-11-01-ask2",
@@ -135,19 +135,22 @@
       "metricool_id": 410321863
     },
     {
-      "id": "sutra-upachaya-ask",
+      "id": "sutra-upachaya-ask2",
       "when": "2026-11-01T10:00:00-05:00",
-      "title": "Sutra: houses that grow",
-      "metricool_id": 410323619
-    }
-  ],
-  "ready": [
+      "title": "Sutra: houses that grow (hard grahas)",
+      "metricool_id": 411230294
+    },
     {
-      "id": "jupiter-ketu-2026",
-      "title": "Jupiter meets Ketu (10 slides, knot chart cover)",
-      "caption": "captions/jupiter-ketu-2026.txt",
-      "x_thread": "x-drafts/jupiter-ketu-thread.txt",
-      "note": "sent to Sumant 30 Oct for review, not scheduled; proposed Fri 30 Oct 6:30 PM in place of scripture-2026-10-30-v2-ask, which would move to Mon 2 Nov 6:30 PM. Dates use the mean node (Ketu into Cancer 5 Dec; true node 25 Nov)"
+      "id": "jupiter-ketu-2026-v3",
+      "when": "2026-10-30T09:42:00-04:00",
+      "title": "Jupiter meets Ketu (current transit; posted now at Sumant's call)",
+      "metricool_id": 411229084
+    },
+    {
+      "id": "story-teacher-monk",
+      "when": "2026-11-02T18:30:00-05:00",
+      "title": "Graha stories 1: when the teacher meets the monk",
+      "metricool_id": 411231022
     }
   ],
   "retired": [
@@ -175,16 +178,23 @@
     "sutra-12th-house",
     "sutra-sade-sati",
     "sutra-8th-house",
-    "sutra-upachaya"
+    "sutra-upachaya",
+    "lesson03-ask",
+    "lesson04-ask",
+    "lesson05-ask",
+    "sutra-upachaya-ask",
+    "jupiter-ketu-2026",
+    "jupiter-ketu-2026-v2"
   ],
   "next_lesson": 6,
   "next_thread_episode": 2,
   "next_thread_title": "Five layers of you",
   "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
   "next_to_make": [
-    "Mon 2 Nov 7 AM: sky (Moon in Ashlesha, into Leo 5:20 PM, meets Jupiter)",
-    "Mon 2 Nov 12 PM: lesson06 Jupiter (your teacher and your luck; real-life strong vs weak)",
-    "Mon 2 Nov 6:30 PM: Vakya slot, or a big-shift post"
+    "Mon 2 Nov 7 AM: sky (Moon in Ashlesha, into Leo 5:20 PM, meets Jupiter); characters in the caption",
+    "Mon 2 Nov 10 AM: Sutra (your dasha)",
+    "Mon 2 Nov 12 PM: lesson06 Jupiter, the teacher (cover label 'The teacher'; graha wording; strong vs weak in real life)",
+    "Tue 3 Nov onward: Graha stories 2 (the teacher and the magician, Jupiter and Rahu) and lessons 7 to 10 (Venus the lover, Saturn the auditor, Rahu the magician, Ketu the monk); then Nadi rules from scratch, one a day"
   ],
   "sky_patterns_ideas": [
     "The 60-year clock (5 Jupiter laps = 2 Saturn laps = one Samvatsara cycle)",
@@ -263,5 +273,24 @@
     ],
     "style": "Sumant, 29 Oct: add a little more explanation, wording clear for modern city people, nothing half-baked; every example says why it belongs to the house; explain any technical step in plain words"
   },
-  "links": "Sumant, 29 Oct: every post ends with exactly two links, asksutram.com first, then sutram.ca/newsletter; nothing else. Slide footer reads ASKSUTRAM.COM. X replies carry the same two links."
+  "links": "Sumant, 29 Oct: every post ends with exactly two links, asksutram.com first, then sutram.ca/newsletter; nothing else. Slide footer reads ASKSUTRAM.COM. X replies carry the same two links.",
+  "graha_stories": {
+    "set": "30 Oct 2026, Sumant: grahas as characters, told the Bhrigu Nandi Nadi way, are the essence of all content. Say graha (Sanskrit for 'the one who grabs'), never planet. Project doc: claude/graha-stories.md",
+    "cast": {
+      "Sun": "the king",
+      "Moon": "the mother",
+      "Mars": "the soldier",
+      "Mercury": "the messenger",
+      "Jupiter": "the teacher",
+      "Venus": "the lover",
+      "Saturn": "the auditor",
+      "Rahu": "the magician (smoke is his trick)",
+      "Ketu": "the monk"
+    },
+    "degree_rule": "inside one sign, the graha with more degrees walks in front; the one behind takes on its nature (Sumant's rule)",
+    "retrograde_story": "walking backward, looking back: someone looks back, sees a person drowning, changes path to save them (Sumant)",
+    "made": [
+      "story-teacher-monk"
+    ]
+  }
 }
