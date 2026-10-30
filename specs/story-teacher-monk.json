@@ -1,0 +1,130 @@
+{
+  "id": "story-teacher-monk",
+  "kicker": "Graha stories · 1",
+  "decor_theme": "zodiac",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orbs": [{"kind": "jupiter", "r": 62}, {"kind": "ketu", "r": 56, "dx": 190}],
+      "label": "Bhrigu Nandi Nadi, as a story",
+      "labelsize": 26,
+      "title": "When the teacher\nmeets the monk",
+      "titlesize": 108,
+      "subtitle": "Who walks in front decides the story"
+    },
+    {
+      "type": "compare",
+      "label": "Two characters",
+      "labelsize": 26,
+      "title": "Meet the cast",
+      "titleclass": "h3",
+      "orbbox": 160,
+      "collabsize": 25,
+      "collabls": ".16em",
+      "headsize": 70,
+      "bodysize": 33,
+      "columns": [
+        {"orb": {"kind": "jupiter", "r": 58}, "label": "The teacher", "head": "Jupiter", "lines": ["What you learned", "Faith, mentors, savings"]},
+        {"orb": {"kind": "ketu", "r": 52}, "label": "The monk", "head": "Ketu", "lines": ["What you outgrew", "Instinct, letting go"]}
+      ],
+      "closing": "Graha means “the one who grabs”:\neach grabs a part of your life",
+      "closingsize": 48
+    },
+    {
+      "type": "text",
+      "orbs": [{"kind": "jupiter", "r": 40}, {"kind": "ketu", "r": 37, "dx": 84}],
+      "label": "Rule 1 · Same sign",
+      "labelsize": 26,
+      "title": "Same room",
+      "titleclass": "h2",
+      "body": [
+        "When two grahas sit in one sign, they share a room",
+        "Their stories mix: the teacher brings the books,\nthe monk asks what you'll keep"
+      ],
+      "bodysize": 37,
+      "bodygap": 18,
+      "closing": "In Nadi, sharing a sign\nis the strongest link"
+    },
+    {
+      "type": "text",
+      "label": "Rule 2 · Degrees",
+      "labelsize": 26,
+      "title": "Who walks in front",
+      "titleclass": "h2",
+      "titlesize": 96,
+      "body": [
+        "Inside the room, count the degrees",
+        "The graha with more degrees walks in front",
+        "The one behind takes on the leader's nature"
+      ],
+      "bodysize": 38,
+      "bodygap": 18,
+      "closing": "Same two grahas,\ntwo different stories"
+    },
+    {
+      "type": "text",
+      "orbs": [{"kind": "jupiter", "r": 38}, {"kind": "ketu", "r": 46, "dx": 150}],
+      "label": "Monk in front",
+      "labelsize": 26,
+      "title": "The teacher\nbecomes a monk",
+      "titleclass": "h2",
+      "titlesize": 96,
+      "body": [
+        "You stop following advice you were given\nand trust what you've lived",
+        "A mentor steps back; savings get given away",
+        "Faith goes quiet and personal"
+      ],
+      "bodysize": 36,
+      "bodygap": 18,
+      "closing": "Less preaching, more practice"
+    },
+    {
+      "type": "text",
+      "orbs": [{"kind": "ketu", "r": 38}, {"kind": "jupiter", "r": 46, "dx": 150}],
+      "label": "Teacher in front",
+      "labelsize": 26,
+      "title": "The monk\nbecomes a teacher",
+      "titleclass": "h2",
+      "titlesize": 96,
+      "body": [
+        "What you went through quietly\nbecomes what you can teach",
+        "The burnout survivor starts coaching",
+        "The quiet meditator opens a class"
+      ],
+      "bodysize": 36,
+      "bodygap": 18,
+      "closing": "Old wisdom finds words"
+    },
+    {
+      "type": "text",
+      "label": "Right now, in Leo",
+      "labelsize": 26,
+      "title": "This month's story",
+      "titleclass": "h2",
+      "titlesize": 96,
+      "body": [
+        "31 Oct to 11 Nov: the monk has more degrees,\nso the teacher turns monk",
+        "11 Nov to 5 Dec: the teacher walks in front,\nso the monk turns teacher"
+      ],
+      "bodysize": 37,
+      "bodygap": 22,
+      "closing": "“Let go first,\nthen teach what's left”",
+      "closingsize": 58,
+      "after": "Sutra · Sutram"
+    },
+    {
+      "type": "cta",
+      "orbs": [{"kind": "jupiter", "r": 50}, {"kind": "ketu", "r": 46, "dx": 120}],
+      "title": "Teacher and monk\nin your chart?",
+      "titleclass": "h2",
+      "titlesize": 92,
+      "subtitle": "See who walks in front",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40
+    }
+  ]
+}
