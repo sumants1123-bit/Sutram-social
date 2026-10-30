@@ -141,6 +141,15 @@
       "metricool_id": 410323619
     }
   ],
+  "ready": [
+    {
+      "id": "jupiter-ketu-2026",
+      "title": "Jupiter meets Ketu (10 slides, knot chart cover)",
+      "caption": "captions/jupiter-ketu-2026.txt",
+      "x_thread": "x-drafts/jupiter-ketu-thread.txt",
+      "note": "sent to Sumant 30 Oct for review, not scheduled; proposed Fri 30 Oct 6:30 PM in place of scripture-2026-10-30-v2-ask, which would move to Mon 2 Nov 6:30 PM. Dates use the mean node (Ketu into Cancer 5 Dec; true node 25 Nov)"
+    }
+  ],
   "retired": [
     "intro",
     "ep01",
