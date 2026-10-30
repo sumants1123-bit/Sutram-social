@@ -1,0 +1,120 @@
+{
+  "id": "lesson05-ask2",
+  "kicker": "Daily lesson · 5",
+  "decor_theme": "solar",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "mercury",
+        "r": 80
+      },
+      "title": "Mercury",
+      "subtitle": "Your words and your friends",
+      "label": "The messenger",
+      "labelsize": 30
+    },
+    {
+      "type": "text",
+      "label": "In your life",
+      "labelsize": 26,
+      "title": "Your circle",
+      "body": [
+        "How you talk, text and learn",
+        "Your friends and your group chats",
+        "Numbers, trade and a quick mind"
+      ],
+      "bodysize": 40,
+      "note": "Brihat Jataka 2.1 · Phaladeepika, chapter 2"
+    },
+    {
+      "type": "compare",
+      "title": "Strong Mercury,\nweak Mercury",
+      "titleclass": "h3",
+      "bodysize": 31,
+      "columns": [
+        {
+          "orb": {
+            "kind": "mercury",
+            "r": 42
+          },
+          "label": "Strong",
+          "head": "You connect",
+          "lines": [
+            "Friends in every group chat",
+            "You explain it, they get it",
+            "You talk your way to a deal"
+          ]
+        },
+        {
+          "orb": {
+            "kind": "mercury",
+            "r": 42,
+            "dim": true
+          },
+          "label": "Weak",
+          "head": "You hold back",
+          "lines": [
+            "A small, close circle",
+            "It comes out wrong",
+            "You rewrite a text five times"
+          ]
+        }
+      ],
+      "closing": "Too much Mercury? Overthinking everything"
+    },
+    {
+      "type": "stack",
+      "label": "Where it shines",
+      "labelsize": 24,
+      "title": "Mercury by sign",
+      "items": [
+        [
+          "Strongest in Virgo",
+          "Exalted: sharp, careful, good with details"
+        ],
+        [
+          "At home in Gemini, Virgo",
+          "Its own signs: curious, quick, good with words"
+        ],
+        [
+          "Weakest in Pisces",
+          "Debilitated: dreamy, misses the details"
+        ]
+      ],
+      "bodysize": 34,
+      "note": "Brihat Parashara Hora Shastra",
+      "closing": "Moving backward now, until 13 November"
+    },
+    {
+      "type": "quote",
+      "label": "The Rig Veda",
+      "labelsize": 26,
+      "quote": "The wise sifted speech with the mind\nlike flour through a sieve;\nthere, friends knew friendship",
+      "source": "Rig Veda 10.71.2",
+      "body": [
+        "Good words and good friends go together",
+        "In your chart, Mercury rules both"
+      ],
+      "bodysize": 40,
+      "quotesize": 62
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "mercury",
+        "r": 56
+      },
+      "title": "Find your Mercury",
+      "subtitle": "Strong or weak? Which house?",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40,
+      "next": "Next lesson · Jupiter",
+      "titleclass": "h2"
+    }
+  ]
+}

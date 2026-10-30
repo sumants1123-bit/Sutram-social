@@ -1,6 +1,6 @@
-Twelve years of Jupiter
+Twelve years of Jupiter, the teacher
 
-Jupiter takes about 12 years to go once around the zodiac, so it spends about a year in each sign. Seen from the Earth, it also seems to move backward for about four months every year. Plot its path day by day and those backward stretches become loops: eleven of them over the next twelve years. Every point comes from real positions, computed in the Sutram engine.
+Jupiter takes about 12 years to go once around the zodiac, so it spends about a year in each sign. Seen from the Earth, it also seems to walk backward for about four months every year, like a teacher going back over an old lesson. Plot its path day by day and those backward stretches become loops: eleven of them over the next twelve years. Every point comes from real positions, computed in the Sutram engine.
 
 Early this morning, at 2:32 AM Toronto time, Jupiter entered Leo. This first visit is short: Jupiter slips back into Cancer on 24 January and returns to Leo on 25 June 2027.
 

@@ -1,0 +1,104 @@
+{
+  "id": "sutra-upachaya-ask2",
+  "kicker": "Sutra · Houses that grow",
+  "decor_theme": "thread",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "orbit",
+        "w": 560,
+        "h": 120,
+        "beads": 5,
+        "lit": 2,
+        "tilt": -6
+      },
+      "label": "Houses that grow",
+      "labelsize": 28,
+      "title": "Better\nwith age",
+      "subtitle": "The 3rd, 6th, 10th and 11th houses"
+    },
+    {
+      "type": "text",
+      "label": "What it means",
+      "labelsize": 26,
+      "title": "Upachaya",
+      "titleclass": "h2",
+      "body": [
+        "Varahamihira's name for these four houses",
+        "The word means increase",
+        "What sits here starts slow and grows with effort"
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "grid",
+      "label": "In modern life",
+      "labelsize": 24,
+      "title": "What each one covers",
+      "titleclass": "h3",
+      "cellsize": 50,
+      "cellpad": 16,
+      "bodysize": 32,
+      "cells": [
+        [
+          "3rd house",
+          "Your hustle",
+          "The side project, the cold email"
+        ],
+        [
+          "6th house",
+          "Your daily grind",
+          "Job, gym, hard coworkers"
+        ],
+        [
+          "10th house",
+          "Your career",
+          "Your title and reputation"
+        ],
+        [
+          "11th house",
+          "Your network",
+          "Raises, clients, referrals"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "label": "Hard grahas do well here",
+      "labelsize": 24,
+      "title": "The tough coach",
+      "titleclass": "h2",
+      "body": [
+        "The auditor (Saturn) and the soldier (Mars)\nbring pressure",
+        "Here, that pressure turns into stamina",
+        "Unpleasant at 22, the reason you're good at 35"
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "Some parts of your chart\nare meant to start rough",
+      "source": "Sutram",
+      "quotesize": 68
+    },
+    {
+      "type": "text",
+      "label": "Practical remedy",
+      "labelsize": 26,
+      "title": "Give it three years",
+      "titleclass": "h2",
+      "body": [
+        "Find which of these houses has a graha in your chart",
+        "Pick one habit that feeds it",
+        "Judge it after three honest years"
+      ],
+      "bodysize": 38,
+      "closing": "Ask about your houses at asksutram.com",
+      "after": "Weekly newsletter · sutram.ca/newsletter"
+    }
+  ]
+}
