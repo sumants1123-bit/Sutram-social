@@ -174,8 +174,41 @@ def node_orb(R=80, kind='ketu'):
             f'<circle cx="{c}" cy="{c}" r="{R}" fill="#070504"/>'
             f'<circle cx="{c}" cy="{c}" r="{R}" fill="none" stroke="{rim}" stroke-opacity=".9" stroke-width="2.2"/>'
             f'<circle cx="{c}" cy="{c}" r="{R-7}" fill="none" stroke="{rim}" stroke-opacity=".18" stroke-width="1"/></svg>')
+def saturn_orb(R=70):
+    """Saturn, the auditor: pale gold with soft bands and a tilted ring; the back of the ring passes behind the disc."""
+    g,h,cl,sh,bk,fr=uid('tg'),uid('th'),uid('tc'),uid('ts'),uid('tb'),uid('tf'); s=int(2*R+160); c=s/2
+    tilt=-18; rx=R*1.62; ry=R*0.40; sw=R*0.13
+    bands=''.join(f'<rect x="{c-R:.1f}" y="{c+R*y:.1f}" width="{2*R:.1f}" height="{R*hh:.1f}" fill="{col}" opacity="{op}"/>' for y,hh,col,op in [(-.55,.12,'#B89B68',.30),(-.25,.10,'#CDB487',.30),(.05,.14,'#A88A5A',.34),(.38,.10,'#BFA374',.28)])
+    ring=lambda clip,op: (f'<g transform="rotate({tilt} {c} {c})"><g clip-path="url(#{clip})">'
+                          f'<ellipse cx="{c}" cy="{c}" rx="{rx:.1f}" ry="{ry:.1f}" fill="none" stroke="#E6D3A8" stroke-opacity="{op}" stroke-width="{sw:.1f}"/>'
+                          f'<ellipse cx="{c}" cy="{c}" rx="{rx*0.83:.1f}" ry="{ry*0.83:.1f}" fill="none" stroke="#C9B080" stroke-opacity="{op*0.7:.2f}" stroke-width="{sw*0.55:.1f}"/></g></g>')
+    return (f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs>'
+            f'<radialGradient id="{g}" cx="38%" cy="32%" r="78%"><stop offset="0" stop-color="#F8EDD3"/><stop offset=".45" stop-color="#E3CD9C"/><stop offset=".85" stop-color="#A88A58"/><stop offset="1" stop-color="#6B5434"/></radialGradient>'
+            f'<radialGradient id="{sh}" cx="36%" cy="30%" r="82%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".45"/></radialGradient>'
+            f'<clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath>'
+            f'<clipPath id="{bk}"><rect x="0" y="0" width="{s}" height="{c}"/></clipPath>'
+            f'<clipPath id="{fr}"><rect x="0" y="{c}" width="{s}" height="{c}"/></clipPath>'
+            f'<filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.4:.1f}"/></filter></defs>'
+            f'<circle cx="{c}" cy="{c}" r="{R*1.1:.1f}" fill="#E8D09A" opacity=".28" filter="url(#{h})"/>'
+            f'{ring(bk,.55)}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{bands}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>{ring(fr,.9)}</svg>')
+def orb_size(o):
+    """Width of an orb's drawing canvas (the glow needs room), so a row can space grahas by their centres."""
+    k=o.get('kind'); r=o.get('r',80)
+    if k in ('mars','mercury'): return 2*r+120
+    if k=='sun': return r*5.2 if o.get('rings',True) else 2*r+160
+    return 2*r+160
+def orbrow(orbs, spacing=None, gap=18):
+    """Grahas side by side. spacing = distance between centres (an orb's own dx overrides it); otherwise a plain gap."""
+    out=''; prev=None
+    for o in orbs:
+        w=orb_size(o); d=o.get('dx',spacing)
+        ml=0 if prev is None else ((d-(prev+w)/2) if d is not None else gap)
+        out+=f'<div style="flex:0 0 auto;margin-left:{ml:.1f}px">{orb(o)}</div>'
+        prev=w
+    return f'<div style="display:flex;align-items:center;justify-content:center">{out}</div>'
 def orb(o):
     if not o: return ''
+    if o.get('kind')=='saturn': return saturn_orb(o.get('r',70))
     if o.get('kind') in ('ketu','rahu'): return node_orb(o.get('r',80), o['kind'])
     k=o.get('kind');
     if k=='mercury': return mercury_orb(o.get('r',70),o.get('dim',False))
@@ -195,12 +228,16 @@ def slide_html(sp, s=1.0):
     T=lambda px: F(px*TXT)
     t=sp['type']; H=[]
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
+    # a row of grahas on one slide (the characters on stage); a negative orbgap lets them crowd together
+    if sp.get('orbs'):
+        H.append(f'<div style="margin-bottom:22px">{orbrow(sp["orbs"], sp.get("orbspacing"), sp.get("orbgap",18))}</div>')
     bs=f'font-size:{T(sp["bodysize"])};' if sp.get('bodysize') else ''
     if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:"+T(sp["labelsize"]) if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
-    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg','compare'):
+    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg','compare','cast'):
         if sp.get('title'):
             cls=sp.get('titleclass') or {'cover':'h1','cta':'h1'}.get(t,'h2' if len(clean(sp['title']))<26 else 'h3')
-            H.append(f'<div class="t {cls}">{rich(sp["title"])}</div>')
+            ts=f' style="font-size:{F(sp["titlesize"])}"' if sp.get('titlesize') else ''
+            H.append(f'<div class="t {cls}"{ts}>{rich(sp["title"])}</div>')
         if sp.get('subtitle'): H.append(f'<div class="ti sub" style="margin-top:22px">{esc(sp["subtitle"])}</div>')
     if t=='quote':
         H.append('<div class="rule"></div>')
@@ -242,9 +279,22 @@ def slide_html(sp, s=1.0):
         for k,col in enumerate(sp['columns']):
             ic=orb(col['orb']) if col.get('orb') else ''
             lines=''.join(f'<div class="p" style="margin-top:6px;{bs}">{esc(l)}</div>' for l in col['lines'])
-            cells+=f'<div style="padding:10px 8px;{"border-left:1px solid rgba(217,165,122,.3);" if k else ""}"><div style="height:{F(150)};display:flex;align-items:center;justify-content:center">{ic}</div><div class="lab" style="margin-top:8px">{esc(col.get("label",""))}</div><div class="t" style="font-size:{F(sp.get("headsize",54))};line-height:1.05;margin-top:10px">{esc(col["head"])}</div><div style="margin-top:12px">{lines}</div></div>'
+            cl=(f'font-size:{T(sp["collabsize"])};' if sp.get('collabsize') else '')+(f'letter-spacing:{sp["collabls"]};' if sp.get('collabls') else '')
+            cells+=f'<div style="padding:10px 8px;{"border-left:1px solid rgba(217,165,122,.3);" if k else ""}"><div style="height:{F(sp.get("orbbox",150))};display:flex;align-items:center;justify-content:center">{ic}</div><div class="lab" style="margin-top:8px;{cl}">{esc(col.get("label",""))}</div><div class="t" style="font-size:{F(sp.get("headsize",54))};line-height:1.05;margin-top:10px">{esc(col["head"])}</div><div style="margin-top:12px">{lines}</div></div>'
         n_=len(sp['columns'])
         H.append(f'<div style="display:grid;grid-template-columns:repeat({n_},1fr);column-gap:0;width:100%;margin-top:30px">{cells}</div>')
+    if t=='cast':
+        # the characters on stage: grahas on the left, who they are and what they're doing on the right
+        rows=''
+        for it in sp['items']:
+            ob=orbrow(it.get('orbs',[]), it.get('spacing',sp.get('castspacing',70)))
+            ls=f'font-size:{T(sp["castlabsize"])};' if sp.get('castlabsize') else ''
+            rows+=(f'<div style="display:flex;align-items:center;gap:{F(26)};width:100%;text-align:left;padding:{F(16)} 0;{"border-top:1px solid rgba(217,165,122,.2);" if rows else ""}">'
+                   f'<div style="flex:0 0 {F(sp.get("castorbw",210))};min-width:0;height:{F(sp.get("castorbh",118))};display:flex;align-items:center;justify-content:center">{ob}</div>'
+                   f'<div style="flex:1;min-width:0"><div class="lab" style="{ls}">{esc(it.get("label",""))}</div>'
+                   f'<div class="t" style="font-size:{F(sp.get("headsize",50))};line-height:1.05;margin-top:{F(8)}">{esc(it["head"])}</div>'
+                   f'<div class="p" style="margin-top:{F(6)};line-height:1.3;{bs}">{esc(it["line"])}</div></div></div>')
+        H.append(f'<div style="width:100%;margin-top:{F(24)}">{rows}</div>')
     if t=='sentence':
         H.append('<div class="rule"></div>')
         H.append(f'<div class="t h3">{esc(sp["example"])}</div>')
@@ -254,12 +304,13 @@ def slide_html(sp, s=1.0):
         H.append('<div class="grid2" style="margin-top:26px;border-top:1px solid rgba(217,165,122,.28);border-bottom:1px solid rgba(217,165,122,.28);padding:6px 0">'+''.join(f'<div style="padding:12px 0"><div class="lab">{esc(a)}</div><div class="p" style="margin-top:10px;font-size:{F(44)};line-height:1.15">{esc(b)}</div></div>' for a,b in sp['cells'])+'</div>')
         H.append(f'<div class="grid2" style="grid-template-columns:1fr 1fr;margin-top:22px"><div><span class="lab">Good for</span><div class="p" style="margin-top:8px;font-size:{F(40)};line-height:1.2">{esc(sp["good"])}</div></div><div><span class="lab">Go slow on</span><div class="p" style="margin-top:8px;font-size:{F(40)};line-height:1.2">{esc(sp["slow"])}</div></div></div>')
     if sp.get('body'):
-        H.append('<div style="margin-top:30px">'+''.join(f'<div class="p" style="{bs}">{esc(l)}</div>' for l in sp['body'])+'</div>')
+        bg=sp.get('bodygap',0)
+        H.append('<div style="margin-top:30px">'+''.join(f'<div class="p" style="{bs}{"margin-top:"+F(bg)+";" if (k and bg) else ""}">{esc(l)}</div>' for k,l in enumerate(sp['body']))+'</div>')
     if sp.get('note'): H.append(f'<div class="src" style="margin-top:28px;letter-spacing:.1em">{esc(sp["note"])}</div>')
     if t=='cta':
         H.append('<div class="rule"></div>'+''.join(f'<div class="p" style="margin-top:6px;{bs}">{esc(l)}</div>' for l in sp.get('lines',[])))
         if sp.get('next'): H.append(f'<div class="src" style="margin-top:28px">{esc(sp["next"])}</div>')
-    if sp.get('closing'): H.append(f'<div class="ti sub" style="margin-top:34px">{esc(sp["closing"])}</div>')
+    if sp.get('closing'): H.append(f'<div class="ti sub" style="margin-top:34px;{"font-size:"+F(sp["closingsize"])+";" if sp.get("closingsize") else ""}">{esc(sp["closing"])}</div>')
     # a small second link under the closing line (the newsletter, after asksutram.com)
     if sp.get('after'): H.append(f'<div class="src" style="margin-top:22px;letter-spacing:.12em">{esc(sp["after"])}</div>')
     return ''.join(H)

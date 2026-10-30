@@ -1,0 +1,342 @@
+{
+  "id": "jupiter-ketu-2026-v2",
+  "kicker": "Now · Jupiter meets Ketu",
+  "decor_theme": "jupiter",
+  "slides": [
+    {
+      "type": "compare",
+      "kicker": "Current transit · Oct to Dec",
+      "label": "In the sky now",
+      "labelsize": 30,
+      "title": "Jupiter meets Ketu",
+      "titleclass": "h2",
+      "titlesize": 116,
+      "orbbox": 170,
+      "collabsize": 25,
+      "collabls": ".16em",
+      "headsize": 72,
+      "bodysize": 32,
+      "columns": [
+        {
+          "orb": {
+            "kind": "jupiter",
+            "r": 62
+          },
+          "label": "The teacher",
+          "head": "Jupiter",
+          "lines": [
+            "What you learned",
+            "Faith, savings"
+          ]
+        },
+        {
+          "orb": {
+            "kind": "ketu",
+            "r": 56
+          },
+          "label": "The monk",
+          "head": "Ketu",
+          "lines": [
+            "What you outgrew",
+            "Letting go"
+          ]
+        },
+        {
+          "orb": {
+            "kind": "mars",
+            "r": 56
+          },
+          "label": "The soldier",
+          "head": "Mars",
+          "lines": [
+            "The push to act",
+            "Courage, temper"
+          ]
+        }
+      ],
+      "closing": "The teacher walks into the monk's room,\nand the soldier is on the way",
+      "closingsize": 52
+    },
+    {
+      "type": "svg",
+      "label": "Oct to Dec 2026",
+      "labelsize": 26,
+      "title": "Watch them meet",
+      "titleclass": "h3",
+      "svgfile": "svg/knot-2026-v2.svg",
+      "svgwidth": 912,
+      "svgmargin": "18px auto 0",
+      "footnote": "Each line is one character moving through the sky;\nwhere the lines bunch up, they meet",
+      "footsize": 40
+    },
+    {
+      "type": "cast",
+      "label": "The rest of the cast",
+      "labelsize": 26,
+      "title": "Who else is on stage",
+      "titleclass": "h3",
+      "headsize": 50,
+      "bodysize": 31,
+      "castlabsize": 22,
+      "items": [
+        {
+          "orbs": [
+            {
+              "kind": "sun",
+              "r": 34,
+              "rings": false
+            }
+          ],
+          "label": "Sun",
+          "head": "The king",
+          "line": "Owns Leo, but is away in Libra and weak"
+        },
+        {
+          "orbs": [
+            {
+              "kind": "mercury",
+              "r": 27
+            },
+            {
+              "kind": "venus",
+              "r": 30,
+              "dx": 66
+            }
+          ],
+          "label": "Mercury · Venus",
+          "head": "The messenger and the treasurer",
+          "line": "Both walk backward and swap houses"
+        },
+        {
+          "orbs": [
+            {
+              "kind": "saturn",
+              "r": 28
+            },
+            {
+              "kind": "rahu",
+              "r": 27,
+              "dx": 78
+            }
+          ],
+          "label": "Saturn · Rahu",
+          "head": "The auditor and the magician",
+          "line": "The auditor walks back to sit with the magician; both face the room"
+        }
+      ],
+      "closing": "Graha means “the one who grabs”:\neach one grabs a part of your life",
+      "closingsize": 46
+    },
+    {
+      "type": "text",
+      "orbs": [
+        {
+          "kind": "mars",
+          "r": 32,
+          "dim": true
+        },
+        {
+          "kind": "jupiter",
+          "r": 44,
+          "dx": 250
+        },
+        {
+          "kind": "ketu",
+          "r": 40,
+          "dx": 130
+        }
+      ],
+      "label": "Act 1 · 31 Oct to 11 Nov",
+      "labelsize": 26,
+      "title": "The doorway",
+      "titleclass": "h2",
+      "body": [
+        "The teacher (Jupiter) steps from Cancer into Leo\nthrough Gandanta, the knot where water meets fire",
+        "The room is Magha, the monk's own star,\nand Ketu is already inside",
+        "The soldier (Mars), at his weakest, follows"
+      ],
+      "bodysize": 36,
+      "closing": "What you borrowed gets tested\nby what you lived",
+      "bodygap": 18
+    },
+    {
+      "type": "text",
+      "orbs": [
+        {
+          "kind": "mars",
+          "r": 38
+        },
+        {
+          "kind": "jupiter",
+          "r": 42,
+          "dx": 70
+        },
+        {
+          "kind": "ketu",
+          "r": 38,
+          "dx": 70
+        }
+      ],
+      "label": "Act 2 · 12 to 18 Nov",
+      "labelsize": 26,
+      "title": "The knot",
+      "titleclass": "h2",
+      "body": [
+        "12 Nov: the soldier (Mars) walks through the door",
+        "13 to 16 Nov: teacher, monk and soldier\nstand within one degree",
+        "13 Nov: the messenger and the treasurer\nstop walking backward"
+      ],
+      "bodysize": 36,
+      "closing": "Stuck decisions move fast;\ndrive and speak with care",
+      "bodygap": 18
+    },
+    {
+      "type": "text",
+      "orbs": [
+        {
+          "kind": "ketu",
+          "r": 40
+        },
+        {
+          "kind": "jupiter",
+          "r": 44,
+          "dx": 330
+        }
+      ],
+      "label": "Act 3 · 5 to 12 Dec",
+      "labelsize": 26,
+      "title": "The release",
+      "titleclass": "h2",
+      "body": [
+        "5 Dec: the monk (Ketu) steps back into Cancer",
+        "10 Dec: the auditor (Saturn) turns forward",
+        "12 Dec: the teacher (Jupiter) stops and looks back"
+      ],
+      "bodysize": 36,
+      "closing": "“You cannot carry the old skin\nand sit straight at the same time”",
+      "closingsize": 50,
+      "bodygap": 18,
+      "after": "2027: they meet again, about 1 Mar and 19 Apr"
+    },
+    {
+      "type": "grid",
+      "label": "By Ascendant",
+      "labelsize": 24,
+      "title": "Where they meet for you",
+      "titleclass": "h3",
+      "cellsize": 48,
+      "cellpad": 14,
+      "bodysize": 30,
+      "cells": [
+        [
+          "Aries",
+          "5th house",
+          "Kids, love, a risky bet"
+        ],
+        [
+          "Taurus",
+          "4th house",
+          "Home, mother, a move"
+        ],
+        [
+          "Gemini",
+          "3rd house",
+          "Courage, posts, siblings"
+        ],
+        [
+          "Cancer",
+          "2nd house",
+          "Savings, family, words"
+        ],
+        [
+          "Leo",
+          "1st house",
+          "You: body, image, path"
+        ],
+        [
+          "Virgo",
+          "12th house",
+          "Sleep, spending, travel"
+        ]
+      ]
+    },
+    {
+      "type": "grid",
+      "label": "By Ascendant",
+      "labelsize": 24,
+      "title": "Where they meet for you",
+      "titleclass": "h3",
+      "cellsize": 48,
+      "cellpad": 14,
+      "bodysize": 30,
+      "cells": [
+        [
+          "Libra",
+          "11th house",
+          "Income, friends, goals"
+        ],
+        [
+          "Scorpio",
+          "10th house",
+          "Career, boss, name"
+        ],
+        [
+          "Sagittarius",
+          "9th house",
+          "Beliefs, teachers, father"
+        ],
+        [
+          "Capricorn",
+          "8th house",
+          "Shared money, sudden turns"
+        ],
+        [
+          "Aquarius",
+          "7th house",
+          "Partner, clients, deals"
+        ],
+        [
+          "Pisces",
+          "6th house",
+          "Work, health, debts"
+        ]
+      ]
+    },
+    {
+      "type": "stack",
+      "label": "How to use it",
+      "labelsize": 24,
+      "title": "Three rules",
+      "items": [
+        [
+          "Until 13 Nov",
+          "Finish things; don't sign or launch"
+        ],
+        [
+          "13 to 16 Nov",
+          "No big decisions; drive and speak with care"
+        ],
+        [
+          "After 5 Dec",
+          "Keep what you've lived; let the rest go"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "jupiter",
+        "r": 66
+      },
+      "title": "Where does it\nland for you?",
+      "titleclass": "h2",
+      "subtitle": "Your houses, your dates",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40
+    }
+  ]
+}
