@@ -1,0 +1,235 @@
+{
+  "id": "jupiter-ketu-2026",
+  "kicker": "Big shift · Jupiter meets Ketu",
+  "decor_theme": "jupiter",
+  "slides": [
+    {
+      "type": "svg",
+      "label": "Oct to Dec 2026",
+      "labelsize": 24,
+      "title": "Jupiter meets Ketu",
+      "titleclass": "h2",
+      "svgfile": "svg/knot-2026.svg",
+      "svgwidth": 912,
+      "svgmargin": "10px auto 0",
+      "footnote": "and Mars arrives: 13 to 16 November",
+      "footsize": 46
+    },
+    {
+      "type": "compare",
+      "title": "Three characters",
+      "titleclass": "h3",
+      "headsize": 48,
+      "bodysize": 26,
+      "columns": [
+        {
+          "orb": {
+            "kind": "jupiter",
+            "r": 46
+          },
+          "label": "The teacher",
+          "head": "Jupiter",
+          "lines": [
+            "What you were taught",
+            "Faith, savings"
+          ]
+        },
+        {
+          "orb": {
+            "kind": "ketu",
+            "r": 42
+          },
+          "label": "The monk",
+          "head": "Ketu",
+          "lines": [
+            "What you know already",
+            "What you're done with"
+          ]
+        },
+        {
+          "orb": {
+            "kind": "mars",
+            "r": 42
+          },
+          "label": "The soldier",
+          "head": "Mars",
+          "lines": [
+            "The push to act",
+            "Courage, temper"
+          ]
+        }
+      ],
+      "closing": "They meet in Magha, the star of the ancestors"
+    },
+    {
+      "type": "text",
+      "label": "Act 1 · 31 Oct to 11 Nov",
+      "labelsize": 24,
+      "title": "The doorway",
+      "titleclass": "h2",
+      "body": [
+        "Jupiter steps from Cancer into Leo through Gandanta, the knot where water meets fire",
+        "Ketu waits just ahead; Mars, at its weakest, follows"
+      ],
+      "bodysize": 36,
+      "closing": "What you borrowed gets tested\nby what you lived"
+    },
+    {
+      "type": "text",
+      "label": "Act 2 · 12 to 18 Nov",
+      "labelsize": 24,
+      "title": "The knot",
+      "titleclass": "h2",
+      "body": [
+        "Mars crosses the same doorway on 12 Nov",
+        "From 13 to 16 Nov, all three are within one degree",
+        "Mercury and Venus turn forward on 13 Nov"
+      ],
+      "bodysize": 36,
+      "closing": "Stuck decisions move fast;\ndrive and speak with care"
+    },
+    {
+      "type": "text",
+      "label": "Act 3 · 5 to 12 Dec",
+      "labelsize": 24,
+      "title": "The release",
+      "titleclass": "h2",
+      "body": [
+        "Ketu slips back into Cancer on 5 Dec",
+        "Saturn turns forward on 10 Dec",
+        "Jupiter pauses on 12 Dec"
+      ],
+      "bodysize": 36,
+      "closing": "What was borrowed falls away;\nwhat's yours stays",
+      "note": "2027: they meet again, about 1 Mar and 19 Apr"
+    },
+    {
+      "type": "grid",
+      "label": "By Ascendant",
+      "labelsize": 24,
+      "title": "Where it lands for you",
+      "titleclass": "h3",
+      "cellsize": 48,
+      "cellpad": 14,
+      "bodysize": 30,
+      "cells": [
+        [
+          "Aries",
+          "5th house",
+          "Kids, love, a risky bet"
+        ],
+        [
+          "Taurus",
+          "4th house",
+          "Home, mother, a move"
+        ],
+        [
+          "Gemini",
+          "3rd house",
+          "Courage, posts, siblings"
+        ],
+        [
+          "Cancer",
+          "2nd house",
+          "Savings, family, words"
+        ],
+        [
+          "Leo",
+          "1st house",
+          "You: body, image, path"
+        ],
+        [
+          "Virgo",
+          "12th house",
+          "Sleep, spending, travel"
+        ]
+      ]
+    },
+    {
+      "type": "grid",
+      "label": "By Ascendant",
+      "labelsize": 24,
+      "title": "Where it lands for you",
+      "titleclass": "h3",
+      "cellsize": 48,
+      "cellpad": 14,
+      "bodysize": 30,
+      "cells": [
+        [
+          "Libra",
+          "11th house",
+          "Income, friends, goals"
+        ],
+        [
+          "Scorpio",
+          "10th house",
+          "Career, boss, name"
+        ],
+        [
+          "Sagittarius",
+          "9th house",
+          "Beliefs, teachers, father"
+        ],
+        [
+          "Capricorn",
+          "8th house",
+          "Shared money, sudden turns"
+        ],
+        [
+          "Aquarius",
+          "7th house",
+          "Partner, clients, deals"
+        ],
+        [
+          "Pisces",
+          "6th house",
+          "Work, health, debts"
+        ]
+      ]
+    },
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "You cannot carry the old skin\nand sit straight at the same time",
+      "source": "Sutram",
+      "quotesize": 64
+    },
+    {
+      "type": "stack",
+      "label": "How to use it",
+      "labelsize": 24,
+      "title": "Three rules",
+      "items": [
+        [
+          "Until 13 Nov",
+          "Finish things; don't sign or launch"
+        ],
+        [
+          "13 to 16 Nov",
+          "No big decisions; drive and speak with care"
+        ],
+        [
+          "After 5 Dec",
+          "Keep what you've lived; let the rest go"
+        ]
+      ],
+      "bodysize": 34
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "jupiter",
+        "r": 66
+      },
+      "title": "Where does it\nland for you?",
+      "titleclass": "h2",
+      "subtitle": "Your houses, your dates",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40
+    }
+  ]
+}

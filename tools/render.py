@@ -163,8 +163,20 @@ def mercury_orb(R=70, dim=False):
             f'<filter id="{bl}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{max(1.2,R*.025):.1f}"/></filter></defs>'
             f'{glow}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{craters}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>'
             f'<circle cx="{c}" cy="{c}" r="{R-.8:.1f}" fill="none" stroke="#E8F0DE" stroke-opacity="{.08 if dim else .16}" stroke-width="1.4"/></svg>')
+def node_orb(R=80, kind='ketu'):
+    """Rahu and Ketu are shadow points: a dark disc with a glowing rim, like an eclipse."""
+    g,h=uid('ng'),uid('nh'); s=int(2*R+160); c=s/2
+    rim='#E09460' if kind=='ketu' else '#A9B9D6'
+    return (f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs>'
+            f'<radialGradient id="{g}" cx="50%" cy="50%" r="50%"><stop offset=".55" stop-color="{rim}" stop-opacity="0"/><stop offset=".74" stop-color="{rim}" stop-opacity=".55"/><stop offset="1" stop-color="{rim}" stop-opacity="0"/></radialGradient>'
+            f'<filter id="{h}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{R/6:.1f}"/></filter></defs>'
+            f'<circle cx="{c}" cy="{c}" r="{R*1.42:.1f}" fill="url(#{g})" filter="url(#{h})"/>'
+            f'<circle cx="{c}" cy="{c}" r="{R}" fill="#070504"/>'
+            f'<circle cx="{c}" cy="{c}" r="{R}" fill="none" stroke="{rim}" stroke-opacity=".9" stroke-width="2.2"/>'
+            f'<circle cx="{c}" cy="{c}" r="{R-7}" fill="none" stroke="{rim}" stroke-opacity=".18" stroke-width="1"/></svg>')
 def orb(o):
     if not o: return ''
+    if o.get('kind') in ('ketu','rahu'): return node_orb(o.get('r',80), o['kind'])
     k=o.get('kind');
     if k=='mercury': return mercury_orb(o.get('r',70),o.get('dim',False))
     if k=='moon': return moon(o.get('r',140),o.get('illum',1.0),o.get('waxing',True))
@@ -230,8 +242,9 @@ def slide_html(sp, s=1.0):
         for k,col in enumerate(sp['columns']):
             ic=orb(col['orb']) if col.get('orb') else ''
             lines=''.join(f'<div class="p" style="margin-top:6px;{bs}">{esc(l)}</div>' for l in col['lines'])
-            cells+=f'<div style="padding:10px 8px;{"border-left:1px solid rgba(217,165,122,.3);" if k else ""}"><div style="height:{F(150)};display:flex;align-items:center;justify-content:center">{ic}</div><div class="lab" style="margin-top:8px">{esc(col.get("label",""))}</div><div class="t" style="font-size:{F(54)};line-height:1.05;margin-top:10px">{esc(col["head"])}</div><div style="margin-top:12px">{lines}</div></div>'
-        H.append(f'<div class="grid2" style="column-gap:0;margin-top:30px">{cells}</div>')
+            cells+=f'<div style="padding:10px 8px;{"border-left:1px solid rgba(217,165,122,.3);" if k else ""}"><div style="height:{F(150)};display:flex;align-items:center;justify-content:center">{ic}</div><div class="lab" style="margin-top:8px">{esc(col.get("label",""))}</div><div class="t" style="font-size:{F(sp.get("headsize",54))};line-height:1.05;margin-top:10px">{esc(col["head"])}</div><div style="margin-top:12px">{lines}</div></div>'
+        n_=len(sp['columns'])
+        H.append(f'<div style="display:grid;grid-template-columns:repeat({n_},1fr);column-gap:0;width:100%;margin-top:30px">{cells}</div>')
     if t=='sentence':
         H.append('<div class="rule"></div>')
         H.append(f'<div class="t h3">{esc(sp["example"])}</div>')
