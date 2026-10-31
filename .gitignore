@@ -3,3 +3,4 @@ tools/package*.json
 .venv/
 __pycache__/
 posts/*/_*
+.docs_tmp/

@@ -205,10 +205,10 @@
   "next_thread_title": "Five layers of you",
   "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
   "next_to_make": [
-    "Mon 2 Nov 7 AM: sky (Moon in Ashlesha, into Leo 5:20 PM, meets Jupiter); characters in the caption",
     "Mon 2 Nov 10 AM: Sutra (your dasha)",
     "Mon 2 Nov 12 PM: lesson06 Jupiter, the teacher (cover label 'The teacher'; graha wording; strong vs weak in real life)",
-    "Tue 3 Nov onward: Graha stories 2 (the teacher and the magician, Jupiter and Rahu) and lessons 7 to 10 (Venus the lover, Saturn the auditor, Rahu the magician, Ketu the monk); then Nadi rules from scratch, one a day"
+    "Tue 3 Nov 10 AM Sutra and 12 PM lesson07 Venus, the lover; then Graha stories 2 (the teacher and the magician, Jupiter and Rahu) and lessons 8 to 10 (Saturn the auditor, Rahu the magician, Ketu the monk); then Nadi rules from scratch, one a day",
+    "No daily Moon/sky post (Sumant, 31 Oct)"
   ],
   "sky_patterns_ideas": [
     "The 60-year clock (5 Jupiter laps = 2 Saturn laps = one Samvatsara cycle)",
@@ -405,17 +405,44 @@
         "id": "sutra-2nd-house",
         "when": "2026-11-06T20:00:00-05:00",
         "image": "posts/sutra-card-2nd-house-ask/sutra-card-2nd-house-ask-1.jpg"
+      },
+      {
+        "id": "lesson05-mercury-x",
+        "when": "2026-11-01T13:00:00-05:00",
+        "images": "lesson05-ask2 slides 1,3,4,5",
+        "buffer_id": "6ae62f5321c807e9d57a774b"
+      },
+      {
+        "id": "story-teacher-monk-x",
+        "when": "2026-11-02T13:00:00-05:00",
+        "images": "story-teacher-monk slides 1,5,6,7",
+        "buffer_id": "6ae62f621ee172cd6db718cf"
       }
     ],
-    "daily_time": "8:00 PM Toronto (6:30 AM India)",
+    "daily_time": "1 PM and 8 PM Toronto",
     "next_refill_by": "2026-11-05",
     "backlog": [
+      "Twelve years of Jupiter (jupiter-loops-2026-v2-ask)",
+      "lesson06 Jupiter when made",
       "x-drafts/3-eighth-house.txt",
       "x-drafts/8-fifth-house.txt",
       "x-drafts/9-fourth-house.txt",
-      "Graha stories 1 (story-teacher-monk) as an X post",
-      "Diwali 8 Nov post"
+      "Graha stories 2",
+      "Diwali 8 Nov"
     ],
-    "zapier_calls_used_31oct": "about 13 write/read calls (2 tasks each) plus setup checks"
-  }
+    "zapier_calls_used_31oct": "about 13 write/read calls (2 tasks each) plus setup checks",
+    "route": "Buffer connector directly (mcp Buffer create_post), Zapier no longer needed for posting",
+    "queue_full_at": "10 of 10 on 31 Oct (Buffer free)"
+  },
+  "rules_31oct": {
+    "instagram": "keep the same level and process (Metricool); no daily Moon/sky posts; 10 AM Sutra, 12 PM lesson, 6:30 PM feature",
+    "x": "mirror at least 50 to 70% of Instagram with images, 1 PM and 8 PM Toronto, via the Buffer connector (create_post, up to 4 images)"
+  },
+  "drafts_metricool": [
+    {
+      "id": "sky-2026-11-01-ask",
+      "metricool_id": 412357045,
+      "note": "moved to draft 31 Oct, daily Moon posts stopped"
+    }
+  ]
 }
