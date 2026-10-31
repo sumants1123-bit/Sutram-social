@@ -1,0 +1,15 @@
+{
+  "id": "sutra-card-retrograde-ask2",
+  "kicker": "Sutra · Grahas walking backward",
+  "decor_theme": "thread",
+  "slides": [
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "Some gifts arrive\nas second drafts",
+      "source": "Sutram",
+      "quotesize": 68
+    }
+  ]
+}
