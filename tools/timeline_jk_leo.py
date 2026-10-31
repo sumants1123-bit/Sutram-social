@@ -2,8 +2,8 @@
 """Every meeting of Jupiter and Ketu (within 3 degrees) in Leo, 1600 to now.
 Dates come from the engine scan (Swiss Ephemeris, Lahiri, mean node), run 31 Oct 2026:
 1635, 1672, 1766, 1802, 1896, 1932, 2026.
-v2 (31 Oct, Sumant: the first version's visual and text were too small): a vertical timeline
-that fills the slide, big years and big labels. Writes svg/jk-leo-timeline-v2.svg (912 wide).
+v2/v3 (31 Oct, Sumant): bigger, vertical, and only the four years with a clear match plus now; a vertical timeline
+that fills the slide, big years and big labels. Writes svg/jk-leo-timeline-v3.svg (912 wide).
 """
 import os
 HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.dirname(HERE)
@@ -12,11 +12,10 @@ W, H = 912, 660
 LX = 150                       # the line
 ROWS = [('1635', 'a preacher banished', False),
         ('1672', 'the disaster year', False),
-        ('1766 · 1802', 'no clear match', False),
         ('1896', 'a 38-minute war', False),
         ('1932', 'the fast and the famine', False),
         ('2026', 'now', True)]
-TOP, STEP = 62, 107
+TOP, STEP = 70, 122
 
 
 def t(x, y, s, size, col, op=1, anchor='start', italic=False, fam='EB Garamond', weight=None):
@@ -39,5 +38,5 @@ for k, (yr, tag, now) in enumerate(ROWS):
     tx = LX + 52 + (330 if quiet else 160)
     o.append(t(tx, y + 14, tag, 38, AMBER if now else GOLD, .6 if quiet else .97, italic=True))
 svg = f'<svg xmlns="http://www.w3.org/2000/svg" width="{W}" height="{H}" viewBox="0 0 {W} {H}">' + ''.join(o) + '</svg>'
-open(os.path.join(REPO, 'svg', 'jk-leo-timeline-v2.svg'), 'w').write(svg)
-print('svg/jk-leo-timeline-v2.svg')
+open(os.path.join(REPO, 'svg', 'jk-leo-timeline-v3.svg'), 'w').write(svg)
+print('svg/jk-leo-timeline-v3.svg')

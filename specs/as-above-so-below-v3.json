@@ -1,0 +1,219 @@
+{
+  "id": "as-above-so-below-v3",
+  "kicker": "As above, so below",
+  "decor_theme": "zodiac",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Sky and history",
+      "stars": true,
+      "orbs": [
+        {
+          "kind": "mars",
+          "r": 40
+        },
+        {
+          "kind": "jupiter",
+          "r": 54,
+          "dx": 108
+        },
+        {
+          "kind": "ketu",
+          "r": 46,
+          "dx": 104
+        }
+      ],
+      "mirror": true,
+      "label": "Six times since 1600",
+      "labelsize": 28,
+      "title": "As above,\nso below",
+      "titlesize": 124,
+      "subtitle": "The sky over us now has happened before;\nhere is what happened on the ground"
+    },
+    {
+      "type": "quotes",
+      "label": "Where the words come from",
+      "labelsize": 26,
+      "items": [
+        [
+          "The Emerald Tablet · about 800 CE",
+          "That which is above\nis like to that which is below",
+          "Credited to Hermes · Arabic first, Latin by 1151"
+        ],
+        [
+          "Charaka Samhita · Sharira 5.3",
+          "A person is a measure of the world",
+          "puruṣo'yaṃ lokasammitaḥ"
+        ]
+      ]
+    },
+    {
+      "type": "text",
+      "label": "In Jyotish",
+      "labelsize": 26,
+      "title": "The sky as a body",
+      "titleclass": "h2",
+      "titlesize": 96,
+      "body": [
+        "Parashara reads the twelve signs as the body\nof Time: Aries the head, Pisces the feet",
+        "Charaka maps the sky into you: the sun is your\npower to take in, the moon your cheer, light\nyour knowledge, darkness your confusion",
+        "Varahamihira read the same sky for whole\ncountries: rain, harvests, famine and war"
+      ],
+      "bodysize": 34,
+      "bodygap": 18,
+      "closing": "The same grahas move\nin a nation and in you"
+    },
+    {
+      "type": "svg",
+      "label": "We tested it · 1600 to today",
+      "labelsize": 26,
+      "title": "Six times before",
+      "titleclass": "h2",
+      "titlesize": 96,
+      "svgfile": "svg/jk-leo-timeline-v3.svg",
+      "svgwidth": 912,
+      "svgmargin": "18px auto 0",
+      "footnote": "Six meetings since 1600;\nthese four left a clear mark",
+      "footsize": 44
+    },
+    {
+      "type": "stack",
+      "label": "What happened below",
+      "labelsize": 26,
+      "title": "1635 and 1672",
+      "titleclass": "h2",
+      "titlesize": 92,
+      "items": [
+        [
+          "October 1635",
+          "Almost this exact sky, Mars close by, the Sun weak.\nA preacher, Roger Williams, is banished for his beliefs\nand founds Rhode Island on freedom of conscience"
+        ],
+        [
+          "June 1672",
+          "Saturn in Pisces, like now. France invades\nthe Dutch Republic; the Dutch still call it\nthe disaster year"
+        ]
+      ],
+      "bodysize": 33
+    },
+    {
+      "type": "stack",
+      "label": "What happened below",
+      "labelsize": 26,
+      "title": "1896 and 1932",
+      "titleclass": "h2",
+      "titlesize": 92,
+      "items": [
+        [
+          "August 1896",
+          "The same degree as this November. A man takes\nZanzibar's palace without approval; the war lasts\nabout 38 minutes. Famine and plague hit India"
+        ],
+        [
+          "Autumn 1932",
+          "Gandhi fasts in prison until the Poona Pact;\nfamine spreads in Ukraine; the Depression\nhits bottom; America changes leader"
+        ]
+      ],
+      "bodysize": 33
+    },
+    {
+      "type": "stack",
+      "label": "The rhyme",
+      "labelsize": 26,
+      "title": "What repeats",
+      "items": [
+        [
+          "Conscience against power",
+          "The teacher turns monk: Williams, Gandhi"
+        ],
+        [
+          "The palace contested",
+          "Thrones taken, leaders thrown out"
+        ],
+        [
+          "Sudden strikes",
+          "France across the Rhine;\nZanzibar's 38-minute war"
+        ],
+        [
+          "Hardship, then new freedoms",
+          "Famine and fear, then a free colony,\na pact, a new deal"
+        ]
+      ],
+      "bodysize": 31
+    },
+    {
+      "type": "stack",
+      "label": "November to January",
+      "labelsize": 26,
+      "title": "What to watch now",
+      "items": [
+        [
+          "People of conscience step out",
+          "Resignations on principle, fasts, whistleblowers"
+        ],
+        [
+          "Thrones get tested",
+          "Leadership fights and contested successions"
+        ],
+        [
+          "Fights flare fast",
+          "Especially 12 to 16 Nov, when Mars joins"
+        ],
+        [
+          "Reserves matter",
+          "Food and money worries in places"
+        ]
+      ],
+      "bodysize": 31
+    },
+    {
+      "type": "stack",
+      "label": "As above, so below, so within",
+      "labelsize": 26,
+      "title": "In your own life",
+      "items": [
+        [
+          "Stand by what you've lived",
+          ""
+        ],
+        [
+          "Don't take a seat you weren't offered",
+          ""
+        ],
+        [
+          "Pick short, clean fights",
+          ""
+        ],
+        [
+          "Keep a small reserve this winter",
+          ""
+        ]
+      ],
+      "closing": "“When the sky rhymes,\nhistory rhymes”",
+      "closingsize": 56,
+      "after": "Sutra · Sutram"
+    },
+    {
+      "type": "cta",
+      "orbs": [
+        {
+          "kind": "jupiter",
+          "r": 46
+        },
+        {
+          "kind": "ketu",
+          "r": 40,
+          "dx": 110
+        }
+      ],
+      "mirror": true,
+      "title": "What does this sky rhyme\nwith in your life?",
+      "titleclass": "h2",
+      "titlesize": 80,
+      "subtitle": "Your chart, your dates",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40
+    }
+  ]
+}
