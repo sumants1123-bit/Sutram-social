@@ -334,7 +334,7 @@
         }
       ]
     },
-    "x_route_options": "Zapier (connector) + Buffer free: about 50 single X posts a month with images by URL; Typefully free (10 a month) kept for threads. Waiting on Sumant to set up Buffer and connect Zapier."
+    "x_route_options": "31 Oct: Sumant made a Buffer account and started Zapier, but Zapier's claude.ai sign-in never finished. New route: Buffer's own Claude connector (claude.ai Connectors > Browse > Buffer, or custom connector URL https://mcp.buffer.com/mcp). Free on every Buffer plan, so Zapier isn't needed. Buffer free: 3 channels, 10 scheduled posts per channel at a time, API 3,000 requests a month. To check once connected: image attachment by URL (GitHub raw) and X threads; if no threads, cut threads into single posts with one image each. Typefully drafts stay unpublished meanwhile so nothing posts twice."
   },
   "links": "Sumant, 29 Oct: every post ends with exactly two links, asksutram.com first, then sutram.ca/newsletter; nothing else. Slide footer reads ASKSUTRAM.COM. X replies carry the same two links.",
   "graha_stories": {
