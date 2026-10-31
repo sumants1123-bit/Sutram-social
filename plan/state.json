@@ -356,5 +356,66 @@
       "story-teacher-monk"
     ]
   },
-  "notes_body": "Body parts follow Parashara's order (BPHS 4): Cancer is the heart, Leo the belly or chest; the Sun, Leo's owner, is the karaka of the heart. Say 'the Sun rules the heart', not 'Leo rules the heart'."
+  "notes_body": "Body parts follow Parashara's order (BPHS 4): Cancer is the heart, Leo the belly or chest; the Sun, Leo's owner, is the karaka of the heart. Say 'the Sun rules the heart', not 'Leo rules the heart'.",
+  "x_buffer": {
+    "posted": [
+      {
+        "id": "jupiter-leo-x-long",
+        "when": "2026-10-31T13:20:00-04:00",
+        "url": "https://twitter.com/koham1323/status/2116581012901691550"
+      }
+    ],
+    "scheduled": [
+      {
+        "id": "jupiter-ketu-x-long",
+        "when": "2026-10-31T16:00:00-04:00",
+        "image": "posts/jupiter-ketu-2026-v3/jupiter-ketu-2026-v3-1.jpg"
+      },
+      {
+        "id": "sutra-retrograde",
+        "when": "2026-10-31T19:30:00-04:00",
+        "image": "posts/sutra-card-retrograde-ask2/sutra-card-retrograde-ask2-1.jpg"
+      },
+      {
+        "id": "sutra-sade-sati",
+        "when": "2026-11-01T20:00:00-05:00",
+        "image": "posts/sutra-card-sade-sati-ask/sutra-card-sade-sati-ask-1.jpg"
+      },
+      {
+        "id": "sutra-dasha",
+        "when": "2026-11-02T20:00:00-05:00",
+        "image": "posts/sutra-card-dasha-ask/sutra-card-dasha-ask-1.jpg"
+      },
+      {
+        "id": "as-above-so-below-x-long",
+        "when": "2026-11-03T20:00:00-05:00",
+        "image": "posts/as-above-so-below-v3/as-above-so-below-v3-4.jpg"
+      },
+      {
+        "id": "sutra-upachaya",
+        "when": "2026-11-04T20:00:00-05:00",
+        "image": "posts/sutra-card-upachaya-ask/sutra-card-upachaya-ask-1.jpg"
+      },
+      {
+        "id": "sutra-12th-house",
+        "when": "2026-11-05T20:00:00-05:00",
+        "image": "posts/sutra-12th-house-ask/sutra-12th-house-ask-4.jpg"
+      },
+      {
+        "id": "sutra-2nd-house",
+        "when": "2026-11-06T20:00:00-05:00",
+        "image": "posts/sutra-card-2nd-house-ask/sutra-card-2nd-house-ask-1.jpg"
+      }
+    ],
+    "daily_time": "8:00 PM Toronto (6:30 AM India)",
+    "next_refill_by": "2026-11-05",
+    "backlog": [
+      "x-drafts/3-eighth-house.txt",
+      "x-drafts/8-fifth-house.txt",
+      "x-drafts/9-fourth-house.txt",
+      "Graha stories 1 (story-teacher-monk) as an X post",
+      "Diwali 8 Nov post"
+    ],
+    "zapier_calls_used_31oct": "about 13 write/read calls (2 tasks each) plus setup checks"
+  }
 }
