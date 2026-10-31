@@ -157,6 +157,12 @@
       "when": "2026-11-02T18:30:00-05:00",
       "title": "Graha stories 1: when the teacher meets the monk",
       "metricool_id": 411231022
+    },
+    {
+      "id": "as-above-so-below",
+      "when": "2026-11-03T18:30:00-05:00",
+      "title": "As above, so below: six times since 1600",
+      "metricool_id": 412245041
     }
   ],
   "retired": [
@@ -319,6 +325,10 @@
         {
           "draft_id": 11604098,
           "what": "Jupiter in Leo thread (9 posts); Sumant attaches images (slides 1, 4, 5 on posts 1, 4, 6) then it goes out now"
+        },
+        {
+          "draft_id": 11605231,
+          "what": "As above, so below thread (7 posts); Sumant attaches images (slides 1, 4, 7 on posts 1, 3, 6) and publishes"
         }
       ]
     },
@@ -343,5 +353,6 @@
     "made": [
       "story-teacher-monk"
     ]
-  }
+  },
+  "notes_body": "Body parts follow Parashara's order (BPHS 4): Cancer is the heart, Leo the belly or chest; the Sun, Leo's owner, is the karaka of the heart. Say 'the Sun rules the heart', not 'Leo rules the heart'."
 }
