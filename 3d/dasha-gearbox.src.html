@@ -1,0 +1,416 @@
+<title>Sutram Dasha Gearbox</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a clock with three dials (chapter, sub-chapter, scene) on a dark bench; your inputs on the right, your chapters on the left; phones stack. */
+:root{
+  --void:#0B0A09; --glass:rgba(20,17,14,.8); --rule:rgba(217,165,122,.24);
+  --ivory:#F2E6CC; --muted:#A3958A; --gold:#D9A57A; --ember:#FF6B2C;
+  --display:'Cormorant Garamond','Cormorant',Georgia,'Times New Roman',serif;
+  --body:'EB Garamond',Georgia,'Times New Roman',serif;
+  --mono:'IBM Plex Mono',ui-monospace,'SFMono-Regular',Menlo,Consolas,monospace;
+  color-scheme: dark;
+}
+*,*::before,*::after{box-sizing:border-box}
+html,body{height:100%}
+body{background:var(--void);color:var(--ivory);font-family:var(--body);font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased;overflow:hidden}
+button,input,select{font:inherit;color:inherit}
+.app{position:relative;height:100%;width:100%}
+#stage{position:absolute;inset:0;overflow:hidden;touch-action:none;z-index:0}
+#stage canvas{display:block}
+.labels{position:absolute;inset:0;pointer-events:none}
+.topbar{position:absolute;z-index:3;top:0;left:0;right:0;padding-top:calc(14px + env(safe-area-inset-top,0px));padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));display:flex;justify-content:space-between;align-items:flex-start;gap:16px;pointer-events:none}
+.topbar > *{pointer-events:auto}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+h1{font-family:var(--display);font-weight:500;font-size:clamp(30px,3.4vw,44px);line-height:1;margin:.15em 0 0}
+.readout{text-align:right}
+.readout .now{font-family:var(--display);font-size:22px;line-height:1.15}
+.readout .now em{color:var(--ember);font-style:italic}
+.readout .sub{font-family:var(--mono);font-size:12px;color:var(--muted);margin-top:3px}
+.modes{display:inline-flex;margin-top:10px;border:1px solid var(--rule);border-radius:999px;padding:3px;background:var(--glass);backdrop-filter:blur(6px)}
+.modes button{border:0;background:transparent;padding:7px 14px;border-radius:999px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;cursor:pointer;color:var(--muted)}
+.modes button[aria-pressed="true"]{background:var(--ivory);color:var(--void)}
+button:focus-visible,input:focus-visible,select:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+
+.panel{position:absolute;z-index:3;top:150px;width:300px;max-height:calc(100% - 290px);overflow:auto;background:var(--glass);border:1px solid var(--rule);border-radius:14px;padding:14px 16px;backdrop-filter:blur(8px)}
+.panel.left{left:max(20px,env(safe-area-inset-left,0px))}
+.panel.right{right:max(20px,env(safe-area-inset-right,0px))}
+.panel h2{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+.md-list{display:flex;flex-direction:column}
+.md{display:grid;grid-template-columns:12px 1fr auto;gap:10px;align-items:center;padding:6px 2px;border-top:1px solid var(--rule)}
+.md:first-child{border-top:0}
+.md .dot{width:11px;height:11px;border-radius:50%}
+.md .who{font-family:var(--display);font-style:italic;font-size:17px;line-height:1.05}
+.md .nm{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.md .yr{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums;text-align:right;color:var(--muted)}
+.md.cur{background:rgba(255,107,44,.10);border-radius:6px}
+.md.cur .yr{color:var(--ivory)}
+.md.past{opacity:.55}
+.deep{margin-top:12px;padding-top:10px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:12px;line-height:1.6}
+.deep b{font-weight:500;color:var(--ivory)}
+.deep span{color:var(--muted)}
+.explain h3{font-family:var(--display);font-weight:500;font-size:25px;line-height:1.05;margin:2px 0 8px}
+.explain p{margin:0 0 10px;color:#E3D7C0}
+form{display:grid;gap:8px;margin:10px 0 6px}
+label{font-family:var(--mono);font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--muted);display:grid;gap:4px}
+input[type=date],select,input[type=number]{background:#0f0d0b;border:1px solid var(--rule);border-radius:8px;padding:7px 9px;font-family:var(--mono);font-size:13px;letter-spacing:0;text-transform:none;color:var(--ivory);width:100%;min-width:0}
+input[type=range]{width:100%;accent-color:var(--ember)}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:8px}
+.row2 > label{min-width:0}
+.note{font-family:var(--mono);font-size:10.5px;color:var(--muted);line-height:1.5}
+.formula{margin-top:10px;padding:10px 12px;border:1px solid var(--rule);border-radius:10px;font-family:var(--mono);font-size:12px;line-height:1.55}
+.formula b{color:var(--ember);font-weight:500}
+.example{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--void);background:var(--gold);border-radius:4px;padding:1px 6px;margin-left:6px;vertical-align:middle}
+
+.dock{position:absolute;z-index:3;left:0;right:0;bottom:0;padding-bottom:calc(14px + env(safe-area-inset-bottom,0px));padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:8px;pointer-events:none}
+.dock > *{pointer-events:auto}
+.time{display:flex;align-items:center;gap:12px;background:var(--glass);border:1px solid var(--rule);border-radius:999px;padding:8px 14px 8px 8px;backdrop-filter:blur(6px)}
+.play{width:36px;height:36px;border-radius:50%;border:1px solid var(--gold);background:transparent;cursor:pointer;display:grid;place-items:center;flex:none}
+.play svg{width:14px;height:14px;fill:var(--ivory)}
+.time input{flex:1;min-width:0;height:28px}
+.age{font-family:var(--mono);font-size:12px;color:var(--ivory);white-space:nowrap;font-variant-numeric:tabular-nums;min-width:120px;text-align:right}
+.chip{border:1px solid var(--ember);background:var(--glass);border-radius:999px;padding:6px 12px;font-family:var(--mono);font-size:11.5px;cursor:pointer;color:var(--ember);white-space:nowrap}
+.credit{font-family:var(--mono);font-size:10.5px;color:var(--muted)}
+.credit a{color:var(--gold)}
+
+.lbl{font-family:var(--mono);color:var(--ivory);white-space:nowrap;text-align:center}
+.l-md{font-family:var(--display);font-style:italic;font-size:15px;line-height:1.05;text-shadow:0 1px 5px #000}
+.l-md small{display:block;font-family:var(--mono);font-style:normal;font-size:9.5px;letter-spacing:.1em;color:var(--muted)}
+.l-md.cur{color:var(--ember)}
+.l-ad{font-size:10.5px;color:#E8DCC4;text-shadow:0 1px 4px #000}
+.l-ad.cur{color:var(--ember)}
+.l-pd{font-size:9.5px;color:var(--muted)}
+.l-pd.cur{color:var(--ember)}
+.l-ring{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);text-align:left}
+.l-ring i{display:block;font-family:var(--display);font-size:14px;letter-spacing:0;text-transform:none;color:var(--muted)}
+.l-now{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--ember)}
+.l-moon{font-family:var(--display);font-style:italic;font-size:14px;color:var(--muted)}
+
+@media (max-width: 900px){
+  body{overflow:auto}
+  .app{display:flex;flex-direction:column;height:auto;min-height:100%}
+  .topbar{position:relative;order:1;flex-wrap:wrap}
+  .readout{text-align:left;width:100%}
+  .modes{width:100%}
+  .modes button{flex:1}
+  #stage{position:relative;order:2;height:62vh;min-height:360px;max-height:620px}
+  .dock{position:relative;order:3;padding-top:10px}
+  .panel{position:relative;order:5;top:auto;left:auto!important;right:auto!important;width:auto;max-height:none;margin:12px max(16px,env(safe-area-inset-left,0px)) 0 max(16px,env(safe-area-inset-right,0px))}
+  .panel.right{order:4}
+  .panel.left{margin-bottom:24px}
+  .l-md small,.l-pd,.l-ring i{display:none}
+  .l-md{font-size:12.5px}
+  .l-ad{font-size:9.5px}
+  .time{flex-wrap:wrap;border-radius:18px;padding:8px 12px}
+  .time input{order:4;flex:1 1 100%}
+  .age{min-width:0;flex:1;text-align:left}
+}
+</style>
+
+<div class="app">
+  <header class="topbar">
+    <div>
+      <div class="kicker">Sutram · Vimshottari, taken apart</div>
+      <h1>Dasha Gearbox</h1>
+    </div>
+    <div class="readout">
+      <div class="now" id="nowline">—</div>
+      <div class="sub" id="subline">—</div>
+      <div class="modes" role="group" aria-label="View">
+        <button id="m-assembled" aria-pressed="true">The clock</button>
+        <button id="m-apart" aria-pressed="false">Take apart</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="stage" aria-label="Interactive 3D model of the Vimshottari dasha cycle"></div>
+
+  <aside class="panel left" aria-label="Your chapters">
+    <h2 id="lefttitle">Your chapters (mahadashas)</h2>
+    <div class="md-list" id="mdlist"></div>
+    <div class="deep" id="deep"></div>
+  </aside>
+
+  <aside class="panel right explain">
+    <div class="kicker" id="ex-k">How it works</div>
+    <h3 id="ex-h">Your life runs on a 120-year clock</h3>
+    <div id="ex-b"></div>
+    <form id="f" autocomplete="off">
+      <label>Birth date <input type="date" id="bdate" value="1990-01-01" min="1900-01-01" max="2030-12-31"></label>
+      <label>Moon’s nakshatra at birth <select id="nak"></select></label>
+      <label>How far the Moon was through it <input type="range" id="frac" min="0" max="100" value="40" step="1"></label>
+      <div class="note" id="fracnote">—</div>
+      <div class="row2">
+        <label>Or Moon’s exact sign <select id="msign"><option value="">Not sure</option></select></label>
+        <label>and degree <input type="number" id="mdeg" min="0" max="29.99" step="0.01" placeholder="e.g. 14.5"></label>
+      </div>
+    </form>
+    <div class="note" id="exnote"></div>
+    <div class="formula" id="formula"></div>
+  </aside>
+
+  <footer class="dock">
+    <div class="time">
+      <button class="play" id="play" aria-label="Play your years forward"><svg viewBox="0 0 10 10" id="playicon"><path d="M2 1 L9 5 L2 9 Z"/></svg></button>
+      <input type="range" id="age" min="0" max="1200" value="0" step="1" aria-label="Age in years">
+      <span class="age" id="agetxt">—</span>
+      <button class="chip" id="today">Today</button>
+    </div>
+    <div class="credit">Vimshottari dasha from Parashara: nine grahas, 120 years, years of 365.25 days. For exact dates from your full chart, ask at <a href="https://asksutram.com" target="_blank" rel="noopener">asksutram.com</a></div>
+  </footer>
+</div>
+
+<script type="importmap">{"imports":{"three":"__THREE__","three/addons/":"__ADDONS__"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+const D = Math.PI/180, YEAR = 365.25*86400e3;
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+/* Vimshottari: order, years, characters */
+const G = [
+  {k:'Ketu',    ab:'Ke', who:'the monk',      y:7,  c:0x2A211C, rim:true},
+  {k:'Venus',   ab:'Ve', who:'the lover',     y:20, c:0xF0D6DE},
+  {k:'Sun',     ab:'Su', who:'the king',      y:6,  c:0xEA7A3C},
+  {k:'Moon',    ab:'Mo', who:'the mother',    y:10, c:0xEFE8D8},
+  {k:'Mars',    ab:'Ma', who:'the soldier',   y:7,  c:0xC85A3E},
+  {k:'Rahu',    ab:'Ra', who:'the magician',  y:18, c:0x8A83A8},
+  {k:'Jupiter', ab:'Ju', who:'the teacher',   y:16, c:0xE6CA93},
+  {k:'Saturn',  ab:'Sa', who:'the auditor',   y:19, c:0x9FAAC2},
+  {k:'Mercury', ab:'Me', who:'the messenger', y:17, c:0x93C192},
+];
+const NAKS = ['Ashwini','Bharani','Krittika','Rohini','Mrigashira','Ardra','Punarvasu','Pushya','Ashlesha','Magha','Purva Phalguni','Uttara Phalguni','Hasta','Chitra','Swati','Vishakha','Anuradha','Jyeshtha','Mula','Purva Ashadha','Uttara Ashadha','Shravana','Dhanishta','Shatabhisha','Purva Bhadrapada','Uttara Bhadrapada','Revati'];
+const SIGNS = ['Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn','Aquarius','Pisces'];
+const hex = c => '#'+c.toString(16).padStart(6,'0');
+
+/* ---------- the arithmetic (deterministic) ---------- */
+function setup(birthMs, nakIdx, f){
+  const lord = nakIdx % 9;
+  const preYears = f * G[lord].y;              // part of the first chapter already run before birth
+  return {birthMs, lord, nakIdx, f, cycleStart: birthMs - preYears*YEAR};
+}
+function periods(startMs, lordIdx, totalYears){ // nine sub-periods starting from lordIdx, proportional to their years
+  const out=[]; let t=startMs;
+  for(let j=0;j<9;j++){ const i=(lordIdx+j)%9, yrs = totalYears*G[i].y/120; out.push({i, yrs, start:t, end:t+yrs*YEAR}); t+=yrs*YEAR; }
+  return out;
+}
+function mahas(S){ // chapters from the first one that covers birth, 2 rounds
+  const out=[]; let t=S.cycleStart;
+  for(let j=0;j<18;j++){ const i=(S.lord+j)%9; out.push({i, yrs:G[i].y, start:t, end:t+G[i].y*YEAR}); t+=G[i].y*YEAR; }
+  return out;
+}
+function at(S, ms){
+  const md = mahas(S).find(p=>ms>=p.start && ms<p.end) || mahas(S)[0];
+  const ads = periods(md.start, md.i, md.yrs), ad = ads.find(p=>ms>=p.start && ms<p.end) || ads[0];
+  const pds = periods(ad.start, ad.i, ad.yrs), pd = pds.find(p=>ms>=p.start && ms<p.end) || pds[0];
+  return {md, ads, ad, pds, pd};
+}
+const ymd = ms => new Date(ms).toLocaleDateString('en-US',{year:'numeric',month:'short',day:'numeric'});
+const ym = ms => new Date(ms).toLocaleDateString('en-US',{year:'numeric',month:'short'});
+const y = ms => new Date(ms).getFullYear();
+function dur(yrs){ const totalDays = yrs*365.25; let Y=Math.floor(yrs), rem = totalDays - Y*365.25; let M=Math.floor(rem/30.4375); let d=Math.round(rem - M*30.4375); if(d>=30){M++;d=0;} if(M>=12){Y++;M=0;}
+  return [Y?`${Y} year${Y>1?'s':''}`:'', M?`${M} month${M>1?'s':''}`:'', d?`${d} day${d>1?'s':''}`:''].filter(Boolean).join(' ') || '0 days'; }
+
+/* ---------- scene ---------- */
+const stage = document.getElementById('stage');
+const renderer = new THREE.WebGLRenderer({antialias:true}); renderer.setPixelRatio(Math.min(devicePixelRatio,2)); renderer.setClearColor(0x0B0A09,1); stage.appendChild(renderer.domElement);
+const labelR = new CSS2DRenderer(); labelR.domElement.className='labels'; stage.appendChild(labelR.domElement);
+const scene = new THREE.Scene();
+const camera = new THREE.PerspectiveCamera(42,1,.1,200);
+const controls = new OrbitControls(camera, renderer.domElement); controls.enableDamping=true; controls.enablePan=false; controls.minDistance=5; controls.maxDistance=34;
+scene.add(new THREE.AmbientLight(0xffffff,.6));
+const dl = new THREE.DirectionalLight(0xffffff,1.6); dl.position.set(4,10,6); scene.add(dl);
+const pl = new THREE.PointLight(0xffd7b0, 25, 0, 1.6); pl.position.set(0,4,0); scene.add(pl);
+(function(){ let s=11; const r=()=>(s=(s*16807)%2147483647)/2147483647; const n=1100,p=new Float32Array(n*3);
+  for(let i=0;i<n;i++){ const u=r()*2-1,th=r()*Math.PI*2,R=46+r()*12,q=Math.sqrt(1-u*u); p.set([R*q*Math.cos(th),R*u,R*q*Math.sin(th)],i*3); }
+  const g=new THREE.BufferGeometry(); g.setAttribute('position',new THREE.BufferAttribute(p,3)); scene.add(new THREE.Points(g,new THREE.PointsMaterial({color:0xF2E6CC,size:.1,transparent:true,opacity:.5}))); })();
+const mkLabel=(html,cls)=>{ const e=document.createElement('div'); e.className=cls; e.innerHTML=html; return new CSS2DObject(e); };
+// angle: 0 at 12 o'clock, clockwise as time runs
+const P = (deg, r, y=0) => new THREE.Vector3(r*Math.sin(deg*D), y, -r*Math.cos(deg*D));
+
+function arcMesh(a0, a1, rIn, rOut, color, opacity){
+  // RingGeometry runs counter-clockwise from +x; convert our clock angles
+  const g = new THREE.RingGeometry(rIn, rOut, Math.max(6,Math.round((a1-a0)/2)), 1, (90-a1)*D, (a1-a0)*D); g.rotateX(-Math.PI/2);
+  return new THREE.Mesh(g, new THREE.MeshStandardMaterial({color, roughness:.75, metalness:.15, transparent:true, opacity, side:THREE.DoubleSide}));
+}
+function gearGeo(rOuter, teeth, depth){
+  const s = new THREE.Shape(), rRoot = rOuter*0.86, n = teeth*4;
+  for(let i=0;i<=n;i++){ const a = i/n*Math.PI*2, ph = i%4; const r = (ph===1||ph===2)? rOuter : rRoot; const x=r*Math.cos(a), z=r*Math.sin(a); i?s.lineTo(x,z):s.moveTo(x,z); }
+  const hole = new THREE.Path(); hole.absarc(0,0,rOuter*.32,0,Math.PI*2,true); s.holes.push(hole);
+  const g = new THREE.ExtrudeGeometry(s,{depth, bevelEnabled:false, curveSegments:12}); g.rotateX(-Math.PI/2); g.translate(0,0,0); return g;
+}
+
+/* dials: each is a group we can rebuild when the inputs change */
+const LEVEL = { md:{rIn:4.15,rOut:5.25,yE:2.1, sE:1}, ad:{rIn:2.85,rOut:3.85,yE:0,sE:1.403}, pd:{rIn:1.75,rOut:2.55,yE:-2.1,sE:2.186} };
+const dials = {};
+for(const k of ['md','ad','pd']){ const grp=new THREE.Group(); const spin=new THREE.Group(); grp.add(spin); scene.add(grp); dials[k]={grp,spin,labels:[],gears:[],arcs:[]}; }
+const BENCH = new THREE.Color(0x14110E);
+const ringTitles = {
+  md: mkLabel('Chapters<i>mahadasha · 120 years in all</i>','lbl l-ring'),
+  ad: mkLabel('Sub-chapters<i>antardasha · inside this chapter</i>','lbl l-ring'),
+  pd: mkLabel('Scenes<i>pratyantardasha · inside this sub-chapter</i>','lbl l-ring'),
+};
+for(const k in ringTitles){ ringTitles[k].position.copy(P(140, LEVEL[k].rOut+.35)); dials[k].grp.add(ringTitles[k]); }
+// the moon at the centre and the "now" pointer
+const moon = new THREE.Mesh(new THREE.SphereGeometry(.5,40,28), new THREE.MeshStandardMaterial({color:0xEFE8D8, emissive:0x6b6152, emissiveIntensity:.5, roughness:.6}));
+scene.add(moon);
+const moonLbl = mkLabel('','lbl l-moon'); moonLbl.center.set(.5,-1.4); moon.add(moonLbl);
+const ptr = new THREE.Group(); scene.add(ptr);
+const ptrGeo = new THREE.BufferGeometry(); ptrGeo.setAttribute('position', new THREE.Float32BufferAttribute([0,0,0,0,0,0],3));
+const ptrLine = new THREE.LineSegments(ptrGeo, new THREE.LineBasicMaterial({color:0xFF6B2C})); ptr.add(ptrLine);
+const tri = new THREE.Mesh(new THREE.ConeGeometry(.16,.34,3), new THREE.MeshBasicMaterial({color:0xFF6B2C})); tri.rotation.x = Math.PI/2; ptr.add(tri);
+const nowLbl = mkLabel('Now','lbl l-now'); nowLbl.center.set(.5,1.6); tri.add(nowLbl);
+
+function clearDial(d){ while(d.spin.children.length){ const c=d.spin.children[d.spin.children.length-1]; d.spin.remove(c); c.traverse(o=>{ if(o.geometry) o.geometry.dispose(); if(o.material) o.material.dispose(); if(o.element) o.element.remove(); }); } d.labels=[]; d.gears=[]; d.arcs=[]; }
+function buildDial(key, parts, totalYears, curIdx){
+  const d = dials[key]; clearDial(d); const L = LEVEL[key];
+  let a = 0;
+  parts.forEach((p,j)=>{
+    const span = p.yrs/totalYears*360, gg = G[p.i];
+    const m = arcMesh(a, a+span, L.rIn, L.rOut, gg.rim?0x231b17:gg.c, key==='md'?.95:.9); d.spin.add(m);
+    m.userData.full = new THREE.Color(gg.rim?0x3a2a22:gg.c); m.userData.dim = m.userData.full.clone().lerp(BENCH, .62); d.arcs.push({m, i:p.i});
+    // divider
+    const lg=new THREE.BufferGeometry(); const p0=P(a,L.rIn,.02), p1=P(a,L.rOut,.02); lg.setAttribute('position',new THREE.Float32BufferAttribute([p0.x,p0.y,p0.z,p1.x,p1.y,p1.z],3));
+    d.spin.add(new THREE.LineSegments(lg,new THREE.LineBasicMaterial({color:0x0B0A09})));
+    const mid = a+span/2;
+    if(key==='md'){
+      const gr = .16 + gg.y*.021, teeth = gg.y + 6;
+      const gear = new THREE.Mesh(gearGeo(gr, teeth, .14), new THREE.MeshStandardMaterial({color:gg.rim?0x3a2f28:gg.c, roughness:.4, metalness:.55, emissive: gg.rim?0xFF6B2C:0x000000, emissiveIntensity: gg.rim?.25:0}));
+      gear.position.copy(P(mid,(L.rIn+L.rOut)/2,.06)); d.spin.add(gear); d.gears.push({gear, i:p.i, j});
+      const l = mkLabel(`${gg.who}<small>${gg.k.toUpperCase()} · ${gg.y} YRS</small>`,'lbl l-md'); l.position.copy(P(mid, L.rOut+.55)); d.spin.add(l); d.labels.push(l);
+    } else {
+      const l = mkLabel(key==='ad' ? `${gg.ab}` : `${gg.ab}`,'lbl '+(key==='ad'?'l-ad':'l-pd')); l.position.copy(P(mid,(L.rIn+L.rOut)/2,.05)); d.spin.add(l); d.labels.push(l);
+    }
+    a += span;
+  });
+  // rim lines
+  for(const r of [L.rIn, L.rOut]){ const pts=[]; for(let i=0;i<120;i++){ const q0=P(i*3,r,.03), q1=P((i+1)*3,r,.03); pts.push(q0.x,q0.y,q0.z,q1.x,q1.y,q1.z); } const g=new THREE.BufferGeometry(); g.setAttribute('position',new THREE.Float32BufferAttribute(pts,3)); d.spin.add(new THREE.LineSegments(g,new THREE.LineBasicMaterial({color:0xD9A57A,transparent:true,opacity:.5}))); }
+  d.parts = parts; d.total = totalYears;
+}
+
+/* ---------- state & UI ---------- */
+const $ = id=>document.getElementById(id);
+NAKS.forEach((n,i)=>{ const o=document.createElement('option'); o.value=i; o.textContent=`${n} · ${G[i%9].k}’s star`; $('nak').appendChild(o); });
+SIGNS.forEach((s,i)=>{ const o=document.createElement('option'); o.value=i; o.textContent=s; $('msign').appendChild(o); });
+$('nak').value = 9; // example: Magha
+let S, mode='assembled', viewMs = Date.now(), playing=false, isExample = true;
+const mix = {ex:0};
+try{ const saved = JSON.parse(localStorage.getItem('sutram-gearbox')||'null'); if(saved){ $('bdate').value=saved.b; $('nak').value=saved.n; $('frac').value=saved.f; $('msign').value=saved.s??''; $('mdeg').value=saved.d??''; isExample=false; } }catch(e){}
+
+function readInputs(){
+  const b = Date.parse($('bdate').value+'T12:00:00Z'); let n = +$('nak').value, f = +$('frac').value/100;
+  const ms = $('msign').value, md = parseFloat($('mdeg').value);
+  if(ms!=='' && !isNaN(md) && md>=0 && md<30){ const lon = (+ms)*30 + md; n = Math.floor(lon/(40/3)); f = (lon%(40/3))/(40/3); $('nak').value=n; $('frac').value=Math.round(f*100); }
+  return {b: isNaN(b)? Date.parse('1990-01-01T12:00:00Z') : b, n, f};
+}
+function recompute(save){
+  const {b,n,f} = readInputs();
+  S = setup(b, n, f);
+  const pada = Math.min(4, Math.floor(f*4)+1);
+  $('fracnote').textContent = `${Math.round(f*100)}% through ${NAKS[n]} (pada ${pada}). At birth the chapter of ${G[S.lord].who} (${G[S.lord].k}) had ${dur((1-f)*G[S.lord].y)} left.`;
+  $('exnote').innerHTML = (isExample? '<span class="example">Example</span> ' : '') + (($('msign').value!=='' && $('mdeg').value!=='') ? 'Exact Moon degree used.' : 'Using the nakshatra and how far through it. Add your Moon’s sign and degree for exact dates.');
+  $('age').max = 1200;
+  if(save){ isExample=false; try{ localStorage.setItem('sutram-gearbox', JSON.stringify({b:$('bdate').value,n:$('nak').value,f:$('frac').value,s:$('msign').value,d:$('mdeg').value})); }catch(e){} recompute(false); return; }
+  moonLbl.element.textContent = `Moon in ${NAKS[n]}`;
+  lastKey = '';
+}
+['bdate','nak','frac','msign','mdeg'].forEach(id=>$(id).addEventListener('input',()=>recompute(true)));
+$('f').addEventListener('submit',e=>e.preventDefault());
+
+const EX = {
+  assembled:['How it works','Your life runs on a 120-year clock',[
+    'Vimshottari gives each of the nine grahas a chapter of fixed length, from 6 years for the king to 20 for the lover. Together they make 120 years.',
+    'The Moon’s nakshatra at your birth picks the first chapter, and how far the Moon had walked through it says how much of that chapter was already used up.']],
+  apart:['Taken apart','Chapter, sub-chapter, scene',[
+    'Each chapter splits into nine sub-chapters in the same order and proportions, starting with its own graha. Each sub-chapter splits again into nine scenes.',
+    'The orange line drops through all three dials: the chapter sets the theme, the sub-chapter the season, the scene the weeks.']],
+};
+function setMode(m){ mode=m; ['assembled','apart'].forEach(k=>$('m-'+k).setAttribute('aria-pressed',k===m?'true':'false'));
+  const [k,h,ps]=EX[m]; $('ex-k').textContent=k; $('ex-h').textContent=h; $('ex-b').innerHTML=ps.map(p=>`<p>${p}</p>`).join('');
+  camTween={from:{p:camera.position.clone(),t:controls.target.clone()}, to:poseOf(m), k:0, dur:REDUCED?.01:1.3}; }
+$('m-assembled').addEventListener('click',()=>setMode('assembled')); $('m-apart').addEventListener('click',()=>setMode('apart'));
+{ const [k,h,ps]=EX.assembled; $('ex-b').innerHTML=ps.map(p=>`<p>${p}</p>`).join(''); }
+
+$('age').addEventListener('input',()=>{ viewMs = S.birthMs + (+$('age').value/10)*YEAR; });
+$('today').addEventListener('click',()=>{ viewMs = Date.now(); playing=false; setPlay(); });
+function setPlay(){ $('playicon').innerHTML = playing?'<path d="M2 1h2.2v8H2zM5.8 1H8v8H5.8z"/>':'<path d="M2 1 L9 5 L2 9 Z"/>'; }
+$('play').addEventListener('click',()=>{ playing=!playing; if(playing && viewMs>=S.birthMs+119*YEAR) viewMs=S.birthMs; setPlay(); });
+
+/* camera */
+const POSE = {assembled:new THREE.Vector3(0,12,9.5), apart:new THREE.Vector3(10.5,6.5,10.5)};
+const EXT = {assembled:[6.6,6.0], apart:[7.2,5.4]};
+function poseOf(m){ const w=stage.clientWidth, h=Math.max(1,stage.clientHeight), effW = w>900? w-720 : w;
+  const v=camera.fov*D/2, hh=Math.atan(Math.tan(v)*effW/h), [W,H]=EXT[m], dist=Math.max(W/Math.tan(hh),H/Math.tan(v))*1.05;
+  return {p:POSE[m].clone().normalize().multiplyScalar(dist), t:new THREE.Vector3(0, m==='apart'?.2:0, 0)}; }
+let camTween=null;
+function resize(){ const w=stage.clientWidth,h=stage.clientHeight; renderer.setSize(w,h,false); labelR.setSize(w,h); camera.aspect=w/h; camera.fov = w<600?48:42; camera.updateProjectionMatrix(); if(!camTween){ const p=poseOf(mode); camera.position.copy(p.p); controls.target.copy(p.t); } }
+new ResizeObserver(resize).observe(stage);
+
+/* ---------- frame ---------- */
+const ease = x => x<.5? 4*x*x*x : 1-Math.pow(-2*x+2,3)/2;
+let lastKey='', keyMd='', keyAd='', keyPd='', last=performance.now(), lastUI=0;
+function frame(t){
+  const dt=Math.min((t-last)/1000,.05); last=t;
+  if(playing){ viewMs += dt*2*YEAR; if(viewMs>S.birthMs+120*YEAR){ viewMs=S.birthMs+120*YEAR; playing=false; setPlay(); } }
+  if(viewMs < S.birthMs) viewMs = S.birthMs;
+  const A = at(S, viewMs);
+  if(lastKey===''){ keyMd=keyAd=keyPd=''; lastKey='x'; }
+  // chapter dial: the full 120-year round, starting with Ketu at 12 o'clock
+  if(keyMd!=='built'){ keyMd='built'; buildDial('md', G.map((g,i)=>({i, yrs:g.y})), 120, A.md.i); }
+  if(keyAd!==String(A.md.start)){ keyAd=String(A.md.start); buildDial('ad', A.ads.map(p=>({i:p.i, yrs:p.yrs})), A.md.yrs, A.ad.i); renderLists(A); }
+  if(keyPd!==String(A.ad.start)){ keyPd=String(A.ad.start); buildDial('pd', A.pds.map(p=>({i:p.i, yrs:p.yrs})), A.ad.yrs, A.pd.i); }
+  // rotate each dial so "now" sits under the pointer at 12 o'clock
+  const before = G.slice(0, A.md.i).reduce((s,g)=>s+g.y,0);
+  const qMd = before + (viewMs - A.md.start)/YEAR;
+  dials.md.spin.rotation.y = qMd/120*360*D;      // clockwise dial turns back so the pointer reads "now"
+  dials.ad.spin.rotation.y = (viewMs - A.md.start)/(A.md.end-A.md.start)*360*D;
+  dials.pd.spin.rotation.y = (viewMs - A.ad.start)/(A.ad.end-A.ad.start)*360*D;
+  dials.md.gears.forEach(o=>{ const on = o.i===A.md.i; o.gear.rotation.y += dt*(on?1.4:0.12)*(o.j%2?1:-1); o.gear.scale.setScalar(on?1.25:1); });
+  for(const [k,cur] of [['md',A.md.i],['ad',A.ad.i],['pd',A.pd.i]]) dials[k].arcs.forEach(o=>o.m.material.color.copy(o.i===cur? o.m.userData.full : o.m.userData.dim));
+  dials.md.labels.forEach((l,j)=>l.element.classList.toggle('cur', j===A.md.i));
+  dials.ad.labels.forEach((l,j)=>l.element.classList.toggle('cur', dials.ad.parts[j].i===A.ad.i));
+  dials.pd.labels.forEach((l,j)=>l.element.classList.toggle('cur', dials.pd.parts[j].i===A.pd.i));
+
+  // assemble / take apart
+  const sp = REDUCED?1:1-Math.exp(-dt*3.2); mix.ex += ((mode==='apart'?1:0)-mix.ex)*sp; const ex = ease(Math.max(0,Math.min(1,mix.ex)));
+  for(const k of ['md','ad','pd']){ const L=LEVEL[k], d=dials[k]; d.grp.position.y = L.yE*ex; d.grp.scale.setScalar(1+(L.sE-1)*ex); ringTitles[k].element.style.opacity = ex; }
+  // pointer from the inner dial to the outer dial (and straight down when taken apart)
+  const top = P(0, 5.45*(1), 2.1*ex+.12), pts = ptrGeo.attributes.position;
+  const xr = (lev)=> P(0, (LEVEL[lev].rIn+LEVEL[lev].rOut)/2*(1+(LEVEL[lev].sE-1)*ex), LEVEL[lev].yE*ex);
+  const a = ex>.5 ? xr('md').setY(2.1*ex+.6) : P(0,5.6,.12), b = ex>.5 ? xr('md').setY(-2.1*ex-.3) : P(0,1.55,.12);
+  pts.setXYZ(0,a.x,a.y,a.z); pts.setXYZ(1,b.x,b.y,b.z); pts.needsUpdate=true;
+  tri.position.copy(ex>.5? xr('md').setY(2.1*ex+.75) : P(0,5.75,.12)); tri.rotation.set(ex>.5? Math.PI : Math.PI/2, 0, 0);
+  moon.position.y = -2.1*ex - .0; moon.visible = true;
+
+  if(camTween){ camTween.k=Math.min(1,camTween.k+dt/camTween.dur); const u=ease(camTween.k); camera.position.lerpVectors(camTween.from.p,camTween.to.p,u); controls.target.lerpVectors(camTween.from.t,camTween.to.t,u); if(camTween.k>=1) camTween=null; }
+
+  if(t-lastUI>150){ lastUI=t;
+    const age = (viewMs - S.birthMs)/YEAR; $('age').value = Math.round(age*10);
+    const isToday = Math.abs(viewMs-Date.now()) < 2*86400e3;
+    $('agetxt').textContent = `${isToday?'Today':ymd(viewMs)} · age ${Math.floor(age)}`;
+    $('nowline').innerHTML = `Chapter of <em>${G[A.md.i].who}</em>`;
+    $('subline').textContent = `${G[A.md.i].k} ${y(A.md.start)}–${y(A.md.end)} · sub-chapter ${G[A.ad.i].k} to ${ym(A.ad.end)}`;
+    renderDeep(A);
+  }
+  controls.update(); renderer.render(scene,camera); labelR.render(scene,camera); requestAnimationFrame(frame);
+}
+function renderLists(A){
+  const list = mahas(S).filter(p=>p.end > S.birthMs && p.start < S.birthMs + 100*YEAR);
+  $('mdlist').innerHTML = list.map(p=>{ const g=G[p.i], cur = p.start===A.md.start, past = p.end < viewMs;
+    return `<div class="md${cur?' cur':''}${past&&!cur?' past':''}"><span class="dot" style="background:${g.rim?'#231b17':hex(g.c)};${g.rim?'border:1.5px solid #FF6B2C':''}"></span><span><div class="who">${g.who}</div><div class="nm">${g.k} · ${g.y} years</div></span><span class="yr">${y(Math.max(p.start,S.birthMs))}–${y(p.end)}</span></div>`; }).join('');
+}
+function renderDeep(A){
+  const md=G[A.md.i], ad=G[A.ad.i], pd=G[A.pd.i];
+  $('deep').innerHTML = `<b>Sub-chapter</b> <span>(antardasha)</span><br>${ad.who} · ${ad.k}: ${ymd(A.ad.start)} → ${ymd(A.ad.end)}<br><b>Scene</b> <span>(pratyantardasha)</span><br>${pd.who} · ${pd.k}: ${ymd(A.pd.start)} → ${ymd(A.pd.end)}`;
+  const adY = md.y*ad.y/120;
+  $('formula').innerHTML = `Sub-chapter length = chapter years × sub-graha years ÷ 120<br>${md.k} ${md.y} × ${ad.k} ${ad.y} ÷ 120 = <b>${dur(adY)}</b>`;
+}
+
+recompute(false);
+viewMs = Math.max(Date.now(), S.birthMs);
+resize(); { const p=poseOf('assembled'); camera.position.copy(p.p); controls.target.copy(p.t); }
+requestAnimationFrame(frame);
+</script>

@@ -1,0 +1,586 @@
+<title>Sutram Sky Machine</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: the sky fills the screen like an instrument on a dark bench; readouts sit on its edges (desktop) or stack under it (phone). */
+:root{
+  --void:#0B0A09;      /* night, warm near-black */
+  --bench:#14110E;     /* panel ground */
+  --glass:rgba(20,17,14,.78);
+  --rule:rgba(217,165,122,.24);
+  --ivory:#F2E6CC;     /* text */
+  --muted:#A3958A;     /* secondary text */
+  --gold:#D9A57A;      /* instrument brass */
+  --ember:#FF6B2C;     /* the one accent: now, lagna, selection */
+  --display:'Cormorant Garamond', 'Cormorant', Georgia, 'Times New Roman', serif;
+  --body:'EB Garamond', Georgia, 'Times New Roman', serif;
+  --mono:'IBM Plex Mono', ui-monospace, 'SFMono-Regular', Menlo, Consolas, monospace;
+  color-scheme: dark;
+}
+html,body{height:100%}
+body{background:var(--void);color:var(--ivory);font-family:var(--body);font-size:16px;line-height:1.45;-webkit-font-smoothing:antialiased;overflow:hidden}
+button{font:inherit;color:inherit}
+.app{position:relative;height:100%;width:100%}
+#stage{position:absolute;inset:0;overflow:hidden;touch-action:none;z-index:0}
+#stage canvas{display:block}
+.labels{position:absolute;inset:0;pointer-events:none}
+
+/* ---------- overlays (desktop) ---------- */
+.topbar{position:absolute;z-index:3;top:0;left:0;right:0;padding-top:calc(14px + env(safe-area-inset-top,0px));padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));display:flex;align-items:flex-start;justify-content:space-between;gap:16px;pointer-events:none}
+.brand{pointer-events:auto}
+.kicker{font-family:var(--mono);font-size:11px;letter-spacing:.18em;text-transform:uppercase;color:var(--gold)}
+.brand h1{font-family:var(--display);font-weight:500;font-size:clamp(30px,3.4vw,44px);line-height:1;margin:.15em 0 0;letter-spacing:.005em;text-wrap:balance}
+.readout{pointer-events:auto;text-align:right}
+.readout .when{font-family:var(--mono);font-size:14px;font-variant-numeric:tabular-nums;color:var(--ivory)}
+.readout .moon{font-family:var(--body);font-style:italic;color:var(--muted);font-size:15px;margin-top:2px}
+.modes{display:inline-flex;margin-top:10px;border:1px solid var(--rule);border-radius:999px;padding:3px;background:var(--glass);backdrop-filter:blur(6px)}
+.modes button{border:0;background:transparent;padding:7px 14px;border-radius:999px;font-family:var(--mono);font-size:12px;letter-spacing:.06em;cursor:pointer;color:var(--muted)}
+.modes button[aria-pressed="true"]{background:var(--ivory);color:var(--void)}
+.modes button:focus-visible,.chip:focus-visible,.play:focus-visible,.g-row:focus-visible,.tog:focus-visible{outline:2px solid var(--ember);outline-offset:2px}
+
+.panel{position:absolute;z-index:3;top:150px;width:290px;max-height:calc(100% - 330px);overflow:auto;background:var(--glass);border:1px solid var(--rule);border-radius:14px;padding:14px 16px;backdrop-filter:blur(8px)}
+.panel.left{left:max(20px,env(safe-area-inset-left,0px))}
+.panel.right{right:max(20px,env(safe-area-inset-right,0px))}
+.panel h2{font-family:var(--mono);font-weight:500;font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);margin:0 0 8px}
+.g-list{display:flex;flex-direction:column}
+.g-row{display:grid;grid-template-columns:14px 1fr auto;gap:10px;align-items:center;padding:7px 4px;border:0;border-top:1px solid var(--rule);background:transparent;text-align:left;cursor:pointer;border-radius:6px}
+.g-row:first-child{border-top:0}
+.g-row[aria-pressed="true"]{background:rgba(255,107,44,.10)}
+.dot{width:12px;height:12px;border-radius:50%;box-shadow:0 0 10px currentColor}
+.g-who{font-family:var(--display);font-style:italic;font-size:18px;line-height:1.05}
+.g-name{font-family:var(--mono);font-size:10.5px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.g-pos{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums;text-align:right;line-height:1.3}
+.g-pos .nak{color:var(--muted);font-size:11px}
+.back{color:var(--ember);font-size:11px;font-family:var(--mono)}
+.explain h3{font-family:var(--display);font-weight:500;font-size:26px;line-height:1.05;margin:2px 0 8px;text-wrap:balance}
+.explain p{margin:0 0 10px;color:#E3D7C0}
+.hint{font-family:var(--mono);font-size:11px;color:var(--muted);letter-spacing:.04em}
+.toggles{display:flex;flex-wrap:wrap;gap:6px;margin:12px 0 4px}
+.tog{border:1px solid var(--rule);background:transparent;border-radius:999px;padding:5px 10px;font-family:var(--mono);font-size:11px;cursor:pointer;color:var(--muted)}
+.tog[aria-pressed="true"]{border-color:var(--gold);color:var(--ivory)}
+.card{margin-top:12px;padding-top:12px;border-top:1px solid var(--rule)}
+.card .c-who{font-family:var(--display);font-size:22px;font-style:italic}
+.card .c-role{color:#E3D7C0;margin:2px 0 6px}
+.card .c-now{font-family:var(--mono);font-size:12px;line-height:1.55;color:var(--ivory)}
+
+.dock{position:absolute;z-index:3;left:0;right:0;bottom:0;padding-bottom:calc(14px + env(safe-area-inset-bottom,0px));padding-left:max(20px,env(safe-area-inset-left,0px));padding-right:max(20px,env(safe-area-inset-right,0px));display:flex;flex-direction:column;gap:10px;pointer-events:none}
+.dock > *{pointer-events:auto}
+.time{display:flex;align-items:center;gap:12px;background:var(--glass);border:1px solid var(--rule);border-radius:999px;padding:8px 14px 8px 8px;backdrop-filter:blur(6px)}
+.play{width:36px;height:36px;border-radius:50%;border:1px solid var(--gold);background:transparent;cursor:pointer;display:grid;place-items:center;flex:none}
+.play svg{width:14px;height:14px;fill:var(--ivory)}
+input[type=range]{flex:1;min-width:0;accent-color:var(--ember);height:28px}
+.span{font-family:var(--mono);font-size:11px;color:var(--muted);white-space:nowrap}
+.chips{display:flex;gap:8px;overflow-x:auto;padding-bottom:2px;scrollbar-width:thin}
+.chip{flex:none;border:1px solid var(--rule);background:var(--glass);border-radius:999px;padding:6px 12px;font-family:var(--mono);font-size:11.5px;cursor:pointer;color:var(--ivory);white-space:nowrap}
+.chip.now{border-color:var(--ember);color:var(--ember)}
+.chip[aria-pressed="true"]{background:var(--ivory);color:var(--void)}
+.credit{font-family:var(--mono);font-size:10.5px;color:var(--muted);letter-spacing:.03em}
+.credit a{color:var(--gold)}
+
+/* ---------- 3D labels ---------- */
+.lbl{font-family:var(--mono);color:var(--ivory);white-space:nowrap;text-align:center}
+.lbl-sign{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:#E8D9BC;opacity:.85}
+.lbl-sign i{display:block;font-family:var(--display);font-style:italic;text-transform:none;letter-spacing:0;font-size:13px;color:var(--muted)}
+.lbl-nak{font-size:10px;letter-spacing:.06em;color:var(--muted);opacity:.55}
+.lbl-nak.on{color:var(--ivory);opacity:1}
+.lbl-house{font-size:11px;color:var(--muted)}
+.lbl-house b{font-weight:500;color:var(--ivory)}
+.lbl-house.lagna{color:var(--ember)}
+.lbl-house.lagna b{color:var(--ember)}
+.lbl-graha{font-family:var(--display);font-style:italic;font-size:15px;line-height:1;text-shadow:0 1px 6px #000,0 0 2px #000}
+.lbl-graha small{display:block;font-family:var(--mono);font-style:normal;font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin-top:2px}
+.lbl-graha.sel{color:var(--ember)}
+.lbl-graha .r{color:var(--ember);font-family:var(--mono);font-style:normal;font-size:10px}
+.lbl-layer{font-family:var(--mono);font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--gold);text-align:left}
+.lbl-layer i{display:block;font-family:var(--display);font-size:14px;letter-spacing:0;text-transform:none;color:var(--muted)}
+.lbl-earth{font-family:var(--mono);font-size:9.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted)}
+.lbl-center{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);text-align:center;line-height:1.6}
+.lbl-center b{display:block;font-family:var(--display);font-weight:500;font-size:22px;letter-spacing:0;text-transform:none;color:var(--ivory)}
+.lbl-tile{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--muted)}
+.lbl-chartg{font-family:var(--mono);font-size:11.5px;color:var(--ivory);text-shadow:0 1px 4px #000}
+.lbl-lagna{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ember)}
+.lbl-tile .short{display:none}
+
+/* ---------- phone ---------- */
+@media (max-width: 900px){
+  body{overflow:auto}
+  .app{display:flex;flex-direction:column;height:auto;min-height:100%}
+  .topbar{position:relative;order:1;flex-wrap:wrap;padding-bottom:6px}
+  .readout{text-align:left;width:100%}
+  .modes{width:100%;justify-content:space-between}
+  .modes button{flex:1;padding:8px 6px}
+  #stage{position:relative;order:2;height:62vh;min-height:380px;max-height:640px}
+  .dock{position:relative;order:3;padding-top:10px}
+  .panel{position:relative;order:4;top:auto;left:auto!important;right:auto!important;width:auto;max-height:none;margin:12px max(16px,env(safe-area-inset-left,0px)) 0 max(16px,env(safe-area-inset-right,0px))}
+  .panel.right{order:5;margin-bottom:24px}
+  .brand h1{font-size:34px}
+  #stage{height:68vh}
+  .lbl-nak{display:none}
+  .lbl-nak.on{display:block;font-size:9px}
+  .lbl-graha{font-size:12.5px}
+  .lbl-graha small, .lbl-sign i, .lbl-house .m, .lbl-earth, .lbl-layer i, .lbl-chartg .d, .lbl-tile .full{display:none}
+  .lbl-tile .short{display:inline}
+  .lbl-sign{font-size:9.5px}
+  .lbl-layer{font-size:9px}
+  .lbl-center{font-size:9px}
+  .lbl-center b{font-size:14px}
+  .lbl-chartg{font-size:10.5px}
+  .lbl-lagna{font-size:8.5px}
+}
+@media (prefers-reduced-motion: reduce){ .lbl{transition:none} }
+</style>
+
+<div class="app" id="app">
+  <header class="topbar">
+    <div class="brand">
+      <div class="kicker">Sutram · the sky, taken apart</div>
+      <h1>Sky Machine</h1>
+    </div>
+    <div class="readout">
+      <div class="when" id="when">—</div>
+      <div class="moon" id="moonline">—</div>
+      <div class="modes" role="group" aria-label="View">
+        <button id="m-assembled" aria-pressed="true">Assembled</button>
+        <button id="m-apart" aria-pressed="false">Take apart</button>
+        <button id="m-chart" aria-pressed="false">Fold into a chart</button>
+      </div>
+    </div>
+  </header>
+
+  <div id="stage" aria-label="Interactive 3D model of the sky as Jyotish draws it"></div>
+
+  <aside class="panel left" aria-label="The nine grahas">
+    <h2>The nine grahas, right now</h2>
+    <div class="g-list" id="glist"></div>
+  </aside>
+
+  <aside class="panel right explain" aria-live="polite">
+    <div class="kicker" id="ex-k">How to read it</div>
+    <h3 id="ex-h">The sky around you</h3>
+    <div id="ex-b"></div>
+    <div class="toggles" role="group" aria-label="Layers">
+      <button class="tog" data-layer="naks" aria-pressed="true">27 nakshatras</button>
+      <button class="tog" data-layer="signs" aria-pressed="true">12 signs</button>
+      <button class="tog" data-layer="houses" aria-pressed="true">12 houses</button>
+      <button class="tog" data-layer="labels" aria-pressed="true">Labels</button>
+    </div>
+    <div class="hint">Drag to turn. Pinch or scroll to zoom. Tap a graha.</div>
+    <div class="card" id="card" hidden>
+      <div class="c-who" id="c-who"></div>
+      <div class="c-role" id="c-role"></div>
+      <div class="c-now" id="c-now"></div>
+    </div>
+  </aside>
+
+  <footer class="dock">
+    <div class="time">
+      <button class="play" id="play" aria-label="Play time forward"><svg viewBox="0 0 10 10" id="playicon"><path d="M2 1 L9 5 L2 9 Z"/></svg></button>
+      <input type="range" id="slider" min="0" max="1000" step="1" value="0" aria-label="Date and time">
+      <span class="span" id="span">Oct 28 – Feb 1</span>
+    </div>
+    <div class="chips" id="chips" role="group" aria-label="Key moments"></div>
+    <div class="credit">Positions from the Sutram engine (Swiss Ephemeris, Lahiri ayanamsa). Houses for Toronto. Ask your own chart at <a href="https://asksutram.com" target="_blank" rel="noopener">asksutram.com</a></div>
+  </footer>
+</div>
+
+<script type="application/json" id="skydata">__SKYDATA__</script>
+<script type="importmap">{"imports":{"three":"__THREE__","three/addons/":"__ADDONS__"}}</script>
+<script type="module">
+import * as THREE from 'three';
+import { OrbitControls } from 'three/addons/controls/OrbitControls.js';
+import { CSS2DRenderer, CSS2DObject } from 'three/addons/renderers/CSS2DRenderer.js';
+
+const D = Math.PI/180;
+const DATA = JSON.parse(document.getElementById('skydata').textContent);
+const START = Date.parse(DATA.start), STEP = DATA.stepHours*3600e3, N = DATA.rows.length, END = START+(N-1)*STEP;
+const TOR = {lat:43.6532, lon:-79.3832};
+const REDUCED = matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+const GRAHAS = [
+  {key:'Sun',     ab:'Su', who:'the king',      role:'Power, your father, your sense of self',       color:0xEA7A3C, r:.34},
+  {key:'Moon',    ab:'Mo', who:'the mother',    role:'Mind, mood, your mother, care',                color:0xEFE8D8, r:.27},
+  {key:'Mars',    ab:'Ma', who:'the soldier',   role:'The push to act, courage, temper',             color:0xC85A3E, r:.22},
+  {key:'Mercury', ab:'Me', who:'the messenger', role:'Words, friends, learning, trade',              color:0x93C192, r:.20},
+  {key:'Jupiter', ab:'Ju', who:'the teacher',   role:'Wisdom, faith, mentors, savings, children',    color:0xE6CA93, r:.31},
+  {key:'Venus',   ab:'Ve', who:'the lover',     role:'Love, beauty, comfort, money you enjoy',       color:0xF5DFE6, r:.24},
+  {key:'Saturn',  ab:'Sa', who:'the auditor',   role:'Duty, time, steady work, delay',               color:0x9FAAC2, r:.26, ring:true},
+  {key:'Rahu',    ab:'Ra', who:'the magician',  role:'Craving, the new and foreign, smoke and mirrors', color:0x8A83A8, r:.24, smoke:true},
+  {key:'Ketu',    ab:'Ke', who:'the monk',      role:'Letting go, instinct, what you have outgrown', color:0x1C1714, r:.24, rim:true},
+];
+const SIGNS = [['Aries','Mesha'],['Taurus','Vrishabha'],['Gemini','Mithuna'],['Cancer','Karka'],['Leo','Simha'],['Virgo','Kanya'],['Libra','Tula'],['Scorpio','Vrishchika'],['Sagittarius','Dhanu'],['Capricorn','Makara'],['Aquarius','Kumbha'],['Pisces','Meena']];
+const NAKS = [['Ashwini','Ketu'],['Bharani','Venus'],['Krittika','Sun'],['Rohini','Moon'],['Mrigashira','Mars'],['Ardra','Rahu'],['Punarvasu','Jupiter'],['Pushya','Saturn'],['Ashlesha','Mercury'],['Magha','Ketu'],['Purva Phalguni','Venus'],['Uttara Phalguni','Sun'],['Hasta','Moon'],['Chitra','Mars'],['Swati','Rahu'],['Vishakha','Jupiter'],['Anuradha','Saturn'],['Jyeshtha','Mercury'],['Mula','Ketu'],['Purva Ashadha','Venus'],['Uttara Ashadha','Sun'],['Shravana','Moon'],['Dhanishta','Mars'],['Shatabhisha','Rahu'],['Purva Bhadrapada','Jupiter'],['Uttara Bhadrapada','Saturn'],['Revati','Mercury']];
+const HOUSES = ['Self','Money, speech','Effort','Home','Children','Work, health','Partner','Shared money','Luck, teachers','Career','Gains, friends','Rest, letting go'];
+const TITHI = ['Pratipada','Dwitiya','Tritiya','Chaturthi','Panchami','Shashthi','Saptami','Ashtami','Navami','Dashami','Ekadashi','Dwadashi','Trayodashi','Chaturdashi'];
+const EVENTS = [
+  {t:'2026-10-31T06:32Z', label:'Oct 31 · the teacher walks into Leo'},
+  {t:'2026-11-05T19:34Z', label:'Nov 5 · the lover slips back into Virgo'},
+  {t:'2026-11-11T19:59Z', label:'Nov 11 · the teacher meets the monk'},
+  {t:'2026-11-12T14:48Z', label:'Nov 12 · the soldier walks into Leo'},
+  {t:'2026-11-13T15:54Z', label:'Nov 13 · the messenger walks forward'},
+  {t:'2026-11-14T12:00Z', label:'Nov 13–16 · three in one room'},
+  {t:'2026-12-05T17:02Z', label:'Dec 5 · the monk steps back into Cancer'},
+  {t:'2026-12-11T00:29Z', label:'Dec 10 · the auditor walks forward'},
+  {t:'2026-12-13T00:30Z', label:'Dec 12 · the teacher looks back'},
+  {t:'2026-12-16T04:55Z', label:'Dec 15 · the king enters the teacher’s house'},
+  {t:'2027-01-24T20:01Z', label:'Jan 24 · the teacher returns to Cancer'},
+];
+
+/* ---------- time + math (engine data in, arithmetic only) ---------- */
+const wrap = x => ((x%360)+360)%360;
+function sample(ms){
+  const f = Math.min(Math.max((ms-START)/STEP,0),N-1.0001), i = Math.floor(f), u = f-i;
+  const a = DATA.rows[i], b = DATA.rows[i+1];
+  return a.map((p,k)=>{ const d = ((b[k][0]-p[0]+540)%360)-180; return {lon:wrap(p[0]+d*u), retro:(u<.5?p:b[k])[1]===1}; });
+}
+const jdOf = ms => ms/86400000 + 2440587.5;
+function ayan(jd){ return 24.23191 + (jd-2461345.0)/365.25*0.013968; }
+function lagnaSid(ms){ // checked against Swiss Ephemeris to 0.003°
+  const jd = jdOf(ms), T = (jd-2451545)/36525;
+  const gmst = 280.46061837+360.98564736629*(jd-2451545)+0.000387933*T*T-T*T*T/38710000;
+  const ramc = wrap(gmst+TOR.lon), eps = 23.4392911-0.0130042*T;
+  const y = Math.cos(ramc*D), x = -(Math.sin(ramc*D)*Math.cos(eps*D)+Math.tan(TOR.lat*D)*Math.sin(eps*D));
+  return wrap(Math.atan2(y,x)/D - ayan(jd));
+}
+const dms = l => { const s = l%30, d = Math.floor(s), m = Math.floor((s-d)*60); return `${d}°${String(m).padStart(2,'0')}′`; };
+const signOf = l => Math.floor(wrap(l)/30), nakOf = l => Math.floor(wrap(l)/(40/3));
+const fmt = new Intl.DateTimeFormat('en-US',{timeZone:'America/Toronto',weekday:'short',day:'numeric',month:'short',year:'numeric',hour:'numeric',minute:'2-digit'});
+const fmtShort = new Intl.DateTimeFormat('en-US',{timeZone:'America/Toronto',month:'short',day:'numeric'});
+const when = ms => fmt.format(ms).replace(/,/g,'');
+
+/* ---------- scene ---------- */
+const stage = document.getElementById('stage');
+const renderer = new THREE.WebGLRenderer({antialias:true, alpha:false});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+renderer.setClearColor(0x0B0A09,1);
+stage.appendChild(renderer.domElement);
+const labelR = new CSS2DRenderer(); labelR.domElement.className='labels'; stage.appendChild(labelR.domElement);
+const scene = new THREE.Scene();
+scene.fog = new THREE.Fog(0x0B0A09, 30, 70);
+const camera = new THREE.PerspectiveCamera(42, 1, .1, 200);
+camera.position.set(0, 13.5, 17);
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true; controls.dampingFactor = .08; controls.minDistance = 5; controls.maxDistance = 34; controls.enablePan = false;
+scene.add(new THREE.AmbientLight(0xffffff,.55));
+const key = new THREE.PointLight(0xffe2c0, 60, 0, 1.6); key.position.set(0,6,0); scene.add(key);
+const dir = new THREE.DirectionalLight(0xffffff,.9); dir.position.set(6,10,8); scene.add(dir);
+
+// stars
+(function(){ let s=7; const rnd=()=> (s=(s*16807)%2147483647)/2147483647;
+  const n=1400, pos=new Float32Array(n*3);
+  for(let i=0;i<n;i++){ const u=rnd()*2-1, th=rnd()*Math.PI*2, r=46+rnd()*14, q=Math.sqrt(1-u*u); pos.set([r*q*Math.cos(th), r*u, r*q*Math.sin(th)], i*3); }
+  const g=new THREE.BufferGeometry(); g.setAttribute('position', new THREE.BufferAttribute(pos,3));
+  scene.add(new THREE.Points(g, new THREE.PointsMaterial({color:0xF2E6CC,size:.11,transparent:true,opacity:.55,fog:false})));
+})();
+
+// earth
+const earth = new THREE.Mesh(new THREE.SphereGeometry(.55,48,32), new THREE.MeshStandardMaterial({color:0x2E4A63, roughness:.7, metalness:.05, emissive:0x0d1a26, emissiveIntensity:.6}));
+scene.add(earth);
+const earthLbl = mkLabel('Earth · you are here','lbl lbl-earth'); earthLbl.center.set(.5,-1.1); earth.add(earthLbl);
+
+function mkLabel(html, cls){ const el=document.createElement('div'); el.className=cls; el.innerHTML=html; return new CSS2DObject(el); }
+const posAt = (lon, r, y=0) => new THREE.Vector3(r*Math.cos(lon*D), y, -r*Math.sin(lon*D));
+
+/* rings: geometry at unit outer radius, inner 0.8; scaled per layout */
+const RIN = .8;
+function sector(a0, a1, color, opacity){
+  const g = new THREE.RingGeometry(RIN, 1, Math.max(4,Math.round((a1-a0)/2)), 1, a0*D, (a1-a0)*D); g.rotateX(-Math.PI/2);
+  const m = new THREE.MeshBasicMaterial({color, transparent:true, opacity, side:THREE.DoubleSide, depthWrite:false});
+  return new THREE.Mesh(g,m);
+}
+function circleLines(rs, color, opacity){
+  const pts=[]; for(const r of rs){ for(let i=0;i<180;i++){ const a=i*2*D, b=(i+1)*2*D; pts.push(r*Math.cos(a),0,-r*Math.sin(a), r*Math.cos(b),0,-r*Math.sin(b)); } }
+  const g=new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(pts,3));
+  return new THREE.LineSegments(g, new THREE.LineBasicMaterial({color, transparent:true, opacity, depthWrite:false}));
+}
+function radialLines(step, r0, r1, color, opacity){
+  const pts=[]; for(let a=0;a<360-1e-6;a+=step){ pts.push(r0*Math.cos(a*D),0,-r0*Math.sin(a*D), r1*Math.cos(a*D),0,-r1*Math.sin(a*D)); }
+  const g=new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(pts,3));
+  return new THREE.LineSegments(g, new THREE.LineBasicMaterial({color, transparent:true, opacity, depthWrite:false}));
+}
+const GOLD = 0xD9A57A, EMBER = 0xFF6B2C;
+const ELEM = [0x2a1710,0x1d1a12,0x171a1c,0x121820]; // fire, earth, air, water tints
+
+const layers = {};
+function makeLayer(name, opts){
+  const g = new THREE.Group(); g.userData = opts; scene.add(g); layers[name] = g;
+  g.add(circleLines([RIN,1], GOLD, .45));
+  return g;
+}
+// nakshatras
+const L_N = makeLayer('naks', {sA:5.55, yA:0, sE:4.7, yE:1.55});
+const nakSectors=[], nakLabels=[];
+for(let i=0;i<27;i++){
+  const s = sector(i*40/3, (i+1)*40/3, i%2? 0x1a1613:0x15120f, .92); L_N.add(s); nakSectors.push(s);
+  const l = mkLabel(NAKS[i][0].replace('Purva ','P. ').replace('Uttara ','U. '), 'lbl lbl-nak'); l.position.copy(posAt((i+.5)*40/3, .9)); L_N.add(l); nakLabels.push(l);
+}
+L_N.add(radialLines(40/3, RIN, 1, GOLD, .35));
+L_N.add(radialLines(10/3, .965, 1, GOLD, .45)); // 108 padas
+// signs
+const L_S = makeLayer('signs', {sA:4.3, yA:0, sE:4.7, yE:0});
+const signSectors=[], signLabels=[];
+for(let i=0;i<12;i++){
+  const s = sector(i*30,(i+1)*30, ELEM[i%4], .95); L_S.add(s); signSectors.push(s);
+  const l = mkLabel(`${SIGNS[i][0]}<i>${SIGNS[i][1]}</i>`,'lbl lbl-sign'); l.position.copy(posAt(i*30+15,.9)); L_S.add(l); signLabels.push(l);
+}
+L_S.add(radialLines(30, RIN, 1, GOLD, .55));
+L_S.add(radialLines(1, .975, 1, GOLD, .32));
+L_S.add(radialLines(10, .955, 1, GOLD, .5));
+// houses (built from 0°, rotated to the lagna sign each frame)
+const L_H = makeLayer('houses', {sA:3.15, yA:0, sE:4.7, yE:-1.55});
+const houseRot = new THREE.Group(); L_H.add(houseRot);
+const houseSectors=[], houseLabels=[];
+for(let k=0;k<12;k++){
+  const s = sector(k*30,(k+1)*30, k===0?0x3a1a0d:(k%2?0x161310:0x12100d), .95); houseRot.add(s); houseSectors.push(s);
+  const l = mkLabel(`<b>${k+1}</b><span class="m"> ${HOUSES[k]}</span>`, 'lbl lbl-house'+(k===0?' lagna':'')); l.position.copy(posAt(k*30+15,.9)); houseRot.add(l); houseLabels.push(l);
+}
+houseRot.add(radialLines(30, RIN, 1, GOLD, .4));
+// lagna pointer (exact degree)
+const lagnaPtr = new THREE.Group(); L_H.add(lagnaPtr);
+{ const g=new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute([.62,0,0, 1.07,0,0],3));
+  lagnaPtr.add(new THREE.LineSegments(g, new THREE.LineBasicMaterial({color:EMBER}))); }
+const lagnaLbl = mkLabel('Lagna · rising in Toronto','lbl lbl-lagna'); lagnaLbl.position.set(.6,0,0); lagnaPtr.add(lagnaLbl);
+
+// layer titles (visible when taken apart)
+const layerTitles = [
+  [L_N, 'The 27 nakshatras', 'the Moon’s star groups, 13°20′ each'],
+  [L_S, 'The 12 signs', 'rashis, 30° each'],
+  [L_H, 'The 12 houses', 'counted from the sign rising in Toronto'],
+].map(([L,t,s])=>{ const l=mkLabel(`${t}<i>${s}</i>`,'lbl lbl-layer'); l.position.copy(posAt(318,1.17)); L.add(l); return l; });
+
+/* grahas */
+function glowTex(){ const c=document.createElement('canvas'); c.width=c.height=128; const x=c.getContext('2d'); const gr=x.createRadialGradient(64,64,0,64,64,64); gr.addColorStop(0,'rgba(255,255,255,1)'); gr.addColorStop(.25,'rgba(255,255,255,.45)'); gr.addColorStop(1,'rgba(255,255,255,0)'); x.fillStyle=gr; x.fillRect(0,0,128,128); return new THREE.CanvasTexture(c); }
+const GLOW = glowTex();
+const gObjs = GRAHAS.map((G,i)=>{
+  const grp = new THREE.Group(); scene.add(grp);
+  const mat = new THREE.MeshStandardMaterial({color:G.color, roughness:.55, metalness:.1, emissive:G.color, emissiveIntensity:G.rim?0:.28, transparent:!!G.smoke, opacity:G.smoke?.82:1});
+  const body = new THREE.Mesh(new THREE.SphereGeometry(G.r,32,24), mat); grp.add(body); body.userData.idx=i;
+  if(G.ring){ const t=new THREE.Mesh(new THREE.RingGeometry(G.r*1.35,G.r*1.9,48), new THREE.MeshBasicMaterial({color:0xC9CFDD,side:THREE.DoubleSide,transparent:true,opacity:.55})); t.rotation.x=-Math.PI/2.6; grp.add(t); }
+  const glow = new THREE.Sprite(new THREE.SpriteMaterial({map:GLOW, color:G.rim?EMBER:G.color, transparent:true, opacity:G.rim?.85:.55, depthWrite:false, blending:THREE.AdditiveBlending}));
+  glow.scale.setScalar(G.r*(G.rim?4.2:4.6)); grp.add(glow);
+  const lbl = mkLabel('', 'lbl lbl-graha'); lbl.center.set(.5,1.25); lbl.position.set(0,G.r,0); grp.add(lbl); lbl.userData.html=''; lbl.userData.cls='';
+  // drop line through the layers
+  const lg = new THREE.BufferGeometry(); lg.setAttribute('position', new THREE.Float32BufferAttribute([0,0,0,0,0,0],3));
+  const line = new THREE.Line(lg, new THREE.LineDashedMaterial({color:G.rim?EMBER:G.color, dashSize:.12, gapSize:.08, transparent:true, opacity:0}));
+  scene.add(line);
+  const pierce = [0,1,2].map(()=>{ const m=new THREE.Mesh(new THREE.RingGeometry(.07,.11,24), new THREE.MeshBasicMaterial({color:G.rim?EMBER:G.color,side:THREE.DoubleSide,transparent:true,opacity:0,depthWrite:false})); m.rotation.x=-Math.PI/2; scene.add(m); return m; });
+  return {G, grp, body, glow, lbl, line, pierce};
+});
+
+/* chart tiles (South Indian layout: signs fixed, Pisces top-left) */
+const CELL = 2.45, TILE = 2.32;
+const SI = {11:[0,0],0:[1,0],1:[2,0],2:[3,0],3:[3,1],4:[3,2],5:[3,3],6:[2,3],7:[1,3],8:[0,3],9:[0,2],10:[0,1]};
+const cellPos = s => { const [c,r]=SI[s]; return new THREE.Vector3((c-1.5)*CELL, 0, (r-1.5)*CELL); };
+const chart = new THREE.Group(); scene.add(chart);
+const tiles = [];
+for(let s=0;s<12;s++){
+  const t = new THREE.Group();
+  const fill = new THREE.Mesh(new THREE.PlaneGeometry(TILE,TILE), new THREE.MeshBasicMaterial({color:ELEM[s%4],transparent:true,opacity:0,depthWrite:false}));
+  fill.rotation.x=-Math.PI/2; t.add(fill);
+  const e = new THREE.EdgesGeometry(new THREE.PlaneGeometry(TILE,TILE)); e.rotateX(-Math.PI/2);
+  const edge = new THREE.LineSegments(e, new THREE.LineBasicMaterial({color:GOLD,transparent:true,opacity:0})); t.add(edge);
+  const diag = new THREE.BufferGeometry(); diag.setAttribute('position', new THREE.Float32BufferAttribute([-TILE/2,0,-TILE/2+.7, -TILE/2+.7,0,-TILE/2],3));
+  const lag = new THREE.LineSegments(diag, new THREE.LineBasicMaterial({color:EMBER,transparent:true,opacity:0})); t.add(lag);
+  const name = mkLabel(`<span class="full">${SIGNS[s][0]}</span><span class="short">${SIGNS[s][0].slice(0,3)}</span>`,'lbl lbl-tile'); name.position.set(0,0,TILE/2-.22); t.add(name);
+  const lagL = mkLabel('Lagna','lbl lbl-lagna'); lagL.position.set(-TILE/2+.62,0,-TILE/2+.2); t.add(lagL);
+  chart.add(t); tiles.push({t, fill, edge, lag, name, lagL});
+}
+const centerLbl = mkLabel('','lbl lbl-center'); chart.add(centerLbl);
+{ const pts=[]; const a=2*CELL, b=CELL; // outer frame and the empty centre square
+  for(const [x0,z0,x1,z1] of [[-a,-a,a,-a],[a,-a,a,a],[a,a,-a,a],[-a,a,-a,-a],[-b,-b,b,-b],[b,-b,b,b],[b,b,-b,b],[-b,b,-b,-b]]) pts.push(x0,0,z0,x1,0,z1);
+  const g=new THREE.BufferGeometry(); g.setAttribute('position', new THREE.Float32BufferAttribute(pts,3));
+  var frameLines = new THREE.LineSegments(g, new THREE.LineBasicMaterial({color:GOLD,transparent:true,opacity:0})); chart.add(frameLines); }
+
+/* ---------- state ---------- */
+let now = Date.now();
+let tms = Math.min(Math.max(now, START), END);
+let playing = false, sel = -1;
+let mode = 'assembled';
+const mix = {ex:0, fo:0};
+const show = {naks:true, signs:true, houses:true, labels:true};
+const camPose = {
+  assembled: {p:new THREE.Vector3(0,13.5,17), t:new THREE.Vector3(0,0,0)},
+  apart:     {p:new THREE.Vector3(13,7.8,13), t:new THREE.Vector3(0,.3,0)},
+  chart:     {p:new THREE.Vector3(0,17.5,1.6), t:new THREE.Vector3(0,0,0)},
+};
+const camPoseP = { assembled:new THREE.Vector3(0,15,10.5), apart:new THREE.Vector3(11,9.5,11), chart:new THREE.Vector3(0,17.5,1.6) }; // phones: look more from above
+const EXTENT = {assembled:[7.3,4.7], apart:[6.9,5.6], chart:[5.7,5.7]}; // half-width, half-height to keep in view
+const EXTENT_P = {assembled:[7.9,6.2], apart:[7.4,6.4], chart:[5.5,5.5]};
+function poseOf(m){
+  const w = stage.clientWidth, h = Math.max(1,stage.clientHeight), effW = w>900 ? w-700 : w;
+  const v = camera.fov*D/2, hh = Math.atan(Math.tan(v)*effW/h);
+  const portrait = w < h*0.95, [W,H] = (portrait?EXTENT_P:EXTENT)[m], dist = Math.max(W/Math.tan(hh), H/Math.tan(v)) * 1.06;
+  const dirv = portrait ? camPoseP[m].clone() : camPose[m].p.clone();
+  return {p: dirv.normalize().multiplyScalar(dist), t: camPose[m].t.clone()};
+}
+let camTween = null;
+
+/* ---------- UI ---------- */
+const $ = id => document.getElementById(id);
+const slider = $('slider');
+slider.max = Math.round((END-START)/3600e3);
+$('span').textContent = `${fmtShort.format(START)} – ${fmtShort.format(END)}`;
+const gl = $('glist');
+const rows = GRAHAS.map((G,i)=>{
+  const b = document.createElement('button'); b.className='g-row'; b.setAttribute('aria-pressed','false');
+  const hex = '#'+(G.rim?EMBER:G.color).toString(16).padStart(6,'0');
+  b.innerHTML = `<span class="dot" style="color:${hex};background:${G.rim?'#1C1714':hex};${G.rim?'border:1.5px solid '+hex:''}"></span><span><div class="g-who">${G.who}</div><div class="g-name">${G.key}</div></span><span class="g-pos"><span class="p"></span><br><span class="nak"></span></span>`;
+  b.addEventListener('click', ()=> select(sel===i?-1:i));
+  gl.appendChild(b); return b;
+});
+const chipsEl = $('chips');
+const nowChip = document.createElement('button'); nowChip.className='chip now'; nowChip.textContent='Now'; chipsEl.appendChild(nowChip);
+nowChip.addEventListener('click', ()=>{ setTime(Math.min(Math.max(Date.now(),START),END)); });
+const chipEls = EVENTS.map(e=>{ const b=document.createElement('button'); b.className='chip'; b.textContent=e.label; b.setAttribute('aria-pressed','false');
+  b.addEventListener('click', ()=>{ playing=false; setPlayIcon(); setTime(Date.parse(e.t)); chipEls.forEach(c=>c.setAttribute('aria-pressed', c===b?'true':'false')); }); chipsEl.appendChild(b); return b; });
+function setTime(ms){ tms = ms; slider.value = Math.round((tms-START)/3600e3); }
+slider.addEventListener('input', ()=>{ tms = START + (+slider.value)*3600e3; chipEls.forEach(c=>c.setAttribute('aria-pressed','false')); });
+function setPlayIcon(){ $('playicon').innerHTML = playing? '<path d="M2 1h2.2v8H2zM5.8 1H8v8H5.8z"/>' : '<path d="M2 1 L9 5 L2 9 Z"/>'; $('play').setAttribute('aria-label', playing?'Pause':'Play time forward'); }
+$('play').addEventListener('click', ()=>{ playing=!playing; if(playing && tms>=END-3600e3) tms=START; setPlayIcon(); });
+
+const EXPLAIN = {
+  assembled: ['How to read it','The sky around you',
+    ['Jyotish draws the sky as one circle of 360 degrees around the Earth: the band where the Sun, the Moon and the planets travel.',
+     'The nine grahas sit where the Sutram engine puts them at this moment. Graha is Sanskrit for “the one who grabs”: each one grabs a part of your life.']],
+  apart: ['Taken apart','One circle, cut three ways',
+    ['The same 360 degrees is cut into 27 nakshatras of 13°20′, 12 signs of 30° and 12 houses counted from the sign rising in the east.',
+     'Each graha drops a line through all three. Read the column from top to bottom: one star group, one sign and one house, all at once.']],
+  chart: ['Folded flat','A chart is the sky folded flat',
+    ['Lay the 12 signs in a square and you get the South Indian chart. The signs never move; the grahas move through them.',
+     'The slanted line marks the lagna, the sign rising in Toronto at this moment. Your birth chart is this same picture, stopped at the minute you were born.']],
+};
+function setMode(m){
+  if(m===mode) return; mode=m;
+  ['assembled','apart','chart'].forEach(k=>$('m-'+k).setAttribute('aria-pressed', k===m?'true':'false'));
+  const [k,h,ps] = EXPLAIN[m]; $('ex-k').textContent=k; $('ex-h').textContent=h; $('ex-b').innerHTML = ps.map(p=>`<p>${p}</p>`).join('');
+  controls.enableRotate = (m!=='chart');
+  camTween = {from:{p:camera.position.clone(), t:controls.target.clone()}, to:poseOf(m), k:0, dur: REDUCED?0.01:1.4};
+}
+['assembled','apart','chart'].forEach(k=>$('m-'+k).addEventListener('click',()=>setMode(k)));
+document.querySelectorAll('.tog').forEach(b=>b.addEventListener('click',()=>{ const k=b.dataset.layer; show[k]=!show[k]; b.setAttribute('aria-pressed', show[k]); }));
+{ const [k,h,ps]=EXPLAIN.assembled; $('ex-b').innerHTML = ps.map(p=>`<p>${p}</p>`).join(''); }
+
+function select(i){
+  sel = i; rows.forEach((r,j)=>r.setAttribute('aria-pressed', j===i?'true':'false'));
+  $('card').hidden = (i<0);
+}
+// tap a graha in 3D
+const ray = new THREE.Raycaster(), ndc = new THREE.Vector2(); let downAt=null;
+renderer.domElement.addEventListener('pointerdown', e=>{ downAt=[e.clientX,e.clientY]; });
+renderer.domElement.addEventListener('pointerup', e=>{
+  if(!downAt || Math.hypot(e.clientX-downAt[0], e.clientY-downAt[1])>6) return;
+  const r = renderer.domElement.getBoundingClientRect(); ndc.set(((e.clientX-r.left)/r.width)*2-1, -((e.clientY-r.top)/r.height)*2+1);
+  ray.setFromCamera(ndc, camera); const hit = ray.intersectObjects(gObjs.map(o=>o.body))[0];
+  select(hit? (sel===hit.object.userData.idx?-1:hit.object.userData.idx) : -1);
+});
+
+/* ---------- frame ---------- */
+const ease = x => x<.5? 4*x*x*x : 1-Math.pow(-2*x+2,3)/2;
+const lerp = (a,b,u)=>a+(b-a)*u;
+function resize(){ const w=stage.clientWidth, h=stage.clientHeight; renderer.setSize(w,h,false); labelR.setSize(w,h); camera.aspect=w/h; camera.fov = w<600? 48:42; camera.updateProjectionMatrix(); }
+new ResizeObserver(()=>{ resize(); if(!camTween){ const P=poseOf(mode); camera.position.copy(P.p); controls.target.copy(P.t); } }).observe(stage); resize();
+{ const P=poseOf('assembled'); camera.position.copy(P.p); }
+
+let last = performance.now(), lastUI = 0;
+function frame(t){
+  const dt = Math.min((t-last)/1000, .05); last = t;
+  if(playing){ tms += dt*86400e3; if(tms>=END){ tms=END; playing=false; setPlayIcon(); } slider.value = Math.round((tms-START)/3600e3); }
+
+  // mode mixes (taking apart and folding never overlap)
+  const tgtEx = mode==='apart'?1:0, tgtFo = mode==='chart'?1:0;
+  const sp = REDUCED? 1 : 1-Math.exp(-dt*3.2);
+  if(tgtFo<mix.fo || mix.ex<=0.02) mix.fo += (tgtFo-mix.fo)*sp; else mix.fo += (0-mix.fo)*sp;
+  if(mix.fo<=0.02 || tgtEx<mix.ex) mix.ex += ((mix.fo>0.02?0:tgtEx)-mix.ex)*sp;
+  const ex = ease(Math.min(Math.max(mix.ex,0),1)), fo = ease(Math.min(Math.max(mix.fo,0),1));
+
+  // camera tween
+  if(camTween){ camTween.k = Math.min(1, camTween.k + dt/camTween.dur); const u=ease(camTween.k);
+    camera.position.lerpVectors(camTween.from.p, camTween.to.p, u); controls.target.lerpVectors(camTween.from.t, camTween.to.t, u);
+    if(camTween.k>=1) camTween=null; }
+
+  const S = sample(tms), lag = lagnaSid(tms), lagS = signOf(lag);
+  const occupiedN = new Set(S.map(s=>nakOf(s.lon))), occupiedS = new Set(S.map(s=>signOf(s.lon)));
+
+  // layers
+  for(const [L,on] of [[L_N,show.naks],[L_S,show.signs],[L_H,show.houses]]){
+    const o = L.userData, s = lerp(o.sA,o.sE,ex);
+    L.scale.setScalar(s); L.position.y = lerp(o.yA,o.yE,ex);
+    const fade = (L===L_S ? 1 : 1-fo) * (on?1:0);
+    L.visible = fade>0.01;
+    L.traverse(c=>{ if(c.material){ if(c.userData.baseO===undefined) c.userData.baseO=c.material.opacity; c.material.opacity = c.userData.baseO*fade*(L===L_S?(1-fo):1); } });
+  }
+  houseRot.rotation.y = lagS*30*D; lagnaPtr.rotation.y = lag*D;
+  const vis = (k)=> (show.labels && show[k]) ? 1 : 0;
+  layerTitles.forEach((l,j)=>{ l.element.style.opacity = ex*vis(['naks','signs','houses'][j]); });
+  houseLabels.forEach((l,k)=>{ l.element.style.opacity = vis('houses')*(1-fo); });
+  lagnaLbl.element.style.opacity = vis('houses')*(1-fo);
+  signLabels.forEach((l,i)=>{ l.element.style.opacity = vis('signs')*(occupiedS.has(i)?1:.7)*(1-fo); });
+  nakLabels.forEach((l,i)=>{ const on=occupiedN.has(i); if(l.userData.on!==on){ l.element.classList.toggle('on', on); l.userData.on=on; } l.element.style.opacity = vis('naks')*(on?1:.5)*(1-fo); });
+  signSectors.forEach((m,i)=>{ m.material.color.setHex(occupiedS.has(i)? 0x2b1d14 : ELEM[i%4]); });
+  nakSectors.forEach((m,i)=>{ m.material.color.setHex(occupiedN.has(i)? 0x2a1c13 : (i%2?0x1a1613:0x15120f)); });
+  earth.visible = fo<.98; earthLbl.element.style.opacity = show.labels? (1-ex)*(1-fo):0;
+
+  // chart tiles
+  chart.visible = fo>0.01;
+  const counts = new Array(12).fill(0);
+  tiles.forEach((T,s)=>{
+    const from = posAt(s*30+15, 4.3*.9, 0), to = cellPos(s);
+    T.t.position.lerpVectors(from, to, fo); T.t.scale.setScalar(lerp(.35,1,fo));
+    T.fill.material.opacity = .95*fo; T.edge.material.opacity = .7*fo;
+    const isL = s===lagS; T.lag.material.opacity = isL? fo:0;
+    T.name.element.style.opacity = fo; T.lagL.element.style.opacity = isL? fo:0;
+  });
+  centerLbl.element.style.opacity = fo; frameLines.material.opacity = .85*fo;
+  if(fo>0){ const h = `Rashi chart · Toronto<b>${when(tms)}</b>`; if(centerLbl.userData.h!==h){ centerLbl.element.innerHTML=h; centerLbl.userData.h=h; } }
+
+  // grahas: stack labels of grahas that stand close together
+  const order = S.map((s,i)=>[s.lon,i]).sort((a,b)=>a[0]-b[0]); const stack = new Array(9).fill(0);
+  for(let j=1;j<order.length;j++){ if(order[j][0]-order[j-1][0] < 8) stack[order[j][1]] = stack[order[j-1][1]]+1; }
+  if(order.length>1 && order[0][0]+360-order[8][0] < 8 && stack[order[0][1]]===0) stack[order[0][1]] = stack[order[8][1]]+1;
+  const slotOrder = [];
+  S.forEach((s,i)=>{ const si=signOf(s.lon); slotOrder[i]=counts[si]++; });
+  gObjs.forEach((o,i)=>{
+    const s = S[i], si = signOf(s.lon);
+    const A = posAt(s.lon, 6.35, .2), E = posAt(s.lon, 4.7*.9, 3.15);
+    const c = cellPos(si), k = slotOrder[i], col = k%2, row = Math.floor(k/2);
+    const F = new THREE.Vector3(c.x - .5 + col*1.0, .25, c.z - .5 + row*.62);
+    const p = new THREE.Vector3().lerpVectors(A,E,ex).lerp(F,fo);
+    o.grp.position.copy(p);
+    const big = (sel===i?1.35:1)*lerp(1,.8,fo); o.grp.scale.setScalar(big);
+    o.body.rotation.y += dt*.4;
+    // label
+    const deg = dms(s.lon), r = s.retro && i!==7 && i!==8 ? ' <span class="r">↺</span>' : '';
+    const html = fo>.5 ? `${GRAHAS[i].ab}<span class="d"> ${deg}</span>${r}` : `${GRAHAS[i].who}${r}<small>${GRAHAS[i].key}</small>`;
+    if(o.lbl.userData.html!==html){ o.lbl.element.innerHTML = html; o.lbl.userData.html = html; }
+    const cls = 'lbl ' + (fo>.5?'lbl-chartg':'lbl-graha') + (sel===i?' sel':'');
+    if(o.lbl.userData.cls!==cls){ o.lbl.element.className = cls; o.lbl.userData.cls = cls; }
+    o.lbl.center.set(.5, fo>.5? -.7 : 1.25 + stack[i]*1.15);
+    o.lbl.element.style.opacity = show.labels? 1 : (sel===i?1:0);
+    // drop line
+    const top = posAt(s.lon, 4.7*.9, 3.15), bot = posAt(s.lon, 4.7*.9, -1.55);
+    const pa = o.line.geometry.attributes.position; pa.setXYZ(0, top.x, top.y, top.z); pa.setXYZ(1, bot.x, bot.y, bot.z); pa.needsUpdate=true; o.line.computeLineDistances();
+    o.line.material.opacity = .75*ex*(1-fo);
+    [1.55, 0, -1.55].forEach((y,j)=>{ const m=o.pierce[j]; m.position.copy(posAt(s.lon,4.7*.9,y+.01)); m.material.opacity = ex*(1-fo)*(show[['naks','signs','houses'][j]]?1:0); });
+  });
+
+  // UI text (throttled)
+  if(t-lastUI>200){ lastUI=t;
+    $('when').textContent = when(tms) + ' · Toronto';
+    const moon=S[1].lon, sun=S[0].lon, n=nakOf(moon), pada=Math.floor((moon%(40/3))/(10/3))+1;
+    const ti = Math.floor(wrap(moon-sun)/12); const paksha = ti<15?'Shukla':'Krishna'; const tn = ti===14?'Purnima': ti===29?'Amavasya': TITHI[ti%15];
+    $('moonline').textContent = `Moon in ${NAKS[n][0]}, pada ${pada} · ${ti===14||ti===29? tn : paksha+' '+tn} · Lagna ${SIGNS[lagS][0]} ${dms(lag)}`;
+    S.forEach((s,i)=>{ const r=rows[i]; r.querySelector('.p').innerHTML = `${SIGNS[signOf(s.lon)][0]} ${dms(s.lon)}${s.retro&&i<7?' <span class="back">↺</span>':''}`; r.querySelector('.nak').textContent = NAKS[nakOf(s.lon)][0]; });
+    if(sel>=0){ const s=S[sel], G=GRAHAS[sel], si=signOf(s.lon), house=((si-lagS+12)%12)+1, nk=NAKS[nakOf(s.lon)];
+      $('c-who').textContent = `${G.who} · ${G.key}`; $('c-role').textContent = G.role;
+      const walk = (sel===7||sel===8)? 'always walking backward (the nodes)' : s.retro? 'walking backward' : 'walking forward';
+      $('c-now').innerHTML = `${SIGNS[si][0]} ${dms(s.lon)} · ${nk[0]} (${nk[1]}’s star)<br>House ${house} from Toronto’s lagna · ${walk}`; }
+  }
+
+  controls.update();
+  renderer.render(scene, camera); labelR.render(scene, camera);
+  requestAnimationFrame(frame);
+}
+setTime(tms);
+requestAnimationFrame(frame);
+</script>
