@@ -151,6 +151,12 @@
       "when": "2026-11-02T18:30:00-05:00",
       "title": "Graha stories 1: when the teacher meets the monk",
       "metricool_id": 411231022
+    },
+    {
+      "id": "jupiter-leo-2026",
+      "when": "2026-10-31T10:35:00-04:00",
+      "title": "Jupiter in Leo: the teacher walks into the king's palace (posted now at Sumant's call)",
+      "metricool_id": 412198357
     }
   ],
   "retired": [
@@ -308,8 +314,15 @@
         "8-fifth-house",
         "9-fourth-house"
       ],
-      "plan": "Sumant, 31 Oct: stay on Typefully's free plan for now, so November's 10 X posts are spread out, about 2 a week, with room kept for timely posts (Diwali 8 Nov, the knot 13 to 16 Nov)."
-    }
+      "plan": "Sumant, 31 Oct: stay on Typefully's free plan for now, so November's 10 X posts are spread out, about 2 a week, with room kept for timely posts (Diwali 8 Nov, the knot 13 to 16 Nov).",
+      "drafts": [
+        {
+          "draft_id": 11604098,
+          "what": "Jupiter in Leo thread (9 posts); Sumant attaches images (slides 1, 4, 5 on posts 1, 4, 6) then it goes out now"
+        }
+      ]
+    },
+    "x_route_options": "Zapier (connector) + Buffer free: about 50 single X posts a month with images by URL; Typefully free (10 a month) kept for threads. Waiting on Sumant to set up Buffer and connect Zapier."
   },
   "links": "Sumant, 29 Oct: every post ends with exactly two links, asksutram.com first, then sutram.ca/newsletter; nothing else. Slide footer reads ASKSUTRAM.COM. X replies carry the same two links.",
   "graha_stories": {
