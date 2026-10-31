@@ -230,7 +230,13 @@ def slide_html(sp, s=1.0):
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
     # a row of grahas on one slide (the characters on stage); a negative orbgap lets them crowd together
     if sp.get('orbs'):
-        H.append(f'<div style="margin-bottom:22px">{orbrow(sp["orbs"], sp.get("orbspacing"), sp.get("orbgap",18))}</div>')
+        row=orbrow(sp["orbs"], sp.get("orbspacing"), sp.get("orbgap",18))
+        if sp.get('mirror'):
+            # as above, so below: the grahas over a thin horizon, with a faint reflection fading downward
+            H.append(f'<div style="margin-bottom:0">{row}</div><div style="width:{F(560)};height:1px;background:rgba(217,165,122,.55);margin:{F(4)} auto {F(2)}"></div>'
+                     f'<div style="transform:scaleY(-1);opacity:.30;filter:blur(1.2px);-webkit-mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,0) 80%);mask-image:linear-gradient(to top,#000 0%,rgba(0,0,0,0) 80%);margin-bottom:{F(22)}">{row}</div>')
+        else:
+            H.append(f'<div style="margin-bottom:22px">{row}</div>')
     bs=f'font-size:{T(sp["bodysize"])};' if sp.get('bodysize') else ''
     if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:"+T(sp["labelsize"]) if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
     if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg','compare','cast'):
