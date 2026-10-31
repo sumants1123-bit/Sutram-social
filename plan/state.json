@@ -159,10 +159,10 @@
       "metricool_id": 411231022
     },
     {
-      "id": "as-above-so-below-v2",
+      "id": "as-above-so-below-v3",
       "when": "2026-11-03T18:30:00-05:00",
-      "title": "As above, so below: six times since 1600 (v2: bigger timeline)",
-      "metricool_id": 412261755
+      "title": "As above, so below: six times since 1600 (v3: timeline shows only the four clear matches)",
+      "metricool_id": 412266988
     }
   ],
   "retired": [
@@ -197,7 +197,8 @@
     "sutra-upachaya-ask",
     "jupiter-ketu-2026",
     "jupiter-ketu-2026-v2",
-    "as-above-so-below"
+    "as-above-so-below",
+    "as-above-so-below-v2"
   ],
   "next_lesson": 6,
   "next_thread_episode": 2,
