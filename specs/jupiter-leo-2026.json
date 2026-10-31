@@ -1,0 +1,299 @@
+{
+  "id": "jupiter-leo-2026",
+  "kicker": "Now · Jupiter in Leo",
+  "decor_theme": "solar",
+  "slides": [
+    {
+      "type": "cover",
+      "kicker": "Current transit · from 31 Oct",
+      "stars": true,
+      "orb": {
+        "kind": "jupiter",
+        "r": 84
+      },
+      "label": "In the sky now",
+      "labelsize": 30,
+      "title": "Jupiter in Leo",
+      "subtitle": "The teacher walks into the king's palace",
+      "note": "31 Oct to 24 Jan, then 25 Jun to 26 Nov 2027"
+    },
+    {
+      "type": "compare",
+      "label": "Who and where",
+      "labelsize": 26,
+      "title": "The teacher and the palace",
+      "titleclass": "h3",
+      "orbbox": 160,
+      "collabsize": 25,
+      "collabls": ".16em",
+      "headsize": 72,
+      "bodysize": 32,
+      "columns": [
+        {
+          "orb": {
+            "kind": "jupiter",
+            "r": 56
+          },
+          "label": "The teacher",
+          "head": "Jupiter",
+          "lines": [
+            "Wisdom, faith, mentors",
+            "Savings, children"
+          ]
+        },
+        {
+          "orb": {
+            "kind": "sun",
+            "r": 46,
+            "rings": false
+          },
+          "label": "The king's palace",
+          "head": "Leo",
+          "lines": [
+            "The stage, leadership",
+            "Kids, creativity, the heart"
+          ]
+        }
+      ],
+      "closing": "In Nadi, Jupiter is jiva, the life in you:\nwhere he walks, your year grows",
+      "closingsize": 46
+    },
+    {
+      "type": "text",
+      "orbs": [
+        {
+          "kind": "jupiter",
+          "r": 42
+        },
+        {
+          "kind": "saturn",
+          "r": 36,
+          "dx": 170
+        }
+      ],
+      "label": "Where he's coming from",
+      "labelsize": 26,
+      "title": "The auditor's homework",
+      "titleclass": "h2",
+      "titlesize": 96,
+      "body": [
+        "Since June the teacher lived in Cancer,\nthe mother's house, where he is strongest",
+        "There he worked hand in hand with the auditor\n(Saturn in Pisces): same element, so in Nadi\nthey act as one",
+        "He walks into Leo carrying that homework"
+      ],
+      "bodysize": 35,
+      "bodygap": 18,
+      "closing": "What you built with discipline\nnow wants a stage",
+      "after": "They stay linked into 2027: in step again 3 Apr and 11 Jul"
+    },
+    {
+      "type": "cast",
+      "label": "The rest of the cast",
+      "labelsize": 26,
+      "title": "Who's in the palace",
+      "titleclass": "h3",
+      "headsize": 48,
+      "bodysize": 29,
+      "castlabsize": 21,
+      "castorbh": 108,
+      "items": [
+        {
+          "orbs": [
+            {
+              "kind": "ketu",
+              "r": 32
+            }
+          ],
+          "label": "Ketu · same room",
+          "head": "The monk",
+          "line": "Already inside, in his own star;\nthey meet exactly on 11 Nov"
+        },
+        {
+          "orbs": [
+            {
+              "kind": "mars",
+              "r": 30,
+              "dim": true
+            }
+          ],
+          "label": "Mars · just behind",
+          "head": "The soldier",
+          "line": "Tired, walks in on 12 Nov;\nall three together 13 to 16 Nov"
+        },
+        {
+          "orbs": [
+            {
+              "kind": "rahu",
+              "r": 26
+            },
+            {
+              "kind": "saturn",
+              "r": 26,
+              "dx": 74
+            }
+          ],
+          "label": "Rahu · Saturn · facing",
+          "head": "The magician and the auditor",
+          "line": "Across the room: hype and audit,\nuntil early December"
+        },
+        {
+          "orbs": [
+            {
+              "kind": "sun",
+              "r": 32,
+              "rings": false
+            }
+          ],
+          "label": "Sun · the owner",
+          "head": "The king",
+          "line": "Away in Libra and weak; moves into\nthe teacher's house on 16 Dec"
+        }
+      ],
+      "note": "Graha: Sanskrit for “the one who grabs”"
+    },
+    {
+      "type": "text",
+      "orbs": [
+        {
+          "kind": "sun",
+          "r": 42,
+          "rings": false
+        },
+        {
+          "kind": "jupiter",
+          "r": 46,
+          "dx": 150
+        }
+      ],
+      "label": "16 Dec to 14 Jan",
+      "labelsize": 26,
+      "title": "The king and the teacher\nswap houses",
+      "titleclass": "h2",
+      "titlesize": 88,
+      "body": [
+        "The king (Sun) moves into the teacher's house\nwhile the teacher sits in the king's",
+        "A swap like this ties two grahas\ntogether like business partners",
+        "Power listens to wisdom; mentors get authority;\nfathers and children make peace"
+      ],
+      "bodysize": 35,
+      "bodygap": 18,
+      "closing": "Ask a mentor to vouch for you\nin late December"
+    },
+    {
+      "type": "rows",
+      "label": "The calendar",
+      "labelsize": 26,
+      "title": "Key dates",
+      "titleclass": "h2",
+      "bodysize": 34,
+      "items": [
+        [
+          "31 Oct",
+          "The teacher walks into Leo"
+        ],
+        [
+          "11 Nov",
+          "He meets the monk"
+        ],
+        [
+          "13 Nov",
+          "Messenger and lover walk forward"
+        ],
+        [
+          "13–16 Nov",
+          "The soldier joins: all three together"
+        ],
+        [
+          "12 Dec",
+          "He stops and looks back"
+        ],
+        [
+          "16 Dec",
+          "The king and the teacher swap houses"
+        ],
+        [
+          "24 Jan",
+          "Back to Cancer for old lessons"
+        ],
+        [
+          "25 Jun",
+          "Returns for the long stay, to 26 Nov 2027"
+        ]
+      ]
+    },
+    {
+      "type": "stack",
+      "label": "What to expect",
+      "labelsize": 26,
+      "title": "What changes",
+      "items": [
+        [
+          "Teachers take the stage",
+          "Coaches, advisors and real experts get heard"
+        ],
+        [
+          "Leaders get questioned",
+          "With the king away, bosses and governments\nface experts, courts and banks"
+        ],
+        [
+          "Hype gets audited",
+          "Fake gurus and quick-money schemes\nget exposed by early December"
+        ],
+        [
+          "Kids and creativity come forward",
+          "Pregnancies, school choices, creative launches,\nmostly after 13 Nov"
+        ]
+      ],
+      "bodysize": 31
+    },
+    {
+      "type": "stack",
+      "label": "How to live it",
+      "labelsize": 26,
+      "title": "Day to day",
+      "items": [
+        [
+          "Show your work",
+          "Once a week, share what you know:\na post, a talk, a lesson"
+        ],
+        [
+          "Find a teacher, be one",
+          "One mentor call a month; help one junior"
+        ],
+        [
+          "Ask before you advise",
+          "A teacher on a throne can turn into a lecturer"
+        ],
+        [
+          "Look after the heart",
+          "Leo rules the heart: a daily walk,\nlighter late dinners"
+        ]
+      ],
+      "bodysize": 31
+    },
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "Teach what\nyou have lived",
+      "source": "Sutram",
+      "quotesize": 96
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "jupiter",
+        "r": 66
+      },
+      "title": "Which room is he\nwalking into for you?",
+      "titleclass": "h2",
+      "titlesize": 86,
+      "subtitle": "Find Leo in your chart",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40
+    }
+  ]
+}
