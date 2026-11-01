@@ -66,6 +66,18 @@
    "when": "2026-10-31T10:35:00-04:00",
    "url": "https://www.instagram.com/p/DfKY0LviK4p/",
    "title": "Jupiter in Leo: the teacher walks into the king's palace"
+  },
+  {
+   "id": "sutra-upachaya-ask2",
+   "when": "2026-11-01T10:00:00-05:00",
+   "url": "https://www.instagram.com/p/DfNA0yZjchj/",
+   "title": "Sutra: Houses that grow (upachaya)"
+  },
+  {
+   "id": "lesson04-ask2",
+   "when": "2026-11-01T11:00:00-05:00",
+   "url": "https://www.instagram.com/p/DfNH05wDffd/",
+   "title": "Lesson 4: Mars, the soldier (re-post)"
   }
  ],
  "scheduled": [
@@ -201,6 +213,24 @@
    "when": "2026-11-03T12:00:00-05:00",
    "title": "Lesson 7: Venus, the lover",
    "metricool_id": 413004220
+  },
+  {
+   "id": "sutra-retrograde-ask",
+   "when": "2026-11-04T10:00:00-05:00",
+   "title": "Sutra: Second drafts (a graha walking backward)",
+   "metricool_id": 413070236
+  },
+  {
+   "id": "lesson08-ask",
+   "when": "2026-11-04T12:00:00-05:00",
+   "title": "Lesson 8: Saturn, the auditor",
+   "metricool_id": 413070390
+  },
+  {
+   "id": "ep02-ask",
+   "when": "2026-11-04T18:30:00-05:00",
+   "title": "The Thread Ep 2: Five layers of you",
+   "metricool_id": 413070547
   }
  ],
  "retired": [
@@ -239,8 +269,8 @@
   "as-above-so-below-v2"
  ],
  "next_lesson": 9,
- "next_thread_episode": 2,
- "next_thread_title": "Five layers of you (ep02-ask, Wed 4 Nov); then Ep 3 'The person of Time' (Kalapurusha, Brihat Jataka 2.1; renamed from 'The cosmic person' because 'cosmic' is a banned word)",
+ "next_thread_episode": 3,
+ "next_thread_title": "The person of Time (Kalapurusha, Brihat Jataka 2.1), Wed 11 Nov; renamed from 'The cosmic person' because 'cosmic' is a banned word",
  "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
  "next_to_make": [
   "Thu 5 Nov: 10 AM Sutra 5th house (x-drafts/8-fifth-house.txt), 12 PM lesson09 Rahu the magician, 6:30 PM Graha stories 2 (the teacher and the magician)",
@@ -472,13 +502,15 @@
   "daily_time": "1 PM and 8 PM Toronto",
   "next_refill_by": "2026-11-05",
   "backlog": [
+   "x-drafts/lesson08-x.txt -> Thu 5 Nov 1 PM",
+   "x-drafts/ep02-x.txt -> Fri 6 Nov 1 PM",
+   "x-drafts/lesson04-x.txt",
+   "x-drafts/jupiter-loops-x.txt (dated 31 October)",
    "x-drafts/3-eighth-house.txt",
    "x-drafts/8-fifth-house.txt",
    "x-drafts/9-fourth-house.txt",
    "Graha stories 2",
-   "Diwali 8 Nov",
-   "Lesson 4 Mars X version",
-   "Twelve years of Jupiter X version"
+   "Diwali 8 Nov"
   ],
   "zapier_calls_used_31oct": "about 13 write/read calls (2 tasks each) plus setup checks",
   "route": "Buffer connector directly (mcp Buffer create_post), Zapier no longer needed for posting",
@@ -499,31 +531,15 @@
  "rules_1nov": {
   "overflow": "Sumant, 1 Nov, always: use Metricool first; once the month's 20 are used, send the rest through Buffer's Instagram channel (6ae61ca82f1f5ed64833a89e)",
   "muse": "Sumant, 1 Nov: keep posting our own content on X whatever Muse posts; overlaps are fine",
-  "metricool_nov": "11 of 20 used by Tue 3 Nov; 9 left = Wed 4 to Fri 6 Nov at 3 a day; Buffer Instagram from Sat 7 Nov",
-  "sources": "BPHS 11.3 lists wealth, grain, family for the 2nd house, not speech; don't credit BPHS for speech"
- },
- "pending_review": {
-  "sent": "2026-11-01 10:35 AM",
-  "instagram": [
-   {
-    "id": "sutra-retrograde-ask",
-    "when": "2026-11-04T10:00:00-05:00"
-   },
-   {
-    "id": "lesson08-ask",
-    "when": "2026-11-04T12:00:00-05:00"
-   },
-   {
-    "id": "ep02-ask",
-    "when": "2026-11-04T18:30:00-05:00"
-   }
-  ],
-  "x_after_approval": [
-   "lesson08 X at first free 1 PM slot",
-   "ep02 X at the next free 1 PM slot"
-  ]
+  "metricool_nov": "14 of 20 after Wed 4 Nov; Thu 5 and Fri 6 Nov take the last 6; Buffer's Instagram from Sat 7 Nov",
+  "sources": "BPHS 11.3 lists wealth, grain, family for the 2nd house, not speech; don't credit BPHS for speech",
+  "no_wait": "Sumant, 1 Nov 11:45 AM: don't wait for his reply; he usually misses notifications. Use best judgment: make the posts, check them, schedule them straight away and send him the overviews and captions in the same run. If he asks for a change before a post goes out, update it."
  },
  "checkins": {
-  "next": "trig_01ThSDt31aSRg2PxTtXX16qq, Tue 3 Nov 9 AM Toronto (send_later into this session): Thu and Fri posts"
+  "pattern": "one-off reminders into this session; keep two ahead",
+  "next": [
+   "trig_01ThSDt31aSRg2PxTtXX16qq Tue 3 Nov 9 AM: Thu and Fri posts, X refill",
+   "trig_01Q5FMTPgUm7dGwEjkuv7a3j Thu 5 Nov 9 AM: Sat to Mon posts via Buffer Instagram"
+  ]
  }
 }
