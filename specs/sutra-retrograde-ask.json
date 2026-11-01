@@ -1,0 +1,95 @@
+{
+ "id": "sutra-retrograde-ask",
+ "kicker": "Sutra · Walking backward",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "orbit",
+    "w": 560,
+    "h": 120,
+    "beads": 5,
+    "lit": 3,
+    "tilt": -6
+   },
+   "label": "Walking backward",
+   "labelsize": 28,
+   "title": "Second\ndrafts",
+   "subtitle": "Why a graha walking backward in your chart\ngoes back for what was missed"
+  },
+  {
+   "type": "text",
+   "label": "The story",
+   "labelsize": 26,
+   "title": "Looking back",
+   "titleclass": "h2",
+   "body": [
+    "Someone walking home looks back",
+    "sees a person drowning",
+    "changes path and goes to save them"
+   ],
+   "bodysize": 42,
+   "closing": "That’s a graha walking backward"
+  },
+  {
+   "type": "text",
+   "label": "What it means",
+   "labelsize": 26,
+   "title": "Nothing reverses",
+   "titleclass": "h2",
+   "body": [
+    "From Earth, a graha seems to walk backward",
+    "when it’s at its closest to us",
+    "The classics give it full strength"
+   ],
+   "bodysize": 40,
+   "note": "Brihat Parashara Hora Shastra, on strength"
+  },
+  {
+   "type": "stack",
+   "label": "In real life",
+   "labelsize": 24,
+   "title": "Three people",
+   "items": [
+    [
+     "Born with the messenger",
+     "Mercury walking backward: rewrites every email,\nthe best editor in the office"
+    ],
+    [
+     "Born with the lover",
+     "Venus walking backward: the second choice\nin love and money is the one that lasts"
+    ],
+    [
+     "Born with the auditor",
+     "Saturn walking backward: old duties come back\nto be finished properly"
+    ]
+   ],
+   "bodysize": 30
+  },
+  {
+   "type": "quote",
+   "label": "Sutra",
+   "labelsize": 28,
+   "quote": "Some gifts arrive\nas second drafts",
+   "source": "Sutram",
+   "quotesize": 68
+  },
+  {
+   "type": "text",
+   "label": "Practical remedy",
+   "labelsize": 26,
+   "title": "Build in a review",
+   "titleclass": "h2",
+   "body": [
+    "Find any graha walking backward in your chart",
+    "In that part of life, plan a second look",
+    "Sleep on the email; wait a week on the purchase"
+   ],
+   "bodysize": 36,
+   "closing": "Ask which of your grahas walk backward\nat asksutram.com",
+   "after": "Weekly newsletter · sutram.ca/newsletter"
+  }
+ ]
+}

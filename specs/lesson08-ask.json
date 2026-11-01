@@ -1,0 +1,120 @@
+{
+ "id": "lesson08-ask",
+ "kicker": "Daily lesson · 8",
+ "decor_theme": "zodiac",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "saturn",
+    "r": 80
+   },
+   "title": "Saturn",
+   "subtitle": "Work, time, patience and what lasts",
+   "label": "The auditor",
+   "labelsize": 30
+  },
+  {
+   "type": "text",
+   "label": "In your life",
+   "labelsize": 26,
+   "title": "What lasts",
+   "body": [
+    "Work, routine and discipline",
+    "Time, delays and patience",
+    "Elders, and the people who work for you"
+   ],
+   "bodysize": 40,
+   "note": "Brihat Jataka 2.1 · Phaladeepika, chapter 2"
+  },
+  {
+   "type": "compare",
+   "title": "Strong Saturn,\nweak Saturn",
+   "titleclass": "h3",
+   "bodysize": 31,
+   "columns": [
+    {
+     "orb": {
+      "kind": "saturn",
+      "r": 40
+     },
+     "label": "Strong",
+     "head": "You last",
+     "lines": [
+      "You keep your routines",
+      "Slow work pays off",
+      "People trust you with the keys"
+     ]
+    },
+    {
+     "orb": {
+      "kind": "saturn",
+      "r": 40,
+      "dim": true
+     },
+     "label": "Weak",
+     "head": "You stall",
+     "lines": [
+      "Delays pile up",
+      "Fear of starting",
+      "Shortcuts cost you later"
+     ]
+    }
+   ],
+   "closing": "Too much Saturn?\nThe friend who can’t take a day off"
+  },
+  {
+   "type": "stack",
+   "label": "Where it shines",
+   "labelsize": 24,
+   "title": "Saturn by sign",
+   "items": [
+    [
+     "Strongest in Libra",
+     "Exalted: fair, patient, a good judge"
+    ],
+    [
+     "At home in Capricorn, Aquarius",
+     "Its own signs: steady builders, loyal workers"
+    ],
+    [
+     "Weakest in Aries",
+     "Debilitated: impatient, quits early"
+    ]
+   ],
+   "bodysize": 34,
+   "note": "Brihat Parashara Hora Shastra",
+   "closing": "In Pisces now, walking backward\nuntil 10 December"
+  },
+  {
+   "type": "quote",
+   "label": "The Bhagavad Gita",
+   "labelsize": 26,
+   "quote": "Your right is to the work alone,\nnever to its fruits",
+   "source": "Bhagavad Gita 2.47",
+   "body": [
+    "Do the work; results take their own time",
+    "In your chart, Saturn shows where patience pays"
+   ],
+   "bodysize": 38,
+   "quotesize": 62
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "saturn",
+    "r": 56
+   },
+   "title": "Find your Saturn",
+   "subtitle": "Strong or weak? Which house?",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 40,
+   "next": "Next lesson · Rahu",
+   "titleclass": "h2"
+  }
+ ]
+}

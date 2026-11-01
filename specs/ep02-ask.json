@@ -1,0 +1,204 @@
+{
+ "id": "ep02-ask",
+ "kicker": "The Thread · Episode 2",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "orbit",
+    "w": 700,
+    "h": 150,
+    "beads": 5,
+    "tilt": -7,
+    "lit": 4
+   },
+   "title": "Five layers\nof you",
+   "subtitle": "An old map of a person, found\none layer at a time by the sage Bhrigu"
+  },
+  {
+   "type": "text",
+   "label": "The Taittiriya Upanishad",
+   "labelsize": 26,
+   "title": "Bhrigu’s question",
+   "titleclass": "h2",
+   "body": [
+    "Bhrigu asked his father to teach him what is real",
+    "“Find what everything is born from,\nlives by and returns to,” his father said",
+    "Each time Bhrigu came back,\nhe had found a deeper layer"
+   ],
+   "bodysize": 38,
+   "bodygap": 18,
+   "note": "Taittiriya Upanishad, chapter 3"
+  },
+  {
+   "type": "rows",
+   "label": "What he found",
+   "labelsize": 26,
+   "title": "Five layers",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Food",
+     "the body you feed"
+    ],
+    [
+     "Breath",
+     "your energy and drive"
+    ],
+    [
+     "Mind",
+     "feelings and moods"
+    ],
+    [
+     "Knowing",
+     "judgment, understanding"
+    ],
+    [
+     "Joy",
+     "the deepest layer"
+    ]
+   ],
+   "bodysize": 34,
+   "note": "Later teachers called them koshas: sheaths, one inside the next"
+  },
+  {
+   "type": "cast",
+   "label": "In your chart",
+   "labelsize": 24,
+   "title": "Who looks after each layer",
+   "titleclass": "h3",
+   "headsize": 44,
+   "bodysize": 28,
+   "castorbh": 92,
+   "castorbw": 200,
+   "castspacing": 64,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "asc",
+       "s": 120
+      }
+     ],
+     "label": "Food · the body",
+     "head": "Ascendant",
+     "line": "The sign rising when you were born"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "sun",
+       "r": 30,
+       "rings": false
+      },
+      {
+       "kind": "mars",
+       "r": 24
+      }
+     ],
+     "label": "Breath · energy",
+     "head": "Sun and Mars",
+     "line": "Vitality and drive"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "moon",
+       "r": 32
+      }
+     ],
+     "label": "Mind · feelings",
+     "head": "Moon",
+     "line": "Moods, comfort, rest"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "mercury",
+       "r": 22
+      },
+      {
+       "kind": "jupiter",
+       "r": 30
+      }
+     ],
+     "label": "Knowing · judgment",
+     "head": "Mercury and Jupiter",
+     "line": "Thinking and wisdom"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "venus",
+       "r": 28
+      },
+      {
+       "kind": "jupiter",
+       "r": 30
+      }
+     ],
+     "label": "Joy",
+     "head": "Venus and Jupiter",
+     "line": "Love, beauty, happiness"
+    }
+   ],
+   "note": "Sutram’s teaching map, built from classical meanings"
+  },
+  {
+   "type": "stack",
+   "label": "In real life",
+   "labelsize": 24,
+   "title": "Find the layer",
+   "items": [
+    [
+     "Tired all week",
+     "Start with the body: sleep, food, a walk"
+    ],
+    [
+     "Can’t get going",
+     "The breath layer: morning light, movement"
+    ],
+    [
+     "Can’t switch off",
+     "The mind layer: a routine, a call home"
+    ]
+   ],
+   "bodysize": 34
+  },
+  {
+   "type": "quote",
+   "label": "Taittiriya Upanishad",
+   "labelsize": 26,
+   "quote": "From joy all beings are born,\nby joy they live,\ninto joy they return",
+   "source": "Taittiriya Upanishad 3.6",
+   "body": [
+    "Bhrigu’s last answer: joy sits under everything",
+    "In your chart, Venus and Jupiter show where you find it"
+   ],
+   "bodysize": 36,
+   "quotesize": 58
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "orbit",
+    "w": 560,
+    "h": 120,
+    "beads": 5,
+    "tilt": -6,
+    "lit": 4
+   },
+   "title": "Find your five",
+   "subtitle": "Which layer is strongest in you?",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 40,
+   "next": "Next Wednesday · The person of Time",
+   "titleclass": "h2"
+  }
+ ]
+}
