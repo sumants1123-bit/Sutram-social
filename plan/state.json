@@ -102,13 +102,15 @@
    "id": "lesson04-ask2",
    "when": "2026-10-31T12:00:00-04:00",
    "title": "Lesson 4: Mars, the soldier",
-   "metricool_id": 411229983
+   "metricool_id": 411229983,
+   "note": "failed 31 Oct: Metricool monthly limit; re-posted 1 Nov"
   },
   {
    "id": "jupiter-loops-2026-v2-ask",
    "when": "2026-10-31T18:30:00-04:00",
    "title": "Twelve years of Jupiter, the teacher (Sky Patterns)",
-   "metricool_id": 411230705
+   "metricool_id": 411230705,
+   "note": "failed 31 Oct: Metricool monthly limit; re-posted 1 Nov"
   },
   {
    "id": "sky-2026-11-01-ask",
@@ -163,6 +165,42 @@
    "when": "2026-11-03T18:30:00-05:00",
    "title": "As above, so below: six times since 1600 (v3: timeline shows only the four clear matches)",
    "metricool_id": 412266988
+  },
+  {
+   "id": "lesson04-ask2",
+   "when": "2026-11-01T11:00:00-05:00",
+   "title": "Lesson 4: Mars, the soldier (re-post; Oct limit failed it)",
+   "metricool_id": 413002986
+  },
+  {
+   "id": "jupiter-loops-2026-v3-ask",
+   "when": "2026-11-01T15:00:00-05:00",
+   "title": "Twelve years of Jupiter (re-post, dated since Saturday)",
+   "metricool_id": 413003823
+  },
+  {
+   "id": "sutra-dasha-ask",
+   "when": "2026-11-02T10:00:00-05:00",
+   "title": "Sutra: Your dasha",
+   "metricool_id": 413003904
+  },
+  {
+   "id": "lesson06-ask",
+   "when": "2026-11-02T12:00:00-05:00",
+   "title": "Lesson 6: Jupiter, the teacher",
+   "metricool_id": 413004024
+  },
+  {
+   "id": "sutra-2nd-house-ask",
+   "when": "2026-11-03T10:00:00-05:00",
+   "title": "Sutra: The 2nd house",
+   "metricool_id": 413004130
+  },
+  {
+   "id": "lesson07-ask",
+   "when": "2026-11-03T12:00:00-05:00",
+   "title": "Lesson 7: Venus, the lover",
+   "metricool_id": 413004220
   }
  ],
  "retired": [
@@ -200,14 +238,17 @@
   "as-above-so-below",
   "as-above-so-below-v2"
  ],
- "next_lesson": 6,
+ "next_lesson": 8,
  "next_thread_episode": 2,
  "next_thread_title": "Five layers of you",
  "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
  "next_to_make": [
-  "Mon 2 Nov 10 AM: Sutra (your dasha)",
-  "Mon 2 Nov 12 PM: lesson06 Jupiter, the teacher (cover label 'The teacher'; graha wording; strong vs weak in real life)",
-  "Tue 3 Nov 10 AM Sutra and 12 PM lesson07 Venus, the lover; then Graha stories 2 (the teacher and the magician, Jupiter and Rahu) and lessons 8 to 10 (Saturn the auditor, Rahu the magician, Ketu the monk); then Nadi rules from scratch, one a day",
+  "Wed 4 Nov 10 AM: Sutra, a graha walking backward (x-drafts/7-retrograde.txt)",
+  "Wed 4 Nov 12 PM: lesson08 Saturn, the auditor",
+  "Wed 4 Nov 6:30 PM: Graha stories 2, the teacher and the magician (Jupiter in Leo facing Rahu in Aquarius)",
+  "Thu 5 Nov: Sutra 5th house, lesson09 Rahu the magician, 6:30 PM feature (Venus back in Virgo that afternoon)",
+  "Fri 6 Nov: Sutra 4th house, lesson10 Ketu the monk, 6:30 PM feature; Diwali is Sun 8 Nov",
+  "From Sat 7 Nov: Instagram through Buffer's Instagram channel (Metricool November limit)",
   "No daily Moon/sky post (Sumant, 31 Oct)"
  ],
  "sky_patterns_ideas": [
@@ -417,22 +458,35 @@
     "when": "2026-11-02T13:00:00-05:00",
     "images": "story-teacher-monk slides 1,5,6,7",
     "buffer_id": "6ae62f621ee172cd6db718cf"
+   },
+   {
+    "id": "lesson06-x",
+    "when": "2026-11-03T13:00:00-05:00",
+    "images": "lesson06-ask slides 1,3,4,5",
+    "buffer_id": "6ae759fa36ecc9984811a4d7"
+   },
+   {
+    "id": "lesson07-x",
+    "when": "2026-11-04T13:00:00-05:00",
+    "images": "lesson07-ask slides 1,3,4,5",
+    "buffer_id": "6ae75a028755094b828e5ac5"
    }
   ],
   "daily_time": "1 PM and 8 PM Toronto",
   "next_refill_by": "2026-11-05",
   "backlog": [
-   "Twelve years of Jupiter (jupiter-loops-2026-v2-ask)",
    "x-drafts/3-eighth-house.txt",
    "x-drafts/8-fifth-house.txt",
    "x-drafts/9-fourth-house.txt",
    "Graha stories 2",
-   "Diwali 8 Nov"
+   "Diwali 8 Nov",
+   "Lesson 4 Mars X version",
+   "Twelve years of Jupiter X version"
   ],
   "zapier_calls_used_31oct": "about 13 write/read calls (2 tasks each) plus setup checks",
   "route": "Buffer connector directly (mcp Buffer create_post), Zapier no longer needed for posting",
   "queue_full_at": "10 of 10 on 31 Oct (Buffer free)",
-  "queue_1nov": "8 of 10 scheduled; Lesson 6 and 7 X versions would fill it"
+  "queue_1nov": "10 of 10 after Lessons 6 and 7 (1 Nov 10:25 AM)"
  },
  "rules_31oct": {
   "instagram": "keep the same level and process (Metricool); no daily Moon/sky posts; 10 AM Sutra, 12 PM lesson, 6:30 PM feature",
@@ -445,49 +499,10 @@
    "note": "moved to draft 31 Oct, daily Moon posts stopped"
   }
  ],
- "pending_review": {
-  "sent_to_sumant": "2026-11-01 morning check-in",
-  "instagram": [
-   {
-    "id": "sutra-dasha-ask",
-    "when": "2026-11-02T10:00:00-05:00",
-    "caption": "captions/sutra-dasha-ask.txt"
-   },
-   {
-    "id": "lesson06-ask",
-    "when": "2026-11-02T12:00:00-05:00",
-    "caption": "captions/lesson06-ask.txt"
-   },
-   {
-    "id": "sutra-2nd-house-ask",
-    "when": "2026-11-03T10:00:00-05:00",
-    "caption": "captions/sutra-2nd-house-ask.txt"
-   },
-   {
-    "id": "lesson07-ask",
-    "when": "2026-11-03T12:00:00-05:00",
-    "caption": "captions/lesson07-ask.txt"
-   }
-  ],
-  "x": [
-   {
-    "id": "lesson06-x",
-    "when": "2026-11-03T13:00:00-05:00",
-    "text": "x-drafts/lesson06-x.txt"
-   },
-   {
-    "id": "lesson07-x",
-    "when": "2026-11-04T13:00:00-05:00",
-    "text": "x-drafts/lesson07-x.txt"
-   }
-  ],
-  "open_questions": [
-   "Metricool Starter vs Buffer Instagram for overflow (Nov 9/20 after these, runs out about 7 Nov)",
-   "Lesson 4 Mars and Twelve years of Jupiter never published on Instagram (Metricool Oct limit): re-post via Buffer Instagram?",
-   "Muse posted a Moon post and 'The 2nd house is not only money' on X on 1 Nov via Buffer: keep our Fri 6 Nov 2nd-house X post or swap for the 8th house"
-  ],
-  "notes": [
-   "BPHS 11.3 lists wealth, grain, family for the 2nd house, not speech: slide note removed, caption cites 11.3 exactly"
-  ]
+ "rules_1nov": {
+  "overflow": "Sumant, 1 Nov, always: use Metricool first; once the month's 20 are used, send the rest through Buffer's Instagram channel (6ae61ca82f1f5ed64833a89e)",
+  "muse": "Sumant, 1 Nov: keep posting our own content on X whatever Muse posts; overlaps are fine",
+  "metricool_nov": "11 of 20 used by Tue 3 Nov; 9 left = Wed 4 to Fri 6 Nov at 3 a day; Buffer Instagram from Sat 7 Nov",
+  "sources": "BPHS 11.3 lists wealth, grain, family for the 2nd house, not speech; don't credit BPHS for speech"
  }
 }
