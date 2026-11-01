@@ -273,10 +273,8 @@
  "next_thread_title": "The person of Time (Kalapurusha, Brihat Jataka 2.1), Wed 11 Nov; renamed from 'The cosmic person' because 'cosmic' is a banned word",
  "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
  "next_to_make": [
-  "Thu 5 Nov: 10 AM Sutra 5th house (x-drafts/8-fifth-house.txt), 12 PM lesson09 Rahu the magician, 6:30 PM Graha stories 2 (the teacher and the magician)",
-  "Fri 6 Nov: 10 AM Sutra 4th house (x-drafts/9-fourth-house.txt), 12 PM lesson10 Ketu the monk, 6:30 PM Friday Scripture (Diwali Sun 8 Nov)",
-  "From Sat 7 Nov: Instagram through Buffer's Instagram channel once Metricool's November 20 are used",
-  "No daily Moon/sky post (Sumant, 31 Oct)"
+  "Tue lean run: Thu 5 Nov 10 AM 5th-house card, 12 PM Lesson 9 Rahu; Fri 6 Nov 10 AM 4th-house card, 12 PM Lesson 10 Ketu; Sun 8 Nov 10 AM Diwali",
+  "Sun 8 Nov 7 PM weekly batch: Mon 9-Sun 15 Nov, 10 Instagram + 8 X"
  ],
  "sky_patterns_ideas": [
   "The 60-year clock (5 Jupiter laps = 2 Saturn laps = one Samvatsara cycle)",
@@ -536,10 +534,16 @@
   "no_wait": "Sumant, 1 Nov 11:45 AM: don't wait for his reply; he usually misses notifications. Use best judgment: make the posts, check them, schedule them straight away and send him the overviews and captions in the same run. If he asks for a change before a post goes out, update it."
  },
  "checkins": {
-  "pattern": "one-off reminders into this session; keep two ahead",
+  "pattern": "one-off reminders into this session",
   "next": [
-   "trig_01ThSDt31aSRg2PxTtXX16qq Tue 3 Nov 9 AM: Thu and Fri posts, X refill",
-   "trig_01Q5FMTPgUm7dGwEjkuv7a3j Thu 5 Nov 9 AM: Sat to Mon posts via Buffer Instagram"
+   "trig_01ThSDt31aSRg2PxTtXX16qq Tue 3 Nov 9 AM: lean run Thu 5-Sun 8 Nov",
+   "trig_01Q5FMTPgUm7dGwEjkuv7a3j Sun 8 Nov 7 PM: weekly batch Mon 9-Sun 15 Nov"
   ]
+ },
+ "usage_budget": {
+  "rule": "Sumant, 1 Nov: posting uses about 40-50% of his weekly usage at most, never over 60%",
+  "this_week": "about 20% left on 1 Nov; Tue 3 Nov lean run makes Thu 5-Sun 8 Nov (5 posts), no 6:30 PM, no Saturday, no X refill",
+  "weekly": "from Sun 8 Nov 7 PM: one batch a week; Instagram 10 (lessons Mon-Fri 12 PM, Sutra Mon/Wed/Fri 10 AM, Thread Wed 6:30 PM, Week ahead Sun 6:30 PM); X 8",
+  "measured_1nov": "weighted tokens: wake-up 0.45-0.75M (2.5M with compaction), carousel 0.3-0.45M, scheduled post 0.05-0.1M; 1% of week ~0.35-0.6M (rough)"
  }
 }
