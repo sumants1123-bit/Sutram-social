@@ -1,0 +1,120 @@
+{
+  "id": "lesson06-ask",
+  "kicker": "Daily lesson · 6",
+  "decor_theme": "jupiter",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "jupiter",
+        "r": 84
+      },
+      "title": "Jupiter",
+      "subtitle": "Wisdom, faith and the people who guide you",
+      "label": "The teacher",
+      "labelsize": 30
+    },
+    {
+      "type": "text",
+      "label": "In your life",
+      "labelsize": 26,
+      "title": "Your guides",
+      "body": [
+        "Teachers, mentors, the advice you trust",
+        "Faith, wisdom and what you believe",
+        "Savings, children and growth"
+      ],
+      "bodysize": 40,
+      "note": "Brihat Jataka 2.1 · Phaladeepika, chapter 2"
+    },
+    {
+      "type": "compare",
+      "title": "Strong Jupiter,\nweak Jupiter",
+      "titleclass": "h3",
+      "bodysize": 31,
+      "columns": [
+        {
+          "orb": {
+            "kind": "jupiter",
+            "r": 44
+          },
+          "label": "Strong",
+          "head": "People ask you",
+          "lines": [
+            "Friends call you for advice",
+            "Savings grow steadily",
+            "Mentors show up when needed"
+          ]
+        },
+        {
+          "orb": {
+            "kind": "jupiter",
+            "r": 44,
+            "dim": true
+          },
+          "label": "Weak",
+          "head": "Advice misses",
+          "lines": [
+            "You know a lot, nobody asks",
+            "Money slips away",
+            "Faith comes and goes"
+          ]
+        }
+      ],
+      "closing": "Too much Jupiter? The friend who lectures"
+    },
+    {
+      "type": "stack",
+      "label": "Where it shines",
+      "labelsize": 24,
+      "title": "Jupiter by sign",
+      "items": [
+        [
+          "Strongest in Cancer",
+          "Exalted: kind, wise, protective"
+        ],
+        [
+          "At home in Sagittarius, Pisces",
+          "Its own signs: generous, a born teacher"
+        ],
+        [
+          "Weakest in Capricorn",
+          "Debilitated: rules over wisdom, faith tested"
+        ]
+      ],
+      "bodysize": 34,
+      "note": "Brihat Parashara Hora Shastra",
+      "closing": "In Leo now, since 31 October"
+    },
+    {
+      "type": "quote",
+      "label": "The Mundaka Upanishad",
+      "labelsize": 26,
+      "quote": "To know it, go to a teacher\nwith fuel in your hands",
+      "source": "Mundaka Upanishad 1.2.12",
+      "body": [
+        "Students once brought firewood for the teacher’s fire",
+        "Find your teacher; Jupiter shows where"
+      ],
+      "bodysize": 38,
+      "quotesize": 64
+    },
+    {
+      "type": "cta",
+      "orb": {
+        "kind": "jupiter",
+        "r": 58
+      },
+      "title": "Find your Jupiter",
+      "subtitle": "Strong or weak? Which house?",
+      "lines": [
+        "Ask your chart at asksutram.com",
+        "Weekly newsletter at sutram.ca/newsletter"
+      ],
+      "bodysize": 40,
+      "next": "Next lesson · Venus",
+      "titleclass": "h2"
+    }
+  ]
+}

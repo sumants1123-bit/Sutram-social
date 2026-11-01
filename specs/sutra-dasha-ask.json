@@ -1,0 +1,94 @@
+{
+  "id": "sutra-dasha-ask",
+  "kicker": "Sutra · Your dasha",
+  "decor_theme": "thread",
+  "slides": [
+    {
+      "type": "cover",
+      "stars": true,
+      "orb": {
+        "kind": "orbit",
+        "w": 560,
+        "h": 120,
+        "beads": 5,
+        "lit": 3,
+        "tilt": -6
+      },
+      "label": "Your dasha",
+      "labelsize": 28,
+      "title": "The chapter\nyou’re in",
+      "subtitle": "Why some years carry one theme\nhowever the sky moves"
+    },
+    {
+      "type": "text",
+      "label": "What it means",
+      "labelsize": 26,
+      "title": "Dasha",
+      "titleclass": "h2",
+      "body": [
+        "Jyotish splits your life into periods called dashas",
+        "Each one is run by a single graha",
+        "Parashara’s main system, Vimshottari, runs 120 years"
+      ],
+      "bodysize": 38,
+      "note": "Brihat Parashara Hora Shastra"
+    },
+    {
+      "type": "stack",
+      "label": "Three chapters",
+      "labelsize": 24,
+      "title": "Who runs your years",
+      "items": [
+        [
+          "The auditor · Saturn · 19 years",
+          "Building slowly; patience pays more than talent"
+        ],
+        [
+          "The magician · Rahu · 18 years",
+          "Wanting more: new cities, new industries"
+        ],
+        [
+          "The teacher · Jupiter · 16 years",
+          "Teachers, study, children, a wider circle"
+        ]
+      ],
+      "bodysize": 32
+    },
+    {
+      "type": "text",
+      "label": "Chapter and weather",
+      "labelsize": 24,
+      "title": "A rainy week",
+      "titleclass": "h2",
+      "body": [
+        "A transit is a few weeks or months of weather",
+        "A rainy week in a good chapter is still a good chapter",
+        "A sunny week in a hard chapter doesn’t change the plot"
+      ],
+      "bodysize": 38
+    },
+    {
+      "type": "quote",
+      "label": "Sutra",
+      "labelsize": 28,
+      "quote": "Read the chapter\nbefore you blame the weather",
+      "source": "Sutram",
+      "quotesize": 68
+    },
+    {
+      "type": "text",
+      "label": "Practical remedy",
+      "labelsize": 26,
+      "title": "Write one line",
+      "titleclass": "h2",
+      "body": [
+        "Find your dasha and the house its graha sits in",
+        "Write: these years are about ___",
+        "Check every big decision against that line"
+      ],
+      "bodysize": 38,
+      "closing": "Find your dasha at asksutram.com",
+      "after": "Weekly newsletter · sutram.ca/newsletter"
+    }
+  ]
+}

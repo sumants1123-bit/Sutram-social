@@ -1,0 +1,120 @@
+{
+ "id": "lesson07-ask",
+ "kicker": "Daily lesson · 7",
+ "decor_theme": "solar",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "venus",
+    "r": 80
+   },
+   "title": "Venus",
+   "subtitle": "Love, beauty and the comforts you enjoy",
+   "label": "The lover",
+   "labelsize": 30
+  },
+  {
+   "type": "text",
+   "label": "In your life",
+   "labelsize": 26,
+   "title": "What you love",
+   "body": [
+    "Love and partnership",
+    "Beauty, art, music and style",
+    "Comforts, and what you spend on joy"
+   ],
+   "bodysize": 40,
+   "note": "Brihat Jataka 2.1 · Phaladeepika, chapter 2"
+  },
+  {
+   "type": "compare",
+   "title": "Strong Venus,\nweak Venus",
+   "titleclass": "h3",
+   "bodysize": 31,
+   "columns": [
+    {
+     "orb": {
+      "kind": "venus",
+      "r": 42
+     },
+     "label": "Strong",
+     "head": "You enjoy",
+     "lines": [
+      "People relax around you",
+      "You make any room nicer",
+      "Love feels easy"
+     ]
+    },
+    {
+     "orb": {
+      "kind": "venus",
+      "r": 42,
+      "dim": true
+     },
+     "label": "Weak",
+     "head": "You hold back",
+     "lines": [
+      "Love feels like work",
+      "Treats come with guilt",
+      "You can’t enjoy what you have"
+     ]
+    }
+   ],
+   "closing": "Too much Venus? The friend who can’t skip a treat"
+  },
+  {
+   "type": "stack",
+   "label": "Where it shines",
+   "labelsize": 24,
+   "title": "Venus by sign",
+   "items": [
+    [
+     "Strongest in Pisces",
+     "Exalted: devoted, romantic, kind"
+    ],
+    [
+     "At home in Taurus, Libra",
+     "Its own signs: warm, tasteful, good with people"
+    ],
+    [
+     "Weakest in Virgo",
+     "Debilitated: picky, finds flaws in love"
+    ]
+   ],
+   "bodysize": 34,
+   "note": "Brihat Parashara Hora Shastra",
+   "closing": "Walking backward into Virgo on 5 November"
+  },
+  {
+   "type": "quote",
+   "label": "The Bhagavad Gita",
+   "labelsize": 26,
+   "quote": "In every being I am desire\nthat keeps to what is right",
+   "source": "Bhagavad Gita 7.11",
+   "body": [
+    "Desire is welcome when it keeps to your values",
+    "In your chart, Venus shows what you desire"
+   ],
+   "bodysize": 38,
+   "quotesize": 64
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "venus",
+    "r": 56
+   },
+   "title": "Find your Venus",
+   "subtitle": "Strong or weak? Which house?",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 40,
+   "next": "Next lesson · Saturn",
+   "titleclass": "h2"
+  }
+ ]
+}

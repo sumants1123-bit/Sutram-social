@@ -1,0 +1,94 @@
+{
+ "id": "sutra-2nd-house-ask",
+ "kicker": "Sutra · The 2nd house",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "orbit",
+    "w": 560,
+    "h": 120,
+    "beads": 5,
+    "lit": 1,
+    "tilt": -6
+   },
+   "label": "The 2nd house",
+   "labelsize": 28,
+   "title": "Words\nand savings",
+   "subtitle": "Why one house holds your money,\nyour speech, your family and your food"
+  },
+  {
+   "type": "text",
+   "label": "What it covers",
+   "labelsize": 26,
+   "title": "The 2nd house",
+   "titleclass": "h2",
+   "body": [
+    "Your money and what you keep",
+    "Your speech and your voice",
+    "Your family table and your food"
+   ],
+   "bodysize": 40
+  },
+  {
+   "type": "stack",
+   "label": "In real life",
+   "labelsize": 24,
+   "title": "Three scenes",
+   "items": [
+    [
+     "The family table",
+     "How money was talked about at home\nbecomes how you handle it"
+    ],
+    [
+     "Speech at work",
+     "Whoever can say “this is my rate”\nwithout apologising earns more"
+    ],
+    [
+     "The daily coffee",
+     "Takeout and coffee runs decide\nwhat’s left to save"
+    ]
+   ],
+   "bodysize": 31
+  },
+  {
+   "type": "text",
+   "label": "One system",
+   "labelsize": 24,
+   "title": "In and out",
+   "titleclass": "h2",
+   "body": [
+    "What goes into your mouth",
+    "and what comes out of it",
+    "shapes what you keep"
+   ],
+   "bodysize": 40,
+   "closing": "A strong 2nd house: a voice people trust,\na steady saver"
+  },
+  {
+   "type": "quote",
+   "label": "Sutra",
+   "labelsize": 28,
+   "quote": "What you say about money\nbecomes what you do with it",
+   "source": "Sutram",
+   "quotesize": 66
+  },
+  {
+   "type": "text",
+   "label": "Practical remedy",
+   "labelsize": 26,
+   "title": "One week",
+   "titleclass": "h2",
+   "body": [
+    "Catch every sentence you say about money",
+    "Swap one for a plain fact:\n“I have $400 left this month”",
+    "Cook at home three nights; note what you saved"
+   ],
+   "bodysize": 36,
+   "closing": "Ask about your 2nd house at asksutram.com",
+   "after": "Weekly newsletter · sutram.ca/newsletter"
+  }
+ ]
+}
