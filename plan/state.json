@@ -238,17 +238,14 @@
   "as-above-so-below",
   "as-above-so-below-v2"
  ],
- "next_lesson": 8,
+ "next_lesson": 9,
  "next_thread_episode": 2,
- "next_thread_title": "Five layers of you",
+ "next_thread_title": "Five layers of you (ep02-ask, Wed 4 Nov); then Ep 3 'The person of Time' (Kalapurusha, Brihat Jataka 2.1; renamed from 'The cosmic person' because 'cosmic' is a banned word)",
  "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
  "next_to_make": [
-  "Wed 4 Nov 10 AM: Sutra, a graha walking backward (x-drafts/7-retrograde.txt)",
-  "Wed 4 Nov 12 PM: lesson08 Saturn, the auditor",
-  "Wed 4 Nov 6:30 PM: Graha stories 2, the teacher and the magician (Jupiter in Leo facing Rahu in Aquarius)",
-  "Thu 5 Nov: Sutra 5th house, lesson09 Rahu the magician, 6:30 PM feature (Venus back in Virgo that afternoon)",
-  "Fri 6 Nov: Sutra 4th house, lesson10 Ketu the monk, 6:30 PM feature; Diwali is Sun 8 Nov",
-  "From Sat 7 Nov: Instagram through Buffer's Instagram channel (Metricool November limit)",
+  "Thu 5 Nov: 10 AM Sutra 5th house (x-drafts/8-fifth-house.txt), 12 PM lesson09 Rahu the magician, 6:30 PM Graha stories 2 (the teacher and the magician)",
+  "Fri 6 Nov: 10 AM Sutra 4th house (x-drafts/9-fourth-house.txt), 12 PM lesson10 Ketu the monk, 6:30 PM Friday Scripture (Diwali Sun 8 Nov)",
+  "From Sat 7 Nov: Instagram through Buffer's Instagram channel once Metricool's November 20 are used",
   "No daily Moon/sky post (Sumant, 31 Oct)"
  ],
  "sky_patterns_ideas": [
@@ -504,5 +501,29 @@
   "muse": "Sumant, 1 Nov: keep posting our own content on X whatever Muse posts; overlaps are fine",
   "metricool_nov": "11 of 20 used by Tue 3 Nov; 9 left = Wed 4 to Fri 6 Nov at 3 a day; Buffer Instagram from Sat 7 Nov",
   "sources": "BPHS 11.3 lists wealth, grain, family for the 2nd house, not speech; don't credit BPHS for speech"
+ },
+ "pending_review": {
+  "sent": "2026-11-01 10:35 AM",
+  "instagram": [
+   {
+    "id": "sutra-retrograde-ask",
+    "when": "2026-11-04T10:00:00-05:00"
+   },
+   {
+    "id": "lesson08-ask",
+    "when": "2026-11-04T12:00:00-05:00"
+   },
+   {
+    "id": "ep02-ask",
+    "when": "2026-11-04T18:30:00-05:00"
+   }
+  ],
+  "x_after_approval": [
+   "lesson08 X at first free 1 PM slot",
+   "ep02 X at the next free 1 PM slot"
+  ]
+ },
+ "checkins": {
+  "next": "trig_01ThSDt31aSRg2PxTtXX16qq, Tue 3 Nov 9 AM Toronto (send_later into this session): Thu and Fri posts"
  }
 }
