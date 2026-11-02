@@ -1,0 +1,50 @@
+{
+ "id": "ask-intro-app2",
+ "slides": [
+  {
+   "type": "cover",
+   "label": "Ask Sutram",
+   "title": "Ask your birth\nchart anything",
+   "body": "Type or say your question\nSutram reads your chart, then answers"
+  },
+  {
+   "type": "shot",
+   "label": "In your own words",
+   "title": "Type it, or say it",
+   "image": "assets/asksutram/ask-bar-c.png",
+   "width": 990,
+   "body": "In English or Hinglish"
+  },
+  {
+   "type": "shot",
+   "label": "Every morning",
+   "title": "Your chart today",
+   "image": "assets/asksutram/today-c.png",
+   "width": 980,
+   "body": "What’s active for you today\nTap “Ask why” for the reason"
+  },
+  {
+   "type": "shot",
+   "label": "The Studio",
+   "title": "Every instrument,\none room",
+   "image": "assets/asksutram/studio-c.png",
+   "width": 860,
+   "body": "Timing, windows, muhurta,\ncouples, your year ahead"
+  },
+  {
+   "type": "shot",
+   "label": "Or just ask",
+   "title": "Ask from search",
+   "small": false,
+   "image": "assets/asksutram/search-c.png",
+   "width": 990,
+   "body": "Type a question anywhere\nThe answer comes from your own chart"
+  },
+  {
+   "type": "cta",
+   "title": "Ask yours",
+   "link": "asksutram.com",
+   "small": "Weekly newsletter · sutram.ca/newsletter"
+  }
+ ]
+}

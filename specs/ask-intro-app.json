@@ -1,0 +1,7 @@
+{"id":"ask-intro-app","slides":[
+ {"type":"cover","label":"Ask Sutram","title":"Ask your birth\nchart anything","body":"Type or say your question\nSutram reads your chart and answers in plain words"},
+ {"type":"shot","label":"In your own words","title":"Type it, or say it","image":"assets/asksutram/ask-bar.png","width":968,"body":"In English or Hinglish"},
+ {"type":"shot","label":"Every morning","title":"Your chart today","image":"assets/asksutram/today.png","width":940,"body":"What’s active for you,\nand this week’s window"},
+ {"type":"shot","label":"The Studio","title":"Every instrument,\none room","image":"assets/asksutram/studio.png","width":968,"body":"Timing, windows, muhurta,\ncouples, your year ahead"},
+ {"type":"shot","label":"Or just ask","title":"“When is my next\ngood career window?”","small":true,"image":"assets/asksutram/search.png","width":800,"body":"The answer comes from your own chart"},
+ {"type":"cta","title":"Ask yours","link":"asksutram.com","pill":"Free to try","small":"Weekly newsletter · sutram.ca/newsletter"}]}
