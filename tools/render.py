@@ -16,7 +16,7 @@ FONTS=''.join(f'<link rel="stylesheet" href="{NM}{f}">' for f in [
  'eb-garamond/400.css','eb-garamond/500.css','eb-garamond/400-italic.css'])
 CREAM='#F2E6CC'; AMBER='#E09460'; GOLD='#D9A57A'; BG='#0B0806'
 
-TXT=1.15   # v4 (29 Oct): text about 15% larger, Sumant found v3 hard to read on a phone
+TXT=1.4   # v5 (2 Nov): Sumant, again: text too small. Body and labels about 22% larger; never smaller than this
 
 def css(s):
     f=lambda px: f'{px*s:.1f}px'
@@ -35,13 +35,13 @@ radial-gradient(125% 95% at 50% 38%,#17110C 0%,#0B0806 55%,#050403 100%);}}
 .body{{position:absolute;left:84px;right:84px;top:160px;bottom:196px;display:flex;flex-direction:column;align-items:center;justify-content:center}}
 .t{{font-family:'Cormorant Garamond';font-weight:500;color:{CREAM};letter-spacing:-.01em}}
 .ti{{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;color:{AMBER}}}
-.p{{font:400 {f(38)}/1.4 'EB Garamond';color:rgba(242,230,204,.88)}}
-.pi{{font:400 italic {f(36)}/1.38 'EB Garamond';color:rgba(242,230,204,.86)}}
-.src{{font:500 {f(24)}/1.3 'EB Garamond';letter-spacing:.16em;text-transform:uppercase;color:rgba(242,230,204,.64)}}
-.lab{{font:500 {f(25)}/1 'EB Garamond';letter-spacing:.26em;text-transform:uppercase;color:{GOLD}}}
+.p{{font:400 {f(46)}/1.4 'EB Garamond';color:rgba(242,230,204,.88)}}
+.pi{{font:400 italic {f(44)}/1.38 'EB Garamond';color:rgba(242,230,204,.86)}}
+.src{{font:500 {f(30)}/1.3 'EB Garamond';letter-spacing:.16em;text-transform:uppercase;color:rgba(242,230,204,.64)}}
+.lab{{font:500 {f(30)}/1 'EB Garamond';letter-spacing:.26em;text-transform:uppercase;color:{GOLD}}}
 .rule{{height:1px;width:110px;background:rgba(217,165,122,.55);margin:{f(32)} auto}}
 .h1{{font-size:{f(132)};line-height:.98}} .h2{{font-size:{f(106)};line-height:1}} .h3{{font-size:{f(80)};line-height:1.05}}
-.sub{{font-size:{f(54)};line-height:1.22}}
+.sub{{font-size:{f(62)};line-height:1.22}}
 .row{{display:flex;justify-content:space-between;align-items:baseline;padding:{f(12)} 0;border-bottom:1px solid rgba(217,165,122,.2);text-align:left;gap:16px}}
 .grid2{{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;width:100%}}
 '''

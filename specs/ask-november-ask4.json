@@ -1,0 +1,144 @@
+{
+ "id": "ask-november-ask4",
+ "kicker": "Ask Sutram · November",
+ "decor_theme": "solar",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "orbit",
+    "w": 560,
+    "h": 120,
+    "beads": 5,
+    "lit": 2,
+    "tilt": -6
+   },
+   "label": "Ask Sutram",
+   "labelsize": 28,
+   "title": "Five questions\nfor November",
+   "subtitle": "What this month’s sky is asking,\nand where to ask it"
+  },
+  {
+   "type": "text",
+   "orb": {
+    "kind": "jupiter",
+    "r": 56
+   },
+   "label": "Jupiter in Leo · since 31 Oct",
+   "labelsize": 24,
+   "title": "“Which part of my life\ndoes the teacher walk into?”",
+   "titleclass": "h3",
+   "body": [
+    "Growth, mentors, savings",
+    "Wherever Leo sits in your chart",
+    "First visit until 24 January"
+   ],
+   "bodysize": 40,
+   "titlesize": 84,
+   "bodygap": 6
+  },
+  {
+   "type": "text",
+   "orb": {
+    "kind": "mercury",
+    "r": 40
+   },
+   "label": "Mercury · forward on 13 Nov",
+   "labelsize": 24,
+   "title": "“Should I sign now,\nor after the 13th?”",
+   "titleclass": "h3",
+   "body": [
+    "The messenger walks backward",
+    "until 13 November",
+    "Ask for your good window"
+   ],
+   "bodysize": 40,
+   "titlesize": 84,
+   "bodygap": 6
+  },
+  {
+   "type": "text",
+   "orb": {
+    "kind": "venus",
+    "r": 50
+   },
+   "label": "Venus in Virgo · 5 to 22 Nov",
+   "labelsize": 24,
+   "title": "“What’s going on with\nmy love life and spending?”",
+   "titleclass": "h3",
+   "body": [
+    "The lover is in his weakest sign",
+    "He turns forward on 13 November",
+    "Ask which house he is crossing"
+   ],
+   "bodysize": 40,
+   "titlesize": 84,
+   "bodygap": 6
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 30
+    },
+    {
+     "kind": "jupiter",
+     "r": 36
+    },
+    {
+     "kind": "ketu",
+     "r": 30
+    }
+   ],
+   "orbgap": -6,
+   "label": "Mars into Leo · 12 Nov",
+   "labelsize": 24,
+   "title": "“Where should I push,\nand where should I pause?”",
+   "titleclass": "h3",
+   "body": [
+    "The soldier joins the teacher",
+    "and the monk in Leo",
+    "13 to 16 Nov: all three together"
+   ],
+   "bodysize": 40,
+   "titlesize": 84,
+   "bodygap": 6
+  },
+  {
+   "type": "text",
+   "label": "Your own chapter",
+   "labelsize": 24,
+   "title": "“Which dasha am I in,\nand what is it about?”",
+   "titleclass": "h3",
+   "body": [
+    "Transits are the weather",
+    "Your dasha is the chapter",
+    "Ask which graha runs your years"
+   ],
+   "bodysize": 40,
+   "titlesize": 84,
+   "bodygap": 6
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "orbit",
+    "w": 560,
+    "h": 120,
+    "beads": 5,
+    "tilt": -6,
+    "lit": 2
+   },
+   "title": "Ask yours",
+   "subtitle": "Pick one question and ask it today",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "titleclass": "h2"
+  }
+ ]
+}
