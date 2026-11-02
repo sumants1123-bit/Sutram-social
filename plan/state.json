@@ -237,6 +237,12 @@
    "when": "2026-11-06T10:00:00-05:00",
    "title": "Ask Sutram: Five questions for November",
    "metricool_id": 413952364
+  },
+  {
+   "id": "ask-intro-app2",
+   "when": "2026-11-02T15:00:00-05:00",
+   "title": "Meet Ask Sutram (app look, real screenshots)",
+   "metricool_id": 413972819
   }
  ],
  "retired": [
@@ -506,6 +512,7 @@
   "daily_time": "1 PM and 8 PM Toronto",
   "next_refill_by": "2026-11-05",
   "backlog": [
+   "Meet Ask Sutram (posts/ask-intro-app2 slides 1-4) -> first free X slot",
    "x-drafts/ask-november-x.txt -> Sat 7 Nov 1 PM",
    "x-drafts/lesson08-x.txt -> Thu 5 Nov 1 PM",
    "x-drafts/ep02-x.txt -> Fri 6 Nov 1 PM",
@@ -553,5 +560,5 @@
   "weekly": "from Sun 8 Nov 7 PM: one batch a week; Instagram 10 (lessons Mon-Fri 12 PM, Sutra Mon/Wed/Fri 10 AM, Thread Wed 6:30 PM, Week ahead Sun 6:30 PM); X 8",
   "measured_1nov": "weighted tokens: wake-up 0.45-0.75M (2.5M with compaction), carousel 0.3-0.45M, scheduled post 0.05-0.1M; 1% of week ~0.35-0.6M (rough)"
  },
- "focus_2nov": "Sumant, 2 Nov: promote asksutram.com (claude/asksutram-promotion-plan.md). Screenshots: Sumant's phone screenshots (workspace can't open the app; desktop browser not linked). Metricool November 15 of 20 after Fri 6 Nov."
+ "focus_2nov": "Sumant, 2 Nov: promote asksutram.com (claude/asksutram-promotion-plan.md). Screenshots: Sumant's phone screenshots (workspace can't open the app; desktop browser not linked). Metricool November 15 of 20 after Fri 6 Nov. Ask Sutram posts use tools/app_post.py (the app's look: #07060A, Instrument Serif, Inter, orange) with real screenshots in assets/asksutram/ (taken via Claude in Chrome, guest sample chart; crop out the location line). Metricool November 16 of 20 after Mon 2 Nov 3 PM."
 }
