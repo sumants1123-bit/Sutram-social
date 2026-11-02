@@ -18,7 +18,8 @@ body{width:1080px;height:1350px;background:#07060A;color:#FEFAF1;font-family:Int
 .lab{position:relative;font-weight:600;font-size:32px;letter-spacing:.2em;text-transform:uppercase;color:#F28A4E;display:flex;align-items:center;gap:16px;margin-bottom:24px}
 .lab:before{content:'';width:14px;height:14px;border-radius:50%;background:#F2793A;box-shadow:0 0 16px #F2793A}
 .t{position:relative;font-family:'Instrument Serif',serif;font-size:106px;line-height:1.0;color:#FEFAF1}
-.t.sm{font-size:84px;line-height:1.05}
+.t.sm{font-size:96px;line-height:1.04}
+.t.big{font-size:150px;line-height:.98}
 .b{position:relative;font-size:46px;line-height:1.32;color:rgba(254,250,241,.84);margin-top:30px;max-width:960px}
 .shot{position:relative;margin-top:44px;border-radius:30px;border:1.5px solid rgba(254,250,241,.16);box-shadow:0 30px 80px rgba(0,0,0,.65),0 0 70px rgba(240,122,58,.12);overflow:hidden;background:#0E0C12}
 .shot img{display:block}
@@ -33,10 +34,11 @@ def slide(sp):
     t=sp['type']; h=[RINGS]
     if t=='cover': h.append('<div class="orb"></div>')
     if sp.get('label'): h.append(f'<div class="lab">{esc(sp["label"])}</div>')
-    if sp.get('title'): h.append(f'<div class="t{" sm" if sp.get("small") else ""}">{esc(sp["title"])}</div>')
+    if sp.get('title'): h.append(f'<div class="t{" sm" if sp.get("small") else ""}{" big" if sp.get("big") else ""}">{esc(sp["title"])}</div>')
     if t=='shot':
         w=sp.get('width',960); h.append(f'<div class="shot" style="width:{w}px"><img style="width:{w}px" src="data:image/png;base64,{b64(sp["image"])}"></div>')
     if sp.get('body'): h.append(f'<div class="b">{esc(sp["body"])}</div>')
+    if t=='shot' and sp.get('link'): h.append(f'<div class="cta" style="font-size:96px;margin-top:40px">{esc(sp["link"])}</div>')
     if t=='cta':
         h.append(f'<div class="cta">{esc(sp["link"])}</div>')
         if sp.get('pill'): h.append(f'<div class="pill">{esc(sp["pill"])}</div>')

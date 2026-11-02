@@ -1,0 +1,25 @@
+{
+ "id": "concept-ask-luck2",
+ "slides": [
+  {
+   "type": "text",
+   "label": "Ask Sutram",
+   "title": "When does\nmy luck turn?",
+   "big": true
+  },
+  {
+   "type": "text",
+   "label": "Sutram answers",
+   "title": "You\u2019re in the\nmiddle stretch of a\n16-year growth chapter",
+   "small": true,
+   "body": "Next change: 10 November"
+  },
+  {
+   "type": "shot",
+   "title": "Ask yours",
+   "image": "assets/asksutram/answer-luck.png",
+   "width": 1000,
+   "link": "asksutram.com"
+  }
+ ]
+}

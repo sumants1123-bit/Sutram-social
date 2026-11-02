@@ -1,0 +1,22 @@
+{
+ "id": "concept-ask-luck",
+ "slides": [
+  {
+   "type": "text",
+   "label": "Ask Sutram",
+   "title": "When does\nmy luck turn?",
+   "big": true
+  },
+  {
+   "type": "shot",
+   "label": "Sutram answers",
+   "image": "assets/asksutram/answer-luck.png",
+   "width": 1000
+  },
+  {
+   "type": "cta",
+   "title": "Ask yours",
+   "link": "asksutram.com"
+  }
+ ]
+}
