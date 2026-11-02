@@ -231,6 +231,12 @@
    "when": "2026-11-04T18:30:00-05:00",
    "title": "The Thread Ep 2: Five layers of you",
    "metricool_id": 413070547
+  },
+  {
+   "id": "ask-november-ask2",
+   "when": "2026-11-06T10:00:00-05:00",
+   "title": "Ask Sutram: Five questions for November",
+   "metricool_id": 413952364
   }
  ],
  "retired": [
@@ -500,6 +506,7 @@
   "daily_time": "1 PM and 8 PM Toronto",
   "next_refill_by": "2026-11-05",
   "backlog": [
+   "x-drafts/ask-november-x.txt -> Sat 7 Nov 1 PM",
    "x-drafts/lesson08-x.txt -> Thu 5 Nov 1 PM",
    "x-drafts/ep02-x.txt -> Fri 6 Nov 1 PM",
    "x-drafts/lesson04-x.txt",
@@ -545,5 +552,6 @@
   "this_week": "about 20% left on 1 Nov; Tue 3 Nov lean run makes Thu 5-Sun 8 Nov (5 posts), no 6:30 PM, no Saturday, no X refill",
   "weekly": "from Sun 8 Nov 7 PM: one batch a week; Instagram 10 (lessons Mon-Fri 12 PM, Sutra Mon/Wed/Fri 10 AM, Thread Wed 6:30 PM, Week ahead Sun 6:30 PM); X 8",
   "measured_1nov": "weighted tokens: wake-up 0.45-0.75M (2.5M with compaction), carousel 0.3-0.45M, scheduled post 0.05-0.1M; 1% of week ~0.35-0.6M (rough)"
- }
+ },
+ "focus_2nov": "Sumant, 2 Nov: promote asksutram.com (claude/asksutram-promotion-plan.md). Screenshots: Sumant's phone screenshots (workspace can't open the app; desktop browser not linked). Metricool November 15 of 20 after Fri 6 Nov."
 }
