@@ -1,0 +1,81 @@
+{
+ "id": "diwali-2026",
+ "kicker": "Diwali · Sunday 8 November",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "sun",
+    "r": 80,
+    "rings": true
+   },
+   "label": "Sunday 8 November",
+   "labelsize": 30,
+   "title": "Happy\nDiwali",
+   "subtitle": "The darkest night gets\nthe most lamps"
+  },
+  {
+   "type": "text",
+   "label": "Tonight",
+   "labelsize": 28,
+   "title": "Amavasya",
+   "titleclass": "h2",
+   "body": [
+    "The Sun and Moon meet in Libra",
+    "No moonlight at all",
+    "So we light our own"
+   ],
+   "bodysize": 46,
+   "bodygap": 8
+  },
+  {
+   "type": "text",
+   "label": "For Lakshmi",
+   "labelsize": 28,
+   "title": "Clean, light,\ngive",
+   "titleclass": "h2",
+   "body": [
+    "Clean one corner",
+    "Light one lamp",
+    "Give one thing away"
+   ],
+   "bodysize": 46,
+   "bodygap": 8
+  },
+  {
+   "type": "text",
+   "orb": {
+    "kind": "mars",
+    "r": 50
+   },
+   "label": "In the sky",
+   "labelsize": 28,
+   "title": "Mars at\nhis lowest",
+   "titleclass": "h2",
+   "body": [
+    "The soldier is at his weakest point tonight",
+    "Choose calm over noise"
+   ],
+   "bodysize": 44,
+   "bodygap": 8
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "sun",
+    "r": 56,
+    "rings": true
+   },
+   "title": "Shubh Deepavali",
+   "subtitle": "May your year be bright",
+   "lines": [
+    "Ask your year at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 42,
+   "titleclass": "h2"
+  }
+ ]
+}

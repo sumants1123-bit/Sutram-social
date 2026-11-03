@@ -1,0 +1,97 @@
+{
+ "id": "lesson09-ask",
+ "kicker": "Daily lesson · 9",
+ "decor_theme": "lunar",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "rahu",
+    "r": 80
+   },
+   "title": "Rahu",
+   "subtitle": "Hunger, the new, and smoke",
+   "label": "The magician",
+   "labelsize": 30
+  },
+  {
+   "type": "text",
+   "label": "What he grabs",
+   "labelsize": 28,
+   "title": "Wanting more",
+   "titleclass": "h2",
+   "body": [
+    "Ambition and hunger",
+    "The foreign and the new",
+    "Smoke and mirrors"
+   ],
+   "bodysize": 46,
+   "bodygap": 8
+  },
+  {
+   "type": "compare",
+   "title": "Strong Rahu,\nweak Rahu",
+   "titleclass": "h3",
+   "bodysize": 40,
+   "headsize": 64,
+   "columns": [
+    {
+     "orb": {
+      "kind": "rahu",
+      "r": 40
+     },
+     "label": "Strong",
+     "head": "You break in",
+     "lines": [
+      "New fields, fast rise",
+      "Foreign doors open"
+     ]
+    },
+    {
+     "orb": {
+      "kind": "rahu",
+      "r": 40,
+      "dim": true
+     },
+     "label": "Weak",
+     "head": "You chase",
+     "lines": [
+      "Never enough",
+      "Shortcuts, then a crash"
+     ]
+    }
+   ],
+   "closing": "Too much Rahu?\nAlways on to the next thing"
+  },
+  {
+   "type": "text",
+   "label": "Right now",
+   "labelsize": 28,
+   "title": "In Aquarius",
+   "titleclass": "h2",
+   "body": [
+    "Until 5 December",
+    "Then Capricorn,\nuntil June 2028"
+   ],
+   "bodysize": 46,
+   "bodygap": 8
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "rahu",
+    "r": 56
+   },
+   "title": "Find your Rahu",
+   "subtitle": "Which house is he in?",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 42,
+   "next": "Next lesson · Ketu",
+   "titleclass": "h2"
+  }
+ ]
+}

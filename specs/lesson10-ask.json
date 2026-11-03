@@ -1,0 +1,98 @@
+{
+ "id": "lesson10-ask",
+ "kicker": "Daily lesson · 10",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "ketu",
+    "r": 80
+   },
+   "title": "Ketu",
+   "subtitle": "Letting go, and what you already know",
+   "label": "The monk",
+   "labelsize": 30
+  },
+  {
+   "type": "text",
+   "label": "What he holds",
+   "labelsize": 28,
+   "title": "Letting go",
+   "titleclass": "h2",
+   "body": [
+    "Skills you were born with",
+    "Quiet and detachment",
+    "The search for more"
+   ],
+   "bodysize": 46,
+   "bodygap": 8
+  },
+  {
+   "type": "compare",
+   "title": "Strong Ketu,\nweak Ketu",
+   "titleclass": "h3",
+   "bodysize": 40,
+   "headsize": 64,
+   "columns": [
+    {
+     "orb": {
+      "kind": "ketu",
+      "r": 40
+     },
+     "label": "Strong",
+     "head": "You see through",
+     "lines": [
+      "Calm under loss",
+      "Sharp instinct"
+     ]
+    },
+    {
+     "orb": {
+      "kind": "ketu",
+      "r": 40,
+      "dim": true
+     },
+     "label": "Weak",
+     "head": "You drift",
+     "lines": [
+      "Interest fades",
+      "People feel far away"
+     ]
+    }
+   ],
+   "closing": "Too much Ketu?\nGone before it starts"
+  },
+  {
+   "type": "text",
+   "label": "Right now",
+   "labelsize": 28,
+   "title": "In Leo, with Jupiter",
+   "titleclass": "h2",
+   "body": [
+    "The monk meets the teacher",
+    "exactly on 11 November",
+    "Into Cancer on 5 December"
+   ],
+   "bodysize": 46,
+   "bodygap": 8
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "ketu",
+    "r": 56
+   },
+   "title": "Find your Ketu",
+   "subtitle": "Which house is he in?",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 42,
+   "next": "Next lesson · Nadi, rule 1",
+   "titleclass": "h2"
+  }
+ ]
+}
