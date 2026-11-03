@@ -243,6 +243,31 @@
    "when": "2026-11-02T15:00:00-05:00",
    "title": "Meet Ask Sutram (app look, real screenshots)",
    "metricool_id": 413972819
+  },
+  {
+   "id": "sutra-card-5th-house-ask",
+   "when": "2026-11-05T10:00:00-05:00",
+   "metricool_id": 415312589
+  },
+  {
+   "id": "lesson09-ask",
+   "when": "2026-11-05T12:00:00-05:00",
+   "metricool_id": 415312726
+  },
+  {
+   "id": "sutra-card-4th-house-ask",
+   "when": "2026-11-06T10:00:00-05:00",
+   "metricool_id": 415312835
+  },
+  {
+   "id": "lesson10-ask",
+   "when": "2026-11-06T12:00:00-05:00",
+   "metricool_id": 415313001
+  },
+  {
+   "id": "diwali-2026",
+   "when": "2026-11-08T10:00:00-05:00",
+   "metricool_id": 415313170
   }
  ],
  "retired": [
@@ -280,7 +305,7 @@
   "as-above-so-below",
   "as-above-so-below-v2"
  ],
- "next_lesson": 9,
+ "next_lesson": 11,
  "next_thread_episode": 3,
  "next_thread_title": "The person of Time (Kalapurusha, Brihat Jataka 2.1), Wed 11 Nov; renamed from 'The cosmic person' because 'cosmic' is a banned word",
  "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
@@ -560,5 +585,6 @@
   "weekly": "from Sun 8 Nov 7 PM: one batch a week; Instagram 10 (lessons Mon-Fri 12 PM, Sutra Mon/Wed/Fri 10 AM, Thread Wed 6:30 PM, Week ahead Sun 6:30 PM); X 8",
   "measured_1nov": "weighted tokens: wake-up 0.45-0.75M (2.5M with compaction), carousel 0.3-0.45M, scheduled post 0.05-0.1M; 1% of week ~0.35-0.6M (rough)"
  },
- "focus_2nov": "Sumant, 2 Nov: promote asksutram.com (claude/asksutram-promotion-plan.md). Screenshots: Sumant's phone screenshots (workspace can't open the app; desktop browser not linked). Metricool November 15 of 20 after Fri 6 Nov. Ask Sutram posts use tools/app_post.py (the app's look: #07060A, Instrument Serif, Inter, orange) with real screenshots in assets/asksutram/ (taken via Claude in Chrome, guest sample chart; crop out the location line). Metricool November 16 of 20 after Mon 2 Nov 3 PM."
+ "focus_2nov": "Sumant, 2 Nov: promote asksutram.com (claude/asksutram-promotion-plan.md). Screenshots: Sumant's phone screenshots (workspace can't open the app; desktop browser not linked). Metricool November 15 of 20 after Fri 6 Nov. Ask Sutram posts use tools/app_post.py (the app's look: #07060A, Instrument Serif, Inter, orange) with real screenshots in assets/asksutram/ (taken via Claude in Chrome, guest sample chart; crop out the location line). Metricool November 16 of 20 after Mon 2 Nov 3 PM.",
+ "lean_run_3nov": "Done: Thu 5 Nov 10 AM 5th-house card, 12 PM Lesson 9; Fri 6 Nov 10 AM 4th-house card (Ask post was pulled), 12 PM Lesson 10; Sun 8 Nov 10 AM Diwali. Metricool November 19 of 20. Skipped the X Ask Sutram post (promo on hold)."
 }
