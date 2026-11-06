@@ -1,0 +1,168 @@
+{
+ "id": "dreamer-ask",
+ "kicker": "The dreamer and the chart",
+ "decor_theme": "dream",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "top",
+    "s": 300
+   },
+   "title": "Everyone in\nthe dream is\nthe dreamer",
+   "subtitle": "Inception, the Upanishads\nand your birth chart"
+  },
+  {
+   "type": "text",
+   "label": "Inception, the film",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 36,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 36
+    },
+    {
+     "kind": "mars",
+     "r": 28
+    },
+    {
+     "kind": "venus",
+     "r": 30
+    }
+   ],
+   "orbspacing": 150,
+   "title": "The people are\nprojections",
+   "titleclass": "h2",
+   "body": [
+    "Every face in the dream comes\nfrom the dreamer’s own mind"
+   ],
+   "bodysize": 42,
+   "closing": "The city, the crowd,\neven the enemies"
+  },
+  {
+   "type": "quote",
+   "label": "Long before the film",
+   "labelsize": 26,
+   "title": "Who builds the dream",
+   "titleclass": "h2",
+   "quote": "There are no chariots there,\nno horses, no roads\nHe makes them all,\nfor he is the maker",
+   "quotesize": 66,
+   "source": "Brihadaranyaka Upanishad 4.3.10"
+  },
+  {
+   "type": "cast",
+   "title": "Every graha plays two parts",
+   "titleclass": "h3",
+   "headsize": 58,
+   "bodysize": 40,
+   "castorbh": 88,
+   "castorbw": 180,
+   "castlabsize": 24,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "sun",
+       "r": 32,
+       "rings": false
+      }
+     ],
+     "label": "the king",
+     "head": "Sun",
+     "line": "Your soul · your father"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "moon",
+       "r": 32
+      }
+     ],
+     "label": "the mother",
+     "head": "Moon",
+     "line": "Your mind · your mother"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "mars",
+       "r": 26
+      }
+     ],
+     "label": "the soldier",
+     "head": "Mars",
+     "line": "Your courage · your brothers"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "venus",
+       "r": 28
+      }
+     ],
+     "label": "the lover",
+     "head": "Venus",
+     "line": "Your desire · your partner"
+    }
+   ]
+  },
+  {
+   "type": "rows",
+   "label": "Bhava means “state of being”",
+   "labelsize": 26,
+   "title": "Every house is a person\nand a part of you",
+   "titleclass": "h3",
+   "items": [
+    [
+     "4th",
+     "mother · your peace"
+    ],
+    [
+     "7th",
+     "partner · your other half"
+    ],
+    [
+     "10th",
+     "boss · your work"
+    ]
+   ],
+   "bodysize": 42
+  },
+  {
+   "type": "text",
+   "orb": {
+    "kind": "saturn",
+    "r": 64
+   },
+   "title": "The hard people",
+   "titleclass": "h2",
+   "body": [
+    "In the film, change the dream\nand the projections fight back",
+    "In life, the hard people arrive\nwhen a graha in you is changing"
+   ],
+   "bodysize": 40,
+   "bodygap": 26,
+   "closing": "Most of all Saturn, the auditor"
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "top",
+    "s": 220
+   },
+   "title": "Treat the person well\nand the graha settles",
+   "titleclass": "h3",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 40
+  }
+ ]
+}

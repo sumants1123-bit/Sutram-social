@@ -191,9 +191,39 @@ def saturn_orb(R=70):
             f'<filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.4:.1f}"/></filter></defs>'
             f'<circle cx="{c}" cy="{c}" r="{R*1.1:.1f}" fill="#E8D09A" opacity=".28" filter="url(#{h})"/>'
             f'{ring(bk,.55)}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{bands}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>{ring(fr,.9)}</svg>')
+def top_orb(s=300):
+    """The spinning top, a dreamer's test of what is real, inside thin orbits with grahas riding them (Inception post, 6 Nov)."""
+    g=uid('tp'); W=s*1.7; H=s*1.12; cx=W/2; cy=H*0.47
+    o=[f'<defs><linearGradient id="{g}m" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#5A4129"/><stop offset=".32" stop-color="#F1DDB2"/><stop offset=".55" stop-color="#C39A62"/><stop offset="1" stop-color="#3E2D1C"/></linearGradient>'
+       f'<radialGradient id="{g}f" cx="45%" cy="40%" r="70%"><stop offset="0" stop-color="#FFF6E4"/><stop offset="1" stop-color="#D9B983"/></radialGradient>'
+       f'<radialGradient id="{g}g" cx="50%" cy="50%" r="50%"><stop offset="0" stop-color="{AMBER}" stop-opacity=".30"/><stop offset="1" stop-color="{AMBER}" stop-opacity="0"/></radialGradient></defs>']
+    o.append(f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{s*.62:.1f}" ry="{s*.5:.1f}" fill="url(#{g}g)"/>')
+    rings=[(s*.80,s*.17,-10),(s*.66,s*.14,7),(s*.52,s*.11,-3)]
+    for rx,ry,rot in rings:
+        o.append(f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="{rx:.1f}" ry="{ry:.1f}" fill="none" stroke="{GOLD}" stroke-opacity=".34" stroke-width="1.6" transform="rotate({rot} {cx:.1f} {cy:.1f})"/>')
+    tx,ty=cx,cy+s*.36
+    body=(f'M{cx-s*.30:.1f},{cy-s*.20:.1f} C{cx-s*.30:.1f},{cy+s*.02:.1f} {cx-s*.09:.1f},{cy+s*.18:.1f} {tx:.1f},{ty:.1f} '
+          f'C{cx+s*.09:.1f},{cy+s*.18:.1f} {cx+s*.30:.1f},{cy+s*.02:.1f} {cx+s*.30:.1f},{cy-s*.20:.1f} Z')
+    o.append(f'<ellipse cx="{cx:.1f}" cy="{cy+s*.385:.1f}" rx="{s*.17:.1f}" ry="{s*.026:.1f}" fill="#000" opacity=".55"/>')
+    o.append(f'<g transform="rotate(8 {tx:.1f} {ty:.1f})"><path d="{body}" fill="url(#{g}m)"/>'
+             f'<path d="M{cx-s*.27:.1f},{cy-s*.08:.1f} Q{cx:.1f},{cy:.1f} {cx+s*.27:.1f},{cy-s*.08:.1f}" fill="none" stroke="{AMBER}" stroke-opacity=".8" stroke-width="2.2"/>'
+             f'<path d="M{cx-s*.19:.1f},{cy+s*.09:.1f} Q{cx:.1f},{cy+s*.15:.1f} {cx+s*.19:.1f},{cy+s*.09:.1f}" fill="none" stroke="{AMBER}" stroke-opacity=".55" stroke-width="1.8"/>'
+             f'<ellipse cx="{cx:.1f}" cy="{cy-s*.20:.1f}" rx="{s*.30:.1f}" ry="{s*.065:.1f}" fill="url(#{g}f)"/>'
+             f'<rect x="{cx-s*.03:.1f}" y="{cy-s*.42:.1f}" width="{s*.06:.1f}" height="{s*.22:.1f}" rx="{s*.02:.1f}" fill="url(#{g}m)"/>'
+             f'<ellipse cx="{cx:.1f}" cy="{cy-s*.42:.1f}" rx="{s*.03:.1f}" ry="{s*.012:.1f}" fill="#FFF6E4"/></g>')
+    o.append(f'<path d="M{cx-s*.42:.1f},{cy-s*.13:.1f} A{s*.42:.1f},{s*.10:.1f} 0 0 0 {cx+s*.20:.1f},{cy-s*.04:.1f}" fill="none" stroke="{CREAM}" stroke-opacity=".5" stroke-width="2" stroke-linecap="round"/>')
+    for rx,ry,rot in rings:   # the front half of each orbit passes in front of the top
+        o.append(f'<path d="M{cx-rx:.1f},{cy:.1f} A{rx:.1f},{ry:.1f} 0 0 0 {cx+rx:.1f},{cy:.1f}" fill="none" stroke="{GOLD}" stroke-opacity=".5" stroke-width="1.6" transform="rotate({rot} {cx:.1f} {cy:.1f})"/>')
+    for (rx,ry,rot),kind,a0 in zip(rings+[rings[0]],['sun','moon','mars','venus'],[198,342,64,128]):
+        a=math.radians(a0); x=cx+rx*math.cos(a); y=cy+ry*math.sin(a); c=math.cos(math.radians(rot)); s_=math.sin(math.radians(rot))
+        X=cx+(x-cx)*c-(y-cy)*s_; Y=cy+(x-cx)*s_+(y-cy)*c
+        col,rad={'sun':('#F08A4C',s*.055),'moon':('#F5EEDF',s*.045),'mars':('#B9573C',s*.036),'venus':('#EBD9A8',s*.04)}[kind]
+        o.append(f'<circle cx="{X:.1f}" cy="{Y:.1f}" r="{rad*2.4:.1f}" fill="{col}" opacity=".16"/><circle cx="{X:.1f}" cy="{Y:.1f}" r="{rad:.1f}" fill="{col}"/>')
+    return f'<svg width="{W:.0f}" height="{H:.0f}" viewBox="0 0 {W:.0f} {H:.0f}">{"".join(o)}</svg>'
 def orb_size(o):
     """Width of an orb's drawing canvas (the glow needs room), so a row can space grahas by their centres."""
     k=o.get('kind'); r=o.get('r',80)
+    if k=='top': return o.get('s',300)*1.7
     if k in ('mars','mercury'): return 2*r+120
     if k=='sun': return r*5.2 if o.get('rings',True) else 2*r+160
     return 2*r+160
@@ -221,6 +251,7 @@ def orb(o):
     if k=='jupiter': return jupiter_orb(o.get('r',95))
     if k=='north': return north(o.get('s',320),o.get('nums',False))
     if k=='south': return south(o.get('s',320),o.get('labels',True),o.get('asc'))
+    if k=='top': return top_orb(o.get('s',300))
     return ''
 
 def slide_html(sp, s=1.0):
@@ -434,11 +465,37 @@ def decor(i, seed, dense=False, theme='solar', hi_phase=None):
                 on=(kidx==lit); kidx+=1
                 if on: o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="20" fill="{AMBER}" opacity=".16"/>')
                 o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{8 if on else 6.5}" fill="{AMBER if on else CREAM}" opacity="{.95 if on else .7}"/>')
+    elif theme=='dream':
+        # Inception's folding city in Sutram's colours (6 Nov): a cool dream haze above, the city hanging upside down
+        # from the top edge and curling a little more on each slide, the same city upright along the bottom,
+        # and two faint frames, dream inside dream, turning as you swipe
+        gid=uid('dh')
+        o.insert(0,f'<defs><linearGradient id="{gid}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#7C9BB2" stop-opacity=".22"/><stop offset=".5" stop-color="#7C9BB2" stop-opacity="0"/></linearGradient></defs><rect width="1080" height="1350" fill="url(#{gid})"/>')
+        for k,(w,h,a0,st) in enumerate([(1250,1580,-3,1.5),(960,1230,2.5,-1.1)]):
+            o.append(f'<rect x="{540-w/2}" y="{675-h/2}" width="{w}" height="{h}" rx="22" fill="none" stroke="{GOLD}" stroke-opacity="{.11 if k==0 else .075}" stroke-width="1.2" transform="rotate({a0+(i-1)*st:.2f} 540 675)"/>')
+        rb=random.Random(seed*53+1); blds=[]; x=-760.0
+        while x<760:
+            w=rb.uniform(28,74); h=rb.uniform(60,190); blds.append((x+w/2,w,h,rb.randrange(10**6))); x+=w+rb.uniform(3,12)
+        R=1700-(i-1)*120; cx,cy=540,R
+        for sx,w,h,ws in blds:
+            if abs(sx)<250: continue   # an open street in the middle keeps the kicker clear
+            a=sx/R; bx=cx+R*math.sin(a); by=cy-R*math.cos(a)
+            if not (-120<bx<1200): continue
+            wr=random.Random(ws)
+            win=''.join(f'<rect x="{-w/2+6+c*10:.1f}" y="{10+q*16:.1f}" width="3.4" height="6" fill="#BFD3E0" opacity="{wr.uniform(.25,.6):.2f}"/>' for c in range(int((w-10)//10)) for q in range(int((h-18)//16)) if wr.random()<.2)
+            o.append(f'<g transform="translate({bx:.1f} {by:.1f}) rotate({math.degrees(a):.2f})"><rect x="{-w/2:.1f}" y="-8" width="{w:.1f}" height="{h+8:.1f}" fill="#0C0A0B" stroke="#9FB8C9" stroke-opacity=".26" stroke-width="1.1"/>{win}</g>')
+        for sx,w,h,ws in blds:
+            x0=540+sx-w/2
+            if x0>1080 or x0+w<0: continue
+            hh=h*.75*(0.4 if abs(sx)<260 else 1)   # lower in the middle so the footer stays clear
+            wr=random.Random(ws+1)
+            win=''.join(f'<rect x="{x0+6+c*10:.1f}" y="{1350-hh+10+q*16:.1f}" width="3.4" height="6" fill="{AMBER}" opacity="{wr.uniform(.25,.6):.2f}"/>' for c in range(int((w-10)//10)) for q in range(int((hh-18)//16)) if wr.random()<.2)
+            o.append(f'<rect x="{x0:.1f}" y="{1350-hh:.1f}" width="{w:.1f}" height="{hh+4:.1f}" fill="#0E0A08" stroke="{GOLD}" stroke-opacity=".32" stroke-width="1.1"/>{win}')
     return f'<svg class="decor" width="1080" height="1350">{"".join(o)}</svg>'
 
 def theme_for(spec):
     """Pick the background theme: the spec's own choice, or one that suits the post type, so the feed keeps changing."""
-    if spec.get('decor_theme') in THEMES: return spec['decor_theme']
+    if spec.get('decor_theme') in THEMES+['dream']: return spec['decor_theme']
     k=(spec.get('kicker') or '').lower(); pid=spec['id']
     if k.startswith("today's sky"): return 'lunar'
     if 'thread' in k or 'scripture' in k: return 'thread'
