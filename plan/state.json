@@ -268,6 +268,13 @@
       "id": "diwali-2026",
       "when": "2026-11-08T10:00:00-05:00",
       "metricool_id": 415313170
+    },
+    {
+      "id": "dreamer-ask",
+      "title": "Everyone in the dream is the dreamer",
+      "when": "2026-11-07 18:30",
+      "via": "metricool",
+      "metricool_id": 418955745
     }
   ],
   "retired": [
@@ -547,7 +554,8 @@
       "x-drafts/8-fifth-house.txt",
       "x-drafts/9-fourth-house.txt",
       "Graha stories 2",
-      "Diwali 8 Nov"
+      "Diwali 8 Nov",
+      "dreamer-x (write from captions/dreamer-ask.txt, 4 images)"
     ],
     "zapier_calls_used_31oct": "about 13 write/read calls (2 tasks each) plus setup checks",
     "route": "Buffer connector directly (mcp Buffer create_post), Zapier no longer needed for posting",
@@ -590,5 +598,6 @@
   "rules_4nov": {
     "cadence": "Instagram: every day at least 1 and at most 2 posts, weekends included. Never 0, never 3. Spread out, never cut a content category."
   },
-  "moves_4nov": "Thread Ep 2 moved Wed 4 Nov 6:30 PM to Sat 7 Nov 10 AM (Metricool id 416651238). 9-15 Nov plan: Mon Sutra+L11, Tue L12, Wed L13+Ep3, Thu Sutra+L14, Fri L15, Sat Sutra, Sun Week ahead."
+  "moves_4nov": "Thread Ep 2 moved Wed 4 Nov 6:30 PM to Sat 7 Nov 10 AM (Metricool id 416651238). 9-15 Nov plan: Mon Sutra+L11, Tue L12, Wed L13+Ep3, Thu Sutra+L14, Fri L15, Sat Sutra, Sun Week ahead.",
+  "metricool_nov": "20 of 20 used (dreamer-ask took the last, 6 Nov). Rest of November goes through Buffer Instagram."
 }
