@@ -314,7 +314,7 @@
   ],
   "next_lesson": 11,
   "next_thread_episode": 3,
-  "next_thread_title": "The person of Time (Kalapurusha, Brihat Jataka 2.1), Wed 11 Nov; renamed from 'The cosmic person' because 'cosmic' is a banned word",
+  "next_thread_title": "The person of Time",
   "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
   "next_to_make": [
     "Tue lean run: Thu 5 Nov 10 AM 5th-house card, 12 PM Lesson 9 Rahu; Fri 6 Nov 10 AM 4th-house card, 12 PM Lesson 10 Ketu; Sun 8 Nov 10 AM Diwali",
@@ -599,5 +599,97 @@
     "cadence": "Instagram: every day at least 1 and at most 2 posts, weekends included. Never 0, never 3. Spread out, never cut a content category."
   },
   "moves_4nov": "Thread Ep 2 moved Wed 4 Nov 6:30 PM to Sat 7 Nov 10 AM (Metricool id 416651238). 9-15 Nov plan: Mon Sutra+L11, Tue L12, Wed L13+Ep3, Thu Sutra+L14, Fri L15, Sat Sutra, Sun Week ahead.",
-  "metricool_nov": "20 of 20 used (dreamer-ask took the last, 6 Nov). Rest of November goes through Buffer Instagram."
+  "metricool_nov": "20 of 20 used (dreamer-ask took the last, 6 Nov). Rest of November goes through Buffer Instagram.",
+  "thread_maps_7nov": {
+    "source": "plan/thread_maps_of_you.md (approved by Sumant 7 Nov: loved all ten)",
+    "wednesday_thread": [
+      [
+        "2026-11-11",
+        "Ep 3 The person of Time"
+      ],
+      [
+        "2026-11-18",
+        "Ep 4 The three strands"
+      ],
+      [
+        "2026-11-25",
+        "Ep 5 Two birds on one tree"
+      ],
+      [
+        "2026-12-02",
+        "Ep 6 Your body type"
+      ],
+      [
+        "2026-12-09",
+        "Ep 7 Nachiketa and Death"
+      ],
+      [
+        "2026-12-16",
+        "Ep 8 The four aims of life"
+      ],
+      [
+        "2026-12-23",
+        "Ep 9 Three bodies"
+      ],
+      [
+        "2026-12-30",
+        "Ep 10 The four stages of life"
+      ],
+      [
+        "2027-01-06",
+        "Ep 11 Waking, dreaming, deep sleep and the fourth"
+      ],
+      [
+        "2027-01-13",
+        "Ep 12 Saturn, the teacher of time (original plan)"
+      ],
+      [
+        "2027-01-20",
+        "Ep 13 The three paths"
+      ],
+      [
+        "2027-01-27",
+        "original plan resumes: Cause and effect"
+      ]
+    ],
+    "saturday_avatars_630pm": [
+      [
+        "2026-11-21",
+        "Rama, Sun"
+      ],
+      [
+        "2026-11-28",
+        "Krishna, Moon"
+      ],
+      [
+        "2026-12-05",
+        "Narasimha, Mars"
+      ],
+      [
+        "2026-12-12",
+        "Buddha, Mercury"
+      ],
+      [
+        "2026-12-19",
+        "Vamana, Jupiter"
+      ],
+      [
+        "2026-12-26",
+        "Parashurama, Venus"
+      ],
+      [
+        "2027-01-02",
+        "Kurma, Saturn"
+      ],
+      [
+        "2027-01-09",
+        "Varaha, Rahu"
+      ],
+      [
+        "2027-01-16",
+        "Matsya, Ketu"
+      ]
+    ],
+    "new_last_slide": "Read it in your chart: one step plus the matching free tool on sutram.ca"
+  }
 }
