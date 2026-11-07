@@ -1,0 +1,751 @@
+[
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Scorpio",
+  "retro": false,
+  "utc": "2026-12-02T11:58:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Rahu",
+  "sign": "Capricorn",
+  "retro": true,
+  "utc": "2026-12-05T17:02:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Ketu",
+  "sign": "Cancer",
+  "retro": false,
+  "utc": "2026-12-05T17:02:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Scorpio",
+  "nakshatra": "Jyeshtha",
+  "utc": "2026-12-09T00:52:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Saturn",
+  "sign": "Pisces",
+  "retro_begins": false,
+  "utc": "2026-12-11T00:30:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Jupiter",
+  "sign": "Leo",
+  "retro_begins": true,
+  "utc": "2026-12-13T00:31:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Sagittarius",
+  "retro": false,
+  "utc": "2026-12-16T04:55:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Sagittarius",
+  "retro": false,
+  "utc": "2026-12-22T02:10:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Gemini",
+  "nakshatra": "Ardra",
+  "utc": "2026-12-24T01:28:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Scorpio",
+  "retro": false,
+  "utc": "2027-01-01T17:53:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Sagittarius",
+  "nakshatra": "Purva Ashadha",
+  "utc": "2027-01-07T20:24:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Capricorn",
+  "retro": false,
+  "utc": "2027-01-09T19:07:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Mars",
+  "sign": "Leo",
+  "retro_begins": true,
+  "utc": "2027-01-10T12:55:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Capricorn",
+  "retro": false,
+  "utc": "2027-01-14T15:40:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Cancer",
+  "nakshatra": "Pushya",
+  "utc": "2027-01-22T12:17:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Jupiter",
+  "sign": "Cancer",
+  "retro": true,
+  "utc": "2027-01-24T20:02:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Aquarius",
+  "retro": false,
+  "utc": "2027-01-27T22:04:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Sagittarius",
+  "retro": false,
+  "utc": "2027-01-29T13:12:00Z"
+ },
+ {
+  "kind": "solar_eclipse",
+  "type": "annular",
+  "sign": "Capricorn",
+  "nakshatra": "Dhanishta",
+  "utc": "2027-02-06T15:00:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Capricorn",
+  "nakshatra": "Dhanishta",
+  "utc": "2027-02-06T15:56:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Mercury",
+  "sign": "Aquarius",
+  "retro_begins": true,
+  "utc": "2027-02-09T17:36:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Aquarius",
+  "retro": false,
+  "utc": "2027-02-13T04:39:00Z"
+ },
+ {
+  "kind": "lunar_eclipse",
+  "type": "penumbral",
+  "sign": "Leo",
+  "nakshatra": "Magha",
+  "utc": "2027-02-20T23:13:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Leo",
+  "nakshatra": "Magha",
+  "utc": "2027-02-20T23:24:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Capricorn",
+  "retro": true,
+  "utc": "2027-02-23T23:10:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Capricorn",
+  "retro": false,
+  "utc": "2027-02-24T09:46:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Mercury",
+  "sign": "Capricorn",
+  "retro_begins": false,
+  "utc": "2027-03-03T12:33:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Aquarius",
+  "nakshatra": "Purva Bhadrapada",
+  "utc": "2027-03-08T09:29:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mars",
+  "sign": "Cancer",
+  "retro": true,
+  "utc": "2027-03-09T18:43:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Aquarius",
+  "retro": false,
+  "utc": "2027-03-11T23:37:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Pisces",
+  "retro": false,
+  "utc": "2027-03-15T01:30:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Aquarius",
+  "retro": false,
+  "utc": "2027-03-21T13:22:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Virgo",
+  "nakshatra": "Uttara Phalguni",
+  "utc": "2027-03-22T10:44:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Mars",
+  "sign": "Cancer",
+  "retro_begins": false,
+  "utc": "2027-04-01T14:12:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Pisces",
+  "retro": false,
+  "utc": "2027-04-05T10:47:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Pisces",
+  "nakshatra": "Revati",
+  "utc": "2027-04-06T23:51:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Jupiter",
+  "sign": "Cancer",
+  "retro_begins": false,
+  "utc": "2027-04-13T02:43:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Aries",
+  "retro": false,
+  "utc": "2027-04-14T09:58:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Pisces",
+  "retro": false,
+  "utc": "2027-04-15T09:51:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Libra",
+  "nakshatra": "Chitra",
+  "utc": "2027-04-20T22:27:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Aries",
+  "retro": false,
+  "utc": "2027-04-22T02:43:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mars",
+  "sign": "Leo",
+  "retro": false,
+  "utc": "2027-04-26T06:17:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Taurus",
+  "retro": false,
+  "utc": "2027-05-06T07:06:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Aries",
+  "nakshatra": "Bharani",
+  "utc": "2027-05-06T10:59:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Aries",
+  "retro": false,
+  "utc": "2027-05-10T03:19:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Taurus",
+  "retro": false,
+  "utc": "2027-05-15T06:50:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Scorpio",
+  "nakshatra": "Anuradha",
+  "utc": "2027-05-20T10:59:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Gemini",
+  "retro": false,
+  "utc": "2027-05-23T13:02:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Saturn",
+  "sign": "Aries",
+  "retro": false,
+  "utc": "2027-06-02T23:58:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Taurus",
+  "retro": false,
+  "utc": "2027-06-03T19:11:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Taurus",
+  "nakshatra": "Rohini",
+  "utc": "2027-06-04T19:40:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Mercury",
+  "sign": "Gemini",
+  "retro_begins": true,
+  "utc": "2027-06-10T18:15:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Gemini",
+  "retro": false,
+  "utc": "2027-06-15T13:26:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Sagittarius",
+  "nakshatra": "Mula",
+  "utc": "2027-06-19T00:44:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Jupiter",
+  "sign": "Leo",
+  "retro": false,
+  "utc": "2027-06-25T23:49:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Gemini",
+  "retro": false,
+  "utc": "2027-06-28T09:10:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Gemini",
+  "nakshatra": "Ardra",
+  "utc": "2027-07-04T03:02:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Mercury",
+  "sign": "Gemini",
+  "retro_begins": false,
+  "utc": "2027-07-04T19:41:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mars",
+  "sign": "Virgo",
+  "retro": false,
+  "utc": "2027-07-04T23:05:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Cancer",
+  "retro": false,
+  "utc": "2027-07-17T00:19:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Capricorn",
+  "nakshatra": "Uttara Ashadha",
+  "utc": "2027-07-18T15:45:00Z"
+ },
+ {
+  "kind": "lunar_eclipse",
+  "type": "penumbral",
+  "sign": "Capricorn",
+  "nakshatra": "Uttara Ashadha",
+  "utc": "2027-07-18T16:03:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Cancer",
+  "retro": false,
+  "utc": "2027-07-22T20:17:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Cancer",
+  "retro": false,
+  "utc": "2027-07-30T13:01:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Cancer",
+  "nakshatra": "Pushya",
+  "utc": "2027-08-02T10:05:00Z"
+ },
+ {
+  "kind": "solar_eclipse",
+  "type": "total",
+  "sign": "Cancer",
+  "nakshatra": "Pushya",
+  "utc": "2027-08-02T10:07:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Saturn",
+  "sign": "Aries",
+  "retro_begins": true,
+  "utc": "2027-08-09T17:24:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Leo",
+  "retro": false,
+  "utc": "2027-08-14T06:23:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Leo",
+  "retro": false,
+  "utc": "2027-08-16T04:05:00Z"
+ },
+ {
+  "kind": "lunar_eclipse",
+  "type": "penumbral",
+  "sign": "Capricorn",
+  "nakshatra": "Dhanishta",
+  "utc": "2027-08-17T07:14:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Capricorn",
+  "nakshatra": "Dhanishta",
+  "utc": "2027-08-17T07:29:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Leo",
+  "retro": false,
+  "utc": "2027-08-17T08:44:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mars",
+  "sign": "Libra",
+  "retro": false,
+  "utc": "2027-08-24T04:22:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Virgo",
+  "retro": false,
+  "utc": "2027-08-30T20:31:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Leo",
+  "nakshatra": "Purva Phalguni",
+  "utc": "2027-08-31T17:41:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Virgo",
+  "retro": false,
+  "utc": "2027-09-09T09:11:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Aquarius",
+  "nakshatra": "Purva Bhadrapada",
+  "utc": "2027-09-15T23:04:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Virgo",
+  "retro": false,
+  "utc": "2027-09-17T08:41:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Libra",
+  "retro": false,
+  "utc": "2027-09-21T12:51:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Virgo",
+  "nakshatra": "Hasta",
+  "utc": "2027-09-30T02:36:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Libra",
+  "retro": false,
+  "utc": "2027-10-03T12:54:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Mercury",
+  "sign": "Libra",
+  "retro_begins": true,
+  "utc": "2027-10-07T14:37:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mars",
+  "sign": "Scorpio",
+  "retro": false,
+  "utc": "2027-10-07T19:59:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Pisces",
+  "nakshatra": "Revati",
+  "utc": "2027-10-15T13:47:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Libra",
+  "retro": false,
+  "utc": "2027-10-17T20:39:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Saturn",
+  "sign": "Pisces",
+  "retro": true,
+  "utc": "2027-10-20T01:42:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Virgo",
+  "retro": true,
+  "utc": "2027-10-21T02:42:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Scorpio",
+  "retro": false,
+  "utc": "2027-10-27T16:27:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Mercury",
+  "sign": "Virgo",
+  "retro_begins": false,
+  "utc": "2027-10-28T14:11:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Libra",
+  "nakshatra": "Swati",
+  "utc": "2027-10-29T13:37:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Libra",
+  "retro": false,
+  "utc": "2027-11-05T11:41:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Aries",
+  "nakshatra": "Krittika",
+  "utc": "2027-11-14T03:26:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Scorpio",
+  "retro": false,
+  "utc": "2027-11-16T20:29:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mars",
+  "sign": "Sagittarius",
+  "retro": false,
+  "utc": "2027-11-18T03:16:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Sagittarius",
+  "retro": false,
+  "utc": "2027-11-20T20:38:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Scorpio",
+  "retro": false,
+  "utc": "2027-11-25T18:59:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Jupiter",
+  "sign": "Virgo",
+  "retro": false,
+  "utc": "2027-11-26T13:15:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Scorpio",
+  "nakshatra": "Anuradha",
+  "utc": "2027-11-28T03:24:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Taurus",
+  "nakshatra": "Mrigashira",
+  "utc": "2027-12-13T16:09:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Sagittarius",
+  "retro": false,
+  "utc": "2027-12-14T20:37:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Capricorn",
+  "retro": false,
+  "utc": "2027-12-15T02:41:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Sagittarius",
+  "retro": false,
+  "utc": "2027-12-16T11:09:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Saturn",
+  "sign": "Pisces",
+  "retro_begins": false,
+  "utc": "2027-12-24T03:35:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mars",
+  "sign": "Capricorn",
+  "retro": false,
+  "utc": "2027-12-27T07:35:00Z"
+ },
+ {
+  "kind": "new_moon",
+  "sign": "Sagittarius",
+  "nakshatra": "Mula",
+  "utc": "2027-12-27T20:12:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Mercury",
+  "sign": "Capricorn",
+  "retro": false,
+  "utc": "2028-01-02T15:25:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Venus",
+  "sign": "Aquarius",
+  "retro": false,
+  "utc": "2028-01-08T13:47:00Z"
+ },
+ {
+  "kind": "full_moon",
+  "sign": "Gemini",
+  "nakshatra": "Punarvasu",
+  "utc": "2028-01-12T04:03:00Z"
+ },
+ {
+  "kind": "lunar_eclipse",
+  "type": "partial",
+  "sign": "Gemini",
+  "nakshatra": "Punarvasu",
+  "utc": "2028-01-12T04:13:00Z"
+ },
+ {
+  "kind": "station",
+  "body": "Jupiter",
+  "sign": "Virgo",
+  "retro_begins": true,
+  "utc": "2028-01-12T08:18:00Z"
+ },
+ {
+  "kind": "ingress",
+  "body": "Sun",
+  "sign": "Capricorn",
+  "retro": false,
+  "utc": "2028-01-14T21:54:00Z"
+ }
+]

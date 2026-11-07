@@ -1,0 +1,488 @@
+[
+ {
+  "index": 1,
+  "slug": "ashwini",
+  "name": "Ashwini",
+  "start_deg": 0.0,
+  "end_deg": 13.3333,
+  "start": "Aries 0°00'",
+  "end": "Aries 13°20'",
+  "lord": "Ketu",
+  "deity": "the Ashwini Kumaras, the twin healers",
+  "symbol": "a horse's head",
+  "pada_signs": [
+   "Aries",
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ]
+ },
+ {
+  "index": 2,
+  "slug": "bharani",
+  "name": "Bharani",
+  "start_deg": 13.3333,
+  "end_deg": 26.6667,
+  "start": "Aries 13°20'",
+  "end": "Aries 26°40'",
+  "lord": "Venus",
+  "deity": "Yama, the lord of death",
+  "symbol": "the womb",
+  "pada_signs": [
+   "Leo",
+   "Virgo",
+   "Libra",
+   "Scorpio"
+  ]
+ },
+ {
+  "index": 3,
+  "slug": "krittika",
+  "name": "Krittika",
+  "start_deg": 26.6667,
+  "end_deg": 40.0,
+  "start": "Aries 26°40'",
+  "end": "Taurus 10°00'",
+  "lord": "Sun",
+  "deity": "Agni, fire",
+  "symbol": "a razor, a flame",
+  "pada_signs": [
+   "Sagittarius",
+   "Capricorn",
+   "Aquarius",
+   "Pisces"
+  ]
+ },
+ {
+  "index": 4,
+  "slug": "rohini",
+  "name": "Rohini",
+  "start_deg": 40.0,
+  "end_deg": 53.3333,
+  "start": "Taurus 10°00'",
+  "end": "Taurus 23°20'",
+  "lord": "Moon",
+  "deity": "Brahma, the creator",
+  "symbol": "a cart, a chariot",
+  "pada_signs": [
+   "Aries",
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ]
+ },
+ {
+  "index": 5,
+  "slug": "mrigashira",
+  "name": "Mrigashira",
+  "start_deg": 53.3333,
+  "end_deg": 66.6667,
+  "start": "Taurus 23°20'",
+  "end": "Gemini 6°40'",
+  "lord": "Mars",
+  "deity": "Soma, the Moon god",
+  "symbol": "a deer's head",
+  "pada_signs": [
+   "Leo",
+   "Virgo",
+   "Libra",
+   "Scorpio"
+  ]
+ },
+ {
+  "index": 6,
+  "slug": "ardra",
+  "name": "Ardra",
+  "start_deg": 66.6667,
+  "end_deg": 80.0,
+  "start": "Gemini 6°40'",
+  "end": "Gemini 20°00'",
+  "lord": "Rahu",
+  "deity": "Rudra, the storm god",
+  "symbol": "a teardrop",
+  "pada_signs": [
+   "Sagittarius",
+   "Capricorn",
+   "Aquarius",
+   "Pisces"
+  ]
+ },
+ {
+  "index": 7,
+  "slug": "punarvasu",
+  "name": "Punarvasu",
+  "start_deg": 80.0,
+  "end_deg": 93.3333,
+  "start": "Gemini 20°00'",
+  "end": "Cancer 3°20'",
+  "lord": "Jupiter",
+  "deity": "Aditi, the mother of the gods",
+  "symbol": "a bow and quiver",
+  "pada_signs": [
+   "Aries",
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ]
+ },
+ {
+  "index": 8,
+  "slug": "pushya",
+  "name": "Pushya",
+  "start_deg": 93.3333,
+  "end_deg": 106.6667,
+  "start": "Cancer 3°20'",
+  "end": "Cancer 16°40'",
+  "lord": "Saturn",
+  "deity": "Brihaspati, the teacher of the gods",
+  "symbol": "a cow's udder, a flower",
+  "pada_signs": [
+   "Leo",
+   "Virgo",
+   "Libra",
+   "Scorpio"
+  ]
+ },
+ {
+  "index": 9,
+  "slug": "ashlesha",
+  "name": "Ashlesha",
+  "start_deg": 106.6667,
+  "end_deg": 120.0,
+  "start": "Cancer 16°40'",
+  "end": "Leo 30°00'",
+  "lord": "Mercury",
+  "deity": "the Nagas, the serpents",
+  "symbol": "a coiled serpent",
+  "pada_signs": [
+   "Sagittarius",
+   "Capricorn",
+   "Aquarius",
+   "Pisces"
+  ]
+ },
+ {
+  "index": 10,
+  "slug": "magha",
+  "name": "Magha",
+  "start_deg": 120.0,
+  "end_deg": 133.3333,
+  "start": "Leo 0°00'",
+  "end": "Leo 13°20'",
+  "lord": "Ketu",
+  "deity": "the Pitris, the ancestors",
+  "symbol": "a throne",
+  "pada_signs": [
+   "Aries",
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ]
+ },
+ {
+  "index": 11,
+  "slug": "purva-phalguni",
+  "name": "Purva Phalguni",
+  "start_deg": 133.3333,
+  "end_deg": 146.6667,
+  "start": "Leo 13°20'",
+  "end": "Leo 26°40'",
+  "lord": "Venus",
+  "deity": "Bhaga, the god of pleasure",
+  "symbol": "the front legs of a bed",
+  "pada_signs": [
+   "Leo",
+   "Virgo",
+   "Libra",
+   "Scorpio"
+  ]
+ },
+ {
+  "index": 12,
+  "slug": "uttara-phalguni",
+  "name": "Uttara Phalguni",
+  "start_deg": 146.6667,
+  "end_deg": 160.0,
+  "start": "Leo 26°40'",
+  "end": "Virgo 10°00'",
+  "lord": "Sun",
+  "deity": "Aryaman, the god of contracts",
+  "symbol": "the back legs of a bed",
+  "pada_signs": [
+   "Sagittarius",
+   "Capricorn",
+   "Aquarius",
+   "Pisces"
+  ]
+ },
+ {
+  "index": 13,
+  "slug": "hasta",
+  "name": "Hasta",
+  "start_deg": 160.0,
+  "end_deg": 173.3333,
+  "start": "Virgo 10°00'",
+  "end": "Virgo 23°20'",
+  "lord": "Moon",
+  "deity": "Savitar, the Sun as inspirer",
+  "symbol": "a hand",
+  "pada_signs": [
+   "Aries",
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ]
+ },
+ {
+  "index": 14,
+  "slug": "chitra",
+  "name": "Chitra",
+  "start_deg": 173.3333,
+  "end_deg": 186.6667,
+  "start": "Virgo 23°20'",
+  "end": "Libra 6°40'",
+  "lord": "Mars",
+  "deity": "Tvashtar, the divine architect",
+  "symbol": "a bright jewel",
+  "pada_signs": [
+   "Leo",
+   "Virgo",
+   "Libra",
+   "Scorpio"
+  ]
+ },
+ {
+  "index": 15,
+  "slug": "swati",
+  "name": "Swati",
+  "start_deg": 186.6667,
+  "end_deg": 200.0,
+  "start": "Libra 6°40'",
+  "end": "Libra 20°00'",
+  "lord": "Rahu",
+  "deity": "Vayu, the wind",
+  "symbol": "a young sprout bending in the wind",
+  "pada_signs": [
+   "Sagittarius",
+   "Capricorn",
+   "Aquarius",
+   "Pisces"
+  ]
+ },
+ {
+  "index": 16,
+  "slug": "vishakha",
+  "name": "Vishakha",
+  "start_deg": 200.0,
+  "end_deg": 213.3333,
+  "start": "Libra 20°00'",
+  "end": "Scorpio 3°20'",
+  "lord": "Jupiter",
+  "deity": "Indra and Agni",
+  "symbol": "a triumphal arch, a potter's wheel",
+  "pada_signs": [
+   "Aries",
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ]
+ },
+ {
+  "index": 17,
+  "slug": "anuradha",
+  "name": "Anuradha",
+  "start_deg": 213.3333,
+  "end_deg": 226.6667,
+  "start": "Scorpio 3°20'",
+  "end": "Scorpio 16°40'",
+  "lord": "Saturn",
+  "deity": "Mitra, the god of friendship",
+  "symbol": "a lotus",
+  "pada_signs": [
+   "Leo",
+   "Virgo",
+   "Libra",
+   "Scorpio"
+  ]
+ },
+ {
+  "index": 18,
+  "slug": "jyeshtha",
+  "name": "Jyeshtha",
+  "start_deg": 226.6667,
+  "end_deg": 240.0,
+  "start": "Scorpio 16°40'",
+  "end": "Sagittarius 30°00'",
+  "lord": "Mercury",
+  "deity": "Indra, the king of the gods",
+  "symbol": "an earring, an umbrella",
+  "pada_signs": [
+   "Sagittarius",
+   "Capricorn",
+   "Aquarius",
+   "Pisces"
+  ]
+ },
+ {
+  "index": 19,
+  "slug": "mula",
+  "name": "Mula",
+  "start_deg": 240.0,
+  "end_deg": 253.3333,
+  "start": "Sagittarius 0°00'",
+  "end": "Sagittarius 13°20'",
+  "lord": "Ketu",
+  "deity": "Nirriti, the goddess of dissolution",
+  "symbol": "a bunch of roots tied together",
+  "pada_signs": [
+   "Aries",
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ]
+ },
+ {
+  "index": 20,
+  "slug": "purva-ashadha",
+  "name": "Purva Ashadha",
+  "start_deg": 253.3333,
+  "end_deg": 266.6667,
+  "start": "Sagittarius 13°20'",
+  "end": "Sagittarius 26°40'",
+  "lord": "Venus",
+  "deity": "Apas, the waters",
+  "symbol": "a fan, a winnowing basket",
+  "pada_signs": [
+   "Leo",
+   "Virgo",
+   "Libra",
+   "Scorpio"
+  ]
+ },
+ {
+  "index": 21,
+  "slug": "uttara-ashadha",
+  "name": "Uttara Ashadha",
+  "start_deg": 266.6667,
+  "end_deg": 280.0,
+  "start": "Sagittarius 26°40'",
+  "end": "Capricorn 10°00'",
+  "lord": "Sun",
+  "deity": "the Vishvedevas, the universal gods",
+  "symbol": "an elephant's tusk",
+  "pada_signs": [
+   "Sagittarius",
+   "Capricorn",
+   "Aquarius",
+   "Pisces"
+  ]
+ },
+ {
+  "index": 22,
+  "slug": "shravana",
+  "name": "Shravana",
+  "start_deg": 280.0,
+  "end_deg": 293.3333,
+  "start": "Capricorn 10°00'",
+  "end": "Capricorn 23°20'",
+  "lord": "Moon",
+  "deity": "Vishnu",
+  "symbol": "an ear, three footprints",
+  "pada_signs": [
+   "Aries",
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ]
+ },
+ {
+  "index": 23,
+  "slug": "dhanishta",
+  "name": "Dhanishta",
+  "start_deg": 293.3333,
+  "end_deg": 306.6667,
+  "start": "Capricorn 23°20'",
+  "end": "Aquarius 6°40'",
+  "lord": "Mars",
+  "deity": "the eight Vasus",
+  "symbol": "a drum",
+  "pada_signs": [
+   "Leo",
+   "Virgo",
+   "Libra",
+   "Scorpio"
+  ]
+ },
+ {
+  "index": 24,
+  "slug": "shatabhisha",
+  "name": "Shatabhisha",
+  "start_deg": 306.6667,
+  "end_deg": 320.0,
+  "start": "Aquarius 6°40'",
+  "end": "Aquarius 20°00'",
+  "lord": "Rahu",
+  "deity": "Varuna, the god of the cosmic waters",
+  "symbol": "an empty circle, a hundred healers",
+  "pada_signs": [
+   "Sagittarius",
+   "Capricorn",
+   "Aquarius",
+   "Pisces"
+  ]
+ },
+ {
+  "index": 25,
+  "slug": "purva-bhadrapada",
+  "name": "Purva Bhadrapada",
+  "start_deg": 320.0,
+  "end_deg": 333.3333,
+  "start": "Aquarius 20°00'",
+  "end": "Pisces 3°20'",
+  "lord": "Jupiter",
+  "deity": "Aja Ekapada, the one-footed goat",
+  "symbol": "the front of a funeral cot",
+  "pada_signs": [
+   "Aries",
+   "Taurus",
+   "Gemini",
+   "Cancer"
+  ]
+ },
+ {
+  "index": 26,
+  "slug": "uttara-bhadrapada",
+  "name": "Uttara Bhadrapada",
+  "start_deg": 333.3333,
+  "end_deg": 346.6667,
+  "start": "Pisces 3°20'",
+  "end": "Pisces 16°40'",
+  "lord": "Saturn",
+  "deity": "Ahir Budhnya, the serpent of the deep",
+  "symbol": "the back of a funeral cot",
+  "pada_signs": [
+   "Leo",
+   "Virgo",
+   "Libra",
+   "Scorpio"
+  ]
+ },
+ {
+  "index": 27,
+  "slug": "revati",
+  "name": "Revati",
+  "start_deg": 346.6667,
+  "end_deg": 360.0,
+  "start": "Pisces 16°40'",
+  "end": "Aries 30°00'",
+  "lord": "Mercury",
+  "deity": "Pushan, the nourisher",
+  "symbol": "a fish, a drum",
+  "pada_signs": [
+   "Sagittarius",
+   "Capricorn",
+   "Aquarius",
+   "Pisces"
+  ]
+ }
+]
