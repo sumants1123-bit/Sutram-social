@@ -1,0 +1,144 @@
+{
+ "id": "lesson12-ask",
+ "kicker": "Daily lesson · 12",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 36
+    },
+    {
+     "kind": "jupiter",
+     "r": 50,
+     "dx": 250
+    },
+    {
+     "kind": "venus",
+     "r": 40,
+     "dx": 250
+    }
+   ],
+   "label": "Nadi · Rule 2",
+   "labelsize": 30,
+   "title": "Ahead\nand behind",
+   "subtitle": "The signs on either side of a graha"
+  },
+  {
+   "type": "text",
+   "label": "Rule 2",
+   "labelsize": 28,
+   "title": "Count forward",
+   "titleclass": "h2",
+   "body": [
+    "Signs run in order:\nAries, Taurus, Gemini",
+    "Ahead: where a graha is heading",
+    "Behind: what it carries"
+   ],
+   "bodysize": 42,
+   "bodygap": 12
+  },
+  {
+   "type": "compare",
+   "title": "Behind and ahead",
+   "titleclass": "h2",
+   "bodysize": 38,
+   "headsize": 54,
+   "columns": [
+    {
+     "orb": {
+      "kind": "mars",
+      "r": 34
+     },
+     "label": "The sign behind",
+     "head": "What you carry",
+     "lines": [
+      "Your past",
+      "Your training",
+      "What you spend on"
+     ]
+    },
+    {
+     "orb": {
+      "kind": "venus",
+      "r": 38
+     },
+     "label": "The sign ahead",
+     "head": "Where you're going",
+     "lines": [
+      "Your next chapter",
+      "What you build next"
+     ]
+    }
+   ],
+   "closing": "The 12th and the 2nd from a graha"
+  },
+  {
+   "type": "text",
+   "label": "In the sky today",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 34
+    },
+    {
+     "kind": "jupiter",
+     "r": 46,
+     "dx": 230
+    },
+    {
+     "kind": "ketu",
+     "r": 38,
+     "dx": 96
+    },
+    {
+     "kind": "venus",
+     "r": 38,
+     "dx": 230
+    }
+   ],
+   "title": "Around Leo",
+   "titleclass": "h2",
+   "body": [
+    "Behind, in Cancer: the soldier",
+    "In Leo: the teacher and the monk",
+    "Ahead, in Virgo: the lover"
+   ],
+   "bodysize": 42,
+   "bodygap": 8,
+   "closing": "Thursday the soldier walks into Leo"
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 30
+    },
+    {
+     "kind": "jupiter",
+     "r": 40,
+     "dx": 200
+    },
+    {
+     "kind": "venus",
+     "r": 34,
+     "dx": 200
+    }
+   ],
+   "title": "Look next door",
+   "titleclass": "h2",
+   "subtitle": "What sits one sign after your Moon?",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Next lesson · Who walks in front"
+  }
+ ]
+}

@@ -1,0 +1,119 @@
+{
+ "id": "lesson13-ask",
+ "kicker": "Daily lesson · 13",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 52
+    },
+    {
+     "kind": "ketu",
+     "r": 46,
+     "dx": 100
+    }
+   ],
+   "label": "Nadi · Rule 3",
+   "labelsize": 30,
+   "title": "Who walks\nin front",
+   "subtitle": "Two grahas in one sign: who leads?"
+  },
+  {
+   "type": "text",
+   "label": "Rule 3",
+   "labelsize": 28,
+   "title": "More degrees lead",
+   "titleclass": "h2",
+   "body": [
+    "Every sign has 30 degrees",
+    "The graha with more degrees leads",
+    "The one behind takes on its nature"
+   ],
+   "bodysize": 44,
+   "bodygap": 10
+  },
+  {
+   "type": "compare",
+   "title": "The leader sets the tone",
+   "titleclass": "h3",
+   "bodysize": 36,
+   "headsize": 50,
+   "columns": [
+    {
+     "orb": {
+      "kind": "jupiter",
+      "r": 40
+     },
+     "label": "Teacher behind",
+     "head": "Teacher turns monk",
+     "lines": [
+      "Wisdom turns inward"
+     ]
+    },
+    {
+     "orb": {
+      "kind": "ketu",
+      "r": 38
+     },
+     "label": "Monk behind",
+     "head": "Monk turns teacher",
+     "lines": [
+      "Instinct turns into advice"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "label": "Today, 3:30 PM Toronto time",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 50
+    },
+    {
+     "kind": "ketu",
+     "r": 44,
+     "dx": 90
+    }
+   ],
+   "title": "The teacher passes the monk",
+   "titleclass": "h3",
+   "body": [
+    "Since 31 October the monk led",
+    "From today the teacher leads",
+    "Until the monk leaves on 5 December"
+   ],
+   "bodysize": 40,
+   "bodygap": 8
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 40
+    },
+    {
+     "kind": "ketu",
+     "r": 34,
+     "dx": 92
+    }
+   ],
+   "title": "Who leads in you?",
+   "titleclass": "h2",
+   "subtitle": "Check two grahas in one sign",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Next lesson · Face to face"
+  }
+ ]
+}

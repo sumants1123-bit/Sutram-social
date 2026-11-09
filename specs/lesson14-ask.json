@@ -1,0 +1,111 @@
+{
+ "id": "lesson14-ask",
+ "kicker": "Daily lesson · 14",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 42
+    },
+    {
+     "kind": "rahu",
+     "r": 46,
+     "dx": 430
+    }
+   ],
+   "label": "Nadi · Rule 4",
+   "labelsize": 30,
+   "title": "Face\nto face",
+   "subtitle": "Grahas in opposite signs"
+  },
+  {
+   "type": "text",
+   "label": "Rule 4",
+   "labelsize": 28,
+   "title": "The 7th sign",
+   "titleclass": "h2",
+   "body": [
+    "It sits straight across the circle",
+    "Grahas there look right at each other",
+    "Like two people across a table"
+   ],
+   "bodysize": 44,
+   "bodygap": 10
+  },
+  {
+   "type": "stack",
+   "label": "In the sky now",
+   "labelsize": 24,
+   "title": "Two pairs, face to face",
+   "titleclass": "h3",
+   "items": [
+    [
+     "Lover and auditor",
+     "Venus in Virgo faces Saturn in Pisces:\nlove and money under review"
+    ],
+    [
+     "Soldier and magician",
+     "Mars in Leo faces Rahu in Aquarius:\nbig moves, so check the facts"
+    ]
+   ],
+   "bodysize": 34
+  },
+  {
+   "type": "text",
+   "label": "From this morning",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 38
+    },
+    {
+     "kind": "jupiter",
+     "r": 46,
+     "dx": 96
+    },
+    {
+     "kind": "ketu",
+     "r": 40,
+     "dx": 92
+    }
+   ],
+   "title": "The soldier walks into Leo",
+   "titleclass": "h3",
+   "body": [
+    "He joins the teacher and the monk",
+    "Friday to Monday all three sit\nwithin one degree",
+    "Keep your temper slow this weekend"
+   ],
+   "bodysize": 40,
+   "bodygap": 10
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 34
+    },
+    {
+     "kind": "rahu",
+     "r": 36,
+     "dx": 360
+    }
+   ],
+   "title": "Who faces you?",
+   "titleclass": "h2",
+   "subtitle": "What sits across from your Moon?",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Next lesson · Looking back"
+  }
+ ]
+}

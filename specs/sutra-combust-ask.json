@@ -1,0 +1,120 @@
+{
+ "id": "sutra-combust-ask",
+ "kicker": "Sutra · Combust grahas",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "orbit",
+    "w": 560,
+    "h": 120,
+    "beads": 5,
+    "lit": 2,
+    "tilt": -6
+   },
+   "label": "Combust grahas",
+   "labelsize": 28,
+   "title": "In someone's\nshadow",
+   "subtitle": "When a graha stands too close to the Sun"
+  },
+  {
+   "type": "text",
+   "label": "What it means",
+   "labelsize": 26,
+   "title": "Combust",
+   "titleclass": "h2",
+   "body": [
+    "The old word is asta: set, gone from view",
+    "A graha too close to the king\nis lost in his light",
+    "Its gifts work out of sight"
+   ],
+   "bodysize": 40,
+   "bodygap": 10,
+   "note": "Surya Siddhanta, chapter 9"
+  },
+  {
+   "type": "grid",
+   "label": "In modern life",
+   "labelsize": 24,
+   "title": "Lost in the glare",
+   "titleclass": "h3",
+   "cellsize": 50,
+   "cellpad": 16,
+   "bodysize": 31,
+   "cells": [
+    [
+     "Mercury",
+     "Your words",
+     "The idea your boss presents"
+    ],
+    [
+     "Venus",
+     "Your taste",
+     "You style it, they get the credit"
+    ],
+    [
+     "Mars",
+     "Your drive",
+     "You do the work, someone louder leads"
+    ],
+    [
+     "Jupiter",
+     "Your advice",
+     "It sounds better from someone else"
+    ]
+   ]
+  },
+  {
+   "type": "text",
+   "label": "In the sky today",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 50,
+     "rings": false
+    },
+    {
+     "kind": "mercury",
+     "r": 28,
+     "dx": 88
+    }
+   ],
+   "title": "The messenger, today",
+   "titleclass": "h2",
+   "body": [
+    "Walking backward right beside the king",
+    "Texts and ideas get lost in the glare",
+    "He turns forward on Friday"
+   ],
+   "bodysize": 40,
+   "bodygap": 8
+  },
+  {
+   "type": "quote",
+   "label": "Sutra",
+   "labelsize": 28,
+   "quote": "Too close to the light,\nno one sees you",
+   "source": "Sutram",
+   "quotesize": 68
+  },
+  {
+   "type": "text",
+   "label": "Practical remedy",
+   "labelsize": 26,
+   "title": "Sign your own work",
+   "titleclass": "h2",
+   "body": [
+    "Find which graha sits near your Sun",
+    "Do that work under your own name",
+    "Post it, sign it, present it yourself"
+   ],
+   "bodysize": 40,
+   "bodygap": 8,
+   "closing": "Ask about your Sun at asksutram.com",
+   "after": "Weekly newsletter · sutram.ca/newsletter"
+  }
+ ]
+}

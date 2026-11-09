@@ -1,0 +1,111 @@
+{
+ "id": "sutra-9th-house-ask",
+ "kicker": "Sutra · The 9th house",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "orbit",
+    "w": 560,
+    "h": 120,
+    "beads": 5,
+    "lit": 2,
+    "tilt": -6
+   },
+   "label": "The 9th house",
+   "labelsize": 28,
+   "title": "Luck that\nteaches",
+   "subtitle": "Fortune, teachers and faith"
+  },
+  {
+   "type": "text",
+   "label": "What it means",
+   "labelsize": 26,
+   "title": "Bhagya",
+   "titleclass": "h2",
+   "body": [
+    "The old name for the 9th house: fortune",
+    "It holds your father, teachers and faith",
+    "Long trips and higher study live here too"
+   ],
+   "bodysize": 40,
+   "bodygap": 10
+  },
+  {
+   "type": "grid",
+   "label": "In modern life",
+   "labelsize": 24,
+   "title": "What it covers",
+   "titleclass": "h3",
+   "cellsize": 50,
+   "cellpad": 16,
+   "bodysize": 31,
+   "cells": [
+    [
+     "Fortune",
+     "Lucky breaks",
+     "The job that found you"
+    ],
+    [
+     "Teachers",
+     "Mentors",
+     "The professor who vouched for you"
+    ],
+    [
+     "Faith",
+     "What you believe",
+     "Your reason to keep going"
+    ],
+    [
+     "Long trips",
+     "Travel and study",
+     "The year abroad that changed you"
+    ]
+   ]
+  },
+  {
+   "type": "text",
+   "label": "How it works",
+   "labelsize": 26,
+   "orb": {
+    "kind": "jupiter",
+    "r": 60
+   },
+   "title": "Luck has a teacher",
+   "titleclass": "h2",
+   "body": [
+    "The teacher (Jupiter) looks after this house",
+    "Luck comes through people who taught you",
+    "The more you listen, the luckier you get"
+   ],
+   "bodysize": 40,
+   "bodygap": 8
+  },
+  {
+   "type": "quote",
+   "label": "Sutra",
+   "labelsize": 28,
+   "quote": "Luck is a teacher\nyou listened to",
+   "source": "Sutram",
+   "quotesize": 72
+  },
+  {
+   "type": "text",
+   "label": "Practical remedy",
+   "labelsize": 26,
+   "title": "Thank a teacher",
+   "titleclass": "h2",
+   "body": [
+    "Find your 9th house and what sits there",
+    "Write to one teacher this week",
+    "Thursday is the teacher's day"
+   ],
+   "bodysize": 40,
+   "bodygap": 8,
+   "closing": "Ask about your 9th house at asksutram.com",
+   "after": "Weekly newsletter · sutram.ca/newsletter"
+  }
+ ]
+}

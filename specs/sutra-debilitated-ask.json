@@ -1,0 +1,142 @@
+{
+ "id": "sutra-debilitated-ask",
+ "kicker": "Sutra · Debilitated grahas",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "orbit",
+    "w": 560,
+    "h": 120,
+    "beads": 5,
+    "lit": 2,
+    "tilt": -6
+   },
+   "label": "Debilitated grahas",
+   "labelsize": 28,
+   "title": "The wrong\nroom",
+   "subtitle": "When a graha sits in its weakest sign"
+  },
+  {
+   "type": "text",
+   "label": "What it means",
+   "labelsize": 26,
+   "title": "Neecha",
+   "titleclass": "h2",
+   "body": [
+    "Sanskrit for low",
+    "Each graha has one weakest sign",
+    "and one best sign (exalted)"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "note": "Brihat Parashara Hora Shastra, chapter 3"
+  },
+  {
+   "type": "rows",
+   "label": "Weakest signs",
+   "labelsize": 24,
+   "title": "Who's in the wrong room",
+   "titleclass": "h3",
+   "items": [
+    [
+     "The king",
+     "Sun in Libra"
+    ],
+    [
+     "The mother",
+     "Moon in Scorpio"
+    ],
+    [
+     "The soldier",
+     "Mars in Cancer"
+    ],
+    [
+     "The messenger",
+     "Mercury in Pisces"
+    ],
+    [
+     "The teacher",
+     "Jupiter in Capricorn"
+    ],
+    [
+     "The lover",
+     "Venus in Virgo"
+    ],
+    [
+     "The auditor",
+     "Saturn in Aries"
+    ]
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "text",
+   "label": "The fall can be undone",
+   "labelsize": 26,
+   "title": "Neecha bhanga",
+   "titleclass": "h2",
+   "body": [
+    "One rule: the owner of that sign sits",
+    "in the 1st, 4th, 7th or 10th",
+    "from your Ascendant or Moon"
+   ],
+   "bodysize": 38,
+   "bodygap": 10,
+   "note": "Phaladeepika 7.26",
+   "closing": "The weak spot becomes a hard-won skill"
+  },
+  {
+   "type": "text",
+   "label": "In the sky now",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 46,
+     "rings": false
+    },
+    {
+     "kind": "venus",
+     "r": 40,
+     "dx": 280
+    }
+   ],
+   "title": "Two in the wrong room",
+   "titleclass": "h3",
+   "body": [
+    "The king (Sun) in Libra, until Monday",
+    "The lover (Venus) in Virgo, until the 22nd",
+    "Easy on pride and on spending"
+   ],
+   "bodysize": 38,
+   "bodygap": 8
+  },
+  {
+   "type": "quote",
+   "label": "Sutra",
+   "labelsize": 28,
+   "quote": "A skill learned\nthe long way\nis still a skill",
+   "source": "Sutram",
+   "quotesize": 68
+  },
+  {
+   "type": "text",
+   "label": "Practical remedy",
+   "labelsize": 26,
+   "title": "Practice the weak spot",
+   "titleclass": "h2",
+   "body": [
+    "Find any graha in its weakest sign\nin your chart",
+    "Name the skill it holds",
+    "Practice it on purpose, ten minutes a day"
+   ],
+   "bodysize": 40,
+   "bodygap": 8,
+   "closing": "Ask about your weakest graha at asksutram.com",
+   "after": "Weekly newsletter · sutram.ca/newsletter"
+  }
+ ]
+}

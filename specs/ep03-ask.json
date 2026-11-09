@@ -1,0 +1,216 @@
+{
+ "id": "ep03-ask",
+ "kicker": "The Thread · Episode 3",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "orbit",
+    "w": 700,
+    "h": 150,
+    "beads": 5,
+    "tilt": -7,
+    "lit": 4
+   },
+   "title": "The person\nof Time",
+   "subtitle": "An old map that puts the whole sky\ninside one person"
+  },
+  {
+   "type": "text",
+   "label": "The Rig Veda",
+   "labelsize": 26,
+   "title": "A giant person",
+   "titleclass": "h2",
+   "body": [
+    "An old hymn tells of a giant person",
+    "whose body became the world",
+    "The Moon came from his mind,\nthe Sun from his eye"
+   ],
+   "bodysize": 40,
+   "bodygap": 14,
+   "note": "Rig Veda 10.90, the Purusha Sukta"
+  },
+  {
+   "type": "text",
+   "label": "Jyotish",
+   "labelsize": 26,
+   "title": "Turned around",
+   "titleclass": "h2",
+   "body": [
+    "Jyotish put the sky inside one person",
+    "and called him Kalapurusha:\nthe person of Time",
+    "His body is the signs,\nhis inner life the grahas"
+   ],
+   "bodysize": 40,
+   "bodygap": 14
+  },
+  {
+   "type": "list",
+   "label": "His body",
+   "labelsize": 24,
+   "title": "Head to feet",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Aries",
+     "head"
+    ],
+    [
+     "Taurus",
+     "face"
+    ],
+    [
+     "Gemini",
+     "arms"
+    ],
+    [
+     "Cancer",
+     "heart"
+    ],
+    [
+     "Leo",
+     "belly"
+    ],
+    [
+     "Virgo",
+     "waist"
+    ],
+    [
+     "Libra",
+     "lower belly"
+    ],
+    [
+     "Scorpio",
+     "groin"
+    ],
+    [
+     "Sagittarius",
+     "thighs"
+    ],
+    [
+     "Capricorn",
+     "knees"
+    ],
+    [
+     "Aquarius",
+     "calves"
+    ],
+    [
+     "Pisces",
+     "feet"
+    ]
+   ],
+   "note": "Brihat Parashara Hora Shastra, chapter 4"
+  },
+  {
+   "type": "rows",
+   "label": "Brihat Jataka 2.1",
+   "labelsize": 24,
+   "title": "His inner life",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Sun",
+     "soul"
+    ],
+    [
+     "Moon",
+     "mind"
+    ],
+    [
+     "Mars",
+     "strength"
+    ],
+    [
+     "Mercury",
+     "speech"
+    ],
+    [
+     "Jupiter",
+     "knowledge, happiness"
+    ],
+    [
+     "Venus",
+     "desire"
+    ],
+    [
+     "Saturn",
+     "sorrow"
+    ]
+   ],
+   "bodysize": 40,
+   "note": "Rahu and Ketu are not in this verse"
+  },
+  {
+   "type": "stack",
+   "label": "In real life",
+   "labelsize": 24,
+   "title": "Ask the right one",
+   "titleclass": "h3",
+   "items": [
+    [
+     "No energy?",
+     "The soldier (Mars): move first, think later"
+    ],
+    [
+     "Words come out wrong?",
+     "The messenger (Mercury): write it, then send"
+    ],
+    [
+     "A heavy week?",
+     "The auditor (Saturn): do one hard thing well"
+    ]
+   ],
+   "bodysize": 34
+  },
+  {
+   "type": "quote",
+   "label": "Rig Veda",
+   "labelsize": 26,
+   "quote": "The Moon was born from his mind,\nthe Sun from his eye",
+   "source": "Rig Veda 10.90.13",
+   "body": [
+    "The old hymn and Jyotish agree",
+    "In your chart, too, the Moon is the mind"
+   ],
+   "bodysize": 36,
+   "quotesize": 62
+  },
+  {
+   "type": "text",
+   "label": "Read it in your chart",
+   "labelsize": 26,
+   "title": "Find a graha at home",
+   "titleclass": "h2",
+   "body": [
+    "Open your free chart at sutram.ca/chart",
+    "Look for a graha in its own sign",
+    "That part of the person of Time\nruns strong in you"
+   ],
+   "bodysize": 40,
+   "bodygap": 12
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "orbit",
+    "w": 560,
+    "h": 120,
+    "beads": 5,
+    "tilt": -6,
+    "lit": 4
+   },
+   "title": "Which runs strongest?",
+   "titleclass": "h2",
+   "subtitle": "Soul, mind, strength, speech,\nknowledge, desire or sorrow",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 40,
+   "next": "Next Wednesday · The three strands"
+  }
+ ]
+}

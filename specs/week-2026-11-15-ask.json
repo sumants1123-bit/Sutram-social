@@ -1,0 +1,169 @@
+{
+ "id": "week-2026-11-15-ask",
+ "kicker": "Week ahead · 16 to 22 November",
+ "decor_theme": "solar",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orb": {
+    "kind": "sun",
+    "r": 95
+   },
+   "title": "The king\ngets stronger",
+   "subtitle": "The Sun moves into Scorpio on Monday:\nwhat it means for your Moon sign"
+  },
+  {
+   "type": "text",
+   "label": "How to read it",
+   "labelsize": 26,
+   "title": "Count from\nyour Moon",
+   "titleclass": "h2",
+   "body": [
+    "The king (Sun) stays a month in each sign",
+    "His best spots from your Moon:\n3rd, 6th, 10th, 11th"
+   ],
+   "bodysize": 38,
+   "note": "Phaladeepika, chapter 26",
+   "closing": "Don't know your Moon sign?\nAsk at asksutram.com"
+  },
+  {
+   "type": "grid",
+   "cellsize": 52,
+   "cellpad": 16,
+   "bodysize": 32,
+   "label": "From 16 November",
+   "labelsize": 24,
+   "title": "Find your Moon sign",
+   "titleclass": "h3",
+   "cells": [
+    [
+     "Aries Moon",
+     "8th house",
+     "Quiet month; mind your health"
+    ],
+    [
+     "Taurus Moon",
+     "7th house",
+     "Partner, clients; drop the ego"
+    ],
+    [
+     "Gemini Moon",
+     "6th house",
+     "Beat deadlines and rivals",
+     true
+    ],
+    [
+     "Cancer Moon",
+     "5th house",
+     "Kids, study, romance; less stress"
+    ],
+    [
+     "Leo Moon",
+     "4th house",
+     "Home and mother; rest more"
+    ],
+    [
+     "Virgo Moon",
+     "3rd house",
+     "Courage; make the pitch",
+     true
+    ]
+   ],
+   "note": "Amber: the Sun's best spots"
+  },
+  {
+   "type": "grid",
+   "cellsize": 52,
+   "cellpad": 16,
+   "bodysize": 32,
+   "label": "From 16 November",
+   "labelsize": 24,
+   "title": "Find your Moon sign",
+   "titleclass": "h3",
+   "cells": [
+    [
+     "Libra Moon",
+     "2nd house",
+     "Money talks; watch your words"
+    ],
+    [
+     "Scorpio Moon",
+     "1st house",
+     "You in focus; don't overheat"
+    ],
+    [
+     "Sagittarius Moon",
+     "12th house",
+     "Spending, travel, sleep"
+    ],
+    [
+     "Capricorn Moon",
+     "11th house",
+     "Gains and good friends",
+     true
+    ],
+    [
+     "Aquarius Moon",
+     "10th house",
+     "Career push; the boss notices",
+     true
+    ],
+    [
+     "Pisces Moon",
+     "9th house",
+     "Father, teachers, long trips"
+    ]
+   ],
+   "note": "Amber: the Sun's best spots"
+  },
+  {
+   "type": "stack",
+   "label": "Also this week",
+   "labelsize": 24,
+   "title": "Mark your calendar",
+   "items": [
+    [
+     "Monday 16",
+     "The king walks into Scorpio,\nout of his weakest sign"
+    ],
+    [
+     "Friday 20",
+     "The mother (Moon) meets the auditor (Saturn):\nfinish one chore"
+    ],
+    [
+     "Sunday 22",
+     "The lover (Venus) walks home into Libra"
+    ]
+   ],
+   "bodysize": 34
+  },
+  {
+   "type": "quote",
+   "label": "The Upanishads",
+   "labelsize": 26,
+   "quote": "When he shines,\neverything shines after him",
+   "source": "Katha Upanishad 2.2.15",
+   "body": [
+    "The line is about the Self,\nthe light behind every light",
+    "In your chart, the Sun shows where you shine"
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "cta",
+   "orb": {
+    "kind": "sun",
+    "r": 70
+   },
+   "title": "Ask your chart",
+   "titleclass": "h2",
+   "subtitle": "What the Sun in Scorpio means for you",
+   "lines": [
+    "asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 40
+  }
+ ]
+}

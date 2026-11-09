@@ -1,0 +1,152 @@
+{
+ "id": "lesson11-ask",
+ "kicker": "Daily lesson · 11",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 46,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 40,
+     "illum": 0.35,
+     "waxing": true,
+     "dx": 104
+    },
+    {
+     "kind": "mercury",
+     "r": 30,
+     "dx": 92
+    }
+   ],
+   "label": "Nadi · Rule 1",
+   "labelsize": 30,
+   "title": "Same room",
+   "subtitle": "Grahas in one sign share one story"
+  },
+  {
+   "type": "text",
+   "label": "Bhrigu Nandi Nadi",
+   "labelsize": 28,
+   "title": "Read the signs",
+   "titleclass": "h2",
+   "body": [
+    "An old way to read a chart,\nnamed for the sage Bhrigu and Nandi",
+    "Look at the sign each graha sits in",
+    "Then see who sits with whom"
+   ],
+   "bodysize": 42,
+   "bodygap": 12
+  },
+  {
+   "type": "text",
+   "label": "Rule 1",
+   "labelsize": 28,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 46
+    },
+    {
+     "kind": "ketu",
+     "r": 40,
+     "dx": 100
+    }
+   ],
+   "title": "Same sign,\nsame room",
+   "titleclass": "h2",
+   "body": [
+    "Two grahas in one sign live together",
+    "Their stories mix",
+    "The strongest link in Nadi"
+   ],
+   "bodysize": 44,
+   "bodygap": 8
+  },
+  {
+   "type": "stack",
+   "label": "In real life",
+   "labelsize": 26,
+   "title": "Who shares your room?",
+   "titleclass": "h3",
+   "items": [
+    [
+     "Teacher + soldier",
+     "A coach who pushes you, a lawyer who fights"
+    ],
+    [
+     "Lover + auditor",
+     "Love that starts slow and lasts"
+    ],
+    [
+     "Messenger + lover",
+     "Words that charm: sales, design, the first text"
+    ]
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "text",
+   "label": "In the sky today",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 46,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 40,
+     "illum": 0.35,
+     "waxing": true,
+     "dx": 104
+    },
+    {
+     "kind": "mercury",
+     "r": 30,
+     "dx": 92
+    }
+   ],
+   "title": "Three in Libra",
+   "titleclass": "h2",
+   "body": [
+    "The king, the mother and the messenger",
+    "The mother moves on at 4:20 PM",
+    "Over in Leo: the teacher and the monk"
+   ],
+   "bodysize": 40,
+   "bodygap": 8,
+   "note": "Toronto time"
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 40
+    },
+    {
+     "kind": "ketu",
+     "r": 34,
+     "dx": 92
+    }
+   ],
+   "title": "Find your rooms",
+   "titleclass": "h2",
+   "subtitle": "Which grahas share a sign in your chart?",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Next lesson · Ahead and behind"
+  }
+ ]
+}
