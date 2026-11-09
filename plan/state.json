@@ -1,695 +1,813 @@
 {
-  "posted": [
+ "posted": [
+  {
+   "id": "intro",
+   "when": "2026-10-26T17:56:00-04:00",
+   "url": "https://www.instagram.com/p/De-TKPWjYy8/",
+   "note": "replaced by intro2; Sumant deletes or archives it"
+  },
+  {
+   "id": "intro2",
+   "when": "2026-10-26T18:46:00-04:00",
+   "url": "https://www.instagram.com/p/De-Y8RTCouV/",
+   "note": "pinned intro"
+  },
+  {
+   "id": "venus-rose-2026",
+   "when": "2026-10-27T09:51:00-04:00",
+   "url": "https://www.instagram.com/p/DfAAbrhDYvb/"
+  },
+  {
+   "id": "ascendant-moon-sun",
+   "when": "2026-10-27T13:11:00-04:00",
+   "url": "https://www.instagram.com/p/DfAXbAQiBBH/"
+  },
+  {
+   "id": "nov-2026-sky",
+   "when": "2026-10-27T18:30:00-04:00",
+   "url": "https://www.instagram.com/p/DfA73jrjeyC/"
+  },
+  {
+   "id": "sky-2026-10-28-v2",
+   "when": "2026-10-28T07:00:00-04:00",
+   "url": "https://www.instagram.com/p/DfCR908iAvt/"
+  },
+  {
+   "id": "lesson01-v2",
+   "when": "2026-10-28T12:00:00-04:00",
+   "url": "https://www.instagram.com/p/DfC0i6XiMi8/",
+   "title": "Lesson 1: what, how, where"
+  },
+  {
+   "id": "ep01-v2",
+   "when": "2026-10-28T18:30:00-04:00",
+   "url": "https://www.instagram.com/p/DfDgqSrjRpk/",
+   "title": "The Thread Ep 1: Body, mind, soul"
+  },
+  {
+   "id": "sky-2026-10-29-v2",
+   "when": "2026-10-29T07:00:00-04:00",
+   "url": "https://www.instagram.com/p/DfE2w7WCFAH/"
+  },
+  {
+   "id": "lesson02-v3",
+   "when": "2026-10-29T12:00:00-04:00",
+   "url": "https://www.instagram.com/p/DfFZRuOiMRa/",
+   "title": "Lesson 2: the Sun"
+  },
+  {
+   "id": "jupiter-ketu-2026-v3",
+   "when": "2026-10-30T09:42:00-04:00",
+   "url": "https://www.instagram.com/p/DfHt71eChzY/",
+   "title": "Jupiter meets Ketu (current transit, graha characters)"
+  },
+  {
+   "id": "jupiter-leo-2026",
+   "when": "2026-10-31T10:35:00-04:00",
+   "url": "https://www.instagram.com/p/DfKY0LviK4p/",
+   "title": "Jupiter in Leo: the teacher walks into the king's palace"
+  },
+  {
+   "id": "sutra-upachaya-ask2",
+   "when": "2026-11-01T10:00:00-05:00",
+   "url": "https://www.instagram.com/p/DfNA0yZjchj/",
+   "title": "Sutra: Houses that grow (upachaya)"
+  },
+  {
+   "id": "lesson04-ask2",
+   "when": "2026-11-01T11:00:00-05:00",
+   "url": "https://www.instagram.com/p/DfNH05wDffd/",
+   "title": "Lesson 4: Mars, the soldier (re-post)"
+  }
+ ],
+ "scheduled": [
+  {
+   "id": "close-2026-10-29-mercury-v3-ask",
+   "when": "2026-10-29T18:30:00-04:00",
+   "title": "Mercury retrograde, house by house",
+   "metricool_id": 410318495
+  },
+  {
+   "id": "sky-2026-10-30-ask",
+   "when": "2026-10-30T07:00:00-04:00",
+   "metricool_id": 410320291
+  },
+  {
+   "id": "lesson03-ask2",
+   "when": "2026-10-30T12:00:00-04:00",
+   "title": "Lesson 3: the Moon, the mother",
+   "metricool_id": 411229762
+  },
+  {
+   "id": "scripture-2026-10-30-v2-ask",
+   "when": "2026-10-30T18:30:00-04:00",
+   "title": "Know yourself, five ways",
+   "metricool_id": 410321165
+  },
+  {
+   "id": "sky-2026-10-31-ask",
+   "when": "2026-10-31T07:00:00-04:00",
+   "title": "Punarvasu; Jupiter enters Leo; clocks go back",
+   "metricool_id": 411230425
+  },
+  {
+   "id": "lesson04-ask2",
+   "when": "2026-10-31T12:00:00-04:00",
+   "title": "Lesson 4: Mars, the soldier",
+   "metricool_id": 411229983,
+   "note": "failed 31 Oct: Metricool monthly limit; re-posted 1 Nov"
+  },
+  {
+   "id": "jupiter-loops-2026-v2-ask",
+   "when": "2026-10-31T18:30:00-04:00",
+   "title": "Twelve years of Jupiter, the teacher (Sky Patterns)",
+   "metricool_id": 411230705,
+   "note": "failed 31 Oct: Metricool monthly limit; re-posted 1 Nov"
+  },
+  {
+   "id": "sky-2026-11-01-ask",
+   "when": "2026-11-01T07:00:00-05:00",
+   "title": "Pushya; Ahoi Ashtami; back on standard time",
+   "metricool_id": 411230570
+  },
+  {
+   "id": "lesson05-ask2",
+   "when": "2026-11-01T12:00:00-05:00",
+   "title": "Lesson 5: Mercury, the messenger",
+   "metricool_id": 411230122
+  },
+  {
+   "id": "week-2026-11-01-ask2",
+   "when": "2026-11-01T18:30:00-05:00",
+   "title": "Week ahead: Jupiter in Leo, for your Moon sign",
+   "metricool_id": 410324068
+  },
+  {
+   "id": "sutra-12th-house-ask",
+   "when": "2026-10-29T15:00:00-04:00",
+   "title": "Sutra: the 12th house, your rest budget",
+   "metricool_id": 410318210
+  },
+  {
+   "id": "sutra-sade-sati-ask",
+   "when": "2026-10-30T10:00:00-04:00",
+   "title": "Sutra: Sade Sati, Saturn's audit",
+   "metricool_id": 410320550
+  },
+  {
+   "id": "sutra-8th-house-ask",
+   "when": "2026-10-31T10:00:00-04:00",
+   "title": "Sutra: the 8th house, other people's money",
+   "metricool_id": 410321863
+  },
+  {
+   "id": "sutra-upachaya-ask2",
+   "when": "2026-11-01T10:00:00-05:00",
+   "title": "Sutra: houses that grow (hard grahas)",
+   "metricool_id": 411230294
+  },
+  {
+   "id": "story-teacher-monk",
+   "when": "2026-11-02T18:30:00-05:00",
+   "title": "Graha stories 1: when the teacher meets the monk",
+   "metricool_id": 411231022
+  },
+  {
+   "id": "as-above-so-below-v3",
+   "when": "2026-11-03T18:30:00-05:00",
+   "title": "As above, so below: six times since 1600 (v3: timeline shows only the four clear matches)",
+   "metricool_id": 412266988
+  },
+  {
+   "id": "lesson04-ask2",
+   "when": "2026-11-01T11:00:00-05:00",
+   "title": "Lesson 4: Mars, the soldier (re-post; Oct limit failed it)",
+   "metricool_id": 413002986
+  },
+  {
+   "id": "jupiter-loops-2026-v3-ask",
+   "when": "2026-11-01T15:00:00-05:00",
+   "title": "Twelve years of Jupiter (re-post, dated since Saturday)",
+   "metricool_id": 413003823
+  },
+  {
+   "id": "sutra-dasha-ask",
+   "when": "2026-11-02T10:00:00-05:00",
+   "title": "Sutra: Your dasha",
+   "metricool_id": 413003904
+  },
+  {
+   "id": "lesson06-ask",
+   "when": "2026-11-02T12:00:00-05:00",
+   "title": "Lesson 6: Jupiter, the teacher",
+   "metricool_id": 413004024
+  },
+  {
+   "id": "sutra-2nd-house-ask",
+   "when": "2026-11-03T10:00:00-05:00",
+   "title": "Sutra: The 2nd house",
+   "metricool_id": 413004130
+  },
+  {
+   "id": "lesson07-ask",
+   "when": "2026-11-03T12:00:00-05:00",
+   "title": "Lesson 7: Venus, the lover",
+   "metricool_id": 413004220
+  },
+  {
+   "id": "sutra-retrograde-ask",
+   "when": "2026-11-04T10:00:00-05:00",
+   "title": "Sutra: Second drafts (a graha walking backward)",
+   "metricool_id": 413070236
+  },
+  {
+   "id": "lesson08-ask",
+   "when": "2026-11-04T12:00:00-05:00",
+   "title": "Lesson 8: Saturn, the auditor",
+   "metricool_id": 413070390
+  },
+  {
+   "id": "ep02-ask",
+   "when": "2026-11-04T18:30:00-05:00",
+   "title": "The Thread Ep 2: Five layers of you",
+   "metricool_id": 416651238
+  },
+  {
+   "id": "ask-november-ask2",
+   "when": "2026-11-06T10:00:00-05:00",
+   "title": "Ask Sutram: Five questions for November",
+   "metricool_id": 413952364
+  },
+  {
+   "id": "ask-intro-app2",
+   "when": "2026-11-02T15:00:00-05:00",
+   "title": "Meet Ask Sutram (app look, real screenshots)",
+   "metricool_id": 413972819
+  },
+  {
+   "id": "sutra-card-5th-house-ask",
+   "when": "2026-11-05T10:00:00-05:00",
+   "metricool_id": 415312589
+  },
+  {
+   "id": "lesson09-ask",
+   "when": "2026-11-05T12:00:00-05:00",
+   "metricool_id": 415312726
+  },
+  {
+   "id": "sutra-card-4th-house-ask",
+   "when": "2026-11-06T10:00:00-05:00",
+   "metricool_id": 415312835
+  },
+  {
+   "id": "lesson10-ask",
+   "when": "2026-11-06T12:00:00-05:00",
+   "metricool_id": 415313001
+  },
+  {
+   "id": "diwali-2026",
+   "when": "2026-11-08T10:00:00-05:00",
+   "metricool_id": 415313170
+  },
+  {
+   "id": "dreamer-ask",
+   "title": "Everyone in the dream is the dreamer",
+   "when": "2026-11-07 18:30",
+   "via": "metricool",
+   "metricool_id": 418955745
+  },
+  {
+   "id": "sutra-combust-ask",
+   "when": "2026-11-09T10:00:00-05:00",
+   "title": "Sutra: Combust, in someone's shadow",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14f61cac9d7525f6ad418"
+  },
+  {
+   "id": "lesson11-ask",
+   "when": "2026-11-09T12:00:00-05:00",
+   "title": "Lesson 11: Nadi rule 1, same room",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14f917522f65ac0bca658"
+  },
+  {
+   "id": "lesson12-ask",
+   "when": "2026-11-10T12:00:00-05:00",
+   "title": "Lesson 12: Nadi rule 2, ahead and behind",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14f99796ccae26683917e"
+  },
+  {
+   "id": "lesson13-ask",
+   "when": "2026-11-11T12:00:00-05:00",
+   "title": "Lesson 13: Nadi rule 3, who walks in front",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14fa1e29b1359f0cc6e9f"
+  },
+  {
+   "id": "ep03-ask",
+   "when": "2026-11-11T18:30:00-05:00",
+   "title": "The Thread Ep 3: The person of Time",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14fae2f1ff83d45166b54"
+  },
+  {
+   "id": "sutra-9th-house-ask",
+   "when": "2026-11-12T10:00:00-05:00",
+   "title": "Sutra: the 9th house, luck that teaches",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14fb7796ccae266839900"
+  },
+  {
+   "id": "lesson14-ask",
+   "when": "2026-11-12T12:00:00-05:00",
+   "title": "Lesson 14: Nadi rule 4, face to face",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14fbfe29b1359f0cc7566"
+  },
+  {
+   "id": "lesson15-ask",
+   "when": "2026-11-13T12:00:00-05:00",
+   "title": "Lesson 15: Nadi rule 5, looking back",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14fc7796ccae266839b4f"
+  },
+  {
+   "id": "sutra-debilitated-ask",
+   "when": "2026-11-14T10:00:00-05:00",
+   "title": "Sutra: debilitated grahas, the wrong room",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14fd27522f65ac0bcb8ff"
+  },
+  {
+   "id": "week-2026-11-15-ask",
+   "when": "2026-11-15T18:30:00-05:00",
+   "title": "Week ahead 16-22 Nov: the king gets stronger",
+   "via": "buffer-instagram",
+   "buffer_id": "6af14fdd2f1ff83d451676bf"
+  }
+ ],
+ "retired": [
+  "intro",
+  "ep01",
+  "lesson01",
+  "sky-2026-10-28",
+  "sky-2026-10-29",
+  "lesson02",
+  "lesson02-v2",
+  "close-2026-10-29-mercury",
+  "close-2026-10-29-mercury-v2",
+  "scripture-2026-10-30",
+  "jupiter-loops-2026",
+  "close-2026-10-29-mercury-v3",
+  "sky-2026-10-30",
+  "lesson03",
+  "scripture-2026-10-30-v2",
+  "sky-2026-10-31",
+  "lesson04",
+  "jupiter-loops-2026-v2",
+  "sky-2026-11-01",
+  "lesson05",
+  "week-2026-11-01",
+  "sutra-12th-house",
+  "sutra-sade-sati",
+  "sutra-8th-house",
+  "sutra-upachaya",
+  "lesson03-ask",
+  "lesson04-ask",
+  "lesson05-ask",
+  "sutra-upachaya-ask",
+  "jupiter-ketu-2026",
+  "jupiter-ketu-2026-v2",
+  "as-above-so-below",
+  "as-above-so-below-v2"
+ ],
+ "next_lesson": 16,
+ "next_thread_episode": 4,
+ "next_thread_title": "The person of Time",
+ "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
+ "next_to_make": [
+  "Tue lean run: Thu 5 Nov 10 AM 5th-house card, 12 PM Lesson 9 Rahu; Fri 6 Nov 10 AM 4th-house card, 12 PM Lesson 10 Ketu; Sun 8 Nov 10 AM Diwali",
+  "Sun 8 Nov 7 PM weekly batch: Mon 9-Sun 15 Nov, 10 Instagram + 8 X"
+ ],
+ "sky_patterns_ideas": [
+  "The 60-year clock (5 Jupiter laps = 2 Saturn laps = one Samvatsara cycle)",
+  "Mercury's triangle (three passes a year)",
+  "The Moon's 27 stars",
+  "Mars loops"
+ ],
+ "design": "v4 (29 Oct): text about 15% larger. Backgrounds rotate across five themes (solar, lunar, zodiac, jupiter, thread; tools/render.py theme_for). Sky posts use the lunar strip with the real Moon phase lit. Mars orb redrawn with polar cap and dark lands. New slide type: compare (two columns, strong vs weak).",
+ "times": "Toronto is UTC-4 until 1 Nov 2 AM, then UTC-5",
+ "sutra": {
+  "instagram": "one Sutra carousel a day at 10 AM (Metricool's best Instagram hour); thread background; cover with the five-pearl thread",
+  "x": "X goes through Typefully (connected 31 Oct; social set 355705, @koham1323) instead of Metricool's paid add-on. Free plan: 10 published posts a month (quota resets on the 1st, UTC). Each Sutra is a 2-post thread: the post with its card, then a reply with asksutram.com first and sutram.ca/newsletter second. Images: Typefully's upload host (typefully-user-uploads.s3.amazonaws.com) is blocked from the workspace until Sumant allows it in claude.ai Settings > Capabilities, so drafts are created as planned (inert) with the card noted in the draft's notes.",
+  "x_queue": [
+   {
+    "n": 1,
+    "draft": "x-drafts/1-twelfth-house.txt",
+    "card": "posts/sutra-12th-house-ask/sutra-12th-house-ask-4.jpg"
+   },
+   {
+    "n": 2,
+    "draft": "x-drafts/2-upachaya.txt",
+    "card": "posts/sutra-card-upachaya-ask/sutra-card-upachaya-ask-1.jpg"
+   },
+   {
+    "n": 3,
+    "draft": "x-drafts/3-eighth-house.txt",
+    "card": "posts/sutra-card-8th-house-ask/sutra-card-8th-house-ask-1.jpg"
+   },
+   {
+    "n": 4,
+    "draft": "x-drafts/4-sade-sati.txt",
+    "card": "posts/sutra-card-sade-sati-ask/sutra-card-sade-sati-ask-1.jpg"
+   },
+   {
+    "n": 5,
+    "draft": "x-drafts/5-dasha.txt",
+    "card": "posts/sutra-card-dasha-ask/sutra-card-dasha-ask-1.jpg"
+   },
+   {
+    "n": 6,
+    "draft": "x-drafts/6-second-house.txt",
+    "card": "posts/sutra-card-2nd-house-ask/sutra-card-2nd-house-ask-1.jpg"
+   },
+   {
+    "n": 7,
+    "draft": "x-drafts/7-retrograde.txt",
+    "card": "posts/sutra-card-retrograde-ask/sutra-card-retrograde-ask-1.jpg"
+   },
+   {
+    "n": 8,
+    "draft": "x-drafts/8-fifth-house.txt",
+    "card": "posts/sutra-card-5th-house-ask/sutra-card-5th-house-ask-1.jpg"
+   },
+   {
+    "n": 9,
+    "draft": "x-drafts/9-fourth-house.txt",
+    "card": "posts/sutra-card-4th-house-ask/sutra-card-4th-house-ask-1.jpg"
+   }
+  ],
+  "instagram_next": [
+   "11th house",
+   "Rahu and Ketu: what you chase and what you already have (they change signs 5 Dec)",
+   "10th house",
+   "Moon phase at birth (after Ep 5, 25 Nov)",
+   "7th house"
+  ],
+  "topic_ideas": [
+   "11th house: your income travels through people",
+   "Rahu and Ketu: what you chase and what you already have (they change signs 5 Dec)",
+   "debilitated planets and neecha bhanga: a skill learned the long way",
+   "combust planets: talent in someone's shadow",
+   "9th house: luck as a teacher you listened to",
+   "10th house: what people call you when you leave the room",
+   "Moon phase at birth",
+   "7th house: what partners teach you"
+  ],
+  "style": "Sumant, 29 Oct: add a little more explanation, wording clear for modern city people, nothing half-baked; every example says why it belongs to the house; explain any technical step in plain words",
+  "typefully": {
+   "social_set_id": 355705,
+   "planned": [
     {
-      "id": "intro",
-      "when": "2026-10-26T17:56:00-04:00",
-      "url": "https://www.instagram.com/p/De-TKPWjYy8/",
-      "note": "replaced by intro2; Sumant deletes or archives it"
+     "draft_id": 11603498,
+     "when": "2026-10-31T13:00:00-04:00",
+     "what": "Jupiter meets Ketu thread (11 posts; images: jupiter-ketu-2026-v3 slides 1-3)"
     },
     {
-      "id": "intro2",
-      "when": "2026-10-26T18:46:00-04:00",
-      "url": "https://www.instagram.com/p/De-Y8RTCouV/",
-      "note": "pinned intro"
+     "draft_id": 11603503,
+     "when": "2026-10-31T15:30:00-04:00",
+     "what": "Sutra: grahas walking backward (card sutra-card-retrograde-ask2)"
     },
     {
-      "id": "venus-rose-2026",
-      "when": "2026-10-27T09:51:00-04:00",
-      "url": "https://www.instagram.com/p/DfAAbrhDYvb/"
+     "draft_id": 11603504,
+     "when": "2026-10-31T18:30:00-04:00",
+     "what": "Sutra: Sade Sati, the auditor's audit (card sutra-card-sade-sati-ask)"
     },
     {
-      "id": "ascendant-moon-sun",
-      "when": "2026-10-27T13:11:00-04:00",
-      "url": "https://www.instagram.com/p/DfAXbAQiBBH/"
+     "draft_id": 11603507,
+     "when": "2026-11-01T09:00:00-05:00",
+     "what": "Sutra: the 12th house (card sutra-12th-house-ask slide 4)"
     },
     {
-      "id": "nov-2026-sky",
-      "when": "2026-10-27T18:30:00-04:00",
-      "url": "https://www.instagram.com/p/DfA73jrjeyC/"
-    },
-    {
-      "id": "sky-2026-10-28-v2",
-      "when": "2026-10-28T07:00:00-04:00",
-      "url": "https://www.instagram.com/p/DfCR908iAvt/"
-    },
-    {
-      "id": "lesson01-v2",
-      "when": "2026-10-28T12:00:00-04:00",
-      "url": "https://www.instagram.com/p/DfC0i6XiMi8/",
-      "title": "Lesson 1: what, how, where"
-    },
-    {
-      "id": "ep01-v2",
-      "when": "2026-10-28T18:30:00-04:00",
-      "url": "https://www.instagram.com/p/DfDgqSrjRpk/",
-      "title": "The Thread Ep 1: Body, mind, soul"
-    },
-    {
-      "id": "sky-2026-10-29-v2",
-      "when": "2026-10-29T07:00:00-04:00",
-      "url": "https://www.instagram.com/p/DfE2w7WCFAH/"
-    },
-    {
-      "id": "lesson02-v3",
-      "when": "2026-10-29T12:00:00-04:00",
-      "url": "https://www.instagram.com/p/DfFZRuOiMRa/",
-      "title": "Lesson 2: the Sun"
-    },
-    {
-      "id": "jupiter-ketu-2026-v3",
-      "when": "2026-10-30T09:42:00-04:00",
-      "url": "https://www.instagram.com/p/DfHt71eChzY/",
-      "title": "Jupiter meets Ketu (current transit, graha characters)"
-    },
-    {
-      "id": "jupiter-leo-2026",
-      "when": "2026-10-31T10:35:00-04:00",
-      "url": "https://www.instagram.com/p/DfKY0LviK4p/",
-      "title": "Jupiter in Leo: the teacher walks into the king's palace"
-    },
-    {
-      "id": "sutra-upachaya-ask2",
-      "when": "2026-11-01T10:00:00-05:00",
-      "url": "https://www.instagram.com/p/DfNA0yZjchj/",
-      "title": "Sutra: Houses that grow (upachaya)"
-    },
-    {
-      "id": "lesson04-ask2",
-      "when": "2026-11-01T11:00:00-05:00",
-      "url": "https://www.instagram.com/p/DfNH05wDffd/",
-      "title": "Lesson 4: Mars, the soldier (re-post)"
+     "draft_id": 11603509,
+     "when": "2026-11-04T20:00:00-05:00",
+     "what": "Sutra: houses that grow (card sutra-card-upachaya-ask)"
     }
+   ],
+   "not_loaded_yet": [
+    "3-eighth-house",
+    "5-dasha",
+    "6-second-house",
+    "8-fifth-house",
+    "9-fourth-house"
+   ],
+   "plan": "Sumant, 31 Oct: stay on Typefully's free plan for now, so November's 10 X posts are spread out, about 2 a week, with room kept for timely posts (Diwali 8 Nov, the knot 13 to 16 Nov).",
+   "drafts": [
+    {
+     "draft_id": 11604098,
+     "what": "Jupiter in Leo thread (9 posts); Sumant attaches images (slides 1, 4, 5 on posts 1, 4, 6) then it goes out now"
+    },
+    {
+     "draft_id": 11605231,
+     "what": "As above, so below thread (7 posts); Sumant attaches images (v2 slides 1, 4, 7 on posts 1, 3, 6) and publishes"
+    }
+   ]
+  },
+  "x_route_options": "Working since 31 Oct: Claude -> Zapier connector -> Buffer free -> X @koham1323 (X Premium). One long post replaces a thread (3,207 chars tested), one image by GitHub raw URL works; multiple images and threads don't. Limits: Zapier free 100 tasks a month (2 per call), Buffer free 10 scheduled per channel. Setup details and IDs live in the private project doc claude/x-via-buffer.md. Typefully drafts stay parked (planned or draft, nothing auto-publishes)."
+ },
+ "links": "Sumant, 29 Oct: every post ends with exactly two links, asksutram.com first, then sutram.ca/newsletter; nothing else. Slide footer reads ASKSUTRAM.COM. X replies carry the same two links.",
+ "graha_stories": {
+  "set": "30 Oct 2026, Sumant: grahas as characters, told the Bhrigu Nandi Nadi way, are the essence of all content. Say graha (Sanskrit for 'the one who grabs'), never planet. Project doc: claude/graha-stories.md",
+  "cast": {
+   "Sun": "the king",
+   "Moon": "the mother",
+   "Mars": "the soldier",
+   "Mercury": "the messenger",
+   "Jupiter": "the teacher",
+   "Venus": "the lover",
+   "Saturn": "the auditor",
+   "Rahu": "the magician (smoke is his trick)",
+   "Ketu": "the monk"
+  },
+  "degree_rule": "inside one sign, the graha with more degrees walks in front; the one behind takes on its nature (Sumant's rule)",
+  "retrograde_story": "walking backward, looking back: someone looks back, sees a person drowning, changes path to save them (Sumant)",
+  "made": [
+   "story-teacher-monk"
+  ]
+ },
+ "notes_body": "Body parts follow Parashara's order (BPHS 4): Cancer is the heart, Leo the belly or chest; the Sun, Leo's owner, is the karaka of the heart. Say 'the Sun rules the heart', not 'Leo rules the heart'.",
+ "x_buffer": {
+  "posted": [
+   {
+    "id": "jupiter-leo-x-long",
+    "when": "2026-10-31T13:20:00-04:00",
+    "url": "https://twitter.com/koham1323/status/2116581012901691550"
+   }
   ],
   "scheduled": [
-    {
-      "id": "close-2026-10-29-mercury-v3-ask",
-      "when": "2026-10-29T18:30:00-04:00",
-      "title": "Mercury retrograde, house by house",
-      "metricool_id": 410318495
-    },
-    {
-      "id": "sky-2026-10-30-ask",
-      "when": "2026-10-30T07:00:00-04:00",
-      "metricool_id": 410320291
-    },
-    {
-      "id": "lesson03-ask2",
-      "when": "2026-10-30T12:00:00-04:00",
-      "title": "Lesson 3: the Moon, the mother",
-      "metricool_id": 411229762
-    },
-    {
-      "id": "scripture-2026-10-30-v2-ask",
-      "when": "2026-10-30T18:30:00-04:00",
-      "title": "Know yourself, five ways",
-      "metricool_id": 410321165
-    },
-    {
-      "id": "sky-2026-10-31-ask",
-      "when": "2026-10-31T07:00:00-04:00",
-      "title": "Punarvasu; Jupiter enters Leo; clocks go back",
-      "metricool_id": 411230425
-    },
-    {
-      "id": "lesson04-ask2",
-      "when": "2026-10-31T12:00:00-04:00",
-      "title": "Lesson 4: Mars, the soldier",
-      "metricool_id": 411229983,
-      "note": "failed 31 Oct: Metricool monthly limit; re-posted 1 Nov"
-    },
-    {
-      "id": "jupiter-loops-2026-v2-ask",
-      "when": "2026-10-31T18:30:00-04:00",
-      "title": "Twelve years of Jupiter, the teacher (Sky Patterns)",
-      "metricool_id": 411230705,
-      "note": "failed 31 Oct: Metricool monthly limit; re-posted 1 Nov"
-    },
-    {
-      "id": "sky-2026-11-01-ask",
-      "when": "2026-11-01T07:00:00-05:00",
-      "title": "Pushya; Ahoi Ashtami; back on standard time",
-      "metricool_id": 411230570
-    },
-    {
-      "id": "lesson05-ask2",
-      "when": "2026-11-01T12:00:00-05:00",
-      "title": "Lesson 5: Mercury, the messenger",
-      "metricool_id": 411230122
-    },
-    {
-      "id": "week-2026-11-01-ask2",
-      "when": "2026-11-01T18:30:00-05:00",
-      "title": "Week ahead: Jupiter in Leo, for your Moon sign",
-      "metricool_id": 410324068
-    },
-    {
-      "id": "sutra-12th-house-ask",
-      "when": "2026-10-29T15:00:00-04:00",
-      "title": "Sutra: the 12th house, your rest budget",
-      "metricool_id": 410318210
-    },
-    {
-      "id": "sutra-sade-sati-ask",
-      "when": "2026-10-30T10:00:00-04:00",
-      "title": "Sutra: Sade Sati, Saturn's audit",
-      "metricool_id": 410320550
-    },
-    {
-      "id": "sutra-8th-house-ask",
-      "when": "2026-10-31T10:00:00-04:00",
-      "title": "Sutra: the 8th house, other people's money",
-      "metricool_id": 410321863
-    },
-    {
-      "id": "sutra-upachaya-ask2",
-      "when": "2026-11-01T10:00:00-05:00",
-      "title": "Sutra: houses that grow (hard grahas)",
-      "metricool_id": 411230294
-    },
-    {
-      "id": "story-teacher-monk",
-      "when": "2026-11-02T18:30:00-05:00",
-      "title": "Graha stories 1: when the teacher meets the monk",
-      "metricool_id": 411231022
-    },
-    {
-      "id": "as-above-so-below-v3",
-      "when": "2026-11-03T18:30:00-05:00",
-      "title": "As above, so below: six times since 1600 (v3: timeline shows only the four clear matches)",
-      "metricool_id": 412266988
-    },
-    {
-      "id": "lesson04-ask2",
-      "when": "2026-11-01T11:00:00-05:00",
-      "title": "Lesson 4: Mars, the soldier (re-post; Oct limit failed it)",
-      "metricool_id": 413002986
-    },
-    {
-      "id": "jupiter-loops-2026-v3-ask",
-      "when": "2026-11-01T15:00:00-05:00",
-      "title": "Twelve years of Jupiter (re-post, dated since Saturday)",
-      "metricool_id": 413003823
-    },
-    {
-      "id": "sutra-dasha-ask",
-      "when": "2026-11-02T10:00:00-05:00",
-      "title": "Sutra: Your dasha",
-      "metricool_id": 413003904
-    },
-    {
-      "id": "lesson06-ask",
-      "when": "2026-11-02T12:00:00-05:00",
-      "title": "Lesson 6: Jupiter, the teacher",
-      "metricool_id": 413004024
-    },
-    {
-      "id": "sutra-2nd-house-ask",
-      "when": "2026-11-03T10:00:00-05:00",
-      "title": "Sutra: The 2nd house",
-      "metricool_id": 413004130
-    },
-    {
-      "id": "lesson07-ask",
-      "when": "2026-11-03T12:00:00-05:00",
-      "title": "Lesson 7: Venus, the lover",
-      "metricool_id": 413004220
-    },
-    {
-      "id": "sutra-retrograde-ask",
-      "when": "2026-11-04T10:00:00-05:00",
-      "title": "Sutra: Second drafts (a graha walking backward)",
-      "metricool_id": 413070236
-    },
-    {
-      "id": "lesson08-ask",
-      "when": "2026-11-04T12:00:00-05:00",
-      "title": "Lesson 8: Saturn, the auditor",
-      "metricool_id": 413070390
-    },
-    {
-      "id": "ep02-ask",
-      "when": "2026-11-04T18:30:00-05:00",
-      "title": "The Thread Ep 2: Five layers of you",
-      "metricool_id": 416651238
-    },
-    {
-      "id": "ask-november-ask2",
-      "when": "2026-11-06T10:00:00-05:00",
-      "title": "Ask Sutram: Five questions for November",
-      "metricool_id": 413952364
-    },
-    {
-      "id": "ask-intro-app2",
-      "when": "2026-11-02T15:00:00-05:00",
-      "title": "Meet Ask Sutram (app look, real screenshots)",
-      "metricool_id": 413972819
-    },
-    {
-      "id": "sutra-card-5th-house-ask",
-      "when": "2026-11-05T10:00:00-05:00",
-      "metricool_id": 415312589
-    },
-    {
-      "id": "lesson09-ask",
-      "when": "2026-11-05T12:00:00-05:00",
-      "metricool_id": 415312726
-    },
-    {
-      "id": "sutra-card-4th-house-ask",
-      "when": "2026-11-06T10:00:00-05:00",
-      "metricool_id": 415312835
-    },
-    {
-      "id": "lesson10-ask",
-      "when": "2026-11-06T12:00:00-05:00",
-      "metricool_id": 415313001
-    },
-    {
-      "id": "diwali-2026",
-      "when": "2026-11-08T10:00:00-05:00",
-      "metricool_id": 415313170
-    },
-    {
-      "id": "dreamer-ask",
-      "title": "Everyone in the dream is the dreamer",
-      "when": "2026-11-07 18:30",
-      "via": "metricool",
-      "metricool_id": 418955745
-    }
+   {
+    "id": "jupiter-ketu-x-long",
+    "when": "2026-10-31T16:00:00-04:00",
+    "image": "posts/jupiter-ketu-2026-v3/jupiter-ketu-2026-v3-1.jpg"
+   },
+   {
+    "id": "sutra-retrograde",
+    "when": "2026-10-31T19:30:00-04:00",
+    "image": "posts/sutra-card-retrograde-ask2/sutra-card-retrograde-ask2-1.jpg"
+   },
+   {
+    "id": "sutra-sade-sati",
+    "when": "2026-11-01T20:00:00-05:00",
+    "image": "posts/sutra-card-sade-sati-ask/sutra-card-sade-sati-ask-1.jpg"
+   },
+   {
+    "id": "sutra-dasha",
+    "when": "2026-11-02T20:00:00-05:00",
+    "image": "posts/sutra-card-dasha-ask/sutra-card-dasha-ask-1.jpg"
+   },
+   {
+    "id": "as-above-so-below-x-long",
+    "when": "2026-11-03T20:00:00-05:00",
+    "image": "posts/as-above-so-below-v3/as-above-so-below-v3-4.jpg"
+   },
+   {
+    "id": "sutra-upachaya",
+    "when": "2026-11-04T20:00:00-05:00",
+    "image": "posts/sutra-card-upachaya-ask/sutra-card-upachaya-ask-1.jpg"
+   },
+   {
+    "id": "sutra-12th-house",
+    "when": "2026-11-05T20:00:00-05:00",
+    "image": "posts/sutra-12th-house-ask/sutra-12th-house-ask-4.jpg"
+   },
+   {
+    "id": "sutra-2nd-house",
+    "when": "2026-11-06T20:00:00-05:00",
+    "image": "posts/sutra-card-2nd-house-ask/sutra-card-2nd-house-ask-1.jpg"
+   },
+   {
+    "id": "lesson05-mercury-x",
+    "when": "2026-11-01T13:00:00-05:00",
+    "images": "lesson05-ask2 slides 1,3,4,5",
+    "buffer_id": "6ae62f5321c807e9d57a774b"
+   },
+   {
+    "id": "story-teacher-monk-x",
+    "when": "2026-11-02T13:00:00-05:00",
+    "images": "story-teacher-monk slides 1,5,6,7",
+    "buffer_id": "6ae62f621ee172cd6db718cf"
+   },
+   {
+    "id": "lesson06-x",
+    "when": "2026-11-03T13:00:00-05:00",
+    "images": "lesson06-ask slides 1,3,4,5",
+    "buffer_id": "6ae759fa36ecc9984811a4d7"
+   },
+   {
+    "id": "lesson07-x",
+    "when": "2026-11-04T13:00:00-05:00",
+    "images": "lesson07-ask slides 1,3,4,5",
+    "buffer_id": "6ae75a028755094b828e5ac5"
+   },
+   {
+    "id": "lesson11-x",
+    "when": "2026-11-09T13:00:00-05:00",
+    "images": "lesson11-ask slides 1,3,4,5",
+    "buffer_id": "6af14ff0e44ddbb57c316602"
+   },
+   {
+    "id": "lesson12-x",
+    "when": "2026-11-10T13:00:00-05:00",
+    "images": "lesson12-ask slides 1-4",
+    "buffer_id": "6af14ff6e44ddbb57c316742"
+   },
+   {
+    "id": "lesson13-x",
+    "when": "2026-11-11T13:00:00-05:00",
+    "images": "lesson13-ask slides 1-4",
+    "buffer_id": "6af14ffd7522f65ac0bcc818"
+   },
+   {
+    "id": "ep03-x",
+    "when": "2026-11-11T20:00:00-05:00",
+    "images": "ep03-ask slides 1,4,5,6",
+    "buffer_id": "6af150057522f65ac0bcca74"
+   },
+   {
+    "id": "lesson14-x",
+    "when": "2026-11-12T13:00:00-05:00",
+    "images": "lesson14-ask slides 1-4",
+    "buffer_id": "6af1500ce29b1359f0cc8aeb"
+   },
+   {
+    "id": "lesson15-x",
+    "when": "2026-11-13T13:00:00-05:00",
+    "images": "lesson15-ask slides 1-4",
+    "buffer_id": "6af150122f1ff83d45168215"
+   },
+   {
+    "id": "sutra-debilitated-x",
+    "when": "2026-11-14T13:00:00-05:00",
+    "images": "sutra-debilitated-ask slides 1,3,4,5",
+    "buffer_id": "6af150197522f65ac0bccde0"
+   },
+   {
+    "id": "week-2026-11-15-x",
+    "when": "2026-11-15T20:00:00-05:00",
+    "images": "week-2026-11-15-ask slides 1,3,4,5",
+    "buffer_id": "6af15021cac9d7525f6b0dc1"
+   }
   ],
-  "retired": [
-    "intro",
-    "ep01",
-    "lesson01",
-    "sky-2026-10-28",
-    "sky-2026-10-29",
-    "lesson02",
-    "lesson02-v2",
-    "close-2026-10-29-mercury",
-    "close-2026-10-29-mercury-v2",
-    "scripture-2026-10-30",
-    "jupiter-loops-2026",
-    "close-2026-10-29-mercury-v3",
-    "sky-2026-10-30",
-    "lesson03",
-    "scripture-2026-10-30-v2",
-    "sky-2026-10-31",
-    "lesson04",
-    "jupiter-loops-2026-v2",
-    "sky-2026-11-01",
-    "lesson05",
-    "week-2026-11-01",
-    "sutra-12th-house",
-    "sutra-sade-sati",
-    "sutra-8th-house",
-    "sutra-upachaya",
-    "lesson03-ask",
-    "lesson04-ask",
-    "lesson05-ask",
-    "sutra-upachaya-ask",
-    "jupiter-ketu-2026",
-    "jupiter-ketu-2026-v2",
-    "as-above-so-below",
-    "as-above-so-below-v2"
+  "daily_time": "1 PM and 8 PM Toronto",
+  "next_refill_by": "2026-11-05",
+  "backlog": [
+   "Meet Ask Sutram (posts/ask-intro-app2 slides 1-4) -> first free X slot",
+   "x-drafts/ask-november-x.txt -> Sat 7 Nov 1 PM",
+   "x-drafts/lesson08-x.txt -> Thu 5 Nov 1 PM",
+   "x-drafts/ep02-x.txt -> Fri 6 Nov 1 PM",
+   "x-drafts/lesson04-x.txt",
+   "x-drafts/jupiter-loops-x.txt (dated 31 October)",
+   "x-drafts/3-eighth-house.txt",
+   "x-drafts/8-fifth-house.txt",
+   "x-drafts/9-fourth-house.txt",
+   "Graha stories 2",
+   "Diwali 8 Nov",
+   "dreamer-x (write from captions/dreamer-ask.txt, 4 images)"
   ],
-  "next_lesson": 11,
-  "next_thread_episode": 3,
-  "next_thread_title": "The person of Time",
-  "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
-  "next_to_make": [
-    "Tue lean run: Thu 5 Nov 10 AM 5th-house card, 12 PM Lesson 9 Rahu; Fri 6 Nov 10 AM 4th-house card, 12 PM Lesson 10 Ketu; Sun 8 Nov 10 AM Diwali",
-    "Sun 8 Nov 7 PM weekly batch: Mon 9-Sun 15 Nov, 10 Instagram + 8 X"
-  ],
-  "sky_patterns_ideas": [
-    "The 60-year clock (5 Jupiter laps = 2 Saturn laps = one Samvatsara cycle)",
-    "Mercury's triangle (three passes a year)",
-    "The Moon's 27 stars",
-    "Mars loops"
-  ],
-  "design": "v4 (29 Oct): text about 15% larger. Backgrounds rotate across five themes (solar, lunar, zodiac, jupiter, thread; tools/render.py theme_for). Sky posts use the lunar strip with the real Moon phase lit. Mars orb redrawn with polar cap and dark lands. New slide type: compare (two columns, strong vs weak).",
-  "times": "Toronto is UTC-4 until 1 Nov 2 AM, then UTC-5",
-  "sutra": {
-    "instagram": "one Sutra carousel a day at 10 AM (Metricool's best Instagram hour); thread background; cover with the five-pearl thread",
-    "x": "X goes through Typefully (connected 31 Oct; social set 355705, @koham1323) instead of Metricool's paid add-on. Free plan: 10 published posts a month (quota resets on the 1st, UTC). Each Sutra is a 2-post thread: the post with its card, then a reply with asksutram.com first and sutram.ca/newsletter second. Images: Typefully's upload host (typefully-user-uploads.s3.amazonaws.com) is blocked from the workspace until Sumant allows it in claude.ai Settings > Capabilities, so drafts are created as planned (inert) with the card noted in the draft's notes.",
-    "x_queue": [
-      {
-        "n": 1,
-        "draft": "x-drafts/1-twelfth-house.txt",
-        "card": "posts/sutra-12th-house-ask/sutra-12th-house-ask-4.jpg"
-      },
-      {
-        "n": 2,
-        "draft": "x-drafts/2-upachaya.txt",
-        "card": "posts/sutra-card-upachaya-ask/sutra-card-upachaya-ask-1.jpg"
-      },
-      {
-        "n": 3,
-        "draft": "x-drafts/3-eighth-house.txt",
-        "card": "posts/sutra-card-8th-house-ask/sutra-card-8th-house-ask-1.jpg"
-      },
-      {
-        "n": 4,
-        "draft": "x-drafts/4-sade-sati.txt",
-        "card": "posts/sutra-card-sade-sati-ask/sutra-card-sade-sati-ask-1.jpg"
-      },
-      {
-        "n": 5,
-        "draft": "x-drafts/5-dasha.txt",
-        "card": "posts/sutra-card-dasha-ask/sutra-card-dasha-ask-1.jpg"
-      },
-      {
-        "n": 6,
-        "draft": "x-drafts/6-second-house.txt",
-        "card": "posts/sutra-card-2nd-house-ask/sutra-card-2nd-house-ask-1.jpg"
-      },
-      {
-        "n": 7,
-        "draft": "x-drafts/7-retrograde.txt",
-        "card": "posts/sutra-card-retrograde-ask/sutra-card-retrograde-ask-1.jpg"
-      },
-      {
-        "n": 8,
-        "draft": "x-drafts/8-fifth-house.txt",
-        "card": "posts/sutra-card-5th-house-ask/sutra-card-5th-house-ask-1.jpg"
-      },
-      {
-        "n": 9,
-        "draft": "x-drafts/9-fourth-house.txt",
-        "card": "posts/sutra-card-4th-house-ask/sutra-card-4th-house-ask-1.jpg"
-      }
-    ],
-    "instagram_next": [
-      "dasha (Mon 2 Nov)",
-      "retrograde planets",
-      "2nd house",
-      "5th house",
-      "4th house"
-    ],
-    "topic_ideas": [
-      "11th house: your income travels through people",
-      "Rahu and Ketu: what you chase and what you already have (they change signs 5 Dec)",
-      "debilitated planets and neecha bhanga: a skill learned the long way",
-      "combust planets: talent in someone's shadow",
-      "9th house: luck as a teacher you listened to",
-      "10th house: what people call you when you leave the room",
-      "Moon phase at birth",
-      "7th house: what partners teach you"
-    ],
-    "style": "Sumant, 29 Oct: add a little more explanation, wording clear for modern city people, nothing half-baked; every example says why it belongs to the house; explain any technical step in plain words",
-    "typefully": {
-      "social_set_id": 355705,
-      "planned": [
-        {
-          "draft_id": 11603498,
-          "when": "2026-10-31T13:00:00-04:00",
-          "what": "Jupiter meets Ketu thread (11 posts; images: jupiter-ketu-2026-v3 slides 1-3)"
-        },
-        {
-          "draft_id": 11603503,
-          "when": "2026-10-31T15:30:00-04:00",
-          "what": "Sutra: grahas walking backward (card sutra-card-retrograde-ask2)"
-        },
-        {
-          "draft_id": 11603504,
-          "when": "2026-10-31T18:30:00-04:00",
-          "what": "Sutra: Sade Sati, the auditor's audit (card sutra-card-sade-sati-ask)"
-        },
-        {
-          "draft_id": 11603507,
-          "when": "2026-11-01T09:00:00-05:00",
-          "what": "Sutra: the 12th house (card sutra-12th-house-ask slide 4)"
-        },
-        {
-          "draft_id": 11603509,
-          "when": "2026-11-04T20:00:00-05:00",
-          "what": "Sutra: houses that grow (card sutra-card-upachaya-ask)"
-        }
-      ],
-      "not_loaded_yet": [
-        "3-eighth-house",
-        "5-dasha",
-        "6-second-house",
-        "8-fifth-house",
-        "9-fourth-house"
-      ],
-      "plan": "Sumant, 31 Oct: stay on Typefully's free plan for now, so November's 10 X posts are spread out, about 2 a week, with room kept for timely posts (Diwali 8 Nov, the knot 13 to 16 Nov).",
-      "drafts": [
-        {
-          "draft_id": 11604098,
-          "what": "Jupiter in Leo thread (9 posts); Sumant attaches images (slides 1, 4, 5 on posts 1, 4, 6) then it goes out now"
-        },
-        {
-          "draft_id": 11605231,
-          "what": "As above, so below thread (7 posts); Sumant attaches images (v2 slides 1, 4, 7 on posts 1, 3, 6) and publishes"
-        }
-      ]
-    },
-    "x_route_options": "Working since 31 Oct: Claude -> Zapier connector -> Buffer free -> X @koham1323 (X Premium). One long post replaces a thread (3,207 chars tested), one image by GitHub raw URL works; multiple images and threads don't. Limits: Zapier free 100 tasks a month (2 per call), Buffer free 10 scheduled per channel. Setup details and IDs live in the private project doc claude/x-via-buffer.md. Typefully drafts stay parked (planned or draft, nothing auto-publishes)."
-  },
-  "links": "Sumant, 29 Oct: every post ends with exactly two links, asksutram.com first, then sutram.ca/newsletter; nothing else. Slide footer reads ASKSUTRAM.COM. X replies carry the same two links.",
-  "graha_stories": {
-    "set": "30 Oct 2026, Sumant: grahas as characters, told the Bhrigu Nandi Nadi way, are the essence of all content. Say graha (Sanskrit for 'the one who grabs'), never planet. Project doc: claude/graha-stories.md",
-    "cast": {
-      "Sun": "the king",
-      "Moon": "the mother",
-      "Mars": "the soldier",
-      "Mercury": "the messenger",
-      "Jupiter": "the teacher",
-      "Venus": "the lover",
-      "Saturn": "the auditor",
-      "Rahu": "the magician (smoke is his trick)",
-      "Ketu": "the monk"
-    },
-    "degree_rule": "inside one sign, the graha with more degrees walks in front; the one behind takes on its nature (Sumant's rule)",
-    "retrograde_story": "walking backward, looking back: someone looks back, sees a person drowning, changes path to save them (Sumant)",
-    "made": [
-      "story-teacher-monk"
-    ]
-  },
-  "notes_body": "Body parts follow Parashara's order (BPHS 4): Cancer is the heart, Leo the belly or chest; the Sun, Leo's owner, is the karaka of the heart. Say 'the Sun rules the heart', not 'Leo rules the heart'.",
-  "x_buffer": {
-    "posted": [
-      {
-        "id": "jupiter-leo-x-long",
-        "when": "2026-10-31T13:20:00-04:00",
-        "url": "https://twitter.com/koham1323/status/2116581012901691550"
-      }
-    ],
-    "scheduled": [
-      {
-        "id": "jupiter-ketu-x-long",
-        "when": "2026-10-31T16:00:00-04:00",
-        "image": "posts/jupiter-ketu-2026-v3/jupiter-ketu-2026-v3-1.jpg"
-      },
-      {
-        "id": "sutra-retrograde",
-        "when": "2026-10-31T19:30:00-04:00",
-        "image": "posts/sutra-card-retrograde-ask2/sutra-card-retrograde-ask2-1.jpg"
-      },
-      {
-        "id": "sutra-sade-sati",
-        "when": "2026-11-01T20:00:00-05:00",
-        "image": "posts/sutra-card-sade-sati-ask/sutra-card-sade-sati-ask-1.jpg"
-      },
-      {
-        "id": "sutra-dasha",
-        "when": "2026-11-02T20:00:00-05:00",
-        "image": "posts/sutra-card-dasha-ask/sutra-card-dasha-ask-1.jpg"
-      },
-      {
-        "id": "as-above-so-below-x-long",
-        "when": "2026-11-03T20:00:00-05:00",
-        "image": "posts/as-above-so-below-v3/as-above-so-below-v3-4.jpg"
-      },
-      {
-        "id": "sutra-upachaya",
-        "when": "2026-11-04T20:00:00-05:00",
-        "image": "posts/sutra-card-upachaya-ask/sutra-card-upachaya-ask-1.jpg"
-      },
-      {
-        "id": "sutra-12th-house",
-        "when": "2026-11-05T20:00:00-05:00",
-        "image": "posts/sutra-12th-house-ask/sutra-12th-house-ask-4.jpg"
-      },
-      {
-        "id": "sutra-2nd-house",
-        "when": "2026-11-06T20:00:00-05:00",
-        "image": "posts/sutra-card-2nd-house-ask/sutra-card-2nd-house-ask-1.jpg"
-      },
-      {
-        "id": "lesson05-mercury-x",
-        "when": "2026-11-01T13:00:00-05:00",
-        "images": "lesson05-ask2 slides 1,3,4,5",
-        "buffer_id": "6ae62f5321c807e9d57a774b"
-      },
-      {
-        "id": "story-teacher-monk-x",
-        "when": "2026-11-02T13:00:00-05:00",
-        "images": "story-teacher-monk slides 1,5,6,7",
-        "buffer_id": "6ae62f621ee172cd6db718cf"
-      },
-      {
-        "id": "lesson06-x",
-        "when": "2026-11-03T13:00:00-05:00",
-        "images": "lesson06-ask slides 1,3,4,5",
-        "buffer_id": "6ae759fa36ecc9984811a4d7"
-      },
-      {
-        "id": "lesson07-x",
-        "when": "2026-11-04T13:00:00-05:00",
-        "images": "lesson07-ask slides 1,3,4,5",
-        "buffer_id": "6ae75a028755094b828e5ac5"
-      }
-    ],
-    "daily_time": "1 PM and 8 PM Toronto",
-    "next_refill_by": "2026-11-05",
-    "backlog": [
-      "Meet Ask Sutram (posts/ask-intro-app2 slides 1-4) -> first free X slot",
-      "x-drafts/ask-november-x.txt -> Sat 7 Nov 1 PM",
-      "x-drafts/lesson08-x.txt -> Thu 5 Nov 1 PM",
-      "x-drafts/ep02-x.txt -> Fri 6 Nov 1 PM",
-      "x-drafts/lesson04-x.txt",
-      "x-drafts/jupiter-loops-x.txt (dated 31 October)",
-      "x-drafts/3-eighth-house.txt",
-      "x-drafts/8-fifth-house.txt",
-      "x-drafts/9-fourth-house.txt",
-      "Graha stories 2",
-      "Diwali 8 Nov",
-      "dreamer-x (write from captions/dreamer-ask.txt, 4 images)"
-    ],
-    "zapier_calls_used_31oct": "about 13 write/read calls (2 tasks each) plus setup checks",
-    "route": "Buffer connector directly (mcp Buffer create_post), Zapier no longer needed for posting",
-    "queue_full_at": "10 of 10 on 31 Oct (Buffer free)",
-    "queue_1nov": "10 of 10 after Lessons 6 and 7 (1 Nov 10:25 AM)"
-  },
-  "rules_31oct": {
-    "instagram": "keep the same level and process (Metricool); no daily Moon/sky posts; 10 AM Sutra, 12 PM lesson, 6:30 PM feature",
-    "x": "mirror at least 50 to 70% of Instagram with images, 1 PM and 8 PM Toronto, via the Buffer connector (create_post, up to 4 images)"
-  },
-  "drafts_metricool": [
-    {
-      "id": "sky-2026-11-01-ask",
-      "metricool_id": 412357045,
-      "note": "moved to draft 31 Oct, daily Moon posts stopped"
-    }
-  ],
-  "rules_1nov": {
-    "overflow": "Sumant, 1 Nov, always: use Metricool first; once the month's 20 are used, send the rest through Buffer's Instagram channel (6ae61ca82f1f5ed64833a89e)",
-    "muse": "Sumant, 1 Nov: keep posting our own content on X whatever Muse posts; overlaps are fine",
-    "metricool_nov": "14 of 20 after Wed 4 Nov; Thu 5 and Fri 6 Nov take the last 6; Buffer's Instagram from Sat 7 Nov",
-    "sources": "BPHS 11.3 lists wealth, grain, family for the 2nd house, not speech; don't credit BPHS for speech",
-    "no_wait": "Sumant, 1 Nov 11:45 AM: don't wait for his reply; he usually misses notifications. Use best judgment: make the posts, check them, schedule them straight away and send him the overviews and captions in the same run. If he asks for a change before a post goes out, update it."
-  },
-  "checkins": {
-    "pattern": "one-off reminders into this session",
-    "next": [
-      "trig_01ThSDt31aSRg2PxTtXX16qq Tue 3 Nov 9 AM: lean run Thu 5-Sun 8 Nov",
-      "trig_01Q5FMTPgUm7dGwEjkuv7a3j Sun 8 Nov 7 PM: weekly batch Mon 9-Sun 15 Nov"
-    ]
-  },
-  "usage_budget": {
-    "rule": "Sumant, 1 Nov: posting uses about 40-50% of his weekly usage at most, never over 60%",
-    "this_week": "about 20% left on 1 Nov; Tue 3 Nov lean run makes Thu 5-Sun 8 Nov (5 posts), no 6:30 PM, no Saturday, no X refill",
-    "weekly": "from Sun 8 Nov 7 PM: one batch a week; Instagram 10 (lessons Mon-Fri 12 PM, Sutra Mon/Wed/Fri 10 AM, Thread Wed 6:30 PM, Week ahead Sun 6:30 PM); X 8",
-    "measured_1nov": "weighted tokens: wake-up 0.45-0.75M (2.5M with compaction), carousel 0.3-0.45M, scheduled post 0.05-0.1M; 1% of week ~0.35-0.6M (rough)"
-  },
-  "focus_2nov": "Sumant, 2 Nov: promote asksutram.com (claude/asksutram-promotion-plan.md). Screenshots: Sumant's phone screenshots (workspace can't open the app; desktop browser not linked). Metricool November 15 of 20 after Fri 6 Nov. Ask Sutram posts use tools/app_post.py (the app's look: #07060A, Instrument Serif, Inter, orange) with real screenshots in assets/asksutram/ (taken via Claude in Chrome, guest sample chart; crop out the location line). Metricool November 16 of 20 after Mon 2 Nov 3 PM.",
-  "lean_run_3nov": "Done: Thu 5 Nov 10 AM 5th-house card, 12 PM Lesson 9; Fri 6 Nov 10 AM 4th-house card (Ask post was pulled), 12 PM Lesson 10; Sun 8 Nov 10 AM Diwali. Metricool November 19 of 20. Skipped the X Ask Sutram post (promo on hold).",
-  "rules_4nov": {
-    "cadence": "Instagram: every day at least 1 and at most 2 posts, weekends included. Never 0, never 3. Spread out, never cut a content category."
-  },
-  "moves_4nov": "Thread Ep 2 moved Wed 4 Nov 6:30 PM to Sat 7 Nov 10 AM (Metricool id 416651238). 9-15 Nov plan: Mon Sutra+L11, Tue L12, Wed L13+Ep3, Thu Sutra+L14, Fri L15, Sat Sutra, Sun Week ahead.",
-  "metricool_nov": "20 of 20 used (dreamer-ask took the last, 6 Nov). Rest of November goes through Buffer Instagram.",
-  "thread_maps_7nov": {
-    "source": "plan/thread_maps_of_you.md (approved by Sumant 7 Nov: loved all ten)",
-    "wednesday_thread": [
-      [
-        "2026-11-11",
-        "Ep 3 The person of Time"
-      ],
-      [
-        "2026-11-18",
-        "Ep 4 The three strands"
-      ],
-      [
-        "2026-11-25",
-        "Ep 5 Two birds on one tree"
-      ],
-      [
-        "2026-12-02",
-        "Ep 6 Your body type"
-      ],
-      [
-        "2026-12-09",
-        "Ep 7 Nachiketa and Death"
-      ],
-      [
-        "2026-12-16",
-        "Ep 8 The four aims of life"
-      ],
-      [
-        "2026-12-23",
-        "Ep 9 Three bodies"
-      ],
-      [
-        "2026-12-30",
-        "Ep 10 The four stages of life"
-      ],
-      [
-        "2027-01-06",
-        "Ep 11 Waking, dreaming, deep sleep and the fourth"
-      ],
-      [
-        "2027-01-13",
-        "Ep 12 Saturn, the teacher of time (original plan)"
-      ],
-      [
-        "2027-01-20",
-        "Ep 13 The three paths"
-      ],
-      [
-        "2027-01-27",
-        "original plan resumes: Cause and effect"
-      ]
-    ],
-    "saturday_avatars_630pm": [
-      [
-        "2026-11-21",
-        "Rama, Sun"
-      ],
-      [
-        "2026-11-28",
-        "Krishna, Moon"
-      ],
-      [
-        "2026-12-05",
-        "Narasimha, Mars"
-      ],
-      [
-        "2026-12-12",
-        "Buddha, Mercury"
-      ],
-      [
-        "2026-12-19",
-        "Vamana, Jupiter"
-      ],
-      [
-        "2026-12-26",
-        "Parashurama, Venus"
-      ],
-      [
-        "2027-01-02",
-        "Kurma, Saturn"
-      ],
-      [
-        "2027-01-09",
-        "Varaha, Rahu"
-      ],
-      [
-        "2027-01-16",
-        "Matsya, Ketu"
-      ]
-    ],
-    "new_last_slide": "Read it in your chart: one step plus the matching free tool on sutram.ca"
+  "zapier_calls_used_31oct": "about 13 write/read calls (2 tasks each) plus setup checks",
+  "route": "Buffer connector directly (mcp Buffer create_post), Zapier no longer needed for posting",
+  "queue_full_at": "10 of 10 on 31 Oct (Buffer free)",
+  "queue_1nov": "10 of 10 after Lessons 6 and 7 (1 Nov 10:25 AM)"
+ },
+ "rules_31oct": {
+  "instagram": "keep the same level and process (Metricool); no daily Moon/sky posts; 10 AM Sutra, 12 PM lesson, 6:30 PM feature",
+  "x": "mirror at least 50 to 70% of Instagram with images, 1 PM and 8 PM Toronto, via the Buffer connector (create_post, up to 4 images)"
+ },
+ "drafts_metricool": [
+  {
+   "id": "sky-2026-11-01-ask",
+   "metricool_id": 412357045,
+   "note": "moved to draft 31 Oct, daily Moon posts stopped"
   }
+ ],
+ "rules_1nov": {
+  "overflow": "Sumant, 1 Nov, always: use Metricool first; once the month's 20 are used, send the rest through Buffer's Instagram channel (6ae61ca82f1f5ed64833a89e)",
+  "muse": "Sumant, 1 Nov: keep posting our own content on X whatever Muse posts; overlaps are fine",
+  "metricool_nov": "14 of 20 after Wed 4 Nov; Thu 5 and Fri 6 Nov take the last 6; Buffer's Instagram from Sat 7 Nov",
+  "sources": "BPHS 11.3 lists wealth, grain, family for the 2nd house, not speech; don't credit BPHS for speech",
+  "no_wait": "Sumant, 1 Nov 11:45 AM: don't wait for his reply; he usually misses notifications. Use best judgment: make the posts, check them, schedule them straight away and send him the overviews and captions in the same run. If he asks for a change before a post goes out, update it."
+ },
+ "checkins": {
+  "pattern": "one-off reminders into this session",
+  "next": [
+   "trig_018C9a9sQxAnAp1iaXnrhw1v Sun 15 Nov 7 PM: weekly batch Mon 16-Sun 22 Nov"
+  ]
+ },
+ "usage_budget": {
+  "rule": "Sumant, 1 Nov: posting uses about 40-50% of his weekly usage at most, never over 60%",
+  "this_week": "about 20% left on 1 Nov; Tue 3 Nov lean run makes Thu 5-Sun 8 Nov (5 posts), no 6:30 PM, no Saturday, no X refill",
+  "weekly": "from Sun 8 Nov 7 PM: one batch a week; Instagram 10 (lessons Mon-Fri 12 PM, Sutra Mon/Wed/Fri 10 AM, Thread Wed 6:30 PM, Week ahead Sun 6:30 PM); X 8",
+  "measured_1nov": "weighted tokens: wake-up 0.45-0.75M (2.5M with compaction), carousel 0.3-0.45M, scheduled post 0.05-0.1M; 1% of week ~0.35-0.6M (rough)"
+ },
+ "focus_2nov": "Sumant, 2 Nov: promote asksutram.com (claude/asksutram-promotion-plan.md). Screenshots: Sumant's phone screenshots (workspace can't open the app; desktop browser not linked). Metricool November 15 of 20 after Fri 6 Nov. Ask Sutram posts use tools/app_post.py (the app's look: #07060A, Instrument Serif, Inter, orange) with real screenshots in assets/asksutram/ (taken via Claude in Chrome, guest sample chart; crop out the location line). Metricool November 16 of 20 after Mon 2 Nov 3 PM.",
+ "lean_run_3nov": "Done: Thu 5 Nov 10 AM 5th-house card, 12 PM Lesson 9; Fri 6 Nov 10 AM 4th-house card (Ask post was pulled), 12 PM Lesson 10; Sun 8 Nov 10 AM Diwali. Metricool November 19 of 20. Skipped the X Ask Sutram post (promo on hold).",
+ "rules_4nov": {
+  "cadence": "Instagram: every day at least 1 and at most 2 posts, weekends included. Never 0, never 3. Spread out, never cut a content category."
+ },
+ "moves_4nov": "Thread Ep 2 moved Wed 4 Nov 6:30 PM to Sat 7 Nov 10 AM (Metricool id 416651238). 9-15 Nov plan: Mon Sutra+L11, Tue L12, Wed L13+Ep3, Thu Sutra+L14, Fri L15, Sat Sutra, Sun Week ahead.",
+ "metricool_nov": "20 of 20 used (dreamer-ask took the last, 6 Nov). Rest of November goes through Buffer Instagram.",
+ "thread_maps_7nov": {
+  "source": "plan/thread_maps_of_you.md (approved by Sumant 7 Nov: loved all ten)",
+  "wednesday_thread": [
+   [
+    "2026-11-11",
+    "Ep 3 The person of Time"
+   ],
+   [
+    "2026-11-18",
+    "Ep 4 The three strands"
+   ],
+   [
+    "2026-11-25",
+    "Ep 5 Two birds on one tree"
+   ],
+   [
+    "2026-12-02",
+    "Ep 6 Your body type"
+   ],
+   [
+    "2026-12-09",
+    "Ep 7 Nachiketa and Death"
+   ],
+   [
+    "2026-12-16",
+    "Ep 8 The four aims of life"
+   ],
+   [
+    "2026-12-23",
+    "Ep 9 Three bodies"
+   ],
+   [
+    "2026-12-30",
+    "Ep 10 The four stages of life"
+   ],
+   [
+    "2027-01-06",
+    "Ep 11 Waking, dreaming, deep sleep and the fourth"
+   ],
+   [
+    "2027-01-13",
+    "Ep 12 Saturn, the teacher of time (original plan)"
+   ],
+   [
+    "2027-01-20",
+    "Ep 13 The three paths"
+   ],
+   [
+    "2027-01-27",
+    "original plan resumes: Cause and effect"
+   ]
+  ],
+  "saturday_avatars_630pm": [
+   [
+    "2026-11-21",
+    "Rama, Sun"
+   ],
+   [
+    "2026-11-28",
+    "Krishna, Moon"
+   ],
+   [
+    "2026-12-05",
+    "Narasimha, Mars"
+   ],
+   [
+    "2026-12-12",
+    "Buddha, Mercury"
+   ],
+   [
+    "2026-12-19",
+    "Vamana, Jupiter"
+   ],
+   [
+    "2026-12-26",
+    "Parashurama, Venus"
+   ],
+   [
+    "2027-01-02",
+    "Kurma, Saturn"
+   ],
+   [
+    "2027-01-09",
+    "Varaha, Rahu"
+   ],
+   [
+    "2027-01-16",
+    "Matsya, Ketu"
+   ]
+  ],
+  "new_last_slide": "Read it in your chart: one step plus the matching free tool on sutram.ca"
+ },
+ "batch_8nov": "Sun 8 Nov 11:30 PM: 10 Instagram (Buffer) + 8 X (Buffer) for 9-15 Nov. Lessons 11-15 = Nadi rules 1-5 (same room, ahead and behind, who walks in front, face to face, looking back); next rules: family (5/9), helpers (3/11), swapped houses, stuck in the middle, the doorway, whose star. Sutras used: combust, 9th house, debilitated. Engine times differ from the Prompt 6 test: Mars into Leo 12 Nov 9:49 AM, Sun into Scorpio 16 Nov 9:14 AM (Toronto)."
 }
