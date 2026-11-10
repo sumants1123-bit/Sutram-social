@@ -7,12 +7,8 @@
    "type": "cover",
    "stars": true,
    "orb": {
-    "kind": "orbit",
-    "w": 700,
-    "h": 150,
-    "beads": 5,
-    "tilt": -7,
-    "lit": 4
+    "kind": "figure",
+    "h": 430
    },
    "title": "The person\nof Time",
    "subtitle": "An old map that puts the whole sky\ninside one person"
@@ -47,11 +43,11 @@
    "bodygap": 14
   },
   {
-   "type": "list",
+   "type": "bodymap",
    "label": "His body",
    "labelsize": 24,
    "title": "Head to feet",
-   "titleclass": "h2",
+   "titleclass": "h3",
    "items": [
     [
      "Aries",
@@ -141,29 +137,84 @@
     ]
    ],
    "bodysize": 40,
-   "note": "Rahu and Ketu are not in this verse"
+   "note": "Rahu and Ketu are not in this verse",
+   "roworbs": [
+    {
+     "kind": "sun",
+     "r": 25,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 24
+    },
+    {
+     "kind": "mars",
+     "r": 24
+    },
+    {
+     "kind": "mercury",
+     "r": 22
+    },
+    {
+     "kind": "jupiter",
+     "r": 27
+    },
+    {
+     "kind": "venus",
+     "r": 24
+    },
+    {
+     "kind": "saturn",
+     "r": 19
+    }
+   ]
   },
   {
-   "type": "stack",
+   "type": "cast",
    "label": "In real life",
    "labelsize": 24,
    "title": "Ask the right one",
    "titleclass": "h3",
+   "castorbw": 150,
+   "castorbh": 124,
+   "headsize": 58,
+   "bodysize": 34,
    "items": [
-    [
-     "No energy?",
-     "The soldier (Mars): move first, think later"
-    ],
-    [
-     "Words come out wrong?",
-     "The messenger (Mercury): write it, then send"
-    ],
-    [
-     "A heavy week?",
-     "The auditor (Saturn): do one hard thing well"
-    ]
-   ],
-   "bodysize": 34
+    {
+     "orbs": [
+      {
+       "kind": "mars",
+       "r": 46
+      }
+     ],
+     "label": "",
+     "head": "No energy?",
+     "line": "The soldier (Mars):\nmove first, think later"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "mercury",
+       "r": 42
+      }
+     ],
+     "label": "",
+     "head": "Words come out wrong?",
+     "line": "The messenger (Mercury):\nwrite it, then send"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "saturn",
+       "r": 36
+      }
+     ],
+     "label": "",
+     "head": "A heavy week?",
+     "line": "The auditor (Saturn):\ndo one hard thing well"
+    }
+   ]
   },
   {
    "type": "quote",
@@ -176,7 +227,19 @@
     "In your chart, too, the Moon is the mind"
    ],
    "bodysize": 36,
-   "quotesize": 62
+   "quotesize": 62,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 46
+    },
+    {
+     "kind": "sun",
+     "r": 46,
+     "rings": false,
+     "dx": 210
+    }
+   ]
   },
   {
    "type": "text",

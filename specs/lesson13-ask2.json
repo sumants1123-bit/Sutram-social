@@ -6,21 +6,52 @@
   {
    "type": "cover",
    "stars": true,
-   "orbs": [
-    {
-     "kind": "jupiter",
-     "r": 52
-    },
-    {
-     "kind": "ketu",
-     "r": 46,
-     "dx": 100
-    }
-   ],
    "label": "Nadi · Rule 3",
    "labelsize": 30,
    "title": "Who walks\nin front",
-   "subtitle": "Two grahas in one sign: who leads?"
+   "subtitle": "Two grahas in one sign: who leads?",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "ketu",
+        "r": 40
+       },
+       {
+        "kind": "jupiter",
+        "r": 48,
+        "dx": 96
+       }
+      ],
+      "state": "focus",
+      "tag": "",
+      "wide": 1.3,
+      "front": true
+     }
+    ]
+   },
+   "motion": {
+    "from": {
+     "rooms": [
+      {
+       "sign": "Leo",
+       "orbs": [
+        {
+         "kind": "jupiter",
+         "r": 40
+        },
+        {
+         "kind": "ketu",
+         "r": 34,
+         "dx": 78
+        }
+       ]
+      }
+     ]
+    }
+   }
   },
   {
    "type": "text",
@@ -40,89 +71,156 @@
    "type": "compare",
    "title": "The leader sets the tone",
    "titleclass": "h3",
-   "bodysize": 36,
-   "headsize": 50,
+   "bodysize": 38,
+   "headsize": 54,
    "columns": [
     {
-     "orb": {
-      "kind": "jupiter",
-      "r": 40
+     "scene": {
+      "w": 300,
+      "h": 176,
+      "rooms": [
+       {
+        "sign": "Until today",
+        "orbs": [
+         {
+          "kind": "jupiter",
+          "r": 40
+         },
+         {
+          "kind": "ketu",
+          "r": 34,
+          "dx": 78
+         }
+        ],
+        "state": "",
+        "tag": "teacher behind",
+        "front": true
+       }
+      ]
      },
-     "label": "Teacher behind",
+     "label": "",
      "head": "Teacher turns monk",
      "lines": [
-      "Wisdom turns inward"
+      "Wisdom\nturns inward"
      ]
     },
     {
-     "orb": {
-      "kind": "ketu",
-      "r": 38
+     "scene": {
+      "w": 300,
+      "h": 176,
+      "rooms": [
+       {
+        "sign": "From 3:30 PM",
+        "orbs": [
+         {
+          "kind": "ketu",
+          "r": 34
+         },
+         {
+          "kind": "jupiter",
+          "r": 40,
+          "dx": 78
+         }
+        ],
+        "state": "focus",
+        "tag": "monk behind",
+        "front": true
+       }
+      ]
      },
-     "label": "Monk behind",
+     "label": "",
      "head": "Monk turns teacher",
      "lines": [
-      "Instinct turns into advice"
+      "Instinct turns\ninto advice"
      ]
     }
    ]
   },
   {
    "type": "text",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "ketu",
+        "r": 40
+       },
+       {
+        "kind": "jupiter",
+        "r": 48,
+        "dx": 96
+       }
+      ],
+      "state": "focus",
+      "tag": "",
+      "wide": 1.3,
+      "front": true
+     }
+    ]
+   },
    "label": "Today, 3:30 PM Toronto time",
    "labelsize": 26,
-   "orbs": [
-    {
-     "kind": "jupiter",
-     "r": 50
-    },
-    {
-     "kind": "ketu",
-     "r": 44,
-     "dx": 90
-    }
-   ],
    "title": "The teacher passes the monk",
    "titleclass": "h3",
    "body": [
     "Both sit near the first degree of Leo",
     "Until today the monk had more degrees",
-    "From 3:30 PM the teacher has more"
+    "From 3:30 PM *the teacher has more*"
    ],
    "bodysize": 40,
-   "bodygap": 8
+   "bodygap": 10
   },
   {
    "type": "sentence",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 34
+       }
+      ],
+      "state": "",
+      "tag": "behind"
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "ketu",
+        "r": 34
+       },
+       {
+        "kind": "jupiter",
+        "r": 40,
+        "dx": 78
+       }
+      ],
+      "state": "focus",
+      "tag": "",
+      "front": true
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 38
+       }
+      ],
+      "state": "",
+      "tag": "ahead"
+     }
+    ]
+   },
    "label": "Read it with rules 1, 2 and 3",
    "labelsize": 25,
-   "orbs": [
-    {
-     "kind": "mars",
-     "r": 30
-    },
-    {
-     "kind": "jupiter",
-     "r": 44,
-     "dx": 220
-    },
-    {
-     "kind": "ketu",
-     "r": 36,
-     "dx": 88
-    },
-    {
-     "kind": "venus",
-     "r": 34,
-     "dx": 220
-    }
-   ],
    "example": "What you let go of becomes what you can teach",
    "rows": [
-    [
-     "Room",
-     "the teacher and the monk, in Leo"
-    ],
     [
      "In front",
      "the teacher, from today"
@@ -147,7 +245,7 @@
    "titleclass": "h2",
    "body": [
     "Before today, you went quiet\nand held back",
-    "From today, you can say what you learned",
+    "From today, you can\n*say what you learned*",
     "People ask how you got through it"
    ],
    "bodysize": 41,

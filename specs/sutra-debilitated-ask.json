@@ -6,18 +6,44 @@
   {
    "type": "cover",
    "stars": true,
-   "orb": {
-    "kind": "orbit",
-    "w": 560,
-    "h": 120,
-    "beads": 5,
-    "lit": 2,
-    "tilt": -6
-   },
    "label": "Debilitated grahas",
    "labelsize": 28,
    "title": "The wrong\nroom",
-   "subtitle": "When a graha sits in its weakest sign"
+   "subtitle": "When a graha sits in its weakest sign",
+   "scene": {
+    "h": 190,
+    "rooms": [
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 40
+       }
+      ],
+      "state": "",
+      "tag": "the lover"
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 42,
+        "rings": false
+       }
+      ],
+      "state": "",
+      "tag": "the king"
+     }
+    ]
+   },
+   "motion": {
+    "order": [
+     0,
+     1
+    ]
+   }
   },
   {
    "type": "text",
@@ -92,18 +118,6 @@
    "type": "text",
    "label": "In the sky now",
    "labelsize": 26,
-   "orbs": [
-    {
-     "kind": "sun",
-     "r": 46,
-     "rings": false
-    },
-    {
-     "kind": "venus",
-     "r": 40,
-     "dx": 280
-    }
-   ],
    "title": "Two in the wrong room",
    "titleclass": "h3",
    "body": [
@@ -112,7 +126,35 @@
     "Easy on pride and on spending"
    ],
    "bodysize": 38,
-   "bodygap": 8
+   "bodygap": 8,
+   "scene": {
+    "h": 180,
+    "rooms": [
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 40
+       }
+      ],
+      "state": "focus",
+      "tag": "until the 22nd"
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 42,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "tag": "until Monday"
+     }
+    ]
+   }
   },
   {
    "type": "quote",
@@ -135,7 +177,7 @@
    ],
    "bodysize": 40,
    "bodygap": 8,
-   "closing": "Ask about your weakest graha at asksutram.com",
+   "closing": "Ask about your weakest graha\nat asksutram.com",
    "after": "Weekly newsletter · sutram.ca/newsletter"
   }
  ]

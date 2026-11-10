@@ -6,21 +6,85 @@
   {
    "type": "cover",
    "stars": true,
-   "orbs": [
-    {
-     "kind": "mars",
-     "r": 42
-    },
-    {
-     "kind": "rahu",
-     "r": 46,
-     "dx": 430
-    }
-   ],
    "label": "Nadi · Rule 4",
    "labelsize": 30,
    "title": "Face\nto face",
-   "subtitle": "Grahas in opposite signs"
+   "subtitle": "Grahas in opposite signs",
+   "scene": {
+    "h": 176,
+    "across": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 38
+       }
+      ],
+      "state": "",
+      "tag": ""
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 26
+       },
+       {
+        "kind": "ketu",
+        "r": 30,
+        "dx": 62
+       },
+       {
+        "kind": "jupiter",
+        "r": 36,
+        "dx": 70
+       }
+      ],
+      "state": "focus",
+      "tag": ""
+     }
+    ]
+   },
+   "motion": {
+    "from": {
+     "rooms": [
+      {
+       "sign": "Leo",
+       "orbs": [
+        {
+         "kind": "ketu",
+         "r": 30
+        },
+        {
+         "kind": "jupiter",
+         "r": 36,
+         "dx": 70
+        }
+       ]
+      }
+     ]
+    },
+    "order": [
+     0,
+     [
+      "across",
+      0
+     ]
+    ],
+    "spark": [
+     null,
+     [
+      "rooms",
+      0,
+      "across",
+      0
+     ]
+    ]
+   }
   },
   {
    "type": "text",
@@ -52,143 +116,221 @@
      "Mars in Leo faces Rahu in Aquarius:\nbig moves, so check the facts"
     ]
    ],
-   "bodysize": 34
+   "bodysize": 36
   },
   {
    "type": "text",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [],
+      "state": "dim",
+      "tag": ""
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 26
+       },
+       {
+        "kind": "ketu",
+        "r": 30,
+        "dx": 62
+       },
+       {
+        "kind": "jupiter",
+        "r": 36,
+        "dx": 70
+       }
+      ],
+      "state": "focus",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 38
+       }
+      ],
+      "state": "",
+      "tag": ""
+     }
+    ]
+   },
    "label": "From this morning",
    "labelsize": 26,
-   "orbs": [
-    {
-     "kind": "mars",
-     "r": 38
-    },
-    {
-     "kind": "jupiter",
-     "r": 46,
-     "dx": 96
-    },
-    {
-     "kind": "ketu",
-     "r": 40,
-     "dx": 92
-    }
-   ],
    "title": "The soldier walks into Leo",
    "titleclass": "h3",
    "body": [
     "He joins the teacher and the monk",
     "Friday to Monday all three sit\nwithin one degree",
-    "Three strong characters, one small room"
+    "*Three strong characters,\none small room*"
    ],
    "bodysize": 40,
    "bodygap": 10
   },
   {
-   "type": "cast",
+   "type": "text",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 30
+       },
+       {
+        "kind": "ketu",
+        "r": 34,
+        "dx": 70
+       },
+       {
+        "kind": "jupiter",
+        "r": 42,
+        "dx": 80
+       }
+      ],
+      "state": "focus",
+      "tag": "",
+      "wide": 1.3,
+      "front": true
+     }
+    ]
+   },
    "label": "Now read Leo with four rules",
    "labelsize": 25,
    "title": "Inside the room",
-   "titleclass": "h3",
-   "headsize": 62,
-   "bodysize": 37,
-   "castlabsize": 25,
-   "castorbh": 150,
-   "items": [
-    {
-     "orbs": [
-      {
-       "kind": "mars",
-       "r": 26
-      },
-      {
-       "kind": "jupiter",
-       "r": 32,
-       "dx": 66
-      },
-      {
-       "kind": "ketu",
-       "r": 28,
-       "dx": 64
-      }
-     ],
-     "label": "Rule 1 · same room",
-     "head": "Three share Leo",
-     "line": "The soldier joins the teacher\nand the monk"
-    },
-    {
-     "orbs": [
-      {
-       "kind": "jupiter",
-       "r": 44
-      }
-     ],
-     "label": "Rule 3 · in front",
-     "head": "The teacher leads",
-     "line": "The soldier came in last,\nso he follows"
-    }
-   ]
+   "titleclass": "h2",
+   "body": [
+    "Rule 1 · three share Leo",
+    "Rule 3 · the teacher leads,\n*the soldier follows*"
+   ],
+   "bodysize": 42,
+   "bodygap": 16
   },
   {
-   "type": "cast",
+   "type": "text",
+   "scene": {
+    "h": 170,
+    "across": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 34
+       }
+      ],
+      "state": "focus",
+      "tag": ""
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 26
+       }
+      ],
+      "state": "",
+      "tag": ""
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 26
+       },
+       {
+        "kind": "ketu",
+        "r": 30,
+        "dx": 62
+       },
+       {
+        "kind": "jupiter",
+        "r": 36,
+        "dx": 70
+       }
+      ],
+      "state": "",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 36
+       }
+      ],
+      "state": "focus",
+      "tag": "ahead"
+     }
+    ]
+   },
    "label": "Now read Leo with four rules",
    "labelsize": 25,
    "title": "Outside the room",
-   "titleclass": "h3",
-   "headsize": 62,
-   "bodysize": 37,
-   "castlabsize": 25,
-   "castorbh": 150,
-   "items": [
-    {
-     "orbs": [
-      {
-       "kind": "rahu",
-       "r": 40
-      }
-     ],
-     "label": "Rule 4 · face to face",
-     "head": "The magician faces them",
-     "line": "From Aquarius, straight across"
-    },
-    {
-     "orbs": [
-      {
-       "kind": "venus",
-       "r": 40
-      }
-     ],
-     "label": "Rule 2 · ahead",
-     "head": "The lover waits",
-     "line": "In Virgo, still checking the bill"
-    }
-   ]
+   "titleclass": "h2",
+   "body": [
+    "Rule 4 · *the magician* faces them",
+    "Rule 2 · *the lover* waits ahead"
+   ],
+   "bodysize": 42,
+   "bodygap": 16
   },
   {
    "type": "sentence",
+   "scene": {
+    "h": 170,
+    "across": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 36
+       }
+      ],
+      "state": "",
+      "tag": ""
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 26
+       },
+       {
+        "kind": "ketu",
+        "r": 30,
+        "dx": 62
+       },
+       {
+        "kind": "jupiter",
+        "r": 36,
+        "dx": 70
+       }
+      ],
+      "state": "focus",
+      "tag": ""
+     }
+    ]
+   },
    "label": "Join them",
    "labelsize": 26,
-   "orbs": [
-    {
-     "kind": "mars",
-     "r": 32
-    },
-    {
-     "kind": "jupiter",
-     "r": 42,
-     "dx": 86
-    },
-    {
-     "kind": "ketu",
-     "r": 36,
-     "dx": 84
-    },
-    {
-     "kind": "rahu",
-     "r": 36,
-     "dx": 330
-    }
-   ],
    "example": "A soldier walks into a quiet room, and across the table sits the magician",
    "rows": [],
    "bodysize": 38,
@@ -201,8 +343,8 @@
    "title": "This weekend",
    "titleclass": "h2",
    "body": [
-    "A calm talk can turn sharp fast",
-    "Bold promises get tested in public",
+    "A calm talk can *turn sharp fast*",
+    "Bold promises get *tested in public*",
     "Act only on what you checked yourself"
    ],
    "bodysize": 42,

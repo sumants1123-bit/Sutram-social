@@ -6,21 +6,60 @@
   {
    "type": "cover",
    "stars": true,
-   "orbs": [
-    {
-     "kind": "mercury",
-     "r": 34
-    },
-    {
-     "kind": "venus",
-     "r": 44,
-     "dx": 150
-    }
-   ],
    "label": "Nadi · Rule 5",
    "labelsize": 30,
    "title": "Looking back",
-   "subtitle": "Grahas walking backward"
+   "subtitle": "Grahas walking backward",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 26
+       },
+       {
+        "kind": "ketu",
+        "r": 30,
+        "dx": 62
+       },
+       {
+        "kind": "jupiter",
+        "r": 36,
+        "dx": 70
+       }
+      ],
+      "state": "",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 40
+       }
+      ],
+      "state": "focus",
+      "tag": "◂ looking back"
+     }
+    ]
+   },
+   "motion": {
+    "order": [
+     1,
+     0
+    ],
+    "spark": [
+     [
+      "rooms",
+      1,
+      "rooms",
+      0
+     ]
+    ]
+   }
   },
   {
    "type": "text",
@@ -79,34 +118,49 @@
   },
   {
    "type": "text",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 26
+       },
+       {
+        "kind": "ketu",
+        "r": 30,
+        "dx": 62
+       },
+       {
+        "kind": "jupiter",
+        "r": 36,
+        "dx": 70
+       }
+      ],
+      "state": "",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 40
+       }
+      ],
+      "state": "focus",
+      "tag": "◂ looking back"
+     }
+    ]
+   },
    "label": "Rule 5 on this week's sky",
    "labelsize": 25,
-   "orbs": [
-    {
-     "kind": "mars",
-     "r": 28
-    },
-    {
-     "kind": "jupiter",
-     "r": 38,
-     "dx": 78
-    },
-    {
-     "kind": "ketu",
-     "r": 32,
-     "dx": 76
-    },
-    {
-     "kind": "venus",
-     "r": 40,
-     "dx": 270
-    }
-   ],
    "title": "The lover looked back",
    "titleclass": "h3",
    "body": [
     "The sign behind Virgo is Leo",
-    "So all week the lover also worked\nfrom the teacher's room",
+    "So all week the lover also worked\nfrom *the teacher's room*",
     "Tonight the lover turns and walks on"
    ],
    "bodysize": 41,

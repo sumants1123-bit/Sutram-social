@@ -6,177 +6,317 @@
   {
    "type": "cover",
    "stars": true,
-   "orbs": [
-    {
-     "kind": "mars",
-     "r": 36
-    },
-    {
-     "kind": "jupiter",
-     "r": 50,
-     "dx": 250
-    },
-    {
-     "kind": "ketu",
-     "r": 40,
-     "dx": 96
-    },
-    {
-     "kind": "venus",
-     "r": 40,
-     "dx": 250
-    }
-   ],
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 36
+       }
+      ],
+      "state": "",
+      "tag": "behind"
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "jupiter",
+        "r": 40
+       },
+       {
+        "kind": "ketu",
+        "r": 34,
+        "dx": 78
+       }
+      ],
+      "state": "focus",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 40
+       }
+      ],
+      "state": "",
+      "tag": "ahead"
+     }
+    ]
+   },
    "label": "Reading the sky",
    "labelsize": 30,
    "title": "Read it\nwith me",
-   "subtitle": "Rules 1 and 2 on tonight's sky"
+   "subtitle": "Rules 1 and 2 on tonight's sky",
+   "motion": {
+    "order": [
+     1,
+     0,
+     2
+    ],
+    "spark": [
+     null,
+     [
+      "rooms",
+      0,
+      "rooms",
+      1
+     ],
+     [
+      "rooms",
+      1,
+      "rooms",
+      2
+     ]
+    ]
+   }
   },
   {
    "type": "text",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [],
+      "state": "dim",
+      "tag": ""
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "jupiter",
+        "r": 48
+       }
+      ],
+      "state": "focus",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [],
+      "state": "dim",
+      "tag": ""
+     }
+    ]
+   },
    "label": "Step 1",
    "labelsize": 28,
-   "orbs": [
-    {
-     "kind": "jupiter",
-     "r": 58
-    }
-   ],
    "title": "Pick one graha",
    "titleclass": "h2",
    "body": [
     "Start with the teacher (Jupiter)",
     "He stands for advice, growth, mentors",
-    "Tonight he is in Leo, the sign of the stage"
+    "Tonight he is in *Leo*, the sign of the stage"
    ],
-   "bodysize": 42,
-   "bodygap": 10
+   "bodysize": 41,
+   "bodygap": 12
   },
   {
    "type": "text",
-   "label": "Step 2 · Rule 1 · same room",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [],
+      "state": "dim",
+      "tag": ""
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "jupiter",
+        "r": 40
+       },
+       {
+        "kind": "ketu",
+        "r": 34,
+        "dx": 78
+       }
+      ],
+      "state": "focus",
+      "tag": "same room"
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [],
+      "state": "dim",
+      "tag": ""
+     }
+    ]
+   },
+   "label": "Step 2 · Rule 1",
    "labelsize": 26,
-   "orbs": [
-    {
-     "kind": "jupiter",
-     "r": 52
-    },
-    {
-     "kind": "ketu",
-     "r": 44,
-     "dx": 92
-    }
-   ],
    "title": "Who is with him?",
    "titleclass": "h2",
    "body": [
     "The monk (Ketu) shares Leo",
     "The monk lets go and says little",
-    "So advice turns quiet and honest"
+    "So advice turns *quiet and honest*"
    ],
-   "bodysize": 42,
-   "bodygap": 10
+   "bodysize": 41,
+   "bodygap": 12
   },
   {
    "type": "text",
-   "label": "Step 3 · Rule 2 · behind",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 36
+       }
+      ],
+      "state": "focus",
+      "tag": "behind"
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "jupiter",
+        "r": 40
+       },
+       {
+        "kind": "ketu",
+        "r": 34,
+        "dx": 78
+       }
+      ],
+      "state": "",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [],
+      "state": "dim",
+      "tag": ""
+     }
+    ]
+   },
+   "label": "Step 3 · Rule 2",
    "labelsize": 26,
-   "orbs": [
-    {
-     "kind": "mars",
-     "r": 38
-    },
-    {
-     "kind": "jupiter",
-     "r": 46,
-     "dx": 250
-    },
-    {
-     "kind": "ketu",
-     "r": 38,
-     "dx": 92
-    }
-   ],
    "title": "What does he carry?",
    "titleclass": "h2",
    "body": [
     "The soldier (Mars) sits one sign behind",
     "In Cancer, his weakest sign",
-    "So the teacher carries a tired, old fight"
+    "So the teacher carries *a tired, old fight*"
    ],
-   "bodysize": 42,
-   "bodygap": 10
+   "bodysize": 41,
+   "bodygap": 12
   },
   {
    "type": "text",
-   "label": "Step 4 · Rule 2 · ahead",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 36
+       }
+      ],
+      "state": "",
+      "tag": ""
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "jupiter",
+        "r": 40
+       },
+       {
+        "kind": "ketu",
+        "r": 34,
+        "dx": 78
+       }
+      ],
+      "state": "",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 40
+       }
+      ],
+      "state": "focus",
+      "tag": "ahead"
+     }
+    ]
+   },
+   "label": "Step 4 · Rule 2",
    "labelsize": 26,
-   "orbs": [
-    {
-     "kind": "jupiter",
-     "r": 46
-    },
-    {
-     "kind": "ketu",
-     "r": 38,
-     "dx": 92
-    },
-    {
-     "kind": "venus",
-     "r": 40,
-     "dx": 250
-    }
-   ],
    "title": "Where is he heading?",
    "titleclass": "h2",
    "body": [
     "The lover (Venus) sits one sign ahead",
     "In Virgo, the lover's weakest sign",
-    "So he walks toward\na money and love check"
+    "So he walks toward\n*a money and love check*"
    ],
-   "bodysize": 42,
-   "bodygap": 10
+   "bodysize": 41,
+   "bodygap": 12
   },
   {
    "type": "sentence",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 36
+       }
+      ],
+      "state": "",
+      "tag": "carries"
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "jupiter",
+        "r": 40
+       },
+       {
+        "kind": "ketu",
+        "r": 34,
+        "dx": 78
+       }
+      ],
+      "state": "focus",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 40
+       }
+      ],
+      "state": "",
+      "tag": "heads to"
+     }
+    ]
+   },
    "label": "Step 5 · Join them",
    "labelsize": 26,
-   "orbs": [
-    {
-     "kind": "mars",
-     "r": 32
-    },
-    {
-     "kind": "jupiter",
-     "r": 44,
-     "dx": 230
-    },
-    {
-     "kind": "ketu",
-     "r": 36,
-     "dx": 90
-    },
-    {
-     "kind": "venus",
-     "r": 36,
-     "dx": 230
-    }
-   ],
    "example": "A quiet teacher carries an old fight toward a money check",
-   "rows": [
-    [
-     "Room",
-     "the teacher with the monk"
-    ],
-    [
-     "Behind",
-     "a tired soldier"
-    ],
-    [
-     "Ahead",
-     "a careful lover"
-    ]
-   ],
+   "rows": [],
    "bodysize": 38,
    "conclusion": "Two rules, one sentence"
   },
@@ -187,9 +327,9 @@
    "title": "This week",
    "titleclass": "h2",
    "body": [
-    "The best advice is short",
-    "An old argument at home\nruns out of fuel",
-    "Before you pay or say yes,\nyou check twice"
+    "The best advice is *short*",
+    "An old argument at home\n*runs out of fuel*",
+    "Before you pay or say yes,\nyou *check twice*"
    ],
    "bodysize": 42,
    "bodygap": 14,

@@ -7,12 +7,10 @@
    "type": "cover",
    "stars": true,
    "orb": {
-    "kind": "orbit",
-    "w": 560,
-    "h": 120,
-    "beads": 5,
-    "lit": 2,
-    "tilt": -6
+    "kind": "north",
+    "s": 330,
+    "nums": true,
+    "hi": 9
    },
    "label": "The 9th house",
    "labelsize": 28,
@@ -39,9 +37,9 @@
    "labelsize": 24,
    "title": "What it covers",
    "titleclass": "h3",
-   "cellsize": 50,
+   "cellsize": 54,
    "cellpad": 16,
-   "bodysize": 31,
+   "bodysize": 36,
    "cells": [
     [
      "Fortune",
@@ -51,17 +49,17 @@
     [
      "Teachers",
      "Mentors",
-     "The professor who vouched for you"
+     "The professor who\nvouched for you"
     ],
     [
      "Faith",
      "What you believe",
-     "Your reason to keep going"
+     "Your reason\nto keep going"
     ],
     [
      "Long trips",
      "Travel and study",
-     "The year abroad that changed you"
+     "The year abroad\nthat changed you"
     ]
    ]
   },
@@ -77,7 +75,7 @@
    "titleclass": "h2",
    "body": [
     "The teacher (Jupiter) looks after this house",
-    "Luck comes through people who taught you",
+    "Luck comes through people\nwho taught you",
     "The more you listen, the luckier you get"
    ],
    "bodysize": 40,
@@ -104,7 +102,7 @@
    ],
    "bodysize": 40,
    "bodygap": 8,
-   "closing": "Ask about your 9th house at asksutram.com",
+   "closing": "Ask about your 9th house\nat asksutram.com",
    "after": "Weekly newsletter · sutram.ca/newsletter"
   }
  ]

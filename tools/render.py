@@ -28,22 +28,41 @@ radial-gradient(70% 14% at 50% 100%,rgba(224,148,96,.10) 0%,rgba(224,148,96,0) 1
 radial-gradient(125% 95% at 50% 38%,#17110C 0%,#0B0806 55%,#050403 100%);}}
 .decor{{position:absolute;inset:0;pointer-events:none}}
 .grain{{position:absolute;inset:0;pointer-events:none;opacity:.055;mix-blend-mode:screen}}
-.kick{{position:absolute;top:86px;left:0;right:0;font:500 27px/1 'EB Garamond';letter-spacing:.30em;text-transform:uppercase;color:{GOLD}}}
+.kick{{position:absolute;top:84px;left:0;right:0;display:flex;align-items:center;justify-content:center;gap:24px;font:500 27px/1 'EB Garamond';letter-spacing:.30em;text-transform:uppercase;color:{GOLD}}}
+.kick span{{padding-left:.30em}}
+.kick i{{position:relative;display:block;height:1px;width:92px;background:linear-gradient(90deg,rgba(217,165,122,0),rgba(217,165,122,.75))}}
+.kick i::after{{content:"";position:absolute;right:-3px;top:-3px;width:6px;height:6px;background:{AMBER};transform:rotate(45deg)}}
+.kick i.r{{transform:scaleX(-1)}}
+.frame{{position:absolute;inset:0;pointer-events:none}}
 .foot{{position:absolute;bottom:66px;left:0;right:0;display:flex;flex-direction:column;align-items:center;gap:10px}}
 .foot .w{{font:500 38px/1 'Cormorant Garamond';color:rgba(242,230,204,.66)}}
 .foot .u{{font:500 19px/1 'EB Garamond';letter-spacing:.32em;text-transform:uppercase;color:rgba(242,230,204,.48)}}
 .body{{position:absolute;left:84px;right:84px;top:160px;bottom:196px;display:flex;flex-direction:column;align-items:center;justify-content:center}}
-.t{{font-family:'Cormorant Garamond';font-weight:500;color:{CREAM};letter-spacing:-.01em}}
+.t{{font-family:'Cormorant Garamond';font-weight:500;color:{CREAM};letter-spacing:-.01em;text-shadow:0 0 42px rgba(224,148,96,.22)}}
+.p .ti{{font-size:1.16em;line-height:1}}
+.scene{{display:flex;flex-direction:column;align-items:center;margin-bottom:{f(46)}}}
+.rooms{{display:flex;justify-content:center;gap:{f(14)}}}
+.room{{display:flex;flex-direction:column;align-items:center}}
+.room.dim{{opacity:.30}}
+.arch{{position:relative;display:flex;align-items:center;justify-content:center;border:1.7px solid rgba(217,165,122,.46);background:linear-gradient(180deg,rgba(217,165,122,.085),rgba(217,165,122,0) 72%)}}
+.room.focus .arch{{border-color:rgba(232,160,108,.98);background:radial-gradient(82% 72% at 50% 58%,rgba(224,148,96,.26),rgba(224,148,96,0) 76%),linear-gradient(180deg,rgba(217,165,122,.12),rgba(217,165,122,0) 72%);box-shadow:0 0 54px rgba(224,148,96,.20),inset 0 0 34px rgba(224,148,96,.10)}}
+.sg{{font:500 {f(26)}/1 'EB Garamond';letter-spacing:.26em;text-transform:uppercase;color:{GOLD};padding-left:.26em}}
+.room.focus .sg{{color:{CREAM}}}
+.tag{{font:italic 500 {f(31)}/1 'Cormorant Garamond';color:{AMBER};height:{f(31)};white-space:nowrap}}
+.conn{{display:flex;align-items:center;gap:{f(14)};margin:{f(10)} 0;font:italic 500 {f(29)}/1 'Cormorant Garamond';color:{AMBER}}}
+.conn i{{display:block;width:{f(70)};height:0;border-top:1.6px dashed rgba(224,148,96,.6)}}
 .ti{{font-family:'Cormorant Garamond';font-style:italic;font-weight:500;color:{AMBER}}}
 .p{{font:400 {f(46)}/1.4 'EB Garamond';color:rgba(242,230,204,.88)}}
 .pi{{font:400 italic {f(44)}/1.38 'EB Garamond';color:rgba(242,230,204,.86)}}
 .src{{font:500 {f(30)}/1.3 'EB Garamond';letter-spacing:.16em;text-transform:uppercase;color:rgba(242,230,204,.64)}}
 .lab{{font:500 {f(30)}/1 'EB Garamond';letter-spacing:.26em;text-transform:uppercase;color:{GOLD}}}
-.rule{{height:1px;width:110px;background:rgba(217,165,122,.55);margin:{f(32)} auto}}
+.rule{{position:relative;height:1px;width:180px;background:linear-gradient(90deg,rgba(217,165,122,0),rgba(217,165,122,.8),rgba(217,165,122,0));margin:{f(32)} auto}}
+.rule::after{{content:"";position:absolute;left:50%;top:50%;width:7px;height:7px;background:{AMBER};transform:translate(-50%,-50%) rotate(45deg)}}
 .h1{{font-size:{f(132)};line-height:.98}} .h2{{font-size:{f(106)};line-height:1}} .h3{{font-size:{f(80)};line-height:1.05}}
 .sub{{font-size:{f(62)};line-height:1.22}}
 .row{{display:flex;justify-content:space-between;align-items:baseline;padding:{f(12)} 0;border-bottom:1px solid rgba(217,165,122,.2);text-align:left;gap:16px}}
 .grid2{{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;width:100%}}
+.ro svg{{margin:0!important}}
 '''
 GRAIN='<svg class="grain" width="1080" height="1350"><filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="1080" height="1350" filter="url(#g)"/></svg>'
 
@@ -58,13 +77,13 @@ def rich(t):
     """*word* makes amber italic."""
     return re.sub(r'\*(.+?)\*', r'<span class="ti">\1</span>', esc(t))
 
-def stars(seed=7,n=120,ymax=900):
+def stars(seed=7,n=120,ymax=900,tt=0.0):
     r=random.Random(seed); out=[]
     for _ in range(n):
         x=r.uniform(0,1080); y=r.uniform(0,ymax); rad=r.choice([.6,.8,1,1.2,1.5])
-        op=r.uniform(.12,.6)*(1-y/ymax*.55)
-        out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rad}" fill="#FFF1D6" opacity="{op:.2f}"/>')
-    return f'<svg style="position:absolute;inset:0" width="1080" height="1350">{"".join(out)}</svg>'
+        op=r.uniform(.12,.6)*(1-y/ymax*.55); op=max(.03,op*(1+.55*math.sin(2*math.pi*(r.choice([1,2,3])*tt+r.random()))))
+        out.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rad}" fill="#FFF1D6" opacity="{op:.3f}"/>')
+    return f'<svg class="sf" style="position:absolute;inset:0" width="1080" height="1350">{"".join(out)}</svg>'
 _n=[0]
 def uid(p): _n[0]+=1; return f'{p}{_n[0]}'
 def moon(R=140, illum=1.0, waxing=True):
@@ -74,24 +93,30 @@ def moon(R=140, illum=1.0, waxing=True):
         else:      d=f'M{c},{c-R} A{R},{R} 0 0 1 {c},{c+R} A{rx},{R} 0 0 {0 if illum>0.5 else 1} {c},{c-R} Z'
         sh=f'<path d="{d}" fill="#0B0806" opacity=".93" filter="url(#{b})"/>'
     cr=''.join(f'<circle cx="{c+dx*R}" cy="{c+dy*R}" r="{rr*R}" fill="#8F888D" opacity="{op}" filter="url(#{b})"/>' for dx,dy,rr,op in [(-.18,-.12,.16,.16),(.22,.05,.12,.14),(.05,.32,.10,.12),(-.32,.22,.08,.12),(.30,-.30,.07,.10)])
-    return f'''<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -40px"><defs><radialGradient id="{g}" cx="40%" cy="36%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".3" stop-color="#F3EFEB"/><stop offset=".66" stop-color="#D6D0CF"/><stop offset="1" stop-color="#A39DA2"/></radialGradient><filter id="{b}" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="{max(2,R/40)}"/></filter><filter id="{h}" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="{R/5}"/></filter></defs><circle cx="{c}" cy="{c}" r="{R*1.04}" fill="#FFF4E6" opacity=".28" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/>{cr}{sh}</svg>'''
+    return f'''<svg class="orbsvg" data-kind="moon" data-r="{R}" data-c="{c}" width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -40px"><defs><radialGradient id="{g}" cx="40%" cy="36%" r="72%"><stop offset="0" stop-color="#FFFFFF"/><stop offset=".3" stop-color="#F3EFEB"/><stop offset=".66" stop-color="#D6D0CF"/><stop offset="1" stop-color="#A39DA2"/></radialGradient><filter id="{b}" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="{max(2,R/40)}"/></filter><filter id="{h}" x="-50%" y="-50%" width="200%" height="200%"><feGaussianBlur stdDeviation="{R/5}"/></filter></defs><circle class="oglow" cx="{c}" cy="{c}" r="{R*1.04}" fill="#FFF4E6" opacity=".28" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/>{cr}{sh}</svg>'''
 def sun(R=100, rings=True):
     g,h=uid('sg'),uid('sh'); s=int(R*5.2) if rings else 2*R+160; c=s/2
-    rg=''.join(f'<circle cx="{c}" cy="{c}" r="{R*f}" fill="none" stroke="#E09460" stroke-opacity="{o}" stroke-width="1.2"/>' for f,o in [(1.55,.16),(2.05,.11),(2.55,.07)]) if rings else ''
-    return f'''<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:{-R*0.9:.0f}px auto {-R*0.9:.0f}px"><defs><radialGradient id="{g}" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#FFE8CF"/><stop offset=".22" stop-color="#FBB37C"/><stop offset=".58" stop-color="#EE7838"/><stop offset=".88" stop-color="#C9521F"/><stop offset="1" stop-color="#A8401A"/></radialGradient><filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.2}"/></filter></defs>{rg}<circle cx="{c}" cy="{c}" r="{R*1.08}" fill="#EF7A3C" opacity=".45" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/></svg>'''
+    rg=''.join(f'<circle class="sring" data-f="{f}" cx="{c}" cy="{c}" r="{R*f}" fill="none" stroke="#E09460" stroke-opacity="{o}" stroke-width="1.2"/>' for f,o in [(1.55,.16),(2.05,.11),(2.55,.07)]) if rings else ''
+    return f'''<svg class="orbsvg" data-kind="sun" data-r="{R}" data-c="{c}" width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:{-R*0.9:.0f}px auto {-R*0.9:.0f}px"><defs><radialGradient id="{g}" cx="38%" cy="32%" r="75%"><stop offset="0" stop-color="#FFE8CF"/><stop offset=".22" stop-color="#FBB37C"/><stop offset=".58" stop-color="#EE7838"/><stop offset=".88" stop-color="#C9521F"/><stop offset="1" stop-color="#A8401A"/></radialGradient><filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.2}"/></filter></defs>{rg}<circle class="oglow" cx="{c}" cy="{c}" r="{R*1.08}" fill="#EF7A3C" opacity=".45" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/></svg>'''
 def orbit(w=720,h=160,beads=5,tilt=-7,lit=None):
     pad=40; W=w+2*pad; H=h+2*pad+40; cx,cy=W/2,H/2; bs=''
     for i in range(beads):
         a=math.pi*(0.15+0.7*i/max(1,beads-1)); x=cx-(w/2)*math.cos(a); y=cy+(h/2)*math.sin(a)
         bs+=f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{11 if lit==i else 9}" fill="{AMBER if lit==i else CREAM}" opacity="{1 if lit==i else .85}"/>'
     return f'<svg width="{W}" height="{H}" viewBox="0 0 {W} {H}" style="display:block;margin:0 auto"><g transform="rotate({tilt} {cx} {cy})"><ellipse cx="{cx}" cy="{cy}" rx="{w/2}" ry="{h/2}" fill="none" stroke="{GOLD}" stroke-opacity=".55" stroke-width="1.6"/>{bs}</g></svg>'
-def north(s=320, nums=False):
-    h=s/2;q=s/4;x0=y0=4
+def north(s=320, nums=False, hi=1):
+    """North Indian chart. Houses stay put (the 1st is the top diamond, then they run anticlockwise); hi lights one house or a list."""
+    h=s/2;q=s/4;x0=y0=4; g=uid('nh')
+    P={1:[(h,0),(3*q,q),(h,h),(q,q)],2:[(0,0),(h,0),(q,q)],3:[(0,0),(q,q),(0,h)],4:[(0,h),(q,q),(h,h),(q,3*q)],5:[(0,h),(q,3*q),(0,s)],6:[(0,s),(q,3*q),(h,s)],
+       7:[(h,s),(q,3*q),(h,h),(3*q,3*q)],8:[(h,s),(3*q,3*q),(s,s)],9:[(s,s),(3*q,3*q),(s,h)],10:[(s,h),(3*q,3*q),(h,h),(3*q,q)],11:[(s,h),(3*q,q),(s,0)],12:[(s,0),(3*q,q),(h,0)]}
+    his=[k for k in (hi if isinstance(hi,(list,tuple)) else [hi]) if k in P]
+    pts=lambda k: ' '.join(f'{x0+x:.1f},{y0+y:.1f}' for x,y in P[k])
+    lit=''.join(f'<polygon class="pulse" points="{pts(k)}" fill="{AMBER}" fill-opacity=".30" filter="url(#{g})"/><polygon points="{pts(k)}" fill="{AMBER}" fill-opacity=".20" stroke="{AMBER}" stroke-width="2.4"/>' for k in his)
     lab=''
     if nums:
         pos={1:(h,q*.9),2:(q,q*.45),3:(q*.45,q),4:(q,h),5:(q*.45,3*q),6:(q,3.55*q),7:(h,3.1*q),8:(3*q,3.55*q),9:(3.55*q,3*q),10:(3*q,h),11:(3.55*q,q),12:(3*q,q*.45)}
-        lab=''.join(f'<text x="{x0+x}" y="{y0+y+9}" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-size="{s/11:.0f}" fill="{AMBER}">{n}</text>' for n,(x,y) in pos.items())
-    return f'''<svg width="{s+8}" height="{s+8}" style="display:block;margin:0 auto"><polygon points="{x0+h},{y0} {x0+3*q},{y0+q} {x0+h},{y0+h} {x0+q},{y0+q}" fill="{AMBER}" fill-opacity=".18"/><g stroke="{GOLD}" stroke-opacity=".85" stroke-width="2" fill="none"><rect x="{x0}" y="{y0}" width="{s}" height="{s}"/><line x1="{x0}" y1="{y0}" x2="{x0+s}" y2="{y0+s}"/><line x1="{x0+s}" y1="{y0}" x2="{x0}" y2="{y0+s}"/><polygon points="{x0+h},{y0} {x0+s},{y0+h} {x0+h},{y0+s} {x0},{y0+h}"/></g>{lab}</svg>'''
+        lab=''.join(f'<text x="{x0+x}" y="{y0+y+(s/26 if n in his else 9)}" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-weight="{600 if n in his else 500}" font-size="{s/(7.2 if n in his else 11):.0f}" fill="{CREAM if n in his else AMBER}" fill-opacity="{1 if n in his else .8}">{n}</text>' for n,(x,y) in pos.items())
+    return f'''<svg width="{s+8}" height="{s+8}" style="display:block;margin:0 auto;overflow:visible"><defs><filter id="{g}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{s/22:.1f}"/></filter></defs>{lit}<g stroke="{GOLD}" stroke-opacity=".85" stroke-width="2" fill="none"><rect x="{x0}" y="{y0}" width="{s}" height="{s}"/><line x1="{x0}" y1="{y0}" x2="{x0+s}" y2="{y0+s}"/><line x1="{x0+s}" y1="{y0}" x2="{x0}" y2="{y0+s}"/><polygon points="{x0+h},{y0} {x0+s},{y0+h} {x0+h},{y0+s} {x0},{y0+h}"/></g>{lab}</svg>'''
 SIGNS=['Pisces','Aries','Taurus','Gemini','Aquarius',None,None,'Cancer','Capricorn',None,None,'Leo','Sagittarius','Scorpio','Libra','Virgo']
 def south(s=320, labels=True, asc=None):
     c=s/4;x0=y0=4;out=''
@@ -112,12 +137,32 @@ def icon(kind, s=64):
     # asc: the Sun's disc rising on the horizon line
     return f'<svg width="{s}" height="{s}"><path d="M{s*0.2},{s*0.62} A{s*0.3},{s*0.3} 0 0 1 {s*0.8},{s*0.62}" fill="none" stroke="{GOLD}" stroke-width="2.4"/><line x1="{s*0.06}" y1="{s*0.62}" x2="{s*0.94}" y2="{s*0.62}" stroke="{GOLD}" stroke-width="2.4"/></svg>'
 def venus_orb(R=80):
-    g,h=uid('vg'),uid('vh'); s=2*R+160; c=s/2
-    return f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs><radialGradient id="{g}" cx="38%" cy="34%" r="74%"><stop offset="0" stop-color="#FFFBF2"/><stop offset=".35" stop-color="#F6E7C8"/><stop offset=".75" stop-color="#E2C48F"/><stop offset="1" stop-color="#B8925A"/></radialGradient><filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.4}"/></filter></defs><circle cx="{c}" cy="{c}" r="{R*1.1}" fill="#F3DDB0" opacity=".38" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/></svg>'
+    """Venus, the lover: pale gold under soft cloud, with a shaded limb and a thin bright rim (v6)."""
+    g,h,cl,sh,bl=uid('vg'),uid('vh'),uid('vc'),uid('vs'),uid('vb'); s=2*R+160; c=s/2
+    clouds=''.join(f'<ellipse cx="{c+dx*R:.1f}" cy="{c+dy*R:.1f}" rx="{rx*R:.1f}" ry="{ry*R:.1f}" fill="{col}" opacity="{op}" transform="rotate({rot} {c} {c})" filter="url(#{bl})"/>'
+                   for dx,dy,rx,ry,col,op,rot in [(-.1,-.42,.95,.11,'#FFFFFF',.34,-14),(.1,-.08,1.0,.10,'#C9A56B',.30,-12),(-.05,.26,1.0,.12,'#FFFFFF',.26,-10),(.1,.58,.9,.10,'#B8925A',.30,-8)])
+    return (f'<svg class="orbsvg" data-kind="venus" data-r="{R}" data-c="{c}" width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs>'
+            f'<radialGradient id="{g}" cx="38%" cy="34%" r="74%"><stop offset="0" stop-color="#FFFBF2"/><stop offset=".35" stop-color="#F6E7C8"/><stop offset=".75" stop-color="#E2C48F"/><stop offset="1" stop-color="#B8925A"/></radialGradient>'
+            f'<radialGradient id="{sh}" cx="36%" cy="30%" r="82%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#3A2410" stop-opacity=".55"/></radialGradient>'
+            f'<clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath>'
+            f'<filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.2:.1f}"/></filter>'
+            f'<filter id="{bl}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{R*.09:.1f}"/></filter></defs>'
+            f'<circle class="oglow" cx="{c}" cy="{c}" r="{R*1.12:.1f}" fill="#F3DDB0" opacity=".42" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/>'
+            f'<g clip-path="url(#{cl})"><g class="drift">{clouds}</g><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>'
+            f'<circle cx="{c}" cy="{c}" r="{R-.8:.1f}" fill="none" stroke="#FFF6E0" stroke-opacity=".30" stroke-width="1.5"/></svg>')
 def jupiter_orb(R=95):
-    g,h,cl=uid('jg'),uid('jh'),uid('jc'); s=2*R+160; c=s/2
-    bands=''.join(f'<rect x="{c-R}" y="{c+R*y:.1f}" width="{2*R}" height="{R*hh:.1f}" fill="{col}" opacity="{op}"/>' for y,hh,col,op in [(-.62,.10,'#B9875A',.35),(-.38,.14,'#A86F45',.42),(-.12,.08,'#E9D3B0',.35),(.06,.16,'#9C6440',.45),(.30,.08,'#C99A6B',.35),(.48,.12,'#A87450',.35),(.70,.08,'#C9A27A',.3)])
-    return f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs><radialGradient id="{g}" cx="38%" cy="32%" r="78%"><stop offset="0" stop-color="#F7E9D2"/><stop offset=".45" stop-color="#E2C49C"/><stop offset=".85" stop-color="#A57850"/><stop offset="1" stop-color="#6E4A2E"/></radialGradient><clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath><filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.4}"/></filter></defs><circle cx="{c}" cy="{c}" r="{R*1.08}" fill="#E0B98A" opacity=".30" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{bands}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})" opacity=".35"/><ellipse cx="{c+R*.28}" cy="{c+R*.16}" rx="{R*.13}" ry="{R*.07}" fill="#A0563A" opacity=".55"/></g><circle cx="{c}" cy="{c}" r="{R}" fill="none" stroke="#000" stroke-opacity=".25" stroke-width="{R*.08}" style="filter:blur(4px)"/></svg>'
+    """Jupiter, the teacher: cream and tan bands that waver like weather, the red spot, a shaded limb and a thin bright rim (v6)."""
+    g,h,cl,sh,wv=uid('jg'),uid('jh'),uid('jc'),uid('js'),uid('jw'); s=2*R+160; c=s/2
+    bands=''.join(f'<rect x="{c-R*1.2:.1f}" y="{c+R*y:.1f}" width="{2.4*R:.1f}" height="{R*hh:.1f}" fill="{col}" opacity="{op}"/>' for y,hh,col,op in [(-.80,.09,'#C9A27A',.30),(-.62,.10,'#B9875A',.40),(-.38,.14,'#A86F45',.48),(-.12,.08,'#F1DDBB',.40),(.06,.16,'#9C6440',.50),(.30,.08,'#C99A6B',.40),(.48,.12,'#A87450',.42),(.70,.08,'#C9A27A',.34)])
+    return (f'<svg class="orbsvg" data-kind="jupiter" data-r="{R}" data-c="{c}" width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs>'
+            f'<radialGradient id="{g}" cx="38%" cy="32%" r="78%"><stop offset="0" stop-color="#F9ECD6"/><stop offset=".45" stop-color="#E4C79F"/><stop offset=".85" stop-color="#A57850"/><stop offset="1" stop-color="#6E4A2E"/></radialGradient>'
+            f'<radialGradient id="{sh}" cx="36%" cy="30%" r="82%"><stop offset=".5" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#1E0E05" stop-opacity=".62"/></radialGradient>'
+            f'<clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath>'
+            f'<filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.2:.1f}"/></filter>'
+            f'<filter id="{wv}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feTurbulence type="fractalNoise" baseFrequency="{1.1/R:.4f} {5.5/R:.4f}" numOctaves="2" seed="4" result="n"/><feOffset class="jdrift" in="n" dx="0" dy="0" result="n2"/><feDisplacementMap in="SourceGraphic" in2="n2" scale="{R*.16:.1f}" xChannelSelector="R" yChannelSelector="G"/><feGaussianBlur stdDeviation="{max(.6,R*.012):.2f}"/></filter></defs>'
+            f'<circle class="oglow" cx="{c}" cy="{c}" r="{R*1.1:.1f}" fill="#E0B98A" opacity=".34" filter="url(#{h})"/><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/>'
+            f'<g clip-path="url(#{cl})"><g filter="url(#{wv})">{bands}<ellipse class="jspot" cx="{c+R*.30:.1f}" cy="{c+R*.17:.1f}" rx="{R*.15:.1f}" ry="{R*.08:.1f}" fill="#A0492E" opacity=".72"/></g><circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>'
+            f'<circle cx="{c}" cy="{c}" r="{R-.8:.1f}" fill="none" stroke="#FFE9C9" stroke-opacity=".28" stroke-width="1.5"/></svg>')
 def asc_orb(s=230):
     h=uid('ah'); w=int(s*1.8); ht=int(s*1.0); cy=int(ht*0.66); cx=w/2; R=s*0.36
     return f'<svg width="{w}" height="{ht}" viewBox="0 0 {w} {ht}" style="display:block;margin:-46px auto -40px"><defs><filter id="{h}" filterUnits="userSpaceOnUse" x="0" y="0" width="{w}" height="{ht}"><feGaussianBlur stdDeviation="{s*0.08:.1f}"/></filter></defs><ellipse cx="{cx}" cy="{cy-R*0.3:.1f}" rx="{R*1.1:.1f}" ry="{R*0.7:.1f}" fill="#E09460" opacity=".40" filter="url(#{h})"/><circle cx="{cx-R:.1f}" cy="{cy}" r="18" fill="#E09460" opacity=".55" filter="url(#{h})"/><path d="M{cx-R:.1f},{cy} A{R:.1f},{R:.1f} 0 0 1 {cx+R:.1f},{cy}" fill="none" stroke="#D9A57A" stroke-width="3"/><line x1="{cx-s*0.62:.1f}" y1="{cy}" x2="{cx+s*0.62:.1f}" y2="{cy}" stroke="#D9A57A" stroke-width="3"/><circle cx="{cx-R:.1f}" cy="{cy}" r="9" fill="#E09460"/></svg>'
@@ -133,29 +178,29 @@ def mars_orb(R=80, dim=False):
     """Mars as a small world: rust body, soft dark lands across it, a white polar cap and a shaded limb."""
     g,h,cl,sh,bl,cb=uid('mg'),uid('mh'),uid('mc'),uid('ms'),uid('mb'),uid('mp'); s=2*R+120; c=s/2
     stops=('#F6B58C','#D8703F','#A9451F','#5E2210') if not dim else ('#B8826A','#8A5440','#5E3324','#2E170E')
-    glow='' if dim else f'<circle cx="{c}" cy="{c}" r="{R*1.1}" fill="#E0703C" opacity=".32" filter="url(#{h})"/>'
+    glow='' if dim else f'<circle class="oglow" cx="{c}" cy="{c}" r="{R*1.1}" fill="#E0703C" opacity=".32" filter="url(#{h})"/>'
     band=_blob(c,R,[(-1.1,.02),(-.7,-.12),(-.38,-.02),(-.08,-.16),(.25,-.06),(.6,.05),(1.1,.02),(1.1,.3),(.62,.26),(.3,.34),(.02,.24),(-.3,.38),(-.7,.3),(-1.1,.36)],rot=-16)
     spot=_blob(c,R,[(.22,.58),(.46,.5),(.62,.6),(.5,.74),(.28,.72)],rot=0)
     patch=_blob(c,R,[(-.62,-.5),(-.38,-.58),(-.2,-.46),(-.42,-.38)],rot=0)
     lands=f'<path d="{band}" fill="#5A220F" opacity=".38" filter="url(#{bl})"/><path d="{spot}" fill="#5A220F" opacity=".26" filter="url(#{bl})"/><path d="{patch}" fill="#5A220F" opacity=".2" filter="url(#{bl})"/>'
     cap=f'<ellipse cx="{c-R*.08:.1f}" cy="{c-R*.9:.1f}" rx="{R*.36:.1f}" ry="{R*.15:.1f}" fill="#FFF3EA" opacity="{.55 if dim else .8}" filter="url(#{cb})"/>'
-    return (f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-40px auto -40px"><defs>'
+    return (f'<svg class="orbsvg" data-kind="mars" data-r="{R}" data-c="{c}" width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-40px auto -40px"><defs>'
             f'<radialGradient id="{g}" cx="38%" cy="32%" r="76%"><stop offset="0" stop-color="{stops[0]}"/><stop offset=".45" stop-color="{stops[1]}"/><stop offset=".85" stop-color="{stops[2]}"/><stop offset="1" stop-color="{stops[3]}"/></radialGradient>'
             f'<radialGradient id="{sh}" cx="36%" cy="30%" r="82%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/></radialGradient>'
             f'<clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath>'
             f'<filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.2:.1f}"/></filter>'
             f'<filter id="{bl}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{R*.07:.1f}"/></filter>'
             f'<filter id="{cb}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{R*.035:.1f}"/></filter></defs>'
-            f'{glow}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{lands}{cap}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>'
+            f'{glow}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})"><g class="drift">{lands}</g>{cap}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>'
             f'<circle cx="{c}" cy="{c}" r="{R-.8:.1f}" fill="none" stroke="#FFD9BE" stroke-opacity="{.10 if dim else .18}" stroke-width="1.6"/></svg>')
 def mercury_orb(R=70, dim=False):
     """Mercury: small, quick and cratered, in the grey-green of durva grass that Parashara gives it."""
     g,h,cl,sh,bl=uid('qg'),uid('qh'),uid('qc'),uid('qs'),uid('qb'); s=2*R+120; c=s/2
     stops=('#E4F0D6','#A3C08C','#5E8456','#24361F') if not dim else ('#B4BBA8','#87927C','#59644F','#272D22')
-    glow='' if dim else f'<circle cx="{c}" cy="{c}" r="{R*1.1}" fill="#9CC283" opacity=".30" filter="url(#{h})"/>'
+    glow='' if dim else f'<circle class="oglow" cx="{c}" cy="{c}" r="{R*1.1}" fill="#9CC283" opacity=".30" filter="url(#{h})"/>'
     craters=''.join(f'<circle cx="{c+dx*R:.1f}" cy="{c+dy*R:.1f}" r="{rr*R:.1f}" fill="#3E4D3E" opacity="{op}" filter="url(#{bl})"/><circle cx="{c+dx*R-rr*R*.25:.1f}" cy="{c+dy*R-rr*R*.25:.1f}" r="{rr*R*.7:.1f}" fill="#FFFFFF" opacity="{op*.22:.2f}" filter="url(#{bl})"/>'
                     for dx,dy,rr,op in [(-.30,-.18,.15,.30),(.24,.10,.11,.26),(.02,.42,.09,.24),(-.42,.30,.07,.22),(.38,-.36,.08,.22),(-.05,-.48,.06,.2),(.55,.32,.06,.2)])
-    return (f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-40px auto -40px"><defs>'
+    return (f'<svg class="orbsvg" data-kind="mercury" data-r="{R}" data-c="{c}" width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-40px auto -40px"><defs>'
             f'<radialGradient id="{g}" cx="38%" cy="32%" r="76%"><stop offset="0" stop-color="{stops[0]}"/><stop offset=".45" stop-color="{stops[1]}"/><stop offset=".85" stop-color="{stops[2]}"/><stop offset="1" stop-color="{stops[3]}"/></radialGradient>'
             f'<radialGradient id="{sh}" cx="36%" cy="30%" r="82%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".5"/></radialGradient>'
             f'<clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath>'
@@ -164,16 +209,20 @@ def mercury_orb(R=70, dim=False):
             f'{glow}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{craters}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>'
             f'<circle cx="{c}" cy="{c}" r="{R-.8:.1f}" fill="none" stroke="#E8F0DE" stroke-opacity="{.08 if dim else .16}" stroke-width="1.4"/></svg>')
 def node_orb(R=80, kind='ketu'):
-    """Rahu and Ketu are shadow points: a dark disc with a glowing rim, like an eclipse."""
-    g,h=uid('ng'),uid('nh'); s=int(2*R+160); c=s/2
-    rim='#E09460' if kind=='ketu' else '#A9B9D6'
-    return (f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs>'
-            f'<radialGradient id="{g}" cx="50%" cy="50%" r="50%"><stop offset=".55" stop-color="{rim}" stop-opacity="0"/><stop offset=".74" stop-color="{rim}" stop-opacity=".55"/><stop offset="1" stop-color="{rim}" stop-opacity="0"/></radialGradient>'
-            f'<filter id="{h}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{R/6:.1f}"/></filter></defs>'
+    """Rahu and Ketu are shadow points: a dark disc in eclipse, with a streaming corona and one bright bead on the rim (v6)."""
+    g,h,cr=uid('ng'),uid('nh'),uid('nc'); s=int(2*R+160); c=s/2
+    rim='#E09460' if kind=='ketu' else '#A9B9D6'; hot='#FFE3C4' if kind=='ketu' else '#EEF4FF'
+    bx,by=(c+R*.72,c-R*.70) if kind=='ketu' else (c-R*.72,c-R*.70)
+    return (f'<svg class="orbsvg" data-kind="{kind}" data-r="{R}" data-c="{c}" width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs>'
+            f'<radialGradient id="{g}" cx="50%" cy="50%" r="50%"><stop offset=".55" stop-color="{rim}" stop-opacity="0"/><stop offset=".74" stop-color="{rim}" stop-opacity=".62"/><stop offset="1" stop-color="{rim}" stop-opacity="0"/></radialGradient>'
+            f'<filter id="{h}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{R/6:.1f}"/></filter>'
+            f'<filter id="{cr}" filterUnits="userSpaceOnUse" x="0" y="0" width="{s}" height="{s}"><feGaussianBlur stdDeviation="{max(.8,R*.03):.1f}"/></filter></defs>'
             f'<circle cx="{c}" cy="{c}" r="{R*1.42:.1f}" fill="url(#{g})" filter="url(#{h})"/>'
+            f'<circle class="ncor" cx="{c}" cy="{c}" r="{R*1.20:.1f}" fill="none" stroke="{rim}" stroke-opacity=".42" stroke-width="{R*.36:.1f}" stroke-dasharray="{R*.035:.2f} {R*.105:.2f}" filter="url(#{cr})"/>'
             f'<circle cx="{c}" cy="{c}" r="{R}" fill="#070504"/>'
-            f'<circle cx="{c}" cy="{c}" r="{R}" fill="none" stroke="{rim}" stroke-opacity=".9" stroke-width="2.2"/>'
-            f'<circle cx="{c}" cy="{c}" r="{R-7}" fill="none" stroke="{rim}" stroke-opacity=".18" stroke-width="1"/></svg>')
+            f'<circle cx="{c}" cy="{c}" r="{R}" fill="none" stroke="{rim}" stroke-opacity=".95" stroke-width="{max(2.2,R*.045):.1f}"/>'
+            f'<circle cx="{c}" cy="{c}" r="{R-max(6,R*.12):.1f}" fill="none" stroke="{rim}" stroke-opacity=".16" stroke-width="1"/>'
+            f'<g class="nbead"><circle cx="{bx:.1f}" cy="{by:.1f}" r="{R*.20:.1f}" fill="{hot}" opacity=".30" filter="url(#{h})"/><circle cx="{bx:.1f}" cy="{by:.1f}" r="{max(1.8,R*.055):.1f}" fill="{hot}"/></g></svg>')
 def saturn_orb(R=70):
     """Saturn, the auditor: pale gold with soft bands and a tilted ring; the back of the ring passes behind the disc."""
     g,h,cl,sh,bk,fr=uid('tg'),uid('th'),uid('tc'),uid('ts'),uid('tb'),uid('tf'); s=int(2*R+160); c=s/2
@@ -182,14 +231,14 @@ def saturn_orb(R=70):
     ring=lambda clip,op: (f'<g transform="rotate({tilt} {c} {c})"><g clip-path="url(#{clip})">'
                           f'<ellipse cx="{c}" cy="{c}" rx="{rx:.1f}" ry="{ry:.1f}" fill="none" stroke="#E6D3A8" stroke-opacity="{op}" stroke-width="{sw:.1f}"/>'
                           f'<ellipse cx="{c}" cy="{c}" rx="{rx*0.83:.1f}" ry="{ry*0.83:.1f}" fill="none" stroke="#C9B080" stroke-opacity="{op*0.7:.2f}" stroke-width="{sw*0.55:.1f}"/></g></g>')
-    return (f'<svg width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs>'
+    return (f'<svg class="orbsvg" data-kind="saturn" data-r="{R}" data-c="{c}" width="{s}" height="{s}" viewBox="0 0 {s} {s}" style="display:block;margin:-60px auto -50px"><defs>'
             f'<radialGradient id="{g}" cx="38%" cy="32%" r="78%"><stop offset="0" stop-color="#F8EDD3"/><stop offset=".45" stop-color="#E3CD9C"/><stop offset=".85" stop-color="#A88A58"/><stop offset="1" stop-color="#6B5434"/></radialGradient>'
             f'<radialGradient id="{sh}" cx="36%" cy="30%" r="82%"><stop offset=".55" stop-color="#000" stop-opacity="0"/><stop offset="1" stop-color="#000" stop-opacity=".45"/></radialGradient>'
             f'<clipPath id="{cl}"><circle cx="{c}" cy="{c}" r="{R}"/></clipPath>'
             f'<clipPath id="{bk}"><rect x="0" y="0" width="{s}" height="{c}"/></clipPath>'
             f'<clipPath id="{fr}"><rect x="0" y="{c}" width="{s}" height="{c}"/></clipPath>'
             f'<filter id="{h}" x="-60%" y="-60%" width="220%" height="220%"><feGaussianBlur stdDeviation="{R/3.4:.1f}"/></filter></defs>'
-            f'<circle cx="{c}" cy="{c}" r="{R*1.1:.1f}" fill="#E8D09A" opacity=".28" filter="url(#{h})"/>'
+            f'<circle class="oglow" cx="{c}" cy="{c}" r="{R*1.1:.1f}" fill="#E8D09A" opacity=".28" filter="url(#{h})"/>'
             f'{ring(bk,.55)}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{g})"/><g clip-path="url(#{cl})">{bands}<circle cx="{c}" cy="{c}" r="{R}" fill="url(#{sh})"/></g>{ring(fr,.9)}</svg>')
 def top_orb(s=300):
     """The spinning top, a dreamer's test of what is real, inside thin orbits with grahas riding them (Inception post, 6 Nov)."""
@@ -220,10 +269,45 @@ def top_orb(s=300):
         col,rad={'sun':('#F08A4C',s*.055),'moon':('#F5EEDF',s*.045),'mars':('#B9573C',s*.036),'venus':('#EBD9A8',s*.04)}[kind]
         o.append(f'<circle cx="{X:.1f}" cy="{Y:.1f}" r="{rad*2.4:.1f}" fill="{col}" opacity=".16"/><circle cx="{X:.1f}" cy="{Y:.1f}" r="{rad:.1f}" fill="{col}"/>')
     return f'<svg width="{W:.0f}" height="{H:.0f}" viewBox="0 0 {W:.0f} {H:.0f}">{"".join(o)}</svg>'
+BODY_Y=[30,82,150,205,262,310,355,405,480,585,665,780]   # Aries (head) to Pisces (feet) on a figure 800 tall, Parashara's order
+_FIG=[(0,6),(24,12),(36,34),(38,58),(32,84),(22,100),(16,108),(17,126),(40,136),(74,146),(90,160),(96,190),(100,250),(104,300),(110,360),(116,410),(120,440),(114,462),(102,452),
+      (98,420),(88,360),(80,300),(72,240),(66,200),(62,230),(56,290),(58,330),(66,380),(70,420),(66,500),(58,570),(56,600),(60,650),(50,720),(44,762),(58,786),(40,794),(18,790),
+      (20,760),(22,700),(24,640),(20,600),(18,570),(14,500),(8,430),(0,420)]
+def _figure(cx, top, H, pearls=True, lit=None):
+    """A standing figure in thin gold line with the thread running crown to feet and twelve pearls on it, one for each sign."""
+    k=H/800; g=uid('kf'); P=[(cx+x*k, top+y*k) for x,y in _FIG]+[(cx-x*k, top+y*k) for x,y in reversed(_FIG[1:-1])]; n=len(P)
+    d=f'M{P[0][0]:.1f},{P[0][1]:.1f}'
+    for i in range(n):
+        p0,p1,p2,p3=P[i-1],P[i],P[(i+1)%n],P[(i+2)%n]
+        d+=f' C{p1[0]+(p2[0]-p0[0])/6:.1f},{p1[1]+(p2[1]-p0[1])/6:.1f} {p2[0]-(p3[0]-p1[0])/6:.1f},{p2[1]-(p3[1]-p1[1])/6:.1f} {p2[0]:.1f},{p2[1]:.1f}'
+    o=(f'<defs><linearGradient id="{g}" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="{AMBER}" stop-opacity=".20"/><stop offset=".55" stop-color="{AMBER}" stop-opacity=".07"/><stop offset="1" stop-color="{AMBER}" stop-opacity=".02"/></linearGradient>'
+       f'<filter id="{g}b" x="-40%" y="-10%" width="180%" height="120%"><feGaussianBlur stdDeviation="{9*k:.1f}"/></filter></defs>'
+       f'<path d="{d} Z" fill="{AMBER}" opacity=".10" filter="url(#{g}b)"/><path d="{d} Z" fill="url(#{g})" stroke="{GOLD}" stroke-opacity=".78" stroke-width="{max(1.4,2.0*k):.2f}" stroke-linejoin="round"/>'
+       f'<line x1="{cx}" y1="{top-14*k:.1f}" x2="{cx}" y2="{top+H+8*k:.1f}" stroke="{GOLD}" stroke-opacity=".5" stroke-width="{max(1,1.3*k):.2f}"/>')
+    if pearls:
+        for j,y in enumerate(BODY_Y):
+            on=(lit is None or j in lit); yy=top+y*k
+            o+=(f'<g class="seq"><circle cx="{cx}" cy="{yy:.1f}" r="{15*k:.1f}" fill="{AMBER}" opacity="{.20 if on else .08}"/><circle cx="{cx}" cy="{yy:.1f}" r="{max(3.2,6.4*k):.1f}" fill="{AMBER if on else CREAM}"/></g>')
+    return o
+def figure_orb(h=430):
+    w=h*.42
+    return f'<svg width="{w:.0f}" height="{h+28:.0f}" viewBox="0 0 {w:.0f} {h+28:.0f}" style="display:block;margin:0 auto;overflow:visible">{_figure(w/2,14,h)}</svg>'
+def bodymap(items, s=1.0, rowh=62):
+    """The figure on the left, the twelve signs on the right, a fine line from each pearl to its name."""
+    n=len(items); Hh=n*rowh; W=912; cx=142; top=10; H=Hh-20; k=H/800; o=_figure(cx,top,H); xl=452
+    for j,(a,b) in enumerate(items):
+        y=top+BODY_Y[j]*k; yr=(j+.5)*rowh
+        o+=(f'<path d="M{cx+10*k:.1f},{y:.1f} H{cx+150:.1f} L{xl-26},{yr:.1f} H{xl-8}" fill="none" stroke="{GOLD}" stroke-opacity=".42" stroke-width="1.2"/>'
+            f'<text x="{xl}" y="{yr+15:.1f}" font-family="Cormorant Garamond" font-weight="500" font-size="50" fill="{CREAM}">{esc(a)}</text>'
+            f'<text x="{W-2}" y="{yr+13:.1f}" text-anchor="end" font-family="EB Garamond" font-style="italic" font-size="43" fill="{AMBER}">{esc(b)}</text>')
+        if j<n-1: o+=f'<line x1="{xl}" y1="{(j+1)*rowh:.1f}" x2="{W}" y2="{(j+1)*rowh:.1f}" stroke="{GOLD}" stroke-opacity=".16" stroke-width="1"/>'
+    return f'<svg width="{W*s:.0f}" height="{Hh*s:.0f}" viewBox="0 0 {W} {Hh}" style="display:block;margin:{18*s:.0f}px auto 0;overflow:visible">{o}</svg>'
+
 def orb_size(o):
     """Width of an orb's drawing canvas (the glow needs room), so a row can space grahas by their centres."""
     k=o.get('kind'); r=o.get('r',80)
     if k=='top': return o.get('s',300)*1.7
+    if k=='figure': return o.get('h',430)*.42
     if k in ('mars','mercury'): return 2*r+120
     if k=='sun': return r*5.2 if o.get('rings',True) else 2*r+160
     return 2*r+160
@@ -249,10 +333,32 @@ def orb(o):
     if k=='asc': return asc_orb(o.get('s',230))
     if k=='venus': return venus_orb(o.get('r',80))
     if k=='jupiter': return jupiter_orb(o.get('r',95))
-    if k=='north': return north(o.get('s',320),o.get('nums',False))
+    if k=='north': return north(o.get('s',320),o.get('nums',False),o.get('hi',1))
+    if k=='figure': return figure_orb(o.get('h',430))
     if k=='south': return south(o.get('s',320),o.get('labels',True),o.get('asc'))
     if k=='top': return top_orb(o.get('s',300))
     return ''
+
+def scene_html(sc, s=1.0):
+    """v6: the signs as rooms in a row, grahas inside them. Rooms run in sign order, left to right, so 'ahead' is to the right;
+    inside a room the graha with more degrees stands further right. 'across' rooms hang from above, facing the row."""
+    F=lambda px: f'{px*s:.1f}px'
+    W=sc.get('w',262); Hh=sc.get('h',208)
+    def room(r, flip=False, k=1.0):
+        w=W*k*r.get('wide',1); h=Hh*k; rad=F(150*k)
+        ob=f'<div style="transform:scale({s*k*r.get("zoom",1):.3f})">{orbrow(r["orbs"], r.get("spacing"))}</div>' if r.get('orbs') else ''
+        fr=(f'<div style="position:absolute;{"top" if flip else "bottom"}:{F(9)};right:{F(16)};font:italic 500 {F(25)}/1 \'Cormorant Garamond\';color:{AMBER}">in front ▸</div>' if r.get('front') else '')
+        arch=f'<div class="arch" style="width:{F(w)};height:{F(h)};border-radius:{("0 0 "+rad+" "+rad) if flip else (rad+" "+rad+" 0 0")}">{ob}{fr}</div>'
+        sg=f'<div class="sg" style="margin:{("0 0 "+F(12)) if flip else (F(13)+" 0 0")}">{esc(r["sign"])}</div>'
+        tag=f'<div class="tag" style="margin:{(F(9)+" 0 0") if flip else ("0 0 "+F(10))}">{esc(r.get("tag",""))}</div>'
+        inner=(sg+arch+(tag if r.get('tag') else '')) if flip else (tag+arch+sg)
+        return f'<div class="room {r.get("state","")}">{inner}</div>'
+    out=''
+    if sc.get('across'):
+        out+=f'<div class="rooms" style="align-items:flex-start">{"".join(room(r,True,sc.get("acrossk",.82)) for r in sc["across"])}</div>'
+        out+=f'<div class="conn"><i></i>{esc(sc.get("conn","face to face"))}<i></i></div>'
+    out+=f'<div class="rooms" style="align-items:flex-end">{"".join(room(r) for r in sc["rooms"])}</div>'
+    return f'<div class="scene">{out}</div>'
 
 def slide_html(sp, s=1.0):
     F=lambda px: f'{px*s:.1f}px'
@@ -260,6 +366,7 @@ def slide_html(sp, s=1.0):
     t=sp['type']; H=[]
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
     # a row of grahas on one slide (the characters on stage); a negative orbgap lets them crowd together
+    if sp.get('scene'): H.append(scene_html(sp['scene'],s))
     if sp.get('orbs'):
         row=orbrow(sp["orbs"], sp.get("orbspacing"), sp.get("orbgap",18))
         if sp.get('mirror'):
@@ -270,7 +377,7 @@ def slide_html(sp, s=1.0):
             H.append(f'<div style="margin-bottom:22px">{row}</div>')
     bs=f'font-size:{T(sp["bodysize"])};' if sp.get('bodysize') else ''
     if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:"+T(sp["labelsize"]) if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
-    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg','compare','cast'):
+    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg','compare','cast','bodymap'):
         if sp.get('title'):
             cls=sp.get('titleclass') or {'cover':'h1','cta':'h1'}.get(t,'h2' if len(clean(sp['title']))<26 else 'h3')
             ts=f' style="font-size:{F(sp["titlesize"])}"' if sp.get('titlesize') else ''
@@ -290,8 +397,14 @@ def slide_html(sp, s=1.0):
         cols=[items[:half],items[half:]] if sp.get('columns',2)==2 else [items]
         body=''.join('<div>'+''.join(f'<div class="row"><span class="t" style="font-size:{F(52)}">{esc(a)}</span><span class="pi" style="text-align:right;font-size:{F(38)}">{esc(b)}</span></div>' for a,b in col)+'</div>' for col in cols)
         H.append(f'<div class="{"grid2" if len(cols)==2 else ""}" style="margin-top:34px;width:100%">{body}</div>')
+    if t=='bodymap': H.append(bodymap(sp['items'], s, sp.get('rowh',62)))
     if t=='rows':
-        H.append('<div style="margin-top:30px;width:100%">'+''.join(f'<div class="row"><span class="t" style="font-size:{F(52)};white-space:nowrap">{esc(a)}</span><span class="p" style="text-align:right;font-size:{T(sp.get("bodysize",34))}">{esc(b)}</span></div>' for a,b in sp['items'])+'</div>')
+        # a third value set to true lights that row in amber; roworbs puts a small graha in front of each name
+        ro=sp.get('roworbs') or []
+        def _ro(k):
+            if k>=len(ro) or not ro[k]: return ''
+            return f'<span class="ro" style="position:relative;flex:0 0 {F(74)};width:{F(74)};height:{F(60)};margin-right:{F(20)}"><span style="position:absolute;left:50%;top:50%;display:block;transform:translate(-50%,-50%) scale({s:.3f})">{orb(ro[k])}</span></span>'
+        H.append('<div style="margin-top:30px;width:100%">'+''.join(f'<div class="row" style="align-items:center"><span style="display:flex;align-items:center">{_ro(k)}<span class="t" style="font-size:{F(sp.get("namesize",52))};white-space:nowrap">{esc(it[0])}</span></span><span class="p" style="text-align:right;font-size:{T(sp.get("bodysize",34))};{"color:"+AMBER+";" if len(it)>2 and it[2] else ""}">{esc(it[1])}</span></div>' for k,it in enumerate(sp['items']))+'</div>')
     if t=='grid':
         # a 4th value set to true lights that cell's middle line in amber (e.g. Jupiter's best houses)
         H.append('<div class="grid2" style="margin-top:22px">'+''.join(f'<div style="padding:{F(sp.get("cellpad",20))} 0"><div class="lab">{esc(cell[0])}</div><div class="t" style="font-size:{F(sp.get("cellsize",50))};line-height:1.1;margin-top:12px;{"color:"+AMBER+";" if len(cell)>3 and cell[3] else ""}">{esc(cell[1])}</div><div class="pi" style="margin-top:4px;{bs}">{esc(cell[2])}</div></div>' for cell in sp['cells'])+'</div>')
@@ -314,10 +427,10 @@ def slide_html(sp, s=1.0):
     if t=='compare':
         cells=''
         for k,col in enumerate(sp['columns']):
-            ic=orb(col['orb']) if col.get('orb') else ''
+            ic=scene_html(col['scene'],s*col.get('scenek',.92)).replace('class="scene"','class="scene" style="margin-bottom:0"') if col.get('scene') else (orb(col['orb']) if col.get('orb') else '')
             lines=''.join(f'<div class="p" style="margin-top:6px;{bs}">{esc(l)}</div>' for l in col['lines'])
             cl=(f'font-size:{T(sp["collabsize"])};' if sp.get('collabsize') else '')+(f'letter-spacing:{sp["collabls"]};' if sp.get('collabls') else '')
-            cells+=f'<div style="padding:10px 8px;{"border-left:1px solid rgba(217,165,122,.3);" if k else ""}"><div style="height:{F(sp.get("orbbox",150))};display:flex;align-items:center;justify-content:center">{ic}</div><div class="lab" style="margin-top:8px;{cl}">{esc(col.get("label",""))}</div><div class="t" style="font-size:{F(sp.get("headsize",54))};line-height:1.05;margin-top:10px">{esc(col["head"])}</div><div style="margin-top:12px">{lines}</div></div>'
+            cells+=f'<div style="padding:10px 8px;{"border-left:1px solid rgba(217,165,122,.3);" if k else ""}"><div style="{"margin-bottom:"+F(30)+";" if col.get("scene") else "height:"+F(sp.get("orbbox",150))+";"}display:flex;align-items:center;justify-content:center">{ic}</div><div class="lab" style="margin-top:8px;{cl}">{esc(col.get("label",""))}</div><div class="t" style="font-size:{F(sp.get("headsize",54))};line-height:1.05;margin-top:10px">{esc(col["head"])}</div><div style="margin-top:12px">{lines}</div></div>'
         n_=len(sp['columns'])
         H.append(f'<div style="display:grid;grid-template-columns:repeat({n_},1fr);column-gap:0;width:100%;margin-top:30px">{cells}</div>')
     if t=='cast':
@@ -342,7 +455,7 @@ def slide_html(sp, s=1.0):
         H.append(f'<div class="grid2" style="grid-template-columns:1fr 1fr;margin-top:22px"><div><span class="lab">Good for</span><div class="p" style="margin-top:8px;font-size:{F(40)};line-height:1.2">{esc(sp["good"])}</div></div><div><span class="lab">Go slow on</span><div class="p" style="margin-top:8px;font-size:{F(40)};line-height:1.2">{esc(sp["slow"])}</div></div></div>')
     if sp.get('body'):
         bg=sp.get('bodygap',0)
-        H.append('<div style="margin-top:30px">'+''.join(f'<div class="p" style="{bs}{"margin-top:"+F(bg)+";" if (k and bg) else ""}">{esc(l)}</div>' for k,l in enumerate(sp['body']))+'</div>')
+        H.append('<div style="margin-top:30px">'+''.join(f'<div class="p" style="{bs}{"margin-top:"+F(bg)+";" if (k and bg) else ""}">{rich(l)}</div>' for k,l in enumerate(sp['body']))+'</div>')
     if sp.get('note'): H.append(f'<div class="src" style="margin-top:28px;letter-spacing:.1em">{esc(sp["note"])}</div>')
     if t=='cta':
         H.append('<div class="rule"></div>'+''.join(f'<div class="p" style="margin-top:6px;{bs}">{esc(l)}</div>' for l in sp.get('lines',[])))
@@ -367,14 +480,22 @@ def _bead(x,y,kind,uidp):
         return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#EEF2E6"/><stop offset=".6" stop-color="#A9BA9E"/><stop offset="1" stop-color="#4E5E4C"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="12" fill="#DCE8D0" opacity=".08"/><circle cx="{x:.1f}" cy="{y:.1f}" r="5.5" fill="url(#{g})"/>'
     return f'<defs><radialGradient id="{g}" cx="38%" cy="34%" r="75%"><stop offset="0" stop-color="#FFFBF2"/><stop offset=".6" stop-color="#EBD3A4"/><stop offset="1" stop-color="#A88152"/></radialGradient></defs><circle cx="{x:.1f}" cy="{y:.1f}" r="16" fill="#F3DDB0" opacity=".10"/><circle cx="{x:.1f}" cy="{y:.1f}" r="8" fill="url(#{g})"/>'
 
-def _stars(rr, n=46):
-    o=[]
+def _stars(rr, n=46, tt=0.0):
+    """v6: three depths of stars. Fine dust, small stars, and a few bright ones with a thin cross of light.
+    tt (0..1) is the place in the motion loop: stars twinkle and come back to where they started."""
+    o=[]; tw=lambda base,amp,k,ph: max(0.02, base*(1+amp*math.sin(2*math.pi*(k*tt+ph))))
+    for _ in range(n*2):
+        x=rr.uniform(0,1080); y=rr.uniform(0,1350)
+        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rr.choice([.45,.55,.7])}" fill="#FFF1D6" opacity="{tw(rr.uniform(.05,.20),.5,rr.choice([1,2]),rr.random()):.3f}"/>')
     for _ in range(n):
-        x=rr.uniform(0,1080); y=rr.uniform(0,1350); rad=rr.choice([.6,.8,1,1.2])
-        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rad}" fill="#FFF1D6" opacity="{rr.uniform(.08,.30):.2f}"/>')
-    for _ in range(4):
-        x=rr.uniform(40,1040); y=rr.uniform(40,1310)
-        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="6" fill="#FFF1D6" opacity=".07"/><circle cx="{x:.1f}" cy="{y:.1f}" r="1.7" fill="#FFF1D6" opacity=".62"/>')
+        x=rr.uniform(0,1080); y=rr.uniform(0,1350); rad=rr.choice([.7,.9,1.1,1.3])
+        o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{rad}" fill="#FFF1D6" opacity="{tw(rr.uniform(.10,.36),.6,rr.choice([1,2,3]),rr.random()):.3f}"/>')
+    for _ in range(5 if n else 0):
+        x=rr.choice([rr.uniform(70,330),rr.uniform(750,1010)]); y=rr.choice([rr.uniform(150,340),rr.uniform(960,1120)]); L=rr.uniform(9,17)
+        k=tw(1,.45,rr.choice([1,2]),rr.random()); L*=.75+.25*k
+        o.append(f'<g class="gl" data-x="{x:.0f}" data-y="{y:.0f}" opacity="{min(1,k):.3f}"><circle cx="{x:.1f}" cy="{y:.1f}" r="7" fill="#FFF1D6" opacity=".07"/>'
+                 f'<path d="M{x-L:.1f},{y:.1f} H{x+L:.1f} M{x:.1f},{y-L:.1f} V{y+L:.1f}" stroke="#FFF1D6" stroke-opacity=".34" stroke-width=".8" stroke-linecap="round"/>'
+                 f'<circle cx="{x:.1f}" cy="{y:.1f}" r="1.9" fill="#FFF7E6" opacity=".8"/></g>')
     return o
 
 def _phase(x,y,R,illum,waxing=True,op=.9):
@@ -397,7 +518,7 @@ PHASES=[(.15,True),(.4,True),(.7,True),(1.0,True),(.7,False),(.4,False),(.15,Fal
 def phase_index(illum, waxing):
     """Which of the seven phases on the lunar strip is nearest to the real Moon."""
     return min(range(7), key=lambda k: abs(PHASES[k][0]-illum)+(0 if (PHASES[k][1]==waxing or k==3) else 9))
-def decor(i, seed, dense=False, theme='solar', hi_phase=None):
+def decor(i, seed, dense=False, theme='solar', hi_phase=None, tt=0.0):
     """Quiet moving sky behind every slide. Five themes rotate across posts:
     solar (Sun at the top right, Venus and Mars, Jupiter and the Moon at the bottom left),
     lunar (the Moon's phases down the left edge, a crescent at the top right),
@@ -406,30 +527,31 @@ def decor(i, seed, dense=False, theme='solar', hi_phase=None):
     thread (Sutram's thread with five pearls sweeping through two corners).
     Planets and pearls move a few degrees on each slide, so they seem to turn as you swipe."""
     r=random.Random(seed*131+7); rr=random.Random(seed*977+i*31)
-    o=_stars(rr, 0 if dense else 46)
+    o=_stars(rr, 0 if dense else 46, tt)
+    sw=math.sin(2*math.pi*tt); br=(1-math.cos(4*math.pi*tt))/2   # sway (-1..1) and breath (0..1, twice a loop); both 0 at the start
     if theme=='solar':
         sx,sy=1110,-34
-        o.append(f'<circle cx="{sx}" cy="{sy}" r="120" fill="#EF7A3C" opacity=".07"/><circle cx="{sx}" cy="{sy}" r="74" fill="#EF7A3C" opacity=".10"/><circle cx="{sx}" cy="{sy}" r="44" fill="#F08A4C" opacity=".30"/>')
+        o.append(f'<circle cx="{sx}" cy="{sy}" r="{120+16*br:.1f}" fill="#EF7A3C" opacity="{.07+.04*br:.3f}"/><circle cx="{sx}" cy="{sy}" r="{74+8*br:.1f}" fill="#EF7A3C" opacity="{.10+.05*br:.3f}"/><circle cx="{sx}" cy="{sy}" r="44" fill="#F08A4C" opacity="{.30+.10*br:.3f}"/>')
         for R,kind,a0,step in [(112,'mercury',124,4),(190,'venus',152,-3.5),(318,'mars',108,-1.6)]:
             o.append(f'<circle cx="{sx}" cy="{sy}" r="{R}" fill="none" stroke="{GOLD}" stroke-opacity=".15" stroke-width="1.2"/>')
-            a=math.radians(a0+r.uniform(-3,3)+(i-1)*step); o.append(_bead(sx+R*math.cos(a), sy+R*math.sin(a), kind, 'db'))
+            a=math.radians(a0+r.uniform(-3,3)+(i-1)*step+sw*step*.8); o.append(_bead(sx+R*math.cos(a), sy+R*math.sin(a), kind, 'db'))
         cx,cy=-90,1460
         for R,kind,a0,step in [(330,'moon',-60,4.5),(520,'jupiter',-40,3.2)]:
             o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{R}" ry="{R*0.86:.0f}" fill="none" stroke="{GOLD}" stroke-opacity=".14" stroke-width="1.2"/>')
-            a=math.radians(a0+r.uniform(0,4)+(i-1)*step); o.append(_bead(cx+R*math.cos(a), cy+R*0.86*math.sin(a), kind, 'db'))
+            a=math.radians(a0+r.uniform(0,4)+(i-1)*step+sw*step*.5); o.append(_bead(cx+R*math.cos(a), cy+R*0.86*math.sin(a), kind, 'db'))
     elif theme=='lunar':
         # phases down the left edge; the brightest one moves down as you swipe
         n=7
         for k in range(n):
             y=360+k*92; ill,wax=PHASES[k]
             hi=(k==hi_phase) if hi_phase is not None else (k==((i-1)%n))
-            if hi: o.append(f'<circle cx="46" cy="{y}" r="22" fill="#FFF4E6" opacity=".10"/>')
+            if hi: o.append(f'<circle cx="46" cy="{y}" r="{22+7*br:.1f}" fill="#FFF4E6" opacity="{.10+.08*br:.3f}"/>')
             o.append(_phase(46,y,10 if hi else 8,ill,wax,.95 if hi else .55))
         o.append(f'<line x1="46" y1="330" x2="46" y2="{360+6*92+30}" stroke="{GOLD}" stroke-opacity=".12" stroke-width="1"/>')
         # a large faint crescent peeking in at the top right
         o.append(_crescent(1000,92,70,.55))
     elif theme=='zodiac':
-        cx,cy,R=-110,-110,430; rot=(i-1)*4+r.uniform(0,30)
+        cx,cy,R=-110,-110,430; rot=(i-1)*4+r.uniform(0,30)+1.6*sw
         o.append(f'<circle cx="{cx}" cy="{cy}" r="{R}" fill="none" stroke="{GOLD}" stroke-opacity=".26" stroke-width="1.3"/><circle cx="{cx}" cy="{cy}" r="{R-46}" fill="none" stroke="{GOLD}" stroke-opacity=".16" stroke-width="1"/>')
         ab=['ARI','TAU','GEM','CAN','LEO','VIR','LIB','SCO','SAG','CAP','AQU','PIS']
         for k in range(12):
@@ -449,22 +571,40 @@ def decor(i, seed, dense=False, theme='solar', hi_phase=None):
                  f'<circle cx="{jx}" cy="{jy}" r="46" fill="#E0B98A" opacity=".08"/><circle cx="{jx}" cy="{jy}" r="24" fill="url(#{g})"/><g clip-path="url(#{g}c)" opacity=".5"><rect x="{jx-24}" y="{jy-10}" width="48" height="4" fill="#9C6440"/><rect x="{jx-24}" y="{jy+3}" width="48" height="6" fill="#A8744F"/><ellipse cx="{jx+8}" cy="{jy+7}" rx="5" ry="3" fill="#A0563A"/></g>')
         # the four moons shift along their line on each slide, as they really do
         for k,(base,amp,per) in enumerate([(52,40,1.0),(96,60,1.8),(150,70,3.4),(230,80,6.9)]):
-            ph=(i-1)/per*math.pi*0.9+k
+            ph=(i-1)/per*math.pi*0.9+k+(2*math.pi*tt if k<2 else .22*sw)
             mx=jx+(base*math.sin(ph) if k%2 else -base*math.sin(ph)) ; mx=jx+base*math.cos(ph)
             o.append(f'<circle cx="{mx:.1f}" cy="{jy}" r="{3.6 if k<3 else 4.2}" fill="#F2E6CC" opacity=".8"/>')
         o.append(_crescent(1000,92,60,.5))
     elif theme=='thread':
-        # two sweeps of the thread, top right and bottom left, with five pearls; one pearl is lit
-        arcs=[(1120,-40,520,250,24,[92,106]),(-60,1420,560,270,-14,[-72,-52,-34])]
+        # v6: two sweeps of the thread, tucked into the top right and bottom left corners, each the rim of a sky instrument:
+        # a second inner line and a degree scale between them. The scale turns and the five pearls slide along as you swipe; one pearl is lit.
+        # The sweeps stay clear of the kicker and of the thread at the foot.
+        arcs=[(1160,-80,360,210,24,[.30,.66]),(-90,1440,420,240,-14,[.22,.50,.78])]
         lit=(i-1)%5; kidx=0
-        for cx,cy,rx,ry,rot,angs in arcs:
-            o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="none" stroke="{GOLD}" stroke-opacity=".20" stroke-width="1.4" transform="rotate({rot} {cx} {cy})"/>')
-            for a0 in angs:
-                a=math.radians(a0+(i-1)*2.5); px,py=cx+rx*math.cos(a),cy+ry*math.sin(a)
-                c=math.cos(math.radians(rot)); s_=math.sin(math.radians(rot)); x=cx+(px-cx)*c-(py-cy)*s_; y=cy+(px-cx)*s_+(py-cy)*c
+        for cx,cy,rx,ry,rot,fr in arcs:
+            c=math.cos(math.radians(rot)); s_=math.sin(math.radians(rot))
+            def pt(a,k=1.0):
+                px,py=cx+rx*k*math.cos(a),cy+ry*k*math.sin(a)
+                return cx+(px-cx)*c-(py-cy)*s_, cy+(px-cx)*s_+(py-cy)*c
+            vis=[d for d in range(0,720) if 14<pt(math.radians(d/2))[0]<1066 and 14<pt(math.radians(d/2))[1]<1336]
+            # the visible stretch is one run of half-degrees; if it wraps past 360, shift it
+            if vis and vis[0]==0 and vis[-1]==719:
+                gap=next(k for k in range(len(vis)-1) if vis[k+1]-vis[k]>1); vis=vis[gap+1:]+[v+720 for v in vis[:gap+1]]
+            o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx}" ry="{ry}" fill="none" stroke="{GOLD}" stroke-opacity=".32" stroke-width="1.5" transform="rotate({rot} {cx} {cy})"/>')
+            o.append(f'<ellipse cx="{cx}" cy="{cy}" rx="{rx*.9:.1f}" ry="{ry*.9:.1f}" fill="none" stroke="{GOLD}" stroke-opacity=".14" stroke-width="1" transform="rotate({rot} {cx} {cy})"/>')
+            ph=(i-1)*2.5+15*tt; tk=[]
+            for d in range(0,360,3):
+                a=math.radians(d+ph); big=(d%15==0)
+                x1,y1=pt(a); x2,y2=pt(a,.955 if big else .978)
+                if -20<x1<1100 and -20<y1<1370: tk.append(f'M{x1:.1f},{y1:.1f} L{x2:.1f},{y2:.1f}')
+            o.append(f'<path d="{" ".join(tk)}" fill="none" stroke="{GOLD}" stroke-opacity=".32" stroke-width="1"/>')
+            for f0 in fr:
                 on=(kidx==lit); kidx+=1
-                if on: o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="20" fill="{AMBER}" opacity=".16"/>')
-                o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{8 if on else 6.5}" fill="{AMBER if on else CREAM}" opacity="{.95 if on else .7}"/>')
+                if not vis: continue
+                f=.08+((f0-.08+(i-1)*.045)%.84)+.014*sw
+                fi=min(max(f,0),1)*(len(vis)-1); k0=int(fi); k1=min(k0+1,len(vis)-1); xa,ya=pt(math.radians(vis[k0]/2)); xb,yb=pt(math.radians(vis[k1]/2)); x,y=xa+(xb-xa)*(fi-k0),ya+(yb-ya)*(fi-k0)
+                if on: o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{24+9*br:.1f}" fill="{AMBER}" opacity="{.16+.12*br:.3f}"/>')
+                o.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{8.5 if on else 6.5}" fill="{AMBER if on else CREAM}" opacity="{.98 if on else .72}"/>')
     elif theme=='dream':
         # Inception's folding city in Sutram's colours (6 Nov): a cool dream haze above, the city hanging upside down
         # from the top edge and curling a little more on each slide, the same city upright along the bottom,
@@ -512,35 +652,65 @@ def real_phase(spec):
 
 # Sumant, 29 Oct: every post promotes asksutram.com first, then sutram.ca/newsletter, and nothing else
 FOOT_URL='asksutram.com'
-def page(inner,kicker,s,starfield=None,url=FOOT_URL,dec=''):
-    return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide">{dec}{starfield or ''}{GRAIN}<div class="kick">{esc(kicker)}</div><div class="body">{inner}</div><div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
+def frame(i=None,n=None):
+    """v6 (10 Nov): corner marks like an almanac plate, and the thread at the foot with one bead per slide.
+    The lit bead walks along the thread as you swipe."""
+    m,L=50,44; o=[]
+    for x,y,dx,dy in [(m,m,1,1),(1080-m,m,-1,1),(m,1350-m,1,-1),(1080-m,1350-m,-1,-1)]:
+        o.append(f'<path d="M{x},{y+dy*L} V{y} H{x+dx*L}" fill="none" stroke="{GOLD}" stroke-opacity=".42" stroke-width="1.4"/><circle cx="{x}" cy="{y}" r="2.4" fill="{AMBER}" opacity=".85"/>')
+    if n and n>1 and i:
+        gap=30 if n<=12 else 24; W=(n-1)*gap; x0=540-W/2; y=1350-170
+        o.append(f'<line x1="{x0-54}" y1="{y}" x2="{x0+W+54}" y2="{y}" stroke="{GOLD}" stroke-opacity=".34" stroke-width="1.1"/>')
+        for k in range(n):
+            x=x0+k*gap
+            if k+1==i: o.append(f'<circle class="bd-glow" cx="{x}" cy="{y}" r="15" fill="{AMBER}" opacity=".20"/><circle class="bd-lit" cx="{x}" cy="{y}" r="6.2" fill="{AMBER}"/>')
+            elif k+1<i: o.append(f'<circle cx="{x}" cy="{y}" r="3.6" fill="{CREAM}" opacity=".8"/>')
+            else: o.append(f'<circle class="bd-next" cx="{x}" cy="{y}" r="3.4" fill="{BG}" stroke="{GOLD}" stroke-opacity=".7" stroke-width="1.1"/>')
+    return f'<svg class="frame" width="1080" height="1350">{"".join(o)}</svg>'
+def page(inner,kicker,s,starfield=None,url=FOOT_URL,dec='',i=None,n=None):
+    return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide">{dec}{starfield or ''}{GRAIN}{frame(i,n)}<div class="kick"><i></i><span>{esc(kicker)}</span><i class="r"></i></div><div class="body">{inner}</div><div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
 
+HIDE_GLINTS="""()=>{const R=[];const add=(r,p)=>{if(r.width>0&&r.height>0)R.push([r.left-p,r.top-p,r.right+p,r.bottom+p])};
+const w=document.createTreeWalker(document.querySelector('.slide'),NodeFilter.SHOW_TEXT);let n;const rg=document.createRange();
+while(n=w.nextNode()){if(!n.nodeValue.trim()||n.parentElement.closest('svg.decor,svg.sf,svg.grain,svg.frame'))continue;rg.selectNodeContents(n);for(const r of rg.getClientRects())add(r,46)}
+document.querySelectorAll('.body svg,.arch').forEach(e=>add(e.getBoundingClientRect(),4));
+const hid=[];document.querySelectorAll('.gl').forEach((g,k)=>{const x=+g.dataset.x,y=+g.dataset.y;if(R.some(r=>x>r[0]&&x<r[2]&&y>r[1]&&y<r[3])){g.style.display='none';hid.push(k)}});window.__hid=hid;return hid}"""
+def dec_for(spec,i,tt=0.0):
+    sp=spec['slides'][i-1]; pid=spec['id']
+    return '' if spec.get('decor') is False else decor(i, sum(map(ord,pid)), dense=bool(sp.get('stars')), theme=theme_for(spec), hi_phase=real_phase(spec), tt=tt)
+def sf_for(spec,i,tt=0.0):
+    sp=spec['slides'][i-1]
+    return stars(seed=i*7+len(spec['id']),tt=tt) if sp.get('stars') else ''
+def build_slide(pg, spec, i, out):
+    """Lay slide i out at the largest text scale that fits and leave it loaded in the page. Returns (scale, overflow)."""
+    pid=spec['id']; sp=spec['slides'][i-1]; kicker=sp.get('kicker',spec.get('kicker','Sutram'))
+    for s in (1,.96,.92,.88,.84,.8,.76,.72,.68):
+        html=page(slide_html(sp,s),kicker,s,sf_for(spec,i),dec=dec_for(spec,i),i=i,n=len(spec['slides'])); fn=os.path.join(out,f'_s{i}.html'); open(fn,'w').write(html)
+        pg.goto('file://'+fn); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(250)
+        ov=pg.evaluate("()=>{const b=document.querySelector('.body');return b.scrollHeight-b.clientHeight}")
+        if ov<=0: break
+    os.remove(fn); pg.evaluate(HIDE_GLINTS)
+    return s,ov
 def render(spec_path):
     spec=json.load(open(spec_path)); pid=spec['id']; out=os.path.join(REPO,'posts',pid); os.makedirs(out,exist_ok=True)
-    outs=[]
+    outs=[]; scales=[]
     with sync_playwright() as p:
         b=p.chromium.launch(); pg=b.new_page(viewport={'width':1080,'height':1350},device_scale_factor=2)
         for i,sp in enumerate(spec['slides'],1):
-            kicker=sp.get('kicker',spec.get('kicker','Sutram'))
-            sf=stars(seed=i*7+len(pid)) if sp.get('stars') else ''
-            dec='' if spec.get('decor') is False else decor(i, sum(map(ord,pid)), dense=bool(sp.get('stars')), theme=theme_for(spec), hi_phase=real_phase(spec))
-            for s in (1,.96,.92,.88,.84,.8,.76,.72,.68):
-                html=page(slide_html(sp,s),kicker,s,sf,dec=dec); fn=os.path.join(out,f'_s{i}.html'); open(fn,'w').write(html)
-                pg.goto('file://'+fn); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(250)
-                ov=pg.evaluate("()=>{const b=document.querySelector('.body');return b.scrollHeight-b.clientHeight}")
-                if ov<=0: break
+            s,ov=build_slide(pg,spec,i,out); scales.append(s)
             if ov>0: print(f'  ! {pid} slide {i} still overflows by {ov}px at scale {s}')
             raw=os.path.join(out,f'_raw{i}.png'); pg.screenshot(path=raw)
             im=Image.open(raw).convert('RGB').resize((1080,1350),Image.LANCZOS)
             o=os.path.join(out,f'{pid}-{i}.jpg'); im.save(o,quality=93,optimize=True,progressive=True); outs.append(o)
-            os.remove(raw); os.remove(fn)
+            os.remove(raw)
         b.close()
     n=len(outs); cols=min(4,n); rows=(n+cols-1)//cols
     sheet=Image.new('RGB',(24+cols*384,24+rows*474),(5,4,3))
     for k,o in enumerate(outs):
         r,c=divmod(k,cols); sheet.paste(Image.open(o).resize((360,450),Image.LANCZOS),(24+c*384,24+r*474))
     sheet.save(os.path.join(out,f'{pid}-overview.jpg'),quality=88)
-    print(pid,'->',n,'slides')
+    small=[f'{k+1}:{v}' for k,v in enumerate(scales) if v<1]
+    print(pid,'->',n,'slides'+(('  text shrunk on '+' '.join(small)) if small else ''))
     return outs
 
 if __name__=='__main__':

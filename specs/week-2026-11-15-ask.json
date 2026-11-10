@@ -28,91 +28,75 @@
    "closing": "Don't know your Moon sign?\nAsk at asksutram.com"
   },
   {
-   "type": "grid",
-   "cellsize": 52,
-   "cellpad": 16,
-   "bodysize": 32,
+   "type": "rows",
    "label": "From 16 November",
    "labelsize": 24,
    "title": "Find your Moon sign",
    "titleclass": "h3",
-   "cells": [
+   "bodysize": 30,
+   "items": [
     [
-     "Aries Moon",
-     "8th house",
-     "Quiet month; mind your health"
+     "Aries",
+     "8th · Quiet month; mind your health"
     ],
     [
-     "Taurus Moon",
-     "7th house",
-     "Partner, clients; drop the ego"
+     "Taurus",
+     "7th · Partner, clients; drop the ego"
     ],
     [
-     "Gemini Moon",
-     "6th house",
-     "Beat deadlines and rivals",
+     "Gemini",
+     "6th · Beat deadlines and rivals",
      true
     ],
     [
-     "Cancer Moon",
-     "5th house",
-     "Kids, study, romance; less stress"
+     "Cancer",
+     "5th · Kids, study, romance; less stress"
     ],
     [
-     "Leo Moon",
-     "4th house",
-     "Home and mother; rest more"
+     "Leo",
+     "4th · Home and mother; rest more"
     ],
     [
-     "Virgo Moon",
-     "3rd house",
-     "Courage; make the pitch",
+     "Virgo",
+     "3rd · Courage; make the pitch",
      true
     ]
    ],
    "note": "Amber: the Sun's best spots"
   },
   {
-   "type": "grid",
-   "cellsize": 52,
-   "cellpad": 16,
-   "bodysize": 32,
+   "type": "rows",
    "label": "From 16 November",
    "labelsize": 24,
    "title": "Find your Moon sign",
    "titleclass": "h3",
-   "cells": [
+   "bodysize": 30,
+   "items": [
     [
-     "Libra Moon",
-     "2nd house",
-     "Money talks; watch your words"
+     "Libra",
+     "2nd · Money talks; watch your words"
     ],
     [
-     "Scorpio Moon",
-     "1st house",
-     "You in focus; don't overheat"
+     "Scorpio",
+     "1st · You in focus; don't overheat"
     ],
     [
-     "Sagittarius Moon",
-     "12th house",
-     "Spending, travel, sleep"
+     "Sagittarius",
+     "12th · Spending, travel, sleep"
     ],
     [
-     "Capricorn Moon",
-     "11th house",
-     "Gains and good friends",
+     "Capricorn",
+     "11th · Gains and good friends",
      true
     ],
     [
-     "Aquarius Moon",
-     "10th house",
-     "Career push; the boss notices",
+     "Aquarius",
+     "10th · Career push; the boss notices",
      true
     ],
     [
-     "Pisces Moon",
-     "9th house",
-     "Father, teachers, long trips"
+     "Pisces",
+     "9th · Father, teachers, long trips"
     ]
    ],
    "note": "Amber: the Sun's best spots"
