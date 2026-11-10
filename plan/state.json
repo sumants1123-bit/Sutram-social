@@ -852,6 +852,13 @@
   "buffer": "python3 tools/buffer_assets.py <id> <commit-sha> [--video] [--slides 1,2,3,4] prints text + assets with alt text, pinned to the commit. Instagram: slide 1 as video, the rest images. X: images only, up to 4.",
   "motion_covers": "test",
   "motion_note": "First live test: Lesson 12 part 2, Tue 10 Nov 6:30 PM. After it publishes cleanly set motion_covers to 'on'; if it fails set 'off', put the still cover back on every scheduled post and repost tonight's with stills.",
-  "scene_rules": "Rooms run in sign order left to right, so ahead is right; inside a room more degrees stands further right; facing rooms hang from above; tags sit above a room; 'in front' marks who leads."
+  "scene_rules": "Rooms run in sign order left to right, so ahead is right; inside a room more degrees stands further right; facing rooms hang from above; tags sit above a room; 'in front' marks who leads.",
+  "buffer_10nov": {
+   "when": "Tue 10 Nov 1:45 PM",
+   "instagram": "all nine scheduled posts now carry v6 slides with the moving cover as slide 1 (video) and images after it; captions and times unchanged. Tonight's post is pinned to commit 7ca3706, the other eight to 5244bfe.",
+   "x": "the six scheduled X posts now carry v6 images, pinned to 5244bfe: lesson13/14/15 use the -ask2 slides 1-4, ep03 slides 1,4,5,6, sutra-debilitated 1,3,4,5, week 1,3,4,5. Text and times unchanged.",
+   "check": "trig_019C4z2x1QuNFNVyuRmYsSzA, Tue 10 Nov 6:40 PM: verify tonight's post; on error repost with stills and put still covers back on the other eight.",
+   "note": "Buffer keeps the caption when edit_post is sent without text. GitHub raw serves .mp4 as application/octet-stream; Buffer still read it as video/mp4, 8 s."
+  }
  }
 }
