@@ -51,6 +51,19 @@
    },
    "motion": {
     "from": {
+     "across": [
+      {
+       "sign": "Aquarius",
+       "orbs": [
+        {
+         "kind": "rahu",
+         "r": 38
+        }
+       ],
+       "state": "",
+       "tag": ""
+      }
+     ],
      "rooms": [
       {
        "sign": "Leo",

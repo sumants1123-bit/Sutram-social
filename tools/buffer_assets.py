@@ -21,7 +21,7 @@ def words(sp):
     if t=='cta': out+=sp.get('lines',[])+[sp.get('next')]
     out+=[sp.get('closing'),sp.get('note'),sp.get('source')]
     s='. '.join(re.sub(r'\s+',' ',str(x).replace('*','')).strip().rstrip('.') for x in out if x)
-    return s
+    return re.sub(r'([?!])\. ',r'\1 ',s)
 def main():
     a=sys.argv[1:]; pid,sha=a[0],a[1]; video='--video' in a; notext='--notext' in a
     spec=json.load(open(os.path.join(REPO,'specs',f'{pid}.json'))); n=len(spec['slides'])
