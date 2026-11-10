@@ -298,11 +298,12 @@
    "buffer_id": "6af14f99796ccae26683917e"
   },
   {
-   "id": "lesson13-ask",
+   "id": "lesson13-ask2",
    "when": "2026-11-11T12:00:00-05:00",
    "title": "Lesson 13: Nadi rule 3, who walks in front",
    "via": "buffer-instagram",
-   "buffer_id": "6af14fa1e29b1359f0cc6e9f"
+   "buffer_id": "6af14fa1e29b1359f0cc6e9f",
+   "note": "10 Nov: slides and caption replaced in Buffer with the fuller step-by-step sky reading (same buffer_id and time)"
   },
   {
    "id": "ep03-ask",
@@ -319,18 +320,20 @@
    "buffer_id": "6af14fb7796ccae266839900"
   },
   {
-   "id": "lesson14-ask",
+   "id": "lesson14-ask2",
    "when": "2026-11-12T12:00:00-05:00",
    "title": "Lesson 14: Nadi rule 4, face to face",
    "via": "buffer-instagram",
-   "buffer_id": "6af14fbfe29b1359f0cc7566"
+   "buffer_id": "6af14fbfe29b1359f0cc7566",
+   "note": "10 Nov: slides and caption replaced in Buffer with the fuller step-by-step sky reading (same buffer_id and time)"
   },
   {
-   "id": "lesson15-ask",
+   "id": "lesson15-ask2",
    "when": "2026-11-13T12:00:00-05:00",
    "title": "Lesson 15: Nadi rule 5, looking back",
    "via": "buffer-instagram",
-   "buffer_id": "6af14fc7796ccae266839b4f"
+   "buffer_id": "6af14fc7796ccae266839b4f",
+   "note": "10 Nov: slides and caption replaced in Buffer with the fuller step-by-step sky reading (same buffer_id and time)"
   },
   {
    "id": "sutra-debilitated-ask",
@@ -345,6 +348,20 @@
    "title": "Week ahead 16-22 Nov: the king gets stronger",
    "via": "buffer-instagram",
    "buffer_id": "6af14fdd2f1ff83d451676bf"
+  },
+  {
+   "id": "lesson12b-ask",
+   "when": "2026-11-10T18:30:00-05:00",
+   "title": "Lesson 12, part 2: read tonight's sky with rules 1 and 2",
+   "via": "buffer-instagram",
+   "buffer_id": "6af3563aeca53e2861f604ce"
+  },
+  {
+   "id": "reading-2026-11-13-ask",
+   "when": "2026-11-13T18:30:00-05:00",
+   "title": "Read the sky: this weekend with five Nadi rules (weekly capstone 1)",
+   "via": "buffer-instagram",
+   "buffer_id": "6af357da94964d984f081b14"
   }
  ],
  "retired": [
@@ -809,5 +826,23 @@
   ],
   "new_last_slide": "Read it in your chart: one step plus the matching free tool on sutram.ca"
  },
- "batch_8nov": "Sun 8 Nov 11:30 PM: 10 Instagram (Buffer) + 8 X (Buffer) for 9-15 Nov. Lessons 11-15 = Nadi rules 1-5 (same room, ahead and behind, who walks in front, face to face, looking back); next rules: family (5/9), helpers (3/11), swapped houses, stuck in the middle, the doorway, whose star. Sutras used: combust, 9th house, debilitated. Engine times differ from the Prompt 6 test: Mars into Leo 12 Nov 9:49 AM, Sun into Scorpio 16 Nov 9:14 AM (Toronto)."
+ "batch_8nov": "Sun 8 Nov 11:30 PM: 10 Instagram (Buffer) + 8 X (Buffer) for 9-15 Nov. Lessons 11-15 = Nadi rules 1-5 (same room, ahead and behind, who walks in front, face to face, looking back); next rules: family (5/9), helpers (3/11), swapped houses, stuck in the middle, the doorway, whose star. Sutras used: combust, 9th house, debilitated. Engine times differ from the Prompt 6 test: Mars into Leo 12 Nov 9:49 AM, Sun into Scorpio 16 Nov 9:14 AM (Toronto). 10 Nov update: Lessons 13-15 upgraded in place, Lesson 12 part 2 added Tue 6:30 PM, Friday capstone added; Instagram queue 9 of 10.",
+ "rules_10nov": {
+  "said": "Sumant, 10 Nov 12:25 PM: loves the posts; when a lesson reads the current sky through Bhrigu Nandi Nadi, elaborate more, show how the rules merge into a real result so people can start predicting themselves; two posts are fine.",
+  "every_lesson": [
+   "the rule",
+   "an everyday scene",
+   "today's sky, with the mechanism in plain words",
+   "join it with the earlier rules: Room, In front, Behind, Ahead, Across, Looking back",
+   "one sentence",
+   "What it looks like: three real-life lines",
+   "make it yours: the house of the sign in the reader's chart",
+   "the two links"
+  ],
+  "weekly_capstone": "Friday 6:30 PM 'Read the sky': one sky read with every rule taught so far, who-leads changes for the weekend, the twelve rising signs lookup (two rows slides), 'write down what you expect and check it on Monday'. Kicker 'Read the sky'.",
+  "monday": "Monday's lesson opens by checking Friday's reading against what happened, honestly, before the new rule.",
+  "slides": "cast rows hold at most 3 rows a slide (2 is better) so text stays big; break lines by hand so no word sits alone; lookup uses two rows slides of six signs.",
+  "x": "X posts for 11-13 Nov were left as scheduled; from the next batch X follows the same format.",
+  "doc": "claude/nadi-reading-format.md"
+ }
 }
