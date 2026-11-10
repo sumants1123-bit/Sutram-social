@@ -1,0 +1,155 @@
+{
+ "id": "lesson15-ask2",
+ "kicker": "Daily lesson · 15",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orbs": [
+    {
+     "kind": "mercury",
+     "r": 34
+    },
+    {
+     "kind": "venus",
+     "r": 44,
+     "dx": 150
+    }
+   ],
+   "label": "Nadi · Rule 5",
+   "labelsize": 30,
+   "title": "Looking back",
+   "subtitle": "Grahas walking backward"
+  },
+  {
+   "type": "text",
+   "label": "Rule 5",
+   "labelsize": 28,
+   "title": "Two signs at once",
+   "titleclass": "h2",
+   "body": [
+    "A graha walking backward (retrograde)",
+    "works from its own sign",
+    "and from the sign behind it"
+   ],
+   "bodysize": 44,
+   "bodygap": 8
+  },
+  {
+   "type": "text",
+   "label": "The story",
+   "labelsize": 26,
+   "title": "Someone looks back",
+   "titleclass": "h2",
+   "body": [
+    "You're walking ahead and hear a shout",
+    "You turn and see someone in the water",
+    "So you go back to help"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Old business pulls a graha back"
+  },
+  {
+   "type": "text",
+   "label": "Today, Toronto time",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "mercury",
+     "r": 32
+    },
+    {
+     "kind": "venus",
+     "r": 42,
+     "dx": 150
+    }
+   ],
+   "title": "Two turn forward",
+   "titleclass": "h2",
+   "body": [
+    "The messenger (Mercury) at 10:55 AM",
+    "The lover (Venus) at 7:30 PM",
+    "Old talks and old loves start moving again"
+   ],
+   "bodysize": 40,
+   "bodygap": 8,
+   "note": "Saturn looks back until 10 December"
+  },
+  {
+   "type": "text",
+   "label": "Rule 5 on this week's sky",
+   "labelsize": 25,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 28
+    },
+    {
+     "kind": "jupiter",
+     "r": 38,
+     "dx": 78
+    },
+    {
+     "kind": "ketu",
+     "r": 32,
+     "dx": 76
+    },
+    {
+     "kind": "venus",
+     "r": 40,
+     "dx": 270
+    }
+   ],
+   "title": "The lover looked back",
+   "titleclass": "h3",
+   "body": [
+    "The sign behind Virgo is Leo",
+    "So all week the lover also worked\nfrom the teacher's room",
+    "Tonight the lover turns and walks on"
+   ],
+   "bodysize": 41,
+   "bodygap": 14
+  },
+  {
+   "type": "text",
+   "label": "What it looks like",
+   "labelsize": 26,
+   "title": "Old business",
+   "titleclass": "h2",
+   "body": [
+    "The ex who texted",
+    "The refund you chased",
+    "The price you kept rechecking"
+   ],
+   "bodysize": 44,
+   "bodygap": 14,
+   "closing": "From tonight these start to settle",
+   "closingsize": 54
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "mercury",
+     "r": 28
+    },
+    {
+     "kind": "venus",
+     "r": 36,
+     "dx": 130
+    }
+   ],
+   "title": "What pulls you back?",
+   "titleclass": "h2",
+   "subtitle": "Find your grahas walking backward",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Tonight · One sky, five rules"
+  }
+ ]
+}

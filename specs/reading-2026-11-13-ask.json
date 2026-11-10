@@ -1,0 +1,302 @@
+{
+ "id": "reading-2026-11-13-ask",
+ "kicker": "Read the sky · five rules",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 34
+    },
+    {
+     "kind": "jupiter",
+     "r": 46,
+     "dx": 86
+    },
+    {
+     "kind": "ketu",
+     "r": 38,
+     "dx": 84
+    },
+    {
+     "kind": "rahu",
+     "r": 38,
+     "dx": 330
+    }
+   ],
+   "label": "Five rules, one sky",
+   "labelsize": 30,
+   "title": "Read this\nweekend",
+   "subtitle": "A full Nadi reading, step by step"
+  },
+  {
+   "type": "cast",
+   "label": "Step 1 · the room",
+   "labelsize": 25,
+   "title": "Who is in Leo?",
+   "titleclass": "h3",
+   "headsize": 58,
+   "bodysize": 35,
+   "castlabsize": 24,
+   "castorbh": 126,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "mars",
+       "r": 24
+      },
+      {
+       "kind": "jupiter",
+       "r": 30,
+       "dx": 62
+      },
+      {
+       "kind": "ketu",
+       "r": 26,
+       "dx": 60
+      }
+     ],
+     "label": "Rule 1 · same room",
+     "head": "Three share Leo",
+     "line": "Soldier, teacher and monk,\nwithin one degree"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "jupiter",
+       "r": 40
+      }
+     ],
+     "label": "Rule 3 · in front",
+     "head": "The teacher leads",
+     "line": "The soldier is last in line, for now"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "venus",
+       "r": 34
+      }
+     ],
+     "label": "Rule 2 · ahead",
+     "head": "The lover is next door",
+     "line": "In Virgo, walking forward\nagain tonight"
+    }
+   ]
+  },
+  {
+   "type": "cast",
+   "label": "Step 2 · across the table",
+   "labelsize": 25,
+   "title": "Who faces them?",
+   "titleclass": "h3",
+   "headsize": 64,
+   "bodysize": 38,
+   "castlabsize": 25,
+   "castorbh": 150,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "rahu",
+       "r": 40
+      }
+     ],
+     "label": "Rule 4 · face to face",
+     "head": "The magician",
+     "line": "In Aquarius, straight across\nfrom Leo"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "saturn",
+       "r": 30
+      }
+     ],
+     "label": "Rule 5 · looking back",
+     "head": "The auditor joins him",
+     "line": "Walking backward in Pisces,\nhe also works from Aquarius"
+    }
+   ]
+  },
+  {
+   "type": "sentence",
+   "label": "Step 3 · Join them",
+   "labelsize": 26,
+   "example": "A hot, crowded room faces hype and old duties, while love starts moving again",
+   "rows": [
+    [
+     "Leo",
+     "soldier, teacher, monk"
+    ],
+    [
+     "Across",
+     "magician and auditor"
+    ],
+    [
+     "Next door",
+     "the lover"
+    ]
+   ],
+   "bodysize": 37,
+   "conclusion": "Five rules, one sentence"
+  },
+  {
+   "type": "text",
+   "label": "What it looks like",
+   "labelsize": 26,
+   "title": "This weekend",
+   "titleclass": "h2",
+   "body": [
+    "Tempers run short around bosses\nand big egos",
+    "Bold claims get checked against old records",
+    "An old message or an old flame comes back"
+   ],
+   "bodysize": 40,
+   "bodygap": 14,
+   "closing": "Slow answers win",
+   "closingsize": 58
+  },
+  {
+   "type": "text",
+   "label": "Rule 3 keeps moving",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 44
+    },
+    {
+     "kind": "ketu",
+     "r": 36,
+     "dx": 84
+    },
+    {
+     "kind": "mars",
+     "r": 34,
+     "dx": 84
+    }
+   ],
+   "title": "Watch who leads",
+   "titleclass": "h2",
+   "body": [
+    "Saturday 7:30 PM, the soldier\npasses the monk",
+    "Late Sunday night, he passes the teacher",
+    "From Monday the soldier leads the room"
+   ],
+   "bodysize": 39,
+   "bodygap": 14,
+   "closing": "Advice turns into action",
+   "closingsize": 54,
+   "note": "Toronto time"
+  },
+  {
+   "type": "rows",
+   "label": "Make it yours · by rising sign",
+   "labelsize": 24,
+   "title": "Where is Leo for you?",
+   "titleclass": "h3",
+   "items": [
+    [
+     "Aries",
+     "5th · love, children, ideas"
+    ],
+    [
+     "Taurus",
+     "4th · home, mother, property"
+    ],
+    [
+     "Gemini",
+     "3rd · siblings, effort, short trips"
+    ],
+    [
+     "Cancer",
+     "2nd · money, family, speech"
+    ],
+    [
+     "Leo",
+     "1st · you, your body, your name"
+    ],
+    [
+     "Virgo",
+     "12th · sleep, spending, far places"
+    ]
+   ],
+   "bodysize": 33,
+   "note": "No rising sign? Use your Moon sign"
+  },
+  {
+   "type": "rows",
+   "label": "Make it yours · by rising sign",
+   "labelsize": 24,
+   "title": "Where is Leo for you?",
+   "titleclass": "h3",
+   "items": [
+    [
+     "Libra",
+     "11th · friends, income, wishes"
+    ],
+    [
+     "Scorpio",
+     "10th · career, boss, status"
+    ],
+    [
+     "Sagittarius",
+     "9th · teachers, travel, luck"
+    ],
+    [
+     "Capricorn",
+     "8th · shared money, sudden change"
+    ],
+    [
+     "Aquarius",
+     "7th · partner, clients, deals"
+    ],
+    [
+     "Pisces",
+     "6th · daily work, health, debts"
+    ]
+   ],
+   "bodysize": 33,
+   "closing": "Say the sentence for that house",
+   "closingsize": 50
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 30
+    },
+    {
+     "kind": "jupiter",
+     "r": 40,
+     "dx": 80
+    },
+    {
+     "kind": "ketu",
+     "r": 34,
+     "dx": 78
+    },
+    {
+     "kind": "rahu",
+     "r": 34,
+     "dx": 300
+    }
+   ],
+   "title": "Your turn",
+   "titleclass": "h2",
+   "subtitle": "Write down what you expect\nand check it on Monday",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Monday · Rule 6, family"
+  }
+ ]
+}

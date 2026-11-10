@@ -1,0 +1,182 @@
+{
+ "id": "lesson13-ask2",
+ "kicker": "Daily lesson · 13",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 52
+    },
+    {
+     "kind": "ketu",
+     "r": 46,
+     "dx": 100
+    }
+   ],
+   "label": "Nadi · Rule 3",
+   "labelsize": 30,
+   "title": "Who walks\nin front",
+   "subtitle": "Two grahas in one sign: who leads?"
+  },
+  {
+   "type": "text",
+   "label": "Rule 3",
+   "labelsize": 28,
+   "title": "More degrees lead",
+   "titleclass": "h2",
+   "body": [
+    "Every sign has 30 degrees",
+    "The graha with more degrees leads",
+    "The one behind takes on its nature"
+   ],
+   "bodysize": 44,
+   "bodygap": 10
+  },
+  {
+   "type": "compare",
+   "title": "The leader sets the tone",
+   "titleclass": "h3",
+   "bodysize": 36,
+   "headsize": 50,
+   "columns": [
+    {
+     "orb": {
+      "kind": "jupiter",
+      "r": 40
+     },
+     "label": "Teacher behind",
+     "head": "Teacher turns monk",
+     "lines": [
+      "Wisdom turns inward"
+     ]
+    },
+    {
+     "orb": {
+      "kind": "ketu",
+      "r": 38
+     },
+     "label": "Monk behind",
+     "head": "Monk turns teacher",
+     "lines": [
+      "Instinct turns into advice"
+     ]
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "label": "Today, 3:30 PM Toronto time",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 50
+    },
+    {
+     "kind": "ketu",
+     "r": 44,
+     "dx": 90
+    }
+   ],
+   "title": "The teacher passes the monk",
+   "titleclass": "h3",
+   "body": [
+    "Both sit near the first degree of Leo",
+    "Until today the monk had more degrees",
+    "From 3:30 PM the teacher has more"
+   ],
+   "bodysize": 40,
+   "bodygap": 8
+  },
+  {
+   "type": "sentence",
+   "label": "Read it with rules 1, 2 and 3",
+   "labelsize": 25,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 30
+    },
+    {
+     "kind": "jupiter",
+     "r": 44,
+     "dx": 220
+    },
+    {
+     "kind": "ketu",
+     "r": 36,
+     "dx": 88
+    },
+    {
+     "kind": "venus",
+     "r": 34,
+     "dx": 220
+    }
+   ],
+   "example": "What you let go of becomes what you can teach",
+   "rows": [
+    [
+     "Room",
+     "the teacher and the monk, in Leo"
+    ],
+    [
+     "In front",
+     "the teacher, from today"
+    ],
+    [
+     "Behind",
+     "the soldier, one more day"
+    ],
+    [
+     "Ahead",
+     "the lover, checking the bill"
+    ]
+   ],
+   "bodysize": 35,
+   "conclusion": "Three rules, one reading"
+  },
+  {
+   "type": "text",
+   "label": "What it looks like",
+   "labelsize": 26,
+   "title": "Before and after",
+   "titleclass": "h2",
+   "body": [
+    "Before today, you went quiet\nand held back",
+    "From today, you can say what you learned",
+    "People ask how you got through it"
+   ],
+   "bodysize": 41,
+   "bodygap": 14,
+   "closing": "Until the monk leaves Leo\non 5 December",
+   "closingsize": 52
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 40
+    },
+    {
+     "kind": "ketu",
+     "r": 34,
+     "dx": 92
+    }
+   ],
+   "title": "Who leads in you?",
+   "titleclass": "h2",
+   "subtitle": "Find two grahas in one sign\nand compare their degrees",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Next lesson · Face to face"
+  }
+ ]
+}

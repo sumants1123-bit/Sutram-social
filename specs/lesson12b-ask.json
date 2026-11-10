@@ -1,0 +1,304 @@
+{
+ "id": "lesson12b-ask",
+ "kicker": "Daily lesson · 12 · part 2",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 36
+    },
+    {
+     "kind": "jupiter",
+     "r": 50,
+     "dx": 250
+    },
+    {
+     "kind": "ketu",
+     "r": 40,
+     "dx": 96
+    },
+    {
+     "kind": "venus",
+     "r": 40,
+     "dx": 250
+    }
+   ],
+   "label": "Reading the sky",
+   "labelsize": 30,
+   "title": "Read it\nwith me",
+   "subtitle": "Rules 1 and 2 on tonight's sky"
+  },
+  {
+   "type": "text",
+   "label": "Step 1",
+   "labelsize": 28,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 58
+    }
+   ],
+   "title": "Pick one graha",
+   "titleclass": "h2",
+   "body": [
+    "Start with the teacher (Jupiter)",
+    "He stands for advice, growth, mentors",
+    "Tonight he is in Leo, the sign of the stage"
+   ],
+   "bodysize": 42,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "label": "Step 2 · Rule 1 · same room",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 52
+    },
+    {
+     "kind": "ketu",
+     "r": 44,
+     "dx": 92
+    }
+   ],
+   "title": "Who is with him?",
+   "titleclass": "h2",
+   "body": [
+    "The monk (Ketu) shares Leo",
+    "The monk lets go and says little",
+    "So advice turns quiet and honest"
+   ],
+   "bodysize": 42,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "label": "Step 3 · Rule 2 · behind",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 38
+    },
+    {
+     "kind": "jupiter",
+     "r": 46,
+     "dx": 250
+    },
+    {
+     "kind": "ketu",
+     "r": 38,
+     "dx": 92
+    }
+   ],
+   "title": "What does he carry?",
+   "titleclass": "h2",
+   "body": [
+    "The soldier (Mars) sits one sign behind",
+    "In Cancer, his weakest sign",
+    "So the teacher carries a tired, old fight"
+   ],
+   "bodysize": 42,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "label": "Step 4 · Rule 2 · ahead",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 46
+    },
+    {
+     "kind": "ketu",
+     "r": 38,
+     "dx": 92
+    },
+    {
+     "kind": "venus",
+     "r": 40,
+     "dx": 250
+    }
+   ],
+   "title": "Where is he heading?",
+   "titleclass": "h2",
+   "body": [
+    "The lover (Venus) sits one sign ahead",
+    "In Virgo, the lover's weakest sign",
+    "So he walks toward\na money and love check"
+   ],
+   "bodysize": 42,
+   "bodygap": 10
+  },
+  {
+   "type": "sentence",
+   "label": "Step 5 · Join them",
+   "labelsize": 26,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 32
+    },
+    {
+     "kind": "jupiter",
+     "r": 44,
+     "dx": 230
+    },
+    {
+     "kind": "ketu",
+     "r": 36,
+     "dx": 90
+    },
+    {
+     "kind": "venus",
+     "r": 36,
+     "dx": 230
+    }
+   ],
+   "example": "A quiet teacher carries an old fight toward a money check",
+   "rows": [
+    [
+     "Room",
+     "the teacher with the monk"
+    ],
+    [
+     "Behind",
+     "a tired soldier"
+    ],
+    [
+     "Ahead",
+     "a careful lover"
+    ]
+   ],
+   "bodysize": 38,
+   "conclusion": "Two rules, one sentence"
+  },
+  {
+   "type": "text",
+   "label": "What it looks like",
+   "labelsize": 26,
+   "title": "This week",
+   "titleclass": "h2",
+   "body": [
+    "The best advice is short",
+    "An old argument at home\nruns out of fuel",
+    "Before you pay or say yes,\nyou check twice"
+   ],
+   "bodysize": 42,
+   "bodygap": 14,
+   "closing": "Thursday the soldier walks into Leo\nand the sentence changes",
+   "closingsize": 52
+  },
+  {
+   "type": "rows",
+   "label": "Make it yours · by rising sign",
+   "labelsize": 24,
+   "title": "Where is Leo for you?",
+   "titleclass": "h3",
+   "items": [
+    [
+     "Aries",
+     "5th · love, children, ideas"
+    ],
+    [
+     "Taurus",
+     "4th · home, mother, property"
+    ],
+    [
+     "Gemini",
+     "3rd · siblings, effort, short trips"
+    ],
+    [
+     "Cancer",
+     "2nd · money, family, speech"
+    ],
+    [
+     "Leo",
+     "1st · you, your body, your name"
+    ],
+    [
+     "Virgo",
+     "12th · sleep, spending, far places"
+    ]
+   ],
+   "bodysize": 33,
+   "note": "No rising sign? Use your Moon sign"
+  },
+  {
+   "type": "rows",
+   "label": "Make it yours · by rising sign",
+   "labelsize": 24,
+   "title": "Where is Leo for you?",
+   "titleclass": "h3",
+   "items": [
+    [
+     "Libra",
+     "11th · friends, income, wishes"
+    ],
+    [
+     "Scorpio",
+     "10th · career, boss, status"
+    ],
+    [
+     "Sagittarius",
+     "9th · teachers, travel, luck"
+    ],
+    [
+     "Capricorn",
+     "8th · shared money, sudden change"
+    ],
+    [
+     "Aquarius",
+     "7th · partner, clients, deals"
+    ],
+    [
+     "Pisces",
+     "6th · daily work, health, debts"
+    ]
+   ],
+   "bodysize": 33,
+   "closing": "Say the sentence for that house",
+   "closingsize": 50
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 30
+    },
+    {
+     "kind": "jupiter",
+     "r": 40,
+     "dx": 200
+    },
+    {
+     "kind": "ketu",
+     "r": 34,
+     "dx": 84
+    },
+    {
+     "kind": "venus",
+     "r": 34,
+     "dx": 200
+    }
+   ],
+   "title": "Now you",
+   "titleclass": "h2",
+   "subtitle": "Read Leo's house in your own chart",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Next lesson · Who walks in front"
+  }
+ ]
+}
