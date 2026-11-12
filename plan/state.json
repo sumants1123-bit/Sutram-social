@@ -78,6 +78,21 @@
    "when": "2026-11-01T11:00:00-05:00",
    "url": "https://www.instagram.com/p/DfNH05wDffd/",
    "title": "Lesson 4: Mars, the soldier (re-post)"
+  },
+  {
+   "id": "skyday01-ask",
+   "when": "2026-11-12T17:34:00-05:00",
+   "url": null,
+   "title": "The sky that day 1: the night India won the World Cup (2 Apr 2011)",
+   "buffer_id": "6af5fc6dac9ba6477c419d08",
+   "note": "posted early at Sumant's request (was Sat 14 Nov 6:30 PM); caption says rule 5 is Friday's lesson"
+  },
+  {
+   "id": "skyday01-x",
+   "when": "2026-11-12T17:34:00-05:00",
+   "url": "https://twitter.com/koham1323/status/2121008838245564727",
+   "title": "The sky that day 1 on X",
+   "buffer_id": "6af5fc7e845ed638c961fae1"
   }
  ],
  "scheduled": [
@@ -362,22 +377,6 @@
    "title": "Read the sky: this weekend with five Nadi rules (weekly capstone 1)",
    "via": "buffer-instagram",
    "buffer_id": "6af357da94964d984f081b14"
-  },
-  {
-   "id": "skyday01-ask",
-   "when": "2026-11-14T18:30:00-05:00",
-   "title": "The sky that day 1: the night India won the World Cup (2 Apr 2011)",
-   "via": "buffer-instagram",
-   "buffer_id": "6af5fc6dac9ba6477c419d08",
-   "commit": "6271ed0"
-  },
-  {
-   "id": "skyday01-x",
-   "when": "2026-11-14T20:00:00-05:00",
-   "title": "The sky that day 1 on X (slides 1,3,5,7)",
-   "via": "buffer-x",
-   "buffer_id": "6af5fc7e845ed638c961fae1",
-   "commit": "6271ed0"
   }
  ],
  "retired": [
@@ -891,14 +890,15 @@
    "use only rules already taught in the lessons",
    "say how long each part of that sky lasted when it helps ('How the timing narrows': years, weeks, days)",
    "no graha within about 1.5 degrees of a sign edge carries the reading unless the wording holds on both sides",
-   "public events and public achievements only; no deaths, illness, disasters or private lives; no person's birth chart"
+   "public events and public achievements only; no deaths, illness, disasters or private lives; no person's birth chart",
+   "if a case needs a rule taught later that week, name the day it is taught ('Rule 5, looking back, is Friday's lesson') so it reads as a preview"
   ],
   "series": {
    "name": "The sky that day",
    "kicker": "The sky that day · N",
    "id": "skydayNN-ask",
    "when": "Tuesday and Saturday 6:30 PM Toronto",
-   "first": "skyday01-ask, Sat 14 Nov 6:30 PM: the night India won the World Cup (2 Apr 2011)",
+   "first": "skyday01-ask, posted Thu 12 Nov 5:34 PM Toronto on Instagram and X (moved up from Sat 14 Nov at Sumant's request)",
    "shape": [
     "moving cover: the date and place, the event as the title, the sky as rooms",
     "What happened",
