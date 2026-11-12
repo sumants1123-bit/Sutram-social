@@ -183,6 +183,71 @@
    "closingsize": 54
   },
   {
+   "type": "text",
+   "label": "A real case · 23 August 2023",
+   "labelsize": 25,
+   "title": "India goes back\nto the Moon",
+   "titleclass": "h2",
+   "body": [
+    "Its first lander crashed in 2019",
+    "Four years later it went back",
+    "*and landed near the south pole*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "scene": {
+    "h": 128,
+    "across": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 30
+       }
+      ],
+      "state": "focus",
+      "tag": "◂ looking back"
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 30,
+        "rings": false
+       },
+       {
+        "kind": "mercury",
+        "r": 22,
+        "dx": 120
+       }
+      ],
+      "state": "",
+      "tag": ""
+     }
+    ],
+    "acrossk": 0.74
+   },
+   "label": "The sky that evening",
+   "labelsize": 25,
+   "title": "The auditor looked back",
+   "titleclass": "h3",
+   "body": [
+    "Rule 5 · the auditor walked backward:\n*old work came back to be finished*",
+    "Rule 4 · he faced the king in Leo:\na country tested, live on air"
+   ],
+   "bodysize": 35.5,
+   "bodygap": 8,
+   "note": "The sky set the scene · People did the work",
+   "titlesize": 64
+  },
+  {
    "type": "cta",
    "orbs": [
     {

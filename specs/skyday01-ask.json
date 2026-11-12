@@ -1,0 +1,392 @@
+{
+ "id": "skyday01-ask",
+ "kicker": "The sky that day · 1",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "label": "2 April 2011 · Mumbai",
+   "labelsize": 28,
+   "title": "The night\nIndia won",
+   "subtitle": "One real event, read backward",
+   "scene": {
+    "h": 170,
+    "across": [
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 30
+       }
+      ],
+      "state": "",
+      "tag": "◂ looking back"
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 20
+       },
+       {
+        "kind": "moon",
+        "r": 19,
+        "illum": 0.08,
+        "waxing": false,
+        "dx": 52
+       },
+       {
+        "kind": "sun",
+        "r": 22,
+        "rings": false,
+        "dx": 56
+       },
+       {
+        "kind": "jupiter",
+        "r": 27,
+        "dx": 62
+       },
+       {
+        "kind": "mercury",
+        "r": 17,
+        "dx": 58
+       }
+      ],
+      "state": "focus",
+      "tag": "",
+      "wide": 1.62
+     }
+    ]
+   },
+   "motion": {
+    "from": {
+     "across": [
+      {
+       "sign": "Virgo",
+       "orbs": [
+        {
+         "kind": "saturn",
+         "r": 30
+        }
+       ],
+       "state": "",
+       "tag": "◂ looking back"
+      }
+     ],
+     "rooms": [
+      {
+       "sign": "Pisces",
+       "orbs": [
+        {
+         "kind": "mars",
+         "r": 20
+        },
+        {
+         "kind": "moon",
+         "r": 19,
+         "illum": 0.08,
+         "waxing": false,
+         "dx": 52
+        },
+        {
+         "kind": "sun",
+         "r": 22,
+         "rings": false,
+         "dx": 56
+        },
+        {
+         "kind": "jupiter",
+         "r": 27,
+         "dx": 62
+        }
+       ],
+       "state": "focus",
+       "tag": "",
+       "wide": 1.62
+      }
+     ]
+    },
+    "order": [
+     0,
+     [
+      "across",
+      0
+     ]
+    ],
+    "spark": [
+     null,
+     [
+      "rooms",
+      0,
+      "across",
+      0
+     ]
+    ],
+    "enter": {
+     "mercury": "ahead"
+    }
+   }
+  },
+  {
+   "type": "text",
+   "label": "What happened",
+   "labelsize": 26,
+   "title": "India wins\nthe World Cup",
+   "titleclass": "h2",
+   "body": [
+    "Wankhede Stadium, Mumbai",
+    "India beat Sri Lanka by six wickets",
+    "*Its first World Cup in 28 years*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10
+  },
+  {
+   "type": "rows",
+   "label": "The sky that night",
+   "labelsize": 26,
+   "title": "Five stood in Pisces",
+   "titleclass": "h3",
+   "items": [
+    [
+     "The king",
+     "Sun · the country"
+    ],
+    [
+     "The soldier",
+     "Mars · the team"
+    ],
+    [
+     "The mother",
+     "Moon · the crowd"
+    ],
+    [
+     "The teacher",
+     "Jupiter · good counsel"
+    ],
+    [
+     "The messenger",
+     "Mercury · the news"
+    ]
+   ],
+   "roworbs": [
+    {
+     "kind": "sun",
+     "r": 24,
+     "rings": false
+    },
+    {
+     "kind": "mars",
+     "r": 22
+    },
+    {
+     "kind": "moon",
+     "r": 22,
+     "illum": 0.08,
+     "waxing": false
+    },
+    {
+     "kind": "jupiter",
+     "r": 26
+    },
+    {
+     "kind": "mercury",
+     "r": 20
+    }
+   ],
+   "namesize": 50,
+   "bodysize": 36,
+   "note": "The Moon was dark · one night before new Moon"
+  },
+  {
+   "type": "text",
+   "scene": {
+    "rooms": [
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 20
+       },
+       {
+        "kind": "moon",
+        "r": 19,
+        "illum": 0.08,
+        "waxing": false,
+        "dx": 52
+       },
+       {
+        "kind": "sun",
+        "r": 22,
+        "rings": false,
+        "dx": 56
+       },
+       {
+        "kind": "jupiter",
+        "r": 27,
+        "dx": 62
+       },
+       {
+        "kind": "mercury",
+        "r": 17,
+        "dx": 58
+       }
+      ],
+      "state": "focus",
+      "tag": "",
+      "wide": 1.62,
+      "front": false
+     }
+    ]
+   },
+   "label": "Rule 1 · same room",
+   "labelsize": 26,
+   "title": "Five in one room",
+   "titleclass": "h2",
+   "body": [
+    "Grahas in one sign act as one",
+    "Pisces is the teacher's own sign,\n*so they all met in his house*"
+   ],
+   "bodysize": 42,
+   "bodygap": 14
+  },
+  {
+   "type": "text",
+   "scene": {
+    "h": 150,
+    "across": [
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 30
+       }
+      ],
+      "state": "focus",
+      "tag": "◂ looking back"
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 20
+       },
+       {
+        "kind": "moon",
+        "r": 19,
+        "illum": 0.08,
+        "waxing": false,
+        "dx": 52
+       },
+       {
+        "kind": "sun",
+        "r": 22,
+        "rings": false,
+        "dx": 56
+       },
+       {
+        "kind": "jupiter",
+        "r": 27,
+        "dx": 62
+       },
+       {
+        "kind": "mercury",
+        "r": 17,
+        "dx": 58
+       }
+      ],
+      "state": "",
+      "tag": "",
+      "wide": 1.62
+     }
+    ]
+   },
+   "label": "Rule 4 and rule 5",
+   "labelsize": 26,
+   "title": "The auditor looked back",
+   "titleclass": "h3",
+   "body": [
+    "Saturn sat straight across, in Virgo",
+    "Walking backward, he reopens old files",
+    "*A 28-year wait came up to be settled*"
+   ],
+   "bodysize": 40,
+   "bodygap": 10
+  },
+  {
+   "type": "sentence",
+   "label": "Join them",
+   "labelsize": 26,
+   "example": "The whole house gathers\nin one room, and across\nthe table the auditor\ncloses a 28-year file",
+   "rows": [],
+   "bodysize": 38,
+   "conclusion": "Three rules, one night",
+   "note": "The sky set the scene · The players won it"
+  },
+  {
+   "type": "text",
+   "label": "How the timing narrows",
+   "labelsize": 26,
+   "title": "Years, weeks, days",
+   "titleclass": "h2",
+   "body": [
+    "The teacher in his own sign:\n*about one year in twelve*",
+    "The king and the soldier join him:\n*three weeks*",
+    "The mother and the messenger\nmake five: *two days*"
+   ],
+   "bodysize": 40,
+   "bodygap": 14,
+   "closing": "Slow grahas set the year, fast ones pick the day",
+   "closingsize": 44
+  },
+  {
+   "type": "text",
+   "label": "Make it yours",
+   "labelsize": 26,
+   "title": "Pick a day\nfrom your life",
+   "titleclass": "h2",
+   "body": [
+    "The day you got the job",
+    "The day you moved",
+    "The day you met them"
+   ],
+   "bodysize": 44,
+   "bodygap": 12,
+   "closing": "Look at the sky you were under",
+   "closingsize": 52
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 30
+    },
+    {
+     "kind": "jupiter",
+     "r": 34,
+     "dx": 230
+    }
+   ],
+   "title": "What was your sky?",
+   "titleclass": "h2",
+   "subtitle": "Read a day from your own life",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Tuesday · The day India reached Mars"
+  }
+ ]
+}

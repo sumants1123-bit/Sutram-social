@@ -19,6 +19,8 @@ Slide key "motion" (all optional):
   "order": [1, 0, ["across", 0]]     which rooms take the light, in turn (numbers are rooms in the main row)
   "spark": [null, ["rooms",0,"rooms",1]]   for each step, a spark from one room to another
   "from":  {"rooms": [...]}          the scene before; grahas are matched by kind and rooms by sign name
+  "enter": {"mercury": "ahead"}      a graha missing from "from" walks in from behind (the left); "ahead" brings it in from the right,
+                                     for a graha walking backward out of the next sign
 """
 import json, os, sys, shutil, subprocess, argparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -70,7 +72,7 @@ if(cfg.fromHTML&&scene){const h=document.createElement('div'); h.style.cssText='
   h.querySelectorAll('.room').forEach(r=>{const ac=ctr(r.querySelector('.arch')); r.querySelectorAll('svg.orbsvg').forEach(sv=>{const c=ctr(sv); fr[sv.dataset.kind]={sign:sig(r),off:[c[0]-ac[0],c[1]-ac[1]]}})});
   const to={}; all.forEach(r=>to[sig(r)]=r);
   orbs.forEach(o=>{const room=o.sv.closest('.room'); if(!room||!scene.contains(room))return; const ac=ctr(room.__arch), c=ctr(o.sv), f=fr[o.kind];
-    if(f&&to[f.sign]){const fc=ctr(to[f.sign].__arch); o.gx=fc[0]+f.off[0]-c[0]; o.gy=fc[1]+f.off[1]-c[1]} else {o.gx=-ac[2]*.95; o.gy=0; o.enter=true}
+    if(f&&to[f.sign]){const fc=ctr(to[f.sign].__arch); o.gx=fc[0]+f.off[0]-c[0]; o.gy=fc[1]+f.off[1]-c[1]} else {o.gx=((cfg.enter||{})[o.kind]==='ahead'?1:-1)*ac[2]*.95; o.gy=0; o.enter=true}
     moves.push([o.kind,Math.round(o.gx),Math.round(o.gy),o.enter])});
   h.remove(); glide=true}
 const titles=[...document.querySelectorAll('.body > .t')]; titles.forEach(e=>e.classList.add('sh'));
@@ -118,7 +120,7 @@ def motion(spec_path, slide=1, secs=8.0, fps=30, dsf=2, preview=None):
                 if k in (sp.get('scene') or {}) and k not in fs: fs[k] = sp['scene'][k]
             from_html = R.scene_html(fs, s)
         pg.add_style_tag(content=CSS)
-        info = pg.evaluate(JS, {'secs': secs, 'order': mo.get('order'), 'spark': mo.get('spark'), 'from': bool(mo.get('from')), 'fromHTML': from_html})
+        info = pg.evaluate(JS, {'secs': secs, 'order': mo.get('order'), 'spark': mo.get('spark'), 'from': bool(mo.get('from')), 'fromHTML': from_html, 'enter': mo.get('enter')})
         n = int(round(secs*fps))
         frame = lambda tt: pg.evaluate("(a)=>window.__frame(a)", {'tt': tt, 'dec': R.dec_for(spec, slide, tt), 'sf': R.sf_for(spec, slide, tt)})
         if preview is not None:

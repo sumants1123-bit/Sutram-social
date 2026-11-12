@@ -724,7 +724,7 @@
  "usage_budget": {
   "rule": "Sumant, 1 Nov: posting uses about 40-50% of his weekly usage at most, never over 60%",
   "this_week": "about 20% left on 1 Nov; Tue 3 Nov lean run makes Thu 5-Sun 8 Nov (5 posts), no 6:30 PM, no Saturday, no X refill",
-  "weekly": "from Sun 8 Nov 7 PM: one batch a week; Instagram 10 (lessons Mon-Fri 12 PM, Sutra Mon/Wed/Fri 10 AM, Thread Wed 6:30 PM, Week ahead Sun 6:30 PM); X 8",
+  "weekly": "from Sun 8 Nov 7 PM: one batch a week; Instagram 10 (lessons Mon-Fri 12 PM, Sutra Mon/Wed/Fri 10 AM, Thread Wed 6:30 PM, Week ahead Sun 6:30 PM); X 8; from 12 Nov add The sky that day Tue and Sat 6:30 PM (Instagram 12 to 13 a week, so the Sunday batch schedules up to Buffer's 10 and a Wednesday check-in tops up)",
   "measured_1nov": "weighted tokens: wake-up 0.45-0.75M (2.5M with compaction), carousel 0.3-0.45M, scheduled post 0.05-0.1M; 1% of week ~0.35-0.6M (rough)"
  },
  "focus_2nov": "Sumant, 2 Nov: promote asksutram.com (claude/asksutram-promotion-plan.md). Screenshots: Sumant's phone screenshots (workspace can't open the app; desktop browser not linked). Metricool November 15 of 20 after Fri 6 Nov. Ask Sutram posts use tools/app_post.py (the app's look: #07060A, Instrument Serif, Inter, orange) with real screenshots in assets/asksutram/ (taken via Claude in Chrome, guest sample chart; crop out the location line). Metricool November 16 of 20 after Mon 2 Nov 3 PM.",
@@ -843,7 +843,8 @@
   "monday": "Monday's lesson opens by checking Friday's reading against what happened, honestly, before the new rule.",
   "slides": "cast rows hold at most 3 rows a slide (2 is better) so text stays big; break lines by hand so no word sits alone; lookup uses two rows slides of six signs.",
   "x": "X posts for 11-13 Nov were left as scheduled; from the next batch X follows the same format.",
-  "doc": "claude/nadi-reading-format.md"
+  "doc": "claude/nadi-reading-format.md",
+  "also": "From 12 Nov every lesson also carries a real case and the new series runs twice a week: see rules_12nov."
  },
  "design_v6": {
   "said": "Sumant, 10 Nov 12:46 PM: take the design, the style, the visual, the animation and everything to the next level, for all the scheduled posts too.",
@@ -860,5 +861,42 @@
    "check": "Tonight's lesson12b was posted early at Sumant's request (Tue 10 Nov 1:53 PM) and published with the moving cover: https://www.instagram.com/p/DfkmEQjinFL/ . Check task removed.",
    "note": "Buffer keeps the caption when edit_post is sent without text. GitHub raw serves .mp4 as application/octet-stream; Buffer still read it as video/mp4, 8 s."
   }
+ },
+ "rules_12nov": {
+  "said": "Sumant, Thu 12 Nov 12:28 PM, on Lesson 14: loves the posts and the explaining; wants the facts taught, then combined, then how the combination shows up in real life, and one real event broken down to see which rules joined to lead to it (reverse engineering). Add that depth to all explanation posts. Start a reverse engineering series twice a week: a clear factual event, the sky it happened under, the rules that applied. Loves the design, most of all the moving parts.",
+  "every_lesson_adds": [
+   "after 'What it looks like': 'A real case' (two slides: what happened with its date, then the sky that day with the rules that met, using the lesson's own rule plus earlier ones)",
+   "the caption carries the same case in one paragraph",
+   "end the case with one plain line that people did the work: 'The sky set the scene · People did the work'"
+  ],
+  "case_rules": [
+   "facts first: date, place and what happened, checked on the web before writing",
+   "the sky only from tools/case_sky.py (Swiss Ephemeris, Lahiri, mean node); never from memory",
+   "use only rules already taught in the lessons",
+   "say how long each part of that sky lasted when it helps ('How the timing narrows': years, weeks, days)",
+   "no graha within about 1.5 degrees of a sign edge carries the reading unless the wording holds on both sides",
+   "public events and public achievements only; no deaths, illness, disasters or private lives; no person's birth chart"
+  ],
+  "series": {
+   "name": "The sky that day",
+   "kicker": "The sky that day · N",
+   "id": "skydayNN-ask",
+   "when": "Tuesday and Saturday 6:30 PM Toronto",
+   "first": "skyday01-ask, Sat 14 Nov 6:30 PM: the night India won the World Cup (2 Apr 2011)",
+   "shape": [
+    "moving cover: the date and place, the event as the title, the sky as rooms",
+    "What happened",
+    "The sky that day: who stood where (rows, with the cast)",
+    "one slide per rule that applies",
+    "Join them: one sentence",
+    "How the timing narrows: years, weeks, days",
+    "Make it yours: pick a day from your own life",
+    "the two links, with the next case named"
+   ],
+   "next": "skyday02 Tue 17 Nov: the day India reached Mars (Mangalyaan, 24 Sep 2014), promised on skyday01's last slide; it uses Monday's family rule (signs 5 and 9 apart)",
+   "bank": "plan/case-bank.json"
+  },
+  "motion": "tools/motion.py: slide key motion.enter {'mercury':'ahead'} brings a new graha in from the right, for one walking backward out of the next sign",
+  "doc": "claude/sky-that-day-series.md"
  }
 }

@@ -1,0 +1,152 @@
+{
+ "note": "Events for 'The sky that day' and for the real case inside a lesson. Skies from tools/case_sky.py (Swiss Ephemeris, sidereal Lahiri, mean node). Check each event's facts on the web again before a post goes out. 'edge' lists grahas within 1.5 degrees of a sign boundary: do not let them carry the reading.",
+ "cases": [
+  {
+   "id": "wc2011",
+   "used": "skyday01-ask (Sat 14 Nov 2026)",
+   "event": "India wins the Cricket World Cup, beating Sri Lanka by six wickets at Wankhede Stadium, Mumbai; its first World Cup in 28 years",
+   "when_utc": "2011-04-02T17:19Z",
+   "time_note": "evening in Mumbai; the exact minute is not needed",
+   "sky": "Sun Pisces 18.6, Moon Pisces 9.0, Mars Pisces 6.4, Mercury Pisces 29.9 R, Jupiter Pisces 21.5, Venus Aquarius 13.7, Saturn Virgo 20.0 R, Rahu Sagittarius 3.4, Ketu Gemini 3.4",
+   "edge": [
+    "Mercury (walked back into Pisces that day at 06:20 UTC; walking backward it works from Pisces on either side of the edge)"
+   ],
+   "rules": [
+    "same room: five in Pisces, Jupiter's own sign",
+    "face to face: Saturn in Virgo faces all five",
+    "looking back: Saturn and Mercury walk backward"
+   ],
+   "spans": "Jupiter in Pisces until 8 May 2011; Sun, Mars and Jupiter together in Pisces 26 Mar to 15 Apr 2011; all five in Pisces 2 Apr 06:20 UTC to 4 Apr 12:00 UTC; Saturn walking backward 26 Jan to 13 Jun 2011; new Moon 3 Apr 14:34 UTC"
+  },
+  {
+   "id": "chandrayaan3",
+   "used": "lesson15-ask2 (Fri 13 Nov 2026), as the short case",
+   "event": "Chandrayaan-3 lands near the Moon's south pole, four years after Chandrayaan-2's lander crashed (7 Sep 2019 India time)",
+   "when_utc": "2023-08-23T12:34Z",
+   "time_note": "6:04 PM India time",
+   "sky": "Sun Leo 6.0, Moon Libra 25.3, Mars Virgo 3.2, Mercury Leo 27.7, Jupiter Aries 21.2, Venus Cancer 20.6 R, Saturn Aquarius 9.9 R, Rahu Aries 3.6, Ketu Libra 3.6",
+   "edge": [],
+   "rules": [
+    "looking back: Saturn walks backward in Aquarius",
+    "face to face: Saturn faces the Sun and Mercury in Leo; the Moon and Ketu in Libra face Jupiter and Rahu in Aries",
+    "same room: Jupiter and Rahu in Aries, Jupiter in front",
+    "ahead: Mars in Virgo is ahead of Leo",
+    "family: Aries and Leo; Libra and Aquarius"
+   ],
+   "spans": "Saturn walking backward 17 Jun to 4 Nov 2023; Sun in Leo 17 Aug to 17 Sep 2023; Moon in Libra 21 Aug 12:10 to 23 Aug 21:30 UTC; Jupiter and Rahu together in Aries 22 Apr to 30 Oct 2023; Mercury turned backward 23 Aug 20:00 UTC, after the landing",
+   "more": "A full episode can compare the 2019 loss (6 Sep 2019 20:23 UTC: Saturn walking backward in Sagittarius in one room with Ketu) with 2023"
+  },
+  {
+   "id": "mangalyaan",
+   "used": "",
+   "event": "India's Mars Orbiter Mission enters Mars orbit on its first try",
+   "when_utc": "2014-09-24T02:00Z",
+   "time_note": "about 7:30 to 8:00 AM India time; check before posting",
+   "sky": "Sun Virgo 6.9, Moon Virgo 4.9, Mars Scorpio 12.8, Mercury Libra 3.0, Jupiter Cancer 20.6, Venus Leo 28.7, Saturn Libra 25.8, Rahu Virgo 26.1, Ketu Pisces 26.1",
+   "edge": [
+    "Venus (Leo 28.7)"
+   ],
+   "rules": [
+    "family: Jupiter in Cancer, Mars in Scorpio and Ketu in Pisces stand 5 and 9 apart",
+    "Mars in Scorpio, his own sign, on the day India reached Mars; Jupiter in Cancer, where he is strongest",
+    "same room: Sun, Moon and Rahu in Virgo; Mercury and Saturn in Libra"
+   ],
+   "spans": "work these out with case_sky.span before posting"
+  },
+  {
+   "id": "independence",
+   "used": "",
+   "event": "India becomes independent at midnight",
+   "when_utc": "1947-08-14T18:30Z",
+   "time_note": "midnight, 15 Aug 1947, Delhi",
+   "sky": "Sun Cancer 28.0, Moon Cancer 4.0, Mars Gemini 7.5, Mercury Cancer 13.7, Jupiter Libra 25.9, Venus Cancer 22.6, Saturn Cancer 20.5, Rahu Taurus 5.1, Ketu Scorpio 5.1",
+   "edge": [],
+   "rules": [
+    "same room: five in Cancer, the Moon's own sign, the Sun in front",
+    "ahead: the five are ahead of Mars in Gemini"
+   ],
+   "spans": "",
+   "care": "Partition is part of this date: write with care or skip"
+  },
+  {
+   "id": "gukesh",
+   "used": "",
+   "event": "D. Gukesh becomes world chess champion in Singapore",
+   "when_utc": "2024-12-12T10:30Z",
+   "time_note": "check the time before posting",
+   "sky": "Sun Scorpio 26.7, Moon Aries 17.1, Mars Cancer 11.8 R, Mercury Scorpio 13.2 R, Jupiter Taurus 21.4 R, Venus Capricorn 11.8, Saturn Aquarius 19.1, Rahu Pisces 8.3, Ketu Virgo 8.3",
+   "edge": [],
+   "rules": [
+    "three grahas walk backward: Mars, Mercury, Jupiter",
+    "face to face: Jupiter in Taurus faces the Sun and Mercury in Scorpio; Mars in Cancer faces Venus in Capricorn",
+    "looking back: Jupiter also works from Aries, where the Moon stands"
+   ],
+   "spans": "",
+   "care": "read the event's sky only, never his birth chart"
+  },
+  {
+   "id": "t20-2024",
+   "used": "",
+   "event": "India wins the T20 World Cup in Barbados",
+   "when_utc": "2024-06-29T18:20Z",
+   "time_note": "check the time before posting",
+   "sky": "Sun Gemini 14.3, Moon Pisces 25.5, Mars Aries 20.9, Mercury Cancer 0.9, Jupiter Taurus 13.8, Venus Gemini 21.2, Saturn Aquarius 25.2, Rahu Pisces 17.1, Ketu Virgo 17.1",
+   "edge": [
+    "Mercury (Cancer 0.9)"
+   ],
+   "rules": [
+    "Mars in Aries and Saturn in Aquarius, each in his own sign",
+    "family: Saturn in Aquarius with the Sun and Venus in Gemini",
+    "same room: Moon and Rahu in Pisces, faced by Ketu"
+   ],
+   "spans": ""
+  },
+  {
+   "id": "apollo11",
+   "used": "",
+   "event": "Apollo 11 lands on the Moon",
+   "when_utc": "1969-07-20T20:17Z",
+   "sky": "Sun Cancer 4.5, Moon Virgo 14.4, Mars Scorpio 9.3, Mercury Cancer 2.4, Jupiter Virgo 7.3, Venus Taurus 21.6, Saturn Aries 14.7, Rahu Pisces 0.6, Ketu Virgo 0.6",
+   "edge": [
+    "Rahu and Ketu (0.6)"
+   ],
+   "rules": [
+    "same room: Jupiter and the Moon in Virgo",
+    "family: Sun and Mercury in Cancer with Mars in Scorpio"
+   ],
+   "spans": "",
+   "care": "the nodes sit on a sign edge: leave them out of the reading"
+  },
+  {
+   "id": "iphone",
+   "used": "",
+   "event": "The first iPhone is shown in San Francisco",
+   "when_utc": "2007-01-09T17:41Z",
+   "sky": "Sun Sagittarius 25.1, Moon Virgo 5.8, Mars Sagittarius 0.8, Mercury Sagittarius 26.6, Jupiter Scorpio 16.0, Venus Capricorn 13.0, Saturn Leo 0.1 R, Rahu Aquarius 25.2, Ketu Leo 25.2",
+   "edge": [
+    "Saturn (Leo 0.1 R)",
+    "Mars (Sagittarius 0.8)"
+   ],
+   "rules": [
+    "same room: Sun and Mercury in Sagittarius",
+    "Rahu in Aquarius faces Ketu in Leo"
+   ],
+   "spans": "",
+   "care": "two grahas on sign edges: weak case"
+  },
+  {
+   "id": "bitcoin",
+   "used": "",
+   "event": "The first Bitcoin block is mined",
+   "when_utc": "2009-01-03T18:15Z",
+   "sky": "Sun Sagittarius 19.5, Moon Pisces 10.6, Mars Sagittarius 11.6, Mercury Capricorn 8.8, Jupiter Capricorn 5.6, Venus Aquarius 6.3, Saturn Leo 27.8 R, Rahu Capricorn 16.8, Ketu Cancer 16.8",
+   "edge": [],
+   "rules": [
+    "same room: Jupiter, Mercury and Rahu in Capricorn (the teacher, the messenger and the magician)",
+    "looking back: Saturn in Leo also works from Cancer, where Ketu stands, facing the three in Capricorn",
+    "same room: Sun and Mars in Sagittarius"
+   ],
+   "spans": ""
+  }
+ ]
+}
