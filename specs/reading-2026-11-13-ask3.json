@@ -1,0 +1,544 @@
+{
+ "id": "reading-2026-11-13-ask3",
+ "kicker": "Read the sky · five rules",
+ "decor_theme": "thread",
+ "parts": [
+  "The sky",
+  "Rule by rule",
+  "The reading",
+  "Your chart"
+ ],
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "swipe": true,
+   "scene": {
+    "h": 150,
+    "across": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 32
+       }
+      ],
+      "state": "",
+      "tag": ""
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 25
+       }
+      ],
+      "state": "",
+      "tag": ""
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 24
+       },
+       {
+        "kind": "ketu",
+        "r": 28,
+        "dx": 58
+       },
+       {
+        "kind": "jupiter",
+        "r": 34,
+        "dx": 66
+       }
+      ],
+      "state": "focus",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 34
+       }
+      ],
+      "state": "",
+      "tag": ""
+     }
+    ]
+   },
+   "label": "Five rules, one sky",
+   "labelsize": 30,
+   "title": "Read this weekend",
+   "titleclass": "h1",
+   "subtitle": "One sky, read step by step\nwith the five rules of this week",
+   "subsize": 50,
+   "contents": [
+    "The sky",
+    "Rule by rule",
+    "The reading",
+    "Your chart"
+   ],
+   "motion": {
+    "order": [
+     0,
+     [
+      "across",
+      0
+     ],
+     1,
+     [
+      "across",
+      1
+     ]
+    ],
+    "spark": [
+     null,
+     [
+      "rooms",
+      0,
+      "across",
+      0
+     ],
+     [
+      "rooms",
+      0,
+      "rooms",
+      1
+     ],
+     [
+      "rooms",
+      1,
+      "across",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "part": 1,
+   "scene": {
+    "h": 150,
+    "w": 300,
+    "across": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 32
+       }
+      ],
+      "names": "Rahu"
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 26
+       }
+      ],
+      "names": "Saturn",
+      "note": "◂ walking backward"
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 26
+       },
+       {
+        "kind": "ketu",
+        "r": 30,
+        "dx": 62
+       },
+       {
+        "kind": "jupiter",
+        "r": 36,
+        "dx": 70
+       }
+      ],
+      "state": "focus",
+      "names": "Mars · Ketu · Jupiter"
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 34
+       }
+      ],
+      "names": "Venus"
+     }
+    ]
+   },
+   "label": "Part 1 · The sky",
+   "labelsize": 33,
+   "title": "Who stands where",
+   "titleclass": "h3",
+   "body": [
+    "*Leo holds three grahas*\nless than one degree apart"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "note": "Fri 13 to Sun 15 Nov · Toronto · Lahiri"
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "label": "Part 2 · Rules 1 and 3",
+   "labelsize": 33,
+   "title": "Three in one room",
+   "titleclass": "h3",
+   "ruler": {
+    "sign": "Leo",
+    "from": 0.45,
+    "to": 1.8,
+    "ticks": [
+     [
+      0.5,
+      "0°30′"
+     ],
+     [
+      1,
+      "1°"
+     ],
+     [
+      1.5,
+      "1°30′"
+     ]
+    ],
+    "items": [
+     {
+      "kind": "mars",
+      "who": "The soldier",
+      "deg": 0.624,
+      "d": "0°37′",
+      "r": 28
+     },
+     {
+      "kind": "ketu",
+      "who": "The monk",
+      "deg": 1.152,
+      "d": "1°09′",
+      "r": 30
+     },
+     {
+      "kind": "jupiter",
+      "who": "The teacher",
+      "deg": 1.459,
+      "d": "1°28′",
+      "r": 36
+     }
+    ],
+    "road": {
+     "from_deg": 0.624,
+     "stops": [
+      [
+       1.1,
+       "Sat",
+       "passes the monk"
+      ],
+      [
+       1.65,
+       "Mon",
+       "passes the teacher"
+      ]
+     ]
+    }
+   },
+   "body": [
+    "Rule 1 · Same room: *they act as one*",
+    "Rule 3 · More degrees lead: *the teacher*"
+   ],
+   "bodysize": 38,
+   "bodygap": 12,
+   "note": "Friday 6:30 PM · Toronto"
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "label": "Rule 2",
+   "labelsize": 33,
+   "title": "Ahead and behind",
+   "titleclass": "h3",
+   "scene": {
+    "w": 286,
+    "h": 176,
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [],
+      "names": "empty"
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 24
+       },
+       {
+        "kind": "ketu",
+        "r": 27,
+        "dx": 58
+       },
+       {
+        "kind": "jupiter",
+        "r": 33,
+        "dx": 66
+       }
+      ],
+      "state": "focus",
+      "names": "Mars · Ketu · Jupiter"
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 36
+       }
+      ],
+      "names": "Venus",
+      "note": "forward tonight ▸"
+     }
+    ]
+   },
+   "body": [
+    "Behind Leo, *Cancer is empty*",
+    "Ahead, *the lover turns forward tonight*"
+   ],
+   "bodysize": 40,
+   "bodygap": 12
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "label": "Rules 4 and 5",
+   "labelsize": 33,
+   "scene": {
+    "w": 250,
+    "h": 132,
+    "acrossk": 0.9,
+    "reachpad": 90,
+    "connx": -142,
+    "reach": [
+     [
+      1,
+      0,
+      "also works from here"
+     ]
+    ],
+    "across": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 20
+       },
+       {
+        "kind": "ketu",
+        "r": 23,
+        "dx": 46
+       },
+       {
+        "kind": "jupiter",
+        "r": 28,
+        "dx": 52
+       }
+      ],
+      "names": "Mars · Ketu · Jupiter"
+     },
+     {
+      "spacer": true
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 32
+       }
+      ],
+      "names": "Rahu"
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 28
+       }
+      ],
+      "state": "focus",
+      "names": "Saturn",
+      "note": "◂ walking backward"
+     }
+    ]
+   },
+   "title": "Across the table",
+   "titleclass": "h3",
+   "body": [
+    "Rule 4 · *The magician (Rahu)* faces Leo",
+    "Rule 5 · *The auditor (Saturn)* looks back to him"
+   ],
+   "bodysize": 36,
+   "bodygap": 12
+  },
+  {
+   "type": "nsteps",
+   "part": 3,
+   "label": "Part 3 · The reading",
+   "labelsize": 33,
+   "title": "This weekend",
+   "titleclass": "h2",
+   "steps": [
+    {
+     "tag": "A crowded Leo",
+     "head": "Tempers run short around big egos"
+    },
+    {
+     "tag": "Hype and old duties across",
+     "head": "Bold claims get checked"
+    },
+    {
+     "tag": "The lover turns forward",
+     "head": "An old message or flame returns"
+    }
+   ],
+   "headsize": 52,
+   "stepsmt": 30,
+   "closing": "Slow answers win",
+   "closingsize": 58
+  },
+  {
+   "type": "rows",
+   "part": 4,
+   "label": "Part 4 · Your chart",
+   "labelsize": 33,
+   "title": "Where is Leo for you?",
+   "titleclass": "h3",
+   "lead": "Find your rising sign",
+   "leadsize": 34,
+   "items": [
+    [
+     "Aries",
+     "5th · love, children, ideas"
+    ],
+    [
+     "Taurus",
+     "4th · home, mother, property"
+    ],
+    [
+     "Gemini",
+     "3rd · siblings, effort, short trips"
+    ],
+    [
+     "Cancer",
+     "2nd · money, family, speech"
+    ],
+    [
+     "Leo",
+     "1st · you, your body, your name"
+    ],
+    [
+     "Virgo",
+     "12th · sleep, spending, far places"
+    ]
+   ],
+   "bodysize": 33,
+   "note": "No rising sign? Use your Moon sign"
+  },
+  {
+   "type": "rows",
+   "part": 4,
+   "label": "Your chart",
+   "labelsize": 33,
+   "title": "Where is Leo for you?",
+   "titleclass": "h3",
+   "lead": "Find your rising sign",
+   "leadsize": 34,
+   "items": [
+    [
+     "Libra",
+     "11th · friends, income, wishes"
+    ],
+    [
+     "Scorpio",
+     "10th · career, boss, status"
+    ],
+    [
+     "Sagittarius",
+     "9th · teachers, travel, luck"
+    ],
+    [
+     "Capricorn",
+     "8th · shared money, sudden change"
+    ],
+    [
+     "Aquarius",
+     "7th · partner, clients, deals"
+    ],
+    [
+     "Pisces",
+     "6th · daily work, health, debts"
+    ]
+   ],
+   "bodysize": 33,
+   "closing": "Read this weekend in that room",
+   "closingsize": 46
+  },
+  {
+   "type": "cta",
+   "part": 5,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 30
+    },
+    {
+     "kind": "jupiter",
+     "r": 40,
+     "dx": 80
+    },
+    {
+     "kind": "ketu",
+     "r": 34,
+     "dx": 78
+    },
+    {
+     "kind": "rahu",
+     "r": 34,
+     "dx": 300
+    }
+   ],
+   "label": "Your turn",
+   "labelsize": 27,
+   "title": "Write it down,\ncheck it on Monday",
+   "titleclass": "h3",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Monday · Rule 6, family"
+  }
+ ]
+}

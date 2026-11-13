@@ -487,6 +487,39 @@ def timeline_html(tl, s=1.0):
     return (f'<div class="tline" style="position:relative;width:{Wd}px;height:{Ht}px;zoom:{s:.3f};margin:{tl.get("mt",14)}px auto {tl.get("mb",6)}px;text-align:left">'
             f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}</svg>{"".join(H)}</div>')
 
+def ruler_html(ru, s=1.0):
+    """Grahas inside one sign, placed to scale on its degrees, with the fast one's road ahead (v8, 13 Nov).
+    ru: sign; from, to (degrees shown); ticks [[deg, label]]; items [{kind, who, deg, d}];
+    road {from_deg, stops [[deg, when, words]], words} draws the fast graha's dashed road with dated stops."""
+    Wd=912; m=40; x0,x1=m,Wd-m; a,b=ru['from'],ru['to']; k=(x1-x0)/(b-a); X=lambda d: x0+(d-a)*k
+    yo=170; yr=ru.get('yr',430); Ht=yr+60; o=[]; H=[]; fam="font-family='EB Garamond'"
+    o.append(f"<text x='{x0}' y='40' text-anchor='start' {fam} font-weight='500' font-size='34' letter-spacing='9' fill='{GOLD}'>{esc(ru['sign']).upper()}</text>")
+    o.append(f"<line x1='{x0}' y1='{yr}' x2='{x1}' y2='{yr}' stroke='{GOLD}' stroke-opacity='.7' stroke-width='1.6'/>")
+    st=ru.get('minor',1/6); j=0
+    while a+j*st<=b+1e-9:
+        x=X(a+j*st); o.append(f"<line x1='{x:.1f}' y1='{yr}' x2='{x:.1f}' y2='{yr+9}' stroke='{GOLD}' stroke-opacity='.5' stroke-width='1.1'/>"); j+=1
+    for d_,lab in ru.get('ticks',[]):
+        x=X(d_); o.append(f"<line x1='{x:.1f}' y1='{yr}' x2='{x:.1f}' y2='{yr+18}' stroke='{GOLD}' stroke-opacity='.9' stroke-width='1.6'/>")
+        o.append(f"<text x='{x:.1f}' y='{yr+52}' text-anchor='middle' {fam} font-size='30' fill='{CREAM}' fill-opacity='.8'>{esc(lab)}</text>")
+    for it in ru['items']:
+        x=X(it['deg']); r=it.get('r',34)
+        o.append(f"<line x1='{x:.1f}' y1='{yo+r+40}' x2='{x:.1f}' y2='{yr-4}' stroke='{GOLD}' stroke-opacity='.3' stroke-width='1.2' stroke-dasharray='3 6'/>")
+        o.append(f"<text x='{x:.1f}' y='{yo-r-22}' text-anchor='middle' font-family='Cormorant Garamond' font-weight='500' font-size='38' fill='{CREAM}'>{esc(it['who'])}</text>")
+        o.append(f"<text x='{x:.1f}' y='{yo+r+34}' text-anchor='middle' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='31' fill='{GOLD}'>{esc(it['d'])}</text>")
+        H.append(f'<div class="rorb" data-x="{x:.1f}" style="position:absolute;left:{x:.1f}px;top:{yo}px;transform:translate(-50%,-50%)">{orb({"kind":it["kind"],"r":r})}</div>')
+    rd=ru.get('road')
+    if rd:
+        yp=yo+r+90; xs=X(rd['from_deg'])+8; xe=min(x1+6,X(max(st_[0] for st_ in rd['stops']))+60)
+        o.append(f"<path class='rroad' d='M{xs:.1f},{yp} L{xe-14:.1f},{yp}' fill='none' stroke='{AMBER}' stroke-width='3' stroke-dasharray='10 9' stroke-linecap='round'/>")
+        o.append(f"<path d='M{xe-22:.1f},{yp-10} L{xe:.1f},{yp} L{xe-22:.1f},{yp+10} Z' fill='{AMBER}'/>")
+        for d_,when,words in rd['stops']:
+            x=X(d_); o.append(f"<circle cx='{x:.1f}' cy='{yp}' r='12' fill='{AMBER}' opacity='.25'/><circle cx='{x:.1f}' cy='{yp}' r='6.5' fill='{AMBER}'/>")
+            o.append(f"<text x='{x:.1f}' y='{yp+44}' text-anchor='middle' font-family='Cormorant Garamond' font-weight='600' font-size='36' fill='{CREAM}'>{esc(when)}</text>")
+            o.append(f"<text x='{x:.1f}' y='{yp+76}' text-anchor='middle' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='29' fill='{AMBER}'>{esc(words)}</text>")
+        if rd.get('words'): o.append(f"<text x='{xs-6:.1f}' y='{yp+44}' text-anchor='start' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='29' fill='{AMBER}'>{esc(rd['words'])}</text>")
+    return (f'<div class="rulerd" style="position:relative;width:{Wd}px;height:{Ht}px;zoom:{s:.3f};margin:{ru.get("mt",10)}px auto {ru.get("mb",4)}px;text-align:left">'
+            f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}</svg>{"".join(H)}</div>')
+
 def slide_html(sp, s=1.0):
     F=lambda px: f'{px*s:.1f}px'
     T=lambda px: F(px*TXT)
@@ -516,6 +549,7 @@ def slide_html(sp, s=1.0):
         H.append('<div class="contents">'+''.join(f'<div><b style="border-color:{PART_COLORS[k%len(PART_COLORS)]};color:{PART_COLORS[k%len(PART_COLORS)]}">{k+1}</b>{esc(c)}</div>' for k,c in enumerate(sp['contents']))+'</div>')
     if sp.get('path') and sp.get('pathpos')=='mid': H.append(path_html(sp['path'],s))
     if sp.get('timeline'): H.append(timeline_html(sp['timeline'],s))
+    if sp.get('ruler'): H.append(ruler_html(sp['ruler'],s))
     if t=='nsteps':
         # numbered steps, left aligned: a small tag line, a head and a line under it; "n" overrides the number (e.g. the rule's own number)
         H.append(f'<div style="width:100%;margin-top:{F(sp.get("stepsmt",22))}">'+''.join(
