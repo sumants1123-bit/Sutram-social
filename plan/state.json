@@ -348,7 +348,7 @@
    "title": "Lesson 15: Nadi rule 5, looking back",
    "via": "buffer-instagram",
    "buffer_id": "6af14fc7796ccae266839b4f",
-   "note": "12 Nov: now 9 slides with a real case (Chandrayaan-3, 23 Aug 2023) on slides 7 and 8; assets at commit 6271ed0"
+   "note": "12 Nov: now 9 slides with a real case (Chandrayaan-3, 23 Aug 2023) on slides 7 and 8; assets at commit 6271ed0 · 13 Nov 4:30 PM: Sumant deleted this post on Instagram; replaced by lesson15-ask3"
   },
   {
    "id": "sutra-debilitated-ask2",
@@ -380,6 +380,14 @@
    "via": "buffer-instagram",
    "buffer_id": "6af357da94964d984f081b14",
    "note": "13 Nov: rebuilt in the four-part format, 14 slides, moving cover; assets at commit 54c6e0f"
+  },
+  {
+   "id": "lesson15-ask3",
+   "when": "2026-11-13T16:40:00-05:00",
+   "title": "Lesson 15 remade in the four-part format: Nadi rule 5, looking back (16 slides, slides 1 and 6 move)",
+   "via": "buffer-instagram",
+   "buffer_id": "6af783a3d16af15d4dd52b81",
+   "note": "posted now at Sumant's word after he deleted the old one; assets at commit 95b84c0; section labels at size 33, at most 24 characters"
   }
  ],
  "retired": [
@@ -935,7 +943,8 @@
    "times rounded ('about 7:30 tonight'); Rahu/Ketu crossings given as the day; a graha within 1.5 degrees of a sign edge shows both sides or is left out",
    "captions in the same parts with 'PART 1 · THE RULE' headers; X uses the same text without hashtags and four slides",
    "no slide below 0.88 shrink; step lines under about 40 characters; lines broken by hand",
-   "public grading stays off: 'write down what you expect, check it on <day>' is the reader's own note"
+   "public grading stays off: 'write down what you expect, check it on <day>' is the reader's own note",
+   "section labels at labelsize 33 and no longer than 24 characters, so they stay on one line; lists of grahas carry 'roworbs'; a case opener can carry an 'orb' (the Moon for a Moon landing)"
   ],
   "models": {
    "lesson": "specs/lesson15-ask3.json (the example shown to Sumant; not posted)",
@@ -943,8 +952,8 @@
    "sutra": "specs/sutra-debilitated-ask2.json",
    "week": "specs/week-2026-11-15-ask2.json"
   },
-  "tools": "render.py: tabs, names/note/reach/caption/conn/connx/reachpad on scenes, path diagram, nsteps, narrow, contents, lead, swipe; background planets hide when they sit on text. motion.py: reach arc draws, path walk, swipe arrow. preview.py: swipe preview page for a private Artifact. buffer_assets.py: --videos 1,6",
-  "example": "Lesson 15 remade, private Artifact https://claude.ai/artifact/6VzbM1ZqweAJJ972qZM8qv; published posts cannot have slides swapped, so the old Lesson 15 stays unless he deletes it and asks for the new one",
+  "tools": "render.py: tabs, names/note/reach/caption/conn/connx/reachpad on scenes, path diagram, nsteps, narrow, contents, lead, swipe; background planets hide when they sit on text. motion.py: reach arc draws, path walk, swipe arrow. preview.py: swipe preview page for a private Artifact. buffer_assets.py: --videos 1,6. Never run two motion.py renders of the same post at once: they share one frame folder",
+  "example": "Lesson 15 remade: preview https://claude.ai/artifact/6VzbM1ZqweAJJ972qZM8qv; Sumant deleted the old post and had the remake posted on 13 Nov about 4:40 PM",
   "done_13nov": "tonight's reading, Saturday's Sutra and Sunday's Week ahead rebuilt and swapped in Buffer on Instagram; Saturday's and Sunday's X posts swapped too; the Sunday batch task carries the format"
  }
 }
