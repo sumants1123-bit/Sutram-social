@@ -41,8 +41,8 @@
      }
     ]
    },
-   "label": "Bhrigu Nandi Nadi · Rule 5",
-   "labelsize": 27,
+   "label": "Nadi · Rule 5",
+   "labelsize": 33,
    "title": "Looking back",
    "titleclass": "h1",
    "subtitle": "How to read a graha\nthat walks backward",
@@ -112,7 +112,7 @@
     ]
    },
    "label": "Part 1 · The rule",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Two signs at once",
    "titleclass": "h2",
    "body": [
@@ -127,7 +127,7 @@
    "type": "rows",
    "part": 1,
    "label": "The rule · why it turns",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "It goes back\nfor old business",
    "titleclass": "h3",
    "lead": "Like someone who hears a shout\nand turns back to help",
@@ -156,13 +156,35 @@
    ],
    "namesize": 50,
    "bodysize": 34,
-   "note": "Sun and Moon never walk backward · Rahu and Ketu always do"
+   "note": "Sun and Moon never walk backward\nRahu and Ketu always do",
+   "roworbs": [
+    {
+     "kind": "mercury",
+     "r": 22
+    },
+    {
+     "kind": "venus",
+     "r": 26
+    },
+    {
+     "kind": "mars",
+     "r": 23
+    },
+    {
+     "kind": "jupiter",
+     "r": 29
+    },
+    {
+     "kind": "saturn",
+     "r": 25
+    }
+   ]
   },
   {
    "type": "nsteps",
    "part": 1,
    "label": "The rule · how to use it",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Read it in three steps",
    "titleclass": "h3",
    "steps": [
@@ -184,7 +206,7 @@
    "type": "cast",
    "part": 2,
    "label": "Part 2 · Today's sky",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Who is walking\nbackward now?",
    "titleclass": "h3",
    "lead": "Step 1 · *Rule 5 on the sky of this week*",
@@ -234,8 +256,8 @@
   {
    "type": "text",
    "part": 2,
-   "label": "Today's sky · the lover's walk",
-   "labelsize": 27,
+   "label": "Today's sky · her walk",
+   "labelsize": 33,
    "title": "Follow the lover (Venus)",
    "titleclass": "h3",
    "pathpos": "mid",
@@ -350,8 +372,8 @@
      }
     ]
    },
-   "label": "Today's sky · steps 2 and 3",
-   "labelsize": 27,
+   "label": "Today's sky · steps 2, 3",
+   "labelsize": 33,
    "title": "Which sign is behind her?",
    "titleclass": "h3",
    "body": [
@@ -365,8 +387,8 @@
   {
    "type": "nsteps",
    "part": 2,
-   "label": "Today's sky · the reading",
-   "labelsize": 27,
+   "label": "Today's sky · reading",
+   "labelsize": 33,
    "title": "Rule 5 reads this week",
    "titleclass": "h3",
    "steps": [
@@ -397,8 +419,8 @@
   {
    "type": "cast",
    "part": 2,
-   "label": "Today's sky · the other two",
-   "labelsize": 27,
+   "label": "Today's sky · two more",
+   "labelsize": 33,
    "title": "Same three steps",
    "titleclass": "h3",
    "items": [
@@ -435,7 +457,7 @@
    "type": "text",
    "part": 3,
    "label": "Part 3 · A real case",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "India goes back\nto the Moon",
    "titleclass": "h2",
    "body": [
@@ -447,7 +469,11 @@
    "closing": "What was the sky doing\nat 6:04 PM?",
    "closingsize": 52,
    "lead": "A real event, read backward with rule 5",
-   "leadsize": 34
+   "leadsize": 34,
+   "orb": {
+    "kind": "moon",
+    "r": 64
+   }
   },
   {
    "type": "text",
@@ -506,20 +532,20 @@
     ],
     "connx": 142
    },
-   "label": "A real case · the sky at 6:04 PM",
-   "labelsize": 27,
+   "label": "A real case · the sky",
+   "labelsize": 33,
    "body": [
     "*The auditor (Saturn)* in Aquarius,\nwalking backward since 17 June",
     "*The king (Sun)* and *the messenger (Mercury)*\nin Leo, straight across from him"
    ],
-   "bodysize": 36,
-   "bodygap": 12
+   "bodysize": 34,
+   "bodygap": 8
   },
   {
    "type": "nsteps",
    "part": 3,
    "label": "A real case · the rules",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Two rules, one story",
    "titleclass": "h3",
    "steps": [
@@ -527,13 +553,13 @@
      "n": "5",
      "tag": "Rule 5 · looking back",
      "head": "Old work came back",
-     "line": "The auditor also worked from Capricorn, his other home sign · *The crashed 2019 landing, tried again*"
+     "line": "The auditor also worked from Capricorn\n*The crashed 2019 landing, tried again*"
     },
     {
      "n": "4",
      "tag": "Rule 4 · face to face",
      "head": "The auditor faced the king",
-     "line": "From Aquarius he looked straight at Leo · *A country's work, checked live in front of everyone*"
+     "line": "From Aquarius he looked straight at Leo\n*A country's work, checked live*"
     }
    ],
    "headsize": 52,
@@ -545,7 +571,7 @@
    "type": "narrow",
    "part": 3,
    "label": "A real case · how rare",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "How the timing narrows",
    "titleclass": "h3",
    "items": [
@@ -571,7 +597,7 @@
    "type": "rows",
    "part": 4,
    "label": "Part 4 · Your chart",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Where the auditor\nlooks back for you",
    "titleclass": "h3",
    "lead": "Until 10 December he works from two rooms\nFind your rising sign",
@@ -609,7 +635,7 @@
    "type": "rows",
    "part": 4,
    "label": "Part 4 · Your chart",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Where the auditor\nlooks back for you",
    "titleclass": "h3",
    "items": [
@@ -664,7 +690,7 @@
     }
    ],
    "label": "Rule 5 in one line",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Walking backward\nmeans two signs at once",
    "titleclass": "h3",
    "lines": [
