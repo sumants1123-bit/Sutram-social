@@ -1,0 +1,323 @@
+{
+ "id": "sutra-debilitated-ask2",
+ "kicker": "Sutra · Debilitated grahas",
+ "decor_theme": "thread",
+ "parts": [
+  "The idea",
+  "Today's sky",
+  "Your chart"
+ ],
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "swipe": true,
+   "scene": {
+    "h": 180,
+    "w": 270,
+    "rooms": [
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 38
+       }
+      ],
+      "names": "the lover"
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 40,
+        "rings": false
+       }
+      ],
+      "names": "the king"
+     }
+    ]
+   },
+   "label": "Sutra · the weakest sign",
+   "labelsize": 27,
+   "title": "The wrong room",
+   "titleclass": "h1",
+   "subtitle": "What a graha does\nin its weakest sign",
+   "subsize": 54,
+   "contents": [
+    "The idea",
+    "Today's sky",
+    "Your chart"
+   ],
+   "motion": {
+    "order": [
+     0,
+     1
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "part": 1,
+   "scene": {
+    "h": 130,
+    "w": 260,
+    "conn": "straight across",
+    "across": [
+     {
+      "sign": "Pisces",
+      "orbs": [],
+      "names": "her best sign"
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 36
+       }
+      ],
+      "state": "focus",
+      "names": "her weakest sign"
+     }
+    ]
+   },
+   "label": "Part 1 · The idea",
+   "labelsize": 27,
+   "title": "Neecha means low",
+   "titleclass": "h3",
+   "body": [
+    "Each graha has a *best sign* (exalted)\nand a *weakest sign* (debilitated)",
+    "They sit straight across from each other"
+   ],
+   "bodysize": 38,
+   "bodygap": 12,
+   "note": "Brihat Parashara Hora Shastra, chapter 3"
+  },
+  {
+   "type": "rows",
+   "part": 1,
+   "label": "The idea · the list",
+   "labelsize": 27,
+   "title": "Who is weak where",
+   "titleclass": "h3",
+   "roworbs": [
+    {
+     "kind": "sun",
+     "r": 26,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 25
+    },
+    {
+     "kind": "mars",
+     "r": 22
+    },
+    {
+     "kind": "mercury",
+     "r": 21
+    },
+    {
+     "kind": "jupiter",
+     "r": 28
+    },
+    {
+     "kind": "venus",
+     "r": 25
+    },
+    {
+     "kind": "saturn",
+     "r": 24
+    }
+   ],
+   "items": [
+    [
+     "The king (Sun)",
+     "Libra"
+    ],
+    [
+     "The mother (Moon)",
+     "Scorpio"
+    ],
+    [
+     "The soldier (Mars)",
+     "Cancer"
+    ],
+    [
+     "The messenger (Mercury)",
+     "Pisces"
+    ],
+    [
+     "The teacher (Jupiter)",
+     "Capricorn"
+    ],
+    [
+     "The lover (Venus)",
+     "Virgo"
+    ],
+    [
+     "The auditor (Saturn)",
+     "Aries"
+    ]
+   ],
+   "namesize": 44,
+   "bodysize": 40
+  },
+  {
+   "type": "text",
+   "part": 1,
+   "label": "The idea · the way out",
+   "labelsize": 27,
+   "title": "The fall can be cancelled",
+   "titleclass": "h3",
+   "body": [
+    "Jyotish calls it *neecha bhanga*",
+    "One rule: the owner of that sign sits\nin the *1st, 4th, 7th or 10th house*\nfrom your rising sign or your Moon"
+   ],
+   "bodysize": 40,
+   "bodygap": 14,
+   "closing": "Then the weak spot becomes a hard-won skill\nThe shy kid who becomes the speaker",
+   "closingsize": 44,
+   "note": "Phaladeepika 7.26"
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "scene": {
+    "h": 180,
+    "w": 280,
+    "rooms": [
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 40
+       }
+      ],
+      "state": "focus",
+      "names": "Venus",
+      "note": "5 to 22 Nov"
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 42,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "names": "Sun",
+      "note": "until Monday"
+     }
+    ]
+   },
+   "label": "Part 2 · Today's sky",
+   "labelsize": 27,
+   "title": "Two in the wrong room",
+   "titleclass": "h3",
+   "body": [
+    "*The lover (Venus)* in Virgo\n5 to 22 November",
+    "*The king (Sun)* in Libra\nuntil Monday 16 November"
+   ],
+   "bodysize": 38,
+   "bodygap": 12,
+   "note": "Toronto time · Lahiri zodiac"
+  },
+  {
+   "type": "nsteps",
+   "part": 2,
+   "label": "Today's sky · the reading",
+   "labelsize": 27,
+   "title": "What the rule says now",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "tag": "The lover in Virgo",
+     "head": "Pleasure is harder to enjoy",
+     "line": "Go easy on spending and on criticism"
+    },
+    {
+     "tag": "The king in Libra",
+     "head": "Pride bruises easily",
+     "line": "Go easy on ego fights · share the credit"
+    },
+    {
+     "tag": "Monday morning",
+     "head": "The king walks out",
+     "line": "He enters Scorpio and gets stronger"
+    }
+   ],
+   "headsize": 50,
+   "bodysize": 34,
+   "closing": "Easy on pride and on spending",
+   "closingsize": 52
+  },
+  {
+   "type": "nsteps",
+   "part": 3,
+   "label": "Part 3 · Your chart",
+   "labelsize": 27,
+   "title": "Find your wrong room",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "head": "Born about 17 Oct to 15 Nov?",
+     "line": "Your king (Sun) is in his weakest sign"
+    },
+    {
+     "head": "For the other six, open your chart",
+     "line": "Look for a graha in its sign from slide 3"
+    },
+    {
+     "head": "Then check the way out",
+     "line": "Sign owner in the 1st, 4th, 7th or 10th?"
+    }
+   ],
+   "headsize": 48,
+   "bodysize": 34
+  },
+  {
+   "type": "quote",
+   "part": 3,
+   "label": "Sutra",
+   "labelsize": 28,
+   "quote": "A skill learned\nthe long way\nis still a skill",
+   "source": "Sutram",
+   "quotesize": 80
+  },
+  {
+   "type": "cta",
+   "part": 4,
+   "orbs": [
+    {
+     "kind": "venus",
+     "r": 36
+    },
+    {
+     "kind": "sun",
+     "r": 38,
+     "rings": false,
+     "dx": 130
+    }
+   ],
+   "label": "Practical remedy",
+   "labelsize": 27,
+   "title": "Practice the weak spot",
+   "titleclass": "h3",
+   "subtitle": "Name the skill it holds\nTen minutes a day, on purpose",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38
+  }
+ ]
+}

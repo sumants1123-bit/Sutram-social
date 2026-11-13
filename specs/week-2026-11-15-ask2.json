@@ -1,0 +1,286 @@
+{
+ "id": "week-2026-11-15-ask2",
+ "kicker": "Week ahead · 16 to 22 November",
+ "decor_theme": "solar",
+ "parts": [
+  "The move",
+  "The rule",
+  "Your Moon sign",
+  "The week"
+ ],
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "swipe": true,
+   "scene": {
+    "h": 180,
+    "w": 270,
+    "rooms": [
+     {
+      "sign": "Libra",
+      "orbs": [],
+      "names": "his weakest sign"
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 42,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "names": "from Monday"
+     }
+    ]
+   },
+   "label": "Week ahead · 16 to 22 Nov",
+   "labelsize": 27,
+   "title": "The king\ngets stronger",
+   "titleclass": "h1",
+   "subtitle": "The Sun moves into Scorpio on Monday",
+   "subsize": 46,
+   "contents": [
+    "The move",
+    "The rule",
+    "Your Moon sign",
+    "The week"
+   ],
+   "motion": {
+    "order": [
+     0,
+     1
+    ],
+    "from": {
+     "rooms": [
+      {
+       "sign": "Libra",
+       "orbs": [
+        {
+         "kind": "sun",
+         "r": 42,
+         "rings": false
+        }
+       ]
+      },
+      {
+       "sign": "Scorpio",
+       "orbs": []
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "text",
+   "part": 1,
+   "scene": {
+    "h": 180,
+    "w": 280,
+    "rooms": [
+     {
+      "sign": "Libra",
+      "orbs": [],
+      "names": "his weakest sign"
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 44,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "names": "Sun",
+      "note": "from Monday ▸"
+     }
+    ]
+   },
+   "label": "Part 1 · The move",
+   "labelsize": 27,
+   "title": "Out of the wrong room",
+   "titleclass": "h3",
+   "body": [
+    "*The king (Sun)* leaves Libra,\nthe sign where he is weakest",
+    "Monday 16 November, 9:13 AM",
+    "He stays in Scorpio until 15 December"
+   ],
+   "bodysize": 38,
+   "bodygap": 12,
+   "note": "Toronto time · Lahiri zodiac"
+  },
+  {
+   "type": "nsteps",
+   "part": 2,
+   "label": "Part 2 · The rule",
+   "labelsize": 27,
+   "title": "Count from your Moon",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "head": "Find your Moon sign",
+     "line": "The sign the Moon was in at your birth"
+    },
+    {
+     "head": "Count from it to Scorpio",
+     "line": "Virgo Moon: Virgo 1, Libra 2, Scorpio 3"
+    },
+    {
+     "head": "3rd, 6th, 10th or 11th?",
+     "line": "Those are the king's best spots"
+    }
+   ],
+   "headsize": 50,
+   "bodysize": 34,
+   "note": "Phaladeepika, chapter 26",
+   "closing": "Don't know your Moon sign?\nAsk at asksutram.com",
+   "closingsize": 44
+  },
+  {
+   "type": "rows",
+   "part": 3,
+   "label": "Part 3 · Your Moon sign",
+   "labelsize": 27,
+   "title": "Find your Moon sign",
+   "titleclass": "h3",
+   "lead": "The king in Scorpio · 16 Nov to 15 Dec",
+   "leadsize": 34,
+   "bodysize": 30,
+   "items": [
+    [
+     "Aries",
+     "8th · Quiet month; go slow"
+    ],
+    [
+     "Taurus",
+     "7th · Partner, clients; drop the ego"
+    ],
+    [
+     "Gemini",
+     "6th · Beat deadlines and rivals",
+     true
+    ],
+    [
+     "Cancer",
+     "5th · Kids, study, romance; less stress"
+    ],
+    [
+     "Leo",
+     "4th · Home and mother; rest more"
+    ],
+    [
+     "Virgo",
+     "3rd · Courage; make the pitch",
+     true
+    ]
+   ],
+   "note": "Amber: the king's best spots"
+  },
+  {
+   "type": "rows",
+   "part": 3,
+   "label": "Part 3 · Your Moon sign",
+   "labelsize": 27,
+   "title": "Find your Moon sign",
+   "titleclass": "h3",
+   "lead": "The king in Scorpio · 16 Nov to 15 Dec",
+   "leadsize": 34,
+   "bodysize": 30,
+   "items": [
+    [
+     "Libra",
+     "2nd · Money talks; watch your words"
+    ],
+    [
+     "Scorpio",
+     "1st · You in focus; don't overheat"
+    ],
+    [
+     "Sagittarius",
+     "12th · Spending, travel, sleep"
+    ],
+    [
+     "Capricorn",
+     "11th · Gains and good friends",
+     true
+    ],
+    [
+     "Aquarius",
+     "10th · Career push; the boss notices",
+     true
+    ],
+    [
+     "Pisces",
+     "9th · Father, teachers, long trips"
+    ]
+   ],
+   "note": "Amber: the king's best spots"
+  },
+  {
+   "type": "nsteps",
+   "part": 4,
+   "label": "Part 4 · The week",
+   "labelsize": 27,
+   "title": "Mark your calendar",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "n": "16",
+     "tag": "Monday · 9:13 AM",
+     "head": "The king walks into Scorpio",
+     "line": "Earlier, the soldier passes the teacher"
+    },
+    {
+     "n": "20",
+     "tag": "Friday afternoon",
+     "head": "The mother meets the auditor",
+     "line": "Moon with Saturn in Pisces: finish one chore"
+    },
+    {
+     "n": "22",
+     "tag": "Sunday",
+     "head": "The lover walks home",
+     "line": "Venus enters Libra, her own sign"
+    }
+   ],
+   "headsize": 50,
+   "bodysize": 34,
+   "note": "Toronto time"
+  },
+  {
+   "type": "quote",
+   "part": 4,
+   "label": "The Upanishads",
+   "labelsize": 26,
+   "quote": "When he shines,\neverything shines after him",
+   "source": "Katha Upanishad 2.2.15",
+   "body": [
+    "The line is about the Self,\nthe light behind every light",
+    "In your chart, the Sun shows where you shine"
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "cta",
+   "part": 5,
+   "orb": {
+    "kind": "sun",
+    "r": 70
+   },
+   "label": "Your turn",
+   "labelsize": 27,
+   "title": "Ask your chart",
+   "titleclass": "h2",
+   "subtitle": "What the Sun in Scorpio means for you",
+   "lines": [
+    "asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 40
+  }
+ ]
+}

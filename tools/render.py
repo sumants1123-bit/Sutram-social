@@ -567,6 +567,9 @@ def slide_html(sp, s=1.0):
     return ''.join(H)
 
 def _bead(x,y,kind,uidp):
+    """A background planet. Wrapped as a glint so it is hidden when it would sit on text (same check as the stars)."""
+    return f'<g class="gl" data-x="{x:.0f}" data-y="{y:.0f}">{_bead_raw(x,y,kind,uidp)}</g>'
+def _bead_raw(x,y,kind,uidp):
     """Small background planets: pearl moon, banded Jupiter, pale Venus, red Mars."""
     g=uid(uidp)
     if kind=='moon':

@@ -2,6 +2,7 @@
 """Print what a Buffer create_post / edit_post call needs for one post, pinned to a commit so nothing is cached.
     python3 tools/buffer_assets.py <post-id> <commit-sha> [--video] [--slides 1,3,4,5] [--notext]
 --video   slide 1 goes as posts/<id>/<id>-1.mp4 (the moving cover from tools/motion.py), the rest as images
+--videos 1,6  these slides go as their mp4 (made with tools/motion.py --slide N); Instagram carousels may mix videos and images
 --slides  only these slides (X takes up to 4)
 Alt text is the slide's own words, taken from the spec."""
 import json, os, sys, re
@@ -9,9 +10,14 @@ REPO=os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 def words(sp):
     out=[sp.get('label'),sp.get('title'),sp.get('subtitle'),sp.get('example'),sp.get('quote')]
     for sc in [sp.get('scene')]:
-        if sc: out.append('Rooms: '+', '.join(f"{r['sign']} ({' and '.join(o['kind'] for o in r.get('orbs',[])) or 'empty'})" for r in sc.get('across',[])+sc['rooms']))
-    out+= [x for x in (sp.get('body') or [])]
+        if sc: out.append('Rooms: '+', '.join(f"{r['sign']} ({r.get('names') or ' and '.join(o['kind'] for o in r.get('orbs',[])) or 'empty'})" for r in sc.get('across',[])+sc['rooms'] if not r.get('spacer')))
+    out+= [sp.get('lead')]+[x for x in (sp.get('body') or [])]
     t=sp['type']
+    if sp.get('contents'): out.append('Parts: '+', '.join(sp['contents']))
+    if sp.get('path'):
+        pl=sp['path'].get('labels',{}); out+=[f'{v[0]} {v[1]}' for v in pl.values() if v]
+    if t=='nsteps': out+=[' '.join(x for x in (st.get('tag'),st.get('head'),st.get('line')) if x) for st in sp['steps']]
+    if t=='narrow': out+=[f'{a}: {b}' for a,b in sp['items']]
     if t in ('rows','list','bodymap'): out+=[f'{it[0]}: {it[1]}' for it in sp['items']]
     if t=='stack': out+=[f'{a}: {b}' for a,b in sp['items']]
     if t=='cast': out+=[f"{it['head']} {it['line']}" for it in sp['items']]
@@ -23,14 +29,15 @@ def words(sp):
     s='. '.join(re.sub(r'\s+',' ',str(x).replace('*','')).strip().rstrip('.') for x in out if x)
     return re.sub(r'([?!])\. ',r'\1 ',s)
 def main():
-    a=sys.argv[1:]; pid,sha=a[0],a[1]; video='--video' in a; notext='--notext' in a
+    a=sys.argv[1:]; pid,sha=a[0],a[1]; video='--video' in a or '--videos' in a; notext='--notext' in a
+    vids=set(int(x) for x in a[a.index('--videos')+1].split(',')) if '--videos' in a else {1}
     spec=json.load(open(os.path.join(REPO,'specs',f'{pid}.json'))); n=len(spec['slides'])
     pick=[int(x) for x in a[a.index('--slides')+1].split(',')] if '--slides' in a else list(range(1,n+1))
     base=f'https://raw.githubusercontent.com/sumants1123-bit/Sutram-social/{sha}/posts/{pid}/{pid}-'
     assets=[]
     for i in pick:
-        if video and i==1 and os.path.exists(os.path.join(REPO,'posts',pid,f'{pid}-1.mp4')):
-            assets.append({"video":{"url":base+'1.mp4',"metadata":{"thumbnailOffset":0}}}); continue
+        if video and i in vids and os.path.exists(os.path.join(REPO,'posts',pid,f'{pid}-{i}.mp4')):
+            assets.append({"video":{"url":base+f'{i}.mp4',"metadata":{"thumbnailOffset":0}}}); continue
         alt=f'Slide {i} of {n}. '+words(spec['slides'][i-1])
         if len(alt)>300: alt=alt[:297].rsplit(' ',1)[0]+'…'
         assert os.path.exists(os.path.join(REPO,'posts',pid,f'{pid}-{i}.jpg'))
