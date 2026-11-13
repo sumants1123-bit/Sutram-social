@@ -351,18 +351,20 @@
    "note": "12 Nov: now 9 slides with a real case (Chandrayaan-3, 23 Aug 2023) on slides 7 and 8; assets at commit 6271ed0"
   },
   {
-   "id": "sutra-debilitated-ask",
+   "id": "sutra-debilitated-ask2",
    "when": "2026-11-14T10:00:00-05:00",
    "title": "Sutra: debilitated grahas, the wrong room",
    "via": "buffer-instagram",
-   "buffer_id": "6af14fd27522f65ac0bcb8ff"
+   "buffer_id": "6af14fd27522f65ac0bcb8ff",
+   "note": "13 Nov: rebuilt in the four-part format (3 parts), 9 slides, moving cover; assets at commit 9e27fed"
   },
   {
-   "id": "week-2026-11-15-ask",
+   "id": "week-2026-11-15-ask2",
    "when": "2026-11-15T18:30:00-05:00",
    "title": "Week ahead 16-22 Nov: the king gets stronger",
    "via": "buffer-instagram",
-   "buffer_id": "6af14fdd2f1ff83d451676bf"
+   "buffer_id": "6af14fdd2f1ff83d451676bf",
+   "note": "13 Nov: rebuilt in the four-part format, 8 slides, moving cover (the Sun walks from Libra into Scorpio); assets at commit 9e27fed"
   },
   {
    "id": "lesson12b-ask",
@@ -372,11 +374,12 @@
    "buffer_id": "6af3563aeca53e2861f604ce"
   },
   {
-   "id": "reading-2026-11-13-ask",
+   "id": "reading-2026-11-13-ask2",
    "when": "2026-11-13T18:30:00-05:00",
    "title": "Read the sky: this weekend with five Nadi rules (weekly capstone 1)",
    "via": "buffer-instagram",
-   "buffer_id": "6af357da94964d984f081b14"
+   "buffer_id": "6af357da94964d984f081b14",
+   "note": "13 Nov: rebuilt in the four-part format, 14 slides, moving cover; assets at commit 54c6e0f"
   }
  ],
  "retired": [
@@ -681,14 +684,16 @@
    {
     "id": "sutra-debilitated-x",
     "when": "2026-11-14T13:00:00-05:00",
-    "images": "sutra-debilitated-ask slides 1,3,4,5",
-    "buffer_id": "6af150197522f65ac0bccde0"
+    "images": "sutra-debilitated-ask2 slides 1,3,5,6",
+    "buffer_id": "6af150197522f65ac0bccde0",
+    "note": "13 Nov: text and 4 images replaced with the four-part version (commit 9e27fed)"
    },
    {
     "id": "week-2026-11-15-x",
     "when": "2026-11-15T20:00:00-05:00",
-    "images": "week-2026-11-15-ask slides 1,3,4,5",
-    "buffer_id": "6af15021cac9d7525f6b0dc1"
+    "images": "week-2026-11-15-ask2 slides 1,3,4,5",
+    "buffer_id": "6af15021cac9d7525f6b0dc1",
+    "note": "13 Nov: text and 4 images replaced with the four-part version (commit 9e27fed)"
    }
   ],
   "daily_time": "1 PM and 8 PM Toronto",
@@ -916,5 +921,30 @@
   "motion": "tools/motion.py: slide key motion.enter {'mercury':'ahead'} brings a new graha in from the right, for one walking backward out of the next sign",
   "doc": "claude/sky-that-day-series.md",
   "lessons_on_x": "When a lesson carries a real case, its X post carries the case paragraph and swaps two of its four images for the two case slides"
+ },
+ "rules_13nov": {
+  "said": "Sumant, Fri 13 Nov 1:52 PM, with six screenshots of Lesson 15: the posts are quite mediocre. Every post must be clear about what it is: a clear title on the first slide, a subtitle and swipe to read; then clear explanation in clearly different sections: where the concept is explained, where the current transit starts and how the rule is applied to it, how the real case was taken. 'Today, Toronto' did not say the slide was predicting the current sky through the rule. The rule 5 and rule 4 case was vague and incomplete. Do not hold back on credits or text; use any visual, diagram or animation that lands the concept. Edit the future posts and reschedule.",
+  "venus": "He read Venus as in Libra looking back to Virgo. Engine (Lahiri): turned backward 3 Oct at 14 Libra, backed into Virgo 5 Nov, forward 13 Nov about 7:30 PM at 28:37 Virgo, Libra again 22 Nov. Two Lahiri panchang sites agree on 5 and 22 Nov; Prokerala's tropical page shows Libra. Asked him where he sees Libra; if Ask Sutram shows Libra the engines disagree and that is fixed first.",
+  "format": [
+   "cover: series label, big title, a subtitle that says what the reader gets, 'contents' (3 or 4 part names), 'swipe': true; moving cover",
+   "spec 'parts' + 'part': n on every later slide (last slide n+1); first slide of a part labelled 'Part n · Name', the rest 'Name · what this slide is'",
+   "lesson: The rule / Today's sky / A real case / Your chart; 12 to 16 slides",
+   "reading and week ahead: The sky (or The move, The rule) / Rule by rule / The reading / Your chart",
+   "sutra: The idea / Today's sky / Your chart, then the sutra line and the remedy with the two links",
+   "rooms carry 'names' and 'note'; a graha walking backward gets 'reach'; a turn or a sign-edge crossing gets a to-scale 'path' slide, and it can move (motion.py --slide N)",
+   "times rounded ('about 7:30 tonight'); Rahu/Ketu crossings given as the day; a graha within 1.5 degrees of a sign edge shows both sides or is left out",
+   "captions in the same parts with 'PART 1 · THE RULE' headers; X uses the same text without hashtags and four slides",
+   "no slide below 0.88 shrink; step lines under about 40 characters; lines broken by hand",
+   "public grading stays off: 'write down what you expect, check it on <day>' is the reader's own note"
+  ],
+  "models": {
+   "lesson": "specs/lesson15-ask3.json (the example shown to Sumant; not posted)",
+   "reading": "specs/reading-2026-11-13-ask2.json",
+   "sutra": "specs/sutra-debilitated-ask2.json",
+   "week": "specs/week-2026-11-15-ask2.json"
+  },
+  "tools": "render.py: tabs, names/note/reach/caption/conn/connx/reachpad on scenes, path diagram, nsteps, narrow, contents, lead, swipe; background planets hide when they sit on text. motion.py: reach arc draws, path walk, swipe arrow. preview.py: swipe preview page for a private Artifact. buffer_assets.py: --videos 1,6",
+  "example": "Lesson 15 remade, private Artifact https://claude.ai/artifact/6VzbM1ZqweAJJ972qZM8qv; published posts cannot have slides swapped, so the old Lesson 15 stays unless he deletes it and asks for the new one",
+  "done_13nov": "tonight's reading, Saturday's Sutra and Sunday's Week ahead rebuilt and swapped in Buffer on Instagram; Saturday's and Sunday's X posts swapped too; the Sunday batch task carries the format"
  }
 }
