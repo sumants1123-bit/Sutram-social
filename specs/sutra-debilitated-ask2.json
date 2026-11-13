@@ -40,7 +40,7 @@
     ]
    },
    "label": "Sutra · the weakest sign",
-   "labelsize": 27,
+   "labelsize": 30,
    "title": "The wrong room",
    "titleclass": "h1",
    "subtitle": "What a graha does\nin its weakest sign",
@@ -86,7 +86,7 @@
     ]
    },
    "label": "Part 1 · The idea",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Neecha means low",
    "titleclass": "h3",
    "body": [
@@ -101,7 +101,7 @@
    "type": "rows",
    "part": 1,
    "label": "The idea · the list",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Who is weak where",
    "titleclass": "h3",
    "roworbs": [
@@ -172,17 +172,16 @@
    "type": "text",
    "part": 1,
    "label": "The idea · the way out",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "The fall can be cancelled",
    "titleclass": "h3",
    "body": [
-    "Jyotish calls it *neecha bhanga*",
-    "One rule: the owner of that sign sits\nin the *1st, 4th, 7th or 10th house*\nfrom your rising sign or your Moon"
+    "If the sign's owner sits in the\n*1st, 4th, 7th or 10th house*,\nthe fall is cancelled (neecha bhanga)"
    ],
-   "bodysize": 40,
+   "bodysize": 42,
    "bodygap": 14,
-   "closing": "Then the weak spot becomes a hard-won skill\nThe shy kid who becomes the speaker",
-   "closingsize": 44,
+   "closing": "The shy kid who becomes the speaker",
+   "closingsize": 46,
    "note": "Phaladeepika 7.26"
   },
   {
@@ -220,7 +219,7 @@
     ]
    },
    "label": "Part 2 · Today's sky",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Two in the wrong room",
    "titleclass": "h3",
    "body": [
@@ -234,37 +233,35 @@
   {
    "type": "nsteps",
    "part": 2,
-   "label": "Today's sky · the reading",
-   "labelsize": 27,
+   "label": "Today's sky · reading",
+   "labelsize": 33,
    "title": "What the rule says now",
    "titleclass": "h3",
    "steps": [
     {
      "tag": "The lover in Virgo",
-     "head": "Pleasure is harder to enjoy",
-     "line": "Go easy on spending and on criticism"
+     "head": "Go easy on spending"
     },
     {
      "tag": "The king in Libra",
-     "head": "Pride bruises easily",
-     "line": "Go easy on ego fights · share the credit"
+     "head": "Share the credit"
     },
     {
      "tag": "Monday morning",
-     "head": "The king walks out",
-     "line": "He enters Scorpio and gets stronger"
+     "head": "The king walks out"
     }
    ],
-   "headsize": 50,
+   "headsize": 60,
    "bodysize": 34,
    "closing": "Easy on pride and on spending",
-   "closingsize": 52
+   "closingsize": 52,
+   "stepsmt": 36
   },
   {
    "type": "nsteps",
    "part": 3,
    "label": "Part 3 · Your chart",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Find your wrong room",
    "titleclass": "h3",
    "steps": [
@@ -273,12 +270,12 @@
      "line": "Your king (Sun) is in his weakest sign"
     },
     {
-     "head": "For the other six, open your chart",
-     "line": "Look for a graha in its sign from slide 3"
+     "head": "Others: check slide 3",
+     "line": "Any graha in its weakest sign?"
     },
     {
      "head": "Then check the way out",
-     "line": "Sign owner in the 1st, 4th, 7th or 10th?"
+     "line": "Slide 4"
     }
    ],
    "headsize": 48,
@@ -288,7 +285,7 @@
    "type": "quote",
    "part": 3,
    "label": "Sutra",
-   "labelsize": 28,
+   "labelsize": 33,
    "quote": "A skill learned\nthe long way\nis still a skill",
    "source": "Sutram",
    "quotesize": 80
@@ -309,7 +306,7 @@
     }
    ],
    "label": "Practical remedy",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Practice the weak spot",
    "titleclass": "h3",
    "subtitle": "Name the skill it holds\nTen minutes a day, on purpose",

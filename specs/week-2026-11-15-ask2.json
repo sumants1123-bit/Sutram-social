@@ -37,7 +37,7 @@
     ]
    },
    "label": "Week ahead · 16 to 22 Nov",
-   "labelsize": 27,
+   "labelsize": 30,
    "title": "The king\ngets stronger",
    "titleclass": "h1",
    "subtitle": "The Sun moves into Scorpio on Monday",
@@ -101,29 +101,29 @@
     ]
    },
    "label": "Part 1 · The move",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Out of the wrong room",
    "titleclass": "h3",
    "body": [
-    "*The king (Sun)* leaves Libra,\nthe sign where he is weakest",
-    "Monday 16 November, 9:13 AM",
-    "He stays in Scorpio until 15 December"
+    "*The king (Sun)* leaves Libra,\nhis weakest sign",
+    "Monday 16 November, 9:13 AM"
    ],
    "bodysize": 38,
    "bodygap": 12,
-   "note": "Toronto time · Lahiri zodiac"
+   "note": "Toronto time · Lahiri zodiac",
+   "closing": "In Scorpio until 15 December",
+   "closingsize": 46
   },
   {
    "type": "nsteps",
    "part": 2,
    "label": "Part 2 · The rule",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Count from your Moon",
    "titleclass": "h3",
    "steps": [
     {
-     "head": "Find your Moon sign",
-     "line": "The sign the Moon was in at your birth"
+     "head": "Find your Moon sign"
     },
     {
      "head": "Count from it to Scorpio",
@@ -131,20 +131,20 @@
     },
     {
      "head": "3rd, 6th, 10th or 11th?",
-     "line": "Those are the king's best spots"
+     "line": "The king's best spots"
     }
    ],
    "headsize": 50,
    "bodysize": 34,
    "note": "Phaladeepika, chapter 26",
-   "closing": "Don't know your Moon sign?\nAsk at asksutram.com",
-   "closingsize": 44
+   "closing": "No Moon sign? Ask at asksutram.com",
+   "closingsize": 42
   },
   {
    "type": "rows",
    "part": 3,
    "label": "Part 3 · Your Moon sign",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Find your Moon sign",
    "titleclass": "h3",
    "lead": "The king in Scorpio · 16 Nov to 15 Dec",
@@ -184,7 +184,7 @@
    "type": "rows",
    "part": 3,
    "label": "Part 3 · Your Moon sign",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Find your Moon sign",
    "titleclass": "h3",
    "lead": "The king in Scorpio · 16 Nov to 15 Dec",
@@ -224,27 +224,25 @@
    "type": "nsteps",
    "part": 4,
    "label": "Part 4 · The week",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Mark your calendar",
    "titleclass": "h3",
    "steps": [
     {
      "n": "16",
      "tag": "Monday · 9:13 AM",
-     "head": "The king walks into Scorpio",
-     "line": "Earlier, the soldier passes the teacher"
+     "head": "The king walks into Scorpio"
     },
     {
      "n": "20",
      "tag": "Friday afternoon",
      "head": "The mother meets the auditor",
-     "line": "Moon with Saturn in Pisces: finish one chore"
+     "line": "Finish one chore"
     },
     {
      "n": "22",
      "tag": "Sunday",
-     "head": "The lover walks home",
-     "line": "Venus enters Libra, her own sign"
+     "head": "The lover walks home to Libra"
     }
    ],
    "headsize": 50,
@@ -255,11 +253,10 @@
    "type": "quote",
    "part": 4,
    "label": "The Upanishads",
-   "labelsize": 26,
+   "labelsize": 33,
    "quote": "When he shines,\neverything shines after him",
    "source": "Katha Upanishad 2.2.15",
    "body": [
-    "The line is about the Self,\nthe light behind every light",
     "In your chart, the Sun shows where you shine"
    ],
    "bodysize": 36
@@ -272,7 +269,7 @@
     "r": 70
    },
    "label": "Your turn",
-   "labelsize": 27,
+   "labelsize": 33,
    "title": "Ask your chart",
    "titleclass": "h2",
    "subtitle": "What the Sun in Scorpio means for you",
