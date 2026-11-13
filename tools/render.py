@@ -15,6 +15,8 @@ FONTS=''.join(f'<link rel="stylesheet" href="{NM}{f}">' for f in [
  'cormorant-garamond/500.css','cormorant-garamond/600.css','cormorant-garamond/500-italic.css',
  'eb-garamond/400.css','eb-garamond/500.css','eb-garamond/400-italic.css'])
 CREAM='#F2E6CC'; AMBER='#E09460'; GOLD='#D9A57A'; BG='#0B0806'
+# one colour per part (13 Nov): amber, powder blue, sage, lavender. Used on the tabs, the section label and step numbers
+PART_COLORS=['#E09460','#8FB8D8','#A9C79B','#C6A9DB']
 
 TXT=1.4   # v5 (2 Nov): Sumant, again: text too small. Body and labels about 22% larger; never smaller than this
 
@@ -68,9 +70,11 @@ radial-gradient(125% 95% at 50% 38%,#17110C 0%,#0B0806 55%,#050403 100%);}}
 .tab b{{display:flex;align-items:center;justify-content:center;width:29px;height:29px;border-radius:50%;border:1.2px solid rgba(217,165,122,.5);font:600 20px/1 'Cormorant Garamond';letter-spacing:0;color:rgba(242,230,204,.7)}}
 .tab.done{{color:rgba(242,230,204,.70);border-color:rgba(217,165,122,.46)}}
 .tab.done b{{background:rgba(217,165,122,.22)}}
-.tab.on{{background:{AMBER};border-color:{AMBER};color:#1B0F07;font-weight:600;box-shadow:0 0 34px rgba(224,148,96,.35)}}
+.tab.on{{background:var(--pc,{AMBER});border-color:var(--pc,{AMBER});color:#1B0F07;font-weight:600;box-shadow:0 0 34px color-mix(in srgb,var(--pc,{AMBER}) 38%,transparent)}}
 .tab.on b{{border-color:#1B0F07;color:#1B0F07}}
 .slide.tabbed .body{{top:210px}}
+.slide.tabbed .lab,.slide.tabbed .nstep .tg{{color:var(--pc,{GOLD})}}
+.slide.tabbed .nstep>b{{border-color:var(--pc,{AMBER});color:var(--pc,{AMBER})}}
 .who{{font:italic 500 {f(33)}/1.1 'Cormorant Garamond';color:rgba(242,230,204,.9);margin-top:{f(8)};white-space:nowrap}}
 .rnote{{font:italic 500 {f(31)}/1.1 'Cormorant Garamond';color:{AMBER};margin-top:{f(5)};white-space:nowrap}}
 .reach{{position:absolute;left:0;pointer-events:none;overflow:visible}}
@@ -445,6 +449,44 @@ def path_html(pt, s=1.0):
     return (f'<div class="pathd" style="position:relative;width:{Wd}px;height:{Ht}px;zoom:{s:.3f};margin:{pt.get("mt",6)}px auto {pt.get("mb",0)}px;text-align:left">'
             f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}</svg>{ob}</div>')
 
+def timeline_html(tl, s=1.0):
+    """Who walks backward, and when: one bar per graha on a calendar drawn to scale, with a line for today (v8, 13 Nov).
+    tl: from, to (ISO dates set the calendar); today [ISO date, label]; rows [{kind, who, name, from, to, dates}].
+    The part of a bar after today is lighter (still to come); a cream dot marks where a graha turns forward."""
+    import datetime as _dt
+    D=lambda d: _dt.date.fromisoformat(d)
+    rows=tl['rows']; n_=len(rows); Wd=912; gut=tl.get('gutter',338); x0=gut; x1=Wd-22
+    a=D(tl['from']); b=D(tl['to']); k=(x1-x0)/(b-a).days; X=lambda d: x0+(D(d)-a).days*k
+    RH=tl.get('rowh',140); top=96; yb_=top+RH*n_; Ht=yb_+70
+    fam="font-family='EB Garamond'"; o=[]; H=[]
+    o.append(f"<line x1='{x0}' y1='{yb_+4}' x2='{x1}' y2='{yb_+4}' stroke='{GOLD}' stroke-opacity='.55' stroke-width='1.4'/>")
+    d=_dt.date(a.year,a.month,1)
+    while d<=b:
+        nd=(d.replace(day=28)+_dt.timedelta(days=4)).replace(day=1)
+        xs=max(x0,x0+(d-a).days*k); xe=min(x1,x0+(nd-a).days*k)
+        if d>=a: o.append(f"<line x1='{xs:.1f}' y1='{top-18}' x2='{xs:.1f}' y2='{yb_+14}' stroke='{GOLD}' stroke-opacity='.16' stroke-width='1.2'/>")
+        if xe-xs>62: o.append(f"<text x='{(xs+xe)/2:.1f}' y='{yb_+50}' text-anchor='middle' {fam} font-weight='500' font-size='30' letter-spacing='3' fill='{CREAM}' fill-opacity='.72'>{d.strftime('%b').upper()}</text>")
+        d=nd
+    for i in range(1,n_): o.append(f"<line x1='0' y1='{top+i*RH}' x2='{Wd}' y2='{top+i*RH}' stroke='{GOLD}' stroke-opacity='.14' stroke-width='1'/>")
+    td,tlab=tl['today']; xt=X(td)
+    o.append(f"<line x1='{xt:.1f}' y1='{top-26}' x2='{xt:.1f}' y2='{yb_+14}' stroke='{CREAM}' stroke-opacity='.85' stroke-width='2' stroke-dasharray='6 7'/>")
+    o.append(f"<text class='tlt' x='{xt:.1f}' y='{top-40}' text-anchor='middle' font-family='Cormorant Garamond' font-weight='600' font-size='40' fill='{CREAM}'>{esc(tlab)}</text>")
+    for i,r in enumerate(rows):
+        y=top+i*RH+RH*.38; xa=X(r['from']); xb=X(r['to']); xn=min(xb,xt)
+        o.append(f"<rect class='tbar' x='{xa:.1f}' y='{y-10:.1f}' width='{max(0,xn-xa):.1f}' height='20' rx='10' fill='{AMBER}'/>")
+        if xb>xt: o.append(f"<rect x='{xt:.1f}' y='{y-10:.1f}' width='{xb-xt:.1f}' height='20' rx='10' fill='{AMBER}' fill-opacity='.38'/><rect x='{xt:.1f}' y='{y-10:.1f}' width='{min(10,xb-xt):.1f}' height='20' fill='{AMBER}'/>")
+        o.append(f"<circle cx='{xa:.1f}' cy='{y:.1f}' r='7' fill='{AMBER}'/><circle cx='{xb:.1f}' cy='{y:.1f}' r='8.5' fill='{CREAM}'/>")
+        txt=r.get('dates',''); w=len(txt)*15.2
+        # the dates sit under the bar and never cross today's line: a bar that ends by today has them end just before it
+        if xb<=xt+1: o.append(f"<text x='{xt-14:.1f}' y='{y+56:.1f}' text-anchor='end' {fam} font-size='34' fill='{CREAM}' fill-opacity='.88'>{esc(txt)}</text>")
+        elif xa+w<=Wd: o.append(f"<text x='{xa:.1f}' y='{y+56:.1f}' text-anchor='start' {fam} font-size='34' fill='{CREAM}' fill-opacity='.88'>{esc(txt)}</text>")
+        else: o.append(f"<text x='{xb:.1f}' y='{y+56:.1f}' text-anchor='end' {fam} font-size='34' fill='{CREAM}' fill-opacity='.88'>{esc(txt)}</text>")
+        o.append(f"<text x='86' y='{y-2:.1f}' text-anchor='start' font-family='Cormorant Garamond' font-weight='500' font-size='45' fill='{CREAM}'>{esc(r['who'])}</text>")
+        o.append(f"<text x='86' y='{y+34:.1f}' text-anchor='start' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='33' fill='{GOLD}'>{esc(r['name'])}</text>")
+        H.append(f'<div style="position:absolute;left:36px;top:{y:.1f}px;transform:translate(-50%,-50%)">{orb({"kind":r["kind"],"r":r.get("r",28)})}</div>')
+    return (f'<div class="tline" style="position:relative;width:{Wd}px;height:{Ht}px;zoom:{s:.3f};margin:{tl.get("mt",14)}px auto {tl.get("mb",6)}px;text-align:left">'
+            f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}</svg>{"".join(H)}</div>')
+
 def slide_html(sp, s=1.0):
     F=lambda px: f'{px*s:.1f}px'
     T=lambda px: F(px*TXT)
@@ -471,8 +513,9 @@ def slide_html(sp, s=1.0):
         if sp.get('subtitle'): H.append(f'<div class="ti sub" style="margin-top:22px;{"font-size:"+F(sp["subsize"])+";" if sp.get("subsize") else ""}">{rich(sp["subtitle"]).replace(chr(60)+"span class="+chr(34)+"ti"+chr(34)+">",chr(60)+"span style="+chr(34)+"color:"+CREAM+chr(34)+">")}</div>')
     if sp.get('lead'): H.append(f'<div class="p" style="margin-top:{F(20)};font-size:{T(sp.get("leadsize",36))};line-height:1.3">{rich(sp["lead"])}</div>')
     if sp.get('contents'):
-        H.append('<div class="contents">'+''.join(f'<div><b>{k+1}</b>{esc(c)}</div>' for k,c in enumerate(sp['contents']))+'</div>')
+        H.append('<div class="contents">'+''.join(f'<div><b style="border-color:{PART_COLORS[k%len(PART_COLORS)]};color:{PART_COLORS[k%len(PART_COLORS)]}">{k+1}</b>{esc(c)}</div>' for k,c in enumerate(sp['contents']))+'</div>')
     if sp.get('path') and sp.get('pathpos')=='mid': H.append(path_html(sp['path'],s))
+    if sp.get('timeline'): H.append(timeline_html(sp['timeline'],s))
     if t=='nsteps':
         # numbered steps, left aligned: a small tag line, a head and a line under it; "n" overrides the number (e.g. the rule's own number)
         H.append(f'<div style="width:100%;margin-top:{F(sp.get("stepsmt",22))}">'+''.join(
@@ -774,10 +817,11 @@ def frame(i=None,n=None):
 SWIPE=f'<div class="swipe"><span>Swipe to read</span><svg width="78" height="30" viewBox="0 0 78 30"><path d="M2,15 H72 M58,4 L73,15 L58,26" fill="none" stroke="{AMBER}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
 def tabs_html(parts, cur):
     if not parts: return ''
-    return '<div class="tabs">'+''.join(f'<span class="tab{" on" if k+1==cur else (" done" if (cur and k+1<cur) else "")}"><b>{k+1}</b>{esc(p_)}</span>' for k,p_ in enumerate(parts))+'</div>'
+    pc=lambda k: PART_COLORS[k%len(PART_COLORS)]
+    return '<div class="tabs">'+''.join(f'<span class="tab{" on" if k+1==cur else (" done" if (cur and k+1<cur) else "")}"><b style="{"" if k+1==cur else "border-color:"+pc(k)+";color:"+pc(k)}">{k+1}</b>{esc(p_)}</span>' for k,p_ in enumerate(parts))+'</div>'
 def page(inner,kicker,s,starfield=None,url=FOOT_URL,dec='',i=None,n=None,parts=None,part=None,swipe=False):
     tb=tabs_html(parts,part) if (parts and part is not None) else ''
-    return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide{" tabbed" if tb else ""}">{dec}{starfield or ''}{GRAIN}{frame() if swipe else frame(i,n)}<div class="kick"><i></i><span>{esc(kicker)}</span><i class="r"></i></div>{tb}<div class="body">{inner}</div>{SWIPE if swipe else ''}<div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
+    return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide{" tabbed" if tb else ""}" style="{"--pc:"+PART_COLORS[(part-1)%len(PART_COLORS)] if (tb and part and parts and part<=len(parts)) else ""}">{dec}{starfield or ''}{GRAIN}{frame() if swipe else frame(i,n)}<div class="kick"><i></i><span>{esc(kicker)}</span><i class="r"></i></div>{tb}<div class="body">{inner}</div>{SWIPE if swipe else ''}<div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
 
 HIDE_GLINTS="""()=>{const R=[];const add=(r,p)=>{if(r.width>0&&r.height>0)R.push([r.left-p,r.top-p,r.right+p,r.bottom+p])};
 const w=document.createTreeWalker(document.querySelector('.slide'),NodeFilter.SHOW_TEXT);let n;const rg=document.createRange();

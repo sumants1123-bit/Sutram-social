@@ -1,0 +1,458 @@
+{
+ "id": "lesson15-ask4",
+ "kicker": "Daily lesson · 15",
+ "decor_theme": "thread",
+ "parts": [
+  "The rule",
+  "Today's sky",
+  "Your chart"
+ ],
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "swipe": true,
+   "scene": {
+    "w": 270,
+    "h": 188,
+    "reach": [
+     [
+      1,
+      0,
+      "also works from here"
+     ]
+    ],
+    "rooms": [
+     {
+      "sign": "Behind",
+      "orbs": []
+     },
+     {
+      "sign": "Its sign",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 38
+       }
+      ],
+      "state": "focus",
+      "note": "◂ walking backward"
+     }
+    ]
+   },
+   "label": "Nadi · Rule 5",
+   "labelsize": 33,
+   "title": "Looking back",
+   "titleclass": "h1",
+   "subtitle": "How to read a graha\nthat walks backward",
+   "subsize": 58,
+   "contents": [
+    "The rule",
+    "Today's sky",
+    "Your chart"
+   ],
+   "motion": {
+    "order": [
+     1,
+     0
+    ],
+    "from": {
+     "rooms": [
+      {
+       "sign": "Behind",
+       "orbs": []
+      },
+      {
+       "sign": "Its sign",
+       "orbs": []
+      }
+     ]
+    },
+    "enter": {
+     "venus": "ahead"
+    }
+   }
+  },
+  {
+   "type": "text",
+   "part": 1,
+   "scene": {
+    "w": 262,
+    "h": 176,
+    "reach": [
+     [
+      1,
+      0,
+      "also works from here"
+     ]
+    ],
+    "caption": "The signs run left to right ▸",
+    "rooms": [
+     {
+      "sign": "Behind",
+      "orbs": []
+     },
+     {
+      "sign": "Its sign",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 36
+       }
+      ],
+      "state": "focus",
+      "note": "◂ walking backward"
+     },
+     {
+      "sign": "Ahead",
+      "orbs": []
+     }
+    ]
+   },
+   "label": "Part 1 · The rule",
+   "labelsize": 33,
+   "title": "Two signs at once",
+   "titleclass": "h2",
+   "body": [
+    "A graha walking backward (retrograde)\nalso works from *the sign behind it*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Like someone turning back\nto finish old business",
+   "closingsize": 50
+  },
+  {
+   "type": "nsteps",
+   "part": 1,
+   "label": "How to read it",
+   "labelsize": 33,
+   "title": "Ask three questions",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "head": "Who is walking backward?"
+    },
+    {
+     "head": "Which sign is behind it?"
+    },
+    {
+     "head": "Who lives in that sign?"
+    }
+   ],
+   "headsize": 64,
+   "stepsmt": 40
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "label": "Part 2 · Step 1",
+   "labelsize": 33,
+   "title": "Who walks backward now?",
+   "titleclass": "h3",
+   "timeline": {
+    "from": "2026-07-20",
+    "to": "2026-12-16",
+    "today": [
+     "2026-11-13",
+     "Today · 13 Nov"
+    ],
+    "rows": [
+     {
+      "kind": "saturn",
+      "who": "The auditor",
+      "name": "Saturn",
+      "from": "2026-07-26",
+      "to": "2026-12-10",
+      "dates": "26 Jul to 10 Dec"
+     },
+     {
+      "kind": "venus",
+      "who": "The lover",
+      "name": "Venus",
+      "from": "2026-10-03",
+      "to": "2026-11-13",
+      "dates": "3 Oct to tonight"
+     },
+     {
+      "kind": "mercury",
+      "who": "The messenger",
+      "name": "Mercury",
+      "from": "2026-10-24",
+      "to": "2026-11-13",
+      "dates": "24 Oct to this morning"
+     }
+    ]
+   },
+   "closing": "Two turn forward today",
+   "closingsize": 54,
+   "note": "Toronto time · Lahiri zodiac"
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "label": "Step 1 · Her walk",
+   "labelsize": 33,
+   "title": "Follow the lover (Venus)",
+   "titleclass": "h3",
+   "pathpos": "mid",
+   "path": {
+    "left": {
+     "sign": "Virgo",
+     "from": 19
+    },
+    "right": {
+     "sign": "Libra",
+     "to": 17
+    },
+    "kind": "venus",
+    "r": 32,
+    "start": [
+     "Libra",
+     14.25
+    ],
+    "turn": [
+     "Virgo",
+     28.62
+    ],
+    "labels": {
+     "start": [
+      "3 Oct",
+      "turns backward"
+     ],
+     "cross_back": [
+      "5 Nov",
+      "backs into Virgo"
+     ],
+     "turn": [
+      "13 Nov",
+      "turns forward"
+     ],
+     "cross_fwd": [
+      "22 Nov",
+      "home in Libra"
+     ]
+    },
+    "behind": "Leo, the sign behind Virgo",
+    "mt": 26
+   },
+   "body": [
+    "She backs only *1°23′ into Virgo*, then turns"
+   ],
+   "bodysize": 40,
+   "bodygap": 4
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "scene": {
+    "w": 286,
+    "h": 184,
+    "reach": [
+     [
+      1,
+      0,
+      "also works from here"
+     ]
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 24
+       },
+       {
+        "kind": "ketu",
+        "r": 27,
+        "dx": 58
+       },
+       {
+        "kind": "jupiter",
+        "r": 33,
+        "dx": 66
+       }
+      ],
+      "names": "Mars · Ketu · Jupiter"
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 36
+       }
+      ],
+      "state": "focus",
+      "names": "Venus",
+      "note": "◂ walking backward"
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "mercury",
+        "r": 22
+       },
+       {
+        "kind": "sun",
+        "r": 27,
+        "rings": false,
+        "dx": 104
+       }
+      ],
+      "names": "Mercury · Sun"
+     }
+    ]
+   },
+   "label": "Steps 2 and 3",
+   "labelsize": 33,
+   "title": "The sign behind her",
+   "titleclass": "h3",
+   "body": [
+    "3 Oct to 5 Nov · in Libra, *looking back to Virgo*",
+    "5 Nov to tonight · in Virgo, *looking back to Leo*"
+   ],
+   "bodysize": 38,
+   "bodygap": 16,
+   "closing": "In Leo live the teacher, the monk\nand the soldier",
+   "closingsize": 44
+  },
+  {
+   "type": "nsteps",
+   "part": 2,
+   "label": "The reading",
+   "labelsize": 33,
+   "title": "Rule 5 reads this week",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "tag": "Since 3 October",
+     "head": "Old loves and old deals came back",
+     "line": "The ex who texted · the refund you chased"
+    },
+    {
+     "tag": "This week, from Leo",
+     "head": "They came back as a lesson"
+    },
+    {
+     "tag": "From tonight",
+     "head": "She walks forward again",
+     "line": "Home in Libra on 22 November"
+    }
+   ],
+   "headsize": 54,
+   "bodysize": 34,
+   "stepsmt": 26,
+   "closing": "Write it down · check it on 22 Nov",
+   "closingsize": 44
+  },
+  {
+   "type": "rows",
+   "part": 3,
+   "label": "Part 3 · Your chart",
+   "labelsize": 33,
+   "title": "Find your rising sign",
+   "titleclass": "h3",
+   "lead": "The two rooms the auditor (Saturn)\nworks from until 10 December",
+   "leadsize": 34,
+   "items": [
+    [
+     "Aries",
+     "12th rest · 11th gains"
+    ],
+    [
+     "Taurus",
+     "11th gains · 10th career"
+    ],
+    [
+     "Gemini",
+     "10th career · 9th luck"
+    ],
+    [
+     "Cancer",
+     "9th luck · 8th change"
+    ],
+    [
+     "Leo",
+     "8th change · 7th partners"
+    ],
+    [
+     "Virgo",
+     "7th partners · 6th daily work"
+    ]
+   ],
+   "namesize": 54,
+   "bodysize": 34
+  },
+  {
+   "type": "rows",
+   "part": 3,
+   "label": "Your chart",
+   "labelsize": 33,
+   "title": "Find your rising sign",
+   "titleclass": "h3",
+   "items": [
+    [
+     "Libra",
+     "6th daily work · 5th creation"
+    ],
+    [
+     "Scorpio",
+     "5th creation · 4th home"
+    ],
+    [
+     "Sagittarius",
+     "4th home · 3rd effort"
+    ],
+    [
+     "Capricorn",
+     "3rd effort · 2nd money"
+    ],
+    [
+     "Aquarius",
+     "2nd money · 1st you"
+    ],
+    [
+     "Pisces",
+     "1st you · 12th rest"
+    ]
+   ],
+   "namesize": 54,
+   "bodysize": 34,
+   "note": "No rising sign? Use your Moon sign",
+   "closing": "Old duties in these rooms get a second look",
+   "closingsize": 46
+  },
+  {
+   "type": "cta",
+   "part": 4,
+   "orbs": [
+    {
+     "kind": "mercury",
+     "r": 28
+    },
+    {
+     "kind": "venus",
+     "r": 36,
+     "dx": 130
+    },
+    {
+     "kind": "saturn",
+     "r": 30,
+     "dx": 140
+    }
+   ],
+   "label": "Rule 5 in one line",
+   "labelsize": 33,
+   "title": "Walking backward\nmeans two signs at once",
+   "titleclass": "h3",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Monday · Rule 6, family"
+  }
+ ]
+}
