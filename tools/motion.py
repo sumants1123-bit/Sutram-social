@@ -51,7 +51,7 @@ const orbs=[...document.querySelectorAll('.body svg.orbsvg')].map((sv,k)=>{
   return o});
 // rooms of the first scene that sits directly in the body
 const scene=document.querySelector('.body > .scene'); let main=[],across=[];
-if(scene){const rows=[...scene.querySelectorAll(':scope > .rooms')]; main=[...rows[rows.length-1].children]; across=rows.length>1?[...rows[0].children]:[];
+if(scene){const rows=[...scene.querySelectorAll(':scope > .rooms')], rm=e=>[...e.children].filter(c=>c.classList.contains('room')); main=rm(rows[rows.length-1]); across=rows.length>1?rm(rows[0]):[];
   [...main,...across].forEach(r=>{const a=r.querySelector('.arch'); a.insertAdjacentHTML('afterbegin','<div class="lite"></div>'); r.__lite=a.firstChild; r.__arch=a;
     r.__o=parseFloat(getComputedStyle(r).opacity)||1; r.__tag=r.querySelector('.tag'); r.__ow=a.querySelector(':scope > div[style*="scale"]');
     r.__s0=r.__ow?parseFloat((r.__ow.style.transform.match(/scale\(([\d.]+)\)/)||[0,1])[1]):1; r.__focus=r.classList.contains('focus'); r.__flip=across.includes(r)})}
@@ -80,6 +80,14 @@ const fsvg=document.querySelector('svg.frame'); const bglow=fsvg&&fsvg.querySele
 const beads=fsvg?[...fsvg.querySelectorAll('.bd-next')].map(b=>{const r=b.cloneNode(); r.setAttribute('class','bd-rip'); r.setAttribute('fill','#E09460'); r.setAttribute('stroke','none'); r.setAttribute('opacity','0'); b.after(r); return r}):[];
 const seqs=[...document.querySelectorAll('.body .seq')]; seqs.forEach(g=>g.__o=+g.firstChild.getAttribute('opacity'));
 const pulses=[...document.querySelectorAll('.body .pulse')];
+const arcs=[...document.querySelectorAll('.body svg.reach')].map(sv=>({a:[...sv.querySelectorAll('.rarc')],h:[...sv.querySelectorAll('.rhead')],l:[...sv.querySelectorAll('.rlab')]}));
+const swp=document.querySelector('.swipe svg');
+// a path slide: the graha walks its road, the stops light as it passes
+const pd=document.querySelector('.body .pathd'); let P=null;
+if(pd){const o=pd.querySelector('.porb'), d=o.dataset, n=k=>+d[k]; P={o,x0:n('x0'),xt:n('xt'),xd:n('xd'),yu:n('yu'),ym:n('ym'),yl:n('yl'),r:n('r'),back:pd.querySelector('.pback'),fwd:pd.querySelector('.pfwd'),lab:k=>pd.querySelector('.plab.'+k)};
+  P.at=(u)=>{ // u 0..1 back leg (start -> turn), 1..2 forward leg (turn -> a little past the door)
+    const {x0,xt,xd,yu,ym,yl,r}=P; if(u<=1){const s1=(x0-xt-r), s2=Math.PI*r/2, s=u*(s1+s2); if(s<=s1)return [x0-s,yu]; const a=(s-s1)/r; return [xt+r-r*Math.sin(a), yu+r-r*Math.cos(a)]}
+    const v=u-1, e=xd+70, s2=Math.PI*r/2, s1=(e-xt-r), s=v*(s1+s2); if(s<=s2){const a=s/r; return [xt+r-r*Math.cos(a), ym+r*Math.sin(a)]} return [xt+r+(s-s2),yl]}}
 window.__frame=(a)=>{const tt=a.tt, t=tt*T;
   if(a.dec){const d=document.querySelector('svg.decor'); if(d){d.outerHTML=a.dec; const gl=document.querySelectorAll('svg.decor .gl'); (window.__hid||[]).forEach(k=>{if(gl[k])gl[k].style.display='none'})}}
   if(a.sf){const d=document.querySelector('svg.sf'); if(d)d.outerHTML=a.sf}
@@ -103,7 +111,19 @@ window.__frame=(a)=>{const tt=a.tt, t=tt*T;
   beads.forEach((b,k)=>{const a0=6.2+k*.09, e=bump(t,a0,a0+.7,.2,.4); b.setAttribute('opacity',e.toFixed(3)); b.setAttribute('r',(3.4+2.4*e).toFixed(2))});
   if(bglow){bglow.setAttribute('r',(15+6*br2).toFixed(2)); bglow.setAttribute('opacity',(.20+.16*br2).toFixed(3))}
   seqs.forEach((gq,k)=>{const a0=1.0+k*.34, e=bump(t,a0,a0+1.0,.25,.6); gq.style.transform=`scale(${(1+.55*e).toFixed(3)})`; gq.firstChild.setAttribute('opacity',(gq.__o+(.75-gq.__o)*e).toFixed(3))});
-  pulses.forEach(el=>el.setAttribute('fill-opacity',(.30+.45*br2).toFixed(3)))};
+  pulses.forEach(el=>el.setAttribute('fill-opacity',(.30+.45*br2).toFixed(3)));
+  if(arcs.length){const ar=cfg.from?(t<.5?1:t<1.2?1-ez((t-.5)/.7):t<4.3?0:t<5.6?ez((t-4.3)/1.3):1):(t<.3?1:t<.8?1-ez((t-.3)/.5):t<1.2?0:t<2.6?ez((t-1.2)/1.4):1);
+    arcs.forEach(q=>{q.a.forEach(e=>e.setAttribute('stroke-dashoffset',(1-ar).toFixed(3))); const ho=cl((ar-.82)/.18,0,1); q.h.forEach(e=>e.setAttribute('opacity',ho.toFixed(3))); q.l.forEach(e=>e.setAttribute('opacity',ez(ar*1.6).toFixed(3)))})}
+  if(swp)swp.style.transform=`translateX(${(9*Math.max(0,Math.sin(TAU*3*tt))).toFixed(2)}px)`;
+  if(P){let u,op=1; // still, jump to the start, walk back, pause at the turn, walk forward to the door, return to the still
+    if(t<.5){u=1} else if(t<1.1){u=1; op=1-ez((t-.5)/.6)} else if(t<1.5){u=0; op=ez((t-1.1)/.4)} else if(t<4.5){u=ez((t-1.5)/3.0)*0+((t-1.5)/3.0)} else if(t<5.2){u=1}
+    else if(t<6.7){u=1+(t-5.2)/1.5} else if(t<7.2){u=2; op=1-ez((t-6.7)/.5)} else {u=1; op=ez((t-7.2)/.5)}
+    const [x,y]=P.at(u); P.o.style.left=x.toFixed(1)+'px'; P.o.style.top=y.toFixed(1)+'px'; P.o.style.opacity=op.toFixed(3);
+    const moving=(t>=1.1&&t<7.2); P.back.style.strokeDasharray='1'; P.fwd.style.strokeDasharray='1';
+    P.back.style.strokeDashoffset=moving?(1-cl(u,0,1)).toFixed(3):'0'; P.fwd.style.strokeDashoffset=moving?(1-cl(u-1,0,1)).toFixed(3):'0';
+    const hit=(k,on)=>{const g=P.lab(k); if(g){g.style.opacity=(moving?(on?1:.28):1).toFixed(2)}};
+    hit('l1',true); hit('l2',x<=P.xd+2||u>=1); hit('l3',u>=.98); hit('l4',u>1&&x>=P.xd-2);
+    pd.querySelectorAll('.pbm').forEach(e=>e.style.opacity=(!moving||u>=1||x<=+e.dataset.x)?'1':'0'); pd.querySelectorAll('.pfm').forEach(e=>e.style.opacity=(!moving||u>=1.96)?'1':'0')}};
 return {orbs:orbs.map(o=>o.kind),rooms:all.length,steps:steps.length,sparks:sparks.filter(Boolean).length,moves}}"""
 
 def motion(spec_path, slide=1, secs=8.0, fps=30, dsf=2, preview=None):

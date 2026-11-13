@@ -1,0 +1,663 @@
+{
+ "id": "reading-2026-11-13-ask2",
+ "kicker": "Read the sky · five rules",
+ "decor_theme": "thread",
+ "parts": [
+  "The sky",
+  "Rule by rule",
+  "The reading",
+  "Your chart"
+ ],
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "swipe": true,
+   "scene": {
+    "h": 150,
+    "across": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 32
+       }
+      ],
+      "state": "",
+      "tag": ""
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 25
+       }
+      ],
+      "state": "",
+      "tag": ""
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 24
+       },
+       {
+        "kind": "ketu",
+        "r": 28,
+        "dx": 58
+       },
+       {
+        "kind": "jupiter",
+        "r": 34,
+        "dx": 66
+       }
+      ],
+      "state": "focus",
+      "tag": ""
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 34
+       }
+      ],
+      "state": "",
+      "tag": ""
+     }
+    ]
+   },
+   "label": "Five rules, one sky",
+   "labelsize": 27,
+   "title": "Read this weekend",
+   "titleclass": "h1",
+   "subtitle": "One sky, read step by step\nwith the five rules of this week",
+   "subsize": 50,
+   "contents": [
+    "The sky",
+    "Rule by rule",
+    "The reading",
+    "Your chart"
+   ],
+   "motion": {
+    "order": [
+     0,
+     [
+      "across",
+      0
+     ],
+     1,
+     [
+      "across",
+      1
+     ]
+    ],
+    "spark": [
+     null,
+     [
+      "rooms",
+      0,
+      "across",
+      0
+     ],
+     [
+      "rooms",
+      0,
+      "rooms",
+      1
+     ],
+     [
+      "rooms",
+      1,
+      "across",
+      1
+     ]
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "part": 1,
+   "scene": {
+    "h": 150,
+    "w": 300,
+    "across": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 32
+       }
+      ],
+      "names": "Rahu"
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 26
+       }
+      ],
+      "names": "Saturn",
+      "note": "◂ walking backward"
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 26
+       },
+       {
+        "kind": "ketu",
+        "r": 30,
+        "dx": 62
+       },
+       {
+        "kind": "jupiter",
+        "r": 36,
+        "dx": 70
+       }
+      ],
+      "state": "focus",
+      "names": "Mars · Ketu · Jupiter"
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 34
+       }
+      ],
+      "names": "Venus"
+     }
+    ]
+   },
+   "label": "Part 1 · The sky",
+   "labelsize": 27,
+   "title": "Who stands where",
+   "titleclass": "h3",
+   "body": [
+    "*Leo holds three grahas*,\nless than one degree apart"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "note": "Fri 13 to Sun 15 Nov · Toronto time · Lahiri"
+  },
+  {
+   "type": "nsteps",
+   "part": 1,
+   "label": "The sky · the tools",
+   "labelsize": 27,
+   "title": "Five rules from this week",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "n": "1",
+     "head": "Same room",
+     "line": "Grahas in one sign act as one"
+    },
+    {
+     "n": "2",
+     "head": "Ahead and behind",
+     "line": "The sign ahead is where it heads"
+    },
+    {
+     "n": "3",
+     "head": "Who walks in front",
+     "line": "More degrees means it leads"
+    },
+    {
+     "n": "4",
+     "head": "Face to face",
+     "line": "It looks at the sign straight across"
+    },
+    {
+     "n": "5",
+     "head": "Looking back",
+     "line": "Walking backward, it works from two signs"
+    }
+   ],
+   "headsize": 50,
+   "bodysize": 33,
+   "stepsmt": 14
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "scene": {
+    "h": 190,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 32
+       },
+       {
+        "kind": "ketu",
+        "r": 36,
+        "dx": 74
+       },
+       {
+        "kind": "jupiter",
+        "r": 44,
+        "dx": 84
+       }
+      ],
+      "state": "focus",
+      "wide": 1.5,
+      "names": "Mars · Ketu · Jupiter"
+     }
+    ]
+   },
+   "label": "Part 2 · Rule by rule",
+   "labelsize": 27,
+   "title": "Rule 1 · Same room",
+   "titleclass": "h3",
+   "body": [
+    "*The soldier, the monk and the teacher*\nshare Leo, less than one degree apart",
+    "So they act as one:\n*push, let go and advise, all at once*"
+   ],
+   "bodysize": 38,
+   "bodygap": 14
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "scene": {
+    "w": 286,
+    "h": 176,
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": [],
+      "names": "empty"
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 24
+       },
+       {
+        "kind": "ketu",
+        "r": 27,
+        "dx": 58
+       },
+       {
+        "kind": "jupiter",
+        "r": 33,
+        "dx": 66
+       }
+      ],
+      "state": "focus",
+      "names": "Mars · Ketu · Jupiter"
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 36
+       }
+      ],
+      "names": "Venus",
+      "note": "forward tonight ▸"
+     }
+    ]
+   },
+   "label": "Rule by rule · rule 2",
+   "labelsize": 27,
+   "title": "Ahead and behind",
+   "titleclass": "h3",
+   "body": [
+    "Behind Leo, *Cancer is empty*:\nnothing holds this room back",
+    "Ahead, in Virgo, *the lover (Venus)*\nturns forward tonight"
+   ],
+   "bodysize": 38,
+   "bodygap": 14
+  },
+  {
+   "type": "rows",
+   "part": 2,
+   "label": "Rule by rule · rule 3",
+   "labelsize": 27,
+   "title": "Who walks in front",
+   "titleclass": "h3",
+   "lead": "More degrees means further ahead",
+   "leadsize": 38,
+   "roworbs": [
+    {
+     "kind": "jupiter",
+     "r": 36
+    },
+    {
+     "kind": "ketu",
+     "r": 31
+    },
+    {
+     "kind": "mars",
+     "r": 28
+    }
+   ],
+   "items": [
+    [
+     "The teacher (Jupiter)",
+     "1°28′ · leads",
+     true
+    ],
+    [
+     "The monk (Ketu)",
+     "1°09′"
+    ],
+    [
+     "The soldier (Mars)",
+     "0°37′ · catching up"
+    ]
+   ],
+   "namesize": 54,
+   "bodysize": 40,
+   "note": "Leo · Friday 6:30 PM",
+   "closing": "Advice leads this weekend\nThe soldier walks fastest and will overtake",
+   "closingsize": 46
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "scene": {
+    "h": 150,
+    "w": 280,
+    "across": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 36
+       }
+      ],
+      "state": "focus",
+      "names": "Rahu"
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 28
+       },
+       {
+        "kind": "ketu",
+        "r": 32,
+        "dx": 66
+       },
+       {
+        "kind": "jupiter",
+        "r": 38,
+        "dx": 74
+       }
+      ],
+      "names": "Mars · Ketu · Jupiter"
+     }
+    ]
+   },
+   "label": "Rule by rule · rule 4",
+   "labelsize": 27,
+   "title": "Face to face",
+   "titleclass": "h3",
+   "body": [
+    "*The magician (Rahu)* sits in Aquarius,\nstraight across from Leo",
+    "Big promises and hype\n*face the crowded room*"
+   ],
+   "bodysize": 38,
+   "bodygap": 14
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "scene": {
+    "w": 286,
+    "h": 184,
+    "reach": [
+     [
+      1,
+      0,
+      "also works from here"
+     ]
+    ],
+    "rooms": [
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "rahu",
+        "r": 36
+       }
+      ],
+      "names": "Rahu"
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 32
+       }
+      ],
+      "state": "focus",
+      "names": "Saturn",
+      "note": "◂ walking backward"
+     }
+    ]
+   },
+   "label": "Rule by rule · rule 5",
+   "labelsize": 27,
+   "title": "Looking back",
+   "titleclass": "h3",
+   "body": [
+    "*The auditor (Saturn)* walks backward\nin Pisces, so he also works from Aquarius",
+    "He joins the magician across the table:\n*old duties, old records*"
+   ],
+   "bodysize": 38,
+   "bodygap": 14
+  },
+  {
+   "type": "sentence",
+   "part": 3,
+   "label": "Part 3 · The reading",
+   "labelsize": 27,
+   "example": "A hot, crowded room faces hype and old duties, while love starts moving again",
+   "rows": [
+    [
+     "Rules 1, 3 · Leo",
+     "soldier, monk, teacher"
+    ],
+    [
+     "Rules 4, 5 · across",
+     "magician and auditor"
+    ],
+    [
+     "Rule 2 · ahead",
+     "the lover"
+    ]
+   ],
+   "bodysize": 38,
+   "conclusion": "Five rules, one sentence"
+  },
+  {
+   "type": "text",
+   "part": 3,
+   "label": "The reading · in real life",
+   "labelsize": 27,
+   "title": "This weekend",
+   "titleclass": "h2",
+   "body": [
+    "*Tempers run short* around bosses\nand big egos",
+    "Bold claims get checked against old records",
+    "An old message or an old flame\n*comes back*"
+   ],
+   "bodysize": 40,
+   "bodygap": 14,
+   "closing": "Slow answers win",
+   "closingsize": 58
+  },
+  {
+   "type": "nsteps",
+   "part": 3,
+   "label": "The reading · the dates",
+   "labelsize": 27,
+   "title": "Watch it move",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "tag": "Tonight, about 7:30",
+     "head": "The lover turns forward",
+     "line": "Love and money start moving again"
+    },
+    {
+     "tag": "Saturday",
+     "head": "The soldier passes the monk",
+     "line": "He moves up to second place"
+    },
+    {
+     "tag": "Sunday night into Monday",
+     "head": "He passes the teacher",
+     "line": "From Monday *the soldier leads* the room"
+    }
+   ],
+   "headsize": 50,
+   "bodysize": 34,
+   "closing": "Advice turns into action",
+   "closingsize": 52
+  },
+  {
+   "type": "rows",
+   "part": 4,
+   "label": "Part 4 · Your chart",
+   "labelsize": 27,
+   "title": "Where is Leo for you?",
+   "titleclass": "h3",
+   "lead": "Find your rising sign",
+   "leadsize": 34,
+   "items": [
+    [
+     "Aries",
+     "5th · love, children, ideas"
+    ],
+    [
+     "Taurus",
+     "4th · home, mother, property"
+    ],
+    [
+     "Gemini",
+     "3rd · siblings, effort, short trips"
+    ],
+    [
+     "Cancer",
+     "2nd · money, family, speech"
+    ],
+    [
+     "Leo",
+     "1st · you, your body, your name"
+    ],
+    [
+     "Virgo",
+     "12th · sleep, spending, far places"
+    ]
+   ],
+   "bodysize": 33,
+   "note": "No rising sign? Use your Moon sign"
+  },
+  {
+   "type": "rows",
+   "part": 4,
+   "label": "Part 4 · Your chart",
+   "labelsize": 27,
+   "title": "Where is Leo for you?",
+   "titleclass": "h3",
+   "lead": "Find your rising sign",
+   "leadsize": 34,
+   "items": [
+    [
+     "Libra",
+     "11th · friends, income, wishes"
+    ],
+    [
+     "Scorpio",
+     "10th · career, boss, status"
+    ],
+    [
+     "Sagittarius",
+     "9th · teachers, travel, luck"
+    ],
+    [
+     "Capricorn",
+     "8th · shared money, sudden change"
+    ],
+    [
+     "Aquarius",
+     "7th · partner, clients, deals"
+    ],
+    [
+     "Pisces",
+     "6th · daily work, health, debts"
+    ]
+   ],
+   "bodysize": 33,
+   "closing": "Say the sentence for that house",
+   "closingsize": 50
+  },
+  {
+   "type": "cta",
+   "part": 5,
+   "orbs": [
+    {
+     "kind": "mars",
+     "r": 30
+    },
+    {
+     "kind": "jupiter",
+     "r": 40,
+     "dx": 80
+    },
+    {
+     "kind": "ketu",
+     "r": 34,
+     "dx": 78
+    },
+    {
+     "kind": "rahu",
+     "r": 34,
+     "dx": 300
+    }
+   ],
+   "label": "Your turn",
+   "labelsize": 27,
+   "title": "Write it down,\ncheck it on Monday",
+   "titleclass": "h3",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Monday · Rule 6, family"
+  }
+ ]
+}

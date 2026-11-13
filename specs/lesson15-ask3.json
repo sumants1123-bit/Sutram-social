@@ -1,0 +1,678 @@
+{
+ "id": "lesson15-ask3",
+ "kicker": "Daily lesson · 15",
+ "decor_theme": "thread",
+ "parts": [
+  "The rule",
+  "Today's sky",
+  "A real case",
+  "Your chart"
+ ],
+ "slides": [
+  {
+   "type": "cover",
+   "stars": true,
+   "swipe": true,
+   "scene": {
+    "w": 270,
+    "h": 188,
+    "reach": [
+     [
+      1,
+      0,
+      "also works from here"
+     ]
+    ],
+    "rooms": [
+     {
+      "sign": "Behind",
+      "orbs": []
+     },
+     {
+      "sign": "Its sign",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 38
+       }
+      ],
+      "state": "focus",
+      "note": "◂ walking backward"
+     }
+    ]
+   },
+   "label": "Bhrigu Nandi Nadi · Rule 5",
+   "labelsize": 27,
+   "title": "Looking back",
+   "titleclass": "h1",
+   "subtitle": "How to read a graha\nthat walks backward",
+   "subsize": 58,
+   "contents": [
+    "The rule",
+    "Today's sky",
+    "A real case",
+    "Your chart"
+   ],
+   "motion": {
+    "order": [
+     1,
+     0
+    ],
+    "from": {
+     "rooms": [
+      {
+       "sign": "Behind",
+       "orbs": []
+      },
+      {
+       "sign": "Its sign",
+       "orbs": []
+      }
+     ]
+    },
+    "enter": {
+     "venus": "ahead"
+    }
+   }
+  },
+  {
+   "type": "text",
+   "part": 1,
+   "scene": {
+    "w": 262,
+    "h": 176,
+    "reach": [
+     [
+      1,
+      0,
+      "also works from here"
+     ]
+    ],
+    "caption": "The signs run left to right ▸",
+    "rooms": [
+     {
+      "sign": "Behind",
+      "orbs": []
+     },
+     {
+      "sign": "Its sign",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 36
+       }
+      ],
+      "state": "focus",
+      "note": "◂ walking backward"
+     },
+     {
+      "sign": "Ahead",
+      "orbs": []
+     }
+    ]
+   },
+   "label": "Part 1 · The rule",
+   "labelsize": 27,
+   "title": "Two signs at once",
+   "titleclass": "h2",
+   "body": [
+    "A graha walking backward (retrograde)",
+    "works from *the sign it stands in*",
+    "and from *the sign behind it*"
+   ],
+   "bodysize": 41,
+   "bodygap": 6
+  },
+  {
+   "type": "rows",
+   "part": 1,
+   "label": "The rule · why it turns",
+   "labelsize": 27,
+   "title": "It goes back\nfor old business",
+   "titleclass": "h3",
+   "lead": "Like someone who hears a shout\nand turns back to help",
+   "leadsize": 36,
+   "items": [
+    [
+     "The messenger (Mercury)",
+     "old talks"
+    ],
+    [
+     "The lover (Venus)",
+     "old loves, old deals"
+    ],
+    [
+     "The soldier (Mars)",
+     "old fights"
+    ],
+    [
+     "The teacher (Jupiter)",
+     "old lessons"
+    ],
+    [
+     "The auditor (Saturn)",
+     "old duties, old debts"
+    ]
+   ],
+   "namesize": 50,
+   "bodysize": 34,
+   "note": "Sun and Moon never walk backward · Rahu and Ketu always do"
+  },
+  {
+   "type": "nsteps",
+   "part": 1,
+   "label": "The rule · how to use it",
+   "labelsize": 27,
+   "title": "Read it in three steps",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "head": "Who is walking backward?",
+     "line": "Its subject comes back for a second look"
+    },
+    {
+     "head": "Which sign is behind it?",
+     "line": "It works from that sign too"
+    },
+    {
+     "head": "Who lives in that sign?",
+     "line": "They join the story until it turns forward"
+    }
+   ]
+  },
+  {
+   "type": "cast",
+   "part": 2,
+   "label": "Part 2 · Today's sky",
+   "labelsize": 27,
+   "title": "Who is walking\nbackward now?",
+   "titleclass": "h3",
+   "lead": "Step 1 · *Rule 5 on the sky of this week*",
+   "leadsize": 34,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "mercury",
+       "r": 36
+      }
+     ],
+     "label": "24 Oct to this morning",
+     "head": "The messenger (Mercury)",
+     "line": "in Libra the whole time"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "venus",
+       "r": 44
+      }
+     ],
+     "label": "3 Oct to about 7:30 tonight",
+     "head": "The lover (Venus)",
+     "line": "began in Libra, backed into Virgo"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "saturn",
+       "r": 36
+      }
+     ],
+     "label": "26 Jul to 10 Dec",
+     "head": "The auditor (Saturn)",
+     "line": "in Pisces the whole time"
+    }
+   ],
+   "castorbw": 150,
+   "castorbh": 112,
+   "headsize": 52,
+   "bodysize": 34,
+   "castlabsize": 21,
+   "note": "Friday 13 Nov · Toronto time · Lahiri zodiac"
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "label": "Today's sky · the lover's walk",
+   "labelsize": 27,
+   "title": "Follow the lover (Venus)",
+   "titleclass": "h3",
+   "pathpos": "mid",
+   "path": {
+    "left": {
+     "sign": "Virgo",
+     "from": 19
+    },
+    "right": {
+     "sign": "Libra",
+     "to": 17
+    },
+    "kind": "venus",
+    "r": 32,
+    "start": [
+     "Libra",
+     14.25
+    ],
+    "turn": [
+     "Virgo",
+     28.62
+    ],
+    "labels": {
+     "start": [
+      "3 Oct",
+      "turns backward"
+     ],
+     "cross_back": [
+      "5 Nov",
+      "backs into Virgo"
+     ],
+     "turn": [
+      "13 Nov",
+      "turns forward"
+     ],
+     "cross_fwd": [
+      "22 Nov",
+      "home in Libra"
+     ]
+    },
+    "behind": "Leo, the sign behind Virgo",
+    "mt": 26
+   },
+   "body": [
+    "Six weeks of walking backward",
+    "She backs only *1°23′ into Virgo*, then turns"
+   ],
+   "bodysize": 38,
+   "bodygap": 4
+  },
+  {
+   "type": "text",
+   "part": 2,
+   "scene": {
+    "w": 286,
+    "h": 184,
+    "reach": [
+     [
+      1,
+      0,
+      "also works from here"
+     ]
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 24
+       },
+       {
+        "kind": "ketu",
+        "r": 27,
+        "dx": 58
+       },
+       {
+        "kind": "jupiter",
+        "r": 33,
+        "dx": 66
+       }
+      ],
+      "names": "Mars · Ketu · Jupiter"
+     },
+     {
+      "sign": "Virgo",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 36
+       }
+      ],
+      "state": "focus",
+      "names": "Venus",
+      "note": "◂ walking backward"
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "mercury",
+        "r": 22
+       },
+       {
+        "kind": "sun",
+        "r": 27,
+        "rings": false,
+        "dx": 104
+       }
+      ],
+      "names": "Mercury · Sun"
+     }
+    ]
+   },
+   "label": "Today's sky · steps 2 and 3",
+   "labelsize": 27,
+   "title": "Which sign is behind her?",
+   "titleclass": "h3",
+   "body": [
+    "3 Oct to 5 Nov · in Libra,\n*also working from Virgo*",
+    "5 Nov to tonight · in Virgo,\n*also working from Leo*",
+    "Leo is the room of the teacher and the monk\nThe soldier joined them on Thursday"
+   ],
+   "bodysize": 36,
+   "bodygap": 12
+  },
+  {
+   "type": "nsteps",
+   "part": 2,
+   "label": "Today's sky · the reading",
+   "labelsize": 27,
+   "title": "Rule 5 reads this week",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "n": "1",
+     "tag": "Since 3 October",
+     "head": "Old loves and old deals came back",
+     "line": "The ex who texted · the refund you chased"
+    },
+    {
+     "n": "2",
+     "tag": "This week, from Leo",
+     "head": "They arrived as a lesson",
+     "line": "Teacher and monk: learn it, then let it go"
+    },
+    {
+     "n": "3",
+     "tag": "From tonight",
+     "head": "She walks forward again",
+     "line": "Home in Libra on 22 November: things settle"
+    }
+   ],
+   "headsize": 48,
+   "bodysize": 33,
+   "closing": "Write down what you expect · Check it on 22 Nov",
+   "closingsize": 44
+  },
+  {
+   "type": "cast",
+   "part": 2,
+   "label": "Today's sky · the other two",
+   "labelsize": 27,
+   "title": "Same three steps",
+   "titleclass": "h3",
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "mercury",
+       "r": 38
+      }
+     ],
+     "label": "Libra · behind it, Virgo",
+     "head": "The messenger (Mercury)",
+     "line": "From 5 Nov the lover stood in Virgo:\nold talks about love and money\nForward since this morning"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "saturn",
+       "r": 38
+      }
+     ],
+     "label": "Pisces · behind it, Aquarius",
+     "head": "The auditor (Saturn)",
+     "line": "Aquarius is his own sign:\nold duties come back to be finished\nUntil 10 December"
+    }
+   ],
+   "castorbw": 150,
+   "castorbh": 130,
+   "headsize": 52,
+   "bodysize": 35,
+   "castlabsize": 22
+  },
+  {
+   "type": "text",
+   "part": 3,
+   "label": "Part 3 · A real case",
+   "labelsize": 27,
+   "title": "India goes back\nto the Moon",
+   "titleclass": "h2",
+   "body": [
+    "2019 · its first lander crashed",
+    "23 August 2023 · Chandrayaan-3 lands\nnear the south pole, *6:04 PM India time*"
+   ],
+   "bodysize": 41,
+   "bodygap": 14,
+   "closing": "What was the sky doing\nat 6:04 PM?",
+   "closingsize": 52,
+   "lead": "A real event, read backward with rule 5",
+   "leadsize": 34
+  },
+  {
+   "type": "text",
+   "part": 3,
+   "scene": {
+    "w": 270,
+    "h": 150,
+    "acrossk": 0.9,
+    "reach": [
+     [
+      1,
+      0,
+      "also works from here"
+     ]
+    ],
+    "reachpad": 98,
+    "across": [
+     {
+      "spacer": true
+     },
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 30,
+        "rings": false
+       },
+       {
+        "kind": "mercury",
+        "r": 22,
+        "dx": 112
+       }
+      ],
+      "names": "Sun · Mercury"
+     }
+    ],
+    "rooms": [
+     {
+      "sign": "Capricorn",
+      "orbs": [],
+      "names": "empty"
+     },
+     {
+      "sign": "Aquarius",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 32
+       }
+      ],
+      "state": "focus",
+      "names": "Saturn",
+      "note": "◂ walking backward"
+     }
+    ],
+    "connx": 142
+   },
+   "label": "A real case · the sky at 6:04 PM",
+   "labelsize": 27,
+   "body": [
+    "*The auditor (Saturn)* in Aquarius,\nwalking backward since 17 June",
+    "*The king (Sun)* and *the messenger (Mercury)*\nin Leo, straight across from him"
+   ],
+   "bodysize": 36,
+   "bodygap": 12
+  },
+  {
+   "type": "nsteps",
+   "part": 3,
+   "label": "A real case · the rules",
+   "labelsize": 27,
+   "title": "Two rules, one story",
+   "titleclass": "h3",
+   "steps": [
+    {
+     "n": "5",
+     "tag": "Rule 5 · looking back",
+     "head": "Old work came back",
+     "line": "The auditor also worked from Capricorn, his other home sign · *The crashed 2019 landing, tried again*"
+    },
+    {
+     "n": "4",
+     "tag": "Rule 4 · face to face",
+     "head": "The auditor faced the king",
+     "line": "From Aquarius he looked straight at Leo · *A country's work, checked live in front of everyone*"
+    }
+   ],
+   "headsize": 52,
+   "bodysize": 34,
+   "closing": "An old task, finished\nunder the hardest examiner",
+   "closingsize": 50
+  },
+  {
+   "type": "narrow",
+   "part": 3,
+   "label": "A real case · how rare",
+   "labelsize": 27,
+   "title": "How the timing narrows",
+   "titleclass": "h3",
+   "items": [
+    [
+     "4½ months",
+     "the auditor walks backward, every year"
+    ],
+    [
+     "1 month",
+     "the king stands in Leo, facing him · 17 Aug to 17 Sep"
+    ],
+    [
+     "4 days",
+     "after the landing they stood exactly face to face"
+    ]
+   ],
+   "bodysize": 33,
+   "note": "Both in their own signs, face to face\n2023 and 2024, then not until 2052",
+   "closing": "The sky set the scene · People did the work",
+   "closingsize": 44
+  },
+  {
+   "type": "rows",
+   "part": 4,
+   "label": "Part 4 · Your chart",
+   "labelsize": 27,
+   "title": "Where the auditor\nlooks back for you",
+   "titleclass": "h3",
+   "lead": "Until 10 December he works from two rooms\nFind your rising sign",
+   "leadsize": 34,
+   "items": [
+    [
+     "Aries",
+     "12th rest · 11th gains"
+    ],
+    [
+     "Taurus",
+     "11th gains · 10th career"
+    ],
+    [
+     "Gemini",
+     "10th career · 9th luck"
+    ],
+    [
+     "Cancer",
+     "9th luck · 8th change"
+    ],
+    [
+     "Leo",
+     "8th change · 7th partners"
+    ],
+    [
+     "Virgo",
+     "7th partners · 6th daily work"
+    ]
+   ],
+   "namesize": 54,
+   "bodysize": 34
+  },
+  {
+   "type": "rows",
+   "part": 4,
+   "label": "Part 4 · Your chart",
+   "labelsize": 27,
+   "title": "Where the auditor\nlooks back for you",
+   "titleclass": "h3",
+   "items": [
+    [
+     "Libra",
+     "6th daily work · 5th creation"
+    ],
+    [
+     "Scorpio",
+     "5th creation · 4th home"
+    ],
+    [
+     "Sagittarius",
+     "4th home · 3rd effort"
+    ],
+    [
+     "Capricorn",
+     "3rd effort · 2nd money"
+    ],
+    [
+     "Aquarius",
+     "2nd money · 1st you"
+    ],
+    [
+     "Pisces",
+     "1st you · 12th rest"
+    ]
+   ],
+   "namesize": 54,
+   "bodysize": 34,
+   "note": "No rising sign? Use your Moon sign",
+   "closing": "Old duties in these rooms get a second look",
+   "closingsize": 46
+  },
+  {
+   "type": "cta",
+   "part": 5,
+   "orbs": [
+    {
+     "kind": "mercury",
+     "r": 28
+    },
+    {
+     "kind": "venus",
+     "r": 36,
+     "dx": 130
+    },
+    {
+     "kind": "saturn",
+     "r": 30,
+     "dx": 140
+    }
+   ],
+   "label": "Rule 5 in one line",
+   "labelsize": 27,
+   "title": "Walking backward\nmeans two signs at once",
+   "titleclass": "h3",
+   "lines": [
+    "Ask your chart at asksutram.com",
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "bodysize": 38,
+   "next": "Monday · Rule 6, family"
+  }
+ ]
+}

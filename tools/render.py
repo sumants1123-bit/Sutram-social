@@ -63,6 +63,33 @@ radial-gradient(125% 95% at 50% 38%,#17110C 0%,#0B0806 55%,#050403 100%);}}
 .row{{display:flex;justify-content:space-between;align-items:baseline;padding:{f(12)} 0;border-bottom:1px solid rgba(217,165,122,.2);text-align:left;gap:16px}}
 .grid2{{display:grid;grid-template-columns:1fr 1fr;column-gap:56px;width:100%}}
 .ro svg{{margin:0!important}}
+.tabs{{position:absolute;top:134px;left:30px;right:30px;display:flex;justify-content:center;gap:9px}}
+.tab{{display:flex;align-items:center;gap:9px;padding:10px 18px 10px 11px;border:1.3px solid rgba(217,165,122,.34);border-radius:999px;font:500 25px/1 'EB Garamond';letter-spacing:.11em;text-transform:uppercase;color:rgba(242,230,204,.56);white-space:nowrap}}
+.tab b{{display:flex;align-items:center;justify-content:center;width:29px;height:29px;border-radius:50%;border:1.2px solid rgba(217,165,122,.5);font:600 20px/1 'Cormorant Garamond';letter-spacing:0;color:rgba(242,230,204,.7)}}
+.tab.done{{color:rgba(242,230,204,.70);border-color:rgba(217,165,122,.46)}}
+.tab.done b{{background:rgba(217,165,122,.22)}}
+.tab.on{{background:{AMBER};border-color:{AMBER};color:#1B0F07;font-weight:600;box-shadow:0 0 34px rgba(224,148,96,.35)}}
+.tab.on b{{border-color:#1B0F07;color:#1B0F07}}
+.slide.tabbed .body{{top:210px}}
+.who{{font:italic 500 {f(33)}/1.1 'Cormorant Garamond';color:rgba(242,230,204,.9);margin-top:{f(8)};white-space:nowrap}}
+.rnote{{font:italic 500 {f(31)}/1.1 'Cormorant Garamond';color:{AMBER};margin-top:{f(5)};white-space:nowrap}}
+.reach{{position:absolute;left:0;pointer-events:none;overflow:visible}}
+.swipe{{position:absolute;left:0;right:0;bottom:152px;display:flex;justify-content:center;align-items:center;gap:20px;font:500 33px/1 'EB Garamond';letter-spacing:.26em;text-transform:uppercase;color:{CREAM}}}
+.swipe svg{{display:block}}
+.contents{{display:grid;grid-template-columns:auto auto;justify-content:center;column-gap:{f(54)};row-gap:{f(12)};margin-top:{f(34)};text-align:left}}
+.contents div{{display:flex;align-items:center;gap:{f(16)};font:500 {f(46)}/1.1 'EB Garamond';color:rgba(242,230,204,.92)}}
+.contents b{{display:flex;align-items:center;justify-content:center;flex:0 0 auto;width:{f(52)};height:{f(52)};border-radius:50%;border:1.4px solid {AMBER};font:600 {f(34)}/1 'Cormorant Garamond';color:{AMBER}}}
+.nstep{{display:flex;align-items:flex-start;gap:{f(26)};text-align:left;width:100%;padding:{f(17)} 0}}
+.nstep+.nstep{{border-top:1px solid rgba(217,165,122,.22)}}
+.nstep>b{{flex:0 0 auto;display:flex;align-items:center;justify-content:center;width:{f(74)};height:{f(74)};border-radius:50%;border:1.6px solid {AMBER};font:600 {f(46)}/1 'Cormorant Garamond';color:{AMBER};margin-top:{f(2)}}}
+.nstep .hd{{font:500 {f(60)}/1.08 'Cormorant Garamond';color:{CREAM}}}
+.nstep .ln{{font:400 {f(46)}/1.28 'EB Garamond';color:rgba(242,230,204,.88);margin-top:{f(7)}}}
+.nstep .tg{{font:500 {f(27)}/1 'EB Garamond';letter-spacing:.18em;text-transform:uppercase;color:{GOLD};margin-bottom:{f(8)}}}
+.narrow{{width:100%;margin-top:{f(26)}}}
+.narrow .it{{padding:{f(13)} 0}}
+.narrow .bar{{height:{f(10)};border-radius:{f(5)};background:linear-gradient(90deg,rgba(224,148,96,.95),rgba(224,148,96,.45));margin:0 auto {f(13)}}}
+.narrow .hd{{font:500 {f(70)}/1 'Cormorant Garamond';color:{CREAM}}}
+.narrow .ln{{font:400 {f(44)}/1.26 'EB Garamond';color:rgba(242,230,204,.88);margin-top:{f(6)}}}
 '''
 GRAIN='<svg class="grain" width="1080" height="1350"><filter id="g"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/></filter><rect width="1080" height="1350" filter="url(#g)"/></svg>'
 
@@ -346,19 +373,77 @@ def scene_html(sc, s=1.0):
     W=sc.get('w',262); Hh=sc.get('h',208)
     def room(r, flip=False, k=1.0):
         w=W*k*r.get('wide',1); h=Hh*k; rad=F(150*k)
+        if r.get('spacer'): return f'<div class="spacer" style="width:{F(w)};height:1px;visibility:hidden"></div>'
+        who=(f'<div class="who">{esc(r["names"])}</div>' if r.get('names') else '')+(f'<div class="rnote">{esc(r["note"])}</div>' if r.get('note') else '')
         ob=f'<div style="transform:scale({s*k*r.get("zoom",1):.3f})">{orbrow(r["orbs"], r.get("spacing"))}</div>' if r.get('orbs') else ''
         fr=(f'<div style="position:absolute;{"top" if flip else "bottom"}:{F(9)};right:{F(16)};font:italic 500 {F(25)}/1 \'Cormorant Garamond\';color:{AMBER}">in front ▸</div>' if r.get('front') else '')
         arch=f'<div class="arch" style="width:{F(w)};height:{F(h)};border-radius:{("0 0 "+rad+" "+rad) if flip else (rad+" "+rad+" 0 0")}">{ob}{fr}</div>'
         sg=f'<div class="sg" style="margin:{("0 0 "+F(12)) if flip else (F(13)+" 0 0")}">{esc(r["sign"])}</div>'
         tag=f'<div class="tag" style="margin:{(F(9)+" 0 0") if flip else ("0 0 "+F(10))}">{esc(r.get("tag",""))}</div>'
-        inner=(sg+arch+(tag if r.get('tag') else '')) if flip else (tag+arch+sg)
+        inner=(sg+who+arch+(tag if r.get('tag') else '')) if flip else (tag+arch+sg+who)
         return f'<div class="room {r.get("state","")}">{inner}</div>'
+    def reach(rooms, links, k=1.0):
+        # an arc over the row, from the room a graha stands in to the room it also works from; the arrow lands on that room
+        ws=[W*k*r.get('wide',1)*s for r in rooms]; xs=[]; x=0.0
+        for w_ in ws: xs.append(x+w_/2); x+=w_+14*s
+        tot=x-14*s; H=120*s; y0=H-5*s; o=''
+        for a,b,text in links:
+            x1,x2=xs[a],xs[b]; mid=(x1+x2)/2; d=-1 if x2<x1 else 1
+            o+=(f'<path class="rarc" pathLength="1" d="M{x1:.1f},{y0:.1f} C{x1:.1f},{26*s:.1f} {x2:.1f},{26*s:.1f} {x2:.1f},{y0-13*s:.1f}" fill="none" stroke="{AMBER}" stroke-width="{max(2.2,2.6*s):.1f}" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="0"/>'
+                f'<path class="rhead" d="M{x2-10*s:.1f},{y0-15*s:.1f} L{x2:.1f},{y0:.1f} L{x2+10*s:.1f},{y0-15*s:.1f} Z" fill="{AMBER}"/>'
+                f'<circle cx="{x1:.1f}" cy="{y0:.1f}" r="{4.5*s:.1f}" fill="{AMBER}"/>'
+                f'<text class="rlab" x="{mid:.1f}" y="{31*s:.1f}" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-weight="500" font-size="{31*s:.1f}" fill="{AMBER}">{esc(text)}</text>')
+        return f'<svg class="reach" width="{tot:.0f}" height="{H:.0f}" viewBox="0 0 {tot:.0f} {H:.0f}" style="top:{41*s-H:.1f}px">{o}</svg>'
     out=''
     if sc.get('across'):
         out+=f'<div class="rooms" style="align-items:flex-start">{"".join(room(r,True,sc.get("acrossk",.82)) for r in sc["across"])}</div>'
-        out+=f'<div class="conn"><i></i>{esc(sc.get("conn","face to face"))}<i></i></div>'
-    out+=f'<div class="rooms" style="align-items:flex-end">{"".join(room(r) for r in sc["rooms"])}</div>'
+        out+=f'<div class="conn" style="{"transform:translateX("+F(sc["connx"])+");" if sc.get("connx") else ""}"><i></i>{esc(sc.get("conn","face to face"))}<i></i></div>'
+    rc=reach(sc['rooms'], sc['reach']) if sc.get('reach') else ''
+    named=any(r.get('names') or r.get('note') for r in sc['rooms'])
+    out+=f'<div class="rooms" style="position:relative;align-items:{"flex-start" if named else "flex-end"};{"margin-top:"+F(sc.get("reachpad",74))+";" if rc else ""}">{"".join(room(r) for r in sc["rooms"])}{rc}</div>'
+    if sc.get('caption'): out+=f'<div class="who" style="margin-top:{F(14)};opacity:.72">{esc(sc["caption"])}</div>'
     return f'<div class="scene">{out}</div>'
+
+def path_html(pt, s=1.0):
+    """A graha's backward walk drawn to scale on a ruler of degrees (v7, 13 Nov).
+    pt: left {sign, from}, right {sign, to} set the ruler; 'start' and 'turn' are [sign, degrees];
+    labels: start, cross_back, turn, cross_fwd as [date, words]; 'kind' is the graha; 'behind' names the sign off the left edge."""
+    Wd=912; Ht=470; m=34; L=pt['left']; Rg=pt['right']; span=(30-L['from'])+Rg['to']; k=(Wd-2*m)/span
+    X=lambda sign,deg: m+((deg-L['from']) if sign==L['sign'] else (30-L['from']+deg))*k
+    xd=X(Rg['sign'],0); xs=X(*pt['start']); xt=X(*pt['turn']); yu,yl,ym=150,262,206; yr=388
+    o=[]; fam="font-family='EB Garamond'"
+    # the two signs and the door between them
+    o.append(f"<text x='{(m+xd)/2:.0f}' y='44' text-anchor='middle' {fam} font-weight='500' font-size='36' letter-spacing='9' fill='{GOLD}'>{esc(L['sign']).upper()}</text>")
+    o.append(f"<text x='{(xd+Wd-m)/2:.0f}' y='44' text-anchor='middle' {fam} font-weight='500' font-size='36' letter-spacing='9' fill='{GOLD}'>{esc(Rg['sign']).upper()}</text>")
+    o.append(f"<line x1='{xd:.1f}' y1='62' x2='{xd:.1f}' y2='{yr}' stroke='{GOLD}' stroke-opacity='.6' stroke-width='1.6' stroke-dasharray='7 7'/>")
+    # ruler: a tick for every degree, a number every five
+    o.append(f"<line x1='{m}' y1='{yr}' x2='{Wd-m}' y2='{yr}' stroke='{GOLD}' stroke-opacity='.7' stroke-width='1.6'/>")
+    for j in range(int(span)+1):
+        deg=L['from']+j; sign=L['sign'] if deg<30 else Rg['sign']; dd=deg if deg<30 else deg-30; x=m+j*k; big=(dd%5==0)
+        o.append(f"<line x1='{x:.1f}' y1='{yr}' x2='{x:.1f}' y2='{yr+(18 if big else 9)}' stroke='{GOLD}' stroke-opacity='{.9 if big else .5}' stroke-width='{1.6 if big else 1.1}'/>")
+        if big: o.append(f"<text x='{x:.1f}' y='{yr+50}' text-anchor='middle' {fam} font-size='29' fill='{CREAM}' fill-opacity='.8'>{dd:.0f}°</text>")
+    # the walk: back along the upper line, the turn exactly at its degree, forward along the lower line
+    r_=ym-yu
+    o.append(f"<path class='pback' pathLength='1' d='M{xs:.1f},{yu} L{xt+r_:.1f},{yu} Q{xt:.1f},{yu} {xt:.1f},{ym}' fill='none' stroke='{AMBER}' stroke-width='3.4' stroke-linecap='round'/>")
+    o.append(f"<path class='pfwd' pathLength='1' d='M{xt:.1f},{ym} Q{xt:.1f},{yl} {xt+r_:.1f},{yl} L{Wd-m-22:.1f},{yl}' fill='none' stroke='{CREAM}' stroke-opacity='.9' stroke-width='3.4' stroke-linecap='round'/>")
+    o.append(f"<path class='pfm' d='M{Wd-m-24:.1f},{yl-11} L{Wd-m-4:.1f},{yl} L{Wd-m-24:.1f},{yl+11} Z' fill='{CREAM}' fill-opacity='.9'/>")
+    for xa in [xs-(xs-xt-r_)*f for f in (.3,.62)]: o.append(f"<path class='pbm' data-x='{xa:.0f}' d='M{xa+9:.1f},{yu-10} L{xa-9:.1f},{yu} L{xa+9:.1f},{yu+10}' fill='none' stroke='{AMBER}' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/>")
+    xf=xt+r_+(Wd-m-xt-r_)*.55; o.append(f"<path class='pfm' d='M{xf-9:.1f},{yl-10} L{xf+9:.1f},{yl} L{xf-9:.1f},{yl+10}' fill='none' stroke='{CREAM}' stroke-opacity='.9' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/>")
+    dot=lambda x,y,c: f"<circle cx='{x:.1f}' cy='{y}' r='13' fill='{c}' opacity='.22'/><circle cx='{x:.1f}' cy='{y}' r='6.5' fill='{c}'/>"
+    o.append(dot(xs,yu,AMBER)+dot(xd,yu,AMBER)+dot(xd,yl,CREAM))
+    def lab(x,y,anchor,date,words,cls):
+        return (f"<g class='plab {cls}'><text x='{x:.1f}' y='{y}' text-anchor='{anchor}' font-family='Cormorant Garamond' font-weight='600' font-size='40' fill='{CREAM}'>{esc(date)}</text>"
+                f"<text x='{x:.1f}' y='{y+33}' text-anchor='{anchor}' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='31' fill='{AMBER}'>{esc(words)}</text></g>")
+    lb=pt['labels']
+    o.append(lab(min(xs,Wd-m-96),yu-58,'middle',*lb['start'],'l1'))
+    o.append(lab(xd+4,yu-58,'middle',*lb['cross_back'],'l2'))
+    o.append(lab(xt-52,ym-10,'end',*lb['turn'],'l3'))
+    o.append(lab(xd+26,yl+50,'start',*lb['cross_fwd'],'l4'))
+    if pt.get('behind'): o.append(f"<text x='{m}' y='{yl+62}' text-anchor='start' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='29' fill='{CREAM}' fill-opacity='.72'>◂ {esc(pt['behind'])}</text>")
+    R_=pt.get('r',34)
+    ob=f'<div class="porb" data-x0="{xs:.1f}" data-xt="{xt:.1f}" data-xd="{xd:.1f}" data-yu="{yu}" data-ym="{ym}" data-yl="{yl}" data-r="{r_}" style="position:absolute;left:{xt:.1f}px;top:{ym}px;width:0;height:0"><div style="position:absolute;left:0;top:0;transform:translate(-50%,-50%)">{orb({"kind":pt["kind"],"r":R_})}</div></div>'
+    return (f'<div class="pathd" style="position:relative;width:{Wd}px;height:{Ht}px;zoom:{s:.3f};margin:{pt.get("mt",6)}px auto {pt.get("mb",0)}px;text-align:left">'
+            f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}</svg>{ob}</div>')
 
 def slide_html(sp, s=1.0):
     F=lambda px: f'{px*s:.1f}px'
@@ -367,6 +452,7 @@ def slide_html(sp, s=1.0):
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
     # a row of grahas on one slide (the characters on stage); a negative orbgap lets them crowd together
     if sp.get('scene'): H.append(scene_html(sp['scene'],s))
+    if sp.get('path') and sp.get('pathpos','top')=='top': H.append(path_html(sp['path'],s))
     if sp.get('orbs'):
         row=orbrow(sp["orbs"], sp.get("orbspacing"), sp.get("orbgap",18))
         if sp.get('mirror'):
@@ -377,12 +463,27 @@ def slide_html(sp, s=1.0):
             H.append(f'<div style="margin-bottom:22px">{row}</div>')
     bs=f'font-size:{T(sp["bodysize"])};' if sp.get('bodysize') else ''
     if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:"+T(sp["labelsize"]) if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
-    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg','compare','cast','bodymap'):
+    if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg','compare','cast','bodymap','nsteps','narrow'):
         if sp.get('title'):
             cls=sp.get('titleclass') or {'cover':'h1','cta':'h1'}.get(t,'h2' if len(clean(sp['title']))<26 else 'h3')
             ts=f' style="font-size:{F(sp["titlesize"])}"' if sp.get('titlesize') else ''
             H.append(f'<div class="t {cls}"{ts}>{rich(sp["title"])}</div>')
-        if sp.get('subtitle'): H.append(f'<div class="ti sub" style="margin-top:22px">{esc(sp["subtitle"])}</div>')
+        if sp.get('subtitle'): H.append(f'<div class="ti sub" style="margin-top:22px;{"font-size:"+F(sp["subsize"])+";" if sp.get("subsize") else ""}">{rich(sp["subtitle"]).replace(chr(60)+"span class="+chr(34)+"ti"+chr(34)+">",chr(60)+"span style="+chr(34)+"color:"+CREAM+chr(34)+">")}</div>')
+    if sp.get('lead'): H.append(f'<div class="p" style="margin-top:{F(20)};font-size:{T(sp.get("leadsize",36))};line-height:1.3">{rich(sp["lead"])}</div>')
+    if sp.get('contents'):
+        H.append('<div class="contents">'+''.join(f'<div><b>{k+1}</b>{esc(c)}</div>' for k,c in enumerate(sp['contents']))+'</div>')
+    if sp.get('path') and sp.get('pathpos')=='mid': H.append(path_html(sp['path'],s))
+    if t=='nsteps':
+        # numbered steps, left aligned: a small tag line, a head and a line under it; "n" overrides the number (e.g. the rule's own number)
+        H.append(f'<div style="width:100%;margin-top:{F(sp.get("stepsmt",22))}">'+''.join(
+            f'<div class="nstep"><b>{esc(str(st.get("n",k+1)))}</b><div style="flex:1;min-width:0">'
+            +(f'<div class="tg">{esc(st["tag"])}</div>' if st.get('tag') else '')
+            +f'<div class="hd" style="{"font-size:"+F(sp["headsize"])+";" if sp.get("headsize") else ""}">{rich(st["head"])}</div>'
+            +(f'<div class="ln" style="{bs}">{rich(st["line"])}</div>' if st.get('line') else '')+'</div></div>' for k,st in enumerate(sp['steps']))+'</div>')
+    if t=='narrow':
+        # how the timing narrows: each line shorter than the one above
+        n_=len(sp['items'])
+        H.append('<div class="narrow">'+''.join(f'<div class="it"><div class="bar" style="width:{(86-k*(66/max(1,n_-1))):.0f}%"></div><div class="hd">{rich(a)}</div><div class="ln" style="{bs}">{rich(b)}</div></div>' for k,(a,b) in enumerate(sp['items']))+'</div>')
     if t=='quote':
         H.append('<div class="rule"></div>')
         qs=f'font-size:{F(sp["quotesize"])};line-height:1.12;' if sp.get('quotesize') else ''
@@ -659,7 +760,7 @@ def frame(i=None,n=None):
     for x,y,dx,dy in [(m,m,1,1),(1080-m,m,-1,1),(m,1350-m,1,-1),(1080-m,1350-m,-1,-1)]:
         o.append(f'<path d="M{x},{y+dy*L} V{y} H{x+dx*L}" fill="none" stroke="{GOLD}" stroke-opacity=".42" stroke-width="1.4"/><circle cx="{x}" cy="{y}" r="2.4" fill="{AMBER}" opacity=".85"/>')
     if n and n>1 and i:
-        gap=30 if n<=12 else 24; W=(n-1)*gap; x0=540-W/2; y=1350-170
+        gap=30 if n<=12 else (24 if n<=16 else 20); W=(n-1)*gap; x0=540-W/2; y=1350-170
         o.append(f'<line x1="{x0-54}" y1="{y}" x2="{x0+W+54}" y2="{y}" stroke="{GOLD}" stroke-opacity=".34" stroke-width="1.1"/>')
         for k in range(n):
             x=x0+k*gap
@@ -667,8 +768,13 @@ def frame(i=None,n=None):
             elif k+1<i: o.append(f'<circle cx="{x}" cy="{y}" r="3.6" fill="{CREAM}" opacity=".8"/>')
             else: o.append(f'<circle class="bd-next" cx="{x}" cy="{y}" r="3.4" fill="{BG}" stroke="{GOLD}" stroke-opacity=".7" stroke-width="1.1"/>')
     return f'<svg class="frame" width="1080" height="1350">{"".join(o)}</svg>'
-def page(inner,kicker,s,starfield=None,url=FOOT_URL,dec='',i=None,n=None):
-    return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide">{dec}{starfield or ''}{GRAIN}{frame(i,n)}<div class="kick"><i></i><span>{esc(kicker)}</span><i class="r"></i></div><div class="body">{inner}</div><div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
+SWIPE=f'<div class="swipe"><span>Swipe to read</span><svg width="78" height="30" viewBox="0 0 78 30"><path d="M2,15 H72 M58,4 L73,15 L58,26" fill="none" stroke="{AMBER}" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>'
+def tabs_html(parts, cur):
+    if not parts: return ''
+    return '<div class="tabs">'+''.join(f'<span class="tab{" on" if k+1==cur else (" done" if (cur and k+1<cur) else "")}"><b>{k+1}</b>{esc(p_)}</span>' for k,p_ in enumerate(parts))+'</div>'
+def page(inner,kicker,s,starfield=None,url=FOOT_URL,dec='',i=None,n=None,parts=None,part=None,swipe=False):
+    tb=tabs_html(parts,part) if (parts and part is not None) else ''
+    return f'''<!doctype html><html><head><meta charset="utf-8">{FONTS}<style>{css(s)}</style></head><body><div class="slide{" tabbed" if tb else ""}">{dec}{starfield or ''}{GRAIN}{frame() if swipe else frame(i,n)}<div class="kick"><i></i><span>{esc(kicker)}</span><i class="r"></i></div>{tb}<div class="body">{inner}</div>{SWIPE if swipe else ''}<div class="foot"><div class="w">Sutram</div><div class="u">{url}</div></div></div></body></html>'''
 
 HIDE_GLINTS="""()=>{const R=[];const add=(r,p)=>{if(r.width>0&&r.height>0)R.push([r.left-p,r.top-p,r.right+p,r.bottom+p])};
 const w=document.createTreeWalker(document.querySelector('.slide'),NodeFilter.SHOW_TEXT);let n;const rg=document.createRange();
@@ -685,7 +791,7 @@ def build_slide(pg, spec, i, out):
     """Lay slide i out at the largest text scale that fits and leave it loaded in the page. Returns (scale, overflow)."""
     pid=spec['id']; sp=spec['slides'][i-1]; kicker=sp.get('kicker',spec.get('kicker','Sutram'))
     for s in (1,.96,.92,.88,.84,.8,.76,.72,.68):
-        html=page(slide_html(sp,s),kicker,s,sf_for(spec,i),dec=dec_for(spec,i),i=i,n=len(spec['slides'])); fn=os.path.join(out,f'_s{i}.html'); open(fn,'w').write(html)
+        html=page(slide_html(sp,s),kicker,s,sf_for(spec,i),dec=dec_for(spec,i),i=i,n=len(spec['slides']),parts=spec.get('parts'),part=sp.get('part'),swipe=bool(sp.get('swipe'))); fn=os.path.join(out,f'_s{i}.html'); open(fn,'w').write(html)
         pg.goto('file://'+fn); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(250)
         ov=pg.evaluate("()=>{const b=document.querySelector('.body');return b.scrollHeight-b.clientHeight}")
         if ov<=0: break
