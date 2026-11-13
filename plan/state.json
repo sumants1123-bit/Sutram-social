@@ -374,12 +374,12 @@
    "buffer_id": "6af3563aeca53e2861f604ce"
   },
   {
-   "id": "reading-2026-11-13-ask2",
+   "id": "reading-2026-11-13-ask3",
    "when": "2026-11-13T18:30:00-05:00",
    "title": "Read the sky: this weekend with five Nadi rules (weekly capstone 1)",
    "via": "buffer-instagram",
    "buffer_id": "6af357da94964d984f081b14",
-   "note": "13 Nov: rebuilt in the four-part format, 14 slides, moving cover; assets at commit 54c6e0f"
+   "note": "13 Nov 5:10 PM: rebuilt shorter, 9 slides with a Leo degree ruler; assets at commit decd841"
   },
   {
    "id": "lesson15-ask3",
@@ -387,7 +387,15 @@
    "title": "Lesson 15 remade in the four-part format: Nadi rule 5, looking back (16 slides, slides 1 and 6 move)",
    "via": "buffer-instagram",
    "buffer_id": "6af783a3d16af15d4dd52b81",
-   "note": "posted now at Sumant's word after he deleted the old one; assets at commit 95b84c0; section labels at size 33, at most 24 characters"
+   "note": "posted now at Sumant's word after he deleted the old one; assets at commit 95b84c0; section labels at size 33, at most 24 characters · deleted by Sumant 13 Nov 4:53 PM; replaced by lesson15-ask4"
+  },
+  {
+   "id": "lesson15-ask4",
+   "when": "2026-11-13T17:05:00-05:00",
+   "title": "Lesson 15, short version: Nadi rule 5, looking back (10 slides, slides 1 and 5 move)",
+   "via": "buffer-instagram",
+   "buffer_id": "6af7897cd16af15d4dd6f3f8",
+   "note": "assets at commit 7430f93; no real case; timeline of who walks backward"
   }
  ],
  "retired": [
@@ -954,6 +962,17 @@
   },
   "tools": "render.py: tabs, names/note/reach/caption/conn/connx/reachpad on scenes, path diagram, nsteps, narrow, contents, lead, swipe; background planets hide when they sit on text. motion.py: reach arc draws, path walk, swipe arrow. preview.py: swipe preview page for a private Artifact. buffer_assets.py: --videos 1,6. Never run two motion.py renders of the same post at once: they share one frame folder",
   "example": "Lesson 15 remade: preview https://claude.ai/artifact/6VzbM1ZqweAJJ972qZM8qv; Sumant deleted the old post and had the remake posted on 13 Nov about 4:40 PM",
-  "done_13nov": "tonight's reading, Saturday's Sutra and Sunday's Week ahead rebuilt and swapped in Buffer on Instagram; Saturday's and Sunday's X posts swapped too; the Sunday batch task carries the format"
+  "done_13nov": "tonight's reading, Saturday's Sutra and Sunday's Week ahead rebuilt and swapped in Buffer on Instagram; Saturday's and Sunday's X posts swapped too; the Sunday batch task carries the format",
+  "round2": {
+   "said": "Sumant, Fri 13 Nov 4:53 PM, after the 16-slide Lesson 15: delete the real case section from this post and all posts going forward; still too long and too much text; add spacing; he likes the retrograde walk diagram and wants that kind of design used more to explain concepts; shorten and categorise better; apply to future posts.",
+   "rules": [
+    "no real case part in any post; The sky that day (a whole real-case series) is on hold until he says keep or drop",
+    "lesson 9 to 10 slides: cover, The rule (diagram + one line; How to read it as three questions), Today's sky (a to-scale diagram, the rule on a rooms diagram, The reading as three dated steps), Your chart (two lookups), closing",
+    "one colour per part via render.py PART_COLORS (amber, blue, sage, lavender) on tab, label and step numbers",
+    "at least one to-scale diagram per post besides the cover: timeline, ruler or path",
+    "two or three short lines per slide next to a diagram; captions about 1,200 to 1,600 characters"
+   ],
+   "posted": "lesson15-ask4 posted 13 Nov about 5:05 PM (Buffer 6af7897cd16af15d4dd6f3f8) after he deleted lesson15-ask3; reading-2026-11-13-ask3 swapped into Buffer 6af357da94964d984f081b14 for 6:30 PM; weekend Sutra and Week ahead re-rendered with part colours (commit 80e910e) on Instagram and X"
+  }
  }
 }
