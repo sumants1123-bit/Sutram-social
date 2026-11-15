@@ -400,15 +400,15 @@
   {
    "id": "sun-scorpio-swap-ask",
    "when": "2026-11-15T12:00:00-05:00",
-   "title": "Sankranti: the Sun enters Scorpio and swaps houses with Mars (10 slides, slides 1 and 5 move)",
+   "title": "Current sky: the Sun moves into Scorpio and exchanges signs with Mars (10 slides, slides 1 and 3 move)",
    "via": "buffer-instagram",
    "buffer_id": "6af9a43de86a5789a60c27d7",
-   "note": "made at Sumant's word 15 Nov; assets at commit 14b46d2; four parts (the sky, the swap, who adds what, the result); teaches the Nadi swap in three steps: sit in each other's signs, send each one home, see who it meets; last slide says 'Wednesday · Rule 8, swapped houses' · replaced 15 Nov 8:33 AM with the cut-down 7-slide version (commit 2b374ad, slides 1 and 4 move); last slide now says Next: Rule 8 on Wednesday"
+   "note": "made at Sumant's word 15 Nov; assets at commit 14b46d2; four parts (the sky, the swap, who adds what, the result); teaches the Nadi swap in three steps: sit in each other's signs, send each one home, see who it meets; last slide says 'Wednesday · Rule 8, swapped houses' · replaced 15 Nov 8:33 AM with the cut-down 7-slide version (commit 2b374ad, slides 1 and 4 move); last slide now says Next: Rule 8 on Wednesday · rebuilt 15 Nov 8:55 AM at commit ed120a3 after Sumant asked for a clear cover, animation and the full Nadi reading"
   },
   {
    "id": "sun-scorpio-swap-x",
    "when": "2026-11-15T13:00:00-05:00",
-   "title": "The Sun and Mars swap houses, on X (slides 1, 3, 4, 6 of the cut-down version)",
+   "title": "Current sky: the Sun and Mars exchange signs, on X (slides 1, 2, 3, 9)",
    "via": "buffer-x",
    "buffer_id": "6af9a447e86a5789a60c2d1c"
   }
@@ -994,15 +994,18 @@
   "said": "Sumant, 15 Nov: a post on the Sun's crossing into Scorpio and its swap with Mars, taught visually, so it also shows how Sutram teaches (he plans the Sutram course next); and a promo post for Your 2027 with real pages from the report, the price and one step",
   "lesson_18": "Wed 18 Nov, rule 8 swapped houses, follows on from Sunday's swap post: same three steps and the same Sun and Mars example (16 Nov 9:13 AM to 15 Dec 11:55 PM Toronto); go one step further, do not repeat its slides",
   "tools": "render.py: 'cross' (a graha walking over the door between two signs on a degree ruler), 'shot' (a real picture in a thin frame; a list stacks; shotpos top puts it above the title), reach links take a fourth item 'both' for a two-headed arc. motion.py: 'lift' makes two grahas pass each other when they trade rooms; room notes fade while grahas stand in their 'from' places",
-  "promo_your_2027": "Draft v2 made 15 Nov after he called v1 mediocre: 6 slides in the report's own look (dark cover and price slide like the report cover, cream inner slides like its pages), built by the scratch script promo/build_promo.py, not render.py. Moving cover: the report clock running through 2027. HELD: not pushed, not scheduled; files listed in .git/info/exclude. Waits for his word on the one step (placeholder: DM us the word 2027). Proposed slot Tue 17 Nov 6:30 PM on Instagram: keep that slot and one Buffer place free. Clock and calendar come from a made-up chart with his rising sign; the text pages come from his sample"
+  "promo_your_2027": "Draft v2 made 15 Nov (cover now has a NEW · YEAR REPORT pill and the line Your year, read from your own birth chart) after he called v1 mediocre: 6 slides in the report's own look (dark cover and price slide like the report cover, cream inner slides like its pages), built by the scratch script promo/build_promo.py, not render.py. Moving cover: the report clock running through 2027. HELD: not pushed, not scheduled; files listed in .git/info/exclude. Waits for his word on the one step (placeholder: DM us the word 2027). Proposed slot Tue 17 Nov 6:30 PM on Instagram: keep that slot and one Buffer place free. Clock and calendar come from a made-up chart with his rising sign; the text pages come from his sample"
  },
  "rules_15nov": {
   "said": "Sumant, 15 Nov, angry, after telling me many times: too much text on every slide. The swap cover had about 50 words and a contents list; 'who has this much attention span'. The 2027 promo was 'lame, mediocre design'",
-  "limits": "Hard, enforced by tools/render.py (exits 3 and lists the slides): cover at most 10 words, other slides at most 14, at most 8 slides. Counted on what the slide shows (titles, lines, diagram labels), not the kicker, footer or Swipe",
+  "limits": "Enforced by tools/render.py (exits 3): words of prose at most 14 on a cover and 18 on other slides; words on diagrams at most 14; at most 10 slides",
   "cover": "A picture, a title and one short line, then Swipe. No contents list, no part labels, no label above the title",
   "slides": "One picture and one short line each. No label + title + body + closing stacks. Explanation goes in the caption",
   "captions": "About 1,000 to 1,200 characters in short plain paragraphs, no PART headers (the slides have no parts now)",
   "supersedes": "rules_13nov format (contents on the cover, colour-coded parts, captions 1,200 to 1,600 with PART headers)",
-  "example": "sun-scorpio-swap at commit 2b374ad: 7 slides"
+  "example": "sun-scorpio-swap at commit ed120a3",
+  "said_839": "Sumant, 15 Nov 8:39: likes the minimal look; wants a moving visual like the retrograde walk (Lesson 15, Venus walking backward on a degree ruler); every cover needs a clear label and a plain title; 'Swapped houses' and 'Sun and Mars, from Monday' were vague; the reading must explain, by Bhrigu Nadi, how each graha behaves where it sits and in its own sign, and how the results come. 'Forget the preconditions, make the best design'",
+  "covers": "Every cover: a pill at the top that names the kind of post (CURRENT SKY for transit news, NADI RULE n for lessons, NEW for products), then a plain literal title that says what happens ('The Sun moves into Scorpio'), then one plain line. No metaphor titles",
+  "sky_posts": "Current-sky posts: the real sky to scale and moving on the cover (render.py 'strip', tools/strip_motion.py), then the Nadi reading in full: each graha where it sits in the sky, then read in its own sign, who sits with it, then what to do. Example: sun-scorpio-swap at ed120a3 (10 slides)"
  }
 }
