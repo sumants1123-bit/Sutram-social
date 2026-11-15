@@ -16,7 +16,7 @@ def words(sp):
     if sp.get('contents'): out.append('Parts: '+', '.join(sp['contents']))
     if sp.get('cross'):
         cr=sp['cross']; out+=[f"{cr['here'][0]} {cr['here'][1]}" if cr.get('here') else None, f"{cr['door'][0]} {cr['door'][1]}" if cr.get('door') else None, cr.get('pace'), cr.get('end')]
-    if sp.get('shot'): out.append(sp['shot'].get('alt') or sp['shot'].get('cap'))
+    if sp.get('shot'): out+=[x.get('alt') or x.get('cap') for x in (sp['shot'] if isinstance(sp['shot'],list) else [sp['shot']])]
     if sp.get('path'):
         pl=sp['path'].get('labels',{}); out+=[f'{v[0]} {v[1]}' for v in pl.values() if v]
     if t=='nsteps': out+=[' '.join(x for x in (st.get('tag'),st.get('head'),st.get('line')) if x) for st in sp['steps']]

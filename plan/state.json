@@ -396,6 +396,21 @@
    "via": "buffer-instagram",
    "buffer_id": "6af7897cd16af15d4dd6f3f8",
    "note": "assets at commit 7430f93; no real case; timeline of who walks backward"
+  },
+  {
+   "id": "sun-scorpio-swap-ask",
+   "when": "2026-11-15T12:00:00-05:00",
+   "title": "Sankranti: the Sun enters Scorpio and swaps houses with Mars (10 slides, slides 1 and 5 move)",
+   "via": "buffer-instagram",
+   "buffer_id": "6af9a43de86a5789a60c27d7",
+   "note": "made at Sumant's word 15 Nov; assets at commit 14b46d2; four parts (the sky, the swap, who adds what, the result); teaches the Nadi swap in three steps: sit in each other's signs, send each one home, see who it meets; last slide says 'Wednesday · Rule 8, swapped houses'"
+  },
+  {
+   "id": "sun-scorpio-swap-x",
+   "when": "2026-11-15T13:00:00-05:00",
+   "title": "The Sun and Mars swap houses, on X (slides 1, 3, 5, 7)",
+   "via": "buffer-x",
+   "buffer_id": "6af9a447e86a5789a60c2d1c"
   }
  ],
  "retired": [
@@ -974,5 +989,11 @@
    ],
    "posted": "lesson15-ask4 posted 13 Nov about 5:05 PM (Buffer 6af7897cd16af15d4dd6f3f8) after he deleted lesson15-ask3; reading-2026-11-13-ask3 swapped into Buffer 6af357da94964d984f081b14 for 6:30 PM; weekend Sutra and Week ahead re-rendered with part colours (commit 80e910e) on Instagram and X"
   }
+ },
+ "notes_15nov": {
+  "said": "Sumant, 15 Nov: a post on the Sun's crossing into Scorpio and its swap with Mars, taught visually, so it also shows how Sutram teaches (he plans the Sutram course next); and a promo post for Your 2027 with real pages from the report, the price and one step",
+  "lesson_18": "Wed 18 Nov, rule 8 swapped houses, follows on from Sunday's swap post: same three steps and the same Sun and Mars example (16 Nov 9:13 AM to 15 Dec 11:55 PM Toronto); go one step further, do not repeat its slides",
+  "tools": "render.py: 'cross' (a graha walking over the door between two signs on a degree ruler), 'shot' (a real picture in a thin frame; a list stacks; shotpos top puts it above the title), reach links take a fourth item 'both' for a two-headed arc. motion.py: 'lift' makes two grahas pass each other when they trade rooms; room notes fade while grahas stand in their 'from' places",
+  "promo_your_2027": "Draft made 15 Nov: 7 slides, moving cover. HELD: not pushed, not scheduled. Local files only (specs/your-2027-promo.json, captions/your-2027-promo.txt, posts/your-2027-promo/), listed in .git/info/exclude so they stay out of commits until he says yes. Waits for his word on the one step (placeholder on the last slide and in the caption: DM us the word 2027). Proposed slot Tue 17 Nov 6:30 PM on Instagram: keep that slot and one Buffer place free. The cover clock and the calendar come from a made-up chart; the text pages come from his sample"
  }
 }

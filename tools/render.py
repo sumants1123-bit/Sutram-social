@@ -485,7 +485,9 @@ def cross_html(cr, s=1.0):
             f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}</svg>{ob}</div>')
 
 def shot_html(sh, s=1.0):
-    """A real picture (a page of a report, a screen) in a thin frame. sh: file (repo path), w (px on the slide), tilt (degrees), cap."""
+    """A real picture (a page of a report, a screen) in a thin frame. sh: file (repo path), w (px on the slide), tilt (degrees), cap.
+    A list of these stacks them, one under the other (two excerpts of one page)."""
+    if isinstance(sh, list): return ''.join(shot_html(x, s) for x in sh)
     w=sh.get('w',760); src='file://'+os.path.join(REPO,sh['file']); tilt=sh.get('tilt',0)
     cap=f'<div class="src" style="margin-top:{18*s:.1f}px;letter-spacing:.14em">{esc(sh["cap"])}</div>' if sh.get('cap') else ''
     return (f'<div style="margin:{sh.get("mt",26)*s:.1f}px auto {sh.get("mb",0)*s:.1f}px;line-height:0;{"transform:rotate("+str(tilt)+"deg);" if tilt else ""}">'
@@ -569,6 +571,7 @@ def slide_html(sp, s=1.0):
     if sp.get('orb'): H.append(f'<div style="margin-bottom:24px">{orb(sp["orb"])}</div>')
     # a row of grahas on one slide (the characters on stage); a negative orbgap lets them crowd together
     if sp.get('scene'): H.append(scene_html(sp['scene'],s))
+    if sp.get('shot') and sp.get('shotpos')=='top': H.append(shot_html(sp['shot'],s))
     if sp.get('path') and sp.get('pathpos','top')=='top': H.append(path_html(sp['path'],s))
     if sp.get('orbs'):
         row=orbrow(sp["orbs"], sp.get("orbspacing"), sp.get("orbgap",18))
@@ -591,7 +594,7 @@ def slide_html(sp, s=1.0):
         H.append('<div class="contents">'+''.join(f'<div><b style="border-color:{PART_COLORS[k%len(PART_COLORS)]};color:{PART_COLORS[k%len(PART_COLORS)]}">{k+1}</b>{esc(c)}</div>' for k,c in enumerate(sp['contents']))+'</div>')
     if sp.get('path') and sp.get('pathpos')=='mid': H.append(path_html(sp['path'],s))
     if sp.get('cross'): H.append(cross_html(sp['cross'],s))
-    if sp.get('shot'): H.append(shot_html(sp['shot'],s))
+    if sp.get('shot') and sp.get('shotpos')!='top': H.append(shot_html(sp['shot'],s))
     if sp.get('timeline'): H.append(timeline_html(sp['timeline'],s))
     if sp.get('ruler'): H.append(ruler_html(sp['ruler'],s))
     if t=='nsteps':
