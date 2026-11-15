@@ -93,6 +93,21 @@
    "url": "https://twitter.com/koham1323/status/2121008838245564727",
    "title": "The sky that day 1 on X",
    "buffer_id": "6af5fc7e845ed638c961fae1"
+  },
+  {
+   "id": "sun-scorpio-swap-x",
+   "when": "2026-11-15T09:08:51-05:00",
+   "url": "https://twitter.com/koham1323/status/2121968674093277273",
+   "title": "Current sky: the Sun moves into Scorpio and exchanges signs with Mars, on X",
+   "buffer_id": "6af9a447e86a5789a60c2d1c"
+  },
+  {
+   "id": "sun-scorpio-swap-ask",
+   "when": "2026-11-15T09:08:39-05:00",
+   "url": null,
+   "title": "Current sky: the Sun moves into Scorpio and exchanges signs with Mars (10 slides, Instagram)",
+   "buffer_id": "6af9a43de86a5789a60c27d7",
+   "note": "shared now at Sumant's word; assets at ed120a3"
   }
  ],
  "scheduled": [
@@ -403,14 +418,15 @@
    "title": "Current sky: the Sun moves into Scorpio and exchanges signs with Mars (10 slides, slides 1 and 3 move)",
    "via": "buffer-instagram",
    "buffer_id": "6af9a43de86a5789a60c27d7",
-   "note": "made at Sumant's word 15 Nov; assets at commit 14b46d2; four parts (the sky, the swap, who adds what, the result); teaches the Nadi swap in three steps: sit in each other's signs, send each one home, see who it meets; last slide says 'Wednesday · Rule 8, swapped houses' · replaced 15 Nov 8:33 AM with the cut-down 7-slide version (commit 2b374ad, slides 1 and 4 move); last slide now says Next: Rule 8 on Wednesday · rebuilt 15 Nov 8:55 AM at commit ed120a3 after Sumant asked for a clear cover, animation and the full Nadi reading"
+   "note": "made at Sumant's word 15 Nov; assets at commit 14b46d2; four parts (the sky, the swap, who adds what, the result); teaches the Nadi swap in three steps: sit in each other's signs, send each one home, see who it meets; last slide says 'Wednesday · Rule 8, swapped houses' · replaced 15 Nov 8:33 AM with the cut-down 7-slide version (commit 2b374ad, slides 1 and 4 move); last slide now says Next: Rule 8 on Wednesday · rebuilt 15 Nov 8:55 AM at commit ed120a3 after Sumant asked for a clear cover, animation and the full Nadi reading · published now at Sumant's word, 15 Nov 9:08 AM (was 12 PM)"
   },
   {
    "id": "sun-scorpio-swap-x",
    "when": "2026-11-15T13:00:00-05:00",
    "title": "Current sky: the Sun and Mars exchange signs, on X (slides 1, 2, 3, 9)",
    "via": "buffer-x",
-   "buffer_id": "6af9a447e86a5789a60c2d1c"
+   "buffer_id": "6af9a447e86a5789a60c2d1c",
+   "note": "published 15 Nov 9:08 AM at Sumant's word: https://twitter.com/koham1323/status/2121968674093277273"
   },
   {
    "id": "your-2027-promo",
@@ -418,7 +434,7 @@
    "title": "Your 2027 promo: 6 slides in the report's own look, moving cover; CA$39, one step DM us the word 2027",
    "via": "buffer-instagram",
    "buffer_id": "6af9bc8b76c23bf1c7844f36",
-   "note": "approved by Sumant 15 Nov 9:06 (he likes the DM step); assets at commit 7debc55; Instagram only. Tuesday therefore takes one more Instagram post at most. People who DM 2027 are handled by hand: Sumant takes birth details and payment, Claude makes each report with the kit"
+   "note": "approved by Sumant 15 Nov 9:06 (he likes the DM step); assets at commit 7debc55; Instagram only. Tuesday therefore takes one more Instagram post at most. Process (Sumant, 15 Nov 9:08): people DM the word 2027; Sumant takes their birth details and payment, then makes the report"
   }
  ],
  "retired": [
