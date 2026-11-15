@@ -480,6 +480,21 @@
    "title": "Philosophy: You are not your chart, on X",
    "via": "buffer-x",
    "buffer_id": "6af9c6e6918fe79d2eed1810"
+  },
+  {
+   "id": "dress-your-chart-launch",
+   "when": "2026-11-19T18:30:00-05:00",
+   "title": "Dress Your Chart launch: 7 slides in the reading's own look, swaying fabric cover, 4 sample pages, CA$13, DM us the word DRESS",
+   "via": "buffer-instagram",
+   "buffer_id": "6afa1db0ff465c57dab0645a",
+   "note": "assets at adc3965; asked by Sumant 15 Nov 3:54 PM ('post it sometime next week'); name may change before Thursday (he asked for name options): if he picks one, rerun scratch dress/build_dress.py with NAME, NAME1, WORD and edit both Buffer posts"
+  },
+  {
+   "id": "dress-your-chart-launch-x",
+   "when": "2026-11-19T19:00:00-05:00",
+   "title": "Dress Your Chart launch, on X (slides 1, 3, 6, 7)",
+   "via": "buffer-x",
+   "buffer_id": "6afa1db5ff465c57dab065be"
   }
  ],
  "retired": [
@@ -1116,5 +1131,5 @@
   "next": "phil-breath is next (Sat 28 Nov), then phil-eclipse (Sun 29 Nov), and so on down the library",
   "scheduled": "phil-observer Sat 21 Nov 6:30 PM and phil-not-your-chart Sun 22 Nov 10 AM (Instagram; X 30 minutes later). Next in the library: phil-breath"
  },
- "batch_16nov_overrides": "For the 16 to 22 Nov batch and after: Sumant's 15 Nov changes win over the 13 Nov format in the batch prompt. See rules_15nov (a pill naming the kind of post and a plain title on every cover, no contents list, one picture and one short line a slide, render.py word limits, captions about 1,000 to 1,200 characters without PART headers, current-sky posts show the sky moving and the full Nadi reading) and philosophy_series (Sat 21 Nov 6:30 PM phil-observer and Sun 22 Nov 10 AM phil-not-your-chart are already in Buffer). Tue 17 Nov 6:30 PM has the Your 2027 promo"
+ "batch_16nov_overrides": "For the 16 to 22 Nov batch and after: Sumant's 15 Nov changes win over the 13 Nov format in the batch prompt. See rules_15nov (a pill naming the kind of post and a plain title on every cover, no contents list, one picture and one short line a slide, render.py word limits, captions about 1,000 to 1,200 characters without PART headers, current-sky posts show the sky moving and the full Nadi reading) and philosophy_series (Sat 21 Nov 6:30 PM phil-observer and Sun 22 Nov 10 AM phil-not-your-chart are already in Buffer). Tue 17 Nov 6:30 PM has the Your 2027 promo. Thu 19 Nov 6:30 PM Instagram and 7 PM X hold the Dress Your Chart launch (added 15 Nov afternoon), so Thursday takes at most one more Instagram post, in the morning"
 }
