@@ -450,6 +450,36 @@
    "via": "buffer-instagram",
    "buffer_id": "6af9bc8b76c23bf1c7844f36",
    "note": "approved by Sumant 15 Nov 9:06 (he likes the DM step); assets at commit 7debc55; Instagram only. Tuesday therefore takes one more Instagram post at most. Process (Sumant, 15 Nov 9:08): people DM the word 2027; Sumant takes their birth details and payment, then makes the report"
+  },
+  {
+   "id": "phil-observer-ask",
+   "when": "2026-11-21T18:30:00-05:00",
+   "title": "Philosophy: Who is the observer? Two birds on one tree (9 slides, moving cover)",
+   "via": "buffer-instagram",
+   "buffer_id": "6af9c6d4e86a5789a6185a98",
+   "note": "assets at b05a172"
+  },
+  {
+   "id": "phil-observer-x",
+   "when": "2026-11-21T19:00:00-05:00",
+   "title": "Philosophy: Who is the observer? on X",
+   "via": "buffer-x",
+   "buffer_id": "6af9c6d7e86a5789a6185bd2"
+  },
+  {
+   "id": "phil-not-your-chart-ask",
+   "when": "2026-11-22T10:00:00-05:00",
+   "title": "Philosophy: You are not your chart (8 slides, moving cover)",
+   "via": "buffer-instagram",
+   "buffer_id": "6af9c6e2918fe79d2eed10f2",
+   "note": "assets at b05a172"
+  },
+  {
+   "id": "phil-not-your-chart-x",
+   "when": "2026-11-22T10:30:00-05:00",
+   "title": "Philosophy: You are not your chart, on X",
+   "via": "buffer-x",
+   "buffer_id": "6af9c6e6918fe79d2eed1810"
   }
  ],
  "retired": [
@@ -1083,7 +1113,8 @@
   ],
   "built": "All 20 made 15 Nov from tools/philosophy.py (text, captions, X text, pictures); moving covers from tools/anim_motion.py; render.py 'anim' is the keyframe engine. Post them in the library order; each is ready to schedule as is (Instagram: video slide 1 + images 2 to 8; X: four images named in the post's x_slides)",
   "slots": "2 a week while The sky that day is on hold: Saturday 6:30 PM and Sunday 10 AM on Instagram (both days otherwise have one post), X at 7 PM Saturday and 10:30 AM Sunday. If The sky that day comes back, move the Saturday one to Sunday 10 AM and the next to the following Saturday 10 AM only if that day has room; never a third Instagram post in a day",
-  "next": "phil-breath is next (Sat 28 Nov), then phil-eclipse (Sun 29 Nov), and so on down the library"
+  "next": "phil-breath is next (Sat 28 Nov), then phil-eclipse (Sun 29 Nov), and so on down the library",
+  "scheduled": "phil-observer Sat 21 Nov 6:30 PM and phil-not-your-chart Sun 22 Nov 10 AM (Instagram; X 30 minutes later). Next in the library: phil-breath"
  },
  "batch_16nov_overrides": "For the 16 to 22 Nov batch and after: Sumant's 15 Nov changes win over the 13 Nov format in the batch prompt. See rules_15nov (a pill naming the kind of post and a plain title on every cover, no contents list, one picture and one short line a slide, render.py word limits, captions about 1,000 to 1,200 characters without PART headers, current-sky posts show the sky moving and the full Nadi reading) and philosophy_series (Sat 21 Nov 6:30 PM phil-observer and Sun 22 Nov 10 AM phil-not-your-chart are already in Buffer). Tue 17 Nov 6:30 PM has the Your 2027 promo"
 }
