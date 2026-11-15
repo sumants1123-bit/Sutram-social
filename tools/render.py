@@ -391,12 +391,13 @@ def scene_html(sc, s=1.0):
         ws=[W*k*r.get('wide',1)*s for r in rooms]; xs=[]; x=0.0
         for w_ in ws: xs.append(x+w_/2); x+=w_+14*s
         tot=x-14*s; H=120*s; y0=H-5*s; o=''
-        for a,b,text in links:
-            x1,x2=xs[a],xs[b]; mid=(x1+x2)/2; d=-1 if x2<x1 else 1
-            o+=(f'<path class="rarc" pathLength="1" d="M{x1:.1f},{y0:.1f} C{x1:.1f},{26*s:.1f} {x2:.1f},{26*s:.1f} {x2:.1f},{y0-13*s:.1f}" fill="none" stroke="{AMBER}" stroke-width="{max(2.2,2.6*s):.1f}" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="0"/>'
+        for lk in links:
+            a,b,text=lk[:3]; both=len(lk)>3 and lk[3]=='both'   # "both": a head at each end, for two grahas that swap houses
+            x1,x2=xs[a],xs[b]; mid=(x1+x2)/2; d=-1 if x2<x1 else 1; ys=y0-13*s if both else y0
+            o+=(f'<path class="rarc" pathLength="1" d="M{x1:.1f},{ys:.1f} C{x1:.1f},{26*s:.1f} {x2:.1f},{26*s:.1f} {x2:.1f},{y0-13*s:.1f}" fill="none" stroke="{AMBER}" stroke-width="{max(2.2,2.6*s):.1f}" stroke-linecap="round" stroke-dasharray="1" stroke-dashoffset="0"/>'
                 f'<path class="rhead" d="M{x2-10*s:.1f},{y0-15*s:.1f} L{x2:.1f},{y0:.1f} L{x2+10*s:.1f},{y0-15*s:.1f} Z" fill="{AMBER}"/>'
-                f'<circle cx="{x1:.1f}" cy="{y0:.1f}" r="{4.5*s:.1f}" fill="{AMBER}"/>'
-                f'<text class="rlab" x="{mid:.1f}" y="{31*s:.1f}" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-weight="500" font-size="{31*s:.1f}" fill="{AMBER}">{esc(text)}</text>')
+                +(f'<path class="rhead" d="M{x1-10*s:.1f},{y0-15*s:.1f} L{x1:.1f},{y0:.1f} L{x1+10*s:.1f},{y0-15*s:.1f} Z" fill="{AMBER}"/>' if both else f'<circle cx="{x1:.1f}" cy="{y0:.1f}" r="{4.5*s:.1f}" fill="{AMBER}"/>')
+                +f'<text class="rlab" x="{mid:.1f}" y="{31*s:.1f}" text-anchor="middle" font-family="Cormorant Garamond" font-style="italic" font-weight="500" font-size="{31*s:.1f}" fill="{AMBER}">{esc(text)}</text>')
         return f'<svg class="reach" width="{tot:.0f}" height="{H:.0f}" viewBox="0 0 {tot:.0f} {H:.0f}" style="top:{41*s-H:.1f}px">{o}</svg>'
     out=''
     if sc.get('across'):
@@ -448,6 +449,47 @@ def path_html(pt, s=1.0):
     ob=f'<div class="porb" data-x0="{xs:.1f}" data-xt="{xt:.1f}" data-xd="{xd:.1f}" data-yu="{yu}" data-ym="{ym}" data-yl="{yl}" data-r="{r_}" style="position:absolute;left:{xt:.1f}px;top:{ym}px;width:0;height:0"><div style="position:absolute;left:0;top:0;transform:translate(-50%,-50%)">{orb({"kind":pt["kind"],"r":R_})}</div></div>'
     return (f'<div class="pathd" style="position:relative;width:{Wd}px;height:{Ht}px;zoom:{s:.3f};margin:{pt.get("mt",6)}px auto {pt.get("mb",0)}px;text-align:left">'
             f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}</svg>{ob}</div>')
+
+def cross_html(cr, s=1.0):
+    """A graha walking forward over the door between two signs, to scale on a ruler of degrees (v9, 15 Nov).
+    cr: left {sign, from}, right {sign, to} set the ruler; kind and at [sign, degrees] place the graha; days [[sign, deg], ...] are small
+    dots (one a day shows the pace); door [date, words] labels the crossing; here [date, words] labels the graha; end = words at the arrow."""
+    Wd=912; Ht=cr.get('h',400); m=34; L=cr['left']; Rg=cr['right']; span=(30-L['from'])+Rg['to']; k=(Wd-2*m)/span
+    X=lambda sign,deg: m+((deg-L['from']) if sign==L['sign'] else (30-L['from']+deg))*k
+    xd=X(Rg['sign'],0); xa=X(*cr['at']); yw=cr.get('yw',196); yr=Ht-70; o=[]; fam="font-family='EB Garamond'"
+    o.append(f"<text x='{(m+xd)/2:.0f}' y='44' text-anchor='middle' {fam} font-weight='500' font-size='36' letter-spacing='9' fill='{GOLD}'>{esc(L['sign']).upper()}</text>")
+    o.append(f"<text x='{(xd+Wd-m)/2:.0f}' y='44' text-anchor='middle' {fam} font-weight='500' font-size='36' letter-spacing='9' fill='{GOLD}'>{esc(Rg['sign']).upper()}</text>")
+    o.append(f"<line x1='{xd:.1f}' y1='62' x2='{xd:.1f}' y2='{yr}' stroke='{GOLD}' stroke-opacity='.6' stroke-width='1.6' stroke-dasharray='7 7'/>")
+    o.append(f"<line x1='{m}' y1='{yr}' x2='{Wd-m}' y2='{yr}' stroke='{GOLD}' stroke-opacity='.7' stroke-width='1.6'/>")
+    for j in range(int(span)+1):
+        deg=L['from']+j; dd=deg if deg<30 else deg-30; x=m+j*k; big=(dd%5==0)
+        o.append(f"<line x1='{x:.1f}' y1='{yr}' x2='{x:.1f}' y2='{yr+(18 if big else 9)}' stroke='{GOLD}' stroke-opacity='{.9 if big else .5}' stroke-width='{1.6 if big else 1.1}'/>")
+        if big: o.append(f"<text x='{x:.1f}' y='{yr+50}' text-anchor='middle' {fam} font-size='29' fill='{CREAM}' fill-opacity='.8'>{dd:.0f}°</text>")
+    # the road: walked part in amber up to the graha, the road ahead in cream
+    o.append(f"<path d='M{m+6:.1f},{yw} L{xa:.1f},{yw}' fill='none' stroke='{AMBER}' stroke-width='3.4' stroke-linecap='round'/>")
+    o.append(f"<path d='M{xa:.1f},{yw} L{Wd-m-22:.1f},{yw}' fill='none' stroke='{CREAM}' stroke-opacity='.9' stroke-width='3.4' stroke-linecap='round' stroke-dasharray='2 11'/>")
+    o.append(f"<path d='M{Wd-m-24:.1f},{yw-11} L{Wd-m-4:.1f},{yw} L{Wd-m-24:.1f},{yw+11} Z' fill='{CREAM}' fill-opacity='.9'/>")
+    for sg_,dg in cr.get('days',[]):
+        x=X(sg_,dg); o.append(f"<circle cx='{x:.1f}' cy='{yw}' r='5.5' fill='{AMBER if x<=xa else CREAM}' fill-opacity='{1 if x<=xa else .85}'/>")
+    o.append(f"<circle cx='{xd:.1f}' cy='{yw}' r='13' fill='{CREAM}' opacity='.22'/><circle cx='{xd:.1f}' cy='{yw}' r='6.5' fill='{CREAM}'/>")
+    def lab(x,y,anchor,date,words,col):
+        return (f"<text x='{x:.1f}' y='{y}' text-anchor='{anchor}' font-family='Cormorant Garamond' font-weight='600' font-size='40' fill='{CREAM}'>{esc(date)}</text>"
+                f"<text x='{x:.1f}' y='{y+33}' text-anchor='{anchor}' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='31' fill='{col}'>{esc(words)}</text>")
+    if cr.get('door'): o.append(lab(xd+18,yw-74,'start',*cr['door'],AMBER))
+    R_=cr.get('r',30)
+    if cr.get('here'): o.append(lab(xa-R_-22,yw-74,'end',*cr['here'],AMBER))
+    if cr.get('pace'): o.append(f"<text x='{m}' y='{yw+74}' text-anchor='start' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='31' fill='{CREAM}' fill-opacity='.78'>{esc(cr['pace'])}</text>")
+    if cr.get('end'): o.append(f"<text x='{Wd-m}' y='{yw+74}' text-anchor='end' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='31' fill='{CREAM}' fill-opacity='.78'>{esc(cr['end'])}</text>")
+    ob=f'<div style="position:absolute;left:{xa:.1f}px;top:{yw}px;width:0;height:0"><div style="position:absolute;left:0;top:0;transform:translate(-50%,-50%)">{orb({"kind":cr["kind"],"r":R_,"rings":False})}</div></div>'
+    return (f'<div class="crossd" style="position:relative;width:{Wd}px;height:{Ht}px;zoom:{s:.3f};margin:{cr.get("mt",10)}px auto {cr.get("mb",0)}px;text-align:left">'
+            f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}</svg>{ob}</div>')
+
+def shot_html(sh, s=1.0):
+    """A real picture (a page of a report, a screen) in a thin frame. sh: file (repo path), w (px on the slide), tilt (degrees), cap."""
+    w=sh.get('w',760); src='file://'+os.path.join(REPO,sh['file']); tilt=sh.get('tilt',0)
+    cap=f'<div class="src" style="margin-top:{18*s:.1f}px;letter-spacing:.14em">{esc(sh["cap"])}</div>' if sh.get('cap') else ''
+    return (f'<div style="margin:{sh.get("mt",26)*s:.1f}px auto {sh.get("mb",0)*s:.1f}px;line-height:0;{"transform:rotate("+str(tilt)+"deg);" if tilt else ""}">'
+            f'<img src="{src}" style="display:block;width:{w*s:.1f}px;height:auto;border-radius:{sh.get("radius",10)*s:.1f}px;border:1.6px solid rgba(217,165,122,.55);box-shadow:0 26px 70px rgba(0,0,0,.6),0 0 60px rgba(224,148,96,.14)"></div>{cap}')
 
 def timeline_html(tl, s=1.0):
     """Who walks backward, and when: one bar per graha on a calendar drawn to scale, with a line for today (v8, 13 Nov).
@@ -548,6 +590,8 @@ def slide_html(sp, s=1.0):
     if sp.get('contents'):
         H.append('<div class="contents">'+''.join(f'<div><b style="border-color:{PART_COLORS[k%len(PART_COLORS)]};color:{PART_COLORS[k%len(PART_COLORS)]}">{k+1}</b>{esc(c)}</div>' for k,c in enumerate(sp['contents']))+'</div>')
     if sp.get('path') and sp.get('pathpos')=='mid': H.append(path_html(sp['path'],s))
+    if sp.get('cross'): H.append(cross_html(sp['cross'],s))
+    if sp.get('shot'): H.append(shot_html(sp['shot'],s))
     if sp.get('timeline'): H.append(timeline_html(sp['timeline'],s))
     if sp.get('ruler'): H.append(ruler_html(sp['ruler'],s))
     if t=='nsteps':

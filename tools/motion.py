@@ -21,6 +21,7 @@ Slide key "motion" (all optional):
   "from":  {"rooms": [...]}          the scene before; grahas are matched by kind and rooms by sign name
   "enter": {"mercury": "ahead"}      a graha missing from "from" walks in from behind (the left); "ahead" brings it in from the right,
                                      for a graha walking backward out of the next sign
+  "lift": 80                         two grahas that swap rooms pass each other: the one walking ahead arcs over by this many px
 """
 import json, os, sys, shutil, subprocess, argparse
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
@@ -82,6 +83,7 @@ const seqs=[...document.querySelectorAll('.body .seq')]; seqs.forEach(g=>g.__o=+
 const pulses=[...document.querySelectorAll('.body .pulse')];
 const arcs=[...document.querySelectorAll('.body svg.reach')].map(sv=>({a:[...sv.querySelectorAll('.rarc')],h:[...sv.querySelectorAll('.rhead')],l:[...sv.querySelectorAll('.rlab')]}));
 const swp=document.querySelector('.swipe svg');
+const rnotes=[...document.querySelectorAll('.body > .scene .rnote')];   // a room's note belongs to the end of a walk: it fades while the grahas stand where they were
 // a path slide: the graha walks its road, the stops light as it passes
 const pd=document.querySelector('.body .pathd'); let P=null;
 if(pd){const o=pd.querySelector('.porb'), d=o.dataset, n=k=>+d[k]; P={o,x0:n('x0'),xt:n('xt'),xd:n('xd'),yu:n('yu'),ym:n('ym'),yl:n('yl'),r:n('r'),back:pd.querySelector('.pback'),fwd:pd.querySelector('.pfwd'),lab:k=>pd.querySelector('.plab.'+k)};
@@ -94,13 +96,14 @@ window.__frame=(a)=>{const tt=a.tt, t=tt*T;
   const br1=(1-Math.cos(TAU*tt))/2, br2=(1-Math.cos(2*TAU*tt))/2, sw=Math.sin(TAU*tt);
   const g=!glide?0:(t<.5?0:t<1.2?ez((t-.5)/.7):t<2.2?1:t<4.5?1-ez((t-2.2)/2.3):0), arc=Math.sin(Math.PI*g);
   orbs.forEach(o=>{const k=o.k, R=o.R, c=o.c; let x=0, y=(k%2?-1:1)*3*Math.sin(TAU*(1+k%2)*tt), op=1;
-    if(glide&&(o.gx||o.gy)){x+=o.gx*g/o.sc; y+=o.gy*g/o.sc; if(o.enter)op=1-g; else if(o.gx<0)y-=Math.min(30,Math.abs(o.gx)*.42)*arc/o.sc}
+    if(glide&&(o.gx||o.gy)){x+=o.gx*g/o.sc; y+=o.gy*g/o.sc; if(o.enter)op=1-g; else if(o.gx<0)y-=(cfg.lift||Math.min(30,Math.abs(o.gx)*.42))*arc/o.sc; else if(cfg.lift&&o.gx>0&&Math.abs(o.gx)>40)y+=cfg.lift*.35*arc/o.sc}
     o.sv.style.transform=`translate(${x.toFixed(2)}px,${y.toFixed(2)}px)`; o.sv.style.opacity=op.toFixed(3);
     if(o.glow)o.glow.setAttribute('opacity',(o.g0*(1+.38*(k%2?br1:br2))).toFixed(3));
     if(o.kind==='jupiter'){const d=o.sv.querySelector('.jdrift'); if(d)d.setAttribute('dx',(R*.45*sw).toFixed(2)); const s=o.sv.querySelector('.jspot'); if(s){let off=2.6*R*tt; if(.30*R+off>1.3*R)off-=2.6*R; s.setAttribute('transform',`translate(${off.toFixed(2)} 0)`)}}
     else if(o.kind==='ketu'||o.kind==='rahu'){const dir=o.kind==='ketu'?1:-1, cr=o.sv.querySelector('.ncor'), nb=o.sv.querySelector('.nbead'); if(cr)cr.setAttribute('transform',`rotate(${(dir*26.738*tt).toFixed(3)} ${c} ${c})`); if(nb)nb.setAttribute('transform',`rotate(${(dir*360*tt).toFixed(2)} ${c} ${c})`)}
     else if(o.kind==='venus'||o.kind==='mars'){const d=o.sv.querySelector('.drift'); if(d)d.setAttribute('transform',`translate(${(R*.09*sw).toFixed(2)} 0)`)}
     else if(o.kind==='sun'&&o.rings){const u=(2*tt)%1; o.rings.forEach((r,j)=>{const nx=o.rings[j+1]; r.e.setAttribute('r',(R*(r.f+.5*u)).toFixed(2)); r.e.setAttribute('stroke-opacity',(r.o+((nx?nx.o:0)-r.o)*u).toFixed(3))})}});
+  if(glide)rnotes.forEach(e=>e.style.opacity=(1-g).toFixed(3));
   all.forEach(r=>r.__e=0);
   steps.forEach((s,k)=>{const a0=t0+k*L, e=bump(t,a0,a0+L+.25,.35,.6); s.room.__e=Math.max(s.room.__e,e); const sp=sparks[k];
     if(sp){const d=Math.min(.9,L*.6), u=cl((t-(a0-.2))/d,0,1), v=ez(u); sp.e.style.left=(sp.p[0]+(sp.q[0]-sp.p[0])*v).toFixed(1)+'px'; sp.e.style.top=(sp.p[1]+(sp.q[1]-sp.p[1])*v).toFixed(1)+'px'; sp.e.style.opacity=(u>0&&u<1)?Math.pow(Math.sin(Math.PI*u),.5).toFixed(3):'0'}});
@@ -140,7 +143,7 @@ def motion(spec_path, slide=1, secs=8.0, fps=30, dsf=2, preview=None):
                 if k in (sp.get('scene') or {}) and k not in fs: fs[k] = sp['scene'][k]
             from_html = R.scene_html(fs, s)
         pg.add_style_tag(content=CSS)
-        info = pg.evaluate(JS, {'secs': secs, 'order': mo.get('order'), 'spark': mo.get('spark'), 'from': bool(mo.get('from')), 'fromHTML': from_html, 'enter': mo.get('enter')})
+        info = pg.evaluate(JS, {'secs': secs, 'order': mo.get('order'), 'spark': mo.get('spark'), 'from': bool(mo.get('from')), 'fromHTML': from_html, 'enter': mo.get('enter'), 'lift': mo.get('lift')})
         n = int(round(secs*fps))
         frame = lambda tt: pg.evaluate("(a)=>window.__frame(a)", {'tt': tt, 'dec': R.dec_for(spec, slide, tt), 'sf': R.sf_for(spec, slide, tt)})
         if preview is not None:
