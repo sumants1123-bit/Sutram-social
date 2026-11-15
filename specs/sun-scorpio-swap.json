@@ -1,13 +1,7 @@
 {
  "id": "sun-scorpio-swap",
- "kicker": "Read the sky · Sankranti",
+ "kicker": "Read the sky",
  "decor_theme": "thread",
- "parts": [
-  "The sky",
-  "The swap",
-  "Who adds what",
-  "The result"
- ],
  "slides": [
   {
    "type": "cover",
@@ -15,25 +9,23 @@
    "swipe": true,
    "scene": {
     "w": 330,
-    "h": 212,
-    "reachpad": 70,
+    "h": 222,
+    "reachpad": 64,
     "reach": [
      [
       0,
       2,
-      "16 Nov to 15 Dec",
+      "",
       "both"
      ]
     ],
     "rooms": [
      {
       "sign": "Leo",
-      "names": "The king's house",
-      "note": "the soldier lives here",
       "orbs": [
        {
         "kind": "mars",
-        "r": 42
+        "r": 46
        }
       ],
       "state": "focus"
@@ -44,12 +36,10 @@
      },
      {
       "sign": "Scorpio",
-      "names": "The soldier's house",
-      "note": "the king walks in",
       "orbs": [
        {
         "kind": "sun",
-        "r": 44,
+        "r": 48,
         "rings": false
        }
       ],
@@ -57,18 +47,10 @@
      }
     ]
    },
-   "label": "Sankranti · Mon 16 Nov",
-   "labelsize": 33,
    "title": "Swapped houses",
    "titleclass": "h1",
-   "subtitle": "The Sun enters Scorpio on Monday\nand trades places with Mars",
-   "subsize": 52,
-   "contents": [
-    "The sky",
-    "The swap",
-    "Who adds what",
-    "The result"
-   ],
+   "subtitle": "Sun and Mars, from Monday",
+   "subsize": 64,
    "motion": {
     "order": [
      0,
@@ -78,12 +60,10 @@
      "rooms": [
       {
        "sign": "Leo",
-       "names": "The king's house",
-       "note": "the soldier lives here",
        "orbs": [
         {
          "kind": "mars",
-         "r": 42
+         "r": 46
         }
        ]
       },
@@ -93,8 +73,6 @@
       },
       {
        "sign": "Scorpio",
-       "names": "The soldier's house",
-       "note": "the king walks in",
        "orbs": []
       }
      ]
@@ -103,11 +81,8 @@
   },
   {
    "type": "text",
-   "part": 1,
-   "label": "Part 1 · The sky",
-   "labelsize": 33,
-   "title": "The king changes sign",
-   "titleclass": "h3",
+   "title": "The king (Sun)\nchanges sign",
+   "titleclass": "h2",
    "cross": {
     "left": {
      "sign": "Libra",
@@ -118,7 +93,7 @@
      "to": 5
     },
     "kind": "sun",
-    "r": 30,
+    "r": 34,
     "at": [
      "Libra",
      29.11
@@ -157,194 +132,101 @@
       4.15
      ]
     ],
-    "here": [
-     "Sun 15 Nov",
-     "today"
-    ],
     "door": [
      "Mon 16 Nov",
-     "9:13 AM, he crosses"
+     ""
     ],
-    "pace": "one dot a day · about 1° a day",
-    "end": "in Scorpio to 15 Dec",
-    "mt": 22
+    "mt": 40
    },
-   "body": [
-    "*Sankranti*: the day the Sun (the king)\ncrosses into a new sign"
-   ],
-   "bodysize": 42,
-   "closing": "He leaves Libra, his weakest sign",
-   "closingsize": 52,
-   "note": "Toronto time · Lahiri zodiac"
+   "closing": "This crossing is a Sankranti",
+   "closingsize": 62
   },
   {
    "type": "text",
-   "part": 1,
    "scene": {
-    "w": 208,
-    "h": 168,
+    "w": 340,
+    "h": 226,
     "rooms": [
      {
       "sign": "Leo",
-      "tag": "The king's house",
+      "tag": "Sun's house",
       "orbs": [
-       {
-        "kind": "ketu",
-        "r": 21
-       },
-       {
-        "kind": "jupiter",
-        "r": 25,
-        "dx": 50
-       },
        {
         "kind": "mars",
-        "r": 20,
-        "dx": 50
+        "r": 46
        }
       ],
-      "state": "focus",
-      "names": "Ketu · Jupiter · Mars"
-     },
-     {
-      "sign": "Virgo",
-      "orbs": [
-       {
-        "kind": "venus",
-        "r": 24
-       }
-      ],
-      "names": "Venus"
-     },
-     {
-      "sign": "Libra",
-      "orbs": [
-       {
-        "kind": "mercury",
-        "r": 18
-       }
-      ],
-      "names": "Mercury"
-     },
-     {
-      "sign": "Scorpio",
-      "tag": "The soldier's house",
-      "orbs": [
-       {
-        "kind": "sun",
-        "r": 26,
-        "rings": false
-       }
-      ],
-      "state": "focus",
-      "names": "Sun"
-     }
-    ]
-   },
-   "label": "Monday's sky",
-   "labelsize": 33,
-   "title": "Whose house is whose?",
-   "titleclass": "h3",
-   "body": [
-    "The king (Sun) walks into *the soldier's sign*",
-    "The soldier (Mars) lives in *the king's sign*"
-   ],
-   "bodysize": 38,
-   "bodygap": 14,
-   "closing": "Each one is a guest in the other's house",
-   "closingsize": 48
-  },
-  {
-   "type": "nsteps",
-   "part": 2,
-   "label": "Part 2 · The swap",
-   "labelsize": 33,
-   "title": "How Nadi reads a swap",
-   "titleclass": "h3",
-   "steps": [
-    {
-     "head": "Two grahas sit in\neach other's signs"
-    },
-    {
-     "head": "Send each one home\nin your mind"
-    },
-    {
-     "head": "See who it meets there"
-    }
-   ],
-   "headsize": 62,
-   "stepsmt": 40,
-   "closing": "A swap ties the two together",
-   "closingsize": 52
-  },
-  {
-   "type": "text",
-   "part": 2,
-   "scene": {
-    "w": 330,
-    "h": 212,
-    "reachpad": 70,
-    "reach": [
-     [
-      0,
-      2,
-      "read each one at home",
-      "both"
-     ]
-    ],
-    "caption": "In the sky they sit the other way round",
-    "rooms": [
-     {
-      "sign": "Leo",
-      "names": "The king's house",
-      "note": "the king, read here",
-      "orbs": [
-       {
-        "kind": "ketu",
-        "r": 25
-       },
-       {
-        "kind": "jupiter",
-        "r": 31,
-        "dx": 64
-       },
-       {
-        "kind": "sun",
-        "r": 34,
-        "rings": false,
-        "dx": 78
-       }
-      ],
+      "names": "Mars",
       "state": "focus"
      },
      {
       "spacer": true,
-      "wide": 0.42
+      "wide": 0.3
      },
      {
       "sign": "Scorpio",
-      "names": "The soldier's house",
-      "note": "the soldier, read here",
+      "tag": "Mars's house",
       "orbs": [
        {
-        "kind": "mars",
-        "r": 38
+        "kind": "sun",
+        "r": 48,
+        "rings": false
        }
       ],
+      "names": "Sun",
       "state": "focus"
      }
     ]
    },
-   "label": "Steps 1 and 2",
-   "labelsize": 33,
-   "title": "Send each one home",
-   "titleclass": "h3",
-   "body": [
-    "Read the king *in Leo*\nand the soldier *in Scorpio*"
-   ],
-   "bodysize": 40,
-   "closing": "At home, both count as strong at first",
-   "closingsize": 48,
+   "title": "Each sits in\nthe other's house",
+   "titleclass": "h2"
+  },
+  {
+   "type": "text",
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "reachpad": 64,
+    "reach": [
+     [
+      0,
+      2,
+      "",
+      "both"
+     ]
+    ],
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 48,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "names": "Sun's house"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 46
+       }
+      ],
+      "state": "focus",
+      "names": "Mars's house"
+     }
+    ]
+   },
+   "title": "Nadi rule:\nsend each one home",
+   "titleclass": "h2",
    "motion": {
     "order": [
      0,
@@ -355,219 +237,117 @@
      "rooms": [
       {
        "sign": "Leo",
-       "names": "The king's house",
-       "note": "the king, read here",
        "orbs": [
         {
-         "kind": "ketu",
-         "r": 25
-        },
-        {
-         "kind": "jupiter",
-         "r": 31,
-         "dx": 64
-        },
-        {
          "kind": "mars",
-         "r": 38,
-         "dx": 78
+         "r": 46
         }
-       ]
+       ],
+       "state": "focus",
+       "names": "Sun's house"
       },
       {
        "spacer": true,
-       "wide": 0.42
+       "wide": 0.3
       },
       {
        "sign": "Scorpio",
-       "names": "The soldier's house",
-       "note": "the soldier, read here",
        "orbs": [
         {
          "kind": "sun",
-         "r": 34,
+         "r": 48,
          "rings": false
         }
-       ]
+       ],
+       "state": "focus",
+       "names": "Mars's house"
       }
      ]
     }
    }
   },
   {
+   "type": "text",
+   "scene": {
+    "w": 470,
+    "h": 290,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 50,
+        "rings": false
+       },
+       {
+        "kind": "jupiter",
+        "r": 46,
+        "dx": 124
+       }
+      ],
+      "names": "Sun · Jupiter",
+      "state": "focus"
+     }
+    ]
+   },
+   "title": "At home, the Sun\nmeets Jupiter",
+   "titleclass": "h2",
+   "closing": "Jupiter, the teacher, adds advice",
+   "closingsize": 60
+  },
+  {
    "type": "rows",
-   "part": 3,
-   "label": "Part 3 · Who adds what",
-   "labelsize": 33,
-   "title": "Step 3: who is in the room?",
-   "titleclass": "h3",
-   "lead": "Whoever shares a house joins the story",
-   "leadsize": 36,
+   "title": "Until 15 Dec",
+   "titleclass": "h2",
    "roworbs": [
     {
-     "kind": "jupiter",
-     "r": 26
-    },
-    {
-     "kind": "ketu",
-     "r": 24
-    },
-    {
-     "kind": "mercury",
-     "r": 20
-    }
-   ],
-   "items": [
-    [
-     "The teacher",
-     "in Leo · advice"
-    ],
-    [
-     "The monk",
-     "leaving Leo · letting go"
-    ],
-    [
-     "The messenger",
-     "Scorpio, 2 Dec · talk"
-    ]
-   ],
-   "namesize": 54,
-   "bodysize": 34,
-   "closing": "The king comes home to a teacher",
-   "closingsize": 52
-  },
-  {
-   "type": "nsteps",
-   "part": 4,
-   "label": "Part 4 · The result",
-   "labelsize": 33,
-   "title": "16 Nov to 15 Dec",
-   "titleclass": "h3",
-   "steps": [
-    {
-     "tag": "The king, read at home",
-     "head": "Authority gets its nerve back",
-     "line": "The call stuck since October gets made"
-    },
-    {
-     "tag": "The soldier, read at home",
-     "head": "Drive finds one clear target",
-     "line": "One hard job, done properly"
-    },
-    {
-     "tag": "With the teacher in the room",
-     "head": "Power takes advice",
-     "line": "Ask a mentor before the big move"
-    }
-   ],
-   "headsize": 54,
-   "bodysize": 34,
-   "stepsmt": 26,
-   "closing": "Write it down · check it on 15 Dec",
-   "closingsize": 44
-  },
-  {
-   "type": "rows",
-   "part": 4,
-   "label": "Your chart",
-   "labelsize": 33,
-   "title": "Find your rising sign",
-   "titleclass": "h3",
-   "lead": "The king's room · the soldier's room\nThese two swap until 15 December",
-   "leadsize": 34,
-   "items": [
-    [
-     "Aries",
-     "8th change · 5th creation"
-    ],
-    [
-     "Taurus",
-     "7th partners · 4th home"
-    ],
-    [
-     "Gemini",
-     "6th daily work · 3rd effort"
-    ],
-    [
-     "Cancer",
-     "5th creation · 2nd money"
-    ],
-    [
-     "Leo",
-     "4th home · 1st you"
-    ],
-    [
-     "Virgo",
-     "3rd effort · 12th rest"
-    ]
-   ],
-   "namesize": 54,
-   "bodysize": 34
-  },
-  {
-   "type": "rows",
-   "part": 4,
-   "label": "Your chart",
-   "labelsize": 33,
-   "title": "Find your rising sign",
-   "titleclass": "h3",
-   "items": [
-    [
-     "Libra",
-     "2nd money · 11th gains"
-    ],
-    [
-     "Scorpio",
-     "1st you · 10th career"
-    ],
-    [
-     "Sagittarius",
-     "12th rest · 9th luck"
-    ],
-    [
-     "Capricorn",
-     "11th gains · 8th change"
-    ],
-    [
-     "Aquarius",
-     "10th career · 7th partners"
-    ],
-    [
-     "Pisces",
-     "9th luck · 6th daily work"
-    ]
-   ],
-   "namesize": 54,
-   "bodysize": 34,
-   "note": "No rising sign? Use your Moon sign",
-   "closing": "Work in one room feeds the other",
-   "closingsize": 46
-  },
-  {
-   "type": "cta",
-   "part": 5,
-   "orbs": [
-    {
      "kind": "sun",
-     "r": 40,
+     "r": 30,
      "rings": false
     },
     {
      "kind": "mars",
-     "r": 36,
+     "r": 28
+    },
+    {
+     "kind": "jupiter",
+     "r": 30
+    }
+   ],
+   "items": [
+    [
+     "Make the hard call",
+     ""
+    ],
+    [
+     "Finish one hard job",
+     ""
+    ],
+    [
+     "Ask a mentor first",
+     ""
+    ]
+   ],
+   "namesize": 66
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 44,
+     "rings": false
+    },
+    {
+     "kind": "mars",
+     "r": 40,
      "dx": 150
     }
    ],
-   "label": "The swap in one line",
-   "labelsize": 33,
-   "title": "In a swap, read\neach graha at home",
-   "titleclass": "h3",
-   "lines": [
-    "Ask your chart at asksutram.com",
-    "Weekly newsletter at sutram.ca/newsletter"
-   ],
-   "bodysize": 38,
-   "next": "Wednesday · Rule 8, swapped houses"
+   "title": "In a swap, read\neach one at home",
+   "titleclass": "h2",
+   "next": "Next: Rule 8 on Wednesday"
   }
  ]
 }

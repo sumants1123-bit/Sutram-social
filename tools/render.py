@@ -925,14 +925,25 @@ def build_slide(pg, spec, i, out):
         if ov<=0: break
     os.remove(fn); pg.evaluate(HIDE_GLINTS)
     return s,ov
+# Sumant, 15 Nov, after telling me many times: too much text. Hard limits, counted on what the slide actually shows
+# (title, lines, labels on diagrams; not the kicker, the footer or "Swipe to read"). One picture and one short line a slide.
+WORDS_COVER=10; WORDS_SLIDE=14; MAX_SLIDES=8; TOO_MUCH=[]
+COUNT_WORDS="""()=>{const b=document.querySelector('.slide .body');const tw=document.createTreeWalker(b,NodeFilter.SHOW_TEXT);let n;const W=[];
+while(n=tw.nextNode()){const t=n.nodeValue;if(!t.trim())continue;let vis=true;
+ for(let a=n.parentElement;a&&a!==b;a=a.parentElement){const cs=getComputedStyle(a);if(cs.display==='none'||cs.visibility==='hidden'||parseFloat(cs.opacity)===0){vis=false;break}}
+ if(vis)for(const w of t.split(/\\s+/))if(/[A-Za-z]/.test(w))W.push(w)}
+return [W.length,W.join(' ')]}"""
 def render(spec_path):
     spec=json.load(open(spec_path)); pid=spec['id']; out=os.path.join(REPO,'posts',pid); os.makedirs(out,exist_ok=True)
+    if len(spec['slides'])>MAX_SLIDES: TOO_MUCH.append(f"{pid}: {len(spec['slides'])} slides, limit {MAX_SLIDES}")
     outs=[]; scales=[]
     with sync_playwright() as p:
         b=p.chromium.launch(); pg=b.new_page(viewport={'width':1080,'height':1350},device_scale_factor=2)
         for i,sp in enumerate(spec['slides'],1):
             s,ov=build_slide(pg,spec,i,out); scales.append(s)
             if ov>0: print(f'  ! {pid} slide {i} still overflows by {ov}px at scale {s}')
+            wc,ws=pg.evaluate(COUNT_WORDS); lim=WORDS_COVER if sp['type']=='cover' else WORDS_SLIDE
+            if wc>lim: TOO_MUCH.append(f'{pid} slide {i}: {wc} words, limit {lim}: {ws}')
             raw=os.path.join(out,f'_raw{i}.png'); pg.screenshot(path=raw)
             im=Image.open(raw).convert('RGB').resize((1080,1350),Image.LANCZOS)
             o=os.path.join(out,f'{pid}-{i}.jpg'); im.save(o,quality=93,optimize=True,progressive=True); outs.append(o)
@@ -949,3 +960,5 @@ def render(spec_path):
 
 if __name__=='__main__':
     for a in sys.argv[1:]: render(a)
+    if TOO_MUCH:
+        print('\nTOO MUCH TEXT. Cut these slides before anything is posted:'); [print('  '+x) for x in TOO_MUCH]; sys.exit(3)
