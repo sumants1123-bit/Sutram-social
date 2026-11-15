@@ -1046,5 +1046,17 @@
   "said_839": "Sumant, 15 Nov 8:39: likes the minimal look; wants a moving visual like the retrograde walk (Lesson 15, Venus walking backward on a degree ruler); every cover needs a clear label and a plain title; 'Swapped houses' and 'Sun and Mars, from Monday' were vague; the reading must explain, by Bhrigu Nadi, how each graha behaves where it sits and in its own sign, and how the results come. 'Forget the preconditions, make the best design'",
   "covers": "Every cover: a pill at the top that names the kind of post (CURRENT SKY for transit news, NADI RULE n for lessons, NEW for products), then a plain literal title that says what happens ('The Sun moves into Scorpio'), then one plain line. No metaphor titles",
   "sky_posts": "Current-sky posts: the real sky to scale and moving on the cover (render.py 'strip', tools/strip_motion.py), then the Nadi reading in full: each graha where it sits in the sky, then read in its own sign, who sits with it, then what to do. Example: sun-scorpio-swap at ed120a3 (10 slides)"
+ },
+ "philosophy_series": {
+  "said": "Sumant, 15 Nov 9:25, on awareness-is-transformation: 'for the first time you nailed it'; wants more posts like it that make people think and work a deeper process in them",
+  "format": "PHILOSOPHY pill and a plain title on the cover; a moving picture of the experiment; then: do it now, something already changed, the question that turns back on the reader, the Jyotish tie (from the rule bank or BPHS), one classical line with its verse, Try it today. 9 slides, word limits as in rules_15nov",
+  "example": "awareness-is-transformation at commit b5007df",
+  "ideas": [
+   "Who is breathing? Notice your breath and it slows by itself. Moon = mind (BPHS 3). Hatha Yoga Pradipika 2.2: when the breath moves the mind moves. Picture: a breathing ring that slows when the light comes on",
+   "Anger, seen. Name it, 'anger is here', and the heat drops. Mars = ego (Nadi rule bank). Gita 2.63. Picture: a flame that settles when it is seen",
+   "Who is reading this? The Sun rules the right eye, the Moon the left (Nadi rule bank, S06 karakatwa table). Kena Upanishad 1.6: that by which the eyes see. Picture: two eyes, one light behind them",
+   "You are not your chart. The chart is the field; you are the one who knows it. Gita chapter 13, the field and the knower of the field. Picture: a birth chart wheel, the light outside it",
+   "The gap between two thoughts. Wait for the next thought; notice the pause. Moon phases change, the sky does not. Yoga Sutra 1.2. Picture: thoughts come and go, the stillness stays"
+  ]
  }
 }
