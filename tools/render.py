@@ -484,6 +484,53 @@ def cross_html(cr, s=1.0):
     return (f'<div class="crossd" style="position:relative;width:{Wd}px;height:{Ht}px;zoom:{s:.3f};margin:{cr.get("mt",10)}px auto {cr.get("mb",0)}px;text-align:left">'
             f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}</svg>{ob}</div>')
 
+ZOD=['Aries','Taurus','Gemini','Cancer','Leo','Virgo','Libra','Scorpio','Sagittarius','Capricorn','Aquarius','Pisces']
+def strip_html(st, s=1.0):
+    """The current sky to scale (v10, 15 Nov): signs side by side on a degree ruler, grahas at their real degrees.
+    st: signs [names in order], days [labels], track {kind: [sidereal longitude per day]}, day (index for the still),
+    owner {sign: words under its name}, focus [signs to light], names {kind: words}, lanes {kind: -1|0|1}, r {kind: radius},
+    arc [kindA, kindB] (an exchange, drawn while each stands in the other's sign), label (words over the strip in the still),
+    door [sign, words] (a note at the door into that sign). tools/strip_motion.py runs the days."""
+    Wd=st.get('w',960); n=len(st['signs']); k=Wd/(30*n); base=ZOD.index(st['signs'][0])*30
+    Ht=st.get('h',440); top=118; bot=Ht-58; lane=(top+bot)/2+4; lg=st.get('lanegap',74); o=[]; fam="font-family='EB Garamond'"
+    X=lambda lon: max(0,min(Wd,(lon-base)*k))
+    focus=st.get('focus',[])
+    for j,sg in enumerate(st['signs']):
+        x0=j*30*k; on=sg in focus
+        o.append(f"<rect x='{x0+5:.1f}' y='{top}' width='{30*k-10:.1f}' height='{bot-top}' rx='26' fill='{AMBER if on else CREAM}' fill-opacity='{.09 if on else .02}' stroke='{AMBER if on else GOLD}' stroke-opacity='{.7 if on else .22}' stroke-width='{2 if on else 1.2}' class='sx-room' data-sign='{sg}'/>")
+        o.append(f"<text x='{x0+15*k:.1f}' y='44' text-anchor='middle' {fam} font-weight='500' font-size='32' letter-spacing='7' fill='{CREAM if on else GOLD}' fill-opacity='{1 if on else .7}'>{esc(sg).upper()}</text>")
+        if st.get('owner',{}).get(sg): o.append(f"<text x='{x0+15*k:.1f}' y='84' text-anchor='middle' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='31' fill='{AMBER}'>{esc(st['owner'][sg])}</text>")
+        if j: o.append(f"<line x1='{x0:.1f}' y1='{top-6}' x2='{x0:.1f}' y2='{bot+14}' stroke='{GOLD}' stroke-opacity='.45' stroke-width='1.4' stroke-dasharray='6 7'/>")
+    for d in range(0,30*n+1):
+        x=d*k; big=d%10==0
+        o.append(f"<line x1='{x:.1f}' y1='{bot+16}' x2='{x:.1f}' y2='{bot+(30 if big else 22)}' stroke='{GOLD}' stroke-opacity='{.8 if big else .35}' stroke-width='{1.5 if big else 1}'/>")
+    o.append(f"<line x1='0' y1='{bot+16}' x2='{Wd}' y2='{bot+16}' stroke='{GOLD}' stroke-opacity='.5' stroke-width='1.2'/>")
+    days=st['days']; di=st.get('day',0); tr=st['track']
+    pos={kd:X(v[di]) for kd,v in tr.items()}
+    ly={kd:lane+st.get('lanes',{}).get(kd,0)*lg for kd in tr}
+    rr={kd:st.get('r',{}).get(kd,34) for kd in tr}
+    arc=''
+    if st.get('arc'):
+        a,b=st['arc']; xa,xb=pos[a],pos[b]; ya=ly[a]-rr[a]-14; yb=ly[b]-rr[b]-14; yt=st.get('arctop',top-40)
+        arc=(f"<path id='sx-arc' pathLength='1' d='M{xa:.1f},{ya:.1f} C{xa:.1f},{yt} {xb:.1f},{yt} {xb:.1f},{yb:.1f}' fill='none' stroke='{AMBER}' stroke-width='3' stroke-linecap='round' stroke-dasharray='1' stroke-dashoffset='0'/>"
+             f"<path id='sx-ha' d='M{xa-11:.1f},{ya-16:.1f} L{xa:.1f},{ya:.1f} L{xa+11:.1f},{ya-16:.1f} Z' fill='{AMBER}'/>"
+             f"<path id='sx-hb' d='M{xb-11:.1f},{yb-16:.1f} L{xb:.1f},{yb:.1f} L{xb+11:.1f},{yb-16:.1f} Z' fill='{AMBER}'/>")
+    door=''
+    if st.get('door'):
+        sg,words=st['door']; xd=X(ZOD.index(sg)*30)
+        door=f"<text id='sx-door' x='{xd+14:.1f}' y='{bot-14}' text-anchor='start' font-family='Cormorant Garamond' font-style='italic' font-weight='500' font-size='30' fill='{AMBER}'>{esc(words)}</text>"
+    lab=f"<text id='sx-date' x='{Wd/2:.1f}' y='{-30}' text-anchor='middle' font-family='Cormorant Garamond' font-weight='600' font-size='44' fill='{CREAM}'>{esc(st.get('label',days[di]))}</text>" if st.get('showdate',True) else ''
+    orbs=''
+    for kd in tr:
+        nm=st.get('names',{}).get(kd,'')
+        orbs+=(f"<div class='sx-orb' id='sx-{kd}' style='position:absolute;left:{pos[kd]:.1f}px;top:{ly[kd]:.1f}px;width:0;height:0'>"
+               f"<div style='position:absolute;left:0;top:0;transform:translate(-50%,-50%)'>{orb({'kind':kd,'r':rr[kd],'rings':False})}</div>"
+               +(f"<div style='position:absolute;left:0;top:{rr[kd]+12}px;transform:translateX(-50%);font:italic 500 30px/1 Cormorant Garamond;color:{CREAM};white-space:nowrap'>{esc(nm)}</div>" if nm else '')+"</div>")
+    data=json.dumps({'days':days,'track':tr,'base':base,'k':k,'arc':st.get('arc'),'lane':ly,'r':rr,'top':top,'arctop':st.get('arctop',top-40),'Wd':Wd,'focusOn':st.get('focus_lon'),'door':st.get('door')})
+    return (f'<div class="stripd" style="position:relative;width:{Wd}px;height:{Ht}px;zoom:{s:.3f};margin:{st.get("mt",70)}px auto {st.get("mb",0)}px;text-align:left">'
+            f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}{arc}{door}{lab}</svg>{orbs}'
+            f'<script type="application/json" id="sx-data">{data}</script></div>')
+
 def shot_html(sh, s=1.0):
     """A real picture (a page of a report, a screen) in a thin frame. sh: file (repo path), w (px on the slide), tilt (degrees), cap.
     A list of these stacks them, one under the other (two excerpts of one page)."""
@@ -582,6 +629,7 @@ def slide_html(sp, s=1.0):
         else:
             H.append(f'<div style="margin-bottom:22px">{row}</div>')
     bs=f'font-size:{T(sp["bodysize"])};' if sp.get('bodysize') else ''
+    if sp.get('tag'): H.append(f'<div style="display:inline-block;margin-bottom:{F(30)};padding:{F(13)} {F(30)} {F(12)};border:{max(1.6,2*s):.1f}px solid {AMBER};border-radius:999px;font:600 {T(24)}/1 \'EB Garamond\';letter-spacing:.3em;padding-right:calc({F(30)} - .3em);color:{AMBER};text-transform:uppercase">{esc(sp["tag"])}</div>')
     if sp.get('label'): H.append(f'<div class="lab" style="margin-bottom:22px;{"font-size:"+T(sp["labelsize"]) if sp.get("labelsize") else ""}">{esc(sp["label"])}</div>')
     if t in ('cover','cta','text','list','grid','quote','quotes','steps','sentence','sky','rows','stack','icons','svg','compare','cast','bodymap','nsteps','narrow'):
         if sp.get('title'):
@@ -589,6 +637,7 @@ def slide_html(sp, s=1.0):
             ts=f' style="font-size:{F(sp["titlesize"])}"' if sp.get('titlesize') else ''
             H.append(f'<div class="t {cls}"{ts}>{rich(sp["title"])}</div>')
         if sp.get('subtitle'): H.append(f'<div class="ti sub" style="margin-top:22px;{"font-size:"+F(sp["subsize"])+";" if sp.get("subsize") else ""}">{rich(sp["subtitle"]).replace(chr(60)+"span class="+chr(34)+"ti"+chr(34)+">",chr(60)+"span style="+chr(34)+"color:"+CREAM+chr(34)+">")}</div>')
+    if sp.get('strip'): H.append(strip_html(sp['strip'],s))
     if sp.get('lead'): H.append(f'<div class="p" style="margin-top:{F(20)};font-size:{T(sp.get("leadsize",36))};line-height:1.3">{rich(sp["lead"])}</div>')
     if sp.get('contents'):
         H.append('<div class="contents">'+''.join(f'<div><b style="border-color:{PART_COLORS[k%len(PART_COLORS)]};color:{PART_COLORS[k%len(PART_COLORS)]}">{k+1}</b>{esc(c)}</div>' for k,c in enumerate(sp['contents']))+'</div>')
@@ -927,12 +976,13 @@ def build_slide(pg, spec, i, out):
     return s,ov
 # Sumant, 15 Nov, after telling me many times: too much text. Hard limits, counted on what the slide actually shows
 # (title, lines, labels on diagrams; not the kicker, the footer or "Swipe to read"). One picture and one short line a slide.
-WORDS_COVER=10; WORDS_SLIDE=14; MAX_SLIDES=8; TOO_MUCH=[]
-COUNT_WORDS="""()=>{const b=document.querySelector('.slide .body');const tw=document.createTreeWalker(b,NodeFilter.SHOW_TEXT);let n;const W=[];
+WORDS_COVER=14; WORDS_SLIDE=18; LABEL_WORDS=14; MAX_SLIDES=10; TOO_MUCH=[]   # recalibrated 15 Nov 8:50: prose and diagram labels counted apart
+COUNT_WORDS="""()=>{const b=document.querySelector('.slide .body');const tw=document.createTreeWalker(b,NodeFilter.SHOW_TEXT);let n;const W=[],L=[];
 while(n=tw.nextNode()){const t=n.nodeValue;if(!t.trim())continue;let vis=true;
  for(let a=n.parentElement;a&&a!==b;a=a.parentElement){const cs=getComputedStyle(a);if(cs.display==='none'||cs.visibility==='hidden'||parseFloat(cs.opacity)===0){vis=false;break}}
- if(vis)for(const w of t.split(/\\s+/))if(/[A-Za-z]/.test(w))W.push(w)}
-return [W.length,W.join(' ')]}"""
+ const D=n.parentElement.closest('.scene,.crossd,.stripd,.pathd,.timeline,svg');
+ if(vis)for(const w of t.split(/\\s+/))if(/[A-Za-z]/.test(w))(D?L:W).push(w)}
+return [W.length,W.join(' '),L.length,L.join(' ')]}"""
 def render(spec_path):
     spec=json.load(open(spec_path)); pid=spec['id']; out=os.path.join(REPO,'posts',pid); os.makedirs(out,exist_ok=True)
     if len(spec['slides'])>MAX_SLIDES: TOO_MUCH.append(f"{pid}: {len(spec['slides'])} slides, limit {MAX_SLIDES}")
@@ -942,8 +992,9 @@ def render(spec_path):
         for i,sp in enumerate(spec['slides'],1):
             s,ov=build_slide(pg,spec,i,out); scales.append(s)
             if ov>0: print(f'  ! {pid} slide {i} still overflows by {ov}px at scale {s}')
-            wc,ws=pg.evaluate(COUNT_WORDS); lim=WORDS_COVER if sp['type']=='cover' else WORDS_SLIDE
+            wc,ws,lc,ls=pg.evaluate(COUNT_WORDS); lim=WORDS_COVER if sp['type']=='cover' else WORDS_SLIDE
             if wc>lim: TOO_MUCH.append(f'{pid} slide {i}: {wc} words, limit {lim}: {ws}')
+            if lc>LABEL_WORDS: TOO_MUCH.append(f'{pid} slide {i}: {lc} words on the diagram, limit {LABEL_WORDS}: {ls}')
             raw=os.path.join(out,f'_raw{i}.png'); pg.screenshot(path=raw)
             im=Image.open(raw).convert('RGB').resize((1080,1350),Image.LANCZOS)
             o=os.path.join(out,f'{pid}-{i}.jpg'); im.save(o,quality=93,optimize=True,progressive=True); outs.append(o)

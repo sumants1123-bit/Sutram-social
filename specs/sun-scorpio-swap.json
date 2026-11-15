@@ -1,163 +1,181 @@
 {
  "id": "sun-scorpio-swap",
- "kicker": "Read the sky",
+ "kicker": "Current sky",
  "decor_theme": "thread",
  "slides": [
   {
    "type": "cover",
+   "kicker": "Sutram",
    "stars": true,
    "swipe": true,
-   "scene": {
-    "w": 330,
-    "h": 222,
-    "reachpad": 64,
-    "reach": [
-     [
-      0,
-      2,
-      "",
-      "both"
-     ]
-    ],
-    "rooms": [
-     {
-      "sign": "Leo",
-      "orbs": [
-       {
-        "kind": "mars",
-        "r": 46
-       }
-      ],
-      "state": "focus"
-     },
-     {
-      "spacer": true,
-      "wide": 0.42
-     },
-     {
-      "sign": "Scorpio",
-      "orbs": [
-       {
-        "kind": "sun",
-        "r": 48,
-        "rings": false
-       }
-      ],
-      "state": "focus"
-     }
-    ]
-   },
-   "title": "Swapped houses",
+   "tag": "Current sky",
+   "title": "The Sun moves\ninto Scorpio",
    "titleclass": "h1",
-   "subtitle": "Sun and Mars, from Monday",
-   "subsize": 64,
-   "motion": {
-    "order": [
-     0,
-     1
+   "titlesize": 116,
+   "subtitle": "and exchanges signs with Mars",
+   "subsize": 56,
+   "strip": {
+    "signs": [
+     "Leo",
+     "Virgo",
+     "Libra",
+     "Scorpio"
     ],
-    "from": {
-     "rooms": [
-      {
-       "sign": "Leo",
-       "orbs": [
-        {
-         "kind": "mars",
-         "r": 46
-        }
-       ]
-      },
-      {
-       "spacer": true,
-       "wide": 0.42
-      },
-      {
-       "sign": "Scorpio",
-       "orbs": []
-      }
+    "days": [
+     "13 Nov",
+     "14 Nov",
+     "15 Nov",
+     "16 Nov",
+     "17 Nov",
+     "18 Nov",
+     "19 Nov",
+     "20 Nov",
+     "21 Nov",
+     "22 Nov",
+     "23 Nov",
+     "24 Nov",
+     "25 Nov",
+     "26 Nov",
+     "27 Nov",
+     "28 Nov",
+     "29 Nov",
+     "30 Nov",
+     "1 Dec",
+     "2 Dec",
+     "3 Dec",
+     "4 Dec",
+     "5 Dec",
+     "6 Dec",
+     "7 Dec",
+     "8 Dec",
+     "9 Dec",
+     "10 Dec",
+     "11 Dec",
+     "12 Dec",
+     "13 Dec",
+     "14 Dec",
+     "15 Dec"
+    ],
+    "track": {
+     "mars": [
+      120.501,
+      120.955,
+      121.405,
+      121.851,
+      122.292,
+      122.729,
+      123.161,
+      123.589,
+      124.012,
+      124.43,
+      124.843,
+      125.251,
+      125.654,
+      126.052,
+      126.445,
+      126.832,
+      127.214,
+      127.59,
+      127.96,
+      128.324,
+      128.682,
+      129.033,
+      129.379,
+      129.717,
+      130.049,
+      130.374,
+      130.692,
+      131.003,
+      131.307,
+      131.603,
+      131.891,
+      132.172,
+      132.445
+     ],
+     "sun": [
+      207.095,
+      208.102,
+      209.109,
+      210.117,
+      211.125,
+      212.133,
+      213.141,
+      214.15,
+      215.16,
+      216.169,
+      217.179,
+      218.19,
+      219.201,
+      220.212,
+      221.223,
+      222.235,
+      223.248,
+      224.261,
+      225.274,
+      226.288,
+      227.302,
+      228.316,
+      229.331,
+      230.346,
+      231.362,
+      232.378,
+      233.394,
+      234.41,
+      235.427,
+      236.443,
+      237.46,
+      238.478,
+      239.495
      ]
-    }
+    },
+    "day": 11,
+    "label": "16 Nov to 15 Dec",
+    "owner": {
+     "Leo": "Sun's sign",
+     "Scorpio": "Mars's sign"
+    },
+    "focus": [
+     "Leo",
+     "Scorpio"
+    ],
+    "names": {
+     "sun": "Sun",
+     "mars": "Mars"
+    },
+    "r": {
+     "sun": 42,
+     "mars": 38
+    },
+    "arc": [
+     "mars",
+     "sun"
+    ],
+    "h": 440,
+    "mt": 96,
+    "arctop": 40,
+    "door": [
+     "Scorpio",
+     "16 Nov"
+    ]
    }
   },
   {
    "type": "text",
-   "title": "The king (Sun)\nchanges sign",
-   "titleclass": "h2",
-   "cross": {
-    "left": {
-     "sign": "Libra",
-     "from": 25
-    },
-    "right": {
-     "sign": "Scorpio",
-     "to": 5
-    },
-    "kind": "sun",
-    "r": 34,
-    "at": [
-     "Libra",
-     29.11
-    ],
-    "days": [
-     [
-      "Libra",
-      26.09
-     ],
-     [
-      "Libra",
-      27.1
-     ],
-     [
-      "Libra",
-      28.1
-     ],
-     [
-      "Scorpio",
-      0.12
-     ],
-     [
-      "Scorpio",
-      1.13
-     ],
-     [
-      "Scorpio",
-      2.13
-     ],
-     [
-      "Scorpio",
-      3.14
-     ],
-     [
-      "Scorpio",
-      4.15
-     ]
-    ],
-    "door": [
-     "Mon 16 Nov",
-     ""
-    ],
-    "mt": 40
-   },
-   "closing": "This crossing is a Sankranti",
-   "closingsize": 62
-  },
-  {
-   "type": "text",
    "scene": {
     "w": 340,
     "h": 226,
     "rooms": [
      {
       "sign": "Leo",
-      "tag": "Sun's house",
       "orbs": [
        {
         "kind": "mars",
         "r": 46
        }
       ],
-      "names": "Mars",
-      "state": "focus"
+      "state": "focus",
+      "tag": "Sun's sign",
+      "names": "Mars"
      },
      {
       "spacer": true,
@@ -165,7 +183,6 @@
      },
      {
       "sign": "Scorpio",
-      "tag": "Mars's house",
       "orbs": [
        {
         "kind": "sun",
@@ -173,13 +190,17 @@
         "rings": false
        }
       ],
-      "names": "Sun",
-      "state": "focus"
+      "state": "focus",
+      "tag": "Mars's sign",
+      "names": "Sun"
      }
     ]
    },
-   "title": "Each sits in\nthe other's house",
-   "titleclass": "h2"
+   "title": "Each sits in\nthe other's sign",
+   "titleclass": "h2",
+   "closing": "That is an exchange of signs",
+   "closingsize": 58,
+   "note": "16 Nov to 15 Dec"
   },
   {
    "type": "text",
@@ -206,7 +227,7 @@
        }
       ],
       "state": "focus",
-      "names": "Sun's house"
+      "names": "Sun's sign"
      },
      {
       "spacer": true,
@@ -221,12 +242,15 @@
        }
       ],
       "state": "focus",
-      "names": "Mars's house"
+      "names": "Mars's sign"
      }
     ]
    },
-   "title": "Nadi rule:\nsend each one home",
+   "title": "Nadi rule: read each\none in its own sign",
    "titleclass": "h2",
+   "titlesize": 92,
+   "closing": "Both start out strong",
+   "closingsize": 58,
    "motion": {
     "order": [
      0,
@@ -244,7 +268,7 @@
         }
        ],
        "state": "focus",
-       "names": "Sun's house"
+       "names": "Sun's sign"
       },
       {
        "spacer": true,
@@ -260,45 +284,185 @@
         }
        ],
        "state": "focus",
-       "names": "Mars's house"
+       "names": "Mars's sign"
       }
      ]
     }
    }
   },
   {
+   "type": "nsteps",
+   "title": "How Nadi reads\na graha",
+   "titleclass": "h2",
+   "steps": [
+    {
+     "head": "What it stands for"
+    },
+    {
+     "head": "Whose sign it sits in"
+    },
+    {
+     "head": "Who sits with it"
+    }
+   ],
+   "headsize": 64,
+   "stepsmt": 44
+  },
+  {
    "type": "text",
+   "label": "In the sky",
+   "labelsize": 34,
    "scene": {
     "w": 470,
-    "h": 290,
+    "h": 250,
+    "rooms": [
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 58,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "tag": "Mars's sign"
+     }
+    ]
+   },
+   "title": "The Sun in Scorpio",
+   "titleclass": "h2",
+   "titlesize": 96,
+   "body": [
+    "The king in the commander's sign",
+    "*Authority turns into action*"
+   ],
+   "bodysize": 44,
+   "bodygap": 6
+  },
+  {
+   "type": "text",
+   "label": "In the sky",
+   "labelsize": 34,
+   "scene": {
+    "w": 470,
+    "h": 250,
     "rooms": [
      {
       "sign": "Leo",
       "orbs": [
        {
-        "kind": "sun",
-        "r": 50,
-        "rings": false
+        "kind": "ketu",
+        "r": 24
        },
        {
         "kind": "jupiter",
-        "r": 46,
-        "dx": 124
+        "r": 32,
+        "dx": 70
+       },
+       {
+        "kind": "mars",
+        "r": 38
        }
       ],
-      "names": "Sun · Jupiter",
-      "state": "focus"
+      "state": "focus",
+      "tag": "Sun's sign",
+      "names": "Ketu · Jupiter · Mars"
      }
     ]
    },
-   "title": "At home, the Sun\nmeets Jupiter",
+   "title": "Mars in Leo",
    "titleclass": "h2",
-   "closing": "Jupiter, the teacher, adds advice",
-   "closingsize": 60
+   "titlesize": 96,
+   "body": [
+    "The commander in the king's sign",
+    "*Effort goes to those in charge*"
+   ],
+   "bodysize": 44,
+   "bodygap": 6
+  },
+  {
+   "type": "text",
+   "label": "Nadi reading",
+   "labelsize": 34,
+   "scene": {
+    "w": 470,
+    "h": 250,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "ketu",
+        "r": 24
+       },
+       {
+        "kind": "jupiter",
+        "r": 32,
+        "dx": 70
+       },
+       {
+        "kind": "sun",
+        "r": 44,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "tag": "Sun's own sign",
+      "names": "Ketu · Jupiter · Sun"
+     }
+    ]
+   },
+   "title": "The Sun in Leo",
+   "titleclass": "h2",
+   "titlesize": 96,
+   "body": [
+    "Own sign, beside Jupiter, the guide",
+    "*Confident, and open to advice*"
+   ],
+   "bodysize": 44,
+   "bodygap": 6
+  },
+  {
+   "type": "text",
+   "label": "Nadi reading",
+   "labelsize": 34,
+   "scene": {
+    "w": 470,
+    "h": 250,
+    "rooms": [
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 44
+       },
+       {
+        "kind": "mercury",
+        "r": 26,
+        "dx": 90
+       }
+      ],
+      "state": "focus",
+      "tag": "Mars's own sign",
+      "names": "Mars · Mercury from 2 Dec"
+     }
+    ]
+   },
+   "title": "Mars in Scorpio",
+   "titleclass": "h2",
+   "titlesize": 96,
+   "body": [
+    "Own sign; Mercury joins on 2 Dec",
+    "*Focused work with a clear plan*"
+   ],
+   "bodysize": 44,
+   "bodygap": 6
   },
   {
    "type": "rows",
-   "title": "Until 15 Dec",
+   "title": "16 Nov to 15 Dec",
    "titleclass": "h2",
    "roworbs": [
     {
@@ -311,25 +475,25 @@
      "r": 28
     },
     {
-     "kind": "jupiter",
-     "r": 30
+     "kind": "mars",
+     "r": 28
     }
    ],
    "items": [
     [
-     "Make the hard call",
+     "Lead, and take advice",
      ""
     ],
     [
-     "Finish one hard job",
+     "Put energy into one hard job",
      ""
     ],
     [
-     "Ask a mentor first",
+     "Keep your ego in check",
      ""
     ]
    ],
-   "namesize": 66
+   "namesize": 60
   },
   {
    "type": "cta",
@@ -345,7 +509,7 @@
      "dx": 150
     }
    ],
-   "title": "In a swap, read\neach one at home",
+   "title": "Learn to read\nthe sky with Sutram",
    "titleclass": "h2",
    "next": "Next: Rule 8 on Wednesday"
   }
