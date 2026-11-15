@@ -1,0 +1,798 @@
+{
+ "id": "phil-rope",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "Rope or snake?",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "Fear lives in the dark",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.1,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 110,
+       "cy": 220,
+       "r": 260,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.08
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 0.08
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.08
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M96,236 Q110,206 124,236 Z",
+       "fill": "AMBER",
+       "k": null
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M92,240 H128 L120,256 H100 Z",
+       "fill": "GOLD"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M140,380 C200,300 260,420 320,340 C370,270 420,380 470,300",
+       "fill": "none",
+       "stroke": "LEAF",
+       "stroke-width": 18,
+       "stroke-linecap": "round",
+       "stroke-opacity": 0.9
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 478,
+       "cy": 294,
+       "rx": 22,
+       "ry": 14,
+       "fill": "LEAF"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 484,
+       "cy": 290,
+       "r": 3,
+       "fill": "BG"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M140,380 C200,300 260,420 320,340 C370,270 420,380 470,300",
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 16,
+       "stroke-linecap": "round",
+       "stroke-dasharray": "10 6"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 1.0,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.056,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 110,
+       "cy": 220,
+       "r": 260,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.08
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 0.08
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.08
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M96,236 Q110,206 124,236 Z",
+       "fill": "AMBER",
+       "k": null
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M92,240 H128 L120,256 H100 Z",
+       "fill": "GOLD"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M140,380 C200,300 260,420 320,340 C370,270 420,380 470,300",
+       "fill": "none",
+       "stroke": "LEAF",
+       "stroke-width": 18,
+       "stroke-linecap": "round",
+       "stroke-opacity": 0.9
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 478,
+       "cy": 294,
+       "rx": 22,
+       "ry": 14,
+       "fill": "LEAF"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 484,
+       "cy": 290,
+       "r": 3,
+       "fill": "BG"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M140,380 C200,300 260,420 320,340 C370,270 420,380 470,300",
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 16,
+       "stroke-linecap": "round",
+       "stroke-dasharray": "10 6"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 1.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "At dusk,\na snake",
+   "titleclass": "h2",
+   "closing": "Your heart jumps",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.056,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 110,
+       "cy": 220,
+       "r": 260,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.08
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 0.08
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.08
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M96,236 Q110,206 124,236 Z",
+       "fill": "AMBER",
+       "k": null
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M92,240 H128 L120,256 H100 Z",
+       "fill": "GOLD"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M140,380 C200,300 260,420 320,340 C370,270 420,380 470,300",
+       "fill": "none",
+       "stroke": "LEAF",
+       "stroke-width": 18,
+       "stroke-linecap": "round",
+       "stroke-opacity": 0.9
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 478,
+       "cy": 294,
+       "rx": 22,
+       "ry": 14,
+       "fill": "LEAF"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 484,
+       "cy": 290,
+       "r": 3,
+       "fill": "BG"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M140,380 C200,300 260,420 320,340 C370,270 420,380 470,300",
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 16,
+       "stroke-linecap": "round",
+       "stroke-dasharray": "10 6"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 6.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "A lamp:\nit was a rope",
+   "titleclass": "h2",
+   "closing": "Nothing moved. You saw",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Most fear\nis like this",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "It is just unlit",
+    "*Bring a lamp*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Seeing clearly\nis the cure",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "Bring the lamp, and look",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "rahu",
+     "r": 50
+    }
+   ],
+   "orbgap": 70,
+   "title": "Rahu is drawn\nas a serpent's head",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "Shadows look bigger than they are",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Mandukya Karika",
+   "labelsize": 34,
+   "quote": "Rajju-sarpa",
+   "quotesize": 92,
+   "source": "Gaudapada, Mandukya Karika 2.17",
+   "closing": "A rope mistaken for a snake",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Pick one fear today",
+    "*Look at it in good light*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Rope or snake?",
+   "closingsize": 62
+  }
+ ]
+}

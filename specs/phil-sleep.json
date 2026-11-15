@@ -1,0 +1,1168 @@
+{
+ "id": "phil-sleep",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "Who knows\nyou slept well?",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "Waking, dreaming, deep sleep",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.08,
+    "els": [
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 116,
+       "width": 360,
+       "height": 68,
+       "rx": 34,
+       "fill": "CREAM",
+       "fill-opacity": 0.08,
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.8,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 158,
+       "text": "WAKING",
+       "fill": "CREAM",
+       "font-family": "EB Garamond",
+       "font-size": 24,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.8,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 206,
+       "width": 360,
+       "height": 68,
+       "rx": 34,
+       "fill": "CREAM",
+       "fill-opacity": 0.08,
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.4,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 248,
+       "text": "DREAM",
+       "fill": "CREAM",
+       "font-family": "EB Garamond",
+       "font-size": 24,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.4,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 296,
+       "width": 360,
+       "height": 68,
+       "rx": 34,
+       "fill": "CREAM",
+       "fill-opacity": 0.08,
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.6000000000000005,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8.0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 338,
+       "text": "DEEP SLEEP",
+       "fill": "CREAM",
+       "font-family": "EB Garamond",
+       "font-size": 24,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.6000000000000005,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8.0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 430,
+       "r": 160,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M110,430 H490",
+       "stroke": "AMBER",
+       "stroke-width": 5,
+       "stroke-linecap": "round"
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 476,
+       "text": "THE ONE WHO KNOWS",
+       "fill": "AMBER",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 6.5,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 116,
+       "width": 360,
+       "height": 68,
+       "rx": 34,
+       "fill": "CREAM",
+       "fill-opacity": 0.08,
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.8,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 158,
+       "text": "WAKING",
+       "fill": "CREAM",
+       "font-family": "EB Garamond",
+       "font-size": 24,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.8,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 206,
+       "width": 360,
+       "height": 68,
+       "rx": 34,
+       "fill": "CREAM",
+       "fill-opacity": 0.08,
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.4,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 248,
+       "text": "DREAM",
+       "fill": "CREAM",
+       "font-family": "EB Garamond",
+       "font-size": 24,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.4,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 296,
+       "width": 360,
+       "height": 68,
+       "rx": 34,
+       "fill": "CREAM",
+       "fill-opacity": 0.08,
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.6000000000000005,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8.0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 338,
+       "text": "DEEP SLEEP",
+       "fill": "CREAM",
+       "font-family": "EB Garamond",
+       "font-size": 24,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.6000000000000005,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8.0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 430,
+       "r": 160,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M110,430 H490",
+       "stroke": "AMBER",
+       "stroke-width": 5,
+       "stroke-linecap": "round"
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 476,
+       "text": "THE ONE WHO KNOWS",
+       "fill": "AMBER",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 1.2,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Awake, you\nsee the world",
+   "titleclass": "h2",
+   "closing": "Dreaming, you see a dream world",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 116,
+       "width": 360,
+       "height": 68,
+       "rx": 34,
+       "fill": "CREAM",
+       "fill-opacity": 0.08,
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.8,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 158,
+       "text": "WAKING",
+       "fill": "CREAM",
+       "font-family": "EB Garamond",
+       "font-size": 24,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.8,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 206,
+       "width": 360,
+       "height": 68,
+       "rx": 34,
+       "fill": "CREAM",
+       "fill-opacity": 0.08,
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.4,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 248,
+       "text": "DREAM",
+       "fill": "CREAM",
+       "font-family": "EB Garamond",
+       "font-size": 24,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.4,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 296,
+       "width": 360,
+       "height": 68,
+       "rx": 34,
+       "fill": "CREAM",
+       "fill-opacity": 0.08,
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.6000000000000005,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8.0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 338,
+       "text": "DEEP SLEEP",
+       "fill": "CREAM",
+       "font-family": "EB Garamond",
+       "font-size": 24,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        5.6000000000000005,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8.0,
+        {
+         "opacity": 0.25
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.25
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 430,
+       "r": 160,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M110,430 H490",
+       "stroke": "AMBER",
+       "stroke-width": 5,
+       "stroke-linecap": "round"
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 476,
+       "text": "THE ONE WHO KNOWS",
+       "fill": "AMBER",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 6.5,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "In deep sleep\nthere is nothing",
+   "titleclass": "h2",
+   "closing": "Yet you wake up and say: I slept well",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Who was there\nto know it?",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "Not the body. Not the mind",
+    "*Something stayed awake*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "It is here now",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "Under waking, dreaming and sleep",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 54,
+     "rings": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "The Sun is\nthe soul",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "Its light never sleeps",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Mandukya Upanishad",
+   "labelsize": 34,
+   "quote": "Turīya",
+   "quotesize": 92,
+   "source": "Mandukya Upanishad 7",
+   "closing": "The fourth: awake under all three",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Tonight, as you fall asleep",
+    "*Notice the last moment you notice*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Who was noticing?",
+   "closingsize": 62
+  }
+ ]
+}

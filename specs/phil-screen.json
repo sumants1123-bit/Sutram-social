@@ -1,0 +1,628 @@
+{
+ "id": "phil-screen",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "The screen\nand the film",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "Fire on screen never burns it",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.08,
+    "els": [
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 110,
+       "width": 360,
+       "height": 250,
+       "rx": 8,
+       "fill": "CREAM",
+       "fill-opacity": 0.06,
+       "stroke": "GOLD",
+       "stroke-width": 5
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M300.0,420.0 C270.6,411.6 266.4,382.2 279.0,361.2 C284.0,378.0 291.6,382.2 293.3,369.6 C287.4,348.6 295.8,323.4 312.6,306.6 C310.9,331.8 325.2,344.4 328.6,357.0 C330.2,348.6 333.6,344.4 338.6,339.4 C346.2,369.6 342.0,407.4 300.0,420.0 Z",
+       "fill": "RED",
+       "fill-opacity": 0.9,
+       "transform": "translate(0 -110)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.8,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M170,200 L158,250 M196,202 L184,252 M222,204 L210,254 M248,206 L236,256 M274,208 L262,258 M300,150 L288,200 M326,152 L314,202 M352,154 L340,204 M378,156 L366,206 M404,158 L392,208 M430,160 L418,210",
+       "fill": "none",
+       "stroke": "SKY",
+       "stroke-width": 3,
+       "stroke-linecap": "round"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.4,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 235,
+       "r": 46,
+       "fill": "url(#anS)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        5.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M260,360 L230,430 M340,360 L370,430 M210,430 H390",
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 4,
+       "stroke-linecap": "round"
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 470,
+       "text": "THE SCREEN STAYS THE SAME",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 19,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 1.3,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 110,
+       "width": 360,
+       "height": 250,
+       "rx": 8,
+       "fill": "CREAM",
+       "fill-opacity": 0.06,
+       "stroke": "GOLD",
+       "stroke-width": 5
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M300.0,420.0 C270.6,411.6 266.4,382.2 279.0,361.2 C284.0,378.0 291.6,382.2 293.3,369.6 C287.4,348.6 295.8,323.4 312.6,306.6 C310.9,331.8 325.2,344.4 328.6,357.0 C330.2,348.6 333.6,344.4 338.6,339.4 C346.2,369.6 342.0,407.4 300.0,420.0 Z",
+       "fill": "RED",
+       "fill-opacity": 0.9,
+       "transform": "translate(0 -110)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.8,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M170,200 L158,250 M196,202 L184,252 M222,204 L210,254 M248,206 L236,256 M274,208 L262,258 M300,150 L288,200 M326,152 L314,202 M352,154 L340,204 M378,156 L366,206 M404,158 L392,208 M430,160 L418,210",
+       "fill": "none",
+       "stroke": "SKY",
+       "stroke-width": 3,
+       "stroke-linecap": "round"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.4,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 235,
+       "r": 46,
+       "fill": "url(#anS)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        5.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M260,360 L230,430 M340,360 L370,430 M210,430 H390",
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 4,
+       "stroke-linecap": "round"
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 470,
+       "text": "THE SCREEN STAYS THE SAME",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 19,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 1.3,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "A fire\non the screen",
+   "titleclass": "h2",
+   "closing": "The screen doesn't burn",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "rect",
+      "a": {
+       "x": 120,
+       "y": 110,
+       "width": 360,
+       "height": 250,
+       "rx": 8,
+       "fill": "CREAM",
+       "fill-opacity": 0.06,
+       "stroke": "GOLD",
+       "stroke-width": 5
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M300.0,420.0 C270.6,411.6 266.4,382.2 279.0,361.2 C284.0,378.0 291.6,382.2 293.3,369.6 C287.4,348.6 295.8,323.4 312.6,306.6 C310.9,331.8 325.2,344.4 328.6,357.0 C330.2,348.6 333.6,344.4 338.6,339.4 C346.2,369.6 342.0,407.4 300.0,420.0 Z",
+       "fill": "RED",
+       "fill-opacity": 0.9,
+       "transform": "translate(0 -110)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.8,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M170,200 L158,250 M196,202 L184,252 M222,204 L210,254 M248,206 L236,256 M274,208 L262,258 M300,150 L288,200 M326,152 L314,202 M352,154 L340,204 M378,156 L366,206 M404,158 L392,208 M430,160 L418,210",
+       "fill": "none",
+       "stroke": "SKY",
+       "stroke-width": 3,
+       "stroke-linecap": "round"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        5.4,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 235,
+       "r": 46,
+       "fill": "url(#anS)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        5.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M260,360 L230,430 M340,360 L370,430 M210,430 H390",
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 4,
+       "stroke-linecap": "round"
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 470,
+       "text": "THE SCREEN STAYS THE SAME",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 19,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 4.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "A flood\non the screen",
+   "titleclass": "h2",
+   "closing": "The screen stays dry",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Your life\nis the film",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "Good scenes, hard scenes",
+    "*You are the screen they play on*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Enjoy the film",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "Remember the screen",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 46
+    },
+    {
+     "kind": "jupiter",
+     "r": 50
+    }
+   ],
+   "orbgap": 70,
+   "title": "Every dasha\nis a new film",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "The screen is the same",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Bhagavad Gita",
+   "labelsize": 34,
+   "quote": "Nainaṃ dahati pāvakaḥ",
+   "quotesize": 92,
+   "source": "Bhagavad Gita 2.23",
+   "closing": "Fire does not burn it",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "In a hard scene today",
+    "*Remember the screen*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Then keep watching",
+   "closingsize": 62
+  }
+ ]
+}

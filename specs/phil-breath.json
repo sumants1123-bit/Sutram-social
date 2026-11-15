@@ -1,0 +1,614 @@
+{
+ "id": "phil-breath",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "Who is\nbreathing?",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "Notice your breath, right now",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.12,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 230,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 90,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 2,
+       "stroke-opacity": 0.45
+      },
+      "k": [
+       [
+        0,
+        {
+         "r": 90
+        }
+       ],
+       [
+        0.7,
+        {
+         "r": 130
+        }
+       ],
+       [
+        1.3,
+        {
+         "r": 90
+        }
+       ],
+       [
+        1.9,
+        {
+         "r": 130
+        }
+       ],
+       [
+        2.5,
+        {
+         "r": 90
+        }
+       ],
+       [
+        5.4,
+        {
+         "r": 176
+        }
+       ],
+       [
+        8,
+        {
+         "r": 90
+        }
+       ]
+      ],
+      "e": "sine"
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 70,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 6
+      },
+      "k": [
+       [
+        0,
+        {
+         "r": 70
+        }
+       ],
+       [
+        0.6,
+        {
+         "r": 112
+        }
+       ],
+       [
+        1.2,
+        {
+         "r": 70
+        }
+       ],
+       [
+        1.8,
+        {
+         "r": 112
+        }
+       ],
+       [
+        2.4,
+        {
+         "r": 70
+        }
+       ],
+       [
+        5.2,
+        {
+         "r": 150
+        }
+       ],
+       [
+        8,
+        {
+         "r": 70
+        }
+       ]
+      ],
+      "e": "sine"
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 9,
+       "fill": "AMBER"
+      }
+     }
+    ],
+    "at": 4.6,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0752000000000002,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 230,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 90,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 2,
+       "stroke-opacity": 0.45
+      },
+      "k": [
+       [
+        0,
+        {
+         "r": 90
+        }
+       ],
+       [
+        0.7,
+        {
+         "r": 130
+        }
+       ],
+       [
+        1.3,
+        {
+         "r": 90
+        }
+       ],
+       [
+        1.9,
+        {
+         "r": 130
+        }
+       ],
+       [
+        2.5,
+        {
+         "r": 90
+        }
+       ],
+       [
+        5.4,
+        {
+         "r": 176
+        }
+       ],
+       [
+        8,
+        {
+         "r": 90
+        }
+       ]
+      ],
+      "e": "sine"
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 70,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 6
+      },
+      "k": [
+       [
+        0,
+        {
+         "r": 70
+        }
+       ],
+       [
+        0.6,
+        {
+         "r": 112
+        }
+       ],
+       [
+        1.2,
+        {
+         "r": 70
+        }
+       ],
+       [
+        1.8,
+        {
+         "r": 112
+        }
+       ],
+       [
+        2.4,
+        {
+         "r": 70
+        }
+       ],
+       [
+        5.2,
+        {
+         "r": 150
+        }
+       ],
+       [
+        8,
+        {
+         "r": 70
+        }
+       ]
+      ],
+      "e": "sine"
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 9,
+       "fill": "AMBER"
+      }
+     }
+    ],
+    "at": 1.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Notice\nyour breath",
+   "titleclass": "h2",
+   "closing": "Don't control it. Just watch",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0752000000000002,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 230,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 90,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 2,
+       "stroke-opacity": 0.45
+      },
+      "k": [
+       [
+        0,
+        {
+         "r": 90
+        }
+       ],
+       [
+        0.7,
+        {
+         "r": 130
+        }
+       ],
+       [
+        1.3,
+        {
+         "r": 90
+        }
+       ],
+       [
+        1.9,
+        {
+         "r": 130
+        }
+       ],
+       [
+        2.5,
+        {
+         "r": 90
+        }
+       ],
+       [
+        5.4,
+        {
+         "r": 176
+        }
+       ],
+       [
+        8,
+        {
+         "r": 90
+        }
+       ]
+      ],
+      "e": "sine"
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 70,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 6
+      },
+      "k": [
+       [
+        0,
+        {
+         "r": 70
+        }
+       ],
+       [
+        0.6,
+        {
+         "r": 112
+        }
+       ],
+       [
+        1.2,
+        {
+         "r": 70
+        }
+       ],
+       [
+        1.8,
+        {
+         "r": 112
+        }
+       ],
+       [
+        2.4,
+        {
+         "r": 70
+        }
+       ],
+       [
+        5.2,
+        {
+         "r": 150
+        }
+       ],
+       [
+        8,
+        {
+         "r": 70
+        }
+       ]
+      ],
+      "e": "sine"
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 9,
+       "fill": "AMBER"
+      }
+     }
+    ],
+    "at": 4.6,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "It slows\nby itself",
+   "titleclass": "h2",
+   "closing": "Nobody slowed it",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Are you\nbreathing?",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "Or is breathing happening",
+    "*and you are the one who knows?*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Breath and mind\nmove together",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "Still breath, still mind",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 50,
+     "illum": 0.5,
+     "waxing": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "The Moon\nis the mind",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "Moods rise and fall like its tides",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Hatha Yoga Pradipika",
+   "labelsize": 34,
+   "quote": "Cale vāte calaṃ cittam",
+   "quotesize": 92,
+   "source": "Hatha Yoga Pradipika 2.2",
+   "closing": "When the breath moves, the mind moves",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Three slow breaths before you reply",
+    "*Watch who is watching*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "The breath knows the way",
+   "closingsize": 62
+  }
+ ]
+}

@@ -1,0 +1,329 @@
+{
+ "id": "phil-ocean",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "Rivers into\nthe ocean",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "The ocean doesn't rise or fall",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.08,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 470,
+       "cy": 110,
+       "r": 36,
+       "fill": "url(#anM)"
+      }
+     },
+     {
+      "t": "rect",
+      "a": {
+       "x": 70,
+       "y": 330,
+       "width": 460,
+       "height": 150,
+       "fill": "WATER",
+       "fill-opacity": 0.35
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M70,330 H530",
+       "stroke": "MOON",
+       "stroke-width": 4
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M100,120 C150,190 120,250 170,330 M250,90 C290,170 240,240 290,330 M380,150 C350,220 420,270 390,330",
+       "fill": "none",
+       "stroke": "SKY",
+       "stroke-width": 6,
+       "stroke-linecap": "round",
+       "stroke-dasharray": "18 14",
+       "stroke-dashoffset": 0
+      },
+      "k": [
+       [
+        0,
+        {
+         "stroke-dashoffset": 0
+        }
+       ],
+       [
+        8,
+        {
+         "stroke-dashoffset": -128
+        }
+       ]
+      ],
+      "e": "lin"
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 420,
+       "text": "STILL FULL",
+       "fill": "MOON",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 3.0,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 470,
+       "cy": 110,
+       "r": 36,
+       "fill": "url(#anM)"
+      }
+     },
+     {
+      "t": "rect",
+      "a": {
+       "x": 70,
+       "y": 330,
+       "width": 460,
+       "height": 150,
+       "fill": "WATER",
+       "fill-opacity": 0.35
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M70,330 H530",
+       "stroke": "MOON",
+       "stroke-width": 4
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M100,120 C150,190 120,250 170,330 M250,90 C290,170 240,240 290,330 M380,150 C350,220 420,270 390,330",
+       "fill": "none",
+       "stroke": "SKY",
+       "stroke-width": 6,
+       "stroke-linecap": "round",
+       "stroke-dasharray": "18 14",
+       "stroke-dashoffset": 0
+      },
+      "k": [
+       [
+        0,
+        {
+         "stroke-dashoffset": 0
+        }
+       ],
+       [
+        8,
+        {
+         "stroke-dashoffset": -128
+        }
+       ]
+      ],
+      "e": "lin"
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 420,
+       "text": "STILL FULL",
+       "fill": "MOON",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 2.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Rivers pour in",
+   "titleclass": "h2",
+   "closing": "Desires, news, other people's moods",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 470,
+       "cy": 110,
+       "r": 36,
+       "fill": "url(#anM)"
+      }
+     },
+     {
+      "t": "rect",
+      "a": {
+       "x": 70,
+       "y": 330,
+       "width": 460,
+       "height": 150,
+       "fill": "WATER",
+       "fill-opacity": 0.35
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M70,330 H530",
+       "stroke": "MOON",
+       "stroke-width": 4
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M100,120 C150,190 120,250 170,330 M250,90 C290,170 240,240 290,330 M380,150 C350,220 420,270 390,330",
+       "fill": "none",
+       "stroke": "SKY",
+       "stroke-width": 6,
+       "stroke-linecap": "round",
+       "stroke-dasharray": "18 14",
+       "stroke-dashoffset": 0
+      },
+      "k": [
+       [
+        0,
+        {
+         "stroke-dashoffset": 0
+        }
+       ],
+       [
+        8,
+        {
+         "stroke-dashoffset": -128
+        }
+       ]
+      ],
+      "e": "lin"
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 420,
+       "text": "STILL FULL",
+       "fill": "MOON",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 6.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "The ocean\nstays itself",
+   "titleclass": "h2",
+   "closing": "Full, and still",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Be the ocean",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "Let things flow in",
+    "*You don't have to rise*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "A full ocean\ndoesn't chase rivers",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "Peace is that",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 50,
+     "illum": 0.5,
+     "waxing": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "The Moon pulls\nthe tides",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "The depths stay still",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Bhagavad Gita",
+   "labelsize": 34,
+   "quote": "Samudram āpaḥ praviśanti",
+   "quotesize": 92,
+   "source": "Bhagavad Gita 2.70",
+   "closing": "Waters enter the ocean; it stays still",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "When news pours in today",
+    "*Let it flow in*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Stay the ocean",
+   "closingsize": 62
+  }
+ ]
+}

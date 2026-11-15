@@ -1,0 +1,853 @@
+{
+ "id": "phil-one-light",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "One light,\nmany forms",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "Everything you see shines with one light",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.08,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 110,
+       "cy": 260,
+       "r": 200,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.8
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.8
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 110,
+       "cy": 260,
+       "r": 60,
+       "fill": "url(#anS)"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 290,
+       "cy": 160,
+       "r": 26,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M290,134 A26,26 0 0 0 290,186 A10.4,26 0 0 1 290,134 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 330,
+       "cy": 330,
+       "r": 20,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M330,310 A20,20 0 0 0 330,350 A8.0,20 0 0 1 330,310 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 430,
+       "cy": 230,
+       "r": 32,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M430,198 A32,32 0 0 0 430,262 A12.8,32 0 0 1 430,198 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 500,
+       "cy": 380,
+       "r": 18,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M500,362 A18,18 0 0 0 500,398 A7.2,18 0 0 1 500,362 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 520,
+       "cy": 120,
+       "r": 16,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M520,104 A16,16 0 0 0 520,136 A6.4,16 0 0 1 520,104 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M180,200 L260,170 M180,260 L280,260 M180,320 L300,340",
+       "stroke": "AMBER",
+       "stroke-width": 2.5,
+       "stroke-dasharray": "6 10",
+       "stroke-dashoffset": 0
+      },
+      "k": [
+       [
+        0,
+        {
+         "stroke-dashoffset": 0
+        }
+       ],
+       [
+        8,
+        {
+         "stroke-dashoffset": -64
+        }
+       ]
+      ],
+      "e": "lin"
+     }
+    ],
+    "at": 4.0,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 110,
+       "cy": 260,
+       "r": 200,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.8
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.8
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 110,
+       "cy": 260,
+       "r": 60,
+       "fill": "url(#anS)"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 290,
+       "cy": 160,
+       "r": 26,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M290,134 A26,26 0 0 0 290,186 A10.4,26 0 0 1 290,134 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 330,
+       "cy": 330,
+       "r": 20,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M330,310 A20,20 0 0 0 330,350 A8.0,20 0 0 1 330,310 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 430,
+       "cy": 230,
+       "r": 32,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M430,198 A32,32 0 0 0 430,262 A12.8,32 0 0 1 430,198 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 500,
+       "cy": 380,
+       "r": 18,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M500,362 A18,18 0 0 0 500,398 A7.2,18 0 0 1 500,362 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 520,
+       "cy": 120,
+       "r": 16,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M520,104 A16,16 0 0 0 520,136 A6.4,16 0 0 1 520,104 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M180,200 L260,170 M180,260 L280,260 M180,320 L300,340",
+       "stroke": "AMBER",
+       "stroke-width": 2.5,
+       "stroke-dasharray": "6 10",
+       "stroke-dashoffset": 0
+      },
+      "k": [
+       [
+        0,
+        {
+         "stroke-dashoffset": 0
+        }
+       ],
+       [
+        8,
+        {
+         "stroke-dashoffset": -64
+        }
+       ]
+      ],
+      "e": "lin"
+     }
+    ],
+    "at": 2.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Moon, Mars,\nJupiter, Venus",
+   "titleclass": "h2",
+   "closing": "Each one shines",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 110,
+       "cy": 260,
+       "r": 200,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.8
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.8
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 110,
+       "cy": 260,
+       "r": 60,
+       "fill": "url(#anS)"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 290,
+       "cy": 160,
+       "r": 26,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M290,134 A26,26 0 0 0 290,186 A10.4,26 0 0 1 290,134 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 330,
+       "cy": 330,
+       "r": 20,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M330,310 A20,20 0 0 0 330,350 A8.0,20 0 0 1 330,310 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 430,
+       "cy": 230,
+       "r": 32,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M430,198 A32,32 0 0 0 430,262 A12.8,32 0 0 1 430,198 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 500,
+       "cy": 380,
+       "r": 18,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M500,362 A18,18 0 0 0 500,398 A7.2,18 0 0 1 500,362 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 520,
+       "cy": 120,
+       "r": 16,
+       "fill": "#2A2622"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M520,104 A16,16 0 0 0 520,136 A6.4,16 0 0 1 520,104 Z",
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M180,200 L260,170 M180,260 L280,260 M180,320 L300,340",
+       "stroke": "AMBER",
+       "stroke-width": 2.5,
+       "stroke-dasharray": "6 10",
+       "stroke-dashoffset": 0
+      },
+      "k": [
+       [
+        0,
+        {
+         "stroke-dashoffset": 0
+        }
+       ],
+       [
+        8,
+        {
+         "stroke-dashoffset": -64
+        }
+       ]
+      ],
+      "e": "lin"
+     }
+    ],
+    "at": 5.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "None has its\nown light",
+   "titleclass": "h2",
+   "closing": "Each shines with the Sun's",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Your thoughts,\nfeelings, memories",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "Each one is lit",
+    "*by the same awareness*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Find the light",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "It was there in each one",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 54,
+     "rings": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "The Sun is\nthe soul",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "The other grahas shine by its light",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Katha Upanishad",
+   "labelsize": 34,
+   "quote": "Tasya bhāsā sarvam idaṃ vibhāti",
+   "quotesize": 76,
+   "source": "Katha Upanishad 2.2.15",
+   "closing": "By its light all this shines",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Look at anything near you",
+    "*Notice what lets you see it*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "That is the light",
+   "closingsize": 62
+  }
+ ]
+}

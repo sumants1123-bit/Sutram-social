@@ -1,0 +1,787 @@
+{
+ "id": "phil-not-your-chart",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "You are not\nyour chart",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "Who is it that reads the chart?",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.08,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 290,
+       "r": 190,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3,
+       "stroke-opacity": 0.7
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 290,
+       "r": 104.50000000000001,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 2,
+       "stroke-opacity": 0.5
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M404.5,290.0 L490.0,290.0 M390.5,342.2 L464.5,385.0 M352.2,380.5 L395.0,454.5 M300.0,394.5 L300.0,480.0 M247.8,380.5 L205.0,454.5 M209.5,342.2 L135.5,385.0 M195.5,290.0 L110.0,290.0 M209.5,237.7 L135.5,195.0 M247.7,199.5 L205.0,125.5 M300.0,185.5 L300.0,100.0 M352.2,199.5 L395.0,125.5 M390.5,237.7 L464.5,195.0",
+       "stroke": "GOLD",
+       "stroke-width": 2,
+       "stroke-opacity": 0.5
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 439.3,
+       "cy": 340.7,
+       "r": 13,
+       "fill": "SUN"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 198.1,
+       "cy": 375.5,
+       "r": 11,
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 720
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 244.1,
+       "cy": 136.5,
+       "r": 10,
+       "fill": "RED"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 362.7,
+       "cy": 181.4,
+       "r": 10,
+       "fill": "LEAF"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": -360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 329.7,
+       "cy": 458.4,
+       "r": 9,
+       "fill": "AMBER"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 500,
+       "cy": 70,
+       "r": 110,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 500,
+       "cy": 70,
+       "r": 10,
+       "fill": "CREAM"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M488,84 L436,150",
+       "stroke": "CREAM",
+       "stroke-width": 2,
+       "stroke-dasharray": "4 8",
+       "stroke-opacity": 0.7
+      }
+     }
+    ],
+    "at": 4.0,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 290,
+       "r": 190,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3,
+       "stroke-opacity": 0.7
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 290,
+       "r": 104.50000000000001,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 2,
+       "stroke-opacity": 0.5
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M404.5,290.0 L490.0,290.0 M390.5,342.2 L464.5,385.0 M352.2,380.5 L395.0,454.5 M300.0,394.5 L300.0,480.0 M247.8,380.5 L205.0,454.5 M209.5,342.2 L135.5,385.0 M195.5,290.0 L110.0,290.0 M209.5,237.7 L135.5,195.0 M247.7,199.5 L205.0,125.5 M300.0,185.5 L300.0,100.0 M352.2,199.5 L395.0,125.5 M390.5,237.7 L464.5,195.0",
+       "stroke": "GOLD",
+       "stroke-width": 2,
+       "stroke-opacity": 0.5
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 439.3,
+       "cy": 340.7,
+       "r": 13,
+       "fill": "SUN"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 198.1,
+       "cy": 375.5,
+       "r": 11,
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 720
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 244.1,
+       "cy": 136.5,
+       "r": 10,
+       "fill": "RED"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 362.7,
+       "cy": 181.4,
+       "r": 10,
+       "fill": "LEAF"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": -360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 329.7,
+       "cy": 458.4,
+       "r": 9,
+       "fill": "AMBER"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 500,
+       "cy": 70,
+       "r": 110,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 500,
+       "cy": 70,
+       "r": 10,
+       "fill": "CREAM"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M488,84 L436,150",
+       "stroke": "CREAM",
+       "stroke-width": 2,
+       "stroke-dasharray": "4 8",
+       "stroke-opacity": 0.7
+      }
+     }
+    ],
+    "at": 2.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "The chart\nmoves",
+   "titleclass": "h2",
+   "closing": "Grahas, signs, houses, dashas",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 290,
+       "r": 190,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3,
+       "stroke-opacity": 0.7
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 290,
+       "r": 104.50000000000001,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 2,
+       "stroke-opacity": 0.5
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M404.5,290.0 L490.0,290.0 M390.5,342.2 L464.5,385.0 M352.2,380.5 L395.0,454.5 M300.0,394.5 L300.0,480.0 M247.8,380.5 L205.0,454.5 M209.5,342.2 L135.5,385.0 M195.5,290.0 L110.0,290.0 M209.5,237.7 L135.5,195.0 M247.7,199.5 L205.0,125.5 M300.0,185.5 L300.0,100.0 M352.2,199.5 L395.0,125.5 M390.5,237.7 L464.5,195.0",
+       "stroke": "GOLD",
+       "stroke-width": 2,
+       "stroke-opacity": 0.5
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 439.3,
+       "cy": 340.7,
+       "r": 13,
+       "fill": "SUN"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 198.1,
+       "cy": 375.5,
+       "r": 11,
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 720
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 244.1,
+       "cy": 136.5,
+       "r": 10,
+       "fill": "RED"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 362.7,
+       "cy": 181.4,
+       "r": 10,
+       "fill": "LEAF"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": -360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 329.7,
+       "cy": 458.4,
+       "r": 9,
+       "fill": "AMBER"
+      },
+      "k": [
+       [
+        0,
+        {
+         "rot": 0
+        }
+       ],
+       [
+        8,
+        {
+         "rot": 360
+        }
+       ]
+      ],
+      "e": "lin",
+      "o": [
+       300,
+       290
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 500,
+       "cy": 70,
+       "r": 110,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.75
+        }
+       ],
+       [
+        4,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.75
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 500,
+       "cy": 70,
+       "r": 10,
+       "fill": "CREAM"
+      }
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M488,84 L436,150",
+       "stroke": "CREAM",
+       "stroke-width": 2,
+       "stroke-dasharray": "4 8",
+       "stroke-opacity": 0.7
+      }
+     }
+    ],
+    "at": 5.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Something\nwatches it move",
+   "titleclass": "h2",
+   "closing": "It has no house of its own",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "The chart is\nthe field",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "Body, mind, timing, karma",
+    "*You are the one who knows the field*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Read your chart\nlike a map",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "It shows the road ahead",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 54,
+     "rings": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "The 1st house\nis the body",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "The knower has no house",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Bhagavad Gita",
+   "labelsize": 34,
+   "quote": "Kṣetra, kṣetrajña",
+   "quotesize": 92,
+   "source": "Bhagavad Gita, chapter 13",
+   "closing": "The field, and the knower of the field",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "When a reading scares you",
+    "*Ask: who is reading this?*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "The chart shows the weather",
+   "closingsize": 62
+  }
+ ]
+}

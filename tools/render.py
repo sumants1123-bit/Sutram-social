@@ -557,6 +557,59 @@ def posture_html(po, s=1.0):
             f'<svg width="{600*k:.0f}" height="{520*k:.0f}" viewBox="40 40 520 470" style="overflow:visible">{o}</svg>'
             f'<script type="application/json" id="po-data">{data}</script></div>')
 
+# A small keyframe engine for drawn pictures that move (v11, 15 Nov). A slide's 'anim' holds SVG elements and keyframes:
+# {"w":600,"h":520,"k":1.2,"at":3.0,"secs":8,"els":[{"t":"circle","a":{...static attrs...},"k":[[sec,{attr:value}],...],"e":"io"}]}
+# Numbers interpolate; path 'd' strings interpolate number by number when their shapes match. tx, ty, rot, sc (about "o":[x,y])
+# make the transform. Colour words CREAM, AMBER, GOLD, BG, SUN, MOON, SKY, WATER are swapped for the palette.
+# The still shows the moment 'at' (seconds); tools/anim_motion.py plays the whole loop.
+AN_COL={'CREAM':CREAM,'AMBER':AMBER,'GOLD':GOLD,'BG':BG,'SUN':'#F2A24A','MOON':'#E9E4DE','SKY':'#7E9CB8','WATER':'#5D7F9C','RED':'#D9583B','LEAF':'#8FA67C','ROSE':'#E3A3A0'}
+AN_JS=r"""(function(){
+const D=JSON.parse(document.getElementById('an-data').textContent);
+const num=/-?\d*\.?\d+(?:e-?\d+)?/g;
+const ease={io:x=>x<.5?4*x*x*x:1-Math.pow(-2*x+2,3)/2, lin:x=>x, sine:x=>.5-.5*Math.cos(Math.PI*x), out:x=>1-Math.pow(1-x,3)};
+function lerp(a,b,f){ if(typeof a==='number') return a+(b-a)*f;
+  const na=String(a).match(num), nb=String(b).match(num);
+  if(!na||!nb||na.length!==nb.length||String(a).replace(num,'#')!==String(b).replace(num,'#')) return f<.5?a:b;
+  let i=0; return String(a).replace(num,()=>{const v=+na[i]+(+nb[i]-+na[i])*f; i++; return v.toFixed(2)}) }
+function val(el,attr,ts){ const K=el.k.filter(k=>attr in k[1]); if(!K.length) return undefined;
+  if(ts<=K[0][0]) return K[0][1][attr]; if(ts>=K[K.length-1][0]) return K[K.length-1][1][attr];
+  for(let i=0;i<K.length-1;i++){ const a=K[i],b=K[i+1]; if(ts>=a[0]&&ts<=b[0]){ const f=(ts-a[0])/((b[0]-a[0])||1); return lerp(a[1][attr],b[1][attr],(ease[b[2]||el.e||'io'])(f)) } } }
+window.__an=function(t){ const ts=t*D.secs;
+  D.els.forEach((el,i)=>{ if(!el.k||!el.k.length) return; const n=document.getElementById('an'+i); if(!n) return;
+    const attrs=new Set(); el.k.forEach(k=>Object.keys(k[1]).forEach(x=>attrs.add(x)));
+    let T=null; const g=x=>{const v=val(el,x,ts); return v===undefined?(el.a&&el.a[x]!==undefined?el.a[x]:null):v};
+    attrs.forEach(x=>{ if(['tx','ty','rot','sc'].includes(x)){T=1;return} const v=val(el,x,ts); if(v!==undefined) n.setAttribute(x, typeof v==='number'?v.toFixed(3):v) });
+    if(T||['tx','ty','rot','sc'].some(x=>el.a&&el.a[x]!==undefined)){ const o=el.o||[0,0], tx=+g('tx')||0, ty=+g('ty')||0, r=+g('rot')||0, sc=g('sc')===null?1:+g('sc');
+      n.setAttribute('transform',`translate(${(tx+o[0]).toFixed(2)} ${(ty+o[1]).toFixed(2)}) rotate(${r.toFixed(2)}) scale(${sc.toFixed(4)}) translate(${-o[0]} ${-o[1]})`) } }) };
+window.__an(D.at/D.secs);
+})();"""
+def anim_html(an, s=1.0):
+    W=an.get('w',600); Hh=an.get('h',520); k=an.get('k',1.2); vb=an.get('vb',f"0 0 {W} {Hh}")
+    col=lambda v: AN_COL.get(v,v) if isinstance(v,str) else v
+    defs=(f"<defs><radialGradient id='anG'><stop offset='0' stop-color='{AMBER}' stop-opacity='.8'/><stop offset='.45' stop-color='{AMBER}' stop-opacity='.22'/><stop offset='1' stop-color='{AMBER}' stop-opacity='0'/></radialGradient>"
+          f"<radialGradient id='anW'><stop offset='0' stop-color='#FFF6E8' stop-opacity='.9'/><stop offset='.4' stop-color='#FFE9C8' stop-opacity='.25'/><stop offset='1' stop-color='#FFE9C8' stop-opacity='0'/></radialGradient>"
+          f"<radialGradient id='anS' cx='40%' cy='36%' r='70%'><stop offset='0' stop-color='#FFE2A8'/><stop offset='.55' stop-color='#F2A24A'/><stop offset='1' stop-color='#C9692B'/></radialGradient>"
+          f"<radialGradient id='anM' cx='40%' cy='36%' r='72%'><stop offset='0' stop-color='#FFFFFF'/><stop offset='.6' stop-color='#E2DDDA'/><stop offset='1' stop-color='#A9A3A7'/></radialGradient>"
+          f"<filter id='anB' x='-50%' y='-50%' width='200%' height='200%'><feGaussianBlur stdDeviation='6'/></filter>{an.get('defs','')}</defs>")
+    o=[]
+    for i,el in enumerate(an['els']):
+        a=dict(el.get('a',{}))
+        if el.get('k'):
+            for kk in el['k']:
+                for x,v in kk[1].items():
+                    if x not in a: a[x]=v
+                break
+        tr=''
+        if any(x in a for x in ('tx','ty','rot','sc')):
+            ox,oy=el.get('o',[0,0]); tr=f" transform='translate({a.get('tx',0)+ox} {a.get('ty',0)+oy}) rotate({a.get('rot',0)}) scale({a.get('sc',1)}) translate({-ox} {-oy})'"
+        attrs=' '.join(f"{x}='{col(v)}'" for x,v in a.items() if x not in ('tx','ty','rot','sc','text'))
+        tag=el['t']; inner=esc(a['text']) if 'text' in a else el.get('inner','')
+        o.append(f"<{tag} id='an{i}' {attrs}{tr}>{inner}</{tag}>")
+    data=json.dumps({'secs':an.get('secs',8),'at':an.get('at',0),'els':[{'a':{x:(col(v)) for x,v in e.get('a',{}).items()},'k':[[kk[0],{x:col(v) for x,v in kk[1].items()}]+kk[2:] for kk in e.get('k',[])],'e':e.get('e','io'),'o':e.get('o',[0,0])} for e in an['els']]})
+    return (f'<div class="anid" style="position:relative;width:{W*k:.0f}px;height:{Hh*k:.0f}px;zoom:{s:.3f};margin:{an.get("mt",20)}px auto {an.get("mb",10)}px">'
+            f'<svg width="{W*k:.0f}" height="{Hh*k:.0f}" viewBox="{vb}" style="overflow:visible">{defs}{"".join(o)}</svg>'
+            f'<script type="application/json" id="an-data">{data}</script><script>{AN_JS}</script></div>')
+
 def shot_html(sh, s=1.0):
     """A real picture (a page of a report, a screen) in a thin frame. sh: file (repo path), w (px on the slide), tilt (degrees), cap.
     A list of these stacks them, one under the other (two excerpts of one page)."""
@@ -665,6 +718,7 @@ def slide_html(sp, s=1.0):
         if sp.get('subtitle'): H.append(f'<div class="ti sub" style="margin-top:22px;{"font-size:"+F(sp["subsize"])+";" if sp.get("subsize") else ""}">{rich(sp["subtitle"]).replace(chr(60)+"span class="+chr(34)+"ti"+chr(34)+">",chr(60)+"span style="+chr(34)+"color:"+CREAM+chr(34)+">")}</div>')
     if sp.get('strip'): H.append(strip_html(sp['strip'],s))
     if sp.get('posture'): H.append(posture_html(sp['posture'],s))
+    if sp.get('anim'): H.append(anim_html(sp['anim'],s))
     if sp.get('lead'): H.append(f'<div class="p" style="margin-top:{F(20)};font-size:{T(sp.get("leadsize",36))};line-height:1.3">{rich(sp["lead"])}</div>')
     if sp.get('contents'):
         H.append('<div class="contents">'+''.join(f'<div><b style="border-color:{PART_COLORS[k%len(PART_COLORS)]};color:{PART_COLORS[k%len(PART_COLORS)]}">{k+1}</b>{esc(c)}</div>' for k,c in enumerate(sp['contents']))+'</div>')
@@ -1007,7 +1061,7 @@ WORDS_COVER=14; WORDS_SLIDE=18; LABEL_WORDS=14; MAX_SLIDES=10; TOO_MUCH=[]   # r
 COUNT_WORDS="""()=>{const b=document.querySelector('.slide .body');const tw=document.createTreeWalker(b,NodeFilter.SHOW_TEXT);let n;const W=[],L=[];
 while(n=tw.nextNode()){const t=n.nodeValue;if(!t.trim())continue;let vis=true;
  for(let a=n.parentElement;a&&a!==b;a=a.parentElement){const cs=getComputedStyle(a);if(cs.display==='none'||cs.visibility==='hidden'||parseFloat(cs.opacity)===0){vis=false;break}}
- const D=n.parentElement.closest('.scene,.crossd,.stripd,.pathd,.posd,.timeline,svg');
+ const D=n.parentElement.closest('.scene,.crossd,.stripd,.pathd,.posd,.anid,.timeline,svg');
  if(vis)for(const w of t.split(/\\s+/))if(/[A-Za-z]/.test(w))(D?L:W).push(w)}
 return [W.length,W.join(' '),L.length,L.join(' ')]}"""
 def render(spec_path):

@@ -1,0 +1,1574 @@
+{
+ "id": "phil-gap",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "The gap\nbetween thoughts",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "Wait for your next thought",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.1,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 200,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.15
+        }
+       ],
+       [
+        3.4,
+        {
+         "opacity": 0.15
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        6.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        6.8,
+        {
+         "opacity": 0.15
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.15
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 10,
+       "fill": "CREAM"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 170,
+       "cy": 200,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 200
+        }
+       ],
+       [
+        0.0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 200
+        }
+       ],
+       [
+        0.3,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 200
+        }
+       ],
+       [
+        1.6,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 176
+        }
+       ],
+       [
+        2.2,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 160
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 160
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 420,
+       "cy": 170,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 170
+        }
+       ],
+       [
+        0.5,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 170
+        }
+       ],
+       [
+        0.8,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 170
+        }
+       ],
+       [
+        2.1,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 146
+        }
+       ],
+       [
+        2.7,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 130
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 130
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 230,
+       "cy": 360,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 360
+        }
+       ],
+       [
+        1.0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 360
+        }
+       ],
+       [
+        1.3,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 360
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 336
+        }
+       ],
+       [
+        3.2,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 320
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 320
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 400,
+       "cy": 330,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 330
+        }
+       ],
+       [
+        1.5,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 330
+        }
+       ],
+       [
+        1.8,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 330
+        }
+       ],
+       [
+        3.1,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 306
+        }
+       ],
+       [
+        3.7,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 290
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 290
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 150,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 150
+        }
+       ],
+       [
+        2.0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 150
+        }
+       ],
+       [
+        2.3,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 150
+        }
+       ],
+       [
+        3.6,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 126
+        }
+       ],
+       [
+        4.2,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 110
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 110
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 180,
+       "cy": 300,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 300
+        }
+       ],
+       [
+        5.9,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 300
+        }
+       ],
+       [
+        6.2,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 300
+        }
+       ],
+       [
+        7.5,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 276
+        }
+       ],
+       [
+        8.100000000000001,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 260
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 260
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 420,
+       "cy": 260,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 260
+        }
+       ],
+       [
+        6.3,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 260
+        }
+       ],
+       [
+        6.6,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 260
+        }
+       ],
+       [
+        7.9,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 236
+        }
+       ],
+       [
+        8.5,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 220
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 220
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 5.0,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.056,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 200,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.15
+        }
+       ],
+       [
+        3.4,
+        {
+         "opacity": 0.15
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        6.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        6.8,
+        {
+         "opacity": 0.15
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.15
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 10,
+       "fill": "CREAM"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 170,
+       "cy": 200,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 200
+        }
+       ],
+       [
+        0.0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 200
+        }
+       ],
+       [
+        0.3,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 200
+        }
+       ],
+       [
+        1.6,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 176
+        }
+       ],
+       [
+        2.2,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 160
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 160
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 420,
+       "cy": 170,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 170
+        }
+       ],
+       [
+        0.5,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 170
+        }
+       ],
+       [
+        0.8,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 170
+        }
+       ],
+       [
+        2.1,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 146
+        }
+       ],
+       [
+        2.7,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 130
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 130
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 230,
+       "cy": 360,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 360
+        }
+       ],
+       [
+        1.0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 360
+        }
+       ],
+       [
+        1.3,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 360
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 336
+        }
+       ],
+       [
+        3.2,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 320
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 320
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 400,
+       "cy": 330,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 330
+        }
+       ],
+       [
+        1.5,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 330
+        }
+       ],
+       [
+        1.8,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 330
+        }
+       ],
+       [
+        3.1,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 306
+        }
+       ],
+       [
+        3.7,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 290
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 290
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 150,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 150
+        }
+       ],
+       [
+        2.0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 150
+        }
+       ],
+       [
+        2.3,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 150
+        }
+       ],
+       [
+        3.6,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 126
+        }
+       ],
+       [
+        4.2,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 110
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 110
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 180,
+       "cy": 300,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 300
+        }
+       ],
+       [
+        5.9,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 300
+        }
+       ],
+       [
+        6.2,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 300
+        }
+       ],
+       [
+        7.5,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 276
+        }
+       ],
+       [
+        8.100000000000001,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 260
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 260
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 420,
+       "cy": 260,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 260
+        }
+       ],
+       [
+        6.3,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 260
+        }
+       ],
+       [
+        6.6,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 260
+        }
+       ],
+       [
+        7.9,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 236
+        }
+       ],
+       [
+        8.5,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 220
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 220
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 2.5,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Thoughts come",
+   "titleclass": "h2",
+   "closing": "And thoughts go",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.056,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 200,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.15
+        }
+       ],
+       [
+        3.4,
+        {
+         "opacity": 0.15
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        6.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        6.8,
+        {
+         "opacity": 0.15
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.15
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 10,
+       "fill": "CREAM"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 170,
+       "cy": 200,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 200
+        }
+       ],
+       [
+        0.0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 200
+        }
+       ],
+       [
+        0.3,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 200
+        }
+       ],
+       [
+        1.6,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 176
+        }
+       ],
+       [
+        2.2,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 160
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 160
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 420,
+       "cy": 170,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 170
+        }
+       ],
+       [
+        0.5,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 170
+        }
+       ],
+       [
+        0.8,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 170
+        }
+       ],
+       [
+        2.1,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 146
+        }
+       ],
+       [
+        2.7,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 130
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 130
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 230,
+       "cy": 360,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 360
+        }
+       ],
+       [
+        1.0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 360
+        }
+       ],
+       [
+        1.3,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 360
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 336
+        }
+       ],
+       [
+        3.2,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 320
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 320
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 400,
+       "cy": 330,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 330
+        }
+       ],
+       [
+        1.5,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 330
+        }
+       ],
+       [
+        1.8,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 330
+        }
+       ],
+       [
+        3.1,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 306
+        }
+       ],
+       [
+        3.7,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 290
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 290
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 150,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 150
+        }
+       ],
+       [
+        2.0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 150
+        }
+       ],
+       [
+        2.3,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 150
+        }
+       ],
+       [
+        3.6,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 126
+        }
+       ],
+       [
+        4.2,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 110
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 110
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 180,
+       "cy": 300,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 300
+        }
+       ],
+       [
+        5.9,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 300
+        }
+       ],
+       [
+        6.2,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 300
+        }
+       ],
+       [
+        7.5,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 276
+        }
+       ],
+       [
+        8.100000000000001,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 260
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 260
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 420,
+       "cy": 260,
+       "r": 6,
+       "fill": "none",
+       "stroke": "CREAM",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 260
+        }
+       ],
+       [
+        6.3,
+        {
+         "opacity": 0,
+         "r": 6,
+         "cy": 260
+        }
+       ],
+       [
+        6.6,
+        {
+         "opacity": 0.9,
+         "r": 26,
+         "cy": 260
+        }
+       ],
+       [
+        7.9,
+        {
+         "opacity": 0.6,
+         "r": 30,
+         "cy": 236
+        }
+       ],
+       [
+        8.5,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 220
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0,
+         "r": 34,
+         "cy": 220
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 5.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Then a gap",
+   "titleclass": "h2",
+   "closing": "Nothing is happening. You are still here",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Who was\nwaiting?",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "Before the next thought came",
+    "*something was already awake*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Thoughts move\nin the stillness",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "Like clouds in the sky",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 50,
+     "illum": 0.5,
+     "waxing": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "The Moon changes.\nThe sky does not",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "The Moon is the mind",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Yoga Sutras",
+   "labelsize": 34,
+   "quote": "Yogaś citta-vṛtti-nirodhaḥ",
+   "quotesize": 80,
+   "source": "Yoga Sutra 1.2",
+   "closing": "Yoga is the stilling of the mind's waves",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Close your eyes for one minute",
+    "*Watch for the next thought*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Rest in the gap",
+   "closingsize": 62
+  }
+ ]
+}

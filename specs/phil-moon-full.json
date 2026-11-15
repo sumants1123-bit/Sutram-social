@@ -1,0 +1,347 @@
+{
+ "id": "phil-moon-full",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "The Moon is\nalways full",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "Only the lit part changes",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.1,
+    "defs": "<clipPath id='mclip'><circle cx='300' cy='250' r='110'/></clipPath>",
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 250,
+       "r": 110,
+       "fill": "url(#anM)"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 250,
+       "r": 112,
+       "fill": "BG",
+       "opacity": 0.94,
+       "clip-path": "url(#mclip)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "cx": 300
+        }
+       ],
+       [
+        4.0,
+        {
+         "cx": 540
+        }
+       ],
+       [
+        4.001,
+        {
+         "cx": 60
+        }
+       ],
+       [
+        8,
+        {
+         "cx": 300
+        }
+       ]
+      ],
+      "e": "lin"
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 250,
+       "r": 122,
+       "fill": "none",
+       "stroke": "MOON",
+       "stroke-width": 2,
+       "stroke-dasharray": "3 9",
+       "stroke-opacity": 0.7
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 430,
+       "text": "ALWAYS WHOLE",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 2.4,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.056,
+    "defs": "<clipPath id='mclip'><circle cx='300' cy='250' r='110'/></clipPath>",
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 250,
+       "r": 110,
+       "fill": "url(#anM)"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 250,
+       "r": 112,
+       "fill": "BG",
+       "opacity": 0.94,
+       "clip-path": "url(#mclip)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "cx": 300
+        }
+       ],
+       [
+        4.0,
+        {
+         "cx": 540
+        }
+       ],
+       [
+        4.001,
+        {
+         "cx": 60
+        }
+       ],
+       [
+        8,
+        {
+         "cx": 300
+        }
+       ]
+      ],
+      "e": "lin"
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 250,
+       "r": 122,
+       "fill": "none",
+       "stroke": "MOON",
+       "stroke-width": 2,
+       "stroke-dasharray": "3 9",
+       "stroke-opacity": 0.7
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 430,
+       "text": "ALWAYS WHOLE",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 2.4,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "From here\nit waxes",
+   "titleclass": "h2",
+   "closing": "Crescent, half, full",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.056,
+    "defs": "<clipPath id='mclip'><circle cx='300' cy='250' r='110'/></clipPath>",
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 250,
+       "r": 110,
+       "fill": "url(#anM)"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 250,
+       "r": 112,
+       "fill": "BG",
+       "opacity": 0.94,
+       "clip-path": "url(#mclip)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "cx": 300
+        }
+       ],
+       [
+        4.0,
+        {
+         "cx": 540
+        }
+       ],
+       [
+        4.001,
+        {
+         "cx": 60
+        }
+       ],
+       [
+        8,
+        {
+         "cx": 300
+        }
+       ]
+      ],
+      "e": "lin"
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 250,
+       "r": 122,
+       "fill": "none",
+       "stroke": "MOON",
+       "stroke-width": 2,
+       "stroke-dasharray": "3 9",
+       "stroke-opacity": 0.7
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 430,
+       "text": "ALWAYS WHOLE",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 6.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "And wanes",
+   "titleclass": "h2",
+   "closing": "But the Moon never shrank",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Your moods\nwax and wane",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "Happy, low, restless, calm",
+    "*You were whole the whole time*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Watch the phase,\nknow the whole",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "Both are true",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 50,
+     "illum": 0.5,
+     "waxing": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "The Moon\nis the mind",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "Its phases are moods",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Isha Upanishad",
+   "labelsize": 34,
+   "quote": "Pūrṇam adaḥ pūrṇam idam",
+   "quotesize": 92,
+   "source": "Isha Upanishad, opening verse",
+   "closing": "That is whole. This is whole",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Tonight, look at the Moon",
+    "*The dark part is still Moon*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Whole, always",
+   "closingsize": 62
+  }
+ ]
+}

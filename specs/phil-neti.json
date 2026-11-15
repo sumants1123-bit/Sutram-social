@@ -1,0 +1,1330 @@
+{
+ "id": "phil-neti",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "Not this,\nnot this",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "What is left when you take everything away?",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.08,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 190,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.2
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 0.2
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.2
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 12,
+       "fill": "CREAM"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 200,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 98,
+       "text": "BODY",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 160,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 138,
+       "text": "NAME",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 120,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 178,
+       "text": "THOUGHTS",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 80,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 218,
+       "text": "FEELINGS",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 6.0,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 190,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.2
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 0.2
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.2
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 12,
+       "fill": "CREAM"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 200,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 98,
+       "text": "BODY",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 160,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 138,
+       "text": "NAME",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 120,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 178,
+       "text": "THOUGHTS",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 80,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 218,
+       "text": "FEELINGS",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 0.5,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Body, name,\nthoughts, feelings",
+   "titleclass": "h2",
+   "closing": "You can watch each one",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 190,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.2
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 0.2
+        }
+       ],
+       [
+        5.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.2
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 12,
+       "fill": "CREAM"
+      }
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 200,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 98,
+       "text": "BODY",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        1.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 160,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 138,
+       "text": "NAME",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 120,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 178,
+       "text": "THOUGHTS",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        3.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 270,
+       "r": 80,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 3
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 300,
+       "y": 218,
+       "text": "FEELINGS",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 4
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 6.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Take each away",
+   "titleclass": "h2",
+   "closing": "Something is left. The watching",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "If you can\nsee it",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "it is not you",
+    "*You are the seeing*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Even the thought\n'I am this'",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "is something you notice",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 54,
+     "rings": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "Your chart shows\nbody and mind",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "Not the one who knows them",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "The Upanishads",
+   "labelsize": 34,
+   "quote": "Neti neti",
+   "quotesize": 92,
+   "source": "Brihadaranyaka Upanishad 2.3.6",
+   "closing": "Not this, not this",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Name three things you are not",
+    "*Notice who is naming*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Rest there",
+   "closingsize": 62
+  }
+ ]
+}

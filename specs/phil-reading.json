@@ -1,0 +1,1069 @@
+{
+ "id": "phil-reading",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "Who is\nreading this?",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "The eyes see the words. Who sees?",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.1,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 120,
+       "r": 170,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z",
+       "fill": "BG",
+       "stroke": "CREAM",
+       "stroke-width": 4.5
+      },
+      "k": [
+       [
+        0,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ],
+       [
+        2.45,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ],
+       [
+        2.6,
+        {
+         "d": "M102,300 C142,297 238,297 278,300 C238,303 142,303 102,300 Z"
+        }
+       ],
+       [
+        2.75,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ],
+       [
+        8,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 190,
+       "cy": 300,
+       "r": 27,
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 190,
+       "cy": 300,
+       "r": 10,
+       "fill": "BG"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z",
+       "fill": "BG",
+       "stroke": "CREAM",
+       "stroke-width": 4.5
+      },
+      "k": [
+       [
+        0,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ],
+       [
+        2.45,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ],
+       [
+        2.6,
+        {
+         "d": "M322,300 C362,297 458,297 498,300 C458,303 362,303 322,300 Z"
+        }
+       ],
+       [
+        2.75,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ],
+       [
+        8,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 410,
+       "cy": 300,
+       "r": 27,
+       "fill": "SUN"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 410,
+       "cy": 300,
+       "r": 10,
+       "fill": "BG"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 190,
+       "y": 400,
+       "text": "MOON",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 410,
+       "y": 400,
+       "text": "SUN",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 5.5,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.056,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 120,
+       "r": 170,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z",
+       "fill": "BG",
+       "stroke": "CREAM",
+       "stroke-width": 4.5
+      },
+      "k": [
+       [
+        0,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ],
+       [
+        2.45,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ],
+       [
+        2.6,
+        {
+         "d": "M102,300 C142,297 238,297 278,300 C238,303 142,303 102,300 Z"
+        }
+       ],
+       [
+        2.75,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ],
+       [
+        8,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 190,
+       "cy": 300,
+       "r": 27,
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 190,
+       "cy": 300,
+       "r": 10,
+       "fill": "BG"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z",
+       "fill": "BG",
+       "stroke": "CREAM",
+       "stroke-width": 4.5
+      },
+      "k": [
+       [
+        0,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ],
+       [
+        2.45,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ],
+       [
+        2.6,
+        {
+         "d": "M322,300 C362,297 458,297 498,300 C458,303 362,303 322,300 Z"
+        }
+       ],
+       [
+        2.75,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ],
+       [
+        8,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 410,
+       "cy": 300,
+       "r": 27,
+       "fill": "SUN"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 410,
+       "cy": 300,
+       "r": 10,
+       "fill": "BG"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 190,
+       "y": 400,
+       "text": "MOON",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 410,
+       "y": 400,
+       "text": "SUN",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 1.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "The eyes\nsee the words",
+   "titleclass": "h2",
+   "closing": "Black shapes on a screen",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.056,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 120,
+       "r": 170,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        4.6,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z",
+       "fill": "BG",
+       "stroke": "CREAM",
+       "stroke-width": 4.5
+      },
+      "k": [
+       [
+        0,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ],
+       [
+        2.45,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ],
+       [
+        2.6,
+        {
+         "d": "M102,300 C142,297 238,297 278,300 C238,303 142,303 102,300 Z"
+        }
+       ],
+       [
+        2.75,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ],
+       [
+        8,
+        {
+         "d": "M102,300 C142,248 238,248 278,300 C238,352 142,352 102,300 Z"
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 190,
+       "cy": 300,
+       "r": 27,
+       "fill": "MOON"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 190,
+       "cy": 300,
+       "r": 10,
+       "fill": "BG"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z",
+       "fill": "BG",
+       "stroke": "CREAM",
+       "stroke-width": 4.5
+      },
+      "k": [
+       [
+        0,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ],
+       [
+        2.45,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ],
+       [
+        2.6,
+        {
+         "d": "M322,300 C362,297 458,297 498,300 C458,303 362,303 322,300 Z"
+        }
+       ],
+       [
+        2.75,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ],
+       [
+        8,
+        {
+         "d": "M322,300 C362,248 458,248 498,300 C458,352 362,352 322,300 Z"
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 410,
+       "cy": 300,
+       "r": 27,
+       "fill": "SUN"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 410,
+       "cy": 300,
+       "r": 10,
+       "fill": "BG"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.45,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        2.6,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        2.75,
+        {
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 1
+        }
+       ]
+      ]
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 190,
+       "y": 400,
+       "text": "MOON",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     },
+     {
+      "t": "text",
+      "a": {
+       "x": 410,
+       "y": 400,
+       "text": "SUN",
+       "fill": "GOLD",
+       "font-family": "EB Garamond",
+       "font-size": 20,
+       "text-anchor": "middle",
+       "letter-spacing": 3
+      }
+     }
+    ],
+    "at": 5.5,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Something knows\nwhat they see",
+   "titleclass": "h2",
+   "closing": "That knowing has no eyes",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Can you see\nyour seeing?",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "You can see your hand",
+    "*Can you see the one who sees?*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "That is what\nyou are",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "The light behind the eyes",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 54,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 50,
+     "illum": 0.5,
+     "waxing": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "The Sun rules the right eye\nThe Moon, the left",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "Who looks through both?",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Kena Upanishad",
+   "labelsize": 34,
+   "quote": "Yena cakṣūṃṣi paśyati",
+   "quotesize": 92,
+   "source": "Kena Upanishad 1.6",
+   "closing": "That by which the eyes see",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Look at something you love",
+    "*Then notice the looking*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "You are what notices",
+   "closingsize": 62
+  }
+ ]
+}

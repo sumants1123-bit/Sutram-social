@@ -1,0 +1,906 @@
+{
+ "id": "phil-mirror",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "The dusty mirror",
+   "titleclass": "h1",
+   "titlesize": 116,
+   "subtitle": "The face was never dusty",
+   "subsize": 56,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.08,
+    "defs": "<clipPath id='mrr'><ellipse cx='300' cy='260' rx='146' ry='186'/></clipPath>",
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 170,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "rx": 150,
+       "ry": 190,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 8
+      }
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 190,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        2.9,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 250,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        2.85,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.35,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 310,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.3,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.8,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 370,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.75,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        4.25,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 430,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        4.2,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        4.7,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 6.0,
+    "mt": 34
+   }
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "defs": "<clipPath id='mrr'><ellipse cx='300' cy='260' rx='146' ry='186'/></clipPath>",
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 170,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "rx": 150,
+       "ry": 190,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 8
+      }
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 190,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        2.9,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 250,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        2.85,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.35,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 310,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.3,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.8,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 370,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.75,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        4.25,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 430,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        4.2,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        4.7,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 1.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Dust on\nthe mirror",
+   "titleclass": "h2",
+   "closing": "The reflection looks dull",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.0368,
+    "defs": "<clipPath id='mrr'><ellipse cx='300' cy='260' rx='146' ry='186'/></clipPath>",
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "r": 170,
+       "fill": "url(#anW)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 300,
+       "cy": 260,
+       "rx": 150,
+       "ry": 190,
+       "fill": "none",
+       "stroke": "GOLD",
+       "stroke-width": 8
+      }
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 190,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        2.4,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        2.9,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 250,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        2.85,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.35,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 310,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.3,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.8,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 370,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        3.75,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        4.25,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     },
+     {
+      "t": "ellipse",
+      "a": {
+       "cx": 430,
+       "cy": 260,
+       "rx": 70,
+       "ry": 190,
+       "fill": "MOON",
+       "opacity": 0.62,
+       "filter": "url(#anB)",
+       "clip-path": "url(#mrr)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        4.2,
+        {
+         "opacity": 0.62
+        }
+       ],
+       [
+        4.7,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        7.2,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.62
+        }
+       ]
+      ]
+     }
+    ],
+    "at": 6.0,
+    "mt": 0,
+    "mb": 16
+   },
+   "title": "Wipe it",
+   "titleclass": "h2",
+   "closing": "Nothing was added to the face",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Desire is dust",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "body": [
+    "Wanting clouds the seeing",
+    "*The one who sees stays clean*"
+   ],
+   "bodysize": 48,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Clean the mirror",
+   "titleclass": "h1",
+   "titlesize": 112,
+   "closing": "Don't chase the face",
+   "closingsize": 62
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "venus",
+     "r": 50
+    }
+   ],
+   "orbgap": 70,
+   "title": "Venus is\ndesire",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "Lovely, and it can cover the light",
+   "closingsize": 54
+  },
+  {
+   "type": "quote",
+   "label": "Bhagavad Gita",
+   "labelsize": 34,
+   "quote": "Yathādarśo malena ca",
+   "quotesize": 92,
+   "source": "Bhagavad Gita 3.38",
+   "closing": "As a mirror is covered by dust",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Notice one wanting today",
+    "*Watch it like dust*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "It settles if you let it",
+   "closingsize": 62
+  }
+ ]
+}

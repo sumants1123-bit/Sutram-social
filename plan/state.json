@@ -1057,6 +1057,33 @@
    "Who is reading this? The Sun rules the right eye, the Moon the left (Nadi rule bank, S06 karakatwa table). Kena Upanishad 1.6: that by which the eyes see. Picture: two eyes, one light behind them",
    "You are not your chart. The chart is the field; you are the one who knows it. Gita chapter 13, the field and the knower of the field. Picture: a birth chart wheel, the light outside it",
    "The gap between two thoughts. Wait for the next thought; notice the pause. Moon phases change, the sky does not. Yoga Sutra 1.2. Picture: thoughts come and go, the stillness stays"
-  ]
- }
+  ],
+  "said_930": "Sumant, 15 Nov 9:30: loves them; make 10 to 20 more so it never runs out, each with its moving picture, one on the observer (who are you, what the observer looks like), and schedule them",
+  "library": [
+   "phil-observer",
+   "phil-not-your-chart",
+   "phil-breath",
+   "phil-eclipse",
+   "phil-screen",
+   "phil-reading",
+   "phil-anger",
+   "phil-lake",
+   "phil-moon-full",
+   "phil-rope",
+   "phil-sky",
+   "phil-gap",
+   "phil-pot",
+   "phil-one-light",
+   "phil-sleep",
+   "phil-neti",
+   "phil-mirror",
+   "phil-ocean",
+   "phil-bell",
+   "phil-lamp"
+  ],
+  "built": "All 20 made 15 Nov from tools/philosophy.py (text, captions, X text, pictures); moving covers from tools/anim_motion.py; render.py 'anim' is the keyframe engine. Post them in the library order; each is ready to schedule as is (Instagram: video slide 1 + images 2 to 8; X: four images named in the post's x_slides)",
+  "slots": "2 a week while The sky that day is on hold: Saturday 6:30 PM and Sunday 10 AM on Instagram (both days otherwise have one post), X at 7 PM Saturday and 10:30 AM Sunday. If The sky that day comes back, move the Saturday one to Sunday 10 AM and the next to the following Saturday 10 AM only if that day has room; never a third Instagram post in a day",
+  "next": "phil-breath is next (Sat 28 Nov), then phil-eclipse (Sun 29 Nov), and so on down the library"
+ },
+ "batch_16nov_overrides": "For the 16 to 22 Nov batch and after: Sumant's 15 Nov changes win over the 13 Nov format in the batch prompt. See rules_15nov (a pill naming the kind of post and a plain title on every cover, no contents list, one picture and one short line a slide, render.py word limits, captions about 1,000 to 1,200 characters without PART headers, current-sky posts show the sky moving and the full Nadi reading) and philosophy_series (Sat 21 Nov 6:30 PM phil-observer and Sun 22 Nov 10 AM phil-not-your-chart are already in Buffer). Tue 17 Nov 6:30 PM has the Your 2027 promo"
 }
