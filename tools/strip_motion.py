@@ -45,7 +45,7 @@ window.__sx=(t)=>{
 return {days:N, crossing:kc};
 }"""
 
-def run(spec_path, slide=1, secs=8.0, fps=30, dsf=2, preview=None):
+def run(spec_path, slide=1, secs=8.0, fps=30, dsf=2, preview=None, js=None, fn='__sx'):
     spec = json.load(open(spec_path)); pid = spec['id']; out = os.path.join(R.REPO, 'posts', pid)
     tmp = os.path.join(out, '_sx'); shutil.rmtree(tmp, ignore_errors=True); os.makedirs(tmp)
     with sync_playwright() as p:
@@ -53,10 +53,10 @@ def run(spec_path, slide=1, secs=8.0, fps=30, dsf=2, preview=None):
         R.build_slide(pg, spec, slide, out)
         pg.add_style_tag(content=M.CSS)
         pg.evaluate(M.JS, {'secs': secs, 'order': None, 'spark': None, 'from': False, 'fromHTML': '', 'enter': None, 'lift': None})
-        info = pg.evaluate(JS, {'secs': secs})
+        info = pg.evaluate(js or JS, {'secs': secs})
         def frame(t):
             pg.evaluate("(a)=>window.__frame(a)", {'tt': t, 'dec': R.dec_for(spec, slide, t), 'sf': R.sf_for(spec, slide, t)})
-            pg.evaluate("(t)=>window.__sx(t)", t)
+            pg.evaluate(f"(t)=>window.{fn}(t)", t)
         if preview is not None:
             outs = []
             for t in preview:

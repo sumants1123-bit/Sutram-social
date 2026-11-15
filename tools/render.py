@@ -531,6 +531,32 @@ def strip_html(st, s=1.0):
             f'<svg width="{Wd}" height="{Ht}" viewBox="0 0 {Wd} {Ht}" style="position:absolute;inset:0;overflow:visible">{"".join(o)}{arc}{door}{lab}</svg>{orbs}'
             f'<script type="application/json" id="sx-data">{data}</script></div>')
 
+def _posture_frame(p):
+    """A seated figure in profile, slouched at p=0 and upright at p=1 (15 Nov, 'awareness is transformation')."""
+    L=lambda a,b: (a[0]+(b[0]-a[0])*p, a[1]+(b[1]-a[1])*p)
+    P0=(205,346); C1=L((172,302),(197,288)); C2=L((238,198),(214,222)); N=L((284,214),(212,176))
+    H=L((326,200),(219,127)); S=L((262,228),(210,202)); E=L((300,294),(236,272)); W=(340,334)
+    f=lambda q: f"{q[0]:.1f},{q[1]:.1f}"
+    return {"s":f"M{f(P0)} C{f(C1)} {f(C2)} {f(N)}","a":f"M{f(S)} Q{f(E)} {f(W)}","hx":round(H[0],1),"hy":round(H[1],1)}
+def posture_html(po, s=1.0):
+    p=po.get('p',0.0); gl=po.get('glow',0.0); fr=_posture_frame(p); k=po.get('k',1.25)
+    st=f"stroke='{CREAM}' stroke-width='7' stroke-linecap='round' fill='none'"
+    ch=f"stroke='{GOLD}' stroke-opacity='.38' stroke-width='3' stroke-linecap='round' fill='none'"
+    g=uid('pg')
+    o=(f"<defs><radialGradient id='{g}'><stop offset='0' stop-color='{AMBER}' stop-opacity='.75'/><stop offset='.45' stop-color='{AMBER}' stop-opacity='.22'/><stop offset='1' stop-color='{AMBER}' stop-opacity='0'/></radialGradient></defs>"
+       f"<line id='po-plumb' x1='212' y1='70' x2='212' y2='352' stroke='{GOLD}' stroke-width='2' stroke-dasharray='5 9' stroke-opacity='{.12+.4*p:.2f}'/>"
+       f"<path d='M128,362 H296 M140,362 V500 M288,362 V500 M150,362 V188' {ch}/>"
+       f"<line x1='96' y1='502' x2='520' y2='502' stroke='{GOLD}' stroke-opacity='.25' stroke-width='2'/>"
+       f"<circle id='po-glow' cx='{fr['hx']}' cy='{fr['hy']}' r='150' fill='url(#{g})' opacity='{gl:.2f}'/>"
+       f"<circle id='po-ring' cx='{fr['hx']}' cy='{fr['hy']}' r='{56+26*gl:.1f}' fill='none' stroke='{AMBER}' stroke-width='2.4' opacity='{.7*gl:.2f}'/>"
+       f"<path d='M205,346 L380,350 L388,498 L432,498' {st} stroke-linejoin='round'/>"
+       f"<path id='po-spine' d='{fr['s']}' {st}/><path id='po-arm' d='{fr['a']}' {st}/>"
+       f"<circle id='po-head' cx='{fr['hx']}' cy='{fr['hy']}' r='36' fill='{BG}' stroke='{CREAM}' stroke-width='7'/>")
+    data=json.dumps({"frames":[_posture_frame(i/50) for i in range(51)]})
+    return (f'<div class="posd" style="position:relative;width:{600*k:.0f}px;height:{520*k:.0f}px;zoom:{s:.3f};margin:{po.get("mt",20)}px auto {po.get("mb",10)}px">'
+            f'<svg width="{600*k:.0f}" height="{520*k:.0f}" viewBox="40 40 520 470" style="overflow:visible">{o}</svg>'
+            f'<script type="application/json" id="po-data">{data}</script></div>')
+
 def shot_html(sh, s=1.0):
     """A real picture (a page of a report, a screen) in a thin frame. sh: file (repo path), w (px on the slide), tilt (degrees), cap.
     A list of these stacks them, one under the other (two excerpts of one page)."""
@@ -638,6 +664,7 @@ def slide_html(sp, s=1.0):
             H.append(f'<div class="t {cls}"{ts}>{rich(sp["title"])}</div>')
         if sp.get('subtitle'): H.append(f'<div class="ti sub" style="margin-top:22px;{"font-size:"+F(sp["subsize"])+";" if sp.get("subsize") else ""}">{rich(sp["subtitle"]).replace(chr(60)+"span class="+chr(34)+"ti"+chr(34)+">",chr(60)+"span style="+chr(34)+"color:"+CREAM+chr(34)+">")}</div>')
     if sp.get('strip'): H.append(strip_html(sp['strip'],s))
+    if sp.get('posture'): H.append(posture_html(sp['posture'],s))
     if sp.get('lead'): H.append(f'<div class="p" style="margin-top:{F(20)};font-size:{T(sp.get("leadsize",36))};line-height:1.3">{rich(sp["lead"])}</div>')
     if sp.get('contents'):
         H.append('<div class="contents">'+''.join(f'<div><b style="border-color:{PART_COLORS[k%len(PART_COLORS)]};color:{PART_COLORS[k%len(PART_COLORS)]}">{k+1}</b>{esc(c)}</div>' for k,c in enumerate(sp['contents']))+'</div>')
@@ -980,7 +1007,7 @@ WORDS_COVER=14; WORDS_SLIDE=18; LABEL_WORDS=14; MAX_SLIDES=10; TOO_MUCH=[]   # r
 COUNT_WORDS="""()=>{const b=document.querySelector('.slide .body');const tw=document.createTreeWalker(b,NodeFilter.SHOW_TEXT);let n;const W=[],L=[];
 while(n=tw.nextNode()){const t=n.nodeValue;if(!t.trim())continue;let vis=true;
  for(let a=n.parentElement;a&&a!==b;a=a.parentElement){const cs=getComputedStyle(a);if(cs.display==='none'||cs.visibility==='hidden'||parseFloat(cs.opacity)===0){vis=false;break}}
- const D=n.parentElement.closest('.scene,.crossd,.stripd,.pathd,.timeline,svg');
+ const D=n.parentElement.closest('.scene,.crossd,.stripd,.pathd,.posd,.timeline,svg');
  if(vis)for(const w of t.split(/\\s+/))if(/[A-Za-z]/.test(w))(D?L:W).push(w)}
 return [W.length,W.join(' '),L.length,L.join(' ')]}"""
 def render(spec_path):

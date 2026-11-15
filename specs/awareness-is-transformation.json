@@ -1,0 +1,136 @@
+{
+ "id": "awareness-is-transformation",
+ "kicker": "Philosophy",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Philosophy",
+   "title": "Awareness is\ntransformation",
+   "titleclass": "h1",
+   "titlesize": 118,
+   "subtitle": "Notice your posture, right now",
+   "subsize": 56,
+   "posture": {
+    "p": 0.0,
+    "glow": 0.0,
+    "k": 1.12,
+    "mt": 30
+   }
+  },
+  {
+   "type": "text",
+   "posture": {
+    "p": 0.0,
+    "glow": 0.0,
+    "k": 1.12,
+    "mt": 0,
+    "mb": 20
+   },
+   "title": "Notice how\nyou are sitting",
+   "titleclass": "h2",
+   "closing": "Don't change anything. Just notice",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "posture": {
+    "p": 1.0,
+    "glow": 1.0,
+    "k": 1.12,
+    "mt": 0,
+    "mb": 20
+   },
+   "title": "Something\nalready moved",
+   "titleclass": "h2",
+   "closing": "Your back straightened by itself",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "So which\ncame first?",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Did awareness straighten you?",
+    "*Or did you notice, then fix it?*"
+   ],
+   "bodysize": 50,
+   "bodygap": 10
+  },
+  {
+   "type": "text",
+   "title": "Look for the one\nwho fixed it",
+   "titleclass": "h1",
+   "titlesize": 110,
+   "closing": "Is there an I in there?",
+   "closingsize": 64
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 46,
+     "rings": true
+    }
+   ],
+   "title": "There is only\nawareness",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "closing": "The noticing is the change",
+   "closingsize": 64
+  },
+  {
+   "type": "text",
+   "label": "In Jyotish",
+   "labelsize": 34,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 54,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 50,
+     "illum": 0.5,
+     "waxing": false
+    }
+   ],
+   "orbgap": 70,
+   "title": "The Sun is the soul\nThe Moon is the mind",
+   "titleclass": "h2",
+   "titlesize": 88,
+   "closing": "The Moon only reflects his light",
+   "closingsize": 56
+  },
+  {
+   "type": "quote",
+   "label": "The Upanishads",
+   "labelsize": 34,
+   "quote": "Prajñānam brahma",
+   "quotesize": 104,
+   "source": "Aitareya Upanishad 3.1.3",
+   "closing": "Awareness is the whole of what is",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h1",
+   "titlesize": 120,
+   "body": [
+    "Your breath. Your words. Your temper",
+    "*Notice, and watch what changes*"
+   ],
+   "bodysize": 42,
+   "bodygap": 10,
+   "closing": "Awareness is everything",
+   "closingsize": 64
+  }
+ ]
+}
