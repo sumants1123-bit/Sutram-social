@@ -339,7 +339,7 @@ Try it today. When a reading scares you, ask yourself who is reading it.""",
 
 The chart is the field: body, mind, timing. You are the one who knows the field (Bhagavad Gita, chapter 13)
 
-Read your chart like a map, not like a verdict""",
+Read your chart like a map. It shows the road ahead""",
      x_slides=[1, 3, 4, 7], tags='#jyotish #vedicastrology #bhagavadgita #awareness #sutram')
 
 post(id='phil-breath', title='Who is\nbreathing?', sub='Notice your breath, right now', visual=breath_visual, cover_at=4.6,
