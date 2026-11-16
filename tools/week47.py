@@ -212,7 +212,7 @@ post(id='thread-ep4-strands', when='2026-11-18T18:30:00-05:00', slides=[
     dict(type='quote', label='Bhagavad Gita 14.5', labelsize=34, quote='Clear, restless, heavy: born of nature, they bind the one in the body',
          quotesize=74, source='Sutram’s rendering'),
     txt('Read it in\nyour chart', 'Your rising lord and Moon: which strand?', size=96, orbs=[O('moon', 44)]),
-    cta('Which strand runs\nstrongest in you?', 'Next Wednesday · Two birds, one tree', [O('sun', 36, rings=False), O('mercury', 34, dx=140), O('saturn', 36, dx=140)]),
+    cta('Which strand runs\nstrongest in you?', 'Next Wednesday · The Thread, part 5', [O('sun', 36, rings=False), O('mercury', 34, dx=140), O('saturn', 36, dx=140)]),
 ], caption="""The three strands of you
 
 In the Bhagavad Gita, Krishna tells Arjuna that three gunas, born of nature, bind the one who lives in the body (14.5). Guna means a strand of a rope. Three strands, twisted into one rope: you.
