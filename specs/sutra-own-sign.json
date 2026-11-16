@@ -1,0 +1,295 @@
+{
+ "id": "sutra-own-sign",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Sutra",
+   "title": "A graha in\nits own sign",
+   "titleclass": "h1",
+   "titlesize": 108,
+   "subtitle": "At home: relaxed, steady, sure",
+   "subsize": 54,
+   "scene": {
+    "w": 330,
+    "h": 220,
+    "rooms": [
+     {
+      "sign": "Virgo",
+      "orbs": []
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 50
+       }
+      ],
+      "state": "focus",
+      "tag": "Venus's own sign"
+     }
+    ]
+   },
+   "motion": {
+    "order": [
+     0,
+     1
+    ],
+    "lift": 60,
+    "from": {
+     "rooms": [
+      {
+       "sign": "Virgo",
+       "orbs": [
+        {
+         "kind": "venus",
+         "r": 50
+        }
+       ]
+      },
+      {
+       "sign": "Libra",
+       "orbs": [],
+       "state": "focus",
+       "tag": "Venus's own sign"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "rows",
+   "title": "Who owns which sign",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Sun",
+     "Leo"
+    ],
+    [
+     "Moon",
+     "Cancer"
+    ],
+    [
+     "Mars",
+     "Aries · Scorpio"
+    ],
+    [
+     "Mercury",
+     "Gemini · Virgo"
+    ]
+   ],
+   "namesize": 58,
+   "roworbs": [
+    {
+     "kind": "sun",
+     "r": 30,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 28
+    },
+    {
+     "kind": "mars",
+     "r": 28
+    },
+    {
+     "kind": "mercury",
+     "r": 26
+    }
+   ]
+  },
+  {
+   "type": "rows",
+   "title": "And the rest",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Jupiter",
+     "Sagittarius · Pisces"
+    ],
+    [
+     "Venus",
+     "Taurus · Libra"
+    ],
+    [
+     "Saturn",
+     "Capricorn · Aquarius"
+    ]
+   ],
+   "namesize": 58,
+   "roworbs": [
+    {
+     "kind": "jupiter",
+     "r": 32
+    },
+    {
+     "kind": "venus",
+     "r": 30
+    },
+    {
+     "kind": "saturn",
+     "r": 30
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "title": "At home, a graha\nacts with confidence",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 470,
+    "h": 250,
+    "rooms": [
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 58
+       }
+      ],
+      "state": "focus",
+      "tag": "Home"
+     }
+    ]
+   },
+   "closing": "Like you in your own place",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "This month two\nare guests",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 44
+       }
+      ],
+      "state": "focus",
+      "tag": "Sun's home"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 46,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "tag": "Mars's home"
+     }
+    ]
+   },
+   "closing": "Sun and Mars, in each other’s homes",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Sunday, the lover\nwalks home",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "cross": {
+    "left": {
+     "sign": "Virgo",
+     "from": 27
+    },
+    "right": {
+     "sign": "Libra",
+     "to": 2
+    },
+    "kind": "venus",
+    "r": 32,
+    "at": [
+     "Virgo",
+     28.77
+    ],
+    "days": [
+     [
+      "Virgo",
+      28.9
+     ],
+     [
+      "Virgo",
+      29.06
+     ],
+     [
+      "Virgo",
+      29.26
+     ],
+     [
+      "Virgo",
+      29.49
+     ],
+     [
+      "Virgo",
+      29.76
+     ],
+     [
+      "Libra",
+      0.07
+     ]
+    ],
+    "door": [
+     "Sun 22 Nov",
+     "about 6:50 AM"
+    ]
+   },
+   "closing": "Venus enters Libra, her own sign",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Make your space\nbeautiful",
+   "titleclass": "h2",
+   "titlesize": 96,
+   "orbs": [
+    {
+     "kind": "venus",
+     "r": 52
+    }
+   ],
+   "closing": "And make peace after a fight",
+   "closingsize": 56
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "venus",
+     "r": 40
+    },
+    {
+     "kind": "sun",
+     "r": 38,
+     "rings": false,
+     "dx": 140
+    }
+   ],
+   "title": "A graha at home\ngives freely",
+   "titleclass": "h2",
+   "next": "Noon · Rule 6, family"
+  }
+ ]
+}

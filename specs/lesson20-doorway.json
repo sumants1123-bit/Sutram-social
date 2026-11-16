@@ -1,0 +1,303 @@
+{
+ "id": "lesson20-doorway",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Nadi rule 10",
+   "title": "Where water\nmeets fire",
+   "titleclass": "h1",
+   "titlesize": 104,
+   "subtitle": "The doorway the classics call Gandanta",
+   "subsize": 54,
+   "strip": {
+    "signs": [
+     "Pisces",
+     "Aries"
+    ],
+    "days": [
+     "Fri 20 · 6 PM",
+     "Fri 20 · 10 PM",
+     "Sat 21 · 2 AM",
+     "Sat 21 · 6 AM",
+     "Sat 21 · 10 AM",
+     "Sat 21 · 2 PM",
+     "Sat 21 · 6 PM",
+     "Sat 21 · 10 PM",
+     "Sun 22 · 2 AM",
+     "Sun 22 · 6 AM",
+     "Sun 22 · 10 AM",
+     "Sun 22 · 2 PM",
+     "Sun 22 · 6 PM"
+    ],
+    "track": {
+     "moon": [
+      345.336,
+      347.607,
+      349.891,
+      352.19,
+      354.502,
+      356.828,
+      359.167,
+      361.52,
+      363.886,
+      366.265,
+      368.656,
+      371.06,
+      373.476
+     ],
+     "saturn": [
+      344.055,
+      344.049,
+      344.043,
+      344.037,
+      344.032,
+      344.026,
+      344.021,
+      344.015,
+      344.009,
+      344.004,
+      343.999,
+      343.993,
+      343.988
+     ]
+    },
+    "day": 6,
+    "label": "Sat 21 Nov, about 7:30 PM",
+    "owner": {
+     "Pisces": "Water",
+     "Aries": "Fire"
+    },
+    "focus": [
+     "Pisces",
+     "Aries"
+    ],
+    "names": {
+     "moon": "Moon",
+     "saturn": "Saturn"
+    },
+    "r": {
+     "moon": 40,
+     "saturn": 34
+    },
+    "lanes": {
+     "moon": -1,
+     "saturn": 1
+    },
+    "lanegap": 62,
+    "h": 440,
+    "mt": 96
+   }
+  },
+  {
+   "type": "text",
+   "title": "Three doorways",
+   "titleclass": "h2",
+   "titlesize": 104,
+   "scene": {
+    "w": 330,
+    "h": 220,
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": []
+     },
+     {
+      "sign": "Leo",
+      "orbs": [],
+      "state": "focus"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      1,
+      ""
+     ]
+    ]
+   },
+   "closing": "Cancer to Leo, Scorpio to Sagittarius, Pisces to Aries",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "The knot",
+   "titleclass": "h2",
+   "titlesize": 110,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 44
+    }
+   ],
+   "closing": "The last degrees of water, the first of fire",
+   "closingsize": 56
+  },
+  {
+   "type": "nsteps",
+   "title": "How to read it",
+   "titleclass": "h2",
+   "steps": [
+    {
+     "head": "Water or fire sign?"
+    },
+    {
+     "head": "Near its end or start?"
+    },
+    {
+     "head": "That is a doorway"
+    }
+   ],
+   "headsize": 62,
+   "stepsmt": 44
+  },
+  {
+   "type": "text",
+   "title": "Two stand in\nLeo’s doorway",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "ruler": {
+    "sign": "Leo",
+    "from": 0,
+    "to": 4,
+    "ticks": [
+     [
+      1,
+      "1°"
+     ],
+     [
+      2,
+      "2°"
+     ],
+     [
+      3.333,
+      "3°20′"
+     ]
+    ],
+    "items": [
+     {
+      "kind": "ketu",
+      "who": "The monk",
+      "deg": 0.79,
+      "d": "0°47′",
+      "r": 30
+     },
+     {
+      "kind": "jupiter",
+      "who": "The teacher",
+      "deg": 1.99,
+      "d": "1°59′",
+      "r": 36
+     },
+     {
+      "kind": "mars",
+      "who": "The soldier",
+      "deg": 3.59,
+      "d": "3°35′",
+      "r": 30
+     }
+    ]
+   },
+   "closing": "The soldier walked out on Thursday night",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Saturday night the\nMoon crosses",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "cross": {
+    "left": {
+     "sign": "Pisces",
+     "from": 20
+    },
+    "right": {
+     "sign": "Aries",
+     "to": 10
+    },
+    "kind": "moon",
+    "r": 30,
+    "at": [
+     "Pisces",
+     25.66
+    ],
+    "days": [
+     [
+      "Pisces",
+      15.34
+     ],
+     [
+      "Pisces",
+      18.75
+     ],
+     [
+      "Pisces",
+      22.19
+     ],
+     [
+      "Pisces",
+      25.66
+     ],
+     [
+      "Pisces",
+      29.17
+     ],
+     [
+      "Aries",
+      2.7
+     ],
+     [
+      "Aries",
+      6.26
+     ]
+    ],
+    "door": [
+     "Sat 21",
+     "about 7:30 PM"
+    ]
+   },
+   "closing": "From Pisces into Aries, about 7:30 PM",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Finish the old\nfirst",
+   "titleclass": "h2",
+   "titlesize": 104,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 44
+    },
+    {
+     "kind": "jupiter",
+     "r": 44,
+     "dx": 150
+    }
+   ],
+   "closing": "Then start the new",
+   "closingsize": 56
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 40
+    },
+    {
+     "kind": "ketu",
+     "r": 34,
+     "dx": 130
+    }
+   ],
+   "title": "Gandanta is\nthe doorway",
+   "titleclass": "h2",
+   "next": "Monday · Rule 11, whose star"
+  }
+ ]
+}

@@ -1,0 +1,262 @@
+{
+ "id": "week-2026-11-22",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Week ahead",
+   "title": "A full Moon\nin Taurus",
+   "titleclass": "h1",
+   "titlesize": 104,
+   "subtitle": "Tuesday, the Moon at her best",
+   "subsize": 54,
+   "strip": {
+    "signs": [
+     "Aries",
+     "Taurus"
+    ],
+    "days": [
+     "Sun 22 · 6 AM",
+     "Sun 22 · 12 PM",
+     "Sun 22 · 6 PM",
+     "Mon 23 · 12 AM",
+     "Mon 23 · 6 AM",
+     "Mon 23 · 12 PM",
+     "Mon 23 · 6 PM",
+     "Tue 24 · 12 AM",
+     "Tue 24 · 6 AM",
+     "Tue 24 · 12 PM",
+     "Tue 24 · 6 PM",
+     "Wed 25 · 12 AM",
+     "Wed 25 · 6 AM",
+     "Wed 25 · 12 PM",
+     "Wed 25 · 6 PM"
+    ],
+    "track": {
+     "moon": [
+      6.265,
+      9.857,
+      13.476,
+      17.12,
+      20.789,
+      24.48,
+      28.191,
+      31.92,
+      35.664,
+      39.422,
+      43.189,
+      46.964,
+      50.744,
+      54.526,
+      58.307
+     ]
+    },
+    "day": 9,
+    "label": "Full Moon, Tue 24 Nov",
+    "owner": {
+     "Taurus": "Moon's best sign"
+    },
+    "focus": [
+     "Taurus"
+    ],
+    "names": {
+     "moon": "Moon"
+    },
+    "r": {
+     "moon": 44
+    },
+    "h": 440,
+    "mt": 96,
+    "door": [
+     "Taurus",
+     "Mon 9 PM"
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "title": "Face to face",
+   "titleclass": "h2",
+   "titlesize": 110,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Taurus",
+      "orbs": [
+       {
+        "kind": "moon",
+        "r": 48
+       }
+      ],
+      "state": "focus"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 46,
+        "rings": false
+       }
+      ],
+      "state": "focus"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      "",
+      "both"
+     ]
+    ],
+    "reachpad": 64
+   },
+   "closing": "The Moon in Taurus, the Sun in Scorpio",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Exalted Moon:\na calm, kind mind",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 56
+    }
+   ],
+   "closing": "Good for hosting and giving",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Venus is home\nin Libra",
+   "titleclass": "h2",
+   "titlesize": 96,
+   "scene": {
+    "w": 470,
+    "h": 250,
+    "rooms": [
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "venus",
+        "r": 54
+       }
+      ],
+      "state": "focus",
+      "tag": "Her own sign"
+     }
+    ]
+   },
+   "closing": "Comfort and money talks come easier",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Friday night, the\nMoon goes home",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 330,
+    "h": 220,
+    "rooms": [
+     {
+      "sign": "Gemini",
+      "orbs": []
+     },
+     {
+      "sign": "Cancer",
+      "orbs": [
+       {
+        "kind": "moon",
+        "r": 48
+       }
+      ],
+      "state": "focus",
+      "tag": "Her own sign"
+     }
+    ]
+   },
+   "closing": "Into Cancer, her own sign",
+   "closingsize": 56
+  },
+  {
+   "type": "rows",
+   "title": "Mark these",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Mon",
+     "Moon into Taurus, night"
+    ],
+    [
+     "Tue",
+     "Full Moon, about 10 AM"
+    ],
+    [
+     "Fri",
+     "Moon into Cancer, night"
+    ]
+   ],
+   "namesize": 56,
+   "roworbs": [
+    {
+     "kind": "moon",
+     "r": 28
+    },
+    {
+     "kind": "moon",
+     "r": 30
+    },
+    {
+     "kind": "moon",
+     "r": 28
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "title": "Kartik Purnima",
+   "titleclass": "h2",
+   "titlesize": 110,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 50
+    }
+   ],
+   "closing": "Light a lamp, give something away",
+   "closingsize": 56
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 44
+    },
+    {
+     "kind": "venus",
+     "r": 38,
+     "dx": 140
+    }
+   ],
+   "title": "Learn to read\nthe sky with Sutram",
+   "titleclass": "h2",
+   "next": "Monday · Rule 11, whose star"
+  }
+ ]
+}

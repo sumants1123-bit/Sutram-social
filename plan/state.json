@@ -536,9 +536,9 @@
   "as-above-so-below",
   "as-above-so-below-v2"
  ],
- "next_lesson": 16,
- "next_thread_episode": 4,
- "next_thread_title": "The person of Time",
+ "next_lesson": 21,
+ "next_thread_episode": 5,
+ "next_thread_title": "next episode after Ep 4 (Two birds moved later)",
  "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
  "next_to_make": [
   "Tue lean run: Thu 5 Nov 10 AM 5th-house card, 12 PM Lesson 9 Rahu; Fri 6 Nov 10 AM 4th-house card, 12 PM Lesson 10 Ketu; Sun 8 Nov 10 AM Diwali",
@@ -1135,5 +1135,25 @@
   "next": "phil-breath is next (Sat 28 Nov), then phil-eclipse (Sun 29 Nov), and so on down the library",
   "scheduled": "phil-observer Sat 21 Nov 6:30 PM and phil-not-your-chart Sun 22 Nov 10 AM (Instagram; X 30 minutes later). Next in the library: phil-breath"
  },
- "batch_16nov_overrides": "For the 16 to 22 Nov batch and after: Sumant's 15 Nov changes win over the 13 Nov format in the batch prompt. See rules_15nov (a pill naming the kind of post and a plain title on every cover, no contents list, one picture and one short line a slide, render.py word limits, captions about 1,000 to 1,200 characters without PART headers, current-sky posts show the sky moving and the full Nadi reading) and philosophy_series (Sat 21 Nov 6:30 PM phil-observer and Sun 22 Nov 10 AM phil-not-your-chart are already in Buffer). Tue 17 Nov 6:30 PM has the Your 2027 promo. The wardrobe reading, now named Wear Your Chart, launched on 15 Nov at 4:10 PM, so Thursday 19 Nov is free again"
+ "batch_16nov_overrides": "For the 16 to 22 Nov batch and after: Sumant's 15 Nov changes win over the 13 Nov format in the batch prompt. See rules_15nov (a pill naming the kind of post and a plain title on every cover, no contents list, one picture and one short line a slide, render.py word limits, captions about 1,000 to 1,200 characters without PART headers, current-sky posts show the sky moving and the full Nadi reading) and philosophy_series (Sat 21 Nov 6:30 PM phil-observer and Sun 22 Nov 10 AM phil-not-your-chart are already in Buffer). Tue 17 Nov 6:30 PM has the Your 2027 promo. The wardrobe reading, now named Wear Your Chart, launched on 15 Nov at 4:10 PM, so Thursday 19 Nov is free again",
+ "week47": {
+  "said": "Sunday batch for Mon 16 to Sun 22 Nov, run Sun 15 Nov 7 PM, built in the 15 Nov format (rules_15nov) by tools/week47.py; covers move via tools/week47_motion.py",
+  "posts": [
+   "sutra-own-sign Mon 10 AM",
+   "lesson16-family Mon 12 PM (rule 6, family)",
+   "lesson17-helpers Tue 12 PM (rule 7, helpers)",
+   "lesson18-swap Wed 12 PM (rule 8, swapped signs; slides 1 and 3 move)",
+   "thread-ep4-strands Wed 6:30 PM",
+   "sutra-exalted Thu 10 AM",
+   "lesson19-middle Thu 12 PM (rule 9, stuck in the middle)",
+   "lesson20-doorway Fri 12 PM (rule 10, Gandanta)",
+   "sky-2026-11-20 Fri 6:30 PM (Moon meets Saturn)",
+   "avatar-rama-sun Sat 10 AM",
+   "week-2026-11-22 Sun 6:30 PM (full Moon in Taurus)"
+  ],
+  "x": "1 PM Mon to Sat for the lesson or avatar, 8 PM Wed (Thread), Fri (Read the sky), Sun (week ahead); sutras stay on Instagram",
+  "sky_that_day": "still on hold; no answer from Sumant",
+  "next_batch": "plan/batch_22nov_prompt.txt (Sun 22 Nov 7 PM, for 23 to 29 Nov)",
+  "note": "Thread Ep 5 'Two birds on one tree' repeats the phil-observer story of Sat 21 Nov; the next batch swaps in the following episode"
+ }
 }

@@ -1,0 +1,264 @@
+{
+ "id": "avatar-rama-sun",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Avatars and grahas",
+   "title": "Rama is\nthe Sun",
+   "titleclass": "h1",
+   "titlesize": 108,
+   "subtitle": "Why the old texts pair two kings",
+   "subsize": 54,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.1,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 330,
+       "r": 300,
+       "fill": "url(#anG)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.5,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 330,
+       "r": 84,
+       "fill": "url(#anS)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "ty": 120,
+         "opacity": 0
+        }
+       ],
+       [
+        4.2,
+        {
+         "ty": 0,
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "ty": 0,
+         "opacity": 1
+        }
+       ]
+      ],
+      "e": "out"
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M40,420 L560,420",
+       "stroke": "GOLD",
+       "stroke-width": 3,
+       "stroke-opacity": 0.8
+      }
+     }
+    ],
+    "at": 7.5,
+    "mt": 30
+   }
+  },
+  {
+   "type": "text",
+   "title": "Nine avatars,\nnine grahas",
+   "titleclass": "h2",
+   "titlesize": 100,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 40,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 36,
+     "dx": 130
+    },
+    {
+     "kind": "mars",
+     "r": 34,
+     "dx": 120
+    }
+   ],
+   "closing": "Parashara pairs them, one by one",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Rama kept his\nfather’s word",
+   "titleclass": "h2",
+   "titlesize": 100,
+   "anim": {
+    "w": 600,
+    "h": 520,
+    "k": 1.1,
+    "els": [
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 330,
+       "r": 300,
+       "fill": "url(#anG)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "opacity": 0
+        }
+       ],
+       [
+        3.5,
+        {
+         "opacity": 0.9
+        }
+       ],
+       [
+        8,
+        {
+         "opacity": 0.9
+        }
+       ]
+      ]
+     },
+     {
+      "t": "circle",
+      "a": {
+       "cx": 300,
+       "cy": 330,
+       "r": 84,
+       "fill": "url(#anS)"
+      },
+      "k": [
+       [
+        0,
+        {
+         "ty": 120,
+         "opacity": 0
+        }
+       ],
+       [
+        4.2,
+        {
+         "ty": 0,
+         "opacity": 1
+        }
+       ],
+       [
+        8,
+        {
+         "ty": 0,
+         "opacity": 1
+        }
+       ]
+      ],
+      "e": "out"
+     },
+     {
+      "t": "path",
+      "a": {
+       "d": "M40,420 L560,420",
+       "stroke": "GOLD",
+       "stroke-width": 3,
+       "stroke-opacity": 0.8
+      }
+     }
+    ],
+    "at": 7.5,
+    "mt": 0,
+    "mb": 16
+   },
+   "closing": "He left his throne to keep it",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "The Sun is the king,\nthe father, the soul",
+   "titleclass": "h2",
+   "titlesize": 84,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 58,
+     "rings": false
+    }
+   ],
+   "closing": "The light that shines on all alike",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Your Sun’s house",
+   "titleclass": "h2",
+   "titlesize": 104,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 50,
+     "rings": false
+    }
+   ],
+   "closing": "Where you lead and keep your word",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Try it today",
+   "titleclass": "h2",
+   "titlesize": 112,
+   "closing": "Keep one promise, to someone or to yourself",
+   "closingsize": 56
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 46,
+     "rings": false
+    }
+   ],
+   "title": "Rama is the Sun",
+   "titleclass": "h2",
+   "next": "Next Saturday · Krishna, the Moon"
+  }
+ ]
+}

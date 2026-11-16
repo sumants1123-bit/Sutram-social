@@ -1,0 +1,317 @@
+{
+ "id": "lesson18-swap",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Nadi rule 8",
+   "title": "Two grahas\nswap signs",
+   "titleclass": "h1",
+   "titlesize": 108,
+   "subtitle": "Their stories tie together",
+   "subsize": 54,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 46
+       }
+      ],
+      "state": "focus",
+      "tag": "Sun's sign"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 48,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "tag": "Mars's sign"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      "",
+      "both"
+     ]
+    ],
+    "reachpad": 64
+   },
+   "motion": {
+    "order": [
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "title": "Step 1: each sits in\nthe other’s sign",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 46
+       }
+      ],
+      "state": "focus",
+      "tag": "Sun's sign"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 48,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "tag": "Mars's sign"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      "",
+      "both"
+     ]
+    ],
+    "reachpad": 64
+   },
+   "closing": "Sun in Scorpio, Mars in Leo",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Step 2: send\neach one home",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 48,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "tag": "Home"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 46
+       }
+      ],
+      "state": "focus",
+      "tag": "Home"
+     }
+    ]
+   },
+   "motion": {
+    "order": [
+     0,
+     2
+    ],
+    "lift": 74,
+    "from": {
+     "rooms": [
+      {
+       "sign": "Leo",
+       "orbs": [
+        {
+         "kind": "mars",
+         "r": 46
+        }
+       ],
+       "state": "focus",
+       "tag": "Sun's sign"
+      },
+      {
+       "spacer": true,
+       "wide": 0.3
+      },
+      {
+       "sign": "Scorpio",
+       "orbs": [
+        {
+         "kind": "sun",
+         "r": 48,
+         "rings": false
+        }
+       ],
+       "state": "focus",
+       "tag": "Mars's sign"
+      }
+     ]
+    }
+   },
+   "closing": "Then read it there",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Step 3: one step\nfurther",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Father · boss",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 46,
+        "rings": false
+       }
+      ],
+      "state": "focus"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Brother · property",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 44
+       }
+      ],
+      "state": "focus"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      "",
+      "both"
+     ]
+    ],
+    "reachpad": 64
+   },
+   "closing": "What one stands for pulls in the other",
+   "closingsize": 56
+  },
+  {
+   "type": "rows",
+   "title": "Where it shows",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Home",
+     "Father and brother talk"
+    ],
+    [
+     "Work",
+     "The boss sees your push"
+    ],
+    [
+     "Papers",
+     "Property moves"
+    ]
+   ],
+   "namesize": 54,
+   "roworbs": [
+    {
+     "kind": "sun",
+     "r": 28,
+     "rings": false
+    },
+    {
+     "kind": "mars",
+     "r": 28
+    },
+    {
+     "kind": "mars",
+     "r": 28
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "title": "In your chart:\nany two lords swapped?",
+   "titleclass": "h2",
+   "titlesize": 84,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 40,
+     "rings": false
+    },
+    {
+     "kind": "mars",
+     "r": 38,
+     "dx": 150
+    }
+   ],
+   "closing": "Find yours at asksutram.com",
+   "closingsize": 56
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 42,
+     "rings": false
+    },
+    {
+     "kind": "mars",
+     "r": 40,
+     "dx": 150
+    }
+   ],
+   "title": "Swapped signs\ntie two stories",
+   "titleclass": "h2",
+   "next": "Thursday · Rule 9, stuck in the middle"
+  }
+ ]
+}

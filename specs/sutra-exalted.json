@@ -1,0 +1,302 @@
+{
+ "id": "sutra-exalted",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Sutra",
+   "title": "A graha\nat its best",
+   "titleclass": "h1",
+   "titlesize": 108,
+   "subtitle": "Exalted: the sign where it shines most",
+   "subsize": 54,
+   "scene": {
+    "w": 330,
+    "h": 220,
+    "rooms": [
+     {
+      "sign": "Aries",
+      "orbs": []
+     },
+     {
+      "sign": "Taurus",
+      "orbs": [
+       {
+        "kind": "moon",
+        "r": 52
+       }
+      ],
+      "state": "focus",
+      "tag": "Moon's best sign"
+     }
+    ]
+   },
+   "motion": {
+    "order": [
+     0,
+     1
+    ],
+    "lift": 60,
+    "from": {
+     "rooms": [
+      {
+       "sign": "Aries",
+       "orbs": [
+        {
+         "kind": "moon",
+         "r": 52
+        }
+       ]
+      },
+      {
+       "sign": "Taurus",
+       "orbs": [],
+       "state": "focus",
+       "tag": "Moon's best sign"
+      }
+     ]
+    }
+   }
+  },
+  {
+   "type": "rows",
+   "title": "The best signs",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Sun",
+     "Aries"
+    ],
+    [
+     "Moon",
+     "Taurus"
+    ],
+    [
+     "Mars",
+     "Capricorn"
+    ],
+    [
+     "Mercury",
+     "Virgo"
+    ]
+   ],
+   "namesize": 58,
+   "roworbs": [
+    {
+     "kind": "sun",
+     "r": 30,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 28
+    },
+    {
+     "kind": "mars",
+     "r": 28
+    },
+    {
+     "kind": "mercury",
+     "r": 26
+    }
+   ]
+  },
+  {
+   "type": "rows",
+   "title": "And the rest",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Jupiter",
+     "Cancer"
+    ],
+    [
+     "Venus",
+     "Pisces"
+    ],
+    [
+     "Saturn",
+     "Libra"
+    ]
+   ],
+   "namesize": 58,
+   "roworbs": [
+    {
+     "kind": "jupiter",
+     "r": 32
+    },
+    {
+     "kind": "venus",
+     "r": 30
+    },
+    {
+     "kind": "saturn",
+     "r": 30
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "title": "The sign across\nis its weakest",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Taurus",
+      "orbs": [
+       {
+        "kind": "moon",
+        "r": 44
+       }
+      ],
+      "state": "focus",
+      "tag": "Best"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [],
+      "tag": "Weakest"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      "",
+      "both"
+     ]
+    ],
+    "reachpad": 64
+   },
+   "closing": "Moon best in Taurus, weakest in Scorpio",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Exalted is your\nbest day",
+   "titleclass": "h2",
+   "titlesize": 96,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 54
+    }
+   ],
+   "closing": "Clear, generous, at full strength",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Next week: the Moon\nin her best sign",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "cross": {
+    "left": {
+     "sign": "Aries",
+     "from": 25
+    },
+    "right": {
+     "sign": "Taurus",
+     "to": 30
+    },
+    "kind": "moon",
+    "r": 30,
+    "at": [
+     "Taurus",
+     8.12
+    ],
+    "days": [
+     [
+      "Aries",
+      24.48
+     ],
+     [
+      "Aries",
+      28.19
+     ],
+     [
+      "Taurus",
+      1.92
+     ],
+     [
+      "Taurus",
+      5.66
+     ],
+     [
+      "Taurus",
+      9.42
+     ],
+     [
+      "Taurus",
+      13.19
+     ],
+     [
+      "Taurus",
+      16.96
+     ],
+     [
+      "Taurus",
+      20.74
+     ],
+     [
+      "Taurus",
+      24.53
+     ],
+     [
+      "Taurus",
+      28.31
+     ]
+    ],
+    "door": [
+     "Mon 23",
+     "about 9 PM"
+    ]
+   },
+   "closing": "Full in Taurus, Tuesday about 10 AM",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Look in your chart",
+   "titleclass": "h2",
+   "titlesize": 104,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 40,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 38,
+     "dx": 140
+    }
+   ],
+   "closing": "Any graha in its best sign?",
+   "closingsize": 56
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 42
+    }
+   ],
+   "title": "Exalted means\nat its best",
+   "titleclass": "h2",
+   "next": "Noon · Rule 9, stuck in the middle"
+  }
+ ]
+}

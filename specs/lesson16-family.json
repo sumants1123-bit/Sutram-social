@@ -1,0 +1,310 @@
+{
+ "id": "lesson16-family",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Nadi rule 6",
+   "title": "Grahas in\none family",
+   "titleclass": "h1",
+   "titlesize": 108,
+   "subtitle": "Signs 5th and 9th apart act together",
+   "subsize": 54,
+   "scene": {
+    "w": 300,
+    "h": 200,
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": []
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 44,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "names": "Sun"
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 40
+       }
+      ],
+      "state": "focus",
+      "names": "Saturn"
+     }
+    ],
+    "reach": [
+     [
+      1,
+      2,
+      ""
+     ]
+    ]
+   },
+   "motion": {
+    "order": [
+     1,
+     2,
+     0
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "title": "One element,\none family",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 300,
+    "h": 200,
+    "rooms": [
+     {
+      "sign": "Aries",
+      "orbs": []
+     },
+     {
+      "sign": "Leo",
+      "orbs": [],
+      "state": "focus"
+     },
+     {
+      "sign": "Sagittarius",
+      "orbs": []
+     }
+    ],
+    "reach": [
+     [
+      0,
+      1,
+      ""
+     ],
+     [
+      1,
+      2,
+      ""
+     ]
+    ],
+    "caption": "The fire family"
+   },
+   "closing": "Fire, earth, air, water: three signs each",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Family acts at\nabout 75 percent",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 44,
+        "rings": false
+       }
+      ],
+      "state": "focus"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 40
+       }
+      ],
+      "state": "focus"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      "75%",
+      "both"
+     ]
+    ],
+    "reachpad": 64
+   },
+   "closing": "Read them almost as one room",
+   "closingsize": 56
+  },
+  {
+   "type": "nsteps",
+   "title": "How to read it",
+   "titleclass": "h2",
+   "steps": [
+    {
+     "head": "Find the graha"
+    },
+    {
+     "head": "Count 5 and 9 signs on"
+    },
+    {
+     "head": "Who lives there?"
+    }
+   ],
+   "headsize": 62,
+   "stepsmt": 44
+  },
+  {
+   "type": "text",
+   "title": "From today: a\nwater family",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 300,
+    "h": 200,
+    "rooms": [
+     {
+      "sign": "Cancer",
+      "orbs": []
+     },
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 44,
+        "rings": false
+       }
+      ],
+      "state": "focus",
+      "names": "Sun"
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 40
+       }
+      ],
+      "state": "focus",
+      "names": "Saturn"
+     }
+    ],
+    "reach": [
+     [
+      1,
+      2,
+      ""
+     ]
+    ]
+   },
+   "closing": "The king in Scorpio, the auditor in Pisces",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Authority meets\nthe rulebook",
+   "titleclass": "h2",
+   "titlesize": 96,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 46,
+     "rings": false
+    },
+    {
+     "kind": "saturn",
+     "r": 42,
+     "dx": 150
+    }
+   ],
+   "closing": "Bosses check the details",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Friday, the mother\njoins them",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 42,
+        "rings": false
+       }
+      ],
+      "state": "focus"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 36
+       },
+       {
+        "kind": "moon",
+        "r": 34,
+        "dx": 80
+       }
+      ],
+      "state": "focus",
+      "names": "Saturn · Moon"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      ""
+     ]
+    ]
+   },
+   "closing": "Finish one duty, then rest",
+   "closingsize": 56
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 40,
+     "rings": false
+    },
+    {
+     "kind": "saturn",
+     "r": 38,
+     "dx": 140
+    }
+   ],
+   "title": "Family signs\nact together",
+   "titleclass": "h2",
+   "next": "Tomorrow · Rule 7, helpers"
+  }
+ ]
+}

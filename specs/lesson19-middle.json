@@ -1,0 +1,265 @@
+{
+ "id": "lesson19-middle",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Nadi rule 9",
+   "title": "Stuck in\nthe middle",
+   "titleclass": "h1",
+   "titlesize": 108,
+   "subtitle": "Hard grahas on both sides squeeze it",
+   "subsize": 54,
+   "scene": {
+    "w": 270,
+    "h": 188,
+    "rooms": [
+     {
+      "sign": "One side",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 38
+       }
+      ]
+     },
+     {
+      "sign": "Its sign",
+      "orbs": [
+       {
+        "kind": "jupiter",
+        "r": 44
+       }
+      ],
+      "state": "focus"
+     },
+     {
+      "sign": "Other side",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 38
+       }
+      ]
+     }
+    ]
+   },
+   "motion": {
+    "order": [
+     1,
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "title": "The scissors of\nthe hard ones",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 270,
+    "h": 188,
+    "rooms": [
+     {
+      "sign": "12th",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 38
+       }
+      ]
+     },
+     {
+      "sign": "The graha",
+      "orbs": [
+       {
+        "kind": "jupiter",
+        "r": 44
+       }
+      ],
+      "state": "focus"
+     },
+     {
+      "sign": "2nd",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 38
+       }
+      ]
+     }
+    ]
+   },
+   "closing": "Papakartari, by sign: 12th and 2nd",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "The hard ones",
+   "titleclass": "h2",
+   "titlesize": 104,
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 34,
+     "rings": false
+    },
+    {
+     "kind": "mars",
+     "r": 32,
+     "dx": 120
+    },
+    {
+     "kind": "saturn",
+     "r": 32,
+     "dx": 120
+    },
+    {
+     "kind": "rahu",
+     "r": 32,
+     "dx": 120
+    },
+    {
+     "kind": "ketu",
+     "r": 32,
+     "dx": 120
+    }
+   ],
+   "closing": "Sun, Mars, Saturn, Rahu, Ketu",
+   "closingsize": 56
+  },
+  {
+   "type": "nsteps",
+   "title": "How to read it",
+   "titleclass": "h2",
+   "steps": [
+    {
+     "head": "Find the graha"
+    },
+    {
+     "head": "Look at both sides"
+    },
+    {
+     "head": "Are both neighbours hard?"
+    }
+   ],
+   "headsize": 62,
+   "stepsmt": 44
+  },
+  {
+   "type": "text",
+   "title": "Right now in Leo,\nby degree",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "ruler": {
+    "sign": "Leo",
+    "from": 0,
+    "to": 4,
+    "ticks": [
+     [
+      1,
+      "1°"
+     ],
+     [
+      2,
+      "2°"
+     ],
+     [
+      3,
+      "3°"
+     ]
+    ],
+    "items": [
+     {
+      "kind": "ketu",
+      "who": "The monk",
+      "deg": 0.85,
+      "d": "0°51′",
+      "r": 30
+     },
+     {
+      "kind": "jupiter",
+      "who": "The teacher",
+      "deg": 1.92,
+      "d": "1°55′",
+      "r": 36
+     },
+     {
+      "kind": "mars",
+      "who": "The soldier",
+      "deg": 3.16,
+      "d": "3°10′",
+      "r": 30
+     }
+    ]
+   },
+   "closing": "The teacher between the monk and the soldier",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Advice gets\nsqueezed",
+   "titleclass": "h2",
+   "titlesize": 100,
+   "orbs": [
+    {
+     "kind": "ketu",
+     "r": 38
+    },
+    {
+     "kind": "jupiter",
+     "r": 46,
+     "dx": 130
+    },
+    {
+     "kind": "mars",
+     "r": 38,
+     "dx": 130
+    }
+   ],
+   "closing": "Between quitting and fighting",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Give the wise\nvoice room",
+   "titleclass": "h2",
+   "titlesize": 100,
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 52
+    }
+   ],
+   "closing": "Decide slowly this week",
+   "closingsize": 56
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "ketu",
+     "r": 36
+    },
+    {
+     "kind": "jupiter",
+     "r": 42,
+     "dx": 130
+    },
+    {
+     "kind": "mars",
+     "r": 36,
+     "dx": 130
+    }
+   ],
+   "title": "Stuck in the middle\nmeans squeezed",
+   "titleclass": "h2",
+   "next": "Friday · Rule 10, the doorway"
+  }
+ ]
+}

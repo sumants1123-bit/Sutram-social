@@ -1,0 +1,309 @@
+{
+ "id": "sky-2026-11-20",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Current sky",
+   "title": "The Moon meets\nSaturn in Pisces",
+   "titleclass": "h1",
+   "titlesize": 100,
+   "subtitle": "Friday afternoon, about 3:45 PM",
+   "subsize": 54,
+   "strip": {
+    "signs": [
+     "Aquarius",
+     "Pisces"
+    ],
+    "days": [
+     "Wed 18 · 6 AM",
+     "Wed 18 · 12 PM",
+     "Wed 18 · 6 PM",
+     "Thu 19 · 12 AM",
+     "Thu 19 · 6 AM",
+     "Thu 19 · 12 PM",
+     "Thu 19 · 6 PM",
+     "Fri 20 · 12 AM",
+     "Fri 20 · 6 AM",
+     "Fri 20 · 12 PM",
+     "Fri 20 · 6 PM",
+     "Sat 21 · 12 AM",
+     "Sat 21 · 6 AM",
+     "Sat 21 · 12 PM",
+     "Sat 21 · 6 PM",
+     "Sun 22 · 12 AM"
+    ],
+    "track": {
+     "moon": [
+      312.825,
+      315.958,
+      319.114,
+      322.294,
+      325.501,
+      328.734,
+      331.995,
+      335.286,
+      338.605,
+      341.955,
+      345.336,
+      348.747,
+      352.19,
+      355.663,
+      359.167,
+      2.701
+     ],
+     "saturn": [
+      344.148,
+      344.138,
+      344.128,
+      344.119,
+      344.109,
+      344.1,
+      344.091,
+      344.082,
+      344.073,
+      344.064,
+      344.055,
+      344.046,
+      344.037,
+      344.029,
+      344.021,
+      344.012
+     ]
+    },
+    "day": 10,
+    "label": "Fri 20 Nov",
+    "owner": {
+     "Pisces": "Jupiter's sign"
+    },
+    "focus": [
+     "Pisces"
+    ],
+    "names": {
+     "moon": "Moon",
+     "saturn": "Saturn"
+    },
+    "r": {
+     "moon": 40,
+     "saturn": 36
+    },
+    "lanes": {
+     "moon": -1,
+     "saturn": 1
+    },
+    "lanegap": 62,
+    "h": 440,
+    "mt": 96,
+    "door": [
+     "Pisces",
+     "Thu 2:30 PM"
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "title": "One room,\nfull strength",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 470,
+    "h": 250,
+    "rooms": [
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 44
+       },
+       {
+        "kind": "moon",
+        "r": 42,
+        "dx": 96
+       }
+      ],
+      "state": "focus",
+      "tag": "Jupiter's sign",
+      "names": "Saturn · Moon"
+     }
+    ]
+   },
+   "closing": "The mind and duty, side by side",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "The Moon in Pisces",
+   "titleclass": "h2",
+   "titlesize": 96,
+   "scene": {
+    "w": 470,
+    "h": 250,
+    "rooms": [
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "moon",
+        "r": 56
+       }
+      ],
+      "state": "focus"
+     }
+    ]
+   },
+   "closing": "Soft, kind, a little dreamy",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Saturn in Pisces,\nwalking backward",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 470,
+    "h": 250,
+    "rooms": [
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 52
+       }
+      ],
+      "state": "focus",
+      "note": "◂ walking backward"
+     }
+    ]
+   },
+   "closing": "The auditor rechecks old work",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Together: a mood\nthat wants a job done",
+   "titleclass": "h2",
+   "titlesize": 84,
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 44
+    },
+    {
+     "kind": "saturn",
+     "r": 44,
+     "dx": 150
+    }
+   ],
+   "closing": "Feelings get serious and practical",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "The king is family",
+   "titleclass": "h2",
+   "titlesize": 100,
+   "scene": {
+    "w": 340,
+    "h": 226,
+    "rooms": [
+     {
+      "sign": "Scorpio",
+      "orbs": [
+       {
+        "kind": "sun",
+        "r": 42,
+        "rings": false
+       }
+      ],
+      "state": "focus"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Pisces",
+      "orbs": [
+       {
+        "kind": "saturn",
+        "r": 36
+       },
+       {
+        "kind": "moon",
+        "r": 34,
+        "dx": 80
+       }
+      ],
+      "state": "focus"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      ""
+     ]
+    ]
+   },
+   "closing": "The Sun in Scorpio, water too: the boss backs the plan",
+   "closingsize": 56
+  },
+  {
+   "type": "rows",
+   "title": "This evening",
+   "titleclass": "h2",
+   "items": [
+    [
+     "Do",
+     "Finish one chore"
+    ],
+    [
+     "Call",
+     "Your mother"
+    ],
+    [
+     "Rest",
+     "Let the feeling be"
+    ]
+   ],
+   "namesize": 58,
+   "roworbs": [
+    {
+     "kind": "saturn",
+     "r": 28
+    },
+    {
+     "kind": "moon",
+     "r": 28
+    },
+    {
+     "kind": "moon",
+     "r": 28
+    }
+   ]
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 40
+    },
+    {
+     "kind": "saturn",
+     "r": 38,
+     "dx": 140
+    }
+   ],
+   "title": "Learn to read\nthe sky with Sutram",
+   "titleclass": "h2",
+   "next": "Sunday · The week ahead"
+  }
+ ]
+}

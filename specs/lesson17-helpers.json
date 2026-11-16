@@ -1,0 +1,287 @@
+{
+ "id": "lesson17-helpers",
+ "kicker": "Sutram",
+ "decor_theme": "thread",
+ "slides": [
+  {
+   "type": "cover",
+   "kicker": "Sutram",
+   "stars": true,
+   "swipe": true,
+   "tag": "Nadi rule 7",
+   "title": "The helpers:\n3rd and 11th",
+   "titleclass": "h1",
+   "titlesize": 108,
+   "subtitle": "Grahas that push from across the chart",
+   "subsize": 54,
+   "scene": {
+    "w": 300,
+    "h": 200,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 34
+       },
+       {
+        "kind": "jupiter",
+        "r": 38,
+        "dx": 70
+       }
+      ],
+      "state": "focus",
+      "names": "Mars · Jupiter"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "mercury",
+        "r": 34
+       }
+      ],
+      "state": "focus",
+      "names": "Mercury"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      "3rd"
+     ]
+    ],
+    "reachpad": 60
+   },
+   "motion": {
+    "order": [
+     0,
+     2
+    ]
+   }
+  },
+  {
+   "type": "text",
+   "title": "3rd is effort,\n11th is gains",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 280,
+    "h": 190,
+    "rooms": [
+     {
+      "sign": "3rd",
+      "orbs": [],
+      "state": "focus"
+     },
+     {
+      "sign": "The graha",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 40
+       }
+      ]
+     },
+     {
+      "sign": "11th",
+      "orbs": [],
+      "state": "focus"
+     }
+    ]
+   },
+   "closing": "Count from any graha",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "They help from\nthe other side",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "orbs": [
+    {
+     "kind": "mercury",
+     "r": 40
+    },
+    {
+     "kind": "mars",
+     "r": 40,
+     "dx": 150
+    }
+   ],
+   "closing": "About half strength, some say a quarter",
+   "closingsize": 56
+  },
+  {
+   "type": "nsteps",
+   "title": "How to read it",
+   "titleclass": "h2",
+   "steps": [
+    {
+     "head": "Find the graha"
+    },
+    {
+     "head": "Count 3 and 11 signs on"
+    },
+    {
+     "head": "Who lives there?"
+    }
+   ],
+   "headsize": 62,
+   "stepsmt": 44
+  },
+  {
+   "type": "text",
+   "title": "This week:\nMercury in Libra",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 300,
+    "h": 200,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 34
+       },
+       {
+        "kind": "jupiter",
+        "r": 38,
+        "dx": 70
+       }
+      ],
+      "state": "focus",
+      "names": "Mars · Jupiter"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "mercury",
+        "r": 34
+       }
+      ],
+      "state": "focus",
+      "names": "Mercury"
+     }
+    ],
+    "reach": [
+     [
+      0,
+      2,
+      "3rd"
+     ]
+    ],
+    "reachpad": 60
+   },
+   "closing": "Libra is 3rd from Leo",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "Words move effort\nand advice",
+   "titleclass": "h2",
+   "titlesize": 96,
+   "orbs": [
+    {
+     "kind": "mercury",
+     "r": 44
+    },
+    {
+     "kind": "jupiter",
+     "r": 46,
+     "dx": 150
+    }
+   ],
+   "closing": "The clear email gets the project going",
+   "closingsize": 56
+  },
+  {
+   "type": "text",
+   "title": "From Libra, Leo\nis the 11th",
+   "titleclass": "h2",
+   "titlesize": 90,
+   "scene": {
+    "w": 300,
+    "h": 200,
+    "rooms": [
+     {
+      "sign": "Leo",
+      "orbs": [
+       {
+        "kind": "mars",
+        "r": 34
+       },
+       {
+        "kind": "jupiter",
+        "r": 38,
+        "dx": 70
+       }
+      ],
+      "state": "focus",
+      "names": "Mars · Jupiter"
+     },
+     {
+      "spacer": true,
+      "wide": 0.3
+     },
+     {
+      "sign": "Libra",
+      "orbs": [
+       {
+        "kind": "mercury",
+        "r": 34
+       }
+      ],
+      "state": "focus",
+      "names": "Mercury"
+     }
+    ],
+    "reach": [
+     [
+      2,
+      0,
+      "11th"
+     ]
+    ],
+    "reachpad": 60
+   },
+   "closing": "The messenger gains from them",
+   "closingsize": 56
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "mercury",
+     "r": 36
+    },
+    {
+     "kind": "mars",
+     "r": 36,
+     "dx": 140
+    },
+    {
+     "kind": "jupiter",
+     "r": 40,
+     "dx": 140
+    }
+   ],
+   "title": "The 3rd and 11th\nare your helpers",
+   "titleclass": "h2",
+   "next": "Wednesday · Rule 8, swapped houses"
+  }
+ ]
+}
