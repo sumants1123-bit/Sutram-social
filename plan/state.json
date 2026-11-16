@@ -948,7 +948,8 @@
  "checkins": {
   "pattern": "one-off reminders into this session",
   "next": [
-   "trig_018C9a9sQxAnAp1iaXnrhw1v Sun 15 Nov 7 PM: weekly batch Mon 16-Sun 22 Nov"
+   "trig_0184cvygsnQJMxzMvErZjZSX Wed 18 Nov 7 PM: schedule the rest of 16-22 Nov",
+   "trig_014ZF9FintvMsyxZsA8JhLDU Sun 22 Nov 7 PM: weekly batch 23-29 Nov (plan/batch_22nov_prompt.txt)"
   ]
  },
  "usage_budget": {
