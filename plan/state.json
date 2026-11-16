@@ -499,6 +499,97 @@
    "buffer_id": "6afa1db5ff465c57dab065be",
    "link": "https://x.com/1486863787080695810/status/2122074919995396448",
    "status": "posted 15 Nov 4:11 PM"
+  },
+  {
+   "id": "sutra-own-sign",
+   "when": "2026-11-16T10:00:00-05:00",
+   "via": "buffer-instagram",
+   "buffer_id": "6afa50308e87c256a3a0d7e1",
+   "note": "week47 batch, assets at ce4a0a3 (thread at 6f8656e)"
+  },
+  {
+   "id": "lesson16-family",
+   "when": "2026-11-16T12:00:00-05:00",
+   "via": "buffer-instagram",
+   "buffer_id": "6afa503c06e1675856b78ee0",
+   "note": "week47 batch, assets at ce4a0a3 (thread at 6f8656e)"
+  },
+  {
+   "id": "lesson17-helpers",
+   "when": "2026-11-17T12:00:00-05:00",
+   "via": "buffer-instagram",
+   "buffer_id": "6afa50668e87c256a3a0e615",
+   "note": "week47 batch, assets at ce4a0a3 (thread at 6f8656e)"
+  },
+  {
+   "id": "lesson18-swap",
+   "when": "2026-11-18T12:00:00-05:00",
+   "via": "buffer-instagram",
+   "buffer_id": "6afa5070ff465c57dac1ebbc",
+   "note": "week47 batch, assets at ce4a0a3 (thread at 6f8656e)"
+  },
+  {
+   "id": "thread-ep4-strands",
+   "when": "2026-11-18T18:30:00-05:00",
+   "via": "buffer-instagram",
+   "buffer_id": "6afa508360a910801c5ad0e7",
+   "note": "week47 batch, assets at ce4a0a3 (thread at 6f8656e)"
+  },
+  {
+   "id": "sutra-exalted",
+   "when": "2026-11-19T10:00:00-05:00",
+   "via": "buffer-instagram",
+   "buffer_id": "6afa508d06e1675856b7a4fa",
+   "note": "week47 batch, assets at ce4a0a3 (thread at 6f8656e)"
+  },
+  {
+   "id": "lesson19-middle",
+   "when": "2026-11-19T12:00:00-05:00",
+   "via": "buffer-instagram",
+   "buffer_id": "6afa50988e87c256a3a0f2a5",
+   "note": "week47 batch, assets at ce4a0a3 (thread at 6f8656e)"
+  },
+  {
+   "id": "lesson16-family-x",
+   "when": "2026-11-16T13:00:00-05:00",
+   "via": "buffer-x",
+   "buffer_id": "6afa50a28e87c256a3a0f55d"
+  },
+  {
+   "id": "lesson17-helpers-x",
+   "when": "2026-11-17T13:00:00-05:00",
+   "via": "buffer-x",
+   "buffer_id": "6afa50a88e87c256a3a0f719"
+  },
+  {
+   "id": "lesson18-swap-x",
+   "when": "2026-11-18T13:00:00-05:00",
+   "via": "buffer-x",
+   "buffer_id": "6afa50ada869c35e5ba90198"
+  },
+  {
+   "id": "thread-ep4-strands-x",
+   "when": "2026-11-18T20:00:00-05:00",
+   "via": "buffer-x",
+   "buffer_id": "6afa50b260a910801c5adc39"
+  },
+  {
+   "id": "lesson19-middle-x",
+   "when": "2026-11-19T13:00:00-05:00",
+   "via": "buffer-x",
+   "buffer_id": "6afa50b760a910801c5add77"
+  },
+  {
+   "id": "lesson20-doorway-x",
+   "when": "2026-11-20T13:00:00-05:00",
+   "via": "buffer-x",
+   "buffer_id": "6afa50bc06e1675856b7afd3"
+  },
+  {
+   "id": "sky-2026-11-20-x",
+   "when": "2026-11-20T20:00:00-05:00",
+   "via": "buffer-x",
+   "buffer_id": "6afa50c106e1675856b7b272"
   }
  ],
  "retired": [
@@ -1154,6 +1245,20 @@
   "x": "1 PM Mon to Sat for the lesson or avatar, 8 PM Wed (Thread), Fri (Read the sky), Sun (week ahead); sutras stay on Instagram",
   "sky_that_day": "still on hold; no answer from Sumant",
   "next_batch": "plan/batch_22nov_prompt.txt (Sun 22 Nov 7 PM, for 23 to 29 Nov)",
-  "note": "Thread Ep 5 'Two birds on one tree' repeats the phil-observer story of Sat 21 Nov; the next batch swaps in the following episode"
+  "note": "Thread Ep 5 'Two birds on one tree' repeats the phil-observer story of Sat 21 Nov; the next batch swaps in the following episode",
+  "left_for_wed_checkin": {
+   "instagram": [
+    "lesson20-doorway Fri 20 Nov 12 PM",
+    "sky-2026-11-20 Fri 20 Nov 6:30 PM",
+    "avatar-rama-sun Sat 21 Nov 10 AM",
+    "week-2026-11-22 Sun 22 Nov 6:30 PM"
+   ],
+   "x": [
+    "avatar-rama-sun Sat 21 Nov 1 PM",
+    "week-2026-11-22 Sun 22 Nov 8 PM"
+   ],
+   "assets": "ce4a0a3, built by the scratch payloads.py from tools/buffer_assets.py (IG covers move: --videos 1)"
+  },
+  "preview": "https://claude.ai/artifact/9DBvhqtPtLo6qa12LKX3YA (Lesson 16, private)"
  }
 }
