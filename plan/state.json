@@ -130,7 +130,14 @@
    "url": "https://www.instagram.com/p/Df1BY9uEcrC/",
    "title": "Wear Your Stone launch (8 slides in the Thread look, Midnight mandala moving cover, CA$23)",
    "buffer_id": "6afbd116df36f4d825684fcb",
-   "note": "shared now at Sumant's word, 16 Nov 10:46 PM: 'Love midnight. Create sample and lets post on instagram. Price for $23'. Instagram only; assets at 5927d37. X text in x-drafts, not posted. He boosts it himself."
+   "note": "shared now at Sumant's word, 16 Nov 10:46 PM: 'Love midnight. Create sample and lets post on instagram. Price for $23'. Instagram only; assets at 5927d37. X text in x-drafts, not posted. He boosts it himself. Deleted by Sumant on 16 Nov about 11:10 PM; replaced by wear-your-stone-launch-v2."
+  },
+  {
+   "id": "wear-your-stone-launch-v2",
+   "when": "2026-11-16T23:20:47-05:00",
+   "title": "Wear Your Stone launch v2 (10 slides: cover, nine stones, three friends, beyond the ring, order your personal report, four sample pages, CA$23)",
+   "buffer_id": "6afbd61f4b26315855be7e2d",
+   "note": "Sumant, 16 Nov 11:14 PM, after deleting the first: no slide on where gems come from (no bones, demon or Bala), no D9 / five-checks slide, bigger text on the nine stones, a clear 'order your personal report' section with more sample pages, no page count, CA$23 and 'DM us the word STONE for the payment link'. Shared now; assets at 4c0f2e6. Instagram only."
   }
  ],
  "scheduled": [
@@ -453,11 +460,11 @@
   },
   {
    "id": "your-2027-promo",
-   "when": "2026-11-17T18:30:00-05:00",
+   "when": "2026-11-19T18:30:00-05:00",
    "title": "Your 2027 promo: 6 slides in the report's own look, moving cover; CA$39, one step DM us the word 2027",
    "via": "buffer-instagram",
    "buffer_id": "6af9bc8b76c23bf1c7844f36",
-   "note": "approved by Sumant 15 Nov 9:06 (he likes the DM step); assets at commit 7debc55; Instagram only. Tuesday therefore takes one more Instagram post at most. Process (Sumant, 15 Nov 9:08): people DM the word 2027; Sumant takes their birth details and payment, then makes the report"
+   "note": "approved by Sumant 15 Nov 9:06 (he likes the DM step); assets at commit 7debc55; Instagram only. Tuesday therefore takes one more Instagram post at most. Process (Sumant, 15 Nov 9:08): people DM the word 2027; Sumant takes their birth details and payment, then makes the report Moved from Tue 17 Nov 6:30 PM to Thu 19 Nov 6:30 PM at Sumant's word (16 Nov 11:15 PM)."
   },
   {
    "id": "phil-observer-ask",
@@ -1287,7 +1294,8 @@
    "orders": "DM the word STONE",
    "pages": 23,
    "sample": "9-page public sample in Midnight (Wear-Your-Stone-Sample.pdf, sent 16 Nov)",
-   "kit": "claude/wear-your-stone-kit in the Jyotish Business project; private copy /home/claude/_private/stones"
+   "kit": "claude/wear-your-stone-kit in the Jyotish Business project; private copy /home/claude/_private/stones",
+   "post_rules": "Sumant, 16 Nov: never mention the page count; say CA$23 and 'DM us the word STONE for the payment link'; no gem-origin story (bones, demon, Bala); keep divisional-chart talk (D9, D10) off the slides."
   }
  }
 }
