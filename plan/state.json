@@ -123,6 +123,14 @@
    "title": "Philosophy: awareness is transformation (9 slides, moving cover)",
    "buffer_id": "6af9bffbc5b364e0625ef0cf",
    "note": "made and shared now at Sumant's word, 15 Nov 9:15; assets at b5007df; third Instagram post today at his request (Week ahead still 6:30 PM)"
+  },
+  {
+   "id": "wear-your-stone-launch",
+   "when": "2026-11-16T23:00:05-05:00",
+   "url": "https://www.instagram.com/p/Df1BY9uEcrC/",
+   "title": "Wear Your Stone launch (8 slides in the Thread look, Midnight mandala moving cover, CA$23)",
+   "buffer_id": "6afbd116df36f4d825684fcb",
+   "note": "shared now at Sumant's word, 16 Nov 10:46 PM: 'Love midnight. Create sample and lets post on instagram. Price for $23'. Instagram only; assets at 5927d37. X text in x-drafts, not posted. He boosts it himself."
   }
  ],
  "scheduled": [
@@ -1261,5 +1269,25 @@
    "assets": "ce4a0a3, built by the scratch payloads.py from tools/buffer_assets.py (IG covers move: --videos 1)"
   },
   "preview": "https://claude.ai/artifact/9DBvhqtPtLo6qa12LKX3YA (Lesson 16, private)"
+ },
+ "rules_16nov": {
+  "said": "Sumant, 16 Nov 10:15 PM, with screenshots of 'Five layers of you' (Thread Ep 2) and 'Jupiter in Leo' (week ahead 1-7 Nov): 'Loved post and content in this format, wording etc. maybe bring back content in this format!' 10:48 PM: 'You can bring format back for regular posts, it's okay. Don't worry about the text [limit], it shouldn't look cluttered or clumsy, that's it.'",
+  "look": "The Thread look of 1-7 Nov, made with tools/render_thread.py (the renderer of b82ab1f, before the v6 plate frame). The series kicker on every slide (spec 'kicker': 'The Thread · Episode 5', 'Week ahead · 23 to 29 November', 'Lesson 21 · Nadi rules', 'Sutra · <idea>', 'Read the sky · 27 November', 'Avatars and grahas · 2'). Each slide: a small label, a title, then 3 to 5 short lines, a short list (rows, stack) or a quote. No plate frame, no pill, no Swipe line. Shapes to copy: specs/ep02-ask.json and specs/week-2026-11-01-ask2.json.",
+  "order": "Story or source first, then what it is (a short list), then 'In your chart', then 'In real life', then a quote with its source, then a close: a question, the two links, and the next episode for series posts. Week ahead: the week's main sky event 'for your Moon sign', the twelve signs as a list, then 'also this week'.",
+  "text": "The 15 Nov word caps (14 cover, 18 a slide) are lifted. Episode 2 is the measure, about 15 to 40 words a slide. Nothing cluttered: a slide must fit at full size; if render_thread shrinks a slide below .92 or prints 'still overflows', split or cut it, and look at every overview before pushing.",
+  "captions": "Episode 2 voice: a title line, a story paragraph with its source, the list as short lines, an 'In your chart' paragraph, an 'In real life' paragraph, a quote with its source, a question for the comments, 'Next <day>: <title>' for series posts, then the ask line for asksutram.com and 'Weekly newsletter: sutram.ca/newsletter', then hashtags. About 1,000 to 1,500 characters. Every other rule stands: graha never planet, no em dashes, no 'not X but Y', exactly two links, nothing invented, no health or death claims, positions and times only from the engine; run tools/check_caption.py.",
+  "motion": "python3 tools/thread_motion.py specs/<id>.json -> posts/<id>/<id>-1.mp4 (the orbit's beads go round once, stars twinkle, a drawn graha breathes; first frame = the still). Give covers an orbit ('orb': {'kind': 'orbit', ...}) or a graha orb.",
+  "buffer": "tools/buffer_assets.py works unchanged with these specs (Instagram --videos 1; X --slides with up to 4).",
+  "starts": "Wed 18 Nov check-in rebuilds the four posts still waiting for 16-22 Nov in this look before scheduling them; the Sun 22 Nov batch makes 23-29 Nov in it."
+ },
+ "products": {
+  "wear_your_stone": {
+   "price": "CA$23 (Sumant, 16 Nov 10:46 PM)",
+   "look": "Midnight (look A)",
+   "orders": "DM the word STONE",
+   "pages": 23,
+   "sample": "9-page public sample in Midnight (Wear-Your-Stone-Sample.pdf, sent 16 Nov)",
+   "kit": "claude/wear-your-stone-kit in the Jyotish Business project; private copy /home/claude/_private/stones"
+  }
  }
 }
