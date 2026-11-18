@@ -1291,7 +1291,8 @@
     "avatar-rama-sun Sat 21 Nov 1 PM",
     "week-2026-11-22 Sun 22 Nov 8 PM"
    ],
-   "assets": "ce4a0a3, built by the scratch payloads.py from tools/buffer_assets.py (IG covers move: --videos 1)"
+   "assets": "ce4a0a3, built by the scratch payloads.py from tools/buffer_assets.py (IG covers move: --videos 1)",
+   "cap_note": "Instagram cap is 10 scheduled: at 7 PM tonight 7 are left after lesson18 and the explainer go out, so the three above fit and lesson20-doorway waits for the Sunday batch."
   },
   "preview": "https://claude.ai/artifact/9DBvhqtPtLo6qa12LKX3YA (Lesson 16, private)",
   "changes_18nov": "18 Nov 7:55 AM: gems-how-they-work Wed 6:30 PM and wear-your-stone-report Fri 6:30 PM went into Buffer. To keep two Instagram posts a day: thread-ep4-strands moved to Mon 23 Nov 6:30 PM (X 8 PM; its last slide still says 'Next Wednesday · The Thread, part 5', which is Wed 25 Nov), sky-2026-11-20 to Fri 12 PM, lesson20-doorway to Mon 23 Nov 12 PM. Thursday keeps its three (sutra-exalted, lesson19, Your 2027)."
@@ -1315,7 +1316,7 @@
    "sample": "9-page public sample in Midnight (Wear-Your-Stone-Sample.pdf, sent 16 Nov)",
    "kit": "claude/wear-your-stone-kit in the Jyotish Business project; private copy /home/claude/_private/stones",
    "post_rules": "Sumant, 16 Nov: never mention the page count; say CA$23 and 'DM us the word STONE for the payment link'; no gem-origin story (bones, demon, Bala); keep divisional-chart talk (D9, D10) off the slides.",
-   "posts_17nov": "Sumant, 17 Nov 10:31 AM: deleted v2 himself; asked for two separate posts, the report on its own and an explainer 'how does it work and how to wear it' (friends and enemies, how it works, metals, why diamond is love and yellow sapphire luck, 'you are light, seven colours'), and said 'I don't like too dark of a theme colors. I like how you made the home front of gemstone with moving stones.' Made in a light ivory look (navy text, terracotta labels, Cormorant Garamond and Inter, brass arcs) with moving covers; builder kept as claude/wear-your-stone-kit/light_posts.py in the project and /home/claude/_private/stones/light_posts.py.",
+   "posts_17nov": "Sumant, 17 Nov 10:31 AM: deleted v2 himself; asked for two separate posts, the report on its own and an explainer 'how does it work and how to wear it' (friends and enemies, how it works, metals, why diamond is love and yellow sapphire luck, 'you are light, seven colours'), and said 'I don't like too dark of a theme colors. I like how you made the home front of gemstone with moving stones.' Made in a light ivory look (navy text, terracotta labels, Cormorant Garamond and Inter, brass arcs) with moving covers; builder kept at /home/claude/_private/stones/light_posts.py (the project was out of room on 18 Nov, so no project copy).",
    "open": "Ask Sumant whether regular posts stay in the dark Thread look (his 16 Nov choice) or move to the light look (his 17 Nov remark was about the stone posts)."
   }
  }
