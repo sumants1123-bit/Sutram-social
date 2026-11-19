@@ -1371,11 +1371,14 @@
  },
  "drafts": {
   "know-seven-minds": {
-   "made": "19 Nov 2026, about 11:30 AM, for Sumant's review; NOT scheduled.",
+   "made": "19 Nov 2026, about 10:50 AM, for Sumant's review; NOT scheduled.",
    "asked": "Sumant, 19 Nov 10:42 AM: 'Make a post around what kind of minds there are at broader level as per Jyotish. There's a Mula, deep-seated mind, there's Ardhara, etc. I don't know. And that's a mind that people use. We are just part of that mind. It's like small slice of a bigger slice. Something like this. Can you make one for me to review and then we can see posted?'",
    "read_as": "The Moon is the mind; the Moon's star at birth (one of 27, Mula and Ardra among them) is your slice of a bigger mind (Rig Veda 10.90.13); the classics sort the 27 stars into seven natures (Brihat Samhita ch. 98). He has not confirmed this reading; the other reading offered to him is layers of mind (a deep root mind under the everyday one).",
    "files": "tools/post_minds.py, tools/look_art.py (the 27-star wheel), specs/know-seven-minds.json, captions/know-seven-minds.txt, x-drafts/know-seven-minds-x.txt, posts/know-seven-minds (slides 1 and 3 move).",
-   "slot_offered": "Tue 24 Nov 10 AM, in place of that day's Sutra in the Sunday batch plan, or sooner as an extra post if he says so. If he takes Tuesday, the Sunday batch does not make a Sutra for Tue 24 Nov."
+   "slot_offered": "Tue 24 Nov 10 AM, in place of that day's Sutra in the Sunday batch plan, or sooner as an extra post if he says so. If he takes Tuesday, the Sunday batch does not make a Sutra for Tue 24 Nov.",
+   "source_note": "Moving group: the Sanskrit (wisdomlib Sanskrit edition, chapter numbered 97, verse 11) says 'sravanatrayam adityanile ca carakarmani hitani'. Panchang lists read Aditya as Punarvasu; N. C. Iyer's 1884 translation (chapter numbered 98) prints Hasta, which it also lists in the light group. The draft uses Punarvasu. Sumant was told on 19 Nov and the choice is his: if he says Hasta, change STARS in tools/look_art.py and re-render.",
+   "sent": "19 Nov about 11 AM: a 3 by 3 review sheet of the nine slides, the two moving slides and the caption. Asked one question: post it Tue 24 Nov at 10 AM? Instagram in Buffer was checked at 11 AM: two posts a day through Sun 22 Nov, and Mon 23 Nov has strands at 6:30 PM with lesson 20 to be made on Sunday.",
+   "if_no_answer": "If he has not answered by the Sunday batch (22 Nov 7 PM), the batch makes Tuesday's Sutra as planned and this stays a draft. Do not schedule it without his go."
   }
  }
 }

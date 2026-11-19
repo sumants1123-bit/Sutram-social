@@ -14,7 +14,11 @@ Sources opened on 19 Nov 2026:
   building towns, lasting undertakings; tikshna (sharp) for punishment, incantations, acts of separation; ugra (severe) for
   destruction, poison, burning, armed beating; laghu (light) for sales, acquiring knowledge, arts, medicine; mridu (soft) for
   friendship, clothes, ornaments, music; mridu-tikshna (soft and sharp), mixed; and stars for "works of a moving character".
-  Which star sits in which group: tools/look_art.py (the usual panchang lists; Iyer prints Hasta where they have Punarvasu).
+  Which star sits in which group: tools/look_art.py. One star differs between sources, in the moving group. The Sanskrit
+  (wisdomlib's Sanskrit edition, where this chapter is numbered 97, verse 11; opened 19 Nov 2026) reads "sravanatrayam
+  adityanile ca carakarmani hitani": the three from Shravana, "Aditya", and the Wind's star (Swati), for moving works. The
+  panchang lists read Aditya as Punarvasu; Iyer prints Hasta, which his own verse on the light stars already lists
+  ("Hasta, Asvini and Pushya"). Punarvasu is used here. Sumant was told on 19 Nov 2026 and the choice is his.
 Reading a star's nature as a kind of mind is Sutram's reading, and the slides and caption say so.
 
     python3 tools/post_minds.py     # writes specs/know-seven-minds.json, captions/know-seven-minds.txt, x-drafts/know-seven-minds-x.txt
