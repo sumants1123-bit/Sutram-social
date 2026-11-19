@@ -200,16 +200,42 @@
   },
   {
    "type": "rows",
+   "art": {
+    "kind": "wheel",
+    "size": 240,
+    "hole": 0.56,
+    "lit": "moving"
+   },
+   "label": "In real life",
+   "title": "A moving mind\nthinks on its feet",
+   "items": [
+    [
+     "1",
+     "It searches while walking"
+    ],
+    [
+     "2",
+     "It plans and works on the move"
+    ],
+    [
+     "3",
+     "Its best ideas come on a walk"
+    ]
+   ],
+   "note": "Moon in Punarvasu, Swati, Shravana, Dhanishta or Shatabhisha"
+  },
+  {
+   "type": "rows",
    "label": "In real life",
    "title": "Work with the grain",
    "items": [
     [
      "1",
-     "A steady mind hates being rushed: give it time"
+     "A steady mind studies best at one desk: give it time"
     ],
     [
      "2",
-     "A moving mind thinks best on a walk"
+     "A light mind learns by doing: give it short tasks"
     ],
     [
      "3",
@@ -226,7 +252,8 @@
    },
    "title": "Which kind of mind\nis yours?",
    "titlesize": 88,
-   "subtitle": "Find your Moon’s star at asksutram.com",
+   "subtitle": "See yours, and what it is really good for",
+   "link": "asksutram.com/mind",
    "lines": [
     "Weekly newsletter at sutram.ca/newsletter"
    ]

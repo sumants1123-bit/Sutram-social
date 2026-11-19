@@ -21,6 +21,12 @@ Sources opened on 19 Nov 2026:
   ("Hasta, Asvini and Pushya"). Punarvasu is used here. Sumant was told on 19 Nov 2026 and the choice is his.
 Reading a star's nature as a kind of mind is Sutram's reading, and the slides and caption say so.
 
+19 Nov 2026, after Sumant's review ("Absolutely loved it"): two changes he asked for.
+1. The ending points to the page: "it can end with like, see which mind you have as this link ... which all things it's really good for".
+2. His own example of a moving mind: "I search while moving, I work while moving, brainstorm while moving, I do everything while
+   walking ... somebody like study". It is on the new slide 8, under the five moving stars. He named Chitra as a moving star; the
+   text lists Chitra as soft, so Chitra is not on that slide (he was told; his Moon's sign, Libra, is a movable sign).
+
     python3 tools/post_minds.py     # writes specs/know-seven-minds.json, captions/know-seven-minds.txt, x-drafts/know-seven-minds-x.txt
 """
 import json, os, sys
@@ -28,6 +34,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import look_art as A
 REPO = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 PID = 'know-seven-minds'
+LINK = 'asksutram.com/mind'        # the page is not live yet (19 Nov 2026): this post waits until Sumant says it is
 stars = lambda n: '\u00a0· '.join(x.replace(' ', '\u00a0') for x in A.STARS[n])   # break only after a dot, never inside a name
 icon = lambda **k: dict(kind='wheel', size=140, hole=.5, **k)
 LAB = 'The seven natures · Brihat Samhita, ch. 98'
@@ -58,8 +65,10 @@ SPEC = dict(id=PID, look='day', kicker='Sutram · Know yourself', slides=[
         dict(art=icon(lit=[], pick='Mula'), head='Mula, the root', line='A mind that digs. It keeps asking why until it reaches the bottom of a thing.'),
         dict(art=icon(lit=[], pick='Ardra'), head='Ardra, the moist one', line='Moist, like the ground after rain. A mind that feels the storm fully, then starts fresh.')],
          headsize=60, linesize=36, iconw=150, note='Sutram’s reading, from the stars’ names and their nature'),
-    dict(type='rows', label='In real life', title='Work with the grain', items=[['1', 'A steady mind hates being rushed: give it time'], ['2', 'A moving mind thinks best on a walk'], ['3', 'A sharp mind wants the real reason: say it straight']]),
-    dict(type='cta', art=dict(kind='wheel', size=230, hole=.56), title='Which kind of mind\nis yours?', titlesize=88, subtitle='Find your Moon’s star at asksutram.com', lines=['Weekly newsletter at sutram.ca/newsletter']),
+    dict(type='rows', art=dict(kind='wheel', size=240, hole=.56, lit='moving'), label='In real life', title='A moving mind\nthinks on its feet',
+         items=[['1', 'It searches while walking'], ['2', 'It plans and works on the move'], ['3', 'Its best ideas come on a walk']], note='Moon in Punarvasu, Swati, Shravana, Dhanishta or Shatabhisha'),
+    dict(type='rows', label='In real life', title='Work with the grain', items=[['1', 'A steady mind studies best at one desk: give it time'], ['2', 'A light mind learns by doing: give it short tasks'], ['3', 'A sharp mind wants the real reason: say it straight']]),
+    dict(type='cta', art=dict(kind='wheel', size=230, hole=.56), title='Which kind of mind\nis yours?', titlesize=88, subtitle='See yours, and what it is really good for', link=LINK, lines=['Weekly newsletter at sutram.ca/newsletter']),
 ])
 
 CAPTION = """Seven kinds of mind
@@ -75,20 +84,20 @@ The texts use these natures to choose a day for a task: steady stars for foundat
 
 Take two sharp minds. Mula means the root, a mind that keeps asking why until it reaches the bottom of a thing. Ardra means moist, like the ground after rain, a mind that feels the storm fully and then starts fresh.
 
-In real life, work with the grain. A steady mind hates being rushed. A moving mind thinks best on a walk. A sharp mind wants the real reason.
+In real life, a moving mind thinks on its feet. It searches, plans and brainstorms while walking. A steady mind studies best at one desk. A sharp mind wants the real reason. Work with the grain.
 
 Which kind of mind is yours? Tell us in the comments.
 
-Ask which star your Moon is in at asksutram.com
+See your mind, and what it is really good for, at """ + LINK + """
 Weekly newsletter: sutram.ca/newsletter
 
 #nakshatra #jyotish #moon #vedicastrology #sutram
 """
 X = """Seven kinds of mind
 
-The Rig Veda says the Moon was born from the mind of the cosmic Person (10.90.13). In your chart the Moon is your mind, and its star, one of 27, is your slice. The classics sort the 27 into seven natures. Which is yours?
+The Rig Veda says the Moon was born from the mind of the great Person (10.90.13). In your chart the Moon is your mind. Its star, one of 27, is your slice, and the stars come in seven kinds. Which is yours?
 
-asksutram.com
+""" + LINK + """
 sutram.ca/newsletter
 """
 
@@ -96,4 +105,6 @@ if __name__ == '__main__':
     json.dump(SPEC, open(os.path.join(REPO, 'specs', f'{PID}.json'), 'w'), indent=1, ensure_ascii=False)
     open(os.path.join(REPO, 'captions', f'{PID}.txt'), 'w').write(CAPTION)
     open(os.path.join(REPO, 'x-drafts', f'{PID}-x.txt'), 'w').write(X)
-    print(PID, len(SPEC['slides']), 'slides;', len(CAPTION.strip()), 'caption chars;', len(X.strip()), 'X chars')
+    xw = len(X.strip()) - len(LINK) - len('sutram.ca/newsletter') + 46        # X counts every link as 23 characters
+    assert xw <= 280, xw
+    print(PID, len(SPEC['slides']), 'slides;', len(CAPTION.strip()), 'caption chars;', len(X.strip()), 'X chars,', xw, 'as X counts them')

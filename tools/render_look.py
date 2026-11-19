@@ -18,7 +18,7 @@ Slide types
   rows   label, title, items [[key, line]]                    a number as key makes a numbered list
   stack  label, title, items [[label, line]]                  plain cards
   quote  label, quote, source, body
-  cta    orbs?, title, subtitle, lines, next
+  cta    orbs?, title, subtitle, link (drawn in a ring, for a page to visit), lines, next
 Writes posts/<id>/<id>-<n>.jpg, <id>-overview.jpg and, with --motion, <id>-1.mp4 (8 s loop; the first frame is the still).
 A slide that does not fit is scaled down in steps; anything below .92 is reported and should be cut or split."""
 import json, os, sys, re, shutil, subprocess
@@ -114,6 +114,7 @@ def slide_html(sp, P, s=1.0):
     if sp.get('body'):
         H.append(''.join(f'<div class="p" style="font-size:{F(sp.get("bodysize", 40))};margin-top:{F(30 if k == 0 else 18)};max-width:880px">{esc(l)}</div>' for k, l in enumerate(sp['body'])))
     if t == 'cta':
+        if sp.get('link'): H.append(f'<div style="display:inline-block;font:600 {F(46)}/1 Inter;color:{P["ink"]};margin-top:{F(44)};padding:{F(24)} {F(48)};border:2.5px solid {P["ink"]};border-radius:999px">{esc(sp["link"])}</div>')
         H.append(''.join(f'<div style="font:500 {F(36)}/1.45 Inter;color:{P["ink"]};margin-top:{F(40 if k == 0 else 6)}">{esc(l)}</div>' for k, l in enumerate(sp.get('lines', []))))
         if sp.get('next'): H.append(f'<div class="src" style="margin-top:{F(32)};font-size:{F(20)}">{esc(sp["next"])}</div>')
     if sp.get('closing'): H.append(f'<div class="sub" style="margin-top:{F(34)};font-size:{F(sp.get("closingsize", 46))};max-width:880px">{esc(sp["closing"])}</div>')

@@ -1,0 +1,908 @@
+{
+ "version": "2026-11-19",
+ "note": "Content for asksutram.com/mind. Written by tools/minds_data.py in the Sutram-social repo. Positions never come from this file: the engine gives the Moon’s star, quarter, sign, the Sun and the other grahas.",
+ "page": {
+  "path": "/mind",
+  "kicker": "Know yourself",
+  "title": "Which kind of mind is yours?",
+  "sub": "Your mind is one slice of a bigger one. Jyotish reads it from the star the Moon was in when you were born.",
+  "cta": "Find my mind",
+  "form_title": "Your birth details",
+  "form_note": "Free. No sign-up.",
+  "submit": "Show my mind",
+  "result_kicker": "Your mind",
+  "result_star": "Your Moon was in {star}, {means}.",
+  "result_quarter": "{nth} quarter of four.",
+  "like_h": "What it is like",
+  "good_h": "Really good for",
+  "texts_h": "In the old texts",
+  "star_h": "Your star",
+  "quarter_h": "Your quarter",
+  "quarter_line": "Each star is cut into four quarters, so yours is a slice of a slice. Yours belongs to {sign}, {article} {element} sign.",
+  "more_h": "A few more things shape it",
+  "sign_h": "Your Moon sign",
+  "light_h": "The Moon when you were born",
+  "company_h": "Who sits with your Moon",
+  "company_one": "{graha}, {role}, shares your Moon’s sign.",
+  "company_none": "No other graha shares your Moon’s sign. Your mind keeps its own company.",
+  "together_h": "Put together",
+  "together": "{kind}, in {article} {type} {element} sign, born {born}{company}.",
+  "together_company": ", with {names} beside it",
+  "grain_h": "Work with the grain",
+  "watch_h": "Watch for",
+  "share_h": "Share it",
+  "share_line": "I have {a}",
+  "share_ask": "Which kind of mind is yours?",
+  "ask": "Ask Sutram about my mind",
+  "ask_prompt": "What does my Moon in {star} say about how I think, and what should I use it for?",
+  "how_h": "How Jyotish reads the mind",
+  "how": [
+   [
+    "The Moon is the mind",
+    "In a birth chart the Moon stands for the mind."
+   ],
+   [
+    "Its road has 27 stars",
+    "The Moon circles the sky in about 27 days and spends about a day in each star."
+   ],
+   [
+    "The stars come in seven kinds",
+    "An old text sorts them by nature: steady, moving, light, soft, fierce, sharp, and soft and sharp at once."
+   ]
+  ],
+  "kinds_h": "The seven kinds of mind",
+  "kinds_sub": "Tap one to read it.",
+  "no_time": "Add your birth time to see your quarter.",
+  "two_stars": "The Moon changed star that day. Pick the part of the day you were born in.",
+  "window_first": "Born before {time}",
+  "window_last": "Born after {time}",
+  "window_mid": "Born between {from} and {to}",
+  "astro_h": "Show the astrology",
+  "sources_h": "Where this comes from",
+  "sources": [
+   "The Moon as the mind: Brihat Parashara Hora Shastra 3.12. The great Person whose mind became the Moon: Rig Veda 10.90.13.",
+   "The seven natures of the stars: Brihat Samhita, chapter 98. The text sorts the stars to choose a day for a task.",
+   "Movable, fixed and dual signs: Brihat Parashara Hora Shastra 4.5.",
+   "Reading all of this as a kind of mind is Sutram’s reading. It is for reflection and is no substitute for medical or psychological advice."
+  ]
+ },
+ "kinds": [
+  {
+   "key": "steady",
+   "name": "The steady mind",
+   "a": "a steady mind",
+   "sanskrit": "dhruva",
+   "line": "Builds what lasts",
+   "like": "Your mind settles on a thing and stays with it. It can sit with one book for hours, it likes to finish what it starts, and it gets better with time.",
+   "texts": "The texts pick these stars for crowning a king, planting trees, building a town, sowing seed, and anything meant to last.",
+   "good": [
+    "Long projects",
+    "Saving and investing",
+    "Keeping a promise",
+    "Building a home or a team"
+   ],
+   "grain": [
+    "Give it time. A steady mind hates being rushed",
+    "Let it finish one thing before the next",
+    "Ask it for the long view"
+   ],
+   "watch": "It can hold on after it is time to let go",
+   "color": "#9DB59A",
+   "color_dark": "#9DB59A",
+   "stars": [
+    "Rohini",
+    "Uttara Phalguni",
+    "Uttara Ashadha",
+    "Uttara Bhadrapada"
+   ]
+  },
+  {
+   "key": "moving",
+   "name": "The moving mind",
+   "a": "a moving mind",
+   "sanskrit": "chara",
+   "line": "Thinks on the move",
+   "like": "Your mind works best in motion. It searches, plans and brainstorms on its feet, and a walk often solves what sitting still could not.",
+   "texts": "The texts pick these stars for travel and for any work that has to move.",
+   "good": [
+    "Travel and moving house",
+    "Meeting new people",
+    "Work that changes every day",
+    "Starting again somewhere new"
+   ],
+   "grain": [
+    "Walk while you think",
+    "Change the room when you are stuck",
+    "Keep one fixed habit as an anchor"
+   ],
+   "watch": "It can leave before the work is done",
+   "color": "#A9C3DB",
+   "color_dark": "#A9C3DB",
+   "stars": [
+    "Punarvasu",
+    "Swati",
+    "Shravana",
+    "Dhanishta",
+    "Shatabhisha"
+   ]
+  },
+  {
+   "key": "light",
+   "name": "The light mind",
+   "a": "a light mind",
+   "sanskrit": "laghu",
+   "line": "Quick hands, quick study",
+   "like": "Your mind is quick and light on its feet. It picks up a skill fast and likes work it can finish in one sitting.",
+   "texts": "The texts pick these stars for trade, learning, craft, the arts and medicine.",
+   "good": [
+    "Learning a new skill",
+    "Buying and selling",
+    "Work with your hands",
+    "Short tasks with a clear finish"
+   ],
+   "grain": [
+    "Give it short tasks with a clear finish",
+    "Let it learn by doing",
+    "Pair it with someone who finishes"
+   ],
+   "watch": "It can move on when the spark goes",
+   "color": "#EBCB7A",
+   "color_dark": "#EBCB7A",
+   "stars": [
+    "Ashwini",
+    "Pushya",
+    "Hasta"
+   ]
+  },
+  {
+   "key": "soft",
+   "name": "The soft mind",
+   "a": "a soft mind",
+   "sanskrit": "mridu",
+   "line": "Warm and tactful",
+   "like": "Your mind is gentle and reads a room well. It looks for what is pleasant and for what brings people together.",
+   "texts": "The texts pick these stars for friendship and love, music, new clothes, ornaments and celebrations.",
+   "good": [
+    "Making and keeping friends",
+    "Music, art and design",
+    "Hosting and celebrations",
+    "Calming a tense room"
+   ],
+   "grain": [
+    "Give it good company and a pleasant room",
+    "Bring hard news gently",
+    "Let it make things beautiful"
+   ],
+   "watch": "It can put off a hard talk for too long",
+   "color": "#C8B8E0",
+   "color_dark": "#C8B8E0",
+   "stars": [
+    "Mrigashira",
+    "Chitra",
+    "Anuradha",
+    "Revati"
+   ]
+  },
+  {
+   "key": "fierce",
+   "name": "The fierce mind",
+   "a": "a fierce mind",
+   "sanskrit": "ugra",
+   "line": "Heat and nerve",
+   "like": "Your mind runs hot and does not back down. Pressure wakes it up, and it can do the hard thing that others put off.",
+   "texts": "The texts give these stars the fiercest work, such as battle, fire, and tearing down what must go.",
+   "good": [
+    "A fight worth having",
+    "Ending what should end",
+    "Work under pressure",
+    "Hard training"
+   ],
+   "grain": [
+    "Give it a real challenge",
+    "Be direct. It respects that",
+    "Let it cool down before a big talk"
+   ],
+   "watch": "It can come on too strong",
+   "color": "#CC7A58",
+   "color_dark": "#D98A66",
+   "stars": [
+    "Bharani",
+    "Magha",
+    "Purva Phalguni",
+    "Purva Ashadha",
+    "Purva Bhadrapada"
+   ]
+  },
+  {
+   "key": "sharp",
+   "name": "The sharp mind",
+   "a": "a sharp mind",
+   "sanskrit": "tikshna",
+   "line": "Cuts to the root",
+   "like": "Your mind goes straight to what is underneath. It notices what others miss and does not accept the easy answer.",
+   "texts": "The texts give these stars the cutting work, such as strict discipline, mantra practice, and breaking a tie or binding one.",
+   "good": [
+    "Research and finding the cause",
+    "Editing and cutting what is not needed",
+    "Breaking a habit",
+    "Deep practice, such as mantra or meditation"
+   ],
+   "grain": [
+    "Give it the real reason",
+    "Hand it the hard problem",
+    "Let it work alone when it needs to"
+   ],
+   "watch": "Its words can cut deeper than it means",
+   "color": "#3E4A68",
+   "color_dark": "#7D90C4",
+   "stars": [
+    "Ardra",
+    "Ashlesha",
+    "Jyeshtha",
+    "Mula"
+   ]
+  },
+  {
+   "key": "mixed",
+   "name": "The soft-and-sharp mind",
+   "a": "a soft-and-sharp mind",
+   "sanskrit": "mridu-tikshna",
+   "line": "Gentle and cutting by turns",
+   "like": "Your mind has two hands. One is gentle and one cuts, and you choose which a moment needs. People meet your kindness first and your edge later.",
+   "texts": "The texts call these two stars soft and sharp at once and say their results are mixed. Both belong to Agni, the fire.",
+   "good": [
+    "Honest feedback, given kindly",
+    "Teaching and coaching",
+    "Cooking and any work with fire",
+    "Jobs that need care and a firm line"
+   ],
+   "grain": [
+    "Tell it which hand you need today",
+    "Give it work that needs both care and a cut",
+    "Expect warmth first and the edge after"
+   ],
+   "watch": "People cannot always tell which hand is coming",
+   "color": "#9CCFC0",
+   "color_dark": "#9CCFC0",
+   "stars": [
+    "Krittika",
+    "Vishakha"
+   ]
+  }
+ ],
+ "stars": [
+  {
+   "index": 1,
+   "name": "Ashwini",
+   "means": "the twin healers",
+   "kind": "light",
+   "reading": "A mind that is first out of the gate. It moves before others have decided, and it likes to fix things fast.",
+   "symbol": "a horse's head",
+   "deity": "the Ashwini Kumaras, the twin healers",
+   "lord": "Ketu",
+   "start": "Aries 0°00'",
+   "end": "Aries 13°20'",
+   "quarter_signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer"
+   ]
+  },
+  {
+   "index": 2,
+   "name": "Bharani",
+   "means": "the bearer",
+   "kind": "fierce",
+   "reading": "A mind that can carry what is heavy. It sees a hard thing through to the end.",
+   "symbol": "the womb",
+   "deity": "Yama, the lord of death",
+   "lord": "Venus",
+   "start": "Aries 13°20'",
+   "end": "Aries 26°40'",
+   "quarter_signs": [
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio"
+   ]
+  },
+  {
+   "index": 3,
+   "name": "Krittika",
+   "means": "the Pleiades",
+   "kind": "mixed",
+   "reading": "A mind like a kitchen fire. It warms and feeds, and it burns away what is false.",
+   "symbol": "a razor, a flame",
+   "deity": "Agni, fire",
+   "lord": "Sun",
+   "start": "Aries 26°40'",
+   "end": "Taurus 10°00'",
+   "quarter_signs": [
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+   ]
+  },
+  {
+   "index": 4,
+   "name": "Rohini",
+   "means": "the red one",
+   "kind": "steady",
+   "reading": "A mind that grows things. It is patient and fond of beauty, and it makes a place feel like home.",
+   "symbol": "a cart, a chariot",
+   "deity": "Brahma, the creator",
+   "lord": "Moon",
+   "start": "Taurus 10°00'",
+   "end": "Taurus 23°20'",
+   "quarter_signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer"
+   ]
+  },
+  {
+   "index": 5,
+   "name": "Mrigashira",
+   "means": "the deer’s head",
+   "kind": "soft",
+   "reading": "A mind that searches. Curious and gentle, it follows a scent from one thing to the next.",
+   "symbol": "a deer's head",
+   "deity": "Soma, the Moon god",
+   "lord": "Mars",
+   "start": "Taurus 23°20'",
+   "end": "Gemini 6°40'",
+   "quarter_signs": [
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio"
+   ]
+  },
+  {
+   "index": 6,
+   "name": "Ardra",
+   "means": "the moist one",
+   "kind": "sharp",
+   "reading": "Moist, like the ground after rain. A mind that feels the storm fully, then starts fresh.",
+   "symbol": "a teardrop",
+   "deity": "Rudra, the storm god",
+   "lord": "Rahu",
+   "start": "Gemini 6°40'",
+   "end": "Gemini 20°00'",
+   "quarter_signs": [
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+   ]
+  },
+  {
+   "index": 7,
+   "name": "Punarvasu",
+   "means": "the restorers",
+   "kind": "moving",
+   "reading": "A mind that comes back. It can lose its way and find it again, and it returns from every trip with something good.",
+   "symbol": "a bow and quiver",
+   "deity": "Aditi, the mother of the gods",
+   "lord": "Jupiter",
+   "start": "Gemini 20°00'",
+   "end": "Cancer 3°20'",
+   "quarter_signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer"
+   ]
+  },
+  {
+   "index": 8,
+   "name": "Pushya",
+   "means": "the nourisher",
+   "kind": "light",
+   "reading": "A mind that feeds others. It teaches, looks after people, and does small useful things every day.",
+   "symbol": "a cow's udder, a flower",
+   "deity": "Brihaspati, the teacher of the gods",
+   "lord": "Saturn",
+   "start": "Cancer 3°20'",
+   "end": "Cancer 16°40'",
+   "quarter_signs": [
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio"
+   ]
+  },
+  {
+   "index": 9,
+   "name": "Ashlesha",
+   "means": "the embrace",
+   "kind": "sharp",
+   "reading": "A mind that coils around a thing and holds it. Watchful and hard to fool, it sees what is hidden.",
+   "symbol": "a coiled serpent",
+   "deity": "the Nagas, the serpents",
+   "lord": "Mercury",
+   "start": "Cancer 16°40'",
+   "end": "Leo 30°00'",
+   "quarter_signs": [
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+   ]
+  },
+  {
+   "index": 10,
+   "name": "Magha",
+   "means": "the bountiful",
+   "kind": "fierce",
+   "reading": "A mind that remembers where it comes from. It carries itself with pride and wants to be worthy of its people.",
+   "symbol": "a throne",
+   "deity": "the Pitris, the ancestors",
+   "lord": "Ketu",
+   "start": "Leo 0°00'",
+   "end": "Leo 13°20'",
+   "quarter_signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer"
+   ]
+  },
+  {
+   "index": 11,
+   "name": "Purva Phalguni",
+   "means": "the first red one",
+   "kind": "fierce",
+   "reading": "A mind that loves life. It wants play, pleasure and good company, and it goes after them with full heat.",
+   "symbol": "the front legs of a bed",
+   "deity": "Bhaga, the god of pleasure",
+   "lord": "Venus",
+   "start": "Leo 13°20'",
+   "end": "Leo 26°40'",
+   "quarter_signs": [
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio"
+   ]
+  },
+  {
+   "index": 12,
+   "name": "Uttara Phalguni",
+   "means": "the second red one",
+   "kind": "steady",
+   "reading": "A mind that keeps its word. It is the friend who stays, and it likes a clear agreement.",
+   "symbol": "the back legs of a bed",
+   "deity": "Aryaman, the god of contracts",
+   "lord": "Sun",
+   "start": "Leo 26°40'",
+   "end": "Virgo 10°00'",
+   "quarter_signs": [
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+   ]
+  },
+  {
+   "index": 13,
+   "name": "Hasta",
+   "means": "the hand",
+   "kind": "light",
+   "reading": "A mind in the hands. It learns by making, and it is clever, quick and good with detail.",
+   "symbol": "a hand",
+   "deity": "Savitar, the Sun as inspirer",
+   "lord": "Moon",
+   "start": "Virgo 10°00'",
+   "end": "Virgo 23°20'",
+   "quarter_signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer"
+   ]
+  },
+  {
+   "index": 14,
+   "name": "Chitra",
+   "means": "the bright one",
+   "kind": "soft",
+   "reading": "A mind with an eye for design. It sees how a thing could look and wants to make it beautiful.",
+   "symbol": "a bright jewel",
+   "deity": "Tvashtar, the divine architect",
+   "lord": "Mars",
+   "start": "Virgo 23°20'",
+   "end": "Libra 6°40'",
+   "quarter_signs": [
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio"
+   ]
+  },
+  {
+   "index": 15,
+   "name": "Swati",
+   "means": "the very good one",
+   "kind": "moving",
+   "reading": "A mind like a young shoot in the wind. It bends and does not break, and it needs room to move on its own.",
+   "symbol": "a young sprout bending in the wind",
+   "deity": "Vayu, the wind",
+   "lord": "Rahu",
+   "start": "Libra 6°40'",
+   "end": "Libra 20°00'",
+   "quarter_signs": [
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+   ]
+  },
+  {
+   "index": 16,
+   "name": "Vishakha",
+   "means": "the forked one",
+   "kind": "mixed",
+   "reading": "A mind with one goal and two roads to it. It is patient until the goal is close, then it pushes hard.",
+   "symbol": "a triumphal arch, a potter's wheel",
+   "deity": "Indra and Agni",
+   "lord": "Jupiter",
+   "start": "Libra 20°00'",
+   "end": "Scorpio 3°20'",
+   "quarter_signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer"
+   ]
+  },
+  {
+   "index": 17,
+   "name": "Anuradha",
+   "means": "following Radha",
+   "kind": "soft",
+   "reading": "A mind made for friendship. It is loyal, works well with others, and blooms in hard places like a lotus.",
+   "symbol": "a lotus",
+   "deity": "Mitra, the god of friendship",
+   "lord": "Saturn",
+   "start": "Scorpio 3°20'",
+   "end": "Scorpio 16°40'",
+   "quarter_signs": [
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio"
+   ]
+  },
+  {
+   "index": 18,
+   "name": "Jyeshtha",
+   "means": "the eldest",
+   "kind": "sharp",
+   "reading": "A mind that takes charge. It feels responsible for others and guards what is its own.",
+   "symbol": "an earring, an umbrella",
+   "deity": "Indra, the king of the gods",
+   "lord": "Mercury",
+   "start": "Scorpio 16°40'",
+   "end": "Sagittarius 30°00'",
+   "quarter_signs": [
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+   ]
+  },
+  {
+   "index": 19,
+   "name": "Mula",
+   "means": "the root",
+   "kind": "sharp",
+   "reading": "A mind that digs. It keeps asking why until it reaches the bottom of a thing.",
+   "symbol": "a bunch of roots tied together",
+   "deity": "Nirriti, the goddess of dissolution",
+   "lord": "Ketu",
+   "start": "Sagittarius 0°00'",
+   "end": "Sagittarius 13°20'",
+   "quarter_signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer"
+   ]
+  },
+  {
+   "index": 20,
+   "name": "Purva Ashadha",
+   "means": "the first unbeaten one",
+   "kind": "fierce",
+   "reading": "A mind that does not accept defeat. It believes it can win, and that belief carries other people along.",
+   "symbol": "a fan, a winnowing basket",
+   "deity": "Apas, the waters",
+   "lord": "Venus",
+   "start": "Sagittarius 13°20'",
+   "end": "Sagittarius 26°40'",
+   "quarter_signs": [
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio"
+   ]
+  },
+  {
+   "index": 21,
+   "name": "Uttara Ashadha",
+   "means": "the later unbeaten one",
+   "kind": "steady",
+   "reading": "A mind that wins slowly and for good. It takes the long road and does things the right way.",
+   "symbol": "an elephant's tusk",
+   "deity": "the Vishvedevas, the universal gods",
+   "lord": "Sun",
+   "start": "Sagittarius 26°40'",
+   "end": "Capricorn 10°00'",
+   "quarter_signs": [
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+   ]
+  },
+  {
+   "index": 22,
+   "name": "Shravana",
+   "means": "the ear",
+   "kind": "moving",
+   "reading": "A mind that listens. It learns by hearing, remembers what was said, and travels to learn more.",
+   "symbol": "an ear, three footprints",
+   "deity": "Vishnu",
+   "lord": "Moon",
+   "start": "Capricorn 10°00'",
+   "end": "Capricorn 23°20'",
+   "quarter_signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer"
+   ]
+  },
+  {
+   "index": 23,
+   "name": "Dhanishta",
+   "means": "the most famous",
+   "kind": "moving",
+   "reading": "A mind with rhythm. It keeps time, moves well with a group, and likes to be seen doing it.",
+   "symbol": "a drum",
+   "deity": "the eight Vasus",
+   "lord": "Mars",
+   "start": "Capricorn 23°20'",
+   "end": "Aquarius 6°40'",
+   "quarter_signs": [
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio"
+   ]
+  },
+  {
+   "index": 24,
+   "name": "Shatabhisha",
+   "means": "a hundred physicians",
+   "kind": "moving",
+   "reading": "A mind that keeps to itself and thinks in systems. It wants to find what truly fixes a thing.",
+   "symbol": "an empty circle, a hundred healers",
+   "deity": "Varuna, the god of the cosmic waters",
+   "lord": "Rahu",
+   "start": "Aquarius 6°40'",
+   "end": "Aquarius 20°00'",
+   "quarter_signs": [
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+   ]
+  },
+  {
+   "index": 25,
+   "name": "Purva Bhadrapada",
+   "means": "the first of the blessed feet",
+   "kind": "fierce",
+   "reading": "A mind of strong conviction. It can burn for an idea and give up comfort for it.",
+   "symbol": "the front of a funeral cot",
+   "deity": "Aja Ekapada, the one-footed goat",
+   "lord": "Jupiter",
+   "start": "Aquarius 20°00'",
+   "end": "Pisces 3°20'",
+   "quarter_signs": [
+    "Aries",
+    "Taurus",
+    "Gemini",
+    "Cancer"
+   ]
+  },
+  {
+   "index": 26,
+   "name": "Uttara Bhadrapada",
+   "means": "the second of the blessed feet",
+   "kind": "steady",
+   "reading": "A mind with depth. Calm on the surface and slow to anger, it holds steady when things get rough.",
+   "symbol": "the back of a funeral cot",
+   "deity": "Ahir Budhnya, the serpent of the deep",
+   "lord": "Saturn",
+   "start": "Pisces 3°20'",
+   "end": "Pisces 16°40'",
+   "quarter_signs": [
+    "Leo",
+    "Virgo",
+    "Libra",
+    "Scorpio"
+   ]
+  },
+  {
+   "index": 27,
+   "name": "Revati",
+   "means": "the prosperous one",
+   "kind": "soft",
+   "reading": "A mind that looks after others on the road. Kind and dreamy, it helps people get where they are going.",
+   "symbol": "a fish, a drum",
+   "deity": "Pushan, the nourisher",
+   "lord": "Mercury",
+   "start": "Pisces 16°40'",
+   "end": "Aries 30°00'",
+   "quarter_signs": [
+    "Sagittarius",
+    "Capricorn",
+    "Aquarius",
+    "Pisces"
+   ]
+  }
+ ],
+ "signs": [
+  {
+   "name": "Aries",
+   "element": "fire",
+   "type": "movable"
+  },
+  {
+   "name": "Taurus",
+   "element": "earth",
+   "type": "fixed"
+  },
+  {
+   "name": "Gemini",
+   "element": "air",
+   "type": "dual"
+  },
+  {
+   "name": "Cancer",
+   "element": "water",
+   "type": "movable"
+  },
+  {
+   "name": "Leo",
+   "element": "fire",
+   "type": "fixed"
+  },
+  {
+   "name": "Virgo",
+   "element": "earth",
+   "type": "dual"
+  },
+  {
+   "name": "Libra",
+   "element": "air",
+   "type": "movable"
+  },
+  {
+   "name": "Scorpio",
+   "element": "water",
+   "type": "fixed"
+  },
+  {
+   "name": "Sagittarius",
+   "element": "fire",
+   "type": "dual"
+  },
+  {
+   "name": "Capricorn",
+   "element": "earth",
+   "type": "movable"
+  },
+  {
+   "name": "Aquarius",
+   "element": "air",
+   "type": "fixed"
+  },
+  {
+   "name": "Pisces",
+   "element": "water",
+   "type": "dual"
+  }
+ ],
+ "element": {
+  "fire": "A fire sign. Your mind runs on belief and energy.",
+  "earth": "An earth sign. Your mind runs on what is real and useful.",
+  "air": "An air sign. Your mind runs on ideas and people.",
+  "water": "A water sign. Your mind runs on feeling."
+ },
+ "sign_type": {
+  "movable": "It is a movable sign, so your mind likes to be on the move and to start things.",
+  "fixed": "It is a fixed sign, so your mind likes to stay put and hold its ground.",
+  "dual": "It is a dual sign, so your mind likes to keep two roads open."
+ },
+ "quarter": {
+  "fire": "It adds drive. You act on what you think.",
+  "earth": "It adds patience. You want your thinking to be useful.",
+  "air": "It adds talk. You think by sharing ideas.",
+  "water": "It adds feeling. Your heart weighs in first."
+ },
+ "light": [
+  {
+   "key": "new",
+   "label": "Near the new Moon",
+   "born": "near the new Moon",
+   "frm": 324,
+   "to": 36,
+   "line": "A dark Moon keeps its light inside. Your mind does its best work in private."
+  },
+  {
+   "key": "waxing",
+   "label": "A growing Moon",
+   "born": "under a growing Moon",
+   "frm": 36,
+   "to": 144,
+   "line": "The Moon was filling. Your mind reaches outward and builds as it goes."
+  },
+  {
+   "key": "full",
+   "label": "Near the full Moon",
+   "born": "near the full Moon",
+   "frm": 144,
+   "to": 216,
+   "line": "A full Moon shows everything. Your feelings are easy to read, for you and for others."
+  },
+  {
+   "key": "waning",
+   "label": "A waning Moon",
+   "born": "under a waning Moon",
+   "frm": 216,
+   "to": 324,
+   "line": "The Moon was emptying. Your mind sorts, lets go, and knows what to keep."
+  }
+ ],
+ "company": {
+  "Sun": {
+   "role": "the king",
+   "line": "Your mind stays close to your purpose and wants its work to matter."
+  },
+  "Mars": {
+   "role": "the soldier",
+   "line": "Your mind is quick to act and likes a challenge."
+  },
+  "Mercury": {
+   "role": "the messenger",
+   "line": "Your mind thinks in words and works things out by talking or writing."
+  },
+  "Jupiter": {
+   "role": "the teacher",
+   "line": "Your mind looks for the lesson and the bigger picture."
+  },
+  "Venus": {
+   "role": "the lover",
+   "line": "Your mind is drawn to beauty, comfort and people."
+  },
+  "Saturn": {
+   "role": "the auditor",
+   "line": "Your mind checks things twice and takes its duties seriously."
+  },
+  "Rahu": {
+   "role": "the magician",
+   "line": "Your mind is hungry for the new and makes big whatever it looks at."
+  },
+  "Ketu": {
+   "role": "the monk",
+   "line": "Your mind lets go easily and needs time alone."
+  }
+ }
+}
