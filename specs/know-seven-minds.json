@@ -1,0 +1,235 @@
+{
+ "id": "know-seven-minds",
+ "look": "day",
+ "kicker": "Sutram · Know yourself",
+ "slides": [
+  {
+   "type": "cover",
+   "art": {
+    "kind": "wheel",
+    "size": 560,
+    "mode": "sweep",
+    "moon": 84
+   },
+   "title": "Seven kinds\nof mind",
+   "titlesize": 104,
+   "subtitle": "Your mind is one slice of a bigger one",
+   "motion": "wheel"
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 74
+    }
+   ],
+   "label": "Rig Veda 10.90",
+   "title": "The Moon was born\nfrom a mind",
+   "body": [
+    "The Purusha Sukta pictures the whole cosmos as one great Person. Of that Person it says: “The Moon was gendered from his mind.”"
+   ],
+   "closing": "So the mind you use is a slice of a bigger one",
+   "note": "Rig Veda 10.90.13, tr. Griffith"
+  },
+  {
+   "type": "text",
+   "art": {
+    "kind": "wheel",
+    "size": 430,
+    "mode": "pick",
+    "pick": "Mula",
+    "lit": [],
+    "quarters": true,
+    "dot": true
+   },
+   "label": "In your chart",
+   "title": "Twenty-seven slices",
+   "body": [
+    "In your chart the Moon is the mind. Its road round the sky is cut into 27 stars, the nakshatras, and at your birth the Moon stood in one of them. That star is your slice."
+   ],
+   "bodysize": 37,
+   "closing": "Each star has four quarters: a slice of a slice",
+   "closingsize": 42,
+   "note": "Brihat Parashara Hora Shastra, ch. 3",
+   "motion": "wheel"
+  },
+  {
+   "type": "cast",
+   "label": "The seven natures · Brihat Samhita, ch. 98",
+   "title": "Steady, moving, light",
+   "items": [
+    {
+     "art": {
+      "kind": "wheel",
+      "size": 140,
+      "hole": 0.5,
+      "lit": "steady"
+     },
+     "head": "The steady mind",
+     "line": "Builds what lasts. The texts pick these stars for foundations, planting and crowning kings.",
+     "sub": "Rohini · Uttara Phalguni · Uttara Ashadha · Uttara Bhadrapada"
+    },
+    {
+     "art": {
+      "kind": "wheel",
+      "size": 140,
+      "hole": 0.5,
+      "lit": "moving"
+     },
+     "head": "The moving mind",
+     "line": "Thinks on the move. Picked for trips and anything that travels.",
+     "sub": "Punarvasu · Swati · Shravana · Dhanishta · Shatabhisha"
+    },
+    {
+     "art": {
+      "kind": "wheel",
+      "size": 140,
+      "hole": 0.5,
+      "lit": "light"
+     },
+     "head": "The light mind",
+     "line": "Quick hands, quick study. Picked for trade, learning, craft and medicine.",
+     "sub": "Ashwini · Pushya · Hasta"
+    }
+   ],
+   "headsize": 56,
+   "linesize": 33,
+   "subsize": 28,
+   "iconw": 150
+  },
+  {
+   "type": "cast",
+   "label": "The seven natures · Brihat Samhita, ch. 98",
+   "title": "Soft and fierce",
+   "items": [
+    {
+     "art": {
+      "kind": "wheel",
+      "size": 140,
+      "hole": 0.5,
+      "lit": "soft"
+     },
+     "head": "The soft mind",
+     "line": "Warm and tactful. Picked for friendship, music, clothes and celebrations.",
+     "sub": "Mrigashira · Chitra · Anuradha · Revati"
+    },
+    {
+     "art": {
+      "kind": "wheel",
+      "size": 140,
+      "hole": 0.5,
+      "lit": "fierce"
+     },
+     "head": "The fierce mind",
+     "line": "Heat and nerve. Picked for battles and for breaking what must go.",
+     "sub": "Bharani · Magha · Purva Phalguni · Purva Ashadha · Purva Bhadrapada"
+    }
+   ],
+   "headsize": 60,
+   "linesize": 35,
+   "subsize": 30,
+   "iconw": 150
+  },
+  {
+   "type": "cast",
+   "label": "The seven natures · Brihat Samhita, ch. 98",
+   "title": "Sharp, and both at once",
+   "items": [
+    {
+     "art": {
+      "kind": "wheel",
+      "size": 140,
+      "hole": 0.5,
+      "lit": "sharp"
+     },
+     "head": "The sharp mind",
+     "line": "Cuts to the root. Picked for cutting ties, strict discipline and mantra work.",
+     "sub": "Ardra · Ashlesha · Jyeshtha · Mula"
+    },
+    {
+     "art": {
+      "kind": "wheel",
+      "size": 140,
+      "hole": 0.5,
+      "lit": "mixed"
+     },
+     "head": "The soft-and-sharp mind",
+     "line": "Gentle and cutting by turns. The texts call its results mixed.",
+     "sub": "Krittika · Vishakha"
+    }
+   ],
+   "headsize": 60,
+   "linesize": 35,
+   "subsize": 30,
+   "iconw": 150,
+   "note": "The texts sort the stars this way to choose a day for a task. Reading them as kinds of mind is Sutram’s reading."
+  },
+  {
+   "type": "cast",
+   "label": "For example",
+   "title": "Two sharp minds",
+   "items": [
+    {
+     "art": {
+      "kind": "wheel",
+      "size": 140,
+      "hole": 0.5,
+      "lit": [],
+      "pick": "Mula"
+     },
+     "head": "Mula, the root",
+     "line": "A mind that digs. It keeps asking why until it reaches the bottom of a thing."
+    },
+    {
+     "art": {
+      "kind": "wheel",
+      "size": 140,
+      "hole": 0.5,
+      "lit": [],
+      "pick": "Ardra"
+     },
+     "head": "Ardra, the moist one",
+     "line": "Moist, like the ground after rain. A mind that feels the storm fully, then starts fresh."
+    }
+   ],
+   "headsize": 60,
+   "linesize": 36,
+   "iconw": 150,
+   "note": "Sutram’s reading, from the stars’ names and their nature"
+  },
+  {
+   "type": "rows",
+   "label": "In real life",
+   "title": "Work with the grain",
+   "items": [
+    [
+     "1",
+     "A steady mind hates being rushed: give it time"
+    ],
+    [
+     "2",
+     "A moving mind thinks best on a walk"
+    ],
+    [
+     "3",
+     "A sharp mind wants the real reason: say it straight"
+    ]
+   ]
+  },
+  {
+   "type": "cta",
+   "art": {
+    "kind": "wheel",
+    "size": 230,
+    "hole": 0.56
+   },
+   "title": "Which kind of mind\nis yours?",
+   "titlesize": 88,
+   "subtitle": "Find your Moon’s star at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ]
+  }
+ ]
+}

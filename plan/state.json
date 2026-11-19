@@ -1368,5 +1368,14 @@
   "grid": "NOT YET picked. Default from the Sun 22 Nov batch if he has not answered: Grid X (two cream, then one dark), because he asked for a mix with more cream. Count Instagram posts in posting order with Mon 23 Nov 12 PM (lesson 20) as post 1: posts 2, 5, 8, 11, 14 ... are dark ('look': 'night'), the rest cream. thread-ep4-strands (Mon 23 Nov 6:30 PM, old dark look) is post 2. The philosophy library posts are already built dark: give them dark numbers by swapping the two times of their day. Posts made before 23 Nov are a mix and stay as they are.",
   "tools": "tools/look.py, tools/kolam.py, tools/render_look.py, tools/week47c.py (the three posts of 18 Nov). Draft sheets and the code that made them: /home/claude/_private/brand/ (sheets2.py, grid.py, out/).",
   "made_18nov": "sky-2026-11-20-c (Fri 20 Nov 12 PM), avatar-rama-sun-c (Sat 21 Nov 10 AM), week-2026-11-22-c (Sun 22 Nov 6:30 PM) in the cream look with the plain wordmark and arcs; X: sky (Fri 8 PM, slides swapped), rama Sat 1 PM, week Sun 8 PM."
+ },
+ "drafts": {
+  "know-seven-minds": {
+   "made": "19 Nov 2026, about 11:30 AM, for Sumant's review; NOT scheduled.",
+   "asked": "Sumant, 19 Nov 10:42 AM: 'Make a post around what kind of minds there are at broader level as per Jyotish. There's a Mula, deep-seated mind, there's Ardhara, etc. I don't know. And that's a mind that people use. We are just part of that mind. It's like small slice of a bigger slice. Something like this. Can you make one for me to review and then we can see posted?'",
+   "read_as": "The Moon is the mind; the Moon's star at birth (one of 27, Mula and Ardra among them) is your slice of a bigger mind (Rig Veda 10.90.13); the classics sort the 27 stars into seven natures (Brihat Samhita ch. 98). He has not confirmed this reading; the other reading offered to him is layers of mind (a deep root mind under the everyday one).",
+   "files": "tools/post_minds.py, tools/look_art.py (the 27-star wheel), specs/know-seven-minds.json, captions/know-seven-minds.txt, x-drafts/know-seven-minds-x.txt, posts/know-seven-minds (slides 1 and 3 move).",
+   "slot_offered": "Tue 24 Nov 10 AM, in place of that day's Sutra in the Sunday batch plan, or sooner as an extra post if he says so. If he takes Tuesday, the Sunday batch does not make a Sutra for Tue 24 Nov."
+  }
  }
 }

@@ -23,7 +23,7 @@ def words(sp):
     if t=='narrow': out+=[f'{a}: {b}' for a,b in sp['items']]
     if t in ('rows','list','bodymap'): out+=[f'{it[0]}: {it[1]}' for it in sp['items']]
     if t=='stack': out+=[f'{a}: {b}' for a,b in sp['items']]
-    if t=='cast': out+=[f"{it['head']} {it['line']}" for it in sp['items']]
+    if t=='cast': out+=[f"{it['head']}: {it['line']}"+(f" {it['sub']}" if it.get('sub') else '') if it.get('sub') else f"{it['head']} {it['line']}" for it in sp['items']]
     if t=='grid': out+=[f'{c[0]}: {c[1]}, {c[2]}' for c in sp['cells']]
     if t=='compare': out+=[f"{c.get('label') or ''} {c['head']}: {' '.join(c['lines'])}" for c in sp['columns']]
     if t=='sentence': out+=[f'{a}: {b}' for a,b in sp.get('rows',[])]+[sp.get('conclusion')]

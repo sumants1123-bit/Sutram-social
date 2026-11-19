@@ -10,9 +10,10 @@ This is that look for the regular posts. The spec keeps the words of the Thread 
 
 Spec: {"id", "look": "day" | "night", "kicker", "border"?, "foot"?, "slides": [...]}
 Slide types
-  cover  orbs, title, subtitle, motion ("meet": the first graha walks in; "rise": the grahas rise; default: they breathe)
+  cover  orbs or art, title, subtitle, motion ("meet": the first graha walks in; "rise": the grahas rise; default: they breathe)
+         any slide with "motion" also gets an mp4; a wheel moves by its own "mode" ("sweep" or "pick", tools/look_art.py)
   text   orbs?, label, title, body [lines], closing, note
-  cast   label, title, items [{orbs, head, line}]            cards with a graha beside each
+  cast   label, title, items [{orbs or art, head, line, sub?}] cards with a graha or a drawing beside each
   grid   label, title, cols (2), cells [[label, head, line, lit?]], cellorbs?, closing, note
   rows   label, title, items [[key, line]]                    a number as key makes a numbered list
   stack  label, title, items [[label, line]]                  plain cards
@@ -24,6 +25,7 @@ import json, os, sys, re, shutil, subprocess
 HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import look as L
+import look_art as A
 import render_thread as R
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -45,6 +47,14 @@ def orb_box(o, P, s=1.0):
             f'<div style="position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);line-height:0">{svg}</div></div>')
 
 
+def art_html(a, P, s=1.0):
+    """a drawing from tools/look_art.py: {"kind": "wheel", "size", "lit", "pick", "quarters", "dot", "mode", "moon": radius of a Moon in the middle}"""
+    if a['kind'] == 'wheel':
+        inner = orb_box({'kind': 'moon', 'r': a['moon']}, P, s) if a.get('moon') else ''
+        return A.wheel(P, a.get('size', 520) * s, a.get('lit'), a.get('mode', ''), a.get('pick'), a.get('quarters', False), a.get('dot', False), inner, a.get('hole', .6))
+    raise ValueError(a['kind'])
+
+
 def orbs_row(orbs, P, s=1.0, gap=34):
     return f'<div style="display:flex;align-items:center;justify-content:center;gap:{gap * s:.1f}px">{"".join(orb_box(o, P, s) for o in orbs)}</div>'
 
@@ -52,7 +62,7 @@ def orbs_row(orbs, P, s=1.0, gap=34):
 def slide_html(sp, P, s=1.0):
     F = lambda px: f'{px * s:.1f}px'
     t = sp['type']; H = []
-    art = orbs_row(sp['orbs'], P, s, sp.get('orbgap', 34)) if sp.get('orbs') else ''
+    art = orbs_row(sp['orbs'], P, s, sp.get('orbgap', 34)) if sp.get('orbs') else (f'<div style="display:flex;justify-content:center">{art_html(sp["art"], P, s)}</div>' if sp.get('art') else '')
     if t == 'cover':
         if art: H.append(f'<div class="art" style="margin-bottom:{F(40)}">{art}</div>')
         H.append(f'<div class="t" style="font-size:{F(sp.get("titlesize", 108))}">{esc(sp["title"])}</div>')
@@ -71,10 +81,11 @@ def slide_html(sp, P, s=1.0):
     if t == 'cast':
         cards = ''
         for it in sp['items']:
-            ic = orbs_row(it['orbs'], P, s, 6) if it.get('orbs') else ''
+            ic = orbs_row(it['orbs'], P, s, 6) if it.get('orbs') else (art_html(it['art'], P, s) if it.get('art') else '')
+            sub = f'<div style="font:600 {F(sp.get("subsize", 22))}/1.35 Inter;letter-spacing:.04em;color:{P["terra"]};margin-top:{F(10)}">{esc(it["sub"])}</div>' if it.get('sub') else ''
             cards += (f'<div class="card" style="display:grid;grid-template-columns:{F(sp.get("iconw", 132))} 1fr;gap:{F(24)};align-items:center;padding:{F(24)} {F(30)};text-align:left">'
                       f'<div style="display:flex;justify-content:center">{ic}</div><div><div class="t" style="font-size:{F(sp.get("headsize", 54))}">{esc(it["head"])}</div>'
-                      f'<div style="font:400 {F(sp.get("linesize", 33))}/1.4 Inter;color:{P["ink2"]};margin-top:{F(8)}">{esc(it["line"])}</div></div></div>')
+                      f'<div style="font:400 {F(sp.get("linesize", 33))}/1.4 Inter;color:{P["ink2"]};margin-top:{F(8)}">{esc(it["line"])}</div>{sub}</div></div>')
         H.append(f'<div style="display:flex;flex-direction:column;gap:{F(22)};width:930px;margin-top:{F(32)}">{cards}</div>')
     if t == 'grid':
         cols = sp.get('cols', 2); co = sp.get('cellorbs') or []; cells = ''
@@ -116,7 +127,21 @@ const orbs=[...document.querySelectorAll('.body .orbw')];
 const dust=[...document.querySelectorAll('.dst')].map((c,i)=>({c,o:+c.getAttribute('opacity'),k:1+i%3,p:i*1.37}));
 const beads=[...document.querySelectorAll('.ab')].map((c,i)=>({c,q:c.dataset.arc.split(',').map(Number),p:i*.9}));
 const ring=[...document.querySelectorAll('.mb')].map((c,i)=>({c,q:c.dataset.ring.split(',').map(Number),p:i*1.1}));
+const wheels=[...document.querySelectorAll('.body .wheel')].map(W=>({mode:W.dataset.mode,ws:[...W.querySelectorAll('.wg')],pk:W.querySelector('.pk'),pke:W.querySelector('.pke'),qt:[...W.querySelectorAll('.qt')],mv:W.querySelector('.mv')}));
+const bump=(a,d,t)=>t>a&&t<a+d?Math.sin(Math.PI*(t-a)/d):0;
+function wheel(W,t){
+ if(W.mode==='sweep'){   // all dim, the 27 light up in turn, then each nature glows in turn
+  const dim=sm(.2,.9,t);
+  W.ws.forEach(g=>{const i=+g.dataset.i,c=+g.dataset.c;const back=sm(1.0+i*.095,1.3+i*.095,t);let op=1-.74*(dim-Math.min(dim,back));
+   let own=bump(4.0+c*.48,.46,t),other=0;for(let k=0;k<7;k++)if(k!==c)other=Math.max(other,bump(4.0+k*.48,.46,t));
+   op*=1-.6*other;g.setAttribute('opacity',op.toFixed(3));g.setAttribute('transform',`scale(${(1+.07*own+.05*bump(1.0+i*.095,.3,t)).toFixed(4)})`);});}
+ if(W.mode==='pick'){    // the Moon goes once round its road and stops; the star lights; it splits in four
+  const off=sm(.2,.8,t),on=sm(4.0,4.6,t),lit=1-off+Math.min(off,on);
+  if(W.pk)W.pk.setAttribute('opacity',(.26+.74*lit).toFixed(3));if(W.pke)W.pke.style.opacity=lit.toFixed(3);
+  const q=1-off+Math.min(off,sm(4.8,5.4,t));W.qt.forEach(l=>l.style.opacity=q.toFixed(3));
+  if(W.mv){const a=(+W.mv.dataset.a+360*sm(1.0,4.0,t))*Math.PI/180,r=+W.mv.dataset.r;W.mv.setAttribute('cx',(r*Math.cos(a)).toFixed(2));W.mv.setAttribute('cy',(r*Math.sin(a)).toFixed(2));}}}
 window.__fab=function(t){const w=TAU*t/8;
+ wheels.forEach(W=>wheel(W,t));
  dust.forEach(s=>s.c.setAttribute('opacity',(s.o*(.6+.4*Math.cos(w*s.k+s.p))/(.6+.4*Math.cos(s.p))).toFixed(3)));
  beads.forEach(b=>{const u=b.q[6]+.05*(Math.sin(w+b.p)-Math.sin(b.p));const [x0,y0,cx,cy,x1,y1]=b.q;
   b.c.setAttribute('cx',((1-u)*(1-u)*x0+2*(1-u)*u*cx+u*u*x1).toFixed(2));b.c.setAttribute('cy',((1-u)*(1-u)*y0+2*(1-u)*u*cy+u*u*y1).toFixed(2));});
@@ -145,18 +170,18 @@ def render(spec_path, motion=False, border=None, foot=None):
             raw = os.path.join(out, f'_raw{i}.png'); pg.screenshot(path=raw)
             o = os.path.join(out, f'{pid}-{i}.jpg'); Image.open(raw).convert('RGB').resize((1080, 1350), Image.LANCZOS).save(o, quality=93, optimize=True, progressive=True); outs.append(o)
             os.remove(raw)
-            if i == 1 and motion:
+            if motion and (i == 1 or sp.get('motion')):
                 mode = json.dumps(sp.get('motion', 'breathe'))
                 open(fn, 'w').write(html.replace('</body>', f'<script>{MOTION.replace("%MODE%", mode)}</script></body>')); pg.goto('file://' + fn); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(250)
                 tmp = os.path.join(out, '_frames') + '/'; shutil.rmtree(tmp, ignore_errors=True); os.makedirs(tmp)
                 for f in range(240):
                     pg.evaluate('(t)=>window.__fab(t)', f / 30); pg.screenshot(path=tmp + f'f{f:04d}.jpg', type='jpeg', quality=92)
-                part = os.path.join(out, f'_{pid}-1.part.mp4')
+                part = os.path.join(out, f'_{pid}-{i}.part.mp4')
                 subprocess.run(['ffmpeg', '-y', '-loglevel', 'error', '-framerate', '30', '-i', tmp + 'f%04d.jpg', '-f', 'lavfi', '-i', 'anullsrc=channel_layout=stereo:sample_rate=48000', '-shortest',
                                 '-vf', 'scale=1080:1350:flags=lanczos,format=yuv420p', '-c:v', 'libx264', '-preset', 'veryfast', '-crf', '19', '-profile:v', 'high', '-level', '4.1', '-g', '30', '-keyint_min', '30',
                                 '-sc_threshold', '0', '-bf', '2', '-flags', '+cgop', '-r', '30', '-color_primaries', 'bt709', '-color_trc', 'bt709', '-colorspace', 'bt709', '-c:a', 'aac', '-b:a', '96k', '-ar', '48000',
                                 '-movflags', '+faststart', part], check=True)
-                os.replace(part, os.path.join(out, f'{pid}-1.mp4')); shutil.rmtree(tmp, ignore_errors=True)
+                os.replace(part, os.path.join(out, f'{pid}-{i}.mp4')); shutil.rmtree(tmp, ignore_errors=True)
             os.remove(fn)
         b.close()
     n = len(outs); cols = min(4, n); rows = (n + cols - 1) // cols
