@@ -1358,6 +1358,15 @@
    "post_rules": "Sumant, 16 Nov: never mention the page count; say CA$23 and 'DM us the word STONE for the payment link'; no gem-origin story (bones, demon, Bala); keep divisional-chart talk (D9, D10) off the slides.",
    "posts_17nov": "Sumant, 17 Nov 10:31 AM: deleted v2 himself; asked for two separate posts, the report on its own and an explainer 'how does it work and how to wear it' (friends and enemies, how it works, metals, why diamond is love and yellow sapphire luck, 'you are light, seven colours'), and said 'I don't like too dark of a theme colors. I like how you made the home front of gemstone with moving stones.' Made in a light ivory look (navy text, terracotta labels, Cormorant Garamond and Inter, brass arcs) with moving covers; builder kept at /home/claude/_private/stones/light_posts.py (the project was out of room on 18 Nov, so no project copy).",
    "open": "Ask Sumant whether regular posts stay in the dark Thread look (his 16 Nov choice) or move to the light look (his 17 Nov remark was about the stone posts)."
+  },
+  "your_2027": {
+   "second_edition_19nov": {
+    "asked": "Sumant, 19 Nov 2026 6:44 PM, after seeing the Your 2027 report: 'Can we elaborate more, add content, index, more samples, make it more cool, visual, add more details, promote a section called expert vedic astrologer notes etc. show me sample first'",
+    "made": "A 13-page sample of a second edition, built privately on the kit's own sample person from the kit's engine files (no kit code or chart data is in this repo): night cover with the lotus inside a ring of the year; contents; Expert Vedic Astrologer's Notes (two pages, and the astrologer's take in each story); the year in one picture; your lotus; dates to circle; story one over three pages with the rules drawn and worked examples; the year by area of life as a heat map; one page a month with a calendar and the sky on the lotus. Cream look of the posts. The full report would grow from 32 to about 56 pages.",
+    "checks": "No banned words, no long dashes; all 57 dates printed in the sample are dates the engine wrote for that person.",
+    "waiting_on": "His go, and his answer on who gives the expert notes for each order (he, by a short voice note, or the creator whose name is on the report). Notes written by the model alone are not to be labelled as an expert's. Until then the kit, the product and the promo are unchanged.",
+    "next": "On go: fold the new pages into the kit (builder, writer's brief, checker, brief), rebuild the full sample (PDF, page, calendar file), update the your-2027-report skill and the promo samples."
+   }
   }
  },
  "rules_18nov": {
