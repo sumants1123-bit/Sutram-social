@@ -1,0 +1,141 @@
+{
+ "id": "sky-2026-11-20-c",
+ "look": "day",
+ "kicker": "Sutram · Current sky",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 112
+    },
+    {
+     "kind": "saturn",
+     "r": 84
+    }
+   ],
+   "orbgap": 10,
+   "title": "The Moon meets\nSaturn in Pisces",
+   "titlesize": 100,
+   "subtitle": "Friday afternoon, about 3:45 PM",
+   "motion": "meet"
+  },
+  {
+   "type": "text",
+   "label": "Friday 20 November",
+   "title": "Two grahas,\none sign",
+   "body": [
+    "At about 3:45 PM Toronto time, the mother (the Moon) passes the auditor (Saturn) in Pisces."
+   ],
+   "closing": "In one sign, two grahas act on each other at full strength",
+   "note": "Nadi rule 1"
+  },
+  {
+   "type": "cast",
+   "label": "Who is meeting",
+   "title": "The mother\nand the auditor",
+   "headsize": 60,
+   "linesize": 36,
+   "iconw": 150,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "moon",
+       "r": 52
+      }
+     ],
+     "head": "The Moon in Pisces",
+     "line": "Soft, kind and a little dreamy. Pisces is the teacher’s sign, Jupiter’s."
+    },
+    {
+     "orbs": [
+      {
+       "kind": "saturn",
+       "r": 40
+      }
+     ],
+     "head": "Saturn in Pisces",
+     "line": "Walking backward since July, forward again on 10 December. Walking backward, the auditor rechecks old work."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 56
+    },
+    {
+     "kind": "saturn",
+     "r": 44
+    }
+   ],
+   "orbgap": 0,
+   "label": "Together",
+   "title": "A mood that wants\na job done",
+   "body": [
+    "The mind and duty sit in one room, and together they make a heavy mood that wants one job done."
+   ],
+   "closing": "Feelings get serious and practical"
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "sun",
+     "rings": false,
+     "r": 60
+    }
+   ],
+   "label": "Nadi rule 6",
+   "title": "The king is family",
+   "body": [
+    "The king (the Sun) sits in Scorpio, another water sign. Signs 5th and 9th apart act together, so he is family."
+   ],
+   "closing": "The boss backs the plan"
+  },
+  {
+   "type": "rows",
+   "label": "In real life",
+   "title": "This evening",
+   "items": [
+    [
+     "1",
+     "Finish one chore"
+    ],
+    [
+     "2",
+     "Call your mother"
+    ],
+    [
+     "3",
+     "Let a feeling be, instead of rushing to fix it"
+    ]
+   ]
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 44
+    },
+    {
+     "kind": "saturn",
+     "r": 36
+    }
+   ],
+   "orbgap": 0,
+   "title": "What does it mean\nfor your Moon sign?",
+   "titlesize": 84,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Sunday · The week ahead"
+  }
+ ]
+}

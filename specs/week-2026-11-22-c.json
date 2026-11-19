@@ -1,0 +1,193 @@
+{
+ "id": "week-2026-11-22-c",
+ "look": "day",
+ "kicker": "Week ahead · 22 to 28 November",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 132
+    }
+   ],
+   "title": "A full Moon\nin Taurus",
+   "titlesize": 104,
+   "subtitle": "Tuesday, the Moon at her best",
+   "motion": "rise"
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 60
+    },
+    {
+     "kind": "sun",
+     "rings": false,
+     "r": 56
+    }
+   ],
+   "orbgap": 150,
+   "label": "Tuesday, about 10 AM",
+   "title": "Face to face",
+   "body": [
+    "The Moon is full in Taurus, facing the king (the Sun) in Scorpio. Grahas face to face act on each other directly, so the mind and the self meet in full light."
+   ],
+   "note": "Nadi rule 4"
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 70
+    }
+   ],
+   "label": "The Moon’s best sign",
+   "title": "A calm, kind mind",
+   "body": [
+    "On Monday night at about 9 PM the mother (the Moon) walks into Taurus, where she is exalted."
+   ],
+   "closing": "Good for hosting, giving and talking things through"
+  },
+  {
+   "type": "grid",
+   "label": "Tuesday’s full Moon",
+   "title": "Find your Moon sign",
+   "cells": [
+    [
+     "Aries Moon",
+     "2nd house",
+     "Savings, family, food"
+    ],
+    [
+     "Taurus Moon",
+     "1st house",
+     "You in focus"
+    ],
+    [
+     "Gemini Moon",
+     "12th house",
+     "Spending, travel, rest"
+    ],
+    [
+     "Cancer Moon",
+     "11th house",
+     "Gains and good friends"
+    ],
+    [
+     "Leo Moon",
+     "10th house",
+     "Work and standing"
+    ],
+    [
+     "Virgo Moon",
+     "9th house",
+     "Luck, teachers, travel"
+    ]
+   ],
+   "celllab": 22,
+   "cellsize": 62,
+   "celltext": 33,
+   "cellpad": 28,
+   "note": "Count Taurus from the sign your Moon was in at birth"
+  },
+  {
+   "type": "grid",
+   "label": "Tuesday’s full Moon",
+   "title": "Find your Moon sign",
+   "cells": [
+    [
+     "Libra Moon",
+     "8th house",
+     "Quiet change"
+    ],
+    [
+     "Scorpio Moon",
+     "7th house",
+     "Partner, clients, deals"
+    ],
+    [
+     "Sagittarius Moon",
+     "6th house",
+     "Routine, debts, fitness"
+    ],
+    [
+     "Capricorn Moon",
+     "5th house",
+     "Kids, study, romance"
+    ],
+    [
+     "Aquarius Moon",
+     "4th house",
+     "Home, mother, repairs"
+    ],
+    [
+     "Pisces Moon",
+     "3rd house",
+     "Effort, short trips"
+    ]
+   ],
+   "celllab": 22,
+   "cellsize": 62,
+   "celltext": 33,
+   "cellpad": 28,
+   "note": "Don’t know your Moon sign? Ask at asksutram.com"
+  },
+  {
+   "type": "stack",
+   "label": "Also this week",
+   "title": "Mark your calendar",
+   "items": [
+    [
+     "Monday night, about 9 PM",
+     "The Moon walks into Taurus"
+    ],
+    [
+     "Tuesday, about 10 AM",
+     "Full Moon in Taurus"
+    ],
+    [
+     "All week",
+     "Venus is home in Libra: comfort, taste and money talks come easier"
+    ],
+    [
+     "Friday night",
+     "The Moon goes home to Cancer: a softer weekend, closer to family"
+    ]
+   ],
+   "linesize": 40
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 64
+    }
+   ],
+   "label": "This full Moon",
+   "title": "Kartik Purnima",
+   "closing": "Light a lamp, give something away",
+   "closingsize": 52
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 50
+    }
+   ],
+   "title": "What does it mean\nfor your Moon sign?",
+   "titlesize": 84,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Monday · Rule 10, where water meets fire"
+  }
+ ]
+}

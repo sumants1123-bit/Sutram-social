@@ -1,0 +1,176 @@
+{
+ "id": "avatar-rama-sun-c",
+ "look": "day",
+ "kicker": "Sutram · Avatars and grahas",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "sun",
+     "rings": false,
+     "r": 116
+    }
+   ],
+   "title": "Rama is\nthe Sun",
+   "subtitle": "Why the old texts pair two kings",
+   "motion": "rise"
+  },
+  {
+   "type": "grid",
+   "cols": 3,
+   "label": "Brihat Parashara Hora Shastra · ch. 2",
+   "title": "Nine avatars, nine grahas",
+   "titlesize": 72,
+   "cells": [
+    [
+     "Sun",
+     "Rama",
+     ""
+    ],
+    [
+     "Moon",
+     "Krishna",
+     ""
+    ],
+    [
+     "Mars",
+     "Narasimha",
+     ""
+    ],
+    [
+     "Mercury",
+     "Buddha",
+     ""
+    ],
+    [
+     "Jupiter",
+     "Vamana",
+     ""
+    ],
+    [
+     "Venus",
+     "Parashurama",
+     ""
+    ],
+    [
+     "Saturn",
+     "Kurma",
+     ""
+    ],
+    [
+     "Rahu",
+     "Varaha",
+     ""
+    ],
+    [
+     "Ketu",
+     "Matsya",
+     ""
+    ]
+   ],
+   "cellorbs": [
+    {
+     "kind": "sun",
+     "rings": false,
+     "r": 36
+    },
+    {
+     "kind": "moon",
+     "r": 36
+    },
+    {
+     "kind": "mars",
+     "r": 36
+    },
+    {
+     "kind": "mercury",
+     "r": 36
+    },
+    {
+     "kind": "jupiter",
+     "r": 36
+    },
+    {
+     "kind": "venus",
+     "r": 36
+    },
+    {
+     "kind": "saturn",
+     "r": 30
+    },
+    {
+     "kind": "rahu",
+     "r": 36
+    },
+    {
+     "kind": "ketu",
+     "r": 36
+    }
+   ],
+   "cellsize": 50,
+   "celllab": 20,
+   "cellpad": 20,
+   "closing": "Parashara pairs them, one by one",
+   "closingsize": 44
+  },
+  {
+   "type": "text",
+   "label": "The story",
+   "title": "Rama kept his\nfather’s word",
+   "body": [
+    "He was the king who left his throne to keep it, and he ruled by dharma, the right way."
+   ],
+   "closing": "The way the Sun gives light to all alike"
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "sun",
+     "rings": false,
+     "r": 70
+    }
+   ],
+   "label": "Brihat Parashara Hora Shastra · ch. 3",
+   "title": "The Sun is the king,\nthe father, the soul",
+   "body": [
+    "In Jyotish the Sun is the king of the grahas."
+   ],
+   "closing": "The light that shines on all alike"
+  },
+  {
+   "type": "text",
+   "label": "In your chart",
+   "title": "Your Sun’s house",
+   "body": [
+    "The house of your Sun shows where you are asked to lead and to keep your word."
+   ],
+   "note": "Sutram’s reading, built on the classical meanings"
+  },
+  {
+   "type": "text",
+   "label": "In real life",
+   "title": "Try it today",
+   "closing": "Keep one promise, to someone else or to yourself",
+   "closingsize": 52
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "sun",
+     "rings": false,
+     "r": 56
+    }
+   ],
+   "title": "What does your Sun’s\nhouse ask of you?",
+   "titlesize": 84,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Next Saturday · Krishna, the Moon"
+  }
+ ]
+}
