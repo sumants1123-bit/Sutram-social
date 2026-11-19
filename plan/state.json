@@ -606,7 +606,8 @@
    "id": "sky-2026-11-20-x",
    "when": "2026-11-20T20:00:00-05:00",
    "via": "buffer-x",
-   "buffer_id": "6afa50c106e1675856b7b272"
+   "buffer_id": "6afa50c106e1675856b7b272",
+   "note": "18 Nov: slides swapped for sky-2026-11-20-c 1, 3, 4, 6 (cream look), text kept"
   },
   {
    "id": "gems-how-they-work",
@@ -623,6 +624,44 @@
    "via": "buffer-instagram",
    "buffer_id": "6afd9ffc61bd3b7f60bff647",
    "note": "assets at 8e2ecd5; Friday 6:30 PM as Sumant agreed on 18 Nov"
+  },
+  {
+   "id": "sky-2026-11-20-c",
+   "when": "2026-11-20T12:00:00-05:00",
+   "title": "Current sky: The Moon meets Saturn in Pisces (7 slides, cream look, moving cover)",
+   "via": "buffer-instagram",
+   "buffer_id": "6afe3f7801ba7c5e79224d90",
+   "note": "assets at f567fad; Wed 18 Nov check-in"
+  },
+  {
+   "id": "avatar-rama-sun-c",
+   "when": "2026-11-21T10:00:00-05:00",
+   "title": "Avatars and grahas 1: Rama is the Sun (7 slides, cream look, moving cover)",
+   "via": "buffer-instagram",
+   "buffer_id": "6afe3f85a588bd6687a8e7d9",
+   "note": "assets at f567fad"
+  },
+  {
+   "id": "week-2026-11-22-c",
+   "when": "2026-11-22T18:30:00-05:00",
+   "title": "Week ahead 22 to 28 Nov: a full Moon in Taurus, for your Moon sign (8 slides, cream look, moving cover)",
+   "via": "buffer-instagram",
+   "buffer_id": "6afe3f9801ba7c5e79225cab",
+   "note": "assets at f567fad; last slide promises 'Monday · Rule 10, where water meets fire'"
+  },
+  {
+   "id": "avatar-rama-sun-c-x",
+   "when": "2026-11-21T13:00:00-05:00",
+   "title": "Rama is the Sun on X (slides 1, 2, 3, 5)",
+   "via": "buffer-x",
+   "buffer_id": "6afe3fa801ba7c5e792261f0"
+  },
+  {
+   "id": "week-2026-11-22-c-x",
+   "when": "2026-11-22T20:00:00-05:00",
+   "title": "Week ahead on X (slides 1, 2, 4, 5)",
+   "via": "buffer-x",
+   "buffer_id": "6afe3fb04cace847b3840b48"
   }
  ],
  "retired": [
@@ -1295,7 +1334,8 @@
    "cap_note": "Instagram cap is 10 scheduled: at 7 PM tonight 7 are left after lesson18 and the explainer go out, so the three above fit and lesson20-doorway waits for the Sunday batch."
   },
   "preview": "https://claude.ai/artifact/9DBvhqtPtLo6qa12LKX3YA (Lesson 16, private)",
-  "changes_18nov": "18 Nov 7:55 AM: gems-how-they-work Wed 6:30 PM and wear-your-stone-report Fri 6:30 PM went into Buffer. To keep two Instagram posts a day: thread-ep4-strands moved to Mon 23 Nov 6:30 PM (X 8 PM; its last slide still says 'Next Wednesday · The Thread, part 5', which is Wed 25 Nov), sky-2026-11-20 to Fri 12 PM, lesson20-doorway to Mon 23 Nov 12 PM. Thursday keeps its three (sutra-exalted, lesson19, Your 2027)."
+  "changes_18nov": "18 Nov 7:55 AM: gems-how-they-work Wed 6:30 PM and wear-your-stone-report Fri 6:30 PM went into Buffer. To keep two Instagram posts a day: thread-ep4-strands moved to Mon 23 Nov 6:30 PM (X 8 PM; its last slide still says 'Next Wednesday · The Thread, part 5', which is Wed 25 Nov), sky-2026-11-20 to Fri 12 PM, lesson20-doorway to Mon 23 Nov 12 PM. Thursday keeps its three (sutra-exalted, lesson19, Your 2027).",
+  "checkin": "Done 18 Nov about 8:20 PM, in the cream look instead of the Thread look the stored prompt named, because Sumant asked that evening for more posts in the light look (rules_18nov). Three posts made and scheduled (sky, Rama, week ahead). lesson20-doorway was left: Instagram is at 10 of 10 scheduled, and its 'this week' lines were written for Fri 20 Nov, so the Sun 22 Nov batch remakes it for Mon 23 Nov 12 PM with the engine (plan/batch_22nov_prompt.txt)."
  },
  "rules_16nov": {
   "said": "Sumant, 16 Nov 10:15 PM, with screenshots of 'Five layers of you' (Thread Ep 2) and 'Jupiter in Leo' (week ahead 1-7 Nov): 'Loved post and content in this format, wording etc. maybe bring back content in this format!' 10:48 PM: 'You can bring format back for regular posts, it's okay. Don't worry about the text [limit], it shouldn't look cluttered or clumsy, that's it.'",
@@ -1319,5 +1359,14 @@
    "posts_17nov": "Sumant, 17 Nov 10:31 AM: deleted v2 himself; asked for two separate posts, the report on its own and an explainer 'how does it work and how to wear it' (friends and enemies, how it works, metals, why diamond is love and yellow sapphire luck, 'you are light, seven colours'), and said 'I don't like too dark of a theme colors. I like how you made the home front of gemstone with moving stones.' Made in a light ivory look (navy text, terracotta labels, Cormorant Garamond and Inter, brass arcs) with moving covers; builder kept at /home/claude/_private/stones/light_posts.py (the project was out of room on 18 Nov, so no project copy).",
    "open": "Ask Sumant whether regular posts stay in the dark Thread look (his 16 Nov choice) or move to the light look (his 17 Nov remark was about the stone posts)."
   }
+ },
+ "rules_18nov": {
+  "said": "Sumant, 18 Nov 6:39 PM, on 'How a gemstone works' (the light ivory look): 'I absolutely love this design, the post, the visual, the animation, the colors, the font size, everything ... zero changes or feedback.' He asked for (1) 'a really cool, unique, cool Sutram logo that can go as a watermark or a footer on every post ... either moving or like stationary', (2) 'this light theme, I love it. I want to have more posts around this light theme', (3) his Instagram grid as 'a combination of black and white ... or cream', and (4) 'tiny bit more evolve the styles to maybe add mandala at the borders ... Indian aesthetic, Vedic look, just a minimal touch ... Even in the dark ones ... but more of this cream.'",
+  "look": "tools/look.py: the gemstone look as 'day' and its dark twin 'night' (same fonts and layout). tools/render_look.py renders a spec in it with a moving cover. This replaces the Thread look of rules_16nov for new posts; the order of a post and the caption voice of rules_16nov stand.",
+  "drafts_sent": "18 Nov about 7:45 PM: sutram-logo-options.jpg (Mark A the flame seal = his current mark in fine line; Mark B a nine-dot kolam, one thread; Mark C the flame on a thread of eight beads), sutram-logo-moving.mp4, sutram-border-options.jpg (Border 1 mandala corners, Border 2 fine frame, Border 3 beaded thread), sutram-grid-options.jpg (Grid X two cream then one dark, Grid Y checkerboard, Grid Z three cream then one dark). Claude's pick: C, 1, X. In look.py these are foot='seal'|'kolam'|'thread' and border='mandala'|'frame'|'braid'.",
+  "pick": "NOT YET (as of 18 Nov 8:20 PM). Until he picks: foot='word' and border='arcs', which is exactly the gemstone post he approved. When he picks, set 'foot' and 'border' in every new spec, and re-render and swap the assets of posts still waiting in Buffer if he wants them changed.",
+  "grid": "NOT YET picked. Default from the Sun 22 Nov batch if he has not answered: Grid X (two cream, then one dark), because he asked for a mix with more cream. Count Instagram posts in posting order with Mon 23 Nov 12 PM (lesson 20) as post 1: posts 2, 5, 8, 11, 14 ... are dark ('look': 'night'), the rest cream. thread-ep4-strands (Mon 23 Nov 6:30 PM, old dark look) is post 2. The philosophy library posts are already built dark: give them dark numbers by swapping the two times of their day. Posts made before 23 Nov are a mix and stay as they are.",
+  "tools": "tools/look.py, tools/kolam.py, tools/render_look.py, tools/week47c.py (the three posts of 18 Nov). Draft sheets and the code that made them: /home/claude/_private/brand/ (sheets2.py, grid.py, out/).",
+  "made_18nov": "sky-2026-11-20-c (Fri 20 Nov 12 PM), avatar-rama-sun-c (Sat 21 Nov 10 AM), week-2026-11-22-c (Sun 22 Nov 6:30 PM) in the cream look with the plain wordmark and arcs; X: sky (Fri 8 PM, slides swapped), rama Sat 1 PM, week Sun 8 PM."
  }
 }
