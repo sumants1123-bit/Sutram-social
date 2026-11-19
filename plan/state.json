@@ -1390,5 +1390,11 @@
   "status": "Waiting for Sumant to run the prompt in Emergent. Nothing is live. Path proposed: asksutram.com/mind.",
   "free_now_paid_later": "He said a paid version is a different story for later. The page has no price and no gate."
  },
- "mind_series": "plan/mind_series.md: Sumant asked on 19 Nov for more posts on the mind (thought, feeling, patterns, the observer and the player). Seven ideas listed, none picked yet; the next to draft for his review is 'Five kinds of thought'."
+ "mind_series": "plan/mind_series.md: Sumant asked on 19 Nov for more posts on the mind (thought, feeling, patterns, the observer and the player). Seven ideas listed, none picked yet; the next to draft for his review is 'Five kinds of thought'.",
+ "lotus": {
+  "asked": "Sumant, 19 Nov 2026 1:57 PM: the natal chart is you, a lotus; the houses are its petals (wisdom, emotion, courage, wealth, prosperity, happiness, peace); a dasha brings one petal forth and builds it, then the next dasha takes over; show it in a beautiful visual, then update the dasha visuals on asksutram.com (Emergent) to show and explain it this way.",
+  "made_19nov": "tools/lotus_art.py draws it in the cream look: (1) You are a lotus, the twelve named petals in the four aims' colours; (2) what each petal holds; (3) the petals opening now, chapter and season; (4) one petal at a time, the nine chapters of a life; and a 13 second film of the lotus opening. The first draft was drawn on Sumant's own chart from the Your 2027 engine and sent to him privately; no chart data is in this repo.",
+  "choices_to_confirm": "Petal names: Self, Wealth, Courage, Happiness, Creativity, Service, Partnership, Depth, Wisdom, Calling, Prosperity, Peace. Rule: a graha opens the petals it rules and the petal it sits in (BPHS ch. 48 reads a dasha by the house its lord rules; 'sits in' is the usual practice). Petals sit where the Sky Clock's rooms sit: 12 at the top, 1 at one o'clock. Chapter = thick outline, season = dotted outline with a bead. He was asked to confirm the names and the rule.",
+  "next": "If he says go: a working lotus (tap a petal, move through life) as a private artifact, then an Emergent prompt to use it for the dasha visuals on My Timing, and a public post 'You are a lotus' on a made-up chart."
+ }
 }
