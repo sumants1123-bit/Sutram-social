@@ -18,6 +18,7 @@ Slide types
   rows   label, title, items [[key, line]]                    a number as key makes a numbered list
   stack  label, title, items [[label, line]]                  plain cards
   quote  label, quote, source, body
+  any slide may add "sanskrit": a verse's own words in the italic serif under its title or quote
   cta    orbs?, title, subtitle, link (drawn in a ring, for a page to visit), lines, next
 Writes posts/<id>/<id>-<n>.jpg, <id>-overview.jpg and, with --motion, <id>-1.mp4 (8 s loop; the first frame is the still).
 A slide that does not fit is scaled down in steps; anything below .92 is reported and should be cut or split."""
@@ -78,6 +79,8 @@ def slide_html(sp, P, s=1.0):
     if t == 'quote':
         H.append(f'<div class="t" style="font-style:italic;font-weight:500;font-size:{F(sp.get("quotesize", 68))};line-height:1.12;margin-top:{F(26)}">“{esc(sp["quote"])}”</div>')
         if sp.get('source'): H.append(f'<div class="src" style="margin-top:{F(24)};font-size:{F(20)}">{esc(sp["source"])}</div>')
+    if sp.get('sanskrit'):   # 20 Nov 2026: a verse's own words, in the italic serif under the title or quote
+        H.append(f'<div class="sub" style="margin-top:{F(22)};font-size:{F(sp.get("sanskritsize", 40))}">{esc(sp["sanskrit"])}</div>')
     if t == 'cast':
         cards = ''
         for it in sp['items']:

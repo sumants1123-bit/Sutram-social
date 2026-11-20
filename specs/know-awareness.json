@@ -1,0 +1,149 @@
+{
+ "id": "know-awareness",
+ "look": "day",
+ "kicker": "Sutram · Know yourself",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 118,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 60,
+     "illum": 0.76,
+     "waxing": false
+    }
+   ],
+   "orbgap": 64,
+   "title": "Awareness\nis you",
+   "titlesize": 120,
+   "subtitle": "What the old texts say about the one who sees",
+   "subsize": 46
+  },
+  {
+   "type": "quote",
+   "label": "Shiva Sutras 1.1 · Kashmir Shaivism",
+   "quote": "Consciousness is the Self.",
+   "quotesize": 86,
+   "sanskrit": "caitanyam ātmā",
+   "body": [
+    "The first line of the Shiva Sutras. Everything after it grows from this."
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "quote",
+   "label": "Brihadaranyaka Upanishad 3.7.23",
+   "quote": "Unseen, it sees.\nUnheard, it hears.\nUnknown, it knows.",
+   "quotesize": 74,
+   "sanskrit": "adṛṣṭo draṣṭā, aśrutaḥ śrotā",
+   "body": [
+    "You can never look at it. It is the one doing the looking."
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "rows",
+   "label": "Mandukya Upanishad 7",
+   "title": "The fourth",
+   "keyw": 300,
+   "items": [
+    [
+     "Waking",
+     "knowing turned outward"
+    ],
+    [
+     "Dream",
+     "knowing turned inward"
+    ],
+    [
+     "Deep sleep",
+     "knowing folded into one"
+    ],
+    [
+     "Turīya",
+     "none of these. Peaceful, one"
+    ]
+   ],
+   "closing": "sa ātmā · That is the Self",
+   "closingsize": 44
+  },
+  {
+   "type": "quote",
+   "label": "Yoga Sutras 1.3",
+   "quote": "Then the seer rests in its own nature.",
+   "quotesize": 78,
+   "sanskrit": "tadā draṣṭuḥ svarūpe ’vasthānam",
+   "body": [
+    "When the mind goes quiet, the one who was watching is all that is left."
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 80,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 44,
+     "illum": 0.76,
+     "waxing": false
+    }
+   ],
+   "orbgap": 44,
+   "label": "In Jyotish · Brihat Parashara Hora Shastra 3.12",
+   "title": "The Sun is the Self.\nThe Moon is the mind.",
+   "titlesize": 74,
+   "sanskrit": "sarvātmā ca divānāthaḥ, manaḥ kumudabāndhavaḥ",
+   "sanskritsize": 36,
+   "body": [
+    "The Moon has no light of its own. It shines with the Sun’s. So does your mind."
+   ],
+   "bodysize": 38
+  },
+  {
+   "type": "rows",
+   "label": "Try it · Ramana Maharshi’s question",
+   "title": "Who am I?",
+   "items": [
+    [
+     "1",
+     "Notice a thought"
+    ],
+    [
+     "2",
+     "Notice that you noticed it"
+    ],
+    [
+     "3",
+     "Ask who is noticing"
+    ]
+   ],
+   "closing": "The answer is the one who asked"
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 66,
+     "rings": false
+    }
+   ],
+   "title": "Thoughts come and go.\nYou stay.",
+   "titlesize": 86,
+   "subtitle": "Awareness is you",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ]
+  }
+ ]
+}

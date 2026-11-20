@@ -10,6 +10,12 @@ NM = os.path.join(os.path.dirname(os.path.abspath(__file__)), 'node_modules')
 CG = NM + '/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-'
 FONTS = ''.join(f"@font-face{{font-family:'Cormorant Garamond';font-weight:{w};font-style:{s};src:url('file://{CG}{w}-{s}.woff2')}}" for w, s in ((500, 'normal'), (600, 'normal'), (500, 'italic'), (600, 'italic')))
 FONTS += f"@font-face{{font-family:Inter;font-weight:100 900;src:url('file://{NM}/@fontsource-variable/inter/files/inter-latin-wght-normal.woff2')}}"
+# 20 Nov 2026: the letters with marks used to write Sanskrit (ā ī ū ṛ ṣ ṭ ḍ ṇ ḥ ṃ ś) live in the latin-ext files. These faces
+# only cover those letters (unicode-range), so every slide made before stays exactly as it was.
+EXT = 'U+0100-02BA,U+02BD-02C5,U+02C7-02CC,U+02CE-02D7,U+02DD-02FF,U+1D00-1DBF,U+1E00-1E9F,U+1EF2-1EFF,U+2C60-2C7F,U+A720-A7FF'
+FONTS += ''.join(f"@font-face{{font-family:'Cormorant Garamond';font-weight:{w};font-style:{s};src:url('file://{NM}/@fontsource/cormorant-garamond/files/cormorant-garamond-latin-ext-{w}-{s}.woff2');unicode-range:{EXT}}}"
+                 for w, s in ((500, 'normal'), (600, 'normal'), (500, 'italic'), (600, 'italic')))
+FONTS += f"@font-face{{font-family:Inter;font-weight:100 900;src:url('file://{NM}/@fontsource-variable/inter/files/inter-latin-ext-wght-normal.woff2');unicode-range:{EXT}}}"
 
 PAL = {
  'day': dict(name='day', ink='#1E2A44', ink2='#47536B', mute='#8B8577', brass='#A9813A', terra='#B4643F', line='#E4DCCB', card='#FFFFFF', cardsh='0 16px 36px rgba(30,42,68,.07)',

@@ -27,3 +27,5 @@ different kind of emotions, etc. ... that becomes really knowledgeable, really v
 7. Your mind's 27-day rhythm. The Moon returns to your star every 27 days; nine kinds of days in between. Ends at Today on asksutram.com.
 
 Not yet picked by Sumant. Until he picks, the next one to draft for his review is 1.
+
+20 Nov 2026: idea 4 (the player and the watcher) drafted as know-awareness, "Awareness is you": five verses (Shiva Sutras 1.1, Brihadaranyaka 3.7.23, Mandukya 7, Yoga Sutras 1.3, BPHS 3.12) and Ramana's question. Waiting on Sumant's review.
