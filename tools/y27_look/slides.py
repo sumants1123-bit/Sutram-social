@@ -6,6 +6,11 @@ samples, make it more cool, visual, add more details, promote a section called e
 So: an index of what is inside, the expert's notes first, then seven real pages of the new sample (name removed),
 each cut from the sample PDF itself and shown large enough to read. Then the same last slide as the first post.
 
+19 Nov 7:55 PM, after he saw it: "Everything is good. Just add some details or descriptions from the report that would
+have been like astrologers notes sections. More about their birth chart, sun sign, moon sign, year summary etc." So the
+notes now take three slides: who you are (rising, Sun and Moon sign), your year in a few lines, and the dates to circle.
+Twelve slides in all. The page numbers below are pages of the 14-page name-free sample PDF.
+
     Y27_PUBLIC=1 python3 /home/claude/_private/y27v2/sample.py     # the name-free pages of the sample (private builder)
     python3 tools/y27_look/film.py --film                          # slide 1
     python3 tools/y27_look/slides.py                               # slides 2 to 10 and the overview
@@ -74,14 +79,16 @@ def last():
 
 SLIDES = [
     ('day', index(), 2),
-    ('day', sample('Notes from an expert<br>Vedic astrologer', 4, 37, 487, fade=False), 3),
-    ('day', sample('Your whole year on one wheel', 5, 35, 520, fade=False), 4),
-    ('day', sample('Your chart, drawn as a lotus', 6, 35, 520, fade=False), 5),
-    ('day', sample('Three stories carry your year', 8, 35, 458, fade=False), 6),
-    ('day', sample('Every date shows its reason', 9, 388, 812, fade=False, fadet=True), 7),
-    ('day', sample('Where it lands in your life', 11, 35, 447), 8),
-    ('day', sample('Then month by month', 12, 35, 447, tag='top:88px'), 9),
-    ('night', last(), 10),
+    ('day', sample('Notes from an expert<br>Vedic astrologer', 3, 224, 621, fade=False), 3),      # who you are: rising, Sun and Moon sign
+    ('day', sample('Your year in a few lines', 4, 37, 518, fade=False), 4),                       # the year in short, three parts, the first moves
+    ('day', sample('And the dates to circle', 5, 37, 487, fade=False), 5),
+    ('day', sample('Your whole year on one wheel', 6, 35, 520, fade=False), 6),
+    ('day', sample('Your chart, drawn as a lotus', 7, 35, 520, fade=False), 7),
+    ('day', sample('Three stories carry your year', 9, 35, 458, fade=False), 8),
+    ('day', sample('Every date shows its reason', 10, 388, 812, fade=False, fadet=True), 9),
+    ('day', sample('Where it lands in your life', 12, 35, 447), 10),
+    ('day', sample('Then month by month', 13, 35, 447, tag='top:88px'), 11),
+    ('night', last(), 12),
 ]
 
 def shoot(pg, html, out):
@@ -97,7 +104,7 @@ if __name__ == '__main__':
             P = L.PAL[theme]; html = L.page(P, KICK, inner, seed=40 + n, border='arcs', foot='word').replace('</style>', EXTRA + '</style>', 1)
             o = f'{OUT}/{PID}-{n}.jpg'; over = shoot(pg, html, o); outs.append(o); print(n, theme, 'px past the body:', over)
         b.close()
-    cols = 5; rows = (len(outs) + cols - 1) // cols; w, h = 432, 540
+    cols = 6; rows = (len(outs) + cols - 1) // cols; w, h = 432, 540
     sheet = Image.new('RGB', (20 + cols * (w + 20), 20 + rows * (h + 20)), (232, 224, 208))
     for k, o in enumerate(outs):
         r, c = divmod(k, cols); sheet.paste(Image.open(o).resize((w, h), Image.LANCZOS), (20 + c * (w + 20), 20 + r * (h + 20)))
