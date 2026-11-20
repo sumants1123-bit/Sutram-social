@@ -1365,7 +1365,8 @@
     "made": "A 13-page sample of a second edition, built privately on the kit's own sample person from the kit's engine files (no kit code or chart data is in this repo): night cover with the lotus inside a ring of the year; contents; Expert Vedic Astrologer's Notes (two pages, and the astrologer's take in each story); the year in one picture; your lotus; dates to circle; story one over three pages with the rules drawn and worked examples; the year by area of life as a heat map; one page a month with a calendar and the sky on the lotus. Cream look of the posts. The full report would grow from 32 to about 56 pages.",
     "checks": "No banned words, no long dashes; all 57 dates printed in the sample are dates the engine wrote for that person.",
     "waiting_on": "His go, and his answer on who gives the expert notes for each order (he, by a short voice note, or the creator whose name is on the report). Notes written by the model alone are not to be labelled as an expert's. Until then the kit, the product and the promo are unchanged.",
-    "next": "On go: fold the new pages into the kit (builder, writer's brief, checker, brief), rebuild the full sample (PDF, page, calendar file), update the your-2027-report skill and the promo samples."
+    "next": "On go: fold the new pages into the kit (builder, writer's brief, checker, brief), rebuild the full sample (PDF, page, calendar file), update the your-2027-report skill and the promo samples.",
+    "promo_draft": "drafts.your-2027-look-inside: a 10-slide post that shows the second edition. It waits on the same go."
    }
   }
  },
@@ -1391,6 +1392,15 @@
    "review": "19 Nov 11:03 AM, Sumant: 'Absolutely loved it. Amazing job.' Two changes he asked for, both made the same morning: the ending points to the mind page (slide 10: 'See yours, and what it is really good for', asksutram.com/mind in a ring; caption and X draft too), and his own example of a moving mind is the new slide 8 ('I search while moving, I work while moving, brainstorm while moving'). Slide 9 now carries the study example. Ten slides.",
    "hold": "DO NOT SCHEDULE until Sumant says asksutram.com/mind is live: the last slide, the caption and the X draft all point to it. When he says it is live: open the link once, then schedule in the next free Instagram slot (Tue 24 Nov 10 AM was offered) and on X with slides 1, 3, 8, 10.",
    "open_question": "He said 'probably I have a moving mind' and named Chitra beside Dhanishta. The text lists Chitra as soft; his Moon's sign, Libra, is movable. The example slide names only the five moving stars. He was told on 19 Nov and asked to confirm."
+  },
+  "your-2027-look-inside": {
+   "made": "19 Nov 2026, about 7:40 PM, for Sumant's review; NOT scheduled.",
+   "asked": "Sumant, 19 Nov 6:44 PM, twelve minutes after the first Your 2027 post went out: 'Just saw year 2027 report. Can we elaborate more, add content, index, more samples, make it more cool, visual, add more details, promote a section called expert vedic astrologer notes etc. show me sample first'. 7:02 PM, after he was shown a report sample: 'And this is a report ... What about the Instagram post? What you created and what you're gonna post? And where's animated intro 2027 1? I like the current 2027 intro post. The video that changes. But this one is also nice. I like the colors of this one.'",
+   "read_as": "He wants a fuller Instagram post for Your 2027 that keeps the moving cover (the sky travels through the year, the date changes) and uses the colours of the second-edition sample. The 6:44 PM message was first read as being about the report only.",
+   "what": "10 slides. 1 moving cover, 9.4 s: the lotus as the clock; eight grahas of the sky move through the petals day by day from the engine's own daily positions; the date changes in the middle; the petal both slow grahas point at lights up; a thread of the year takes a bead on each exact meeting. 2 what is in your report (five parts). 3 notes from an expert Vedic astrologer. 4 the whole year on one wheel. 5 the chart drawn as a lotus. 6 three stories. 7 every date shows its reason. 8 the year by area of life. 9 month by month. 10 CA$39, delivered within 5 days, DM us the word 2027.",
+   "files": "tools/y27_look/film.py, film.js, slides.py (code only) and captions/your-2027-look-inside.txt. The film, slides and overview are in /home/claude/_private/y27v2/promo/out, outside this repo, because they are cut from the sample person's pages (name removed). The name-free sample PDF comes from the private sample builder run with Y27_PUBLIC=1.",
+   "hold": "DO NOT SCHEDULE. The slides show pages of the second edition, which is only a sample so far. It goes out only after (1) Sumant approves the post, (2) he gives the go on the second edition and says who gives the expert notes, and (3) the kit is upgraded so a buyer receives what the slides show. Then copy your-2027-look-inside-*.jpg and -1.mp4 to posts/your-2027-look-inside, push, and schedule in the next free slot.",
+   "privacy": "No name and no birth details on any slide. The crops leave out the chapter dates and the birth star."
   }
  },
  "mind_page": {
