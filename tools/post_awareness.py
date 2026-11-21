@@ -74,7 +74,7 @@ Weekly newsletter: sutram.ca/newsletter
 
 #awareness #advaita #kashmirshaivism #jyotish #sutram
 """
-X = """Awareness is you.
+X = """Awareness is you
 
 Shiva Sutras 1.1: consciousness is the Self.
 Brihadaranyaka 3.7.23: unseen, it sees.

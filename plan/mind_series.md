@@ -28,4 +28,4 @@ different kind of emotions, etc. ... that becomes really knowledgeable, really v
 
 Not yet picked by Sumant. Until he picks, the next one to draft for his review is 1.
 
-20 Nov 2026: idea 4 (the player and the watcher) drafted as know-awareness, "Awareness is you": five verses (Shiva Sutras 1.1, Brihadaranyaka 3.7.23, Mandukya 7, Yoga Sutras 1.3, BPHS 3.12) and Ramana's question. Waiting on Sumant's review.
+20 Nov 2026: idea 4 (the player and the watcher) drafted as know-awareness, "Awareness is you": five verses (Shiva Sutras 1.1, Brihadaranyaka 3.7.23, Mandukya 7, Yoga Sutras 1.3, BPHS 3.12) and Ramana's question. Sumant approved it on 21 Nov 9:41 AM; scheduled Thu 26 Nov 2026 6:30 PM Toronto on Instagram (Buffer 6b01bc818bd84d5966fcbba2) and 8 PM on X (6b01bca08bd84d5966fcc962).

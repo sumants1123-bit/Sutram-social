@@ -677,6 +677,24 @@
    "title": "Week ahead on X (slides 1, 2, 4, 5)",
    "via": "buffer-x",
    "buffer_id": "6afe3fb04cace847b3840b48"
+  },
+  {
+   "id": "know-awareness",
+   "when": "2026-11-26T18:30:00-05:00",
+   "title": "Awareness is you: what the old texts say about the one who sees (8 slides, cream look, moving cover)",
+   "via": "buffer-instagram",
+   "buffer_id": "6b01bc818bd84d5966fcbba2",
+   "note": "assets at 9bb7ee5. Sumant approved 21 Nov 9:41 AM ('Sure lets do it') to my proposal of Thu 26 Nov 6:30 PM, the third of the trio after phil-observer (Sat 21) and phil-not-your-chart (Sun 22). Verse sources in tools/post_awareness.py.",
+   "made": "20 Nov 2026, about 6:15 PM Mexico City time, for Sumant's review; NOT scheduled.",
+   "asked": "Sumant, 20 Nov 5:30 PM: 'Awareness is your higher self, SELF. You. Does someone else say this?' 5:47 PM: 'make a one post on awareness about it. Mentioning all these scriptures in a nice, beautiful way, not too much text. Very beautiful. I don't know if astrology connects to awareness with any planet, so maybe add that.'",
+   "what": "8 slides, cream look, moving cover (Sun and a Moon lit on the side facing it). Shiva Sutras 1.1, Brihadaranyaka Upanishad 3.7.23, Mandukya Upanishad 7 (the fourth), Yoga Sutras 1.3, BPHS 3.12 (the Sun is the Self of all, the Moon is the mind: the astrology link), Ramana Maharshi's 'Who am I?' as a three-step try-it, close 'Thoughts come and go. You stay.' Caption adds Nisargadatta and Krishnamurti's push-back. Every verse opened 20 Nov (sources in tools/post_awareness.py)."
+  },
+  {
+   "id": "know-awareness-x",
+   "when": "2026-11-26T20:00:00-05:00",
+   "title": "Awareness is you on X (slides 1, 2, 6, 8)",
+   "via": "buffer-x",
+   "buffer_id": "6b01bca08bd84d5966fcc962"
   }
  ],
  "retired": [
@@ -1411,14 +1429,6 @@
    "review": "19 Nov 11:03 AM, Sumant: 'Absolutely loved it. Amazing job.' Two changes he asked for, both made the same morning: the ending points to the mind page (slide 10: 'See yours, and what it is really good for', asksutram.com/mind in a ring; caption and X draft too), and his own example of a moving mind is the new slide 8 ('I search while moving, I work while moving, brainstorm while moving'). Slide 9 now carries the study example. Ten slides.",
    "hold": "DO NOT SCHEDULE until Sumant says asksutram.com/mind is live: the last slide, the caption and the X draft all point to it. When he says it is live: open the link once, then schedule in the next free Instagram slot (Tue 24 Nov 10 AM was offered) and on X with slides 1, 3, 8, 10.",
    "open_question": "He said 'probably I have a moving mind' and named Chitra beside Dhanishta. The text lists Chitra as soft; his Moon's sign, Libra, is movable. The example slide names only the five moving stars. He was told on 19 Nov and asked to confirm."
-  },
-  "know-awareness": {
-   "made": "20 Nov 2026, about 6:15 PM Mexico City time, for Sumant's review; NOT scheduled.",
-   "asked": "Sumant, 20 Nov 5:30 PM: 'Awareness is your higher self, SELF. You. Does someone else say this?' 5:47 PM: 'make a one post on awareness about it. Mentioning all these scriptures in a nice, beautiful way, not too much text. Very beautiful. I don't know if astrology connects to awareness with any planet, so maybe add that.'",
-   "what": "8 slides, cream look, moving cover (Sun and a Moon lit on the side facing it). Shiva Sutras 1.1, Brihadaranyaka Upanishad 3.7.23, Mandukya Upanishad 7 (the fourth), Yoga Sutras 1.3, BPHS 3.12 (the Sun is the Self of all, the Moon is the mind: the astrology link), Ramana Maharshi's 'Who am I?' as a three-step try-it, close 'Thoughts come and go. You stay.' Caption adds Nisargadatta and Krishnamurti's push-back. Every verse opened 20 Nov (sources in tools/post_awareness.py).",
-   "overlap": "phil-observer (Sat 21 Nov 6:30 PM: two birds, Moon tastes, Sun watches) and phil-not-your-chart (Sun 22 Nov 10 AM: the knower of the field) are on the same theme, and the Rama post (Sat 21 Nov 10 AM) also says the Sun is the soul. Proposed to Sumant: run this as the third of the trio a few days later, Thu 26 Nov 6:30 PM Toronto.",
-   "hold": "DO NOT SCHEDULE until Sumant approves. Then: buffer_assets.py with --videos 1, Instagram post with metadata instagram type post, shouldShareToFeed true; X draft in x-drafts/know-awareness-x.txt (slides 1, 2, 6, 8).",
-   "also": "tools/look.py now loads the latin-ext font files (unicode-range only), so Sanskrit letters with marks render in Cormorant and Inter; tools/render_look.py has a 'sanskrit' field (italic serif line under a title or quote)."
   }
  },
  "mind_page": {
@@ -1427,7 +1437,7 @@
   "status": "Waiting for Sumant to run the prompt in Emergent. Nothing is live. Path proposed: asksutram.com/mind.",
   "free_now_paid_later": "He said a paid version is a different story for later. The page has no price and no gate."
  },
- "mind_series": "plan/mind_series.md: Sumant asked on 19 Nov for more posts on the mind (thought, feeling, patterns, the observer and the player). Seven ideas listed, none picked yet; the next to draft for his review is 'Five kinds of thought'.",
+ "mind_series": "plan/mind_series.md: Sumant asked on 19 Nov for more posts on the mind (thought, feeling, patterns, the observer and the player). Seven ideas listed, none picked yet; the next to draft for his review is 'Five kinds of thought'. Idea 4 (the player and the watcher) is know-awareness, scheduled Thu 26 Nov 6:30 PM (approved 21 Nov).",
  "lotus": {
   "asked": "Sumant, 19 Nov 2026 1:57 PM: the natal chart is you, a lotus; the houses are its petals (wisdom, emotion, courage, wealth, prosperity, happiness, peace); a dasha brings one petal forth and builds it, then the next dasha takes over; show it in a beautiful visual, then update the dasha visuals on asksutram.com (Emergent) to show and explain it this way.",
   "made_19nov": "tools/lotus_art.py draws it in the cream look: (1) You are a lotus, the twelve named petals in the four aims' colours; (2) what each petal holds; (3) the petals opening now, chapter and season; (4) one petal at a time, the nine chapters of a life; and a 13 second film of the lotus opening. The first draft was drawn on Sumant's own chart from the Your 2027 engine and sent to him privately; no chart data is in this repo.",
