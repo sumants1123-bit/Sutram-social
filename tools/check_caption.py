@@ -7,7 +7,8 @@ BANNED=['journey','delve','tapestry','realm','unlock','unleash','elevate','embra
 ok=True
 for f in sys.argv[1:]:
     t=open(f).read().strip(); low=t.lower(); issues=[]
-    if len(t)>2200: issues.append(f'{len(t)} chars (max 2200)')
+    n=len(t)+t.count('\n')   # 22 Nov 2026: Buffer refused a 2,197-character caption; it counts each line break as two
+    if n>2200: issues.append(f'{n} chars as Buffer counts them (max 2200)')
     if '—' in t: issues.append('em dash')
     hits=[w for w in BANNED if re.search(r'\b'+re.escape(w),low)]
     if hits: issues.append('banned words: '+', '.join(hits))
