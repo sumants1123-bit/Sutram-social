@@ -21,7 +21,9 @@ Ep 3 "The person of Time" stays on Wed 11 Nov. "Saturn, the teacher of time" sta
 - Read it in your chart: find your lagna lord and Moon on sutram.ca/chart. Which strand do they belong to?
 - Question: which strand runs strongest in you?
 
-### Ep 5, Wed 25 Nov: Two birds on one tree
+22 Nov 2026: part 5 on Wed 25 Nov is "Your body type" (planned as Ep 6 below), because phil-observer told the two birds story on Sat 21 Nov. "Two birds on one tree" moves later.
+
+### Ep 5, Wed 25 Nov: Two birds on one tree (moved later)
 - Story: Mundaka Upanishad 3.1.1-2 (first in Rig Veda 1.164.20). Two birds sit on one tree. One eats the fruit, sweet and bitter. The other doesn't eat; it watches. The eating bird grieves until it sees the watching one, and then its sorrow goes.
 - Map (Sutram's teaching map): the Moon is the bird that eats (the mind tasting life); the Sun is the bird that watches (the Self, "soul of Time" in Brihat Jataka 2.1). The tithi you were born on is the distance between them: on a new Moon the two birds sit together; on a full Moon the mind is as far as it goes, and fully lit. Tie-in: full Moon on 24 Nov (Kartik Purnima).
 - Checklist: caught in craving or scrolling? Take one breath and notice who is watching.
