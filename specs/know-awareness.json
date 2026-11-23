@@ -130,6 +130,19 @@
    "closing": "The answer is the one who asked"
   },
   {
+   "type": "text",
+   "label": "Another view · J. Krishnamurti",
+   "title": "The observer is\nthe observed",
+   "titlesize": 80,
+   "body": [
+    "The one who watches your anger is made of memory and habit, the same stuff as the anger.",
+    "Call it a higher self, and thought turns it into one more picture to hold on to."
+   ],
+   "bodysize": 36,
+   "closing": "Don’t believe either view. Look for yourself",
+   "closingsize": 42
+  },
+  {
    "type": "cta",
    "orbs": [
     {

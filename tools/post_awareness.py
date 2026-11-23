@@ -20,6 +20,13 @@ Every verse was opened on 20 Nov 2026 before use. The English on the slides is S
 - Ramana Maharshi's question "Who am I?", Nisargadatta Maharaj's book I Am That, and Krishnamurti's push-back (thought
   invents a permanent thinker, such as the atman or the soul; the observer is the observed: awakeningtoreality.com excerpts)
   appear in the caption only.
+- 22 Nov 2026, Sumant: the Krishnamurti part was "half-baked"; explain it more. Added slide 8 and three caption paragraphs, from
+  pages opened that day: kfoundation.org, Freedom from the Known ("The Observer Is Also an Image": the observer is made of memory,
+  experience and tradition, the past; the observer is the observed; a higher self is another image; awareness shows the truth;
+  the conflict ends when this is seen), The Awakening of Intelligence ("Can You Look Without the Observer?": the one who is
+  jealous is the jealousy; full attention without resistance; the conflict ends with the division), and awakeningtoreality.com
+  (Talks in New Delhi, 4th public talk, 7 Nov 1982: out of confusion we invent something permanent, the Absolute, Brahman, God,
+  when what we are is the movement of thought). Only one phrase is quoted: "the observer is the observed".
 
     python3 tools/post_awareness.py      # writes specs/know-awareness.json, captions/know-awareness.txt, x-drafts/know-awareness-x.txt
     python3 tools/render_look.py specs/know-awareness.json --motion
@@ -48,6 +55,10 @@ SPEC = dict(id=PID, look='day', kicker='Sutram · Know yourself', slides=[
     dict(type='rows', label='Try it · Ramana Maharshi’s question', title='Who am I?',
          items=[['1', 'Notice a thought'], ['2', 'Notice that you noticed it'], ['3', 'Ask who is noticing']],
          closing='The answer is the one who asked'),
+    dict(type='text', label='Another view · J. Krishnamurti', title='The observer is\nthe observed', titlesize=80,
+         body=['The one who watches your anger is made of memory and habit, the same stuff as the anger.',
+               'Call it a higher self, and thought turns it into one more picture to hold on to.'], bodysize=36,
+         closing='Don’t believe either view. Look for yourself', closingsize=42),
     dict(type='cta', orbs=[SUN(66)], title='Thoughts come and go.\nYou stay.', titlesize=86, subtitle='Awareness is you',
          lines=['Weekly newsletter at sutram.ca/newsletter']),
 ])
@@ -66,7 +77,15 @@ Yoga Sutras 1.3: then the seer rests in its own nature
 
 And in Jyotish, Brihat Parashara Hora Shastra 3.12: the Sun is the Self of all, the Moon is the mind. The Moon has no light of its own. It shines with the Sun's. So does your mind.
 
-Ramana Maharshi turned all of this into one question: Who am I? Nisargadatta Maharaj taught the same in I Am That. Krishnamurti pushed back: for him any higher self is one more idea made by thought. Look for yourself.
+Ramana Maharshi turned all of this into one question: Who am I? Nisargadatta Maharaj taught the same in I Am That.
+
+Krishnamurti pushed back, and his reason is worth slowing down for. When you watch your anger, it feels like there are two of you: the one who is angry and the one who watches. He asked what that watcher is made of. Memory, habit, likes and dislikes, all from the past, the same stuff as the anger. In his words, "the observer is the observed" (Freedom from the Known).
+
+That is why he would not call the watcher a higher self. For him a higher self is just another image the mind makes, and it is plain awareness that shows the truth (same book). Out of confusion, he said, we invent something permanent to hold on to, a Brahman or a God, when what we are is the movement of thought (talk in New Delhi, 7 November 1982).
+
+His way to look: when anger comes, don't split into the angry one and the judge. Stay with it fully, without fighting it. When the split ends, he said, the conflict ends (The Awakening of Intelligence).
+
+Do the old texts and Krishnamurti disagree? In words, yes. The Upanishads name the seer the Self. Krishnamurti refused to name it, so thought could not turn it into a thing. Sutram's reading: both send you to the same place. Look for the watcher yourself, and see what you find.
 
 Who is aware of this sentence?
 
