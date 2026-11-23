@@ -1,0 +1,118 @@
+{
+ "id": "sutra-10th-house",
+ "look": "day",
+ "kicker": "Sutra · The 10th house",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 104,
+     "rings": false
+    }
+   ],
+   "title": "The 10th house",
+   "titlesize": 112,
+   "subtitle": "Your work, your name, your place in the sky",
+   "motion": "rise"
+  },
+  {
+   "type": "quote",
+   "label": "Brihat Parashara Hora Shastra 11.11",
+   "quote": "From the 10th, read status,\nlivelihood, honour\nand the father.",
+   "quotesize": 68,
+   "sanskrit": "rājyaṃ cākāśaṃvṛttiṃ ca mānaṃ caiva pitustathā",
+   "sanskritsize": 34,
+   "body": [
+    "Parashara calls it the place in the sky."
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "stack",
+   "label": "What lives here",
+   "title": "Work and name",
+   "items": [
+    [
+     "Livelihood",
+     "What you do for a living"
+    ],
+    [
+     "Status",
+     "Your place among others"
+    ],
+    [
+     "Honour",
+     "What people call you when you leave the room"
+    ],
+    [
+     "The father",
+     "The 10th is read for him too"
+    ]
+   ],
+   "linesize": 40
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 60,
+     "rings": false
+    }
+   ],
+   "label": "Why the top",
+   "title": "The highest point\nof your chart",
+   "body": [
+    "At noon the Sun stands high in the sky. The 10th house is that high point: the part of you everyone can see."
+   ],
+   "note": "Sutram’s reading, built on the classical meanings"
+  },
+  {
+   "type": "text",
+   "label": "In your chart",
+   "title": "Who sits in\nyour 10th?",
+   "body": [
+    "Count to the 10th sign from your rising sign. The grahas there, and the lord of that sign, show the work you are known for."
+   ]
+  },
+  {
+   "type": "rows",
+   "label": "In real life",
+   "title": "Your name at work",
+   "items": [
+    [
+     "1",
+     "Do one thing people can point to"
+    ],
+    [
+     "2",
+     "Finish it where others can see"
+    ],
+    [
+     "3",
+     "Let it speak when you are not in the room"
+    ]
+   ]
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 46,
+     "rings": false
+    }
+   ],
+   "title": "What do people call\nyou at work?",
+   "titlesize": 86,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ]
+  }
+ ]
+}

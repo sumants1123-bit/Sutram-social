@@ -1,0 +1,204 @@
+{
+ "id": "week-2026-11-29",
+ "look": "day",
+ "kicker": "Week ahead · 30 November to 6 December",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "rahu",
+     "r": 84
+    },
+    {
+     "kind": "ketu",
+     "r": 72
+    }
+   ],
+   "orbgap": 60,
+   "title": "Rahu and Ketu\nchange signs",
+   "titlesize": 104,
+   "subtitle": "Saturday, about noon",
+   "motion": "rise"
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "rahu",
+     "r": 52
+    },
+    {
+     "kind": "ketu",
+     "r": 46
+    }
+   ],
+   "orbgap": 150,
+   "label": "Saturday 5 December, about noon",
+   "title": "Into Capricorn\nand Cancer",
+   "body": [
+    "The magician (Rahu) walks backward into Capricorn, and the monk (Ketu) into Cancer. They stay about a year and a half."
+   ]
+  },
+  {
+   "type": "text",
+   "label": "Rao’s Nadi table",
+   "title": "One grows,\none narrows",
+   "body": [
+    "Rahu stands for bigness, Ketu for smallness. Where Rahu lands, a matter grows. Where Ketu lands, it gets smaller and simpler."
+   ],
+   "note": "R. G. Rao, Fundamentals, ch. 7 · Sutram’s reading"
+  },
+  {
+   "type": "grid",
+   "label": "From Saturday",
+   "title": "Find your Moon sign",
+   "cells": [
+    [
+     "Aries Moon",
+     "Rahu 10th · Ketu 4th",
+     "More: work, standing\nLess: home"
+    ],
+    [
+     "Taurus Moon",
+     "Rahu 9th · Ketu 3rd",
+     "More: luck, teachers\nLess: effort, short trips"
+    ],
+    [
+     "Gemini Moon",
+     "Rahu 8th · Ketu 2nd",
+     "More: quiet change\nLess: savings, family"
+    ],
+    [
+     "Cancer Moon",
+     "Rahu 7th · Ketu 1st",
+     "More: partner, deals\nLess: you in focus"
+    ],
+    [
+     "Leo Moon",
+     "Rahu 6th · Ketu 12th",
+     "More: routine, debts\nLess: spending, rest"
+    ],
+    [
+     "Virgo Moon",
+     "Rahu 5th · Ketu 11th",
+     "More: kids, study, romance\nLess: gains, friends"
+    ]
+   ],
+   "celllab": 21,
+   "cellsize": 44,
+   "celltext": 30,
+   "cellpad": 22,
+   "note": "Count Capricorn and Cancer from your Moon sign"
+  },
+  {
+   "type": "grid",
+   "label": "From Saturday",
+   "title": "Find your Moon sign",
+   "cells": [
+    [
+     "Libra Moon",
+     "Rahu 4th · Ketu 10th",
+     "More: home\nLess: work, standing"
+    ],
+    [
+     "Scorpio Moon",
+     "Rahu 3rd · Ketu 9th",
+     "More: effort, short trips\nLess: luck, teachers"
+    ],
+    [
+     "Sagittarius Moon",
+     "Rahu 2nd · Ketu 8th",
+     "More: savings, family\nLess: quiet change"
+    ],
+    [
+     "Capricorn Moon",
+     "Rahu 1st · Ketu 7th",
+     "More: you in focus\nLess: partner, deals"
+    ],
+    [
+     "Aquarius Moon",
+     "Rahu 12th · Ketu 6th",
+     "More: spending, rest\nLess: routine, debts"
+    ],
+    [
+     "Pisces Moon",
+     "Rahu 11th · Ketu 5th",
+     "More: gains, friends\nLess: kids, study, romance"
+    ]
+   ],
+   "celllab": 21,
+   "cellsize": 44,
+   "celltext": 30,
+   "cellpad": 22,
+   "note": "Don’t know your Moon sign? Ask at asksutram.com"
+  },
+  {
+   "type": "stack",
+   "label": "Also this week",
+   "title": "Mark your calendar",
+   "linesize": 36,
+   "items": [
+    [
+     "Wednesday, about 7 AM",
+     "The messenger (Mercury) walks into Scorpio and joins the king (Sun)"
+    ],
+    [
+     "All week",
+     "Saturn and Jupiter slow toward a stop: Saturn turns forward on 10 December, Jupiter backward on 12 December"
+    ],
+    [
+     "Friday, about 12:30 PM",
+     "The Moon walks into Libra and meets the lover (Venus), at home there"
+    ],
+    [
+     "Next Tuesday, about 8 PM",
+     "New Moon in Scorpio"
+    ]
+   ]
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "rahu",
+     "r": 50
+    },
+    {
+     "kind": "ketu",
+     "r": 44
+    }
+   ],
+   "orbgap": 40,
+   "label": "In real life",
+   "title": "Before Saturday",
+   "body": [
+    "Notice what you keep chasing, and what you are ready to put down."
+   ],
+   "closing": "Rahu chases. Ketu lets go"
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "rahu",
+     "r": 44
+    },
+    {
+     "kind": "ketu",
+     "r": 38
+    }
+   ],
+   "orbgap": 24,
+   "title": "Where do Rahu and\nKetu land for you?",
+   "titlesize": 84,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Monday · Rule 15"
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "id": "lesson24-standing-still",
+ "look": "day",
+ "kicker": "Lesson 24 · Nadi rules",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 72
+    },
+    {
+     "kind": "jupiter",
+     "r": 84
+    }
+   ],
+   "orbgap": 40,
+   "title": "Standing still",
+   "titlesize": 112,
+   "subtitle": "Two grahas stop in December"
+  },
+  {
+   "type": "text",
+   "label": "Rule 14",
+   "title": "Before it turns,\nit stops",
+   "body": [
+    "A graha about to change direction slows down and seems to stand still for days."
+   ],
+   "closing": "Nadi counts that stop as a key factor in its strength",
+   "note": "Jitender Kumar, Nadi Jyotisha, chapter 3"
+  },
+  {
+   "type": "cast",
+   "label": "In the sky",
+   "title": "Two stops,\ntwo days apart",
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "saturn",
+       "r": 36
+      }
+     ],
+     "head": "The auditor (Saturn)",
+     "line": "Stops in Pisces and turns forward on Thursday 10 December, about 8 PM."
+    },
+    {
+     "orbs": [
+      {
+       "kind": "jupiter",
+       "r": 42
+      }
+     ],
+     "head": "The teacher (Jupiter)",
+     "line": "Stops in Leo and turns backward on Saturday 12 December, about 8 PM."
+    }
+   ]
+  },
+  {
+   "type": "rows",
+   "label": "Saturn, slower every day",
+   "title": "How far it moves",
+   "keyw": 250,
+   "items": [
+    [
+     "Mon 23 Nov",
+     "About 2 minutes of arc a day"
+    ],
+    [
+     "Sat 5 Dec",
+     "About half a minute a day"
+    ],
+    [
+     "Thu 10 Dec",
+     "Still, then forward"
+    ]
+   ],
+   "note": "A minute of arc is a sixtieth of a degree"
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 46
+    },
+    {
+     "kind": "jupiter",
+     "r": 52
+    }
+   ],
+   "orbgap": 30,
+   "label": "What stands still",
+   "title": "Work and guidance\nweigh more",
+   "body": [
+    "Saturn stands for work, Jupiter for guides and teachers. While they stand still, those matters move slowly and count for more."
+   ],
+   "note": "Sutram’s reading, built on the rule"
+  },
+  {
+   "type": "text",
+   "label": "In your chart",
+   "title": "Inside the\nbackward stretch",
+   "body": [
+    "Saturn walked back over Pisces 21° to 14°. Jupiter will walk back over Leo 3° to Cancer 23° by April. Birth grahas in those stretches feel them more."
+   ],
+   "bodysize": 38,
+   "note": "Jitender Kumar, Nadi Jyotisha, chapter 4"
+  },
+  {
+   "type": "text",
+   "label": "In real life",
+   "title": "Give slow things\na few more days",
+   "body": [
+    "Big decisions about work and study can wait for the turn."
+   ]
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 36
+    },
+    {
+     "kind": "jupiter",
+     "r": 40
+    }
+   ],
+   "orbgap": 20,
+   "title": "Which of your grahas\nfeels the stop?",
+   "titlesize": 84,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Monday · Rule 15"
+  }
+ ]
+}

@@ -1,0 +1,143 @@
+{
+ "id": "sutra-11th-house",
+ "look": "day",
+ "kicker": "Sutra · The 11th house",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "venus",
+     "r": 92
+    },
+    {
+     "kind": "mercury",
+     "r": 70
+    }
+   ],
+   "orbgap": 40,
+   "title": "The 11th house",
+   "titlesize": 112,
+   "subtitle": "Where your gains come from",
+   "motion": "rise"
+  },
+  {
+   "type": "quote",
+   "label": "Brihat Parashara Hora Shastra 11.12",
+   "quote": "Read income and growth\nfrom the house of gains.",
+   "quotesize": 72,
+   "sanskrit": "āyaṃ vṛddhiṃ paśūnāṃ ca bhavasthānānnirīkṣaṇam",
+   "sanskritsize": 34,
+   "body": [
+    "Parashara adds livestock, the wealth of his day."
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "stack",
+   "label": "What lives here",
+   "title": "Gains of every kind",
+   "items": [
+    [
+     "Income",
+     "Money that comes in, from any side"
+    ],
+    [
+     "Growth",
+     "What keeps adding up over the years"
+    ],
+    [
+     "Many kinds of gain",
+     "Things and chances that come your way"
+    ]
+   ],
+   "linesize": 42
+  },
+  {
+   "type": "text",
+   "label": "Why after the 10th",
+   "title": "What your work\nbrings home",
+   "body": [
+    "The 10th house is your work. The 11th comes right after it, so it shows what your work brings back."
+   ],
+   "note": "Sutram’s reading, built on the classical meanings"
+  },
+  {
+   "type": "cast",
+   "label": "Two grahas to check",
+   "title": "Wealth and friends",
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "venus",
+       "r": 46
+      }
+     ],
+     "head": "The lover (Venus)",
+     "line": "In Nadi she stands for wealth."
+    },
+    {
+     "orbs": [
+      {
+       "kind": "mercury",
+       "r": 40
+      }
+     ],
+     "head": "The messenger (Mercury)",
+     "line": "He stands for friends and business."
+    }
+   ],
+   "note": "R. G. Rao, Fundamentals, chapter 7"
+  },
+  {
+   "type": "text",
+   "label": "In your chart",
+   "title": "Who sits in\nyour 11th?",
+   "body": [
+    "Count to the 11th sign from your rising sign. The grahas there, and the lord of that sign, show how gains reach you."
+   ]
+  },
+  {
+   "type": "rows",
+   "label": "In real life",
+   "title": "Your income has\na network",
+   "items": [
+    [
+     "1",
+     "Most gains arrive through someone"
+    ],
+    [
+     "2",
+     "A referral, a client, a friend of a friend"
+    ],
+    [
+     "3",
+     "This week, thank one person who sent work your way"
+    ]
+   ]
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "venus",
+     "r": 44
+    },
+    {
+     "kind": "mercury",
+     "r": 36
+    }
+   ],
+   "orbgap": 24,
+   "title": "Where do your\ngains come from?",
+   "titlesize": 86,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ]
+  }
+ ]
+}

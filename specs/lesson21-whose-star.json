@@ -1,0 +1,117 @@
+{
+ "id": "lesson21-whose-star",
+ "look": "day",
+ "kicker": "Lesson 21 · Nadi rules",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "art": {
+    "kind": "wheel",
+    "size": 500,
+    "mode": "pick",
+    "pick": "Anuradha"
+   },
+   "title": "Whose star\nis it in?",
+   "titlesize": 104,
+   "subtitle": "Every graha works for a star lord",
+   "subsize": 46
+  },
+  {
+   "type": "text",
+   "label": "Rule 11",
+   "title": "27 stars, 9 lords",
+   "body": [
+    "The Moon’s road is cut into 27 stars, the nakshatras. Each star has a lord, one of the nine grahas."
+   ],
+   "closing": "Three rounds of the same nine lords"
+  },
+  {
+   "type": "rows",
+   "label": "How to read it",
+   "title": "Three steps",
+   "items": [
+    [
+     "1",
+     "Find the star the graha stands in"
+    ],
+    [
+     "2",
+     "Find that star’s lord"
+    ],
+    [
+     "3",
+     "Read the graha through its lord and the house it sits in"
+    ]
+   ]
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 58,
+     "rings": false
+    },
+    {
+     "kind": "saturn",
+     "r": 42
+    }
+   ],
+   "orbgap": 30,
+   "label": "This week",
+   "title": "The king works\nfor the auditor",
+   "body": [
+    "The Sun stands in Anuradha, one of Saturn’s stars. Read the king through the auditor: bosses want patience and careful work."
+   ]
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 54
+    }
+   ],
+   "label": "In its own star",
+   "title": "Saturn answers\nto Saturn",
+   "body": [
+    "Saturn stands in Uttara Bhadrapada, one of its own stars, so it carries its own work."
+   ],
+   "closing": "Slow, steady, checked twice"
+  },
+  {
+   "type": "text",
+   "label": "In your chart",
+   "title": "Your birth star\nstarts your clock",
+   "body": [
+    "The star your Moon was born in has a lord. That lord runs the first dasha of your life."
+   ]
+  },
+  {
+   "type": "text",
+   "label": "In real life",
+   "title": "Like a job title",
+   "body": [
+    "A sales manager still reports to someone. Whose star a graha stands in tells you who it reports to."
+   ]
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 46
+    }
+   ],
+   "title": "Whose star is\nyour Moon in?",
+   "titlesize": 86,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Wednesday · Rule 12, start with its graha"
+  }
+ ]
+}

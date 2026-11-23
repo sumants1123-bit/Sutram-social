@@ -1,0 +1,106 @@
+{
+ "id": "lesson23-backward",
+ "look": "night",
+ "kicker": "Lesson 23 · Nadi rules",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 92
+    }
+   ],
+   "title": "Walking backward",
+   "titlesize": 108,
+   "subtitle": "Why the fruits of the past come sooner"
+  },
+  {
+   "type": "text",
+   "label": "Rule 13",
+   "title": "The past comes\nback sooner",
+   "body": [
+    "When a graha walks backward, the fruits of past actions come quickly."
+   ],
+   "note": "Jitender Kumar, Nadi Jyotisha, chapter 4"
+  },
+  {
+   "type": "text",
+   "label": "What backward means",
+   "title": "A trick of the view",
+   "body": [
+    "Seen from Earth, a graha now and then slows, stops and seems to walk back through the signs."
+   ],
+   "closing": "The classics call it retrograde"
+  },
+  {
+   "type": "text",
+   "label": "A picture for it",
+   "title": "Looking back",
+   "body": [
+    "Someone walking home looks back, sees a person in trouble, and turns round to help. Walking backward is that turn."
+   ]
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 58
+    }
+   ],
+   "label": "In the sky now",
+   "title": "The auditor\nwalks back",
+   "body": [
+    "Saturn has walked backward in Pisces since late July. It turns forward on Thursday 10 December, about 8 PM."
+   ],
+   "closing": "Old work comes back for a second look"
+  },
+  {
+   "type": "stack",
+   "label": "Nadi Jyotisha · chapter 4",
+   "title": "Who walks back",
+   "items": [
+    [
+     "Never",
+     "The Sun and the Moon"
+    ],
+    [
+     "Now and then",
+     "Mars, Mercury, Jupiter, Venus and Saturn"
+    ],
+    [
+     "Next to turn",
+     "Jupiter on 12 December, Mars on 10 January"
+    ]
+   ],
+   "linesize": 40
+  },
+  {
+   "type": "text",
+   "label": "In your chart",
+   "title": "An R beside\na graha",
+   "body": [
+    "A graha marked R in your birth chart was walking backward when you were born. By this rule its fruits come sooner."
+   ]
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 40
+    }
+   ],
+   "title": "Which of your grahas\nwalks backward?",
+   "titlesize": 84,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Friday · Rule 14, standing still"
+  }
+ ]
+}

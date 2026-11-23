@@ -1,0 +1,152 @@
+{
+ "id": "lesson20-doorway-c",
+ "look": "day",
+ "kicker": "Lesson 20 · Nadi rules",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "art": {
+    "kind": "wheel",
+    "size": 500,
+    "lit": [
+     "Ashlesha",
+     "Magha",
+     "Jyeshtha",
+     "Mula",
+     "Revati",
+     "Ashwini"
+    ],
+    "mode": "pick",
+    "pick": "Magha",
+    "quarters": true,
+    "dot": true
+   },
+   "title": "Where water\nmeets fire",
+   "titlesize": 104,
+   "subtitle": "The doorway the classics call Gandanta",
+   "subsize": 46
+  },
+  {
+   "type": "text",
+   "label": "Rule 10",
+   "title": "Three doorways",
+   "body": [
+    "Three times round the zodiac a water sign ends and a fire sign begins."
+   ],
+   "closing": "Cancer to Leo, Scorpio to Sagittarius, Pisces to Aries"
+  },
+  {
+   "type": "text",
+   "label": "The knot",
+   "title": "Gandanta",
+   "titlesize": 96,
+   "body": [
+    "The last degrees of a water sign and the first of a fire sign. A graha here stands between two worlds."
+   ],
+   "closing": "What is ending and what is starting get tangled"
+  },
+  {
+   "type": "rows",
+   "label": "How to read it",
+   "title": "Is it in a doorway?",
+   "items": [
+    [
+     "1",
+     "Is the graha in a water or a fire sign?"
+    ],
+    [
+     "2",
+     "Is it near the end of water or the start of fire?"
+    ],
+    [
+     "3",
+     "Then it stands in a doorway"
+    ]
+   ]
+  },
+  {
+   "type": "cast",
+   "label": "Monday 23 November",
+   "title": "Two in Leo’s\ndoorway",
+   "headsize": 54,
+   "linesize": 34,
+   "iconw": 140,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "ketu",
+       "r": 40
+      }
+     ],
+     "head": "The monk (Ketu)",
+     "line": "Just over half a degree into Leo, walking backward toward Cancer."
+    },
+    {
+     "orbs": [
+      {
+       "kind": "jupiter",
+       "r": 46
+      }
+     ],
+     "head": "The teacher (Jupiter)",
+     "line": "About 2 degrees into Leo, and slowing down."
+    }
+   ],
+   "note": "The soldier (Mars) walked out on Thursday 19 November"
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 52
+    },
+    {
+     "kind": "ketu",
+     "r": 42
+    }
+   ],
+   "orbgap": 40,
+   "label": "Coming up",
+   "title": "Both stay\nat the door",
+   "body": [
+    "On Saturday 5 December, about noon, the monk walks back through it into Cancer.",
+    "On 12 December the teacher stops there and turns backward."
+   ],
+   "bodysize": 38
+  },
+  {
+   "type": "text",
+   "label": "In real life",
+   "title": "Finish the old first",
+   "body": [
+    "Like closing one tab before you open the next."
+   ],
+   "closing": "Then start the new"
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 40
+    },
+    {
+     "kind": "ketu",
+     "r": 34
+    }
+   ],
+   "orbgap": 24,
+   "title": "Is any graha in your\nchart in a doorway?",
+   "titlesize": 80,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Tuesday · Rule 11, whose star"
+  }
+ ]
+}

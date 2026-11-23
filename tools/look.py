@@ -36,7 +36,7 @@ def css(P):
 .foot .s{{font:600 36px/1 'Cormorant Garamond';color:{P['ink']}}} .foot .u{{font:600 15px/1 Inter;letter-spacing:.34em;color:{P['mute']};margin-top:10px}}
 .body{{position:absolute;top:128px;bottom:176px;left:72px;right:72px;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center}}
 .lab{{font:600 23px/1.25 Inter;letter-spacing:.26em;text-transform:uppercase;color:{P['terra']}}}
-.t{{font-family:'Cormorant Garamond';font-weight:600;color:{P['ink']};line-height:1.02;letter-spacing:-.005em;text-wrap:balance}}
+.t{{font-family:'Cormorant Garamond';font-weight:600;font-variant-numeric:lining-nums;color:{P['ink']};line-height:1.02;letter-spacing:-.005em;text-wrap:balance}}
 .h1{{font-size:118px}} .h2{{font-size:90px}} .h3{{font-size:72px}}
 .sub{{font:italic 500 46px/1.18 'Cormorant Garamond';color:{P['terra']};text-wrap:balance}}
 .p{{font:400 40px/1.42 Inter;color:{P['ink2']};text-wrap:pretty}}

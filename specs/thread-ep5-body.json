@@ -1,0 +1,216 @@
+{
+ "id": "thread-ep5-body",
+ "look": "day",
+ "kicker": "The Thread · Episode 5",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 70,
+     "rings": false
+    },
+    {
+     "kind": "jupiter",
+     "r": 64
+    },
+    {
+     "kind": "saturn",
+     "r": 52
+    }
+   ],
+   "orbgap": 30,
+   "title": "Your body type",
+   "titlesize": 112,
+   "subtitle": "Three doshas, and the grahas that carry them",
+   "motion": "rise"
+  },
+  {
+   "type": "text",
+   "label": "Ayurveda",
+   "title": "Three doshas",
+   "body": [
+    "Ayurveda, India’s old science of life, says three doshas run the body: vata, pitta and kapha."
+   ],
+   "closing": "Each of us is born with our own mix"
+  },
+  {
+   "type": "stack",
+   "label": "The three",
+   "title": "Air, fire and water",
+   "items": [
+    [
+     "Vata · air and space",
+     "Movement, dryness, a busy mind"
+    ],
+    [
+     "Pitta · fire",
+     "Heat, drive, a quick temper"
+    ],
+    [
+     "Kapha · earth and water",
+     "Steadiness, weight, calm"
+    ]
+   ],
+   "linesize": 42
+  },
+  {
+   "type": "cast",
+   "label": "Brihat Parashara Hora Shastra · ch. 3",
+   "title": "One dosha each",
+   "headsize": 50,
+   "linesize": 34,
+   "iconw": 120,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "sun",
+       "r": 36,
+       "rings": false
+      }
+     ],
+     "head": "The king (Sun)",
+     "line": "Pitta"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "mars",
+       "r": 32
+      }
+     ],
+     "head": "The soldier (Mars)",
+     "line": "Pitta"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "jupiter",
+       "r": 38
+      }
+     ],
+     "head": "The teacher (Jupiter)",
+     "line": "Kapha"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "saturn",
+       "r": 28
+      }
+     ],
+     "head": "The auditor (Saturn)",
+     "line": "Vata"
+    }
+   ]
+  },
+  {
+   "type": "cast",
+   "label": "Brihat Parashara Hora Shastra · ch. 3",
+   "title": "Two, or all three",
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "moon",
+       "r": 40
+      }
+     ],
+     "head": "The mother (Moon)",
+     "line": "Vata and kapha"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "venus",
+       "r": 38
+      }
+     ],
+     "head": "The lover (Venus)",
+     "line": "Kapha and vata"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "mercury",
+       "r": 34
+      }
+     ],
+     "head": "The messenger (Mercury)",
+     "line": "All three"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "label": "In your chart",
+   "title": "Your rising lord\nand your Moon",
+   "body": [
+    "Find them in your free chart. Which dosha do they lean to?"
+   ]
+  },
+  {
+   "type": "rows",
+   "label": "In real life",
+   "title": "This winter",
+   "keyw": 190,
+   "items": [
+    [
+     "Vata",
+     "Scattered? Warm food and a fixed bedtime"
+    ],
+    [
+     "Pitta",
+     "Running hot? Cool down before you reply"
+    ],
+    [
+     "Kapha",
+     "Heavy? Move first thing in the morning"
+    ]
+   ],
+   "note": "Sutram’s reading. Not medical advice"
+  },
+  {
+   "type": "quote",
+   "label": "Ashtanga Hridayam · Sutrasthana 1.6",
+   "quote": "In brief, the doshas\nare three.",
+   "quotesize": 80,
+   "sanskrit": "vāyuḥ pittaṃ kaphaśceti trayo doṣāḥ samāsataḥ",
+   "sanskritsize": 36,
+   "body": [
+    "Vata, pitta and kapha."
+   ],
+   "bodysize": 38
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 40,
+     "rings": false
+    },
+    {
+     "kind": "jupiter",
+     "r": 36
+    },
+    {
+     "kind": "saturn",
+     "r": 30
+    }
+   ],
+   "orbgap": 20,
+   "title": "Which one sounds\nlike you?",
+   "titlesize": 88,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Next Wednesday · The Thread, part 6"
+  }
+ ]
+}

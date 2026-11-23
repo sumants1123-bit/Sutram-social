@@ -1,0 +1,217 @@
+{
+ "id": "sky-2026-11-27",
+ "look": "night",
+ "kicker": "Read the sky · 27 November",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 122,
+     "illum": 0.83,
+     "waxing": false
+    }
+   ],
+   "title": "The Moon\ncomes home",
+   "titlesize": 108,
+   "subtitle": "Friday about 9 PM, into Cancer",
+   "motion": "rise"
+  },
+  {
+   "type": "text",
+   "label": "Friday 27 November",
+   "title": "Home in Cancer",
+   "body": [
+    "At about 9 PM Toronto time the mother (the Moon) walks into Cancer, her own sign, and stays until Sunday night."
+   ],
+   "closing": "At home, a graha is generally strong",
+   "note": "Jitender Kumar, Nadi Jyotisha, chapter 5"
+  },
+  {
+   "type": "cast",
+   "label": "Nadi rule 6",
+   "title": "The water family",
+   "headsize": 50,
+   "linesize": 33,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "moon",
+       "r": 40,
+       "illum": 0.83,
+       "waxing": false
+      }
+     ],
+     "head": "The mother in Cancer",
+     "line": "Home, where feelings run warm."
+    },
+    {
+     "orbs": [
+      {
+       "kind": "sun",
+       "r": 38,
+       "rings": false
+      }
+     ],
+     "head": "The king in Scorpio",
+     "line": "Another water sign: the boss is family."
+    },
+    {
+     "orbs": [
+      {
+       "kind": "saturn",
+       "r": 30
+      }
+     ],
+     "head": "The auditor in Pisces",
+     "line": "Water too, walking backward to recheck old work."
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "jupiter",
+     "r": 56
+    },
+    {
+     "kind": "mars",
+     "r": 44
+    }
+   ],
+   "orbgap": 30,
+   "label": "Nadi rule 2",
+   "title": "Who walks ahead",
+   "body": [
+    "In Leo, the sign just ahead of her, walk the teacher (Jupiter) and the soldier (Mars)."
+   ],
+   "closing": "Good advice and a push are close by"
+  },
+  {
+   "type": "grid",
+   "label": "This weekend",
+   "title": "Find your Moon sign",
+   "cells": [
+    [
+     "Aries Moon",
+     "4th house",
+     "Home, mother, repairs"
+    ],
+    [
+     "Taurus Moon",
+     "3rd house",
+     "Effort, short trips"
+    ],
+    [
+     "Gemini Moon",
+     "2nd house",
+     "Savings, family, food"
+    ],
+    [
+     "Cancer Moon",
+     "1st house",
+     "You in focus"
+    ],
+    [
+     "Leo Moon",
+     "12th house",
+     "Spending, travel, rest"
+    ],
+    [
+     "Virgo Moon",
+     "11th house",
+     "Gains and good friends"
+    ]
+   ],
+   "celllab": 22,
+   "cellsize": 62,
+   "celltext": 33,
+   "cellpad": 28,
+   "note": "Count Cancer from the sign your Moon was in at birth"
+  },
+  {
+   "type": "grid",
+   "label": "This weekend",
+   "title": "Find your Moon sign",
+   "cells": [
+    [
+     "Libra Moon",
+     "10th house",
+     "Work and standing"
+    ],
+    [
+     "Scorpio Moon",
+     "9th house",
+     "Luck, teachers, travel"
+    ],
+    [
+     "Sagittarius Moon",
+     "8th house",
+     "Quiet change"
+    ],
+    [
+     "Capricorn Moon",
+     "7th house",
+     "Partner, clients, deals"
+    ],
+    [
+     "Aquarius Moon",
+     "6th house",
+     "Routine, debts, fitness"
+    ],
+    [
+     "Pisces Moon",
+     "5th house",
+     "Kids, study, romance"
+    ]
+   ],
+   "celllab": 22,
+   "cellsize": 62,
+   "celltext": 33,
+   "cellpad": 28,
+   "note": "Don’t know your Moon sign? Ask at asksutram.com"
+  },
+  {
+   "type": "rows",
+   "label": "In real life",
+   "title": "This weekend",
+   "items": [
+    [
+     "1",
+     "Cook something at home"
+    ],
+    [
+     "2",
+     "Call your mother, or someone who mothers you"
+    ],
+    [
+     "3",
+     "Rest before Monday"
+    ]
+   ]
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 50,
+     "illum": 0.83,
+     "waxing": false
+    }
+   ],
+   "title": "Where does the Moon\nland for you?",
+   "titlesize": 84,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Sunday · The week ahead"
+  }
+ ]
+}

@@ -1,0 +1,156 @@
+{
+ "id": "lesson22-its-graha",
+ "look": "night",
+ "kicker": "Lesson 22 · Nadi rules",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 70
+    },
+    {
+     "kind": "venus",
+     "r": 66
+    },
+    {
+     "kind": "mercury",
+     "r": 54
+    }
+   ],
+   "orbgap": 30,
+   "title": "Start with\nits graha",
+   "titlesize": 110,
+   "subtitle": "Every part of life has a graha that carries it",
+   "motion": "rise"
+  },
+  {
+   "type": "text",
+   "label": "Rule 12",
+   "title": "Find the carrier\nfirst",
+   "body": [
+    "To study one matter of life, Nadi first finds the graha that signifies it, its karaka. Then it reads everything from there."
+   ],
+   "note": "R. G. Rao, Bhrigu Nandi Nadi, introduction"
+  },
+  {
+   "type": "cast",
+   "label": "Rao’s table · family",
+   "title": "Home and family",
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "sun",
+       "r": 40,
+       "rings": false
+      }
+     ],
+     "head": "The Sun",
+     "line": "Your father"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "moon",
+       "r": 40
+      }
+     ],
+     "head": "The Moon",
+     "line": "Your mother"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "jupiter",
+       "r": 40
+      }
+     ],
+     "head": "Jupiter",
+     "line": "Children, teachers and guides"
+    }
+   ]
+  },
+  {
+   "type": "cast",
+   "label": "Rao’s table · work and life",
+   "title": "Work and life",
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "saturn",
+       "r": 32
+      }
+     ],
+     "head": "Saturn",
+     "line": "Your work"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "mercury",
+       "r": 34
+      }
+     ],
+     "head": "Mercury",
+     "line": "Education and business"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "venus",
+       "r": 38
+      }
+     ],
+     "head": "Venus",
+     "line": "Wealth, and the graha looked to for marriage"
+    }
+   ]
+  },
+  {
+   "type": "text",
+   "label": "Then look around it",
+   "title": "Who is near\nyour graha?",
+   "body": [
+    "Who sits with it, who stands behind and ahead of it, and who faces it."
+   ],
+   "closing": "Rules 1, 2 and 4 do the rest"
+  },
+  {
+   "type": "text",
+   "label": "In your chart",
+   "title": "One question,\none graha",
+   "body": [
+    "Asking about work? Find Saturn in your chart first. Asking about study? Find Mercury."
+   ]
+  },
+  {
+   "type": "text",
+   "label": "In real life",
+   "title": "Call the right desk",
+   "body": [
+    "A question about a bill goes to billing. A question about a delivery goes to shipping. Each part of life has its own desk."
+   ]
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "saturn",
+     "r": 40
+    }
+   ],
+   "title": "Which graha carries\nyour question?",
+   "titlesize": 84,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Thursday · Rule 13, walking backward"
+  }
+ ]
+}

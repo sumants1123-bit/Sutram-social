@@ -1,0 +1,194 @@
+{
+ "id": "avatar-krishna-moon",
+ "look": "day",
+ "kicker": "Sutram · Avatars and grahas",
+ "foot": "word",
+ "border": "arcs",
+ "slides": [
+  {
+   "type": "cover",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 116
+    }
+   ],
+   "title": "Krishna is\nthe Moon",
+   "titlesize": 108,
+   "subtitle": "Why the old texts pair the flute player and the mind",
+   "motion": "rise"
+  },
+  {
+   "type": "grid",
+   "cols": 3,
+   "label": "Brihat Parashara Hora Shastra · ch. 2",
+   "title": "Nine avatars, nine grahas",
+   "titlesize": 72,
+   "cells": [
+    [
+     "Sun",
+     "Rama",
+     "",
+     false
+    ],
+    [
+     "Moon",
+     "Krishna",
+     "",
+     true
+    ],
+    [
+     "Mars",
+     "Narasimha",
+     "",
+     false
+    ],
+    [
+     "Mercury",
+     "Buddha",
+     "",
+     false
+    ],
+    [
+     "Jupiter",
+     "Vamana",
+     "",
+     false
+    ],
+    [
+     "Venus",
+     "Parashurama",
+     "",
+     false
+    ],
+    [
+     "Saturn",
+     "Kurma",
+     "",
+     false
+    ],
+    [
+     "Rahu",
+     "Varaha",
+     "",
+     false
+    ],
+    [
+     "Ketu",
+     "Matsya",
+     "",
+     false
+    ]
+   ],
+   "cellorbs": [
+    {
+     "kind": "sun",
+     "r": 36,
+     "rings": false
+    },
+    {
+     "kind": "moon",
+     "r": 36
+    },
+    {
+     "kind": "mars",
+     "r": 36
+    },
+    {
+     "kind": "mercury",
+     "r": 36
+    },
+    {
+     "kind": "jupiter",
+     "r": 36
+    },
+    {
+     "kind": "venus",
+     "r": 36
+    },
+    {
+     "kind": "saturn",
+     "r": 30
+    },
+    {
+     "kind": "rahu",
+     "r": 36
+    },
+    {
+     "kind": "ketu",
+     "r": 36
+    }
+   ],
+   "cellsize": 50,
+   "celllab": 20,
+   "cellpad": 20,
+   "closing": "Parashara pairs them, one by one",
+   "closingsize": 44
+  },
+  {
+   "type": "text",
+   "label": "The story",
+   "title": "Born under\nthe Moon’s star",
+   "body": [
+    "Krishna was born under Rohini, a star in Taurus, the sign where the Moon is at her best."
+   ],
+   "note": "Bhagavata Purana 10.3.1"
+  },
+  {
+   "type": "text",
+   "label": "His family",
+   "title": "The Moon’s\nfamily line",
+   "body": [
+    "His people, the Yadus, came down from Soma, the Moon. Rama, the Sun’s avatar, came from the Sun’s line."
+   ],
+   "note": "Bhagavata Purana 10.1.1"
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 66
+    }
+   ],
+   "label": "Brihat Parashara Hora Shastra · ch. 3",
+   "title": "Kind eyes,\nsweet words",
+   "body": [
+    "Parashara draws the Moon with kind eyes, sweet speech and a restless nature. The Moon is also the mind."
+   ],
+   "closing": "The child everyone loved"
+  },
+  {
+   "type": "text",
+   "label": "In your chart",
+   "title": "Your Moon’s house",
+   "body": [
+    "The house of your Moon shows where your heart goes, and where people feel at home with you."
+   ],
+   "note": "Sutram’s reading, built on the classical meanings"
+  },
+  {
+   "type": "text",
+   "label": "In real life",
+   "title": "Try it today",
+   "closing": "Say one kind, true thing you usually keep to yourself",
+   "closingsize": 52
+  },
+  {
+   "type": "cta",
+   "orbs": [
+    {
+     "kind": "moon",
+     "r": 56
+    }
+   ],
+   "title": "What does your Moon’s\nhouse ask of you?",
+   "titlesize": 84,
+   "subtitle": "Ask your chart at asksutram.com",
+   "lines": [
+    "Weekly newsletter at sutram.ca/newsletter"
+   ],
+   "next": "Next Saturday · Narasimha, Mars"
+  }
+ ]
+}
