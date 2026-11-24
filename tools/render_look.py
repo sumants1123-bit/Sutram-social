@@ -27,6 +27,7 @@ HERE = os.path.dirname(os.path.abspath(__file__)); REPO = os.path.dirname(HERE)
 sys.path.insert(0, HERE)
 import look as L
 import look_art as A
+import look_zodiac as Z
 import render_thread as R
 from playwright.sync_api import sync_playwright
 from PIL import Image
@@ -53,6 +54,12 @@ def art_html(a, P, s=1.0):
     if a['kind'] == 'wheel':
         inner = orb_box({'kind': 'moon', 'r': a['moon']}, P, s) if a.get('moon') else ''
         return A.wheel(P, a.get('size', 520) * s, a.get('lit'), a.get('mode', ''), a.get('pick'), a.get('quarters', False), a.get('dot', False), inner, a.get('hole', .6))
+    if a['kind'] == 'zodiac':   # 24 Nov 2026: the twelve signs, Rahu and Ketu (tools/look_zodiac.py)
+        k = {x: a[x] for x in ('rahu', 'ketu', 'rahu_from', 'ketu_from', 'count_from', 'good', 'lit', 'mode', 'labels', 'name_size', 'num_size', 'node_r', 'node_at', 'moon', 'tags', 'tag_size') if x in a}
+        return Z.zodiac(P, a.get('size', 760) * s, **k)
+    if a['kind'] == 'strip':    # 24 Nov 2026: the sky laid flat, the Sun's path and the Moon's path crossing at Rahu and Ketu
+        k = {x: a[x] for x in ('mode', 'amp', 'labels', 'tag_size') if x in a}
+        return Z.strip(P, a.get('size', 920) * s, **k)
     raise ValueError(a['kind'])
 
 
@@ -176,7 +183,7 @@ def render(spec_path, motion=False, border=None, foot=None):
             os.remove(raw)
             if motion and (i == 1 or sp.get('motion')):
                 mode = json.dumps(sp.get('motion', 'breathe'))
-                open(fn, 'w').write(html.replace('</body>', f'<script>{MOTION.replace("%MODE%", mode)}</script></body>')); pg.goto('file://' + fn); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(250)
+                open(fn, 'w').write(html.replace('</body>', f'<script>{MOTION.replace("%MODE%", mode)}</script><script>{Z.MOTION}</script></body>')); pg.goto('file://' + fn); pg.evaluate('document.fonts.ready'); pg.wait_for_timeout(250)
                 tmp = os.path.join(out, '_frames') + '/'; shutil.rmtree(tmp, ignore_errors=True); os.makedirs(tmp)
                 for f in range(240):
                     pg.evaluate('(t)=>window.__fab(t)', f / 30); pg.screenshot(path=tmp + f'f{f:04d}.jpg', type='jpeg', quality=92)

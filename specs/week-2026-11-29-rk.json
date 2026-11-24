@@ -1,0 +1,311 @@
+{
+ "id": "week-2026-11-29-rk",
+ "look": "day",
+ "kicker": "Week ahead · 30 Nov to 6 Dec",
+ "slides": [
+  {
+   "type": "cover",
+   "art": {
+    "kind": "zodiac",
+    "size": 660,
+    "rahu": 285,
+    "ketu": 105,
+    "rahu_from": 315,
+    "ketu_from": 135,
+    "lit": [
+     9,
+     3
+    ],
+    "mode": "shift"
+   },
+   "title": "Rahu and Ketu\nchange signs",
+   "titlesize": 100,
+   "subtitle": "Saturday 5 December · what it means for you",
+   "subsize": 42
+  },
+  {
+   "type": "text",
+   "art": {
+    "kind": "strip",
+    "size": 930,
+    "mode": "orbit"
+   },
+   "motion": "still",
+   "label": "What they are",
+   "title": "Where two paths cross",
+   "body": [
+    "Two points with nothing to see: where the Moon’s path crosses the Sun’s, always exactly opposite each other.",
+    "An eclipse can only happen near them."
+   ],
+   "bodysize": 36
+  },
+  {
+   "type": "text",
+   "orbs": [
+    {
+     "kind": "sun",
+     "r": 50,
+     "rings": false
+    },
+    {
+     "kind": "rahu",
+     "r": 40
+    },
+    {
+     "kind": "moon",
+     "r": 38,
+     "illum": 1.0
+    }
+   ],
+   "orbgap": 26,
+   "label": "The story · Bhagavata Purana 8.9",
+   "title": "The head that\ndrank the nectar",
+   "titlesize": 82,
+   "body": [
+    "A demon slipped in among the gods and drank the nectar of immortality. The Sun and Moon gave him away.",
+    "Vishnu’s disc cut off his head, but the nectar had touched it. The head lived on as Rahu, and still rushes at the Sun and Moon."
+   ],
+   "bodysize": 34,
+   "closing": "The old picture of an eclipse",
+   "closingsize": 42
+  },
+  {
+   "type": "cast",
+   "label": "What they stand for",
+   "title": "One wants more,\none lets go",
+   "titlesize": 80,
+   "iconw": 150,
+   "headsize": 50,
+   "linesize": 31,
+   "subsize": 20,
+   "items": [
+    {
+     "orbs": [
+      {
+       "kind": "rahu",
+       "r": 44
+      }
+     ],
+     "head": "The magician · Rahu",
+     "line": "The Dragon Head: bigness, an open mouth, illusion",
+     "sub": "R. G. Rao’s Nadi table"
+    },
+    {
+     "orbs": [
+      {
+       "kind": "ketu",
+       "r": 44
+      }
+     ],
+     "head": "The monk · Ketu",
+     "line": "The Dragon Tail: smallness, narrowness, breaks",
+     "sub": "R. G. Rao’s Nadi table"
+    }
+   ],
+   "closing": "Sutram’s reading: where Rahu sits you want more, where Ketu sits you let go",
+   "closingsize": 40
+  },
+  {
+   "type": "stack",
+   "label": "Saturday 5 December",
+   "title": "One sign back,\nfor 18 months",
+   "titlesize": 80,
+   "linesize": 40,
+   "items": [
+    [
+     "May 2025 to 5 December 2026",
+     "Rahu in Aquarius · Ketu in Leo"
+    ],
+    [
+     "5 December 2026 to June 2028",
+     "Rahu in Capricorn · Ketu in Cancer"
+    ],
+    [
+     "From June 2028",
+     "Rahu in Sagittarius · Ketu in Gemini"
+    ]
+   ],
+   "body": [
+    "They always walk backward, one sign in about 18 months."
+   ],
+   "bodysize": 34,
+   "note": "Rahu’s mean path, as almanacs like Drik Panchang list it · by the true path the change came on 25 November"
+  },
+  {
+   "type": "text",
+   "art": {
+    "kind": "zodiac",
+    "size": 600,
+    "rahu": 285,
+    "ketu": 105,
+    "count_from": 0,
+    "good": [
+     3,
+     6,
+     10,
+     11
+    ],
+    "lit": [
+     9,
+     3
+    ],
+    "moon": true,
+    "mode": "count"
+   },
+   "motion": "still",
+   "label": "Find your houses",
+   "title": "Count from your Moon",
+   "titlesize": 78,
+   "body": [
+    "Your Moon sign is the sign the Moon was in at your birth. Call it 1 and count on. Aries Moon: Capricorn is the 10th, Cancer the 4th."
+   ],
+   "bodysize": 33,
+   "closing": "Ringed: Rahu’s good houses, 3rd, 6th, 10th, 11th",
+   "closingsize": 36,
+   "note": "Phaladeepika 26.24"
+  },
+  {
+   "type": "grid",
+   "cols": 2,
+   "cellsize": 42,
+   "celltext": 29,
+   "celllab": 19,
+   "cellpad": 22,
+   "note": "Gold: Rahu in a good house, Phaladeepika 26.24 · the lines are Sutram’s reading of Rao’s table",
+   "label": "Your Moon sign · from Saturday",
+   "title": "Aries to Virgo",
+   "cells": [
+    [
+     "Aries Moon",
+     "Rahu 10th · Ketu 4th",
+     "Rahu: work goals grow\nKetu: home gets simpler",
+     true
+    ],
+    [
+     "Taurus Moon",
+     "Rahu 9th · Ketu 3rd",
+     "Rahu: far places call\nKetu: less rushing about",
+     false
+    ],
+    [
+     "Gemini Moon",
+     "Rahu 8th · Ketu 2nd",
+     "Rahu: shared money, secrets\nKetu: spend less, say less",
+     false
+    ],
+    [
+     "Cancer Moon",
+     "Rahu 7th · Ketu 1st",
+     "Rahu: partners loom large\nKetu: you step back a little",
+     false
+    ],
+    [
+     "Leo Moon",
+     "Rahu 6th · Ketu 12th",
+     "Rahu: more work, going well\nKetu: spending shrinks",
+     true
+    ],
+    [
+     "Virgo Moon",
+     "Rahu 5th · Ketu 11th",
+     "Rahu: big hopes in love, study\nKetu: a smaller, truer circle",
+     false
+    ]
+   ]
+  },
+  {
+   "type": "grid",
+   "cols": 2,
+   "cellsize": 42,
+   "celltext": 29,
+   "celllab": 19,
+   "cellpad": 22,
+   "note": "Gold: Rahu in a good house, Phaladeepika 26.24 · the lines are Sutram’s reading of Rao’s table",
+   "label": "Your Moon sign · from Saturday",
+   "title": "Libra to Pisces",
+   "cells": [
+    [
+     "Libra Moon",
+     "Rahu 4th · Ketu 10th",
+     "Rahu: home, property plans\nKetu: titles matter less",
+     false
+    ],
+    [
+     "Scorpio Moon",
+     "Rahu 3rd · Ketu 9th",
+     "Rahu: bolder effort, courage\nKetu: old beliefs loosen",
+     true
+    ],
+    [
+     "Sagittarius Moon",
+     "Rahu 2nd · Ketu 8th",
+     "Rahu: wanting more money\nKetu: quiet inner change",
+     false
+    ],
+    [
+     "Capricorn Moon",
+     "Rahu 1st · Ketu 7th",
+     "Rahu: big personal wants\nKetu: fewer, deeper ties",
+     false
+    ],
+    [
+     "Aquarius Moon",
+     "Rahu 12th · Ketu 6th",
+     "Rahu: spending, travel abroad\nKetu: rivals, debts shrink",
+     false
+    ],
+    [
+     "Pisces Moon",
+     "Rahu 11th · Ketu 5th",
+     "Rahu: gains, wider circles\nKetu: less drama in love",
+     true
+    ]
+   ]
+  },
+  {
+   "type": "stack",
+   "label": "What it does not mean",
+   "title": "Read it wisely",
+   "titlesize": 82,
+   "linesize": 38,
+   "items": [
+    [
+     "Not one day",
+     "They move about a degree every 19 days. It builds over months."
+    ],
+    [
+     "Not your whole chart",
+     "Your rising sign, your dasha (the graha period you are in) and your birth grahas change the picture."
+    ],
+    [
+     "Not fixed fate",
+     "A harder house asks for care in that part of life."
+    ]
+   ],
+   "note": "Sutram’s reading"
+  },
+  {
+   "type": "rows",
+   "label": "Your turn",
+   "title": "Check your own chart",
+   "titlesize": 80,
+   "items": [
+    [
+     "1",
+     "Find your Moon sign: ask your chart at asksutram.com"
+    ],
+    [
+     "2",
+     "Count to Capricorn for Rahu, to Cancer for Ketu"
+    ],
+    [
+     "3",
+     "Look for birth grahas in Capricorn or Cancer: Rahu and Ketu will pass over them"
+    ]
+   ],
+   "closing": "Ask what it means for you at asksutram.com",
+   "closingsize": 40,
+   "note": "Weekly newsletter · sutram.ca/newsletter"
+  }
+ ]
+}
