@@ -688,7 +688,7 @@
    "made": "20 Nov 2026, about 6:15 PM Mexico City time, for Sumant's review; NOT scheduled.",
    "asked": "Sumant, 20 Nov 5:30 PM: 'Awareness is your higher self, SELF. You. Does someone else say this?' 5:47 PM: 'make a one post on awareness about it. Mentioning all these scriptures in a nice, beautiful way, not too much text. Very beautiful. I don't know if astrology connects to awareness with any planet, so maybe add that.'",
    "what": "8 slides, cream look, moving cover (Sun and a Moon lit on the side facing it). Shiva Sutras 1.1, Brihadaranyaka Upanishad 3.7.23, Mandukya Upanishad 7 (the fourth), Yoga Sutras 1.3, BPHS 3.12 (the Sun is the Self of all, the Moon is the mind: the astrology link), Ramana Maharshi's 'Who am I?' as a three-step try-it, close 'Thoughts come and go. You stay.' Caption adds Nisargadatta and Krishnamurti's push-back. Every verse opened 20 Nov (sources in tools/post_awareness.py).",
-   "status": "moved to Buffer drafts 23 Nov about 11:25 PM Toronto (rules_23nov); not deleted"
+   "status": "paused 23 Nov, back on schedule 24 Nov at the same time (Sumant chose Awareness for Thursday)"
   },
   {
    "id": "know-awareness-x",
@@ -696,7 +696,7 @@
    "title": "Awareness is you on X (slides 1, 2, 6, 8)",
    "via": "buffer-x",
    "buffer_id": "6b01bca08bd84d5966fcc962",
-   "status": "moved to Buffer drafts 23 Nov about 11:25 PM Toronto (rules_23nov); not deleted"
+   "status": "paused 23 Nov, back on schedule 24 Nov at the same time (Sumant chose Awareness for Thursday)"
   },
   {
    "id": "lesson20-doorway-c",
@@ -823,6 +823,21 @@
    "via": "buffer-x",
    "buffer_id": "6b038c1b846b0ee907ce138c",
    "status": "moved to Buffer drafts 23 Nov about 11:25 PM Toronto (rules_23nov); not deleted"
+  },
+  {
+   "id": "week-2026-11-29-rk",
+   "when": "2026-11-29T18:30:00-05:00",
+   "title": "Week ahead 30 Nov to 6 Dec: Rahu and Ketu change signs, what it means for your Moon sign (10 slides, 3 moving)",
+   "via": "buffer-instagram",
+   "buffer_id": "6b051c7fbc151fa8ad260e92",
+   "note": "assets at 6d8103c; videos 1, 2, 6; first post under rules_23nov"
+  },
+  {
+   "id": "week-2026-11-29-rk-x",
+   "when": "2026-11-29T20:00:00-05:00",
+   "title": "Rahu and Ketu change signs on X (slides 1, 6, 7, 8)",
+   "via": "buffer-x",
+   "buffer_id": "6b051c8abc151fa8ad2611ce"
   }
  ],
  "retired": [
@@ -1179,10 +1194,7 @@
  "checkins": {
   "pattern": "one-off reminders into this session",
   "next": [
-   "trig_0184cvygsnQJMxzMvErZjZSX Wed 18 Nov 7 PM: schedule the rest of 16-22 Nov",
-   "trig_014ZF9FintvMsyxZsA8JhLDU Sun 22 Nov 7 PM: weekly batch 23-29 Nov (plan/batch_22nov_prompt.txt)",
-   "trig_013K47Q49jdo6MGVzx9aKpFn Wed 25 Nov 7 PM: schedule the rest of 23-29 Nov (week48.left_for_wed_checkin)",
-   "trig_01X2psPjFfXoeagqzjK7wFYz Sun 29 Nov 7 PM: weekly batch 30 Nov-6 Dec (plan/batch_29nov_prompt.txt)"
+   "trig_01X2psPjFfXoeagqzjK7wFYz Sat 28 Nov 7 PM: weekly batch 30 Nov to 6 Dec (plan/batch_28nov_prompt.txt)"
   ],
   "disabled_23nov": [
    "trig_013K47Q49jdo6MGVzx9aKpFn (Wed 25 Nov check-in)",
@@ -1646,7 +1658,8 @@
     "sky-2026-11-27-x": "6b038c1b846b0ee907ce138c"
    }
   },
-  "went_out": "Instagram: lesson20-doorway-c (Mon 23 Nov 12 PM) and thread-ep4-strands (Mon 23 Nov 6:30 PM). X: lesson20-doorway-c-x (1 PM), thread-ep4-strands-x (8 PM). Everything after that paused (rules_23nov)."
+  "went_out": "Instagram: lesson20-doorway-c (Mon 23 Nov 12 PM) and thread-ep4-strands (Mon 23 Nov 6:30 PM). X: lesson20-doorway-c-x (1 PM), thread-ep4-strands-x (8 PM). Everything after that paused (rules_23nov).",
+  "after_pause": "Thu 26 Nov: know-awareness (Instagram 6:30 PM, X 8 PM) rescheduled from drafts. Sun 29 Nov: week-2026-11-29-rk replaces week-2026-11-29 (never scheduled), in depth. plan/week48b.json. Instagram this week: 4 posts (lesson 20, strands, Awareness, Rahu and Ketu)."
  },
  "rules_23nov": {
   "said": "Sumant, Mon 23 Nov 10:23 PM (Mexico): 'decrease the number of posts you are posting on Instagram right now weekly, and the quality has to improve. Right now this is all half-baked post, not clear explanation, not clear topic, nothing. Reduce the weekly post to maybe 4 or 5 in total weekly post, but everything has to be well done, in depth, no shortcuts, no saving of tokens, money, etc.' The day before (22 Nov 7:12 PM), on Awareness is you: the Krishnamurti part was a half-baked answer; the elaboration has to be more.",
@@ -1663,6 +1676,10 @@
    "Checked before it goes: every slide at full size, the caption read start to finish against the slides, tools/check_caption.py"
   ],
   "paused": "Mon 23 Nov about 11:25 PM Toronto: all 15 Buffer posts of Tue 24 to Fri 27 Nov (8 Instagram, 7 X) moved to Buffer drafts with saveToDraft; nothing deleted (IDs in week48.paused_23nov). The five Instagram and four X posts left for the Wed check-in were never scheduled. Wed check-in trig_013K47Q49jdo6MGVzx9aKpFn and Sunday batch trig_01X2psPjFfXoeagqzjK7wFYz disabled, not deleted. The 10 sutram.ca feed rows of posts that did not go out moved to site/held_23nov.json.",
-  "open": "Asked Sumant 23 Nov: the weekly lineup, the rest of this week, and whether each post comes to him for a yes before it is scheduled. Until he answers nothing is scheduled."
- }
+  "open": "Answered 23 Nov (see answers).",
+  "answers": "Sumant, 23 Nov about 11:35 PM Toronto, to three questions: (1) the lineup '4 fixed + 1 on big sky weeks': Mon Nadi lesson 12 PM, Wed Sutra 10 AM, Fri The Thread 6:30 PM, Sun week ahead 6:30 PM, a fifth only in a week with a big sky event; (2) this week 'Awareness Thu + deep week ahead Sun'; (3) review 'No, schedule once it passes checks'. X carries the same posts and nothing extra (told to him 23 Nov).",
+  "model_post": "tools/post_rahu_ketu.py (week-2026-11-29-rk): ten slides, three moving (tools/look_zodiac.py: the twelve-sign wheel, the sky laid flat, the count from a Moon sign), docstring with every engine value and source",
+  "after": "24 Nov: Awareness back on Thu 26 Nov 6:30 PM (X 8 PM), same Buffer IDs; the Rahu and Ketu week ahead made and scheduled Sun 29 Nov 6:30 PM (Instagram 6b051c7fbc151fa8ad260e92) and 8 PM (X 6b051c8abc151fa8ad2611ce). Next batch: plan/batch_28nov_prompt.txt, Sat 28 Nov 7 PM, through trig_01X2psPjFfXoeagqzjK7wFYz."
+ },
+ "next_lesson_plan": "One lesson a week from 30 Nov: rule 12 (30 Nov), rule 14 (7 Dec), rule 13, rule 11, each rebuilt in depth; next_lesson stays 25 as the lesson number"
 }
