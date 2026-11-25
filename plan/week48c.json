@@ -1,0 +1,22 @@
+{
+ "said": "Sumant, Wed 25 Nov 2026 about 8:15 AM (Mexico): 'Great u can post it. And add more videos in scheduler.' The video was made in chat that morning (unnamed example chart, vertical, tanpura drone, all his picks). He then picked 'One video a week' (rules_25nov). This file holds that one post.",
+ "posts": [
+  {
+   "id": "ketu-facing-saturn",
+   "look": "day",
+   "kind": "reel",
+   "ig": "2026-11-27T18:30:00-05:00",
+   "x": "2026-11-27T20:00:00-05:00",
+   "family": "lesson",
+   "video": "posts/ketu-facing-saturn/ketu-facing-saturn-1.mp4",
+   "x_video": "posts/ketu-facing-saturn/ketu-facing-saturn-x.mp4",
+   "tool": "tools/reel/ketu_facing_saturn.py",
+   "site": {
+    "slug": "how-a-transit-becomes-an-event-ketu-facing-saturn",
+    "title": "How a transit becomes an event: Ketu in Cancer facing Saturn, read the Parashari and the Nadi way",
+    "ask": "Which graha does Ketu face in my chart from 5 December?",
+    "family": "lesson"
+   }
+  }
+ ]
+}
