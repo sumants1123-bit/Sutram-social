@@ -838,6 +838,22 @@
    "title": "Rahu and Ketu change signs on X (slides 1, 6, 7, 8)",
    "via": "buffer-x",
    "buffer_id": "6b051c8abc151fa8ad2611ce"
+  },
+  {
+   "id": "ketu-facing-saturn",
+   "when": "2026-11-27T18:30:00-05:00",
+   "title": "Reel: How does a transit turn into an event? Ketu in Cancer facing Saturn, Parashari and Nadi (75 s, example chart, tanpura drone)",
+   "via": "buffer-instagram",
+   "buffer_id": "6b06f6f699c096db9444b01a",
+   "note": "assets at 499379b; type reel, shouldShareToFeed true, thumbnailOffset 3000; look day; made in chat 25 Nov and approved by Sumant"
+  },
+  {
+   "id": "ketu-facing-saturn-x",
+   "when": "2026-11-27T20:00:00-05:00",
+   "title": "Reel on X: How does a transit turn into an event? (720 x 1280 copy)",
+   "via": "buffer-x",
+   "buffer_id": "6b06f6ff99c096db9444b4c7",
+   "note": "assets at 499379b"
   }
  ],
  "retired": [
@@ -1681,5 +1697,13 @@
   "model_post": "tools/post_rahu_ketu.py (week-2026-11-29-rk): ten slides, three moving (tools/look_zodiac.py: the twelve-sign wheel, the sky laid flat, the count from a Moon sign), docstring with every engine value and source",
   "after": "24 Nov: Awareness back on Thu 26 Nov 6:30 PM (X 8 PM), same Buffer IDs; the Rahu and Ketu week ahead made and scheduled Sun 29 Nov 6:30 PM (Instagram 6b051c7fbc151fa8ad260e92) and 8 PM (X 6b051c8abc151fa8ad2611ce). Next batch: plan/batch_28nov_prompt.txt, Sat 28 Nov 7 PM, through trig_01X2psPjFfXoeagqzjK7wFYz."
  },
- "next_lesson_plan": "One lesson a week from 30 Nov: rule 12 (30 Nov), rule 14 (7 Dec), rule 13, rule 11, each rebuilt in depth; next_lesson stays 25 as the lesson number"
+ "next_lesson_plan": "One lesson a week from 30 Nov: rule 12 (30 Nov), rule 14 (7 Dec), rule 13, rule 11, each rebuilt in depth; next_lesson stays 25 as the lesson number",
+ "rules_25nov": {
+  "said": "Sumant, Wed 25 Nov 2026 about 8:15 AM (Mexico), about the 75-second video 'How a transit becomes an event' (Ketu in Cancer facing Saturn, Parashari and Nadi) made with him in chat that morning: 'Great u can post it. And add more videos in scheduler.' Earlier that morning he picked an unnamed example chart (his own placements, no name or birth details), vertical 9:16 and a soft tanpura drone.",
+  "answer": "Asked how more videos fit the 23 Nov cap of 4 or 5 posts a week, he picked 'One video a week': one of the four weekly posts is a 60 to 90 second vertical video (Reel) like the Ketu one. Same total.",
+  "which": "Claude's default, told to Sumant: the Monday Nadi lesson is the week's video (the model is itself a Nadi teaching video). A week whose big sky event is better shown moving may use that post instead; say so in the message.",
+  "first_reel": "ketu-facing-saturn, Fri 27 Nov 6:30 PM Instagram (Buffer 6b06f6f699c096db9444b01a), X 8 PM (6b06f6ff99c096db9444b4c7). It fills this week's empty Friday slot (The Thread part 5 is paused), so the week stays at 5. It sits outside the Grid X count, between two cream posts; the batch numbering (Mon 30 Nov is post 5, dark) stands.",
+  "kit": "tools/reel/ketu_facing_saturn.py (the model: scene list, wheel, pills, arrows drawn as they grow, chips, cards; stills to check, build to render), tools/reel/tanpura.py (the quiet drone), fonts in assets/fonts (Fraunces, Inter, OFL). pip install skia-python. Build writes posts/<id>/<id>-1.mp4 (1080 x 1920), <id>-x.mp4 (720 x 1280 for X) and <id>-1.jpg (cover at 3 s).",
+  "standard": "Vertical 1080 x 1920, 30 fps, 60 to 90 seconds, about 10 scenes of 6 to 8 seconds, one short headline and one or two short lines a scene, big text (headlines about 70 px, body 42 px or more, labels 30 px), the important things between y 250 and 1500, the worked example built step by step on a drawing, an example chart labelled as an example, a closing card with sutram.ca. Cream look as in the model, or the night colours of tools/look.py when its grid number is dark. Stills at full size before the one full render, then frames from the finished file. The caption carries the whole explanation under the usual standard. Instagram type reel with shouldShareToFeed true and thumbnailOffset about 3000; X gets the 720 x 1280 copy with the short text."
+ }
 }
