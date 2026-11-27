@@ -892,8 +892,8 @@
   "as-above-so-below-v2"
  ],
  "next_lesson": 25,
- "next_thread_episode": 6,
- "next_thread_title": "part 6 on Wed 2 Dec: The four aims of life (plan Ep 8); Nachiketa stays Wed 9 Dec for Saturn turning forward 10 Dec; Two birds moved later",
+ "next_thread_episode": 7,
+ "next_thread_title": "Fridays now. Fri 4 Dec: Maps of reality 1 Samkhya (done). Fri 11 Dec: Nachiketa and Death (Saturn turns forward 10 Dec). Fri 18 Dec: Maps of reality 2 Yoga. Fri 25 Dec: The four aims of life. Full order in plan/thread_maps_of_you.md.",
  "style": "plain words, one idea per slide, about 20 words a slide; caption about 1,000 characters that says what the slides say; every post gives real-life examples people recognise (Sumant's model: Mercury = your friends, weak Mercury = a smaller circle) and ties back to the vision: philosophy and astrology, one thread, know yourself",
  "next_to_make": [
   "Tue lean run: Thu 5 Nov 10 AM 5th-house card, 12 PM Lesson 9 Rahu; Fri 6 Nov 10 AM 4th-house card, 12 PM Lesson 10 Ketu; Sun 8 Nov 10 AM Diwali",
@@ -1705,5 +1705,12 @@
   "first_reel": "ketu-facing-saturn, Fri 27 Nov 6:30 PM Instagram (Buffer 6b06f6f699c096db9444b01a), X 8 PM (6b06f6ff99c096db9444b4c7). It fills this week's empty Friday slot (The Thread part 5 is paused), so the week stays at 5. It sits outside the Grid X count, between two cream posts; the batch numbering (Mon 30 Nov is post 5, dark) stands.",
   "kit": "tools/reel/ketu_facing_saturn.py (the model: scene list, wheel, pills, arrows drawn as they grow, chips, cards; stills to check, build to render), tools/reel/tanpura.py (the quiet drone), fonts in assets/fonts (Fraunces, Inter, OFL). pip install skia-python. Build writes posts/<id>/<id>-1.mp4 (1080 x 1920), <id>-x.mp4 (720 x 1280 for X) and <id>-1.jpg (cover at 3 s).",
   "standard": "Vertical 1080 x 1920, 30 fps, 60 to 90 seconds, about 10 scenes of 6 to 8 seconds, one short headline and one or two short lines a scene, big text (headlines about 70 px, body 42 px or more, labels 30 px), the important things between y 250 and 1500, the worked example built step by step on a drawing, an example chart labelled as an example, a closing card with sutram.ca. Cream look as in the model, or the night colours of tools/look.py when its grid number is dark. Stills at full size before the one full render, then frames from the finished file. The caption carries the whole explanation under the usual standard. Instagram type reel with shouldShareToFeed true and thumbnailOffset about 3000; X gets the 720 x 1280 copy with the short text."
+ },
+ "maps_of_reality": {
+  "said": "Sumant, Thu 26 Nov 2026 7:17 PM (Mexico, by voice): 'Just add an idea and schedule it for the post, and maybe try to make more posts like that ... as per Samkhya philosophy ... the universe is a superimposition ... make a post and then dynamic visual, really clearly in visual terms explaining the reality as per Samkhya ... and different models of reality, different philosophies, visually explaining very beautifully, deep visually how it works.'",
+  "series": "The Thread on Fridays, every other week, alternating with Maps of you; in its week the Friday Thread is the week's video (rules_25nov) and the Monday lesson a carousel. Order and each episode's picture: plan/thread_maps_of_you.md.",
+  "part1": "samkhya-map-of-reality, 'What is reality made of?', Reel 79 s, cream, Fri 4 Dec 6:30 PM Instagram 6b08dea970e2a88e2ce8d034, X 8 PM 6b08deab9131f7416c63c569; plan/week49t.json; tools/reel/samkhya_map_of_reality.py (sources in its docstring).",
+  "order_note": "Sumant said 'intellect, then consciousness, then mind'; the Karika's order (22) is intellect, the I-maker (ahamkara), then mind, and consciousness is the seer (Purusha) itself. The post follows the Karika; told to him with the post.",
+  "batch": "plan/batch_28nov_prompt.txt changed the same evening: Fri 4 Dec done, Mon 30 Nov lesson a carousel, The four aims of life moved to Fri 25 Dec; the scheduled Saturday batch carries the same change."
  }
 }

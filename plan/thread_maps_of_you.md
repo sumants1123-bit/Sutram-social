@@ -11,6 +11,27 @@ Sumant loved "Five layers of you" (Ep 2, Bhrigu and the koshas) and approved all
 6. The question for the comments, then the two links (asksutram.com first, then sutram.ca/newsletter).
 Slides stay very simple with big text. Graha characters as always: Sun the king, Moon the mother, Mars the soldier, Mercury the messenger, Jupiter the teacher, Venus the lover, Saturn the auditor, Rahu the magician, Ketu the monk.
 
+## Fridays from 4 Dec: Maps of reality, every other week (Sumant, 26 Nov 2026)
+Since 23 Nov the Thread runs on Fridays at 6:30 PM (X 8 PM). Sumant, Thu 26 Nov, by voice: "Just add an idea and schedule it for the post, and maybe try to make more posts like that ... as per Samkhya philosophy ... make a post and then dynamic visual, really clearly in visual terms explaining the reality as per Samkhya ... and different models of reality, different philosophies, visually explaining very beautifully, deep visually how it works."
+
+Maps of reality takes one school's whole model of what is real and draws it moving, step by step. It alternates with the Maps of you episodes below. In a Maps of reality week the Friday Thread is the week's video (a 60 to 90 second Reel, rules_25nov) and the Monday lesson is a carousel. Model: tools/reel/samkhya_map_of_reality.py (the map builds layer by layer and stays on screen; a source line on every scene; a counting line for every number). Every map: what it says is real, how it works (the moving picture), its one key image from its own text, a "Read it in your chart" tie marked "Sutram's reading" whenever the pairing is ours, what it does not say, and where the next map disagrees. Open every source before use.
+
+Friday order:
+- Fri 4 Dec: Maps of reality 1, Samkhya, "What is reality made of?" DONE (samkhya-map-of-reality, scheduled 26 Nov). One seer, 24 layers of nature unfolding from the three strands: intellect, I-maker, mind, ten organs, five subtle elements, five elements (Samkhya Karika 3, 11 to 13, 19 to 28, 38); the mix-up as a face in a mirror (verse 20; Vachaspati Mishra); the dancer who stops once seen (59); Parashara's five tattvas for five grahas (BPHS 3.20). Sumant had said "intellect, then consciousness, then mind"; the Karika's order (22) is intellect, the I-maker, then mind, and consciousness is the seer itself; told to him.
+- Fri 11 Dec: Nachiketa and Death (Ep 7 below), for Saturn turning forward on Thu 10 Dec.
+- Fri 18 Dec: Maps of reality 2, Yoga: "Why can't you see the bottom of your mind?" The mind as a lake; five kinds of thought-waves (Yoga Sutra 1.6) break the reflection; when they settle, the seer rests in its own form (1.2, 1.3). Same 25 as Samkhya plus Ishvara (1.24). Picture: a lake whose waves calm until the Moon's reflection is whole and the bed shows. Chart: the Moon is the mind (BPHS 3).
+- Fri 25 Dec: The four aims of life (Ep 8 below); by then Planet Strength's four groups (Purpose, Wealth, Desire, Freedom) should be live on sutram.ca: check before pointing to it.
+- Fri 1 Jan: Maps of reality 3, Advaita Vedanta: "Is the world a mistake?" One reality; the snake seen in a rope at dusk, the superimposition (adhyasa) Shankara defines at the start of his Brahma Sutra commentary; clay and its pots (Chandogya Upanishad 6.1.4). Picture: the snake fading into rope as a lamp comes near. Bridge: Samkhya's mix-up of part 1, and where Advaita disagrees (one seer, not many).
+- Fri 8 Jan: Three bodies (Ep 9 below).
+- Fri 15 Jan: Maps of reality 4, Kashmir Shaivism: 36 layers. Samkhya's 25 plus 11 above it; consciousness freely narrows itself through five veils of limited power, knowing, wanting, time and cause, then recognises itself (Kshemaraja, Pratyabhijnahridayam). Picture: a full light closing through five rings into one small point, then opening.
+- Fri 22 Jan: The four stages of life (Ep 10 below).
+- Fri 29 Jan: Maps of reality 5, the Buddha's five heaps (skandhas): form, feeling, perception, formations, consciousness, and no fixed self among them (Samyutta Nikaya 22.59); the chariot taken apart (Milindapanha). Picture: a person drawn as five streams that never stop moving.
+- Fri 5 Feb: Waking, dreaming, deep sleep and the fourth (Ep 11 below).
+- Fri 12 Feb: Maps of reality 6, Nyaya-Vaisheshika: the world built from atoms (paramanu), pairs and threes, nine substances (Vaisheshika Sutra). Picture: points pairing up until a speck you can see appears.
+- Fri 19 Feb: The three paths (Ep 13 below).
+- Fri 26 Feb: Maps of reality 7, Taoism: the Tao gives one, one gives two, two give three, three give the ten thousand things (Tao Te Ching 42). Picture: one circle opening into two, three, then many.
+- Then: Maps of reality 8, Jainism (the soul as light under fine karma dust that settles and lifts; Tattvartha Sutra), and 9, Plato's cave (Republic, book 7: shadows, things, fire, sun) for Western readers; Two birds on one tree and Your body type in the Maps of you weeks.
+
 ## Wednesday Thread, 6:30 PM
 Ep 3 "The person of Time" stays on Wed 11 Nov. "Saturn, the teacher of time" stays on Wed 13 Jan (masterclass night). After Ep 13 the original plan continues from "Cause and effect".
 
